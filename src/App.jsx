@@ -7,6 +7,8 @@ import CookieBanner from './components/CookieBanner'
 import HomePage from './pages/HomePage'
 import McpPage from './pages/McpPage'
 import PricingPage from './pages/PricingPage'
+import PrivacyPage from './pages/PrivacyPage'
+import TermsPage from './pages/TermsPage'
 
 export default function App() {
   return (
@@ -18,6 +20,8 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/mcp" element={<McpPage />} />
             <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
         </main>

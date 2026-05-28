@@ -1,11 +1,11 @@
-# CoPantry Marketing Site — robots.txt
+# CoPantry - robots.txt
 # Hosted at: https://www.copantry.com/robots.txt
 
-# ── Default: allow all crawlers ────────────────────────────────────
+# --- Default: allow all crawlers ---
 User-agent: *
 Allow: /
 
-# ── AI / Generative Engine crawlers — explicitly allowed ───────────
+# --- AI / Generative Engine crawlers - explicitly allowed ---
 # These bots build the indexes used by LLM-powered answer engines.
 # We welcome them and provide structured content via /llms.txt.
 
@@ -51,12 +51,8 @@ Allow: /
 User-agent: omgili
 Allow: /
 
-# ── Disallow non-public paths ──────────────────────────────────────
-# (Marketing site has no gated paths — all pages are public)
-
-# ── Sitemaps ───────────────────────────────────────────────────────
+# --- Sitemaps ---
 Sitemap: https://www.copantry.com/sitemap.xml
 
-# ── llms.txt ──────────────────────────────────────────────────────
-# Machine-readable capabilities index for AI assistants:
+# --- Machine-readable capabilities index for AI assistants ---
 # https://www.copantry.com/llms.txt

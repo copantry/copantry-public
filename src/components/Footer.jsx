@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Logo from './Logo'
 
+function openMail(user) {
+  window.location.href = `mailto:${user}@copantry.com`
+}
+
 export default function Footer() {
   const { t } = useTranslation()
   const year = new Date().getFullYear()
@@ -9,21 +13,17 @@ export default function Footer() {
   const LINKS = {
     [t('footer.product')]: [
       { label: t('footer.links.features'), href: '/#features' },
-      { label: t('footer.links.pricing'), to: '/pricing' },
-      { label: t('footer.links.ai_mcp'), to: '/mcp' },
-      { label: t('footer.links.android'), href: 'https://play.google.com/store/apps/details?id=com.copantry' },
+      { label: t('footer.links.pricing'),  to: '/pricing' },
+      { label: t('footer.links.ai_mcp'),   to: '/mcp' },
     ],
     [t('footer.developers')]: [
       { label: t('footer.links.mcp_docs'), to: '/mcp' },
-      { label: t('footer.links.api_ref'), href: 'https://api.copantry.com/docs' },
-      { label: t('footer.links.llms_txt'), href: '/llms.txt' },
-      { label: t('footer.links.robots_txt'), href: '/robots.txt' },
     ],
     [t('footer.company')]: [
-      { label: t('footer.links.privacy'), href: '/privacy' },
-      { label: t('footer.links.terms'), href: '/terms' },
-      { label: t('footer.links.investors'), onClick: () => { const p = ['info', 'copantry.com']; window.location.href = `mailto:${p[0]}@${p[1]}` } },
-      { label: t('footer.links.contact'), onClick: () => { const p = ['hello', 'copantry.com']; window.location.href = `mailto:${p[0]}@${p[1]}` } },
+      { label: t('footer.links.privacy'),    to: '/privacy' },
+      { label: t('footer.links.terms'),      to: '/terms' },
+      { label: t('footer.links.investors'),  onClick: () => openMail('info') },
+      { label: t('footer.links.contact'),    onClick: () => openMail('hello') },
     ],
   }
 
@@ -77,11 +77,11 @@ export default function Footer() {
           <p className="text-xs text-gray-400">
             {t('footer.copyright', { year })}
           </p>
-          <p className="text-xs text-gray-400">
-            <a href="https://www.copantry.com/mcp" className="hover:text-orange-500 transition-colors">MCP</a>
-            {' · '}
+          <p className="text-xs text-gray-400 flex items-center gap-2">
+            <a href="/llms.txt"  className="hover:text-orange-500 transition-colors">llms.txt</a>
+            <span>·</span>
             <a href="https://api.copantry.com" className="hover:text-orange-500 transition-colors">API</a>
-            {' · '}
+            <span>·</span>
             <a href="https://app.copantry.com" className="hover:text-orange-500 transition-colors">App</a>
           </p>
         </div>
