@@ -12,9 +12,10 @@ export default function CookieBanner() {
 
   function accept() {
     localStorage.setItem('copantry_cookie_consent', 'accepted')
-    // Now that consent is given, persist the current language choice
-    const lang = window.__i18n_instance?.language
-    if (lang) localStorage.setItem('copantry_lang', lang)
+    // Do NOT save the auto-detected language here — the user didn't explicitly
+    // choose it. Language is only written to localStorage when the user actively
+    // picks one in LanguageSwitcher. This prevents traveling to Italy and coming
+    // back to find the site stuck in Italian.
     setVisible(false)
   }
 

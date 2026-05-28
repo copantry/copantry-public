@@ -10,8 +10,14 @@ import es from './locales/es.json'
 
 const hasConsent = localStorage.getItem('copantry_cookie_consent') === 'accepted'
 
-// Without consent: ignore localStorage entirely — only use the browser locale.
-// With consent: respect the user's explicit stored choice, then fall back to browser locale.
+// Language detection strategy:
+//   - Always detect from navigator (the browser's actual locale setting).
+//   - With consent, also check localStorage FIRST so an explicit user choice
+//     (set via LanguageSwitcher) takes precedence over the browser locale.
+//   - Never auto-cache the detected language: caches:[] prevents i18next from
+//     writing the navigator-detected language into localStorage. The only time
+//     we write to localStorage is when the user actively picks a language in
+//     LanguageSwitcher, so traveling to Italy and coming back never gets you stuck.
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -22,7 +28,7 @@ i18n
     interpolation: { escapeValue: false },
     detection: {
       order: hasConsent ? ['localStorage', 'navigator'] : ['navigator'],
-      caches: hasConsent ? ['localStorage'] : [],
+      caches: [],  // never auto-write; only LanguageSwitcher writes explicitly
       lookupLocalStorage: 'copantry_lang',
     },
   })
