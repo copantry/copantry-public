@@ -238,7 +238,7 @@ export default function HomePage() {
               </p>
               <ul className="mt-6 space-y-2.5">
                 {[
-                  '"Plan a waste-free week using what's in my pantry"',
+                  '"Plan a waste-free week using what’s in my pantry"',
                   '"Add 3 eggs and 500g chicken breast to my pantry"',
                   '"Schedule risotto for dinner on Friday"',
                   '"Generate my shopping list for next week"',
