@@ -22,8 +22,8 @@ export default function Footer() {
     [t('footer.company')]: [
       { label: t('footer.links.privacy'), href: '/privacy' },
       { label: t('footer.links.terms'), href: '/terms' },
-      { label: t('footer.links.investors'), href: 'mailto:investors@copantry.com' },
-      { label: t('footer.links.contact'), href: 'mailto:hello@copantry.com' },
+      { label: t('footer.links.investors'), onClick: () => { const p = ['info', 'copantry.com']; window.location.href = `mailto:${p[0]}@${p[1]}` } },
+      { label: t('footer.links.contact'), onClick: () => { const p = ['hello', 'copantry.com']; window.location.href = `mailto:${p[0]}@${p[1]}` } },
     ],
   }
 
@@ -51,12 +51,16 @@ export default function Footer() {
             <div key={section}>
               <p className="text-xs font-black text-gray-400 uppercase tracking-widest mb-3">{section}</p>
               <ul className="space-y-2">
-                {items.map(({ label, href, to }) => (
+                {items.map(({ label, href, to, onClick }) => (
                   <li key={label}>
                     {to ? (
                       <Link to={to} className="text-sm text-gray-600 hover:text-orange-600 transition-colors font-medium">
                         {label}
                       </Link>
+                    ) : onClick ? (
+                      <button onClick={onClick} className="text-sm text-gray-600 hover:text-orange-600 transition-colors font-medium cursor-pointer">
+                        {label}
+                      </button>
                     ) : (
                       <a href={href} className="text-sm text-gray-600 hover:text-orange-600 transition-colors font-medium">
                         {label}

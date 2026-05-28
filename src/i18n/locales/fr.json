@@ -97,8 +97,7 @@
         "point2_desc": "Chaque membre qui rejoint augmente la valeur des données partagées du garde-manger, du calendrier et des courses.",
         "point3_title": "Modèle de revenus API-first",
         "point3_desc": "Les abonnements évoluent avec l'usage IA. Les développeurs sur le serveur MCP CoPantry génèrent des revenus API récurrents.",
-        "investors_cta": "Demandes investisseurs",
-        "investors_email": "investors@copantry.com"
+        "investors_cta": "Demandes investisseurs"
       },
       "spotlight": {
         "eyebrow": "Pour les développeurs & utilisateurs IA",

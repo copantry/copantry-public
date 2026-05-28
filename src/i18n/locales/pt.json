@@ -97,8 +97,7 @@
         "point2_desc": "Cada membro que se junta aumenta o valor dos dados partilhados de despensa, calendário e compras para toda a família.",
         "point3_title": "Modelo de receita API-first",
         "point3_desc": "Os planos escalam com o uso da IA. Os programadores que constroem no servidor MCP do CoPantry geram receita API recorrente.",
-        "investors_cta": "Contacto para investidores",
-        "investors_email": "investors@copantry.com"
+        "investors_cta": "Contacto para investidores"
       },
       "spotlight": {
         "eyebrow": "Para programadores e utilizadores avançados de IA",

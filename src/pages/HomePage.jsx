@@ -250,12 +250,12 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <a
-              href={`mailto:${t('home.platform.investors_email')}`}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-orange-400 hover:text-orange-300 transition-colors"
+            <button
+              onClick={() => { const p = ['info', 'copantry.com']; window.location.href = `mailto:${p[0]}@${p[1]}` }}
+              className="inline-flex items-center gap-2 text-sm font-semibold text-orange-400 hover:text-orange-300 transition-colors cursor-pointer"
             >
-              {t('home.platform.investors_cta')} → {t('home.platform.investors_email')}
-            </a>
+              {t('home.platform.investors_cta')} →
+            </button>
           </div>
         </div>
       </section>
