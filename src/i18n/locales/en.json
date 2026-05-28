@@ -1,0 +1,249 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "developers": "For developers",
+      "signin": "Sign in",
+      "signup": "Get started free"
+    },
+    "cookie": {
+      "message": "We store your language preference in your browser to improve your experience.",
+      "accept": "That's fine",
+      "decline": "No thanks"
+    },
+    "footer": {
+      "tagline": "Smart recipe management for modern households.",
+      "product": "Product",
+      "developers": "Developers",
+      "company": "Company",
+      "copyright": "© {{year}} CoPantry. All rights reserved.",
+      "links": {
+        "features": "Features",
+        "pricing": "Pricing",
+        "ai_mcp": "AI & MCP",
+        "android": "Android App",
+        "mcp_docs": "MCP Server Docs",
+        "api_ref": "API Reference",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "investors": "Investors",
+        "contact": "Contact"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Free to start · Cancel anytime",
+        "title1": "Your whole kitchen,",
+        "title2": "perfectly organised",
+        "subtitle": "CoPantry collects your recipes, tracks your pantry, and plans your meals — so you save time, waste less food, and always know what to cook next.",
+        "cta_primary": "Start cooking for free",
+        "cta_secondary": "For developers",
+        "social_proof": "Loved by households worldwide"
+      },
+      "trust": {
+        "gdpr": "GDPR-friendly",
+        "gdpr_sub": "Your data stays yours, always",
+        "available": "Works everywhere",
+        "available_sub": "Web, mobile, and AI assistants",
+        "sharing": "Household sharing",
+        "sharing_sub": "Multiple members, one pantry"
+      },
+      "features": {
+        "eyebrow": "Everything you need",
+        "title": "One app for your entire kitchen",
+        "subtitle": "From saving a recipe to filling your cart — everything in one place.",
+        "ai_import_title": "AI Recipe Import",
+        "ai_import_desc": "Paste a URL, take a photo, or copy raw text — AI extracts every ingredient and step in seconds. Supports YouTube, Instagram, TikTok, and 50,000+ recipe sites.",
+        "pantry_title": "Smart Pantry",
+        "pantry_desc": "Track what you have with expiry dates. Get alerts before food goes bad. Cook from what you already own with zero-waste recipe suggestions.",
+        "calendar_title": "Meal Calendar",
+        "calendar_desc": "Plan breakfast, lunch, and dinner for the whole household. Confirm meals to auto-deduct ingredients from your pantry — no manual updates.",
+        "shopping_title": "Shopping Lists",
+        "shopping_desc": "Generate shopping lists from your meal plan in one tap. Share with family members in real time.",
+        "multilingual_title": "Any Language",
+        "multilingual_desc": "Collect recipes from Italian blogs, Japanese cookbooks, French magazines. The recipe stays in its original language; the UI adapts to yours.",
+        "ai_title": "AI Assistant Ready",
+        "ai_desc": "Connect Claude, ChatGPT, or any MCP-compatible assistant to manage your kitchen by voice. Completely optional — the app works perfectly without it."
+      },
+      "how": {
+        "eyebrow": "Simple by design",
+        "title": "How it works",
+        "step1_title": "Collect your recipes",
+        "step1_desc": "Import from any URL, photo, or raw text. AI parses ingredients, steps, and timing automatically. Your entire cookbook in one place.",
+        "step2_title": "Plan your week",
+        "step2_desc": "Add recipes to your meal calendar. The pantry auto-updates when you confirm a meal. See your shopping list generate itself.",
+        "step3_title": "Level up with AI",
+        "step3_label": "optional",
+        "step3_desc": "Connect Claude or any MCP-compatible assistant to manage your kitchen by voice. Works great without it too."
+      },
+      "platform": {
+        "eyebrow": "Built for the AI era",
+        "title": "A platform, not just an app",
+        "subtitle": "CoPantry is infrastructure for the way households will interact with AI — starting with the kitchen.",
+        "stat1_value": "10",
+        "stat1_label": "MCP tools",
+        "stat2_value": "6",
+        "stat2_label": "Languages",
+        "stat3_value": "50K+",
+        "stat3_label": "Recipe sources",
+        "stat4_value": "99.9%",
+        "stat4_label": "API uptime",
+        "point1_title": "First-mover in kitchen AI",
+        "point1_desc": "As AI assistants become household staples, CoPantry is the integration layer between AI and your kitchen data.",
+        "point2_title": "Real household network effects",
+        "point2_desc": "Every member who joins increases the value of shared pantry, calendar, and shopping data for the whole family.",
+        "point3_title": "API-first revenue model",
+        "point3_desc": "Plans scale with AI usage. Developers building on CoPantry's MCP server drive recurring API revenue alongside household subscriptions.",
+        "investors_cta": "Investor enquiries",
+        "investors_email": "investors@copantry.com"
+      },
+      "spotlight": {
+        "eyebrow": "For developers & AI power users",
+        "optional_note": "Most users love CoPantry without ever touching this. For those who want it:",
+        "title1": "Your kitchen,",
+        "title2": "controlled by AI",
+        "desc": "Connect Claude Desktop, Cursor, or any MCP-compatible AI client to unlock hands-free kitchen management. 10 tools covering recipes, pantry, meal planning, and shopping.",
+        "cta_docs": "Read MCP docs",
+        "cta_key": "Get API key",
+        "examples": [
+          "\"Plan a waste-free week using what's in my pantry\"",
+          "\"Add 3 eggs and 500g chicken breast to my pantry\"",
+          "\"Schedule risotto for dinner on Friday\"",
+          "\"Generate my shopping list for next week\""
+        ],
+        "tools_note": "10 tools available · Works with Claude, Cursor, Windsurf, and npx"
+      },
+      "pricing": {
+        "eyebrow": "Simple pricing",
+        "title": "Start free, scale with your household",
+        "subtitle": "Every plan includes unlimited recipes and household members.",
+        "ai_note": "AI action limits apply per month. Recipes, pantry, and calendar are always unlimited.",
+        "full_compare": "Full comparison",
+        "ai_actions": "AI actions/mo",
+        "most_popular": "Most Popular",
+        "get_started": "Get started",
+        "free": "Free"
+      },
+      "cta": {
+        "title": "Your kitchen is waiting",
+        "subtitle": "Join thousands of households who plan smarter, waste less, and cook better — with or without an AI assistant.",
+        "primary": "Create your free account",
+        "secondary": "Explore developer docs",
+        "proof1": "Free forever plan",
+        "proof2": "No credit card required",
+        "proof3": "Cancel anytime"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Simple, transparent pricing",
+      "title": "Scale with your household",
+      "subtitle": "All plans include unlimited recipes, pantry, and meal planning. AI action limits only apply to AI assistant usage.",
+      "most_popular": "Most Popular",
+      "ai_actions": "AI actions/month",
+      "forever": "forever",
+      "per_month": "/ month",
+      "always_included": "Included on every plan",
+      "faq_title": "Pricing FAQ",
+      "not_sure_title": "Not sure which plan?",
+      "not_sure_desc": "Start on the free Hobbyist plan — no credit card required. Upgrade whenever you're ready.",
+      "start_free": "Start for free",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyist",
+          "cta": "Start for free",
+          "features": [
+            "Unlimited recipes",
+            "Unlimited pantry items",
+            "Meal calendar",
+            "Shopping lists",
+            "1 household",
+            "200 AI actions/month",
+            "Community support"
+          ]
+        },
+        "home": {
+          "name": "Home",
+          "cta": "Get Home",
+          "features": [
+            "Everything in Hobbyist",
+            "3,000 AI actions/month",
+            "Household sharing (up to 4)",
+            "Priority support"
+          ]
+        },
+        "family": {
+          "name": "Family",
+          "cta": "Get Family",
+          "features": [
+            "Everything in Home",
+            "10,000 AI actions/month",
+            "Unlimited household members",
+            "Multiple households",
+            "Priority support"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Get Builder",
+          "features": [
+            "Everything in Family",
+            "60,000 AI actions/month",
+            "API key management dashboard",
+            "Dedicated support"
+          ]
+        }
+      },
+      "included": [
+        "Unlimited recipes — import as many as you want",
+        "Unlimited pantry items and shopping lists",
+        "AI assistant access on all plans",
+        "Household sharing on all paid plans"
+      ],
+      "faq": [
+        {
+          "q": "What counts as an AI action?",
+          "a": "Every tool invocation from an MCP client (Claude, Cursor, npx, or raw HTTP) counts as one action. Simply viewing the app or importing a recipe from the browser does not consume AI actions."
+        },
+        {
+          "q": "What happens when I hit the monthly limit?",
+          "a": "AI tool calls will return a 429 response. Your app usage (recipes, pantry, meal planning in the browser) is never affected. Upgrade any time to restore access immediately."
+        },
+        {
+          "q": "Can I change plans at any time?",
+          "a": "Yes. Upgrades take effect immediately and are prorated. Downgrades take effect at the end of the current billing period."
+        },
+        {
+          "q": "Is there an annual billing option?",
+          "a": "Annual billing with a 20% discount is coming soon. Subscribe to our newsletter to be notified."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "Not a developer?",
+      "user_intro_title": "You don't need this to use CoPantry.",
+      "user_intro_desc": "CoPantry is a recipe and meal planning app that anyone can use from a browser or phone. This page explains how to optionally connect an AI assistant like Claude to control CoPantry by voice. It's a power feature — the app works perfectly without it.",
+      "user_intro_skip": "Just want to manage recipes?",
+      "user_intro_link": "Go straight to the app →",
+      "setup_title": "Setup guide",
+      "setup_subtitle": "Three steps to connect your AI assistant to CoPantry.",
+      "step1_title": "Create an API key",
+      "step1_desc": "Log in to CoPantry and go to Settings → AI & MCP. Name your key (e.g. \"Claude Desktop\"), then copy it — it is only shown once.",
+      "step1_btn": "Open API key settings",
+      "step2_title": "Configure your MCP client",
+      "step3_title": "Start asking questions",
+      "step3_desc": "Restart your MCP client (Claude Desktop requires a full restart). Then try:",
+      "step3_example": "\"Search my CoPantry recipes for something with chicken and schedule it for dinner tomorrow.\"",
+      "tools_title": "Tool Reference",
+      "ready_title": "Ready to connect your AI?",
+      "ready_desc": "Create your API key in 30 seconds and let your AI assistant take control of your kitchen.",
+      "ready_btn": "Get API key at app.copantry.com",
+      "ready_note": "Free plan includes 200 AI actions/month · No credit card required",
+      "what_ai_title": "What your AI assistant can do",
+      "what_ai_subtitle": "Once connected, your AI assistant can handle these requests without you opening the app:",
+      "starter_prompt_label": "Starter prompt"
+    }
+  }
+}

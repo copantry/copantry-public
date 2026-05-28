@@ -1,0 +1,249 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Funcionalidades",
+      "pricing": "Precios",
+      "developers": "Para desarrolladores",
+      "signin": "Iniciar sesión",
+      "signup": "Empezar gratis"
+    },
+    "cookie": {
+      "message": "Guardamos tu preferencia de idioma en el navegador para mejorar tu experiencia.",
+      "accept": "De acuerdo",
+      "decline": "No, gracias"
+    },
+    "footer": {
+      "tagline": "Gestión inteligente de recetas para hogares modernos.",
+      "product": "Producto",
+      "developers": "Desarrolladores",
+      "company": "Empresa",
+      "copyright": "© {{year}} CoPantry. Todos los derechos reservados.",
+      "links": {
+        "features": "Funcionalidades",
+        "pricing": "Precios",
+        "ai_mcp": "IA & MCP",
+        "android": "App Android",
+        "mcp_docs": "Documentación MCP",
+        "api_ref": "Referencia API",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Política de privacidad",
+        "terms": "Términos de servicio",
+        "investors": "Inversores",
+        "contact": "Contacto"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Gratis para empezar · Cancela cuando quieras",
+        "title1": "Toda tu cocina,",
+        "title2": "perfectamente organizada",
+        "subtitle": "CoPantry recopila tus recetas, hace seguimiento de tu despensa y planifica tus comidas — para ahorrar tiempo, desperdiciar menos y saber siempre qué cocinar.",
+        "cta_primary": "Empezar a cocinar gratis",
+        "cta_secondary": "Para desarrolladores",
+        "social_proof": "Amado por hogares de todo el mundo"
+      },
+      "trust": {
+        "gdpr": "Compatible con RGPD",
+        "gdpr_sub": "Tus datos siempre son tuyos",
+        "available": "Disponible en todas partes",
+        "available_sub": "Web, móvil y asistentes IA",
+        "sharing": "Uso compartido familiar",
+        "sharing_sub": "Varios miembros, una despensa"
+      },
+      "features": {
+        "eyebrow": "Todo lo que necesitas",
+        "title": "Una app para toda tu cocina",
+        "subtitle": "Desde guardar una receta hasta llenar el carrito — todo en un solo lugar.",
+        "ai_import_title": "Importación de recetas con IA",
+        "ai_import_desc": "Pega una URL, toma una foto o copia texto — la IA extrae cada ingrediente y cada paso en segundos. Compatible con YouTube, Instagram, TikTok y más de 50.000 sitios de recetas.",
+        "pantry_title": "Despensa inteligente",
+        "pantry_desc": "Controla lo que tienes con fechas de caducidad. Recibe alertas antes de que los alimentos se estropeen. Cocina con lo que ya tienes gracias a las sugerencias de cero desperdicio.",
+        "calendar_title": "Calendario de comidas",
+        "calendar_desc": "Planifica el desayuno, almuerzo y cena para todo el hogar. Confirma las comidas para actualizar automáticamente la despensa — sin actualizaciones manuales.",
+        "shopping_title": "Listas de la compra",
+        "shopping_desc": "Genera listas de la compra desde tu plan de comidas con un toque. Comparte con familiares en tiempo real.",
+        "multilingual_title": "Cualquier idioma",
+        "multilingual_desc": "Recopila recetas de blogs italianos, libros de cocina japoneses, revistas francesas. La receta permanece en su idioma original; la interfaz se adapta al tuyo.",
+        "ai_title": "Compatible con asistentes IA",
+        "ai_desc": "Conecta Claude, ChatGPT o cualquier asistente compatible con MCP para gestionar tu cocina por voz. Completamente opcional — la app funciona perfectamente sin ello."
+      },
+      "how": {
+        "eyebrow": "Simple por naturaleza",
+        "title": "Cómo funciona",
+        "step1_title": "Recopila tus recetas",
+        "step1_desc": "Importa desde cualquier URL, foto o texto. La IA analiza automáticamente ingredientes, pasos y tiempos. Todo tu recetario en un solo lugar.",
+        "step2_title": "Planifica tu semana",
+        "step2_desc": "Añade recetas a tu calendario de comidas. La despensa se actualiza automáticamente cuando confirmas una comida. Tu lista de la compra se genera sola.",
+        "step3_title": "Potencia con IA",
+        "step3_label": "opcional",
+        "step3_desc": "Conecta Claude o cualquier asistente compatible con MCP para gestionar tu cocina por voz. También funciona muy bien sin ello."
+      },
+      "platform": {
+        "eyebrow": "Construido para la era de la IA",
+        "title": "Una plataforma, no solo una app",
+        "subtitle": "CoPantry es la infraestructura para la forma en que los hogares interactuarán con la IA — empezando por la cocina.",
+        "stat1_value": "10",
+        "stat1_label": "Herramientas MCP",
+        "stat2_value": "6",
+        "stat2_label": "Idiomas",
+        "stat3_value": "50K+",
+        "stat3_label": "Fuentes de recetas",
+        "stat4_value": "99,9%",
+        "stat4_label": "Disponibilidad API",
+        "point1_title": "Pioneros en IA culinaria",
+        "point1_desc": "A medida que los asistentes IA se convierten en imprescindibles, CoPantry es la capa de integración entre la IA y los datos de tu cocina.",
+        "point2_title": "Efectos de red familiares reales",
+        "point2_desc": "Cada miembro que se une aumenta el valor de los datos compartidos de despensa, calendario y compras para toda la familia.",
+        "point3_title": "Modelo de ingresos API-first",
+        "point3_desc": "Los planes escalan con el uso de IA. Los desarrolladores que construyen sobre el servidor MCP de CoPantry generan ingresos API recurrentes.",
+        "investors_cta": "Consultas de inversores",
+        "investors_email": "investors@copantry.com"
+      },
+      "spotlight": {
+        "eyebrow": "Para desarrolladores y usuarios avanzados de IA",
+        "optional_note": "La mayoría de usuarios ama CoPantry sin tocar jamás esto. Para quienes lo deseen:",
+        "title1": "Tu cocina,",
+        "title2": "controlada por IA",
+        "desc": "Conecta Claude Desktop, Cursor o cualquier cliente MCP para una gestión de cocina manos libres. 10 herramientas para recetas, despensa, planificación y compras.",
+        "cta_docs": "Leer documentación MCP",
+        "cta_key": "Obtener clave API",
+        "examples": [
+          "\"Planifica una semana sin desperdicios con lo que tengo en la despensa\"",
+          "\"Añade 3 huevos y 500g de pechuga de pollo a mi despensa\"",
+          "\"Programa risotto para la cena del viernes\"",
+          "\"Genera mi lista de la compra para la próxima semana\""
+        ],
+        "tools_note": "10 herramientas disponibles · Compatible con Claude, Cursor, Windsurf y npx"
+      },
+      "pricing": {
+        "eyebrow": "Precios simples",
+        "title": "Empieza gratis, crece con tu hogar",
+        "subtitle": "Todos los planes incluyen recetas y miembros del hogar ilimitados.",
+        "ai_note": "Los límites de acciones de IA se aplican mensualmente. Recetas, despensa y calendario son siempre ilimitados.",
+        "full_compare": "Comparación completa",
+        "ai_actions": "acciones IA/mes",
+        "most_popular": "Más popular",
+        "get_started": "Empezar",
+        "free": "Gratis"
+      },
+      "cta": {
+        "title": "Tu cocina te espera",
+        "subtitle": "Únete a miles de hogares que planifican mejor, desperdician menos y cocinan más — con o sin asistente IA.",
+        "primary": "Crear tu cuenta gratuita",
+        "secondary": "Explorar documentación",
+        "proof1": "Plan gratuito para siempre",
+        "proof2": "Sin tarjeta de crédito",
+        "proof3": "Cancela cuando quieras"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Precios simples y transparentes",
+      "title": "Crece con tu hogar",
+      "subtitle": "Todos los planes incluyen recetas, despensa y planificación ilimitados. Los límites de acciones de IA solo se aplican al uso de asistentes IA.",
+      "most_popular": "Más popular",
+      "ai_actions": "acciones IA/mes",
+      "forever": "para siempre",
+      "per_month": "/ mes",
+      "always_included": "Incluido en todos los planes",
+      "faq_title": "Preguntas frecuentes sobre precios",
+      "not_sure_title": "¿No sabes qué plan elegir?",
+      "not_sure_desc": "Empieza con el plan Hobbyist gratuito — sin tarjeta de crédito. Actualiza cuando estés listo.",
+      "start_free": "Empezar gratis",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyist",
+          "cta": "Empezar gratis",
+          "features": [
+            "Recetas ilimitadas",
+            "Artículos de despensa ilimitados",
+            "Calendario de comidas",
+            "Listas de la compra",
+            "1 hogar",
+            "200 acciones IA/mes",
+            "Soporte de la comunidad"
+          ]
+        },
+        "home": {
+          "name": "Hogar",
+          "cta": "Elegir Hogar",
+          "features": [
+            "Todo lo de Hobbyist",
+            "3.000 acciones IA/mes",
+            "Uso compartido familiar (hasta 4)",
+            "Soporte prioritario"
+          ]
+        },
+        "family": {
+          "name": "Familia",
+          "cta": "Elegir Familia",
+          "features": [
+            "Todo lo de Hogar",
+            "10.000 acciones IA/mes",
+            "Miembros del hogar ilimitados",
+            "Varios hogares",
+            "Soporte prioritario"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Elegir Builder",
+          "features": [
+            "Todo lo de Familia",
+            "60.000 acciones IA/mes",
+            "Panel de gestión de claves API",
+            "Soporte dedicado"
+          ]
+        }
+      },
+      "included": [
+        "Recetas ilimitadas — importa todas las que quieras",
+        "Artículos de despensa y listas de la compra ilimitados",
+        "Acceso a asistentes IA en todos los planes",
+        "Uso compartido familiar en todos los planes de pago"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué cuenta como acción de IA?",
+          "a": "Cada invocación de herramienta desde un cliente MCP (Claude, Cursor, npx o HTTP directo) cuenta como una acción. Simplemente ver la app o importar una receta desde el navegador no consume acciones de IA."
+        },
+        {
+          "q": "¿Qué pasa cuando alcanzo el límite mensual?",
+          "a": "Las llamadas a herramientas de IA devolverán una respuesta 429. El uso de la app (recetas, despensa, planificación en el navegador) nunca se ve afectado. Actualiza en cualquier momento para restaurar el acceso inmediatamente."
+        },
+        {
+          "q": "¿Puedo cambiar de plan en cualquier momento?",
+          "a": "Sí. Las actualizaciones tienen efecto inmediato y se calculan de forma proporcional. Los cambios a planes inferiores tienen efecto al final del período de facturación actual."
+        },
+        {
+          "q": "¿Hay opción de facturación anual?",
+          "a": "La facturación anual con un 20% de descuento llegará pronto. Suscríbete a nuestro boletín para recibir notificación."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "¿No eres desarrollador?",
+      "user_intro_title": "No necesitas esto para usar CoPantry.",
+      "user_intro_desc": "CoPantry es una app de gestión de recetas y planificación de comidas que cualquiera puede usar desde el navegador o el móvil. Esta página explica cómo conectar opcionalmente un asistente IA como Claude. Es una función avanzada — la app funciona perfectamente sin ello.",
+      "user_intro_skip": "¿Solo quieres gestionar recetas?",
+      "user_intro_link": "Ir directamente a la app →",
+      "setup_title": "Guía de configuración",
+      "setup_subtitle": "Tres pasos para conectar tu asistente IA a CoPantry.",
+      "step1_title": "Crear una clave API",
+      "step1_desc": "Inicia sesión en CoPantry y ve a Ajustes → IA & MCP. Ponle un nombre a tu clave (ej. «Claude Desktop»), luego cópiala — solo se muestra una vez.",
+      "step1_btn": "Abrir ajustes de clave API",
+      "step2_title": "Configurar tu cliente MCP",
+      "step3_title": "Empezar a hacer preguntas",
+      "step3_desc": "Reinicia tu cliente MCP (Claude Desktop requiere un reinicio completo). Luego prueba:",
+      "step3_example": "\"Busca en mis recetas de CoPantry algo con pollo y prográmalo para la cena de mañana.\"",
+      "tools_title": "Referencia de herramientas",
+      "ready_title": "¿Listo para conectar tu IA?",
+      "ready_desc": "Crea tu clave API en 30 segundos y deja que tu asistente IA tome el control de tu cocina.",
+      "ready_btn": "Obtener clave API en app.copantry.com",
+      "ready_note": "El plan gratuito incluye 200 acciones IA/mes · Sin tarjeta de crédito",
+      "what_ai_title": "Lo que tu asistente IA puede hacer",
+      "what_ai_subtitle": "Una vez conectado, tu asistente IA puede gestionar estas solicitudes sin abrir la app:",
+      "starter_prompt_label": "Prompt inicial"
+    }
+  }
+}

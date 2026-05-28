@@ -1,0 +1,249 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "developers": "Pour les développeurs",
+      "signin": "Se connecter",
+      "signup": "Commencer gratuitement"
+    },
+    "cookie": {
+      "message": "Nous enregistrons votre préférence de langue dans votre navigateur pour améliorer votre expérience.",
+      "accept": "C'est parfait",
+      "decline": "Non merci"
+    },
+    "footer": {
+      "tagline": "La gestion intelligente des recettes pour les foyers modernes.",
+      "product": "Produit",
+      "developers": "Développeurs",
+      "company": "Entreprise",
+      "copyright": "© {{year}} CoPantry. Tous droits réservés.",
+      "links": {
+        "features": "Fonctionnalités",
+        "pricing": "Tarifs",
+        "ai_mcp": "IA & MCP",
+        "android": "Application Android",
+        "mcp_docs": "Documentation MCP",
+        "api_ref": "Référence API",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Politique de confidentialité",
+        "terms": "Conditions d'utilisation",
+        "investors": "Investisseurs",
+        "contact": "Contact"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Gratuit pour commencer · Annulez à tout moment",
+        "title1": "Toute votre cuisine,",
+        "title2": "parfaitement organisée",
+        "subtitle": "CoPantry collecte vos recettes, suit votre garde-manger et planifie vos repas — pour économiser du temps, gaspiller moins et toujours savoir quoi cuisiner.",
+        "cta_primary": "Commencer à cuisiner gratuitement",
+        "cta_secondary": "Pour les développeurs",
+        "social_proof": "Adoré par des foyers dans le monde entier"
+      },
+      "trust": {
+        "gdpr": "Conforme RGPD",
+        "gdpr_sub": "Vos données restent les vôtres, toujours",
+        "available": "Disponible partout",
+        "available_sub": "Web, mobile et assistants IA",
+        "sharing": "Partage familial",
+        "sharing_sub": "Plusieurs membres, un seul garde-manger"
+      },
+      "features": {
+        "eyebrow": "Tout ce dont vous avez besoin",
+        "title": "Une seule application pour toute votre cuisine",
+        "subtitle": "De la sauvegarde d'une recette au remplissage de votre panier — tout en un seul endroit.",
+        "ai_import_title": "Import de recettes par IA",
+        "ai_import_desc": "Collez une URL, prenez une photo ou copiez du texte — l'IA extrait chaque ingrédient et chaque étape en quelques secondes. Supporte YouTube, Instagram, TikTok et 50 000+ sites de recettes.",
+        "pantry_title": "Garde-manger intelligent",
+        "pantry_desc": "Suivez ce que vous avez avec les dates d'expiration. Recevez des alertes avant que la nourriture ne se gâte. Cuisinez avec ce que vous avez déjà grâce aux suggestions zéro gaspillage.",
+        "calendar_title": "Calendrier des repas",
+        "calendar_desc": "Planifiez le petit-déjeuner, le déjeuner et le dîner pour tout le foyer. Confirmez les repas pour déduire automatiquement les ingrédients de votre garde-manger.",
+        "shopping_title": "Listes de courses",
+        "shopping_desc": "Générez des listes de courses à partir de votre plan de repas en un geste. Partagez avec les membres de la famille en temps réel.",
+        "multilingual_title": "Toutes les langues",
+        "multilingual_desc": "Collectez des recettes de blogs italiens, de livres de cuisine japonais, de magazines français. La recette reste dans sa langue d'origine ; l'interface s'adapte à la vôtre.",
+        "ai_title": "Compatible assistants IA",
+        "ai_desc": "Connectez Claude, ChatGPT ou tout assistant compatible MCP pour gérer votre cuisine à la voix. Complètement optionnel — l'application fonctionne parfaitement sans."
+      },
+      "how": {
+        "eyebrow": "Simple par nature",
+        "title": "Comment ça marche",
+        "step1_title": "Collectez vos recettes",
+        "step1_desc": "Importez depuis n'importe quelle URL, photo ou texte brut. L'IA analyse automatiquement les ingrédients, les étapes et les temps. Tout votre livre de recettes en un seul endroit.",
+        "step2_title": "Planifiez votre semaine",
+        "step2_desc": "Ajoutez des recettes à votre calendrier de repas. Le garde-manger se met à jour automatiquement quand vous confirmez un repas. Votre liste de courses se génère toute seule.",
+        "step3_title": "Passez à la vitesse supérieure avec l'IA",
+        "step3_label": "optionnel",
+        "step3_desc": "Connectez Claude ou tout assistant compatible MCP pour gérer votre cuisine à la voix. Fonctionne très bien sans aussi."
+      },
+      "platform": {
+        "eyebrow": "Conçu pour l'ère de l'IA",
+        "title": "Une plateforme, pas juste une application",
+        "subtitle": "CoPantry est l'infrastructure pour la façon dont les foyers interagiront avec l'IA — en commençant par la cuisine.",
+        "stat1_value": "10",
+        "stat1_label": "Outils MCP",
+        "stat2_value": "6",
+        "stat2_label": "Langues",
+        "stat3_value": "50K+",
+        "stat3_label": "Sources de recettes",
+        "stat4_value": "99,9%",
+        "stat4_label": "Disponibilité API",
+        "point1_title": "Premier sur l'IA cuisine",
+        "point1_desc": "Les assistants IA devenant incontournables, CoPantry est la couche d'intégration entre l'IA et vos données de cuisine.",
+        "point2_title": "Effets de réseau familiaux réels",
+        "point2_desc": "Chaque membre qui rejoint augmente la valeur des données partagées du garde-manger, du calendrier et des courses.",
+        "point3_title": "Modèle de revenus API-first",
+        "point3_desc": "Les abonnements évoluent avec l'usage IA. Les développeurs sur le serveur MCP CoPantry génèrent des revenus API récurrents.",
+        "investors_cta": "Demandes investisseurs",
+        "investors_email": "investors@copantry.com"
+      },
+      "spotlight": {
+        "eyebrow": "Pour les développeurs & utilisateurs IA",
+        "optional_note": "La plupart des utilisateurs adorent CoPantry sans jamais toucher à ça. Pour ceux qui le souhaitent :",
+        "title1": "Votre cuisine,",
+        "title2": "contrôlée par l'IA",
+        "desc": "Connectez Claude Desktop, Cursor ou tout client MCP pour une gestion cuisine mains libres. 10 outils couvrant recettes, garde-manger, planification et courses.",
+        "cta_docs": "Lire la documentation MCP",
+        "cta_key": "Obtenir une clé API",
+        "examples": [
+          "« Planifie une semaine zéro gaspillage avec ce que j'ai dans mon garde-manger »",
+          "« Ajoute 3 œufs et 500g de poulet à mon garde-manger »",
+          "« Programme le risotto pour le dîner vendredi »",
+          "« Génère ma liste de courses pour la semaine prochaine »"
+        ],
+        "tools_note": "10 outils disponibles · Compatible Claude, Cursor, Windsurf et npx"
+      },
+      "pricing": {
+        "eyebrow": "Tarifs simples",
+        "title": "Commencez gratuitement, évoluez avec votre foyer",
+        "subtitle": "Chaque abonnement inclut des recettes et membres du foyer illimités.",
+        "ai_note": "Les limites d'actions IA s'appliquent par mois. Recettes, garde-manger et calendrier sont toujours illimités.",
+        "full_compare": "Comparaison complète",
+        "ai_actions": "actions IA/mois",
+        "most_popular": "Le plus populaire",
+        "get_started": "Commencer",
+        "free": "Gratuit"
+      },
+      "cta": {
+        "title": "Votre cuisine vous attend",
+        "subtitle": "Rejoignez des milliers de foyers qui planifient mieux, gaspillent moins et cuisinent davantage — avec ou sans assistant IA.",
+        "primary": "Créer votre compte gratuit",
+        "secondary": "Explorer la documentation",
+        "proof1": "Plan gratuit permanent",
+        "proof2": "Aucune carte bancaire requise",
+        "proof3": "Annulez à tout moment"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Tarifs simples et transparents",
+      "title": "Évoluez avec votre foyer",
+      "subtitle": "Tous les abonnements incluent recettes, garde-manger et planification illimités. Les limites d'actions IA s'appliquent uniquement à l'usage des assistants IA.",
+      "most_popular": "Le plus populaire",
+      "ai_actions": "actions IA/mois",
+      "forever": "pour toujours",
+      "per_month": "/ mois",
+      "always_included": "Inclus dans tous les abonnements",
+      "faq_title": "FAQ tarifs",
+      "not_sure_title": "Vous ne savez pas quel abonnement choisir ?",
+      "not_sure_desc": "Commencez avec le plan Hobbyist gratuit — aucune carte bancaire requise. Passez à la version supérieure quand vous êtes prêt.",
+      "start_free": "Commencer gratuitement",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyiste",
+          "cta": "Commencer gratuitement",
+          "features": [
+            "Recettes illimitées",
+            "Articles de garde-manger illimités",
+            "Calendrier des repas",
+            "Listes de courses",
+            "1 foyer",
+            "200 actions IA/mois",
+            "Support communautaire"
+          ]
+        },
+        "home": {
+          "name": "Maison",
+          "cta": "Choisir Maison",
+          "features": [
+            "Tout ce qui est dans Hobbyiste",
+            "3 000 actions IA/mois",
+            "Partage familial (jusqu'à 4)",
+            "Support prioritaire"
+          ]
+        },
+        "family": {
+          "name": "Famille",
+          "cta": "Choisir Famille",
+          "features": [
+            "Tout ce qui est dans Maison",
+            "10 000 actions IA/mois",
+            "Membres du foyer illimités",
+            "Plusieurs foyers",
+            "Support prioritaire"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Choisir Builder",
+          "features": [
+            "Tout ce qui est dans Famille",
+            "60 000 actions IA/mois",
+            "Tableau de bord de gestion des clés API",
+            "Support dédié"
+          ]
+        }
+      },
+      "included": [
+        "Recettes illimitées — importez autant que vous voulez",
+        "Articles de garde-manger et listes de courses illimités",
+        "Accès aux assistants IA sur tous les abonnements",
+        "Partage familial sur tous les abonnements payants"
+      ],
+      "faq": [
+        {
+          "q": "Qu'est-ce qu'une action IA ?",
+          "a": "Chaque appel d'outil depuis un client MCP (Claude, Cursor, npx ou HTTP brut) compte comme une action. La simple consultation de l'application ou l'import d'une recette depuis le navigateur ne consomme pas d'actions IA."
+        },
+        {
+          "q": "Que se passe-t-il si j'atteins la limite mensuelle ?",
+          "a": "Les appels d'outils IA renverront une réponse 429. Votre utilisation de l'application (recettes, garde-manger, planification dans le navigateur) n'est jamais affectée. Passez à la version supérieure à tout moment pour restaurer l'accès immédiatement."
+        },
+        {
+          "q": "Puis-je changer d'abonnement à tout moment ?",
+          "a": "Oui. Les mises à niveau prennent effet immédiatement et sont calculées au prorata. Les rétrogradations prennent effet à la fin de la période de facturation en cours."
+        },
+        {
+          "q": "Y a-t-il une option de facturation annuelle ?",
+          "a": "La facturation annuelle avec 20% de réduction arrive bientôt. Abonnez-vous à notre newsletter pour être notifié."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "Pas développeur ?",
+      "user_intro_title": "Vous n'avez pas besoin de ceci pour utiliser CoPantry.",
+      "user_intro_desc": "CoPantry est une application de gestion de recettes et de planification de repas que tout le monde peut utiliser depuis un navigateur ou un téléphone. Cette page explique comment connecter optionnellement un assistant IA comme Claude. C'est une fonctionnalité avancée — l'application fonctionne parfaitement sans.",
+      "user_intro_skip": "Vous voulez juste gérer des recettes ?",
+      "user_intro_link": "Aller directement à l'application →",
+      "setup_title": "Guide d'installation",
+      "setup_subtitle": "Trois étapes pour connecter votre assistant IA à CoPantry.",
+      "step1_title": "Créer une clé API",
+      "step1_desc": "Connectez-vous à CoPantry et allez dans Paramètres → IA & MCP. Nommez votre clé (ex. « Claude Desktop »), puis copiez-la — elle n'est affichée qu'une seule fois.",
+      "step1_btn": "Ouvrir les paramètres de clé API",
+      "step2_title": "Configurer votre client MCP",
+      "step3_title": "Commencer à poser des questions",
+      "step3_desc": "Redémarrez votre client MCP (Claude Desktop nécessite un redémarrage complet). Ensuite, essayez :",
+      "step3_example": "« Cherche dans mes recettes CoPantry quelque chose avec du poulet et programme-le pour le dîner demain. »",
+      "tools_title": "Référence des outils",
+      "ready_title": "Prêt à connecter votre IA ?",
+      "ready_desc": "Créez votre clé API en 30 secondes et laissez votre assistant IA prendre le contrôle de votre cuisine.",
+      "ready_btn": "Obtenir une clé API sur app.copantry.com",
+      "ready_note": "Le plan gratuit inclut 200 actions IA/mois · Aucune carte bancaire requise",
+      "what_ai_title": "Ce que votre assistant IA peut faire",
+      "what_ai_subtitle": "Une fois connecté, votre assistant IA peut gérer ces demandes sans que vous ouvriez l'application :",
+      "starter_prompt_label": "Invite de démarrage"
+    }
+  }
+}

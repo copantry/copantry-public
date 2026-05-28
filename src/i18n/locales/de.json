@@ -1,0 +1,249 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "developers": "Für Entwickler",
+      "signin": "Anmelden",
+      "signup": "Kostenlos starten"
+    },
+    "cookie": {
+      "message": "Wir speichern Ihre Sprachpräferenz im Browser, um Ihre Erfahrung zu verbessern.",
+      "accept": "In Ordnung",
+      "decline": "Nein danke"
+    },
+    "footer": {
+      "tagline": "Intelligentes Rezeptmanagement für moderne Haushalte.",
+      "product": "Produkt",
+      "developers": "Entwickler",
+      "company": "Unternehmen",
+      "copyright": "© {{year}} CoPantry. Alle Rechte vorbehalten.",
+      "links": {
+        "features": "Funktionen",
+        "pricing": "Preise",
+        "ai_mcp": "KI & MCP",
+        "android": "Android-App",
+        "mcp_docs": "MCP-Dokumentation",
+        "api_ref": "API-Referenz",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Datenschutz",
+        "terms": "Nutzungsbedingungen",
+        "investors": "Investoren",
+        "contact": "Kontakt"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Kostenlos starten · Jederzeit kündigen",
+        "title1": "Ihre gesamte Küche,",
+        "title2": "perfekt organisiert",
+        "subtitle": "CoPantry sammelt Ihre Rezepte, verfolgt Ihre Vorratskammer und plant Ihre Mahlzeiten — damit Sie Zeit sparen, weniger verschwenden und immer wissen, was Sie kochen sollen.",
+        "cta_primary": "Kostenlos mit dem Kochen beginnen",
+        "cta_secondary": "Für Entwickler",
+        "social_proof": "Von Haushalten weltweit geliebt"
+      },
+      "trust": {
+        "gdpr": "DSGVO-konform",
+        "gdpr_sub": "Ihre Daten gehören immer Ihnen",
+        "available": "Überall verfügbar",
+        "available_sub": "Web, Mobil und KI-Assistenten",
+        "sharing": "Haushaltsfreigabe",
+        "sharing_sub": "Mehrere Mitglieder, eine Vorratskammer"
+      },
+      "features": {
+        "eyebrow": "Alles, was Sie brauchen",
+        "title": "Eine App für Ihre gesamte Küche",
+        "subtitle": "Vom Speichern eines Rezepts bis zum Füllen des Warenkorbs — alles an einem Ort.",
+        "ai_import_title": "KI-Rezeptimport",
+        "ai_import_desc": "Fügen Sie eine URL ein, machen Sie ein Foto oder kopieren Sie Text — die KI extrahiert jeden Inhaltsstoff und jeden Schritt in Sekunden. Unterstützt YouTube, Instagram, TikTok und 50.000+ Rezeptseiten.",
+        "pantry_title": "Intelligente Vorratskammer",
+        "pantry_desc": "Behalten Sie den Überblick über Ihre Vorräte mit Ablaufdaten. Erhalten Sie Warnungen, bevor Lebensmittel schlecht werden. Kochen Sie mit dem, was Sie bereits haben.",
+        "calendar_title": "Mahlzeitenkalender",
+        "calendar_desc": "Planen Sie Frühstück, Mittag- und Abendessen für den gesamten Haushalt. Bestätigen Sie Mahlzeiten, um Zutaten automatisch aus der Vorratskammer abzuziehen.",
+        "shopping_title": "Einkaufslisten",
+        "shopping_desc": "Generieren Sie Einkaufslisten aus Ihrem Mahlzeitenplan mit einem Tipp. Teilen Sie sie mit Familienmitgliedern in Echtzeit.",
+        "multilingual_title": "Jede Sprache",
+        "multilingual_desc": "Sammeln Sie Rezepte von italienischen Blogs, japanischen Kochbüchern, französischen Magazinen. Das Rezept bleibt in seiner Originalsprache; die Benutzeroberfläche passt sich Ihrer an.",
+        "ai_title": "KI-Assistent-kompatibel",
+        "ai_desc": "Verbinden Sie Claude, ChatGPT oder jeden MCP-kompatiblen Assistenten, um Ihre Küche per Sprache zu verwalten. Völlig optional — die App funktioniert auch ohne perfekt."
+      },
+      "how": {
+        "eyebrow": "Einfach von Natur aus",
+        "title": "So funktioniert es",
+        "step1_title": "Rezepte sammeln",
+        "step1_desc": "Importieren Sie von einer URL, einem Foto oder Text. Die KI analysiert automatisch Zutaten, Schritte und Zeiten. Ihr gesamtes Rezeptbuch an einem Ort.",
+        "step2_title": "Woche planen",
+        "step2_desc": "Fügen Sie Rezepte zum Mahlzeitenkalender hinzu. Die Vorratskammer wird automatisch aktualisiert, wenn Sie eine Mahlzeit bestätigen. Ihre Einkaufsliste erstellt sich von selbst.",
+        "step3_title": "Mit KI aufwerten",
+        "step3_label": "optional",
+        "step3_desc": "Verbinden Sie Claude oder einen MCP-kompatiblen Assistenten, um Ihre Küche per Sprache zu verwalten. Funktioniert auch ohne hervorragend."
+      },
+      "platform": {
+        "eyebrow": "Für das KI-Zeitalter gebaut",
+        "title": "Eine Plattform, nicht nur eine App",
+        "subtitle": "CoPantry ist die Infrastruktur für die Art und Weise, wie Haushalte mit KI interagieren werden — beginnend in der Küche.",
+        "stat1_value": "10",
+        "stat1_label": "MCP-Tools",
+        "stat2_value": "6",
+        "stat2_label": "Sprachen",
+        "stat3_value": "50K+",
+        "stat3_label": "Rezeptquellen",
+        "stat4_value": "99,9%",
+        "stat4_label": "API-Verfügbarkeit",
+        "point1_title": "Vorreiter bei Küchen-KI",
+        "point1_desc": "Da KI-Assistenten zum Haushaltsstandard werden, ist CoPantry die Integrationsschicht zwischen KI und Ihren Küchendaten.",
+        "point2_title": "Echte Haushaltsnetzwerkeffekte",
+        "point2_desc": "Jedes Mitglied, das beitritt, erhöht den Wert der gemeinsamen Vorratskammer, des Kalenders und der Einkaufsdaten für die gesamte Familie.",
+        "point3_title": "API-first-Einnahmemodell",
+        "point3_desc": "Pläne skalieren mit der KI-Nutzung. Entwickler, die auf CoPantrys MCP-Server aufbauen, generieren wiederkehrende API-Einnahmen.",
+        "investors_cta": "Investorenanfragen",
+        "investors_email": "investors@copantry.com"
+      },
+      "spotlight": {
+        "eyebrow": "Für Entwickler & KI-Power-User",
+        "optional_note": "Die meisten Nutzer lieben CoPantry, ohne das je zu berühren. Für alle, die es möchten:",
+        "title1": "Ihre Küche,",
+        "title2": "von KI gesteuert",
+        "desc": "Verbinden Sie Claude Desktop, Cursor oder einen MCP-kompatiblen KI-Client für eine freihändige Küchenverwaltung. 10 Tools für Rezepte, Vorratskammer, Mahlzeitenplanung und Einkauf.",
+        "cta_docs": "MCP-Dokumentation lesen",
+        "cta_key": "API-Schlüssel holen",
+        "examples": [
+          "»Plane eine verschwenderungsfreie Woche mit dem, was in meiner Vorratskammer ist«",
+          "»Füge 3 Eier und 500g Hühnerbrust zu meiner Vorratskammer hinzu«",
+          "»Plane Risotto für das Abendessen am Freitag«",
+          "»Erstelle meine Einkaufsliste für nächste Woche«"
+        ],
+        "tools_note": "10 Tools verfügbar · Funktioniert mit Claude, Cursor, Windsurf und npx"
+      },
+      "pricing": {
+        "eyebrow": "Einfache Preise",
+        "title": "Kostenlos starten, mit Ihrem Haushalt wachsen",
+        "subtitle": "Jeder Plan enthält unbegrenzte Rezepte und Haushaltsmitglieder.",
+        "ai_note": "KI-Aktionslimits gelten pro Monat. Rezepte, Vorratskammer und Kalender sind immer unbegrenzt.",
+        "full_compare": "Vollständiger Vergleich",
+        "ai_actions": "KI-Aktionen/Monat",
+        "most_popular": "Beliebteste",
+        "get_started": "Loslegen",
+        "free": "Kostenlos"
+      },
+      "cta": {
+        "title": "Ihre Küche wartet",
+        "subtitle": "Schließen Sie sich Tausenden von Haushalten an, die klüger planen, weniger verschwenden und besser kochen — mit oder ohne KI-Assistenten.",
+        "primary": "Kostenloses Konto erstellen",
+        "secondary": "Entwicklerdokumentation erkunden",
+        "proof1": "Dauerhaft kostenloser Plan",
+        "proof2": "Keine Kreditkarte erforderlich",
+        "proof3": "Jederzeit kündigen"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Einfache, transparente Preise",
+      "title": "Mit Ihrem Haushalt wachsen",
+      "subtitle": "Alle Pläne umfassen unbegrenzte Rezepte, Vorratskammer und Mahlzeitenplanung. KI-Aktionslimits gelten nur für die Nutzung von KI-Assistenten.",
+      "most_popular": "Beliebteste",
+      "ai_actions": "KI-Aktionen/Monat",
+      "forever": "für immer",
+      "per_month": "/ Monat",
+      "always_included": "In allen Plänen enthalten",
+      "faq_title": "Häufige Fragen zu Preisen",
+      "not_sure_title": "Nicht sicher, welcher Plan?",
+      "not_sure_desc": "Beginnen Sie mit dem kostenlosen Hobbyist-Plan — keine Kreditkarte erforderlich. Upgraden Sie, wenn Sie bereit sind.",
+      "start_free": "Kostenlos starten",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyist",
+          "cta": "Kostenlos starten",
+          "features": [
+            "Unbegrenzte Rezepte",
+            "Unbegrenzte Vorratskammerartikel",
+            "Mahlzeitenkalender",
+            "Einkaufslisten",
+            "1 Haushalt",
+            "200 KI-Aktionen/Monat",
+            "Community-Support"
+          ]
+        },
+        "home": {
+          "name": "Zuhause",
+          "cta": "Zuhause wählen",
+          "features": [
+            "Alles aus Hobbyist",
+            "3.000 KI-Aktionen/Monat",
+            "Haushaltsfreigabe (bis zu 4)",
+            "Vorrangiger Support"
+          ]
+        },
+        "family": {
+          "name": "Familie",
+          "cta": "Familie wählen",
+          "features": [
+            "Alles aus Zuhause",
+            "10.000 KI-Aktionen/Monat",
+            "Unbegrenzte Haushaltsmitglieder",
+            "Mehrere Haushalte",
+            "Vorrangiger Support"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Builder wählen",
+          "features": [
+            "Alles aus Familie",
+            "60.000 KI-Aktionen/Monat",
+            "API-Schlüssel-Verwaltungs-Dashboard",
+            "Dedizierter Support"
+          ]
+        }
+      },
+      "included": [
+        "Unbegrenzte Rezepte — importieren Sie so viele Sie möchten",
+        "Unbegrenzte Vorratskammerartikel und Einkaufslisten",
+        "KI-Assistenten-Zugang in allen Plänen",
+        "Haushaltsfreigabe in allen kostenpflichtigen Plänen"
+      ],
+      "faq": [
+        {
+          "q": "Was zählt als KI-Aktion?",
+          "a": "Jeder Tool-Aufruf von einem MCP-Client (Claude, Cursor, npx oder reines HTTP) zählt als eine Aktion. Das bloße Anzeigen der App oder das Importieren eines Rezepts im Browser verbraucht keine KI-Aktionen."
+        },
+        {
+          "q": "Was passiert, wenn ich das monatliche Limit erreiche?",
+          "a": "KI-Tool-Aufrufe geben eine 429-Antwort zurück. Ihre App-Nutzung (Rezepte, Vorratskammer, Mahlzeitenplanung im Browser) ist nie betroffen. Upgraden Sie jederzeit, um den Zugang sofort wiederherzustellen."
+        },
+        {
+          "q": "Kann ich den Plan jederzeit ändern?",
+          "a": "Ja. Upgrades werden sofort wirksam und anteilig berechnet. Downgrades werden am Ende des aktuellen Abrechnungszeitraums wirksam."
+        },
+        {
+          "q": "Gibt es eine jährliche Abrechnungsoption?",
+          "a": "Jährliche Abrechnung mit 20% Rabatt kommt bald. Abonnieren Sie unseren Newsletter, um benachrichtigt zu werden."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "Kein Entwickler?",
+      "user_intro_title": "Sie brauchen das nicht, um CoPantry zu nutzen.",
+      "user_intro_desc": "CoPantry ist eine Rezept- und Mahlzeitenplanungs-App, die jeder im Browser oder auf dem Handy nutzen kann. Diese Seite erklärt, wie man optional einen KI-Assistenten wie Claude verbindet. Es ist eine Power-User-Funktion — die App funktioniert auch ohne perfekt.",
+      "user_intro_skip": "Möchten Sie nur Rezepte verwalten?",
+      "user_intro_link": "Direkt zur App →",
+      "setup_title": "Einrichtungsanleitung",
+      "setup_subtitle": "Drei Schritte, um Ihren KI-Assistenten mit CoPantry zu verbinden.",
+      "step1_title": "API-Schlüssel erstellen",
+      "step1_desc": "Melden Sie sich bei CoPantry an und gehen Sie zu Einstellungen → KI & MCP. Benennen Sie Ihren Schlüssel (z.B. »Claude Desktop«), dann kopieren Sie ihn — er wird nur einmal angezeigt.",
+      "step1_btn": "API-Schlüssel-Einstellungen öffnen",
+      "step2_title": "MCP-Client konfigurieren",
+      "step3_title": "Fragen stellen",
+      "step3_desc": "Starten Sie Ihren MCP-Client neu (Claude Desktop benötigt einen vollständigen Neustart). Versuchen Sie dann:",
+      "step3_example": "»Suche in meinen CoPantry-Rezepten nach etwas mit Hühnchen und plane es für das Abendessen morgen.«",
+      "tools_title": "Tool-Referenz",
+      "ready_title": "Bereit, Ihre KI zu verbinden?",
+      "ready_desc": "Erstellen Sie Ihren API-Schlüssel in 30 Sekunden und lassen Sie Ihren KI-Assistenten Ihre Küche übernehmen.",
+      "ready_btn": "API-Schlüssel bei app.copantry.com holen",
+      "ready_note": "Kostenloser Plan enthält 200 KI-Aktionen/Monat · Keine Kreditkarte erforderlich",
+      "what_ai_title": "Was Ihr KI-Assistent tun kann",
+      "what_ai_subtitle": "Einmal verbunden, kann Ihr KI-Assistent diese Anfragen bearbeiten, ohne die App zu öffnen:",
+      "starter_prompt_label": "Starter-Prompt"
+    }
+  }
+}

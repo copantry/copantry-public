@@ -1,26 +1,32 @@
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import Logo from './Logo'
 
-const LINKS = {
-  Product: [
-    { label: 'Features', href: '/#features' },
-    { label: 'Pricing', to: '/pricing' },
-    { label: 'AI & MCP', to: '/mcp' },
-    { label: 'Android App', href: 'https://play.google.com/store/apps/details?id=com.copantry' },
-  ],
-  Developers: [
-    { label: 'MCP Server Docs', to: '/mcp' },
-    { label: 'API Reference', href: 'https://api.copantry.com/docs' },
-    { label: 'llms.txt', href: '/llms.txt' },
-    { label: 'robots.txt', href: '/robots.txt' },
-  ],
-  Company: [
-    { label: 'Privacy Policy', href: '/privacy' },
-    { label: 'Terms of Service', href: '/terms' },
-  ],
-}
-
 export default function Footer() {
+  const { t } = useTranslation()
+  const year = new Date().getFullYear()
+
+  const LINKS = {
+    [t('footer.product')]: [
+      { label: t('footer.links.features'), href: '/#features' },
+      { label: t('footer.links.pricing'), to: '/pricing' },
+      { label: t('footer.links.ai_mcp'), to: '/mcp' },
+      { label: t('footer.links.android'), href: 'https://play.google.com/store/apps/details?id=com.copantry' },
+    ],
+    [t('footer.developers')]: [
+      { label: t('footer.links.mcp_docs'), to: '/mcp' },
+      { label: t('footer.links.api_ref'), href: 'https://api.copantry.com/docs' },
+      { label: t('footer.links.llms_txt'), href: '/llms.txt' },
+      { label: t('footer.links.robots_txt'), href: '/robots.txt' },
+    ],
+    [t('footer.company')]: [
+      { label: t('footer.links.privacy'), href: '/privacy' },
+      { label: t('footer.links.terms'), href: '/terms' },
+      { label: t('footer.links.investors'), href: 'mailto:investors@copantry.com' },
+      { label: t('footer.links.contact'), href: 'mailto:hello@copantry.com' },
+    ],
+  }
+
   return (
     <footer className="bg-gray-50 border-t border-gray-100">
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-16">
@@ -30,7 +36,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Logo size="md" />
             <p className="mt-3 text-sm text-gray-500 leading-relaxed max-w-[240px]">
-              The recipe manager that speaks fluent AI. Collect, plan, and cook — with your AI assistant in the loop.
+              {t('footer.tagline')}
             </p>
             <div className="mt-4 flex items-center gap-2">
               <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-green-700 bg-green-50 border border-green-100 px-2.5 py-1 rounded-full">
@@ -65,10 +71,10 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-400">
-            © {new Date().getFullYear()} CoPantry. All rights reserved.
+            {t('footer.copyright', { year })}
           </p>
           <p className="text-xs text-gray-400">
-            <a href="https://www.copantry.com/mcp" className="hover:text-orange-500 transition-colors">MCP endpoint</a>
+            <a href="https://www.copantry.com/mcp" className="hover:text-orange-500 transition-colors">MCP</a>
             {' · '}
             <a href="https://api.copantry.com" className="hover:text-orange-500 transition-colors">API</a>
             {' · '}

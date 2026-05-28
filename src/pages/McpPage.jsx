@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import {
   Bot, Zap, Terminal, BookOpen, Refrigerator, Calendar, ShoppingCart,
   ChevronDown, ChevronRight, Copy, Check, ExternalLink, ArrowRight,
-  Key, Globe, Shield, Code2
+  Key, Globe, Shield, Code2, Info
 } from 'lucide-react'
 
 /* ─── Tool Definitions (GEO-optimised, verbose schemas) ─────────── */
@@ -373,11 +374,30 @@ function ToolCategory({ cat }) {
 
 export default function McpPage() {
   const [activeClient, setActiveClient] = useState('claude')
+  const { t } = useTranslation()
   const config = CLIENT_CONFIGS[activeClient]
   const totalTools = TOOLS.reduce((n, c) => n + c.tools.length, 0)
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
+
+      {/* ── Plain-English intro for non-developers ────────── */}
+      <div className="mb-10 bg-blue-50 border border-blue-100 rounded-2xl p-5 flex gap-4">
+        <Info size={20} className="text-blue-500 shrink-0 mt-0.5" />
+        <div>
+          <span className="inline-block text-[10px] font-black uppercase tracking-widest text-blue-500 bg-blue-100 px-2 py-0.5 rounded-full mb-1.5">
+            {t('mcp.user_intro_badge')}
+          </span>
+          <p className="font-bold text-gray-900 mb-1">{t('mcp.user_intro_title')}</p>
+          <p className="text-sm text-gray-600 leading-relaxed mb-2">{t('mcp.user_intro_desc')}</p>
+          <p className="text-sm text-gray-500">
+            {t('mcp.user_intro_skip')}{' '}
+            <a href="https://app.copantry.com/signup" className="text-orange-600 font-semibold hover:underline">
+              {t('mcp.user_intro_link')}
+            </a>
+          </p>
+        </div>
+      </div>
 
       {/* ── Hero ──────────────────────────────────────────── */}
       <div className="mb-12">
@@ -470,24 +490,22 @@ export default function McpPage() {
 
       {/* ── Setup guide ──────────────────────────────────── */}
       <section className="mb-12" id="setup">
-        <h2 className="text-2xl font-extrabold text-gray-900 mb-2">Setup guide</h2>
-        <p className="text-gray-500 mb-6">Three steps to connect your AI assistant to CoPantry.</p>
+        <h2 className="text-2xl font-extrabold text-gray-900 mb-2">{t('mcp.setup_title')}</h2>
+        <p className="text-gray-500 mb-6">{t('mcp.setup_subtitle')}</p>
 
         {/* Step 1 */}
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-3">
             <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-500 text-white text-xs font-black shrink-0">1</span>
-            <h3 className="font-bold text-gray-900">Create an API key</h3>
+            <h3 className="font-bold text-gray-900">{t('mcp.step1_title')}</h3>
           </div>
           <div className="ml-10 bg-orange-50 border border-orange-100 rounded-xl p-4">
-            <p className="text-sm text-gray-700 mb-3">
-              Log in to CoPantry and go to <strong>Settings → AI &amp; MCP</strong>, or click the button below. Name your key (e.g. "Claude Desktop"), then copy the key — it is only shown once.
-            </p>
+            <p className="text-sm text-gray-700 mb-3">{t('mcp.step1_desc')}</p>
             <a
               href="https://app.copantry.com/settings/mcp"
               className="inline-flex items-center gap-1.5 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-colors"
             >
-              <Key size={14} /> Open API key settings <ExternalLink size={13} />
+              <Key size={14} /> {t('mcp.step1_btn')} <ExternalLink size={13} />
             </a>
           </div>
         </div>
@@ -496,7 +514,7 @@ export default function McpPage() {
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-3">
             <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-500 text-white text-xs font-black shrink-0">2</span>
-            <h3 className="font-bold text-gray-900">Configure your MCP client</h3>
+            <h3 className="font-bold text-gray-900">{t('mcp.step2_title')}</h3>
           </div>
           <div className="ml-10">
             <div className="flex gap-1 bg-gray-100 p-1 rounded-xl w-fit mb-3">
@@ -519,12 +537,12 @@ export default function McpPage() {
         <div>
           <div className="flex items-center gap-3 mb-3">
             <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-500 text-white text-xs font-black shrink-0">3</span>
-            <h3 className="font-bold text-gray-900">Start asking questions</h3>
+            <h3 className="font-bold text-gray-900">{t('mcp.step3_title')}</h3>
           </div>
           <div className="ml-10 bg-gray-50 border border-gray-100 rounded-xl p-4">
-            <p className="text-sm text-gray-600">Restart your MCP client (Claude Desktop requires a full restart). Then try:</p>
+            <p className="text-sm text-gray-600">{t('mcp.step3_desc')}</p>
             <p className="mt-2 text-sm font-mono text-orange-700 italic bg-orange-50 border border-orange-100 rounded-lg px-3 py-2">
-              "Search my CoPantry recipes for something with chicken and schedule it for dinner tomorrow."
+              {t('mcp.step3_example')}
             </p>
           </div>
         </div>
@@ -534,7 +552,7 @@ export default function McpPage() {
       <section className="mb-12" id="tools">
         <div className="flex items-center justify-between mb-5">
           <div>
-            <h2 className="text-2xl font-extrabold text-gray-900">Tool Reference</h2>
+            <h2 className="text-2xl font-extrabold text-gray-900">{t('mcp.tools_title')}</h2>
             <p className="text-sm text-gray-500 mt-0.5">{totalTools} tools across {TOOLS.length} categories</p>
           </div>
           <span className="text-xs text-gray-400 bg-gray-50 border border-gray-100 px-3 py-1.5 rounded-full font-mono">
@@ -609,17 +627,15 @@ export default function McpPage() {
       {/* ── CTA ─────────────────────────────────────────── */}
       <div className="bg-orange-500 rounded-2xl p-8 text-center text-white">
         <Bot size={28} className="mx-auto mb-3 opacity-80" />
-        <h2 className="text-2xl font-extrabold mb-2">Ready to connect your AI?</h2>
-        <p className="text-orange-100 mb-6 max-w-md mx-auto text-sm">
-          Create your API key in 30 seconds and let your AI assistant take control of your kitchen.
-        </p>
+        <h2 className="text-2xl font-extrabold mb-2">{t('mcp.ready_title')}</h2>
+        <p className="text-orange-100 mb-6 max-w-md mx-auto text-sm">{t('mcp.ready_desc')}</p>
         <a
           href="https://app.copantry.com/settings/mcp"
           className="inline-flex items-center gap-2 px-6 py-3 bg-white text-orange-600 font-bold rounded-xl hover:bg-orange-50 transition-colors shadow-md"
         >
-          <Key size={16} /> Get API key at app.copantry.com <ExternalLink size={14} />
+          <Key size={16} /> {t('mcp.ready_btn')} <ExternalLink size={14} />
         </a>
-        <p className="text-xs text-orange-200 mt-3">Free plan includes 200 MCP calls/month · No credit card required</p>
+        <p className="text-xs text-orange-200 mt-3">{t('mcp.ready_note')}</p>
       </div>
     </div>
   )

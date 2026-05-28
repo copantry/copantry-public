@@ -1,17 +1,20 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, ExternalLink } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import Logo from './Logo'
-
-const NAV_LINKS = [
-  { label: 'Features', href: '/#features' },
-  { label: 'Pricing', to: '/pricing' },
-  { label: 'MCP / AI', to: '/mcp' },
-]
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function NavBar() {
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
+  const { t } = useTranslation()
+
+  const NAV_LINKS = [
+    { label: t('nav.features'), href: '/#features' },
+    { label: t('nav.pricing'), to: '/pricing' },
+    { label: t('nav.developers'), to: '/mcp' },
+  ]
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100 shadow-sm">
@@ -47,19 +50,20 @@ export default function NavBar() {
           )}
         </nav>
 
-        {/* Desktop CTAs */}
+        {/* Desktop CTAs + Language */}
         <div className="hidden md:flex items-center gap-2">
+          <LanguageSwitcher />
           <a
             href="https://app.copantry.com/login"
             className="px-4 py-2 text-sm font-semibold text-gray-600 hover:text-gray-900 transition-colors"
           >
-            Sign in
+            {t('nav.signin')}
           </a>
           <a
             href="https://app.copantry.com/signup"
             className="flex items-center gap-1.5 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-colors shadow-sm"
           >
-            Start for free <ExternalLink size={13} />
+            {t('nav.signup')} <ExternalLink size={13} />
           </a>
         </div>
 
@@ -98,17 +102,20 @@ export default function NavBar() {
             )
           )}
           <div className="pt-2 border-t border-gray-100 flex flex-col gap-2 mt-2">
+            <div className="flex justify-center py-1">
+              <LanguageSwitcher />
+            </div>
             <a
               href="https://app.copantry.com/login"
               className="block text-center px-4 py-2.5 border border-gray-200 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-50"
             >
-              Sign in
+              {t('nav.signin')}
             </a>
             <a
               href="https://app.copantry.com/signup"
               className="block text-center px-4 py-2.5 bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-colors"
             >
-              Start for free
+              {t('nav.signup')}
             </a>
           </div>
         </div>
