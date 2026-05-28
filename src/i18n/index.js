@@ -10,6 +10,8 @@ import es from './locales/es.json'
 
 const hasConsent = localStorage.getItem('copantry_cookie_consent') === 'accepted'
 
+// Without consent: ignore localStorage entirely — only use the browser locale.
+// With consent: respect the user's explicit stored choice, then fall back to browser locale.
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -19,7 +21,7 @@ i18n
     supportedLngs: ['en', 'fr', 'it', 'pt', 'de', 'es'],
     interpolation: { escapeValue: false },
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: hasConsent ? ['localStorage', 'navigator'] : ['navigator'],
       caches: hasConsent ? ['localStorage'] : [],
       lookupLocalStorage: 'copantry_lang',
     },
