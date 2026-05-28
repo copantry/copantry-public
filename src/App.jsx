@@ -2,6 +2,7 @@ import './i18n'
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Suspense } from 'react'
+import ScrollToTop from './components/ScrollToTop'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
@@ -18,6 +19,7 @@ export default function App() {
   return (
     <Suspense fallback={null}>
       <div className="min-h-screen flex flex-col">
+        <ScrollToTop />
         <NavBar />
         <main className="flex-1">
           <Routes>
