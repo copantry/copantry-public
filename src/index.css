@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-logo: 'Poppins', sans-serif;
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  @apply bg-white text-gray-900 antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient mesh background for hero */
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(249, 115, 22, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
+    #ffffff;
+}
+
+/* Subtle animated gradient for feature cards */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.1);
+}
+
+/* Code block styling */
+.code-block {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+}
+
+/* Tool schema grid */
+.tool-param {
+  @apply font-mono text-xs;
+}
+
+/* Scroll margin for anchor links */
+[id] {
+  scroll-margin-top: 80px;
+}
