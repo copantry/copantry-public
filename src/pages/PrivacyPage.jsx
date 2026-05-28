@@ -89,6 +89,7 @@ export default function PrivacyPage() {
         <UL items={[
           'Account and content data: retained for as long as your account is active. If you delete your account, we will delete your personal data within 30 days, except where we are required to retain it for legal or financial compliance.',
           'Server logs: deleted after 30 days.',
+          'In-app notifications: automatically purged after 90 days.',
           'Backups: encrypted backups are retained for up to 90 days and then purged.',
         ]} />
       </Section>
