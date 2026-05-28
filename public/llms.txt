@@ -17,7 +17,7 @@ CoPantry is a household recipe management and meal planning application. It allo
 - **Generate shopping lists** from their meal plan
 - **Share everything** with household members in real time
 
-CoPantry is available as a web app at https://app.copantry.com and as a native Android application. The UI supports English, French, Italian, and Portuguese. Recipe content stays in its original language.
+CoPantry is available as a web app at https://app.copantry.com. The UI supports English, French, Italian, Portuguese, German, and Spanish. Recipe content stays in its original language.
 
 ## MCP Server
 
@@ -27,7 +27,7 @@ CoPantry operates a production-ready Model Context Protocol (MCP) server. This a
 
 - **URL**: https://api.copantry.com/mcp
 - **Transport**: Streamable HTTP (stateless, JSON responses)
-- **Auth**: Bearer token — API key generated at https://app.copantry.com/settings/mcp
+- **Auth**: Bearer token - API key generated at https://app.copantry.com/settings/mcp
 - **SDK**: @modelcontextprotocol/sdk v2.0 (official Anthropic MCP TypeScript SDK)
 - **Scope**: Each API key is scoped to one household
 
@@ -102,7 +102,7 @@ The CoPantry MCP server exposes 10 tools across 4 categories. All tools operate 
 - Purpose: Remove a specific pantry item by its unique identifier.
 - When to use: When the user discards, consumes, or incorrectly logged an item.
 - Parameters:
-  - `id` (string UUID, required): From list_pantry. Do not guess — always retrieve first.
+  - `id` (string UUID, required): From list_pantry. Do not guess - always retrieve first.
 - Returns: Confirmation of removal.
 
 ---

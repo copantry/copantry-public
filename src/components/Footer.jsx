@@ -2,11 +2,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Logo from './Logo'
 
-function openMail(user) {
-  window.location.href = `mailto:${user}@copantry.com`
-}
-
-export default function Footer() {
+export default function Footer({ onContact }) {
   const { t } = useTranslation()
   const year = new Date().getFullYear()
 
@@ -20,10 +16,10 @@ export default function Footer() {
       { label: t('footer.links.mcp_docs'), to: '/mcp' },
     ],
     [t('footer.company')]: [
-      { label: t('footer.links.privacy'),    to: '/privacy' },
-      { label: t('footer.links.terms'),      to: '/terms' },
-      { label: t('footer.links.investors'),  onClick: () => openMail('info') },
-      { label: t('footer.links.contact'),    onClick: () => openMail('hello') },
+      { label: t('footer.links.privacy'),   to: '/privacy' },
+      { label: t('footer.links.terms'),     to: '/terms' },
+      { label: t('footer.links.investors'), onClick: () => onContact('investors') },
+      { label: t('footer.links.contact'),   onClick: () => onContact('contact') },
     ],
   }
 
