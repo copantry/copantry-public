@@ -21,7 +21,7 @@ export default function App() {
         <NavBar />
         <main className="flex-1">
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage onContact={setModal} />} />
             <Route path="/mcp" element={<McpPage />} />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />

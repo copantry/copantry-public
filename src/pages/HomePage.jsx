@@ -68,7 +68,7 @@ function PlanCard({ price, priceNote, aiCalls, highlight, ctaStyle, color, name,
 
 /* ─── Page ─────────────────────────────────────────────────── */
 
-export default function HomePage() {
+export default function HomePage({ onContact }) {
   const { t } = useTranslation()
 
   const features = FEATURE_META.map(({ key, icon, color, bg }) => ({
@@ -251,7 +251,7 @@ export default function HomePage() {
 
           <div className="text-center">
             <button
-              onClick={() => { const p = ['info', 'copantry.com']; window.location.href = `mailto:${p[0]}@${p[1]}` }}
+              onClick={() => onContact?.('investors')}
               className="inline-flex items-center gap-2 text-sm font-semibold text-orange-400 hover:text-orange-300 transition-colors cursor-pointer"
             >
               {t('home.platform.investors_cta')} →
