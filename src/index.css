@@ -1,18 +1,16 @@
 @import "tailwindcss";
+/* Brand tokens: @theme block registers CSS variables + Tailwind utility classes.
+   All hex values live only in shared/tokens.css — no other file may define brand colours. */
+@import "../design/tokens.css";
 
-:root {
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-logo: 'Poppins', sans-serif;
-  --color-orange-500: #f97316;
-  --color-orange-600: #ea580c;
-}
+/* ── Base ──────────────────────────────────────────────────────────────── */
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-body); /* --font-body from shared tokens */
   @apply bg-white text-gray-900 antialiased;
 }
 
@@ -20,34 +18,37 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Gradient mesh background for hero */
+/* ── Hero gradient ─────────────────────────────────────────────────────── */
+/*
+ * rgba() literals replaced with color-mix() so the glow colour tracks the
+ * CSS variable — if the brand colour changes, the gradient updates automatically.
+ * color-mix(in srgb, <source> <percentage>%, transparent) is equivalent to
+ * applying that opacity to the source colour.
+ */
 .hero-gradient {
   background:
-    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(249, 115, 22, 0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(124, 58, 237, 0.06) 0%, transparent 50%),
-    #ffffff;
+    radial-gradient(ellipse 80% 60% at 50% -10%,
+      color-mix(in srgb, var(--color-brand-500) 12%, transparent) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 20%,
+      color-mix(in srgb, var(--color-accent-calendar) 6%, transparent) 0%, transparent 50%),
+    white;
 }
 
-/* Subtle animated gradient for feature cards */
+/* ── Card hover lift ───────────────────────────────────────────────────── */
 .card-hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 32px -8px rgb(0 0 0 / 0.1);
 }
 
-/* Code block styling */
+/* ── Code block monospace ──────────────────────────────────────────────── */
 .code-block {
-  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+  font-family: var(--font-mono); /* --font-mono from shared tokens */
 }
 
-/* Tool schema grid */
-.tool-param {
-  @apply font-mono text-xs;
-}
-
-/* Scroll margin for anchor links */
+/* ── Anchor scroll offset ──────────────────────────────────────────────── */
 [id] {
   scroll-margin-top: 80px;
 }

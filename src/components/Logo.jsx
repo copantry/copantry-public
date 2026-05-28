@@ -15,8 +15,8 @@ export default function Logo({ size = 'md', asLink = true, className = '' }) {
     <span className={`flex items-center gap-2 select-none ${className}`}>
       <ChefHat size={icon} className="text-orange-500 shrink-0" />
       <span
-        className={`${text} leading-none`}
-        style={{ fontFamily: "'Poppins', sans-serif", letterSpacing: '-0.02em', color: '#111827' }}
+        className={`${text} leading-none text-gray-900`}
+        style={{ fontFamily: 'var(--font-logo)', letterSpacing: 'var(--logo-tracking)' }}
       >
         <span style={{ fontWeight: 600 }}>Co</span>
         <span style={{ fontWeight: 400 }}>Pantry</span>
