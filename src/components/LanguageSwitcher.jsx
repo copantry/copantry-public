@@ -23,11 +23,10 @@ export default function LanguageSwitcher({ className = '' }) {
   const ref = useRef(null)
 
   const current = LANGUAGES.find(l => l.code === i18n.language) ?? LANGUAGES[0]
-  const hasConsent = localStorage.getItem('copantry_cookie_consent') === 'accepted'
 
   function select(code) {
     i18n.changeLanguage(code)
-    if (hasConsent) localStorage.setItem('copantry_lang', code)
+    localStorage.setItem('copantry_lang', code)
     setOpen(false)
   }
 
