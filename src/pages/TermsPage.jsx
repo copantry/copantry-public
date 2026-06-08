@@ -138,6 +138,13 @@ export default function TermsPage() {
         </P>
       </Section>
 
+      <div className="mt-10 pt-6 border-t border-gray-100 text-xs text-gray-400 leading-relaxed">
+        <p className="font-semibold text-gray-500">Copantry Ltd</p>
+        <p>167-169 Great Portland Street, 5th Floor</p>
+        <p>London W1W 5PF</p>
+        <p className="mt-1">Registered in England &amp; Wales.</p>
+      </div>
+
     </div>
   )
 }

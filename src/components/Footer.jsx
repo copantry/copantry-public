@@ -70,9 +70,14 @@ export default function Footer({ onContact }) {
         </div>
 
         <div className="mt-10 pt-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-gray-400">
-            {t('footer.copyright', { year })}
-          </p>
+          <div className="flex flex-col gap-0.5">
+            <p className="text-xs text-gray-400">
+              {t('footer.copyright', { year })}
+            </p>
+            <p className="text-xs text-gray-400">
+              Registered in England &amp; Wales · 167-169 Great Portland Street, 5th Floor, London W1W 5PF
+            </p>
+          </div>
           <p className="text-xs text-gray-400 flex items-center gap-2">
             <a href="/llms.txt"  className="hover:text-orange-500 transition-colors">llms.txt</a>
             <span>·</span>
