@@ -49,7 +49,7 @@ CoPantry operates a production-ready Model Context Protocol (MCP) server. This a
 
 ### Available MCP Tools
 
-The CoPantry MCP server exposes 10 tools across 4 categories. All tools operate on the authenticated user's household data.
+The CoPantry MCP server exposes 44 tools across 6 categories. All tools operate on the authenticated user's household data. Every feature of CoPantry — creating, editing and importing recipes (from URL, text, photo or PDF); managing the pantry (by hand, in bulk, or from text/photos/receipts/PDFs); meal planning; shopping lists; collections; and leftovers — is available via MCP.
 
 ---
 
@@ -57,92 +57,287 @@ The CoPantry MCP server exposes 10 tools across 4 categories. All tools operate 
 
 **search_recipes**
 - Purpose: Search the household's recipe collection by title keyword and/or category.
-- When to use: To find recipes before retrieving full details, checking what's available, or suggesting meal options.
-- Parameters:
-  - `search` (string, optional): Partial or full recipe title match (case-insensitive).
-  - `category` (enum, optional): One of APPETISER, STARTER, MAIN, DESSERT, COCKTAIL, CAKE, SIDE, BREAKFAST, SOUP, SNACK.
-- Returns: Array of up to 20 recipe summaries with id, title, category, language, createdAt.
+- When to use: First, to find recipes before retrieving details, editing, or planning meals.
+- Parameters: `search` (string, optional), `category` (enum, optional: APPETISER, STARTER, MAIN, DESSERT, COCKTAIL, CAKE, SIDE, BREAKFAST, SOUP, SNACK), `limit` (number, optional, 1-50, default 20).
+- Returns: Array of recipe summaries with id, title, category, language, servings, prep/cook time, cuisine, image.
 
 **get_recipe_details**
-- Purpose: Retrieve a complete recipe including all ingredients (with quantities and units) and step-by-step instructions.
-- When to use: After search_recipes, when the user needs full recipe content before cooking or planning a meal.
-- Parameters:
-  - `id` (string UUID, required): Obtained from search_recipes or get_meal_plan.
-- Returns: Full recipe object with ingredients, instructions, servings, prepTime, cookTime, comments.
+- Purpose: Retrieve a complete recipe: ingredients, step-by-step / workflow instructions, nutrition, comments.
+- When to use: After search_recipes, before cooking, editing, or detailed questions.
+- Parameters: `id` (string UUID, required).
+- Returns: Full recipe object.
 
-**scrape_recipe**
-- Purpose: Queue a public URL for AI-powered recipe extraction. The recipe appears in the collection within ~60 seconds.
-- When to use: When the user wants to add a recipe from any website, YouTube video, Instagram, or TikTok post.
-- Parameters:
-  - `url` (string URL, required): Fully-qualified public URL of the recipe page.
+**create_recipe**
+- Purpose: Manually create a brand-new recipe from a title, ingredient list and method.
+- When to use: When the user dictates or types a recipe directly (not importing).
+- Parameters: `title` (string, required), `ingredients` (array of {name, quantity?, unit?}, required), `category` (enum, optional), `notes` (string, optional, instructions), `servings`/`prepTime`/`cookTime` (number, optional), `cuisine`/`language` (string, optional).
+- Returns: { success, recipeId, title }.
+
+**update_recipe**
+- Purpose: Edit a recipe's fields and/or replace its ingredient list. Creator or household OWNER only.
+- When to use: To change a recipe. Passing `ingredients` REPLACES the whole list — fetch current via get_recipe_details first.
+- Parameters: `id` (string UUID, required), plus any of title, notes, category, cuisine, servings, prepTime, cookTime, ingredients.
+- Returns: { success, recipeId }.
+
+**delete_recipe**
+- Purpose: Permanently delete a recipe. Creator or household OWNER only.
+- When to use: When the user wants to remove a recipe. Irreversible.
+- Parameters: `id` (string UUID, required).
+- Returns: { success: true }.
+
+**import_recipe_from_url**
+- Purpose: Queue a public URL for AI-powered recipe extraction (background, ~60s).
+- When to use: To add a recipe from a website, YouTube, Instagram, or TikTok.
+- Parameters: `url` (string URL, required).
 - Returns: Confirmation that the recipe has been queued.
+
+**import_recipe_from_text**
+- Purpose: Parse a block of pasted recipe text with AI and save it instantly (synchronous).
+- When to use: When the user pastes a full recipe as text.
+- Parameters: `text` (string, required, up to ~15000 chars).
+- Returns: { success, recipeId, title }.
+
+**import_recipe_from_image**
+- Purpose: Parse a recipe from a photo (cookbook page, card, screenshot) with vision AI and save it.
+- When to use: When the user supplies a recipe photo.
+- Parameters: `base64Image` (string, required, base64 or data: URL), `mimeType` (string, optional).
+- Returns: { success, recipeId, title }.
+
+**import_recipe_from_pdf**
+- Purpose: Parse a recipe from a PDF document with AI and save it.
+- When to use: When the user supplies a recipe PDF.
+- Parameters: `base64Pdf` (string, required, base64 or data: URL).
+- Returns: { success, recipeId, title }.
+
+**log_recipe_cooked**
+- Purpose: Record that a recipe was cooked (cook history + marks tested), with optional guests.
+- When to use: When the user cooked a dish outside the meal calendar.
+- Parameters: `id` (string UUID, required), `occasion` (string, optional), `guestNames` (string[], optional), `cookedAt` (string YYYY-MM-DD, optional).
+- Returns: { success, cookHistoryId }.
+
+**set_recipe_visibility**
+- Purpose: Set a recipe to PRIVATE, HOUSEHOLD, BRIGADE, or PUBLIC. Creator only.
+- When to use: When the user wants to share or unshare a recipe.
+- Parameters: `id` (string UUID, required), `visibility` (enum, required).
+- Returns: { success, visibility }.
+
+**estimate_recipe_macros**
+- Purpose: AI-estimate and save per-serving nutrition (calories, protein, carbs, fat, fibre). Cached.
+- When to use: When the user asks for a recipe's nutrition/macros.
+- Parameters: `id` (string UUID, required).
+- Returns: { calories, protein, carbs, fat, fiber }.
+
+**add_recipe_comment**
+- Purpose: Add a note, tweak, or tip to a recipe.
+- When to use: When the user wants to annotate a recipe.
+- Parameters: `id` (string UUID, required), `text` (string, required).
+- Returns: { success, commentId }.
 
 ---
 
 #### Category: Pantry
 
 **list_pantry**
-- Purpose: List all items currently in the household pantry, sorted by expiry date (soonest first).
-- When to use: To audit stock, plan waste-free meals, or answer "what do I have?" questions.
-- Parameters:
-  - `expiredOnly` (boolean, optional): If true, returns only expired items. Default: false.
-- Returns: Array of pantry items with id, ingredient name, quantity, unit, expiryDate.
+- Purpose: List pantry items, soonest-expiring first.
+- When to use: To audit stock, plan waste-free meals, or answer "what do I have?".
+- Parameters: `expiredOnly` (boolean, optional), `expiringInDays` (number, optional).
+- Returns: Array of items with id, name, ingredientId, quantity, unit, expiryDate.
 
 **add_pantry_item**
-- Purpose: Add a new ingredient to the household pantry with optional quantity, unit, and expiry date.
-- When to use: When the user has bought groceries or wants to log produce with an expiry date.
-- Parameters:
-  - `name` (string, required): Ingredient name, singular form. Server normalises casing and pluralisation.
-  - `quantity` (number, optional): Numeric amount (e.g. 500 for grams).
-  - `unit` (string, optional): Unit of measurement (e.g. "g", "ml", "cup", "piece").
-  - `expiryDate` (string YYYY-MM-DD, optional): ISO-8601 expiry date.
-- Returns: Confirmation with ingredient name, quantity, and unit.
+- Purpose: Add one ingredient with optional quantity, unit, expiry date.
+- When to use: To log a single ingredient.
+- Parameters: `name` (string, required), `quantity` (number|string, optional), `unit` (string, optional), `expiryDate` (string YYYY-MM-DD, optional).
+- Returns: { success, id, name }.
+
+**add_pantry_items**
+- Purpose: Add many pantry items in one call.
+- When to use: After a grocery shop, instead of repeated add_pantry_item calls.
+- Parameters: `items` (array of {name, quantity?, unit?, expiryDate?}, required).
+- Returns: { success, created, items }.
+
+**update_pantry_item**
+- Purpose: Update an item's quantity, unit, or expiry date.
+- When to use: To correct or adjust an item. Pass expiryDate: null to clear.
+- Parameters: `id` (string UUID, required), `quantity`/`unit`/`expiryDate` (optional).
+- Returns: { success, id, name, quantity, unit, expiryDate }.
 
 **delete_pantry_item**
-- Purpose: Remove a specific pantry item by its unique identifier.
-- When to use: When the user discards, consumes, or incorrectly logged an item.
-- Parameters:
-  - `id` (string UUID, required): From list_pantry. Do not guess - always retrieve first.
-- Returns: Confirmation of removal.
+- Purpose: Remove a pantry item by id.
+- When to use: When the user discards, consumes, or mis-logged an item. Get id from list_pantry.
+- Parameters: `id` (string UUID, required).
+- Returns: { success: true }.
+
+**import_pantry_from_text**
+- Purpose: Parse a typed grocery list with AI and add every detected item.
+- When to use: When the user types out what they bought.
+- Parameters: `text` (string, required).
+- Returns: { success, created, items }.
+
+**import_pantry_from_image**
+- Purpose: Parse a fridge/cupboard photo or receipt photo with vision AI and stock the pantry.
+- When to use: When the user supplies a photo of groceries.
+- Parameters: `base64Image` (string, required, base64 or data: URL), `mimeType` (string, optional).
+- Returns: { success, created, items }.
+
+**import_pantry_from_pdf**
+- Purpose: Parse a PDF receipt or grocery order with AI and stock the pantry.
+- When to use: When the user supplies a PDF receipt.
+- Parameters: `base64Pdf` (string, required, base64 or data: URL).
+- Returns: { success, created, items }.
+
+**estimate_pantry_expiry**
+- Purpose: Estimate a best-before window for a food item, optionally saving it to a pantry item.
+- When to use: To answer "how long does X keep?" or to date an undated item.
+- Parameters: `name` (string, required), `storage` (enum, optional), `ripeness` (enum, optional), `cut` (boolean, optional), `itemId` (string UUID, optional, saves the estimate).
+- Returns: { estimate: { minDays, maxDays, tip }, savedExpiryDate }.
 
 ---
 
 #### Category: Meal Planning
 
 **get_meal_plan**
-- Purpose: Retrieve planned meals for a date range from the household meal calendar.
-- When to use: Before scheduling new meals, or to answer "what are we eating this week?"
-- Parameters:
-  - `startDate` (string YYYY-MM-DD, optional): Defaults to today.
-  - `endDate` (string YYYY-MM-DD, optional): Defaults to 7 days from today.
-- Returns: Array of calendar entries with id (calendarId), date, mealType, isConfirmed, and recipe details.
+- Purpose: Retrieve planned meals and calendar notes for a date range.
+- When to use: Before scheduling, or to answer "what are we eating this week?". Omit dates for next 7 days.
+- Parameters: `startDate` (string YYYY-MM-DD, optional), `endDate` (string YYYY-MM-DD, optional).
+- Returns: { entries: [{ id (calendarId), date, mealType, isConfirmed, recipe }], notes }.
 
 **plan_meal**
-- Purpose: Schedule a specific recipe for lunch or dinner on a given date.
-- When to use: After the user approves a meal suggestion. Verify the recipe exists first.
-- Parameters:
-  - `recipeId` (string UUID, required): From search_recipes.
-  - `date` (string YYYY-MM-DD, required): Target date.
-  - `mealType` (enum, required): LUNCH or DINNER.
-- Returns: Confirmation with recipe title, meal type, and date.
+- Purpose: Schedule a recipe for lunch or dinner on a date; auto-creates a leftover entry.
+- When to use: After the user approves a suggestion. Verify the recipe first.
+- Parameters: `recipeId` (string UUID, required), `date` (string YYYY-MM-DD, required), `mealType` (enum: LUNCH|DINNER, required), `cookFor`/`partySize` (number, optional).
+- Returns: { success, calendarId, message }.
+
+**update_meal_plan**
+- Purpose: Change how many portions a planned meal is cooked for; recalculates the leftover.
+- When to use: When serving counts change.
+- Parameters: `calendarId` (string UUID, required), `cookFor` (number, required), `partySize` (number, optional).
+- Returns: { success: true }.
+
+**delete_meal_plan**
+- Purpose: Remove a planned meal (and its linked leftover) from the calendar.
+- When to use: To unschedule a meal.
+- Parameters: `calendarId` (string UUID, required).
+- Returns: { success: true }.
 
 **confirm_meal**
-- Purpose: Mark a planned meal as cooked and automatically deduct its ingredients from the pantry (FIFO by expiry date).
-- When to use: When the user has finished cooking. Deduction uses recipe's default quantities unless overridden.
-- Parameters:
-  - `calendarId` (string UUID, required): The meal calendar entry id from get_meal_plan.
-  - `consumedIngredients` (array, optional): Override of {ingredientId, quantity} pairs for actual amounts consumed.
-- Returns: Confirmation that the meal is confirmed and pantry is updated.
+- Purpose: Mark a meal cooked AND deduct its ingredients from the pantry (FIFO by expiry).
+- When to use: When the household actually cooked. Records cook history; marks recipe tested.
+- Parameters: `calendarId` (string UUID, required), `consumedIngredients` (array of {ingredientId, quantity}, optional), `guestNames` (string[], optional).
+- Returns: { success, message }.
+
+**discard_meal**
+- Purpose: Mark a meal done WITHOUT deducting any pantry stock (e.g. ate out).
+- When to use: When a planned meal happened but should not deduct ingredients.
+- Parameters: `calendarId` (string UUID, required).
+- Returns: { success: true }.
+
+**set_calendar_note**
+- Purpose: Add or replace a free-text note on a meal slot (one per date+mealType).
+- When to use: For slot notes like "Eating out" or "Use up the spinach".
+- Parameters: `date` (string YYYY-MM-DD, required), `mealType` (enum, required), `summary` (string, required).
+- Returns: { success, noteId }.
 
 ---
 
 #### Category: Shopping
 
 **get_shopping_lists**
-- Purpose: Retrieve all shopping lists for the household, including all line items.
-- When to use: When the user asks what to buy or wants to review their shopping plan.
+- Purpose: Retrieve all shopping lists with their line items.
+- When to use: When the user asks what to buy or is heading to the shop.
 - Parameters: None.
-- Returns: Array of shopping lists with name, createdAt, and items (name, quantity, unit, checked).
+- Returns: Array of lists with id, name, createdAt, items (name, quantity, unit, isChecked).
+
+**generate_shopping_list**
+- Purpose: Compute the grocery deficit between planned meals in a date range and current pantry stock.
+- When to use: To work out what still needs buying. Returns items only — follow with create_shopping_list to save.
+- Parameters: `startDate` (string YYYY-MM-DD, required), `endDate` (string YYYY-MM-DD, required).
+- Returns: { items: [{ name, quantity, unit }] }.
+
+**create_shopping_list**
+- Purpose: Save a new named shopping list with its items.
+- When to use: To persist a generated list, or build one by hand.
+- Parameters: `name` (string, required), `items` (array of {name, quantity?, unit?}, optional).
+- Returns: { success, shoppingListId, itemCount }.
+
+**add_shopping_list_item**
+- Purpose: Add one item to an existing shopping list.
+- When to use: To append to a list.
+- Parameters: `shoppingListId` (string UUID, required), `name` (string, required), `quantity`/`unit` (optional).
+- Returns: { success, itemId }.
+
+**update_shopping_list_item**
+- Purpose: Rename, re-quantify, or check/uncheck a shopping list item.
+- When to use: To tick items off or edit them.
+- Parameters: `id` (string UUID, required), `name`/`quantity`/`unit` (optional), `isChecked` (boolean, optional).
+- Returns: { success, id, isChecked }.
+
+**delete_shopping_list**
+- Purpose: Delete an entire shopping list and its items.
+- When to use: When a list is no longer needed.
+- Parameters: `id` (string UUID, required).
+- Returns: { success: true }.
+
+---
+
+#### Category: Collections
+
+**list_collections**
+- Purpose: List the user's recipe collections (cookbooks), including Favorites, with recipe counts.
+- When to use: Before adding to or referencing a collection.
+- Parameters: None.
+- Returns: Array of { id, name, description, isPublic, isDefault, recipeCount }.
+
+**create_collection**
+- Purpose: Create a new recipe collection.
+- When to use: When the user wants a new way to group recipes.
+- Parameters: `name` (string, required), `description` (string, optional), `isPublic` (boolean, optional).
+- Returns: { success, collectionId }.
+
+**add_recipe_to_collection**
+- Purpose: Add a recipe to one of the user's collections.
+- When to use: After getting ids from list_collections and search_recipes.
+- Parameters: `collectionId` (string UUID, required), `recipeId` (string UUID, required).
+- Returns: { success: true }.
+
+**remove_recipe_from_collection**
+- Purpose: Remove a recipe from one of the user's collections.
+- When to use: To curate a collection.
+- Parameters: `collectionId` (string UUID, required), `recipeId` (string UUID, required).
+- Returns: { success: true }.
+
+**delete_collection**
+- Purpose: Delete a collection (Favorites cannot be deleted).
+- When to use: When the user wants to remove a cookbook entirely.
+- Parameters: `collectionId` (string UUID, required).
+- Returns: { success: true }.
+
+---
+
+#### Category: Leftovers
+
+**list_leftovers**
+- Purpose: List active leftovers with portions and use-by dates.
+- When to use: To plan using up leftovers or to answer "what leftovers do we have?".
+- Parameters: None.
+- Returns: Array of { id, name, portions, expiryDate, recipeId }.
+
+**add_leftover**
+- Purpose: Log a leftover with portions and an optional use-by date.
+- When to use: For extra portions not tracked via the calendar.
+- Parameters: `name` (string, required), `portions` (number, optional), `expiryDate` (string YYYY-MM-DD, optional), `recipeId` (string UUID, optional).
+- Returns: { success, leftoverId }.
+
+**update_leftover**
+- Purpose: Update remaining portions and/or the use-by date.
+- When to use: As leftovers are eaten.
+- Parameters: `id` (string UUID, required), `portions` (number, optional), `expiryDate` (string or null, optional).
+- Returns: { success: true }.
+
+**delete_leftover**
+- Purpose: Remove a leftover once eaten or discarded.
+- When to use: To clear a finished leftover.
+- Parameters: `id` (string UUID, required).
+- Returns: { success: true }.
 
 ---
 
