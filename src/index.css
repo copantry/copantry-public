@@ -52,3 +52,45 @@ html {
 [id] {
   scroll-margin-top: 80px;
 }
+
+/* ── Blog prose ────────────────────────────────────────────────────────── */
+/* Lightweight article typography so we don't need the Tailwind typography plugin. */
+.blog-prose {
+  color: var(--color-gray-600, #4b5563);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+.blog-prose p { margin: 1.25rem 0; }
+.blog-prose p.lead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #374151;
+  font-weight: 500;
+}
+.blog-prose p.note {
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+.blog-prose h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.01em;
+  margin: 2.25rem 0 0.75rem;
+}
+.blog-prose ul,
+.blog-prose ol { margin: 1.25rem 0; padding-left: 1.5rem; }
+.blog-prose ul { list-style: disc; }
+.blog-prose ol { list-style: decimal; }
+.blog-prose li { margin: 0.5rem 0; }
+.blog-prose a {
+  color: var(--color-brand-600);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.blog-prose a:hover { color: var(--color-brand-700); }
+.blog-prose strong { color: #111827; font-weight: 700; }

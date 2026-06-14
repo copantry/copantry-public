@@ -1,12 +1,16 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Cookie } from 'lucide-react'
 
 export default function CookieBanner() {
   const { t } = useTranslation()
-  const [visible, setVisible] = useState(
-    () => localStorage.getItem('copantry_cookie_consent') === null
-  )
+  // Render nothing during the static prerender (no localStorage on the server),
+  // then reveal on the client if the visitor hasn't made a choice yet.
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    if (localStorage.getItem('copantry_cookie_consent') === null) setVisible(true)
+  }, [])
 
   if (!visible) return null
 

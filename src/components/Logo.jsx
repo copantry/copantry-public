@@ -8,7 +8,7 @@ const SIZE = {
   xl:  { icon: 36, text: 'text-[1.875rem]' },
 }
 
-export default function Logo({ size = 'md', asLink = true, className = '' }) {
+export default function Logo({ size = 'md', asLink = true, className = '', to = '/' }) {
   const { icon, text } = SIZE[size] ?? SIZE.md
 
   const inner = (
@@ -25,7 +25,7 @@ export default function Logo({ size = 'md', asLink = true, className = '' }) {
   )
 
   if (asLink) {
-    return <Link to="/" className="hover:opacity-80 transition-opacity">{inner}</Link>
+    return <Link to={to} className="hover:opacity-80 transition-opacity">{inner}</Link>
   }
   return inner
 }

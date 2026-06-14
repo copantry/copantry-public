@@ -17,8 +17,14 @@ import es from './locales/es.json'
 //     LanguageSwitcher, so traveling to Italy and coming back never gets you stuck.
 //   - Language preference is a functional cookie (not tracking), so no consent
 //     gate is needed — we always read/write it.
+// LanguageDetector touches window/localStorage, which don't exist during the
+// static prerender (Node). Only register it in the browser; on the server we
+// fall back to English — which is exactly the language we prerender in.
+if (typeof window !== 'undefined') {
+  i18n.use(LanguageDetector)
+}
+
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: { en, fr, it, pt, de, es },

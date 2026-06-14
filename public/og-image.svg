@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Copantry — cook it before you bin it">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#ffedd5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.1" r="0.8">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Chef hat mark -->
+  <g transform="translate(96,150)">
+    <path d="M40 70 C10 70 0 40 24 28 C18 4 60 -10 78 12 C100 -8 138 8 132 34 C156 44 148 74 118 72 Z"
+          fill="#f97316"/>
+    <rect x="36" y="70" width="86" height="34" rx="8" fill="#ea580c"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="250" y="232" font-family="Poppins, Inter, sans-serif" font-size="64" font-weight="700" fill="#111827">
+    <tspan font-weight="600">Co</tspan><tspan font-weight="400">pantry</tspan>
+  </text>
+
+  <!-- Headline -->
+  <text x="96" y="372" font-family="Inter, sans-serif" font-size="84" font-weight="800" fill="#111827" letter-spacing="-2">Cook it before</text>
+  <text x="96" y="468" font-family="Inter, sans-serif" font-size="84" font-weight="800" letter-spacing="-2">
+    <tspan fill="#111827">you </tspan><tspan fill="#f97316">bin it.</tspan>
+  </text>
+
+  <!-- Subhead -->
+  <text x="98" y="540" font-family="Inter, sans-serif" font-size="30" font-weight="500" fill="#6b7280">A meal planner &amp; pantry tracker that tells you what to cook before food goes to waste.</text>
+</svg>
