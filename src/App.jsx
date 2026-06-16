@@ -1,55 +1,60 @@
-import './i18n'
-import { useState, Suspense } from 'react'
-import { Routes, Route, useParams, Navigate } from 'react-router-dom'
-import ScrollToTop from './components/ScrollToTop'
-import Seo from './seo/Seo'
-import LocaleSync from './i18n/LocaleSync'
-import { useLang } from './i18n/useLang'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
-import CookieBanner from './components/CookieBanner'
-import ContactModal from './components/ContactModal'
+import "./i18n";
+import { useState, Suspense } from "react";
+import { Routes, Route, useParams, Navigate } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+import Seo from "./seo/Seo";
+import LocaleSync from "./i18n/LocaleSync";
+import { useLang } from "./i18n/useLang";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import CookieBanner from "./components/CookieBanner";
+import ContactModal from "./components/ContactModal";
 
-import HomePage from './pages/HomePage'
-import HowItWorksPage from './pages/HowItWorksPage'
-import WhyCopantryPage from './pages/WhyCopantryPage'
-import ContentPage from './pages/ContentPage'
-import McpPage from './pages/McpPage'
-import BlogIndexPage from './pages/BlogIndexPage'
-import LearnIndexPage from './pages/LearnIndexPage'
-import LearnShelfLifePage from './pages/LearnShelfLifePage'
-import AboutPage from './pages/AboutPage'
-import PrivacyPage from './pages/PrivacyPage'
-import TermsPage from './pages/TermsPage'
-import { FEATURES, USE_CASES } from './content/pages'
-import { LOCALES, REDUCE_WASTE, UI, pick } from './content/localized'
+import HomePage from "./pages/HomePage";
+import HowItWorksPage from "./pages/HowItWorksPage";
+import WhyCopantryPage from "./pages/WhyCopantryPage";
+import ContentPage from "./pages/ContentPage";
+import McpPage from "./pages/McpPage";
+import BlogIndexPage from "./pages/BlogIndexPage";
+import LearnIndexPage from "./pages/LearnIndexPage";
+import LearnShelfLifePage from "./pages/LearnShelfLifePage";
+import AboutPage from "./pages/AboutPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import TermsPage from "./pages/TermsPage";
+import { FEATURES, USE_CASES } from "./content/pages";
+import { LOCALES, REDUCE_WASTE, UI, pick } from "./content/localized";
 
 // Blog post bodies live as components; mapped to slugs here (blog.js stays JSX-free
 // so the Node prerender can import its metadata).
-import CookWithWhatYouHave from './pages/blog/CookWithWhatYouHave'
-import FoodWasteStatistics from './pages/blog/FoodWasteStatistics'
-import UseItUpMethod from './pages/blog/UseItUpMethod'
+import CookWithWhatYouHave from "./pages/blog/CookWithWhatYouHave";
+import FoodWasteStatistics from "./pages/blog/FoodWasteStatistics";
+import UseItUpMethod from "./pages/blog/UseItUpMethod";
 
 const BLOG_COMPONENTS = {
-  'what-can-i-cook-with-what-i-have': CookWithWhatYouHave,
-  'food-waste-statistics-uk': FoodWasteStatistics,
-  'use-it-up-method': UseItUpMethod,
-}
+  "what-can-i-cook-with-what-i-have": CookWithWhatYouHave,
+  "food-waste-statistics-uk": FoodWasteStatistics,
+  "use-it-up-method": UseItUpMethod,
+};
 
 function BlogPost() {
-  const { slug } = useParams()
-  const Component = BLOG_COMPONENTS[slug]
-  return Component ? <Component /> : <Navigate to="/blog" replace />
+  const { slug } = useParams();
+  const Component = BLOG_COMPONENTS[slug];
+  return Component ? <Component /> : <Navigate to="/blog" replace />;
 }
 
 // Localized food-waste pillar: feed ContentPage the localized content object.
 function LocalizedReduceWaste() {
-  const lng = useLang()
-  return <ContentPage page={pick(REDUCE_WASTE, lng)} sectionLabel={(UI[lng] || UI.en).breadcrumbFeatures} />
+  const lng = useLang();
+  return (
+    <ContentPage
+      page={pick(REDUCE_WASTE, lng)}
+      sectionLabel={(UI[lng] || UI.en).breadcrumbFeatures}
+    />
+  );
 }
 
 export default function App() {
-  const [modal, setModal] = useState(null) // null | 'contact' | 'investors'
+  const [modal, setModal] = useState(null); // null | 'contact' | 'investors'
 
   return (
     <Suspense fallback={null}>
@@ -69,11 +74,23 @@ export default function App() {
             <Route path="/mcp" element={<McpPage />} />
             <Route
               path="/features/:slug"
-              element={<ContentPage registry={FEATURES} basePath="/features" sectionLabel="Features" />}
+              element={
+                <ContentPage
+                  registry={FEATURES}
+                  basePath="/features"
+                  sectionLabel="Features"
+                />
+              }
             />
             <Route
               path="/use-cases/:slug"
-              element={<ContentPage registry={USE_CASES} basePath="/use-cases" sectionLabel="Use cases" />}
+              element={
+                <ContentPage
+                  registry={USE_CASES}
+                  basePath="/use-cases"
+                  sectionLabel="Use cases"
+                />
+              }
             />
 
             <Route path="/blog" element={<BlogIndexPage />} />
@@ -89,8 +106,16 @@ export default function App() {
                 their language from the URL prefix via useLang(). */}
             {LOCALES.flatMap((lng) => [
               <Route key={lng} path={`/${lng}`} element={<HomePage />} />,
-              <Route key={`${lng}-how`} path={`/${lng}/how-it-works`} element={<HowItWorksPage />} />,
-              <Route key={`${lng}-rfw`} path={`/${lng}/features/reduce-food-waste`} element={<LocalizedReduceWaste />} />,
+              <Route
+                key={`${lng}-how`}
+                path={`/${lng}/how-it-works`}
+                element={<HowItWorksPage />}
+              />,
+              <Route
+                key={`${lng}-rfw`}
+                path={`/${lng}/features/reduce-food-waste`}
+                element={<LocalizedReduceWaste />}
+              />,
             ])}
 
             <Route path="*" element={<Navigate to="/" replace />} />
@@ -101,5 +126,5 @@ export default function App() {
         {modal && <ContactModal type={modal} onClose={() => setModal(null)} />}
       </div>
     </Suspense>
-  )
+  );
 }

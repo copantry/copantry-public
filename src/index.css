@@ -27,16 +27,24 @@ html {
  */
 .hero-gradient {
   background:
-    radial-gradient(ellipse 80% 60% at 50% -10%,
-      color-mix(in srgb, var(--color-brand-500) 12%, transparent) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 20%,
-      color-mix(in srgb, var(--color-accent-calendar) 6%, transparent) 0%, transparent 50%),
+    radial-gradient(
+      ellipse 80% 60% at 50% -10%,
+      color-mix(in srgb, var(--color-brand-500) 12%, transparent) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 80% 20%,
+      color-mix(in srgb, var(--color-accent-calendar) 6%, transparent) 0%,
+      transparent 50%
+    ),
     white;
 }
 
 /* ── Card hover lift ───────────────────────────────────────────────────── */
 .card-hover {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .card-hover:hover {
   transform: translateY(-2px);
@@ -60,7 +68,9 @@ html {
   font-size: 1.0625rem;
   line-height: 1.75;
 }
-.blog-prose p { margin: 1.25rem 0; }
+.blog-prose p {
+  margin: 1.25rem 0;
+}
 .blog-prose p.lead {
   font-size: 1.25rem;
   line-height: 1.7;
@@ -82,15 +92,29 @@ html {
   margin: 2.25rem 0 0.75rem;
 }
 .blog-prose ul,
-.blog-prose ol { margin: 1.25rem 0; padding-left: 1.5rem; }
-.blog-prose ul { list-style: disc; }
-.blog-prose ol { list-style: decimal; }
-.blog-prose li { margin: 0.5rem 0; }
+.blog-prose ol {
+  margin: 1.25rem 0;
+  padding-left: 1.5rem;
+}
+.blog-prose ul {
+  list-style: disc;
+}
+.blog-prose ol {
+  list-style: decimal;
+}
+.blog-prose li {
+  margin: 0.5rem 0;
+}
 .blog-prose a {
   color: var(--color-brand-600);
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.blog-prose a:hover { color: var(--color-brand-700); }
-.blog-prose strong { color: #111827; font-weight: 700; }
+.blog-prose a:hover {
+  color: var(--color-brand-700);
+}
+.blog-prose strong {
+  color: #111827;
+  font-weight: 700;
+}

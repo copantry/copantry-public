@@ -35,17 +35,17 @@ that registry.
 
 ## Pages
 
-| Route | File | Purpose |
-|---|---|---|
-| `/` | `pages/HomePage.jsx` | Waste-first hero + hook card + pillars + FAQ |
-| `/how-it-works` | `pages/HowItWorksPage.jsx` | 4-step HowTo |
-| `/why-copantry` | `pages/WhyCopantryPage.jsx` | Differentiator (categories, never named rivals) |
-| `/features/:slug` | `pages/ContentPage.jsx` + `content/pages.js` (`FEATURES`) | Capability pages |
-| `/use-cases/:slug` | `pages/ContentPage.jsx` + `content/pages.js` (`USE_CASES`) | Audience pages |
-| `/features/ai-assistant-mcp`, `/mcp` | `pages/McpPage.jsx` | MCP / AI assistant |
-| `/learn`, `/learn/how-long-does-*-last` | `pages/LearnIndexPage.jsx`, `pages/LearnShelfLifePage.jsx` + `content/shelfLife.js` | Programmatic shelf-life |
-| `/blog`, `/blog/:slug` | `pages/BlogIndexPage.jsx`, `pages/blog/*` + `content/blog.js` | Editorial pillars |
-| `/about`, `/privacy`, `/terms` | `pages/AboutPage.jsx`, `PrivacyPage.jsx`, `TermsPage.jsx` | — |
+| Route                                   | File                                                                                | Purpose                                         |
+| --------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------- |
+| `/`                                     | `pages/HomePage.jsx`                                                                | Waste-first hero + hook card + pillars + FAQ    |
+| `/how-it-works`                         | `pages/HowItWorksPage.jsx`                                                          | 4-step HowTo                                    |
+| `/why-copantry`                         | `pages/WhyCopantryPage.jsx`                                                         | Differentiator (categories, never named rivals) |
+| `/features/:slug`                       | `pages/ContentPage.jsx` + `content/pages.js` (`FEATURES`)                           | Capability pages                                |
+| `/use-cases/:slug`                      | `pages/ContentPage.jsx` + `content/pages.js` (`USE_CASES`)                          | Audience pages                                  |
+| `/features/ai-assistant-mcp`, `/mcp`    | `pages/McpPage.jsx`                                                                 | MCP / AI assistant                              |
+| `/learn`, `/learn/how-long-does-*-last` | `pages/LearnIndexPage.jsx`, `pages/LearnShelfLifePage.jsx` + `content/shelfLife.js` | Programmatic shelf-life                         |
+| `/blog`, `/blog/:slug`                  | `pages/BlogIndexPage.jsx`, `pages/blog/*` + `content/blog.js`                       | Editorial pillars                               |
+| `/about`, `/privacy`, `/terms`          | `pages/AboutPage.jsx`, `PrivacyPage.jsx`, `TermsPage.jsx`                           | —                                               |
 
 **No pricing page** (deliberate — see the plan). CTAs link to
 `https://app.copantry.com`. Use `src/seo/constants.js` (`APP_URL`, `API_URL`) for
@@ -64,13 +64,13 @@ use `var(--color-brand-500)` or `bg-brand-500`.
 
 ## AI crawler assets (`public/`)
 
-| File | Purpose |
-|---|---|
-| `robots.txt` | Allows GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, etc. |
-| `llms.txt` | **Curated** (5–10 authoritative links) — entity definition + core pages |
-| `llms-full.txt` | Full MCP tool reference (keep in sync with `backend/routes/mcp.js`) |
-| `sitemap.xml` | **Auto-generated** by the prerender from `seoConfig.js` — don't hand-edit |
-| `og-image.svg` | Social image (export a 1200×630 PNG before launch — see constants.js) |
+| File            | Purpose                                                                       |
+| --------------- | ----------------------------------------------------------------------------- |
+| `robots.txt`    | Allows GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, etc. |
+| `llms.txt`      | **Curated** (5–10 authoritative links) — entity definition + core pages       |
+| `llms-full.txt` | Full MCP tool reference (keep in sync with `backend/routes/mcp.js`)           |
+| `sitemap.xml`   | **Auto-generated** by the prerender from `seoConfig.js` — don't hand-edit     |
+| `og-image.svg`  | Social image (export a 1200×630 PNG before launch — see constants.js)         |
 
 ## Conventions
 

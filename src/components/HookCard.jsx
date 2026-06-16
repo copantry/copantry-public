@@ -4,12 +4,12 @@
  * place of a generic calendar screenshot. Lightweight (emoji + CSS), no images.
  */
 
-import { ArrowRight, Clock, Sparkles, PiggyBank } from 'lucide-react'
-import { HOOK, pick } from '../content/localized'
-import { useLang } from '../i18n/useLang'
+import { ArrowRight, Clock, Sparkles, PiggyBank } from "lucide-react";
+import { HOOK, pick } from "../content/localized";
+import { useLang } from "../i18n/useLang";
 
 export default function HookCard() {
-  const c = pick(HOOK, useLang())
+  const c = pick(HOOK, useLang());
 
   return (
     <div className="relative">
@@ -20,13 +20,22 @@ export default function HookCard() {
         {/* First to go */}
         <div className="flex items-center gap-2 mb-3">
           <Clock size={15} className="text-rose-500" />
-          <p className="text-xs font-black uppercase tracking-widest text-gray-400">{c.firstToGo}</p>
+          <p className="text-xs font-black uppercase tracking-widest text-gray-400">
+            {c.firstToGo}
+          </p>
         </div>
         <ul className="space-y-2">
           {c.items.map(({ emoji, name, left }) => (
-            <li key={name} className="flex items-center gap-3 bg-gray-50 rounded-xl px-3 py-2.5">
-              <span className="text-xl" aria-hidden="true">{emoji}</span>
-              <span className="text-sm font-semibold text-gray-800 flex-1">{name}</span>
+            <li
+              key={name}
+              className="flex items-center gap-3 bg-gray-50 rounded-xl px-3 py-2.5"
+            >
+              <span className="text-xl" aria-hidden="true">
+                {emoji}
+              </span>
+              <span className="text-sm font-semibold text-gray-800 flex-1">
+                {name}
+              </span>
               <span className="text-[11px] font-bold text-rose-600 bg-rose-50 px-2 py-0.5 rounded-full">
                 {left}
               </span>
@@ -45,9 +54,13 @@ export default function HookCard() {
         <div className="rounded-2xl border border-orange-100 bg-orange-50/60 p-4">
           <div className="flex items-center gap-2 mb-1.5">
             <Sparkles size={15} className="text-orange-500" />
-            <p className="text-xs font-black uppercase tracking-widest text-orange-500">{c.tonight}</p>
+            <p className="text-xs font-black uppercase tracking-widest text-orange-500">
+              {c.tonight}
+            </p>
           </div>
-          <p className="text-lg font-extrabold text-gray-900 leading-tight">{c.dish}</p>
+          <p className="text-lg font-extrabold text-gray-900 leading-tight">
+            {c.dish}
+          </p>
           <p className="text-sm text-gray-500 mt-1">{c.dishMeta}</p>
         </div>
 
@@ -58,5 +71,5 @@ export default function HookCard() {
         </div>
       </div>
     </div>
-  )
+  );
 }

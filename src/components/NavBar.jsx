@@ -1,30 +1,30 @@
-import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, ExternalLink } from 'lucide-react'
-import { APP_URL } from '../seo/constants'
-import { UI, localizePath } from '../content/localized'
-import { useLang } from '../i18n/useLang'
-import Logo from './Logo'
-import LanguageSwitcher from './LanguageSwitcher'
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, ExternalLink } from "lucide-react";
+import { APP_URL } from "../seo/constants";
+import { UI, localizePath } from "../content/localized";
+import { useLang } from "../i18n/useLang";
+import Logo from "./Logo";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function NavBar() {
-  const [open, setOpen] = useState(false)
-  const { pathname } = useLocation()
-  const lng = useLang()
-  const ui = UI[lng] || UI.en
+  const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+  const lng = useLang();
+  const ui = UI[lng] || UI.en;
 
   // Links point at the localized URL where one exists, English otherwise.
   const navLinks = [
-    { label: ui.nav.howItWorks, to: localizePath('/how-it-works', lng) },
-    { label: ui.nav.why, to: '/why-copantry' },
-    { label: ui.nav.learn, to: '/learn' },
-    { label: ui.nav.blog, to: '/blog' },
-  ]
+    { label: ui.nav.howItWorks, to: localizePath("/how-it-works", lng) },
+    { label: ui.nav.why, to: "/why-copantry" },
+    { label: ui.nav.learn, to: "/learn" },
+    { label: ui.nav.blog, to: "/blog" },
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-        <Logo size="md" to={localizePath('/', lng)} />
+        <Logo size="md" to={localizePath("/", lng)} />
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-1">
@@ -34,8 +34,8 @@ export default function NavBar() {
               to={to}
               className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-colors ${
                 pathname === to
-                  ? 'text-orange-600 bg-orange-50'
-                  : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                  ? "text-orange-600 bg-orange-50"
+                  : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
               }`}
             >
               {label}
@@ -103,5 +103,5 @@ export default function NavBar() {
         </div>
       )}
     </header>
-  )
+  );
 }

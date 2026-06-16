@@ -1,34 +1,43 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import {
-  ArrowRight, Check, Refrigerator, ChefHat, ShoppingCart,
-  Leaf, Globe, Sparkles, Bot, Heart, ChevronRight,
-} from 'lucide-react'
-import { APP_URL } from '../seo/constants'
-import { FAQS } from '../content/faqs'
-import { HOME, UI, pick, localizePath } from '../content/localized'
-import { useLang } from '../i18n/useLang'
-import { Section, SectionHeading, Pill } from '../components/ui'
-import HookCard from '../components/HookCard'
-import AppButtons from '../components/AppButtons'
-import Faq from '../components/Faq'
-import CtaBand from '../components/CtaBand'
+  ArrowRight,
+  Check,
+  Refrigerator,
+  ChefHat,
+  ShoppingCart,
+  Leaf,
+  Globe,
+  Sparkles,
+  Bot,
+  Heart,
+  ChevronRight,
+} from "lucide-react";
+import { APP_URL } from "../seo/constants";
+import { FAQS } from "../content/faqs";
+import { HOME, UI, pick, localizePath } from "../content/localized";
+import { useLang } from "../i18n/useLang";
+import { Section, SectionHeading, Pill } from "../components/ui";
+import HookCard from "../components/HookCard";
+import AppButtons from "../components/AppButtons";
+import Faq from "../components/Faq";
+import CtaBand from "../components/CtaBand";
 
 // Visual metadata (icons/colours) stays here; text comes from localized content by index.
 const PILLAR_META = [
-  { icon: Refrigerator, color: 'text-green-600', bg: 'bg-green-50' },
-  { icon: ChefHat, color: 'text-orange-500', bg: 'bg-orange-50' },
-  { icon: ShoppingCart, color: 'text-blue-600', bg: 'bg-blue-50' },
-]
-const STEP_COLORS = ['bg-green-600', 'bg-orange-500', 'bg-violet-600']
-const DIFF_ICONS = [Leaf, Sparkles, Globe, ShoppingCart, Heart, Bot]
+  { icon: Refrigerator, color: "text-green-600", bg: "bg-green-50" },
+  { icon: ChefHat, color: "text-orange-500", bg: "bg-orange-50" },
+  { icon: ShoppingCart, color: "text-blue-600", bg: "bg-blue-50" },
+];
+const STEP_COLORS = ["bg-green-600", "bg-orange-500", "bg-violet-600"];
+const DIFF_ICONS = [Leaf, Sparkles, Globe, ShoppingCart, Heart, Bot];
 
 export default function HomePage() {
-  const lng = useLang()
-  const c = pick(HOME, lng)
-  const ui = UI[lng] || UI.en
+  const lng = useLang();
+  const c = pick(HOME, lng);
+  const ui = UI[lng] || UI.en;
   // Home FAQ schema is English-only for now; localized FAQ display would need
   // localized home FAQ content (tracked as a follow-up). English route uses FAQS.home.
-  const faqItems = lng === 'en' ? FAQS.home : null
+  const faqItems = lng === "en" ? FAQS.home : null;
 
   return (
     <>
@@ -37,10 +46,14 @@ export default function HomePage() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <div className="text-center lg:text-left">
             <div className="flex justify-center lg:justify-start mb-5">
-              <Pill icon={Leaf} tone="green">{c.badge}</Pill>
+              <Pill icon={Leaf} tone="green">
+                {c.badge}
+              </Pill>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-[1.05] tracking-tight">
-              {c.h1a}<br />{c.h1b} <span className="text-orange-500">{c.h1accent}</span>
+              {c.h1a}
+              <br />
+              {c.h1b} <span className="text-orange-500">{c.h1accent}</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
               {c.heroLede}
@@ -54,7 +67,7 @@ export default function HomePage() {
                 {ui.ctaPrimary} <ArrowRight size={16} />
               </a>
               <Link
-                to={localizePath('/how-it-works', lng)}
+                to={localizePath("/how-it-works", lng)}
                 className="flex items-center gap-2 px-6 py-3.5 bg-white border border-gray-200 hover:border-gray-300 text-gray-700 font-semibold text-sm rounded-xl transition-colors shadow-sm"
               >
                 {ui.howItWorks} <ChevronRight size={14} />
@@ -65,7 +78,10 @@ export default function HomePage() {
               <Check size={14} className="text-green-500" /> {c.trustLine}
             </p>
 
-            <AppButtons className="mt-6 flex justify-center lg:justify-start flex-col" note={false} />
+            <AppButtons
+              className="mt-6 flex justify-center lg:justify-start flex-col"
+              note={false}
+            />
           </div>
 
           <div className="lg:pl-6">
@@ -83,7 +99,9 @@ export default function HomePage() {
             </div>
             <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
               <p className="text-3xl font-extrabold text-green-600">£8</p>
-              <p className="text-xs text-gray-500 font-semibold mt-0.5">{c.proofStat}</p>
+              <p className="text-xs text-gray-500 font-semibold mt-0.5">
+                {c.proofStat}
+              </p>
             </div>
           </div>
         </Section>
@@ -91,19 +109,32 @@ export default function HomePage() {
 
       {/* ── 3 pillars ────────────────────────────────────── */}
       <Section className="py-20 md:py-28">
-        <SectionHeading eyebrow={c.pillarsEyebrow} title={c.pillarsTitle} lede={c.pillarsLede} />
+        <SectionHeading
+          eyebrow={c.pillarsEyebrow}
+          title={c.pillarsTitle}
+          lede={c.pillarsLede}
+        />
         <div className="grid md:grid-cols-3 gap-5">
           {c.pillars.map((p, i) => {
-            const { icon: Icon, color, bg } = PILLAR_META[i]
+            const { icon: Icon, color, bg } = PILLAR_META[i];
             return (
-              <div key={p.title} className="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm">
-                <div className={`${bg} w-12 h-12 rounded-xl flex items-center justify-center mb-4`}>
+              <div
+                key={p.title}
+                className="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm"
+              >
+                <div
+                  className={`${bg} w-12 h-12 rounded-xl flex items-center justify-center mb-4`}
+                >
                   <Icon size={24} className={color} />
                 </div>
-                <h3 className="font-bold text-gray-900 text-lg mb-2">{p.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{p.desc}</p>
+                <h3 className="font-bold text-gray-900 text-lg mb-2">
+                  {p.title}
+                </h3>
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  {p.desc}
+                </p>
               </div>
-            )
+            );
           })}
         </div>
       </Section>
@@ -115,11 +146,17 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {c.steps.map((s, i) => (
               <div key={s.title} className="relative">
-                <div className={`${STEP_COLORS[i]} w-10 h-10 rounded-xl flex items-center justify-center mb-4`}>
-                  <span className="text-white font-black text-sm">{String(i + 1).padStart(2, '0')}</span>
+                <div
+                  className={`${STEP_COLORS[i]} w-10 h-10 rounded-xl flex items-center justify-center mb-4`}
+                >
+                  <span className="text-white font-black text-sm">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
                 </div>
                 <h3 className="font-bold text-gray-900 mb-2">{s.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{s.desc}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  {s.desc}
+                </p>
                 {i < 2 && (
                   <div className="hidden md:block absolute top-5 left-full w-8 border-t-2 border-dashed border-gray-200 -translate-x-4" />
                 )}
@@ -127,7 +164,10 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to={localizePath('/how-it-works', lng)} className="inline-flex items-center gap-1.5 text-sm font-bold text-orange-600 hover:text-orange-700">
+            <Link
+              to={localizePath("/how-it-works", lng)}
+              className="inline-flex items-center gap-1.5 text-sm font-bold text-orange-600 hover:text-orange-700"
+            >
               {c.howMore} <ArrowRight size={15} />
             </Link>
           </div>
@@ -136,23 +176,35 @@ export default function HomePage() {
 
       {/* ── Differentiators ──────────────────────────────── */}
       <Section className="py-20 md:py-28">
-        <SectionHeading eyebrow={c.diffEyebrow} title={c.diffTitle} lede={c.diffLede} />
+        <SectionHeading
+          eyebrow={c.diffEyebrow}
+          title={c.diffTitle}
+          lede={c.diffLede}
+        />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {c.differentiators.map((d, i) => {
-            const Icon = DIFF_ICONS[i]
+            const Icon = DIFF_ICONS[i];
             return (
-              <div key={d.title} className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
+              <div
+                key={d.title}
+                className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm"
+              >
                 <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center mb-4">
                   <Icon size={20} className="text-orange-500" />
                 </div>
                 <h3 className="font-bold text-gray-900 mb-1.5">{d.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">{d.desc}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">
+                  {d.desc}
+                </p>
               </div>
-            )
+            );
           })}
         </div>
         <div className="text-center mt-12">
-          <Link to="/why-copantry" className="inline-flex items-center gap-1.5 text-sm font-bold text-orange-600 hover:text-orange-700">
+          <Link
+            to="/why-copantry"
+            className="inline-flex items-center gap-1.5 text-sm font-bold text-orange-600 hover:text-orange-700"
+          >
             {c.whyTeaser} <ArrowRight size={15} />
           </Link>
         </div>
@@ -168,5 +220,5 @@ export default function HomePage() {
       {/* ── Final CTA ────────────────────────────────────── */}
       <CtaBand />
     </>
-  )
+  );
 }

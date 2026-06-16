@@ -12,45 +12,51 @@
  *     self-contained so an engine can lift them verbatim.
  */
 
-import { SITE_URL, SITE_NAME, CANONICAL_DESCRIPTION, OG_IMAGE, SAME_AS } from './constants.js'
+import {
+  SITE_URL,
+  SITE_NAME,
+  CANONICAL_DESCRIPTION,
+  OG_IMAGE,
+  SAME_AS,
+} from "./constants.js";
 
 /** Site-wide publisher/brand entity. The canonical definition of Copantry. */
 export function organizationSchema() {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    '@id': `${SITE_URL}/#organization`,
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${SITE_URL}/#organization`,
     name: SITE_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}/favicon.svg`,
     description: CANONICAL_DESCRIPTION,
     sameAs: SAME_AS,
-  }
+  };
 }
 
 /** The product. Pricing/ratings intentionally omitted (see header). */
 export function softwareApplicationSchema() {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    '@id': `${SITE_URL}/#app`,
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": `${SITE_URL}/#app`,
     name: SITE_NAME,
     url: SITE_URL,
-    applicationCategory: 'LifestyleApplication',
-    operatingSystem: 'Web, Android, iOS',
+    applicationCategory: "LifestyleApplication",
+    operatingSystem: "Web, Android, iOS",
     description: CANONICAL_DESCRIPTION,
     image: OG_IMAGE,
-    publisher: { '@id': `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
     featureList: [
-      'Tracks what is in your kitchen and how long each item has left',
-      'Suggests recipes that use what is about to expire first',
-      'Plans a week of meals around what you already have',
-      'Builds a shopping list of only what you are missing',
-      'Imports recipes from any URL, photo, or text with AI',
-      'Shares recipes, plans and lists across a household',
-      'Available in English, French, Italian, Portuguese, German and Spanish',
+      "Tracks what is in your kitchen and how long each item has left",
+      "Suggests recipes that use what is about to expire first",
+      "Plans a week of meals around what you already have",
+      "Builds a shopping list of only what you are missing",
+      "Imports recipes from any URL, photo, or text with AI",
+      "Shares recipes, plans and lists across a household",
+      "Available in English, French, Italian, Portuguese, German and Spanish",
     ],
-  }
+  };
 }
 
 /**
@@ -59,14 +65,14 @@ export function softwareApplicationSchema() {
  */
 export function faqSchema(items) {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
     mainEntity: items.map(({ q, a }) => ({
-      '@type': 'Question',
+      "@type": "Question",
       name: q,
-      acceptedAnswer: { '@type': 'Answer', text: a },
+      acceptedAnswer: { "@type": "Answer", text: a },
     })),
-  }
+  };
 }
 
 /**
@@ -76,16 +82,16 @@ export function faqSchema(items) {
  */
 export function howToSchema(name, steps) {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
+    "@context": "https://schema.org",
+    "@type": "HowTo",
     name,
     step: steps.map((s, i) => ({
-      '@type': 'HowToStep',
+      "@type": "HowToStep",
       position: i + 1,
-      name: typeof s === 'string' ? s : s.name,
-      text: typeof s === 'string' ? s : s.text,
+      name: typeof s === "string" ? s : s.name,
+      text: typeof s === "string" ? s : s.text,
     })),
-  }
+  };
 }
 
 /**
@@ -94,29 +100,35 @@ export function howToSchema(name, steps) {
  */
 export function breadcrumbSchema(crumbs) {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
     itemListElement: crumbs.map((c, i) => ({
-      '@type': 'ListItem',
+      "@type": "ListItem",
       position: i + 1,
       name: c.name,
       item: `${SITE_URL}${c.path}`,
     })),
-  }
+  };
 }
 
 /** Article/BlogPosting for blog & learn pages. */
-export function articleSchema({ headline, description, path, datePublished, dateModified }) {
+export function articleSchema({
+  headline,
+  description,
+  path,
+  datePublished,
+  dateModified,
+}) {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
     headline,
     description,
     url: `${SITE_URL}${path}`,
     image: OG_IMAGE,
     datePublished,
     dateModified: dateModified || datePublished,
-    author: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
-    publisher: { '@id': `${SITE_URL}/#organization` },
-  }
+    author: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
 }
