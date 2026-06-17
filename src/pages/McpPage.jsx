@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   Bot,
@@ -1014,22 +1013,6 @@ function DefinitionBlock({ term, children }) {
       <p className="font-black text-gray-900 text-base mb-1">{term}</p>
       <p className="text-gray-600 leading-relaxed">{children}</p>
     </div>
-  );
-}
-
-function ParamRow({ name, type, desc }) {
-  return (
-    <tr className="border-b border-gray-50 last:border-0">
-      <td className="py-2 pr-3 align-top w-36">
-        <code className="text-xs font-mono font-bold text-orange-600">
-          {name}
-        </code>
-      </td>
-      <td className="py-2 pr-3 align-top w-32">
-        <code className="text-[11px] font-mono text-gray-400">{type}</code>
-      </td>
-      <td className="py-2 text-xs text-gray-500 leading-relaxed">{desc}</td>
-    </tr>
   );
 }
 

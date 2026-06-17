@@ -7,7 +7,7 @@ import {
   ChefHat,
   ArrowRight,
 } from "lucide-react";
-import { findByPageSlug, learnPath } from "../content/shelfLife";
+import { findByPageSlug } from "../content/shelfLife";
 import { Section } from "../components/ui";
 import CtaBand from "../components/CtaBand";
 

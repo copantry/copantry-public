@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Search } from "lucide-react";
 import { SHELF_LIFE, learnPath } from "../content/shelfLife";
-import { Section, SectionHeading, Eyebrow } from "../components/ui";
+import { Section, Eyebrow } from "../components/ui";
 import CtaBand from "../components/CtaBand";
 
 export default function LearnIndexPage() {
