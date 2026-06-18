@@ -26,7 +26,7 @@ export const FAQS = {
     },
     {
       q: "Is Copantry free?",
-      a: "Copantry is free to start, with no card required. You can collect recipes, track your pantry, plan meals and build shopping lists on the free tier.",
+      a: "Copantry is free to use, with no card required. You can collect recipes, track your pantry, plan meals and build shopping lists on the free tier.",
     },
     {
       q: "What devices does Copantry work on?",

@@ -67,7 +67,7 @@ export default function LearnIndexPage() {
 
       <CtaBand
         title="Stop guessing what’s still good"
-        subtitle="Copantry dates everything in your kitchen and tells you what to use up first. Free to start, no card needed."
+        subtitle="Copantry dates everything in your kitchen and tells you what to use up first. Free to use, no card needed."
       />
     </>
   );

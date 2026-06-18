@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import GB from "country-flag-icons/react/3x2/GB";
+import US from "country-flag-icons/react/3x2/US";
 import FR from "country-flag-icons/react/3x2/FR";
 import DE from "country-flag-icons/react/3x2/DE";
 import ES from "country-flag-icons/react/3x2/ES";
@@ -14,6 +15,7 @@ import { LOCALES, LOCALIZED_PAGES, localizePath } from "../content/localized";
 // Languages with published localized routes (+ English).
 const LANGUAGES = [
   { code: "en", Flag: GB, label: "English" },
+  { code: "us", Flag: US, label: "English (US)" },
   { code: "fr", Flag: FR, label: "Français" },
   { code: "de", Flag: DE, label: "Deutsch" },
   { code: "it", Flag: IT, label: "Italiano" },

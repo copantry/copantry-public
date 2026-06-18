@@ -147,7 +147,7 @@ export default function LearnShelfLifePage() {
 
       <CtaBand
         title="Know exactly what’s still good"
-        subtitle="Copantry tracks how long everything in your kitchen has left and tells you what to use up first. Free to start."
+        subtitle="Copantry tracks how long everything in your kitchen has left and tells you what to use up first. Free to use."
       />
     </>
   );

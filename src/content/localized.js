@@ -14,10 +14,36 @@
 import { FEATURES } from "./pages.js";
 import { FAQS } from "./faqs.js";
 
-/** Locales we publish prefixed, localized routes for (English is the unprefixed default). */
-export const LOCALES = ["fr", "it", "es", "pt", "de"];
+/**
+ * Locales we publish prefixed, localized routes for (English is the unprefixed
+ * default). "us" is the US-English variant: same English copy as the root, but
+ * with US currency (dollars) and a US-typical dinner — served at /us.
+ */
+export const LOCALES = ["fr", "it", "es", "pt", "de", "us"];
 /** All languages with hreflang alternates (English included as x-default). */
 export const HREFLANG_LANGS = ["en", ...LOCALES];
+
+/**
+ * Map an internal locale code to a valid BCP-47 hreflang / html-lang value.
+ * "us" is an English variant, so it must advertise as "en-US" (not "us").
+ */
+export const LOCALE_HREFLANG = { us: "en-US" };
+export const hreflangFor = (code) => LOCALE_HREFLANG[code] || code;
+
+/**
+ * Typical amount of food a single dinner suggestion rescues from the bin,
+ * shown on the homepage proof strip and the hero hook card. Converted (not just
+ * re-symbolised) per currency zone: £8 (UK) ≈ €9 (EU) ≈ $10 (US).
+ */
+export const RESCUE_AMOUNT = {
+  en: "£8",
+  us: "$10",
+  fr: "9 €",
+  it: "9 €",
+  es: "9 €",
+  pt: "9 €",
+  de: "9 €",
+};
 
 export const LOCALE_LABEL = {
   en: "English",
@@ -26,6 +52,7 @@ export const LOCALE_LABEL = {
   es: "Español",
   pt: "Português",
   de: "Deutsch",
+  us: "English (US)",
 };
 
 /** Pages that have localized, prefixed versions (logical path -> localizable). */
@@ -69,7 +96,7 @@ export const UI = {
     cta: {
       title: "Start cooking what you already have",
       subtitle:
-        "Free to start · no card needed · works in any browser. Set up your kitchen in minutes and see what tonight could be.",
+        "Free to use · no card needed · works in any browser. Set up your kitchen in minutes and see what tonight could be.",
     },
     footer: {
       tagline:
@@ -104,7 +131,7 @@ export const UI = {
     cta: {
       title: "Commencez à cuisiner ce que vous avez déjà",
       subtitle:
-        "Gratuit au départ · sans carte · dans n’importe quel navigateur. Configurez votre cuisine en quelques minutes et voyez ce que ce soir pourrait être.",
+        "Gratuit · sans carte · dans n’importe quel navigateur. Configurez votre cuisine en quelques minutes et voyez ce que ce soir pourrait être.",
     },
     footer: {
       tagline:
@@ -139,7 +166,7 @@ export const UI = {
     cta: {
       title: "Inizia a cucinare ciò che hai già",
       subtitle:
-        "Gratis per iniziare · nessuna carta · funziona in qualsiasi browser. Imposta la tua cucina in pochi minuti e scopri cosa potresti cucinare stasera.",
+        "Gratis · nessuna carta · funziona in qualsiasi browser. Imposta la tua cucina in pochi minuti e scopri cosa potresti cucinare stasera.",
     },
     footer: {
       tagline:
@@ -174,7 +201,7 @@ export const UI = {
     cta: {
       title: "Empieza a cocinar lo que ya tienes",
       subtitle:
-        "Gratis para empezar · sin tarjeta · funciona en cualquier navegador. Configura tu cocina en minutos y descubre qué podrías cenar hoy.",
+        "Gratis · sin tarjeta · funciona en cualquier navegador. Configura tu cocina en minutos y descubre qué podrías cenar hoy.",
     },
     footer: {
       tagline:
@@ -209,7 +236,7 @@ export const UI = {
     cta: {
       title: "Comece a cozinhar o que já tem",
       subtitle:
-        "Grátis para começar · sem cartão · funciona em qualquer navegador. Configure a sua cozinha em minutos e veja o que pode ser o jantar de hoje.",
+        "Grátis · sem cartão · funciona em qualquer navegador. Configure a sua cozinha em minutos e veja o que pode ser o jantar de hoje.",
     },
     footer: {
       tagline:
@@ -244,7 +271,7 @@ export const UI = {
     cta: {
       title: "Kochen Sie, was Sie schon haben",
       subtitle:
-        "Kostenlos starten · keine Karte nötig · funktioniert in jedem Browser. Richten Sie Ihre Küche in wenigen Minuten ein und sehen Sie, was heute Abend möglich ist.",
+        "Kostenlos · keine Karte nötig · funktioniert in jedem Browser. Richten Sie Ihre Küche in wenigen Minuten ein und sehen Sie, was heute Abend möglich ist.",
     },
     footer: {
       tagline:
@@ -260,6 +287,9 @@ export const UI = {
 
 /* ── Hero "hook card" labels ────────────────────────────────────────────── */
 export const HOOK = {
+  // Each locale's "tonight's dinner" is a dish typical of that country, built
+  // from three items about to expire. Saved amount is currency-converted, not
+  // just re-symbolised (£8 ≈ €9 ≈ $10) — see RESCUE_AMOUNT.
   en: {
     firstToGo: "First to go",
     tonight: "Tonight's dinner",
@@ -272,65 +302,77 @@ export const HOOK = {
     dishMeta: "Uses 3 items before they go off · 35 min",
     saved: "£8 of food rescued, not binned",
   },
+  us: {
+    firstToGo: "First to go",
+    tonight: "Tonight's dinner",
+    items: [
+      { emoji: "🥩", name: "Ground beef", left: "Use today" },
+      { emoji: "🫑", name: "Bell peppers", left: "1 day left" },
+      { emoji: "🧅", name: "Onion", left: "2 days left" },
+    ],
+    dish: "Loaded beef taco skillet 🌮",
+    dishMeta: "Uses 3 items before they go off · 30 min",
+    saved: "$10 of food rescued, not thrown out",
+  },
   fr: {
     firstToGo: "À finir en premier",
     tonight: "Le dîner de ce soir",
     items: [
-      { emoji: "🥬", name: "Épinards", left: "À finir aujourd’hui" },
-      { emoji: "🍗", name: "Cuisses de poulet", left: "J–1" },
-      { emoji: "🍋", name: "Citron", left: "J–2" },
+      { emoji: "🥬", name: "Poireaux", left: "À finir aujourd’hui" },
+      { emoji: "🥚", name: "Œufs", left: "J–1" },
+      { emoji: "🥛", name: "Crème fraîche", left: "J–2" },
     ],
-    dish: "Poulet au citron et épinards au four 🍗",
-    dishMeta: "Utilise 3 aliments avant qu’ils ne se gâtent · 35 min",
-    saved: "8 € de nourriture sauvée, pas jetée",
+    dish: "Quiche aux poireaux 🥧",
+    dishMeta: "Utilise 3 aliments avant qu’ils ne se gâtent · 40 min",
+    saved: "9 € de nourriture sauvée, pas jetée",
   },
   it: {
     firstToGo: "Da finire prima",
     tonight: "La cena di stasera",
     items: [
-      { emoji: "🥬", name: "Spinaci", left: "Da finire oggi" },
-      { emoji: "🍗", name: "Cosce di pollo", left: "1 giorno" },
-      { emoji: "🍋", name: "Limone", left: "2 giorni" },
+      { emoji: "🥒", name: "Zucchine", left: "Da finire oggi" },
+      { emoji: "🥚", name: "Uova", left: "1 giorno" },
+      { emoji: "🧀", name: "Parmigiano", left: "2 giorni" },
     ],
-    dish: "Pollo al limone con spinaci al forno 🍗",
-    dishMeta: "Usa 3 ingredienti prima che scadano · 35 min",
-    saved: "8 € di cibo salvato, non buttato",
+    dish: "Frittata di zucchine 🍳",
+    dishMeta: "Usa 3 ingredienti prima che scadano · 20 min",
+    saved: "9 € di cibo salvato, non buttato",
   },
   es: {
     firstToGo: "Aprovechar primero",
     tonight: "La cena de hoy",
     items: [
-      { emoji: "🥬", name: "Espinacas", left: "Usar hoy" },
-      { emoji: "🍗", name: "Muslos de pollo", left: "1 día" },
-      { emoji: "🍋", name: "Limón", left: "2 días" },
+      { emoji: "🥔", name: "Patatas", left: "Usar hoy" },
+      { emoji: "🥚", name: "Huevos", left: "1 día" },
+      { emoji: "🧅", name: "Cebolla", left: "2 días" },
     ],
-    dish: "Pollo al limón con espinacas al horno 🍗",
-    dishMeta: "Usa 3 ingredientes antes de que caduquen · 35 min",
-    saved: "8 € de comida salvada, no tirada",
+    dish: "Tortilla de patatas 🥘",
+    dishMeta: "Usa 3 ingredientes antes de que caduquen · 30 min",
+    saved: "9 € de comida salvada, no tirada",
   },
   pt: {
     firstToGo: "Aproveitar primeiro",
     tonight: "O jantar de hoje",
     items: [
-      { emoji: "🥬", name: "Espinafres", left: "Usar hoje" },
-      { emoji: "🍗", name: "Coxas de frango", left: "1 dia" },
-      { emoji: "🍋", name: "Limão", left: "2 dias" },
+      { emoji: "🥬", name: "Couve", left: "Usar hoje" },
+      { emoji: "🥔", name: "Batata", left: "1 dia" },
+      { emoji: "🌭", name: "Chouriço", left: "2 dias" },
     ],
-    dish: "Frango com limão e espinafres no forno 🍗",
+    dish: "Caldo verde 🍲",
     dishMeta: "Usa 3 ingredientes antes que estraguem · 35 min",
-    saved: "8 € de comida salva, não deitada fora",
+    saved: "9 € de comida salva, não deitada fora",
   },
   de: {
     firstToGo: "Zuerst verbrauchen",
     tonight: "Das Abendessen heute",
     items: [
-      { emoji: "🥬", name: "Spinat", left: "Heute verbrauchen" },
-      { emoji: "🍗", name: "Hähnchenschenkel", left: "Noch 1 Tag" },
-      { emoji: "🍋", name: "Zitrone", left: "Noch 2 Tage" },
+      { emoji: "🥔", name: "Kartoffeln", left: "Heute verbrauchen" },
+      { emoji: "🥚", name: "Eier", left: "Noch 1 Tag" },
+      { emoji: "🥓", name: "Speck", left: "Noch 2 Tage" },
     ],
-    dish: "Hähnchen mit Zitrone und Spinat aus dem Ofen 🍗",
-    dishMeta: "Nutzt 3 Produkte, bevor sie verderben · 35 Min.",
-    saved: "8 € Lebensmittel gerettet, nicht weggeworfen",
+    dish: "Bauernfrühstück 🍳",
+    dishMeta: "Nutzt 3 Produkte, bevor sie verderben · 25 Min.",
+    saved: "9 € Lebensmittel gerettet, nicht weggeworfen",
   },
 };
 
@@ -343,7 +385,7 @@ export const HOME = {
     h1accent: "bin it.",
     heroLede:
       "Copantry tells you what to cook before food goes to waste and builds your shopping list around what you already have. Less thrown away, less spent, less “what’s for dinner?”.",
-    trustLine: "Free to start · no card · web today, apps soon",
+    trustLine: "Free to use · no card · web today, apps soon",
     proof:
       "UK households throw away around 6.4 million tonnes of food a year — roughly £1,000 for an average family with children, according to WRAP. Most of it could have been eaten. Copantry exists to keep that food on your plate.",
     proofStat: "of food a typical dinner suggestion rescues from the bin",
@@ -421,8 +463,7 @@ export const HOME = {
     h1accent: "jeter.",
     heroLede:
       "Copantry vous dit quoi cuisiner avant que les aliments ne se gâtent et construit votre liste de courses autour de ce que vous avez déjà. Moins de gaspillage, moins de dépenses, moins de « qu’est-ce qu’on mange ce soir ? ».",
-    trustLine:
-      "Gratuit au départ · sans carte · web aujourd’hui, applis bientôt",
+    trustLine: "Gratuit · sans carte · web aujourd’hui, applis bientôt",
     proof:
       "En France, chaque foyer jette en moyenne des dizaines de kilos de nourriture par an — l’équivalent de centaines d’euros, selon l’ADEME. La plus grande partie aurait pu être mangée. Copantry existe pour garder cette nourriture dans votre assiette.",
     proofStat:
@@ -503,7 +544,7 @@ export const HOME = {
     h1accent: "buttarlo.",
     heroLede:
       "Copantry ti dice cosa cucinare prima che il cibo vada a male e costruisce la lista della spesa intorno a ciò che hai già. Meno sprechi, meno spese, meno « cosa si mangia stasera? ».",
-    trustLine: "Gratis per iniziare · senza carta · web oggi, app presto",
+    trustLine: "Gratis · senza carta · web oggi, app presto",
     proof:
       "In Italia ogni famiglia getta in media decine di chili di cibo all’anno — centinaia di euro. La maggior parte si sarebbe potuta mangiare. Copantry esiste per tenere quel cibo nel tuo piatto.",
     proofStat: "di cibo che una tipica proposta di cena salva dalla pattumiera",
@@ -582,7 +623,7 @@ export const HOME = {
     h1accent: "tirarlo.",
     heroLede:
       "Copantry te dice qué cocinar antes de que la comida se estropee y arma tu lista de la compra en torno a lo que ya tienes. Menos desperdicio, menos gasto, menos « ¿qué cenamos hoy? ».",
-    trustLine: "Gratis para empezar · sin tarjeta · web hoy, apps pronto",
+    trustLine: "Gratis · sin tarjeta · web hoy, apps pronto",
     proof:
       "En España cada hogar tira de media decenas de kilos de comida al año — cientos de euros. La mayor parte se podría haber comido. Copantry existe para mantener esa comida en tu plato.",
     proofStat: "de comida que una sugerencia de cena típica salva de la basura",
@@ -661,7 +702,7 @@ export const HOME = {
     h1accent: "deitar fora.",
     heroLede:
       "O Copantry diz-lhe o que cozinhar antes que a comida estrague e monta a sua lista de compras à volta do que já tem. Menos desperdício, menos gastos, menos « o que se janta hoje? ».",
-    trustLine: "Grátis para começar · sem cartão · web hoje, apps em breve",
+    trustLine: "Grátis · sem cartão · web hoje, apps em breve",
     proof:
       "Em Portugal cada agregado deita fora, em média, dezenas de quilos de comida por ano — centenas de euros. A maior parte podia ter sido comida. O Copantry existe para manter essa comida no seu prato.",
     proofStat: "de comida que uma sugestão de jantar típica salva do lixo",
@@ -741,7 +782,7 @@ export const HOME = {
     h1accent: "wegwerfen.",
     heroLede:
       "Copantry sagt Ihnen, was Sie kochen sollten, bevor Lebensmittel verderben, und baut Ihre Einkaufsliste rund um das auf, was Sie schon haben. Weniger weggeworfen, weniger ausgegeben, weniger „Was gibt’s heute zu essen?“.",
-    trustLine: "Kostenlos starten · keine Karte · Web heute, Apps bald",
+    trustLine: "Kostenlos · keine Karte · Web heute, Apps bald",
     proof:
       "In Deutschland wirft jeder Haushalt im Schnitt etliche Kilogramm Lebensmittel pro Jahr weg — Hunderte von Euro. Das meiste hätte man essen können. Copantry sorgt dafür, dass dieses Essen auf Ihrem Teller landet.",
     proofStat:
@@ -815,6 +856,14 @@ export const HOME = {
     ],
     whyTeaser: "Wie sich Copantry mit anderen Arten von Apps vergleicht",
   },
+};
+
+// US English: identical copy to the root English homepage, but with a
+// US-relevant food-waste figure (dollars) instead of the UK WRAP stat.
+HOME.us = {
+  ...HOME.en,
+  proof:
+    "US households throw away tens of millions of tons of food a year — around $1,500 for the average family, according to the USDA. Most of it could have been eaten. Copantry exists to keep that food on your plate.",
 };
 
 /* ── How it works ───────────────────────────────────────────────────────── */
@@ -1040,7 +1089,7 @@ export const REDUCE_WASTE = {
     cta: {
       title: "Commencez à sauver des aliments dès ce soir",
       subtitle:
-        "Gratuit au départ · sans carte. Ajoutez votre cuisine et voyez quoi cuisiner avant que quoi que ce soit ne se gâte.",
+        "Gratuit · sans carte. Ajoutez votre cuisine et voyez quoi cuisiner avant que quoi que ce soit ne se gâte.",
     },
     faqItems: [
       {
@@ -1118,7 +1167,7 @@ export const REDUCE_WASTE = {
     cta: {
       title: "Inizia a salvare cibo già stasera",
       subtitle:
-        "Gratis per iniziare · senza carta. Aggiungi la tua cucina e scopri cosa cucinare prima che qualcosa vada a male.",
+        "Gratis · senza carta. Aggiungi la tua cucina e scopri cosa cucinare prima che qualcosa vada a male.",
     },
     faqItems: [
       {
@@ -1196,7 +1245,7 @@ export const REDUCE_WASTE = {
     cta: {
       title: "Empieza a salvar comida esta misma noche",
       subtitle:
-        "Gratis para empezar · sin tarjeta. Añade tu cocina y descubre qué cocinar antes de que algo se estropee.",
+        "Gratis · sin tarjeta. Añade tu cocina y descubre qué cocinar antes de que algo se estropee.",
     },
     faqItems: [
       {
@@ -1274,7 +1323,7 @@ export const REDUCE_WASTE = {
     cta: {
       title: "Comece a salvar comida já hoje à noite",
       subtitle:
-        "Grátis para começar · sem cartão. Adicione a sua cozinha e veja o que cozinhar antes que algo estrague.",
+        "Grátis · sem cartão. Adicione a sua cozinha e veja o que cozinhar antes que algo estrague.",
     },
     faqItems: [
       {
@@ -1351,7 +1400,7 @@ export const REDUCE_WASTE = {
     cta: {
       title: "Beginnen Sie noch heute Abend, Lebensmittel zu retten",
       subtitle:
-        "Kostenlos starten · keine Karte. Fügen Sie Ihre Küche hinzu und sehen Sie, was zu kochen ist, bevor etwas verdirbt.",
+        "Kostenlos · keine Karte. Fügen Sie Ihre Küche hinzu und sehen Sie, was zu kochen ist, bevor etwas verdirbt.",
     },
     faqItems: [
       {

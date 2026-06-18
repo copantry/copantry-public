@@ -14,7 +14,13 @@ import {
 } from "lucide-react";
 import { APP_URL } from "../seo/constants";
 import { FAQS } from "../content/faqs";
-import { HOME, UI, pick, localizePath } from "../content/localized";
+import {
+  HOME,
+  UI,
+  pick,
+  localizePath,
+  RESCUE_AMOUNT,
+} from "../content/localized";
 import { useLang } from "../i18n/useLang";
 import { Section, SectionHeading, Pill } from "../components/ui";
 import HookCard from "../components/HookCard";
@@ -79,7 +85,7 @@ export default function HomePage() {
             </p>
 
             <AppButtons
-              className="mt-6 flex justify-center lg:justify-start flex-col"
+              className="mt-6 flex flex-col items-center lg:items-start"
               note={false}
             />
           </div>
@@ -98,7 +104,9 @@ export default function HomePage() {
               <p className="text-gray-700 leading-relaxed">{c.proof}</p>
             </div>
             <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
-              <p className="text-3xl font-extrabold text-green-600">£8</p>
+              <p className="text-3xl font-extrabold text-green-600">
+                {RESCUE_AMOUNT[lng] || RESCUE_AMOUNT.en}
+              </p>
               <p className="text-xs text-gray-500 font-semibold mt-0.5">
                 {c.proofStat}
               </p>

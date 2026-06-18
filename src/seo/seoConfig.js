@@ -28,6 +28,7 @@ import {
   UI,
   LOCALES,
   HREFLANG_LANGS,
+  hreflangFor,
   localizePath,
   pick,
 } from "../content/localized.js";
@@ -228,7 +229,7 @@ const LOCALIZED_SPECS = [
 /** hreflang alternates for a logical path: one per language + x-default (en). */
 function alternatesFor(base) {
   const list = HREFLANG_LANGS.map((l) => ({
-    hreflang: l,
+    hreflang: hreflangFor(l),
     href: `${SITE_URL}${localizePath(base, l)}`,
   }));
   list.push({ hreflang: "x-default", href: `${SITE_URL}${base}` });
@@ -295,7 +296,7 @@ function attachLocalized(reg) {
       reg[path] = {
         title,
         description,
-        lang: lng,
+        lang: hreflangFor(lng),
         alternates,
         priority: spec.kind === "home" ? 0.9 : 0.7,
         changefreq: "monthly",

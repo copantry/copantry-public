@@ -63,7 +63,7 @@ export const FEATURES = {
     cta: {
       title: "Start rescuing food tonight",
       subtitle:
-        "Free to start · no card needed. Add your kitchen and see what to cook before anything goes off.",
+        "Free to use · no card needed. Add your kitchen and see what to cook before anything goes off.",
     },
   },
 

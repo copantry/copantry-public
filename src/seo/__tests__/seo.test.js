@@ -19,6 +19,8 @@ import {
   REDUCE_WASTE,
   HOOK,
   UI,
+  RESCUE_AMOUNT,
+  hreflangFor,
   localizePath,
 } from "../../content/localized.js";
 
@@ -134,11 +136,15 @@ describe("programmatic shelf-life pages", () => {
   });
 });
 
-describe("localization (fr/it/es/pt)", () => {
+describe("localization (fr/it/es/pt/de + en-US)", () => {
   const ALL = ["en", ...LOCALES];
+  // Fully-translated locales own their entire chrome + page copy. "us" is an
+  // English variant that deliberately reuses the English chrome and only
+  // overrides currency + the country-typical dinner, so it is checked apart.
+  const TRANSLATED = ALL.filter((l) => l !== "us");
 
-  it("every localizable content block is complete in every language", () => {
-    for (const lng of ALL) {
+  it("every localizable content block is complete in every translated language", () => {
+    for (const lng of TRANSLATED) {
       expect(UI[lng], `UI.${lng}`).toBeTruthy();
       expect(HOME[lng]?.pillars, `HOME.${lng}`).toHaveLength(3);
       expect(HOME[lng]?.differentiators).toHaveLength(6);
@@ -148,6 +154,21 @@ describe("localization (fr/it/es/pt)", () => {
       expect(REDUCE_WASTE[lng]?.faqItems.length).toBeGreaterThanOrEqual(5);
       expect(HOOK[lng]?.items, `HOOK.${lng}`).toHaveLength(3);
     }
+  });
+
+  it("every locale (incl. en-US) has a hook card + a rescue amount", () => {
+    for (const lng of ALL) {
+      expect(HOOK[lng]?.items, `HOOK.${lng}`).toHaveLength(3);
+      expect(RESCUE_AMOUNT[lng], `RESCUE_AMOUNT.${lng}`).toBeTruthy();
+    }
+  });
+
+  it("the en-US variant reuses English chrome but has its own dinner + dollars", () => {
+    expect(HOME.us?.pillars, "HOME.us").toHaveLength(3); // inherited from en
+    expect(UI.us, "UI.us falls back to English").toBeUndefined();
+    expect(RESCUE_AMOUNT.us).toContain("$");
+    expect(HOOK.us.dish).not.toBe(HOOK.en.dish);
+    expect(hreflangFor("us")).toBe("en-US");
   });
 
   it("localizePath prefixes localized pages and leaves others/English untouched", () => {
@@ -167,9 +188,10 @@ describe("localization (fr/it/es/pt)", () => {
       for (const lng of LOCALES) {
         const e = SEO[localizePath(base, lng)];
         expect(e, `${base} @ ${lng}`).toBeTruthy();
-        expect(e.lang).toBe(lng);
+        expect(e.lang).toBe(hreflangFor(lng));
         const hreflangs = e.alternates.map((a) => a.hreflang);
-        for (const l of HREFLANG_LANGS) expect(hreflangs).toContain(l);
+        for (const l of HREFLANG_LANGS)
+          expect(hreflangs).toContain(hreflangFor(l));
         expect(hreflangs).toContain("x-default");
       }
       // English counterpart also carries the alternates.

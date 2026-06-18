@@ -87,3 +87,10 @@ use `var(--color-brand-500)` or `bg-brand-500`.
   via `useLang()` (URL-based). Other pages are English-only for now. See the
   runbook for how to localize more pages. Don't add browser-detection that changes
   the root language — the URL is canonical.
+  - **`/us` is the US-English variant** (`LOCALES` includes `"us"`, advertised as
+    `hreflang="en-US"` via `hreflangFor()`). It reuses the English chrome/copy
+    (UI/HOME/HOW_IT_WORKS/REDUCE_WASTE fall back to `en`) and only overrides
+    currency and the country-typical dinner. Currency is **converted, not
+    re-symbolised** — see `RESCUE_AMOUNT` (£8 ≈ €9 ≈ $10) and the per-country
+    `HOOK` dishes. Add new currency-bearing copy via `RESCUE_AMOUNT`, never a
+    hardcoded symbol.
