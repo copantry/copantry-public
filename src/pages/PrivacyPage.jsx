@@ -1,4 +1,4 @@
-const LAST_UPDATED = "22 June 2026";
+const LAST_UPDATED = "23 June 2026";
 
 function Section({ id, title, children }) {
   return (
@@ -114,8 +114,14 @@ export default function PrivacyPage() {
           ]}
         />
         <P>
-          We do not use your content data for advertising, and we do not sell
-          your data to third parties.
+          We do not sell your personal data to third parties. Copantry shows
+          clearly-labelled advertising and sponsored recipes from vetted
+          businesses, but ad targeting is contextual (what you are cooking, your
+          market and language) and consent-based — never built by selling or
+          handing over your personal data. Advertisers only ever receive
+          aggregated, anonymised performance reporting, never per-user data. You
+          can decline ad personalisation via the cookie notice; you will still
+          see contextual ads but no behavioural targeting.
         </P>
       </Section>
 
@@ -129,7 +135,7 @@ export default function PrivacyPage() {
             "Google LLC (Gemini API) — recipe content you choose to parse using your own Gemini key is transmitted to Google's servers. This is subject to Google's API terms and privacy policy. If you do not provide a Gemini key, your content is processed only by our self-hosted model.",
             'Sign-in providers (Google, Apple) — if you choose to sign in or register with Google or Apple, we receive a verified identifier and your email and name from that provider to create or access your account. If you use Apple\'s "Hide My Email", we only ever see the private relay address Apple provides. We do not post anything to those accounts.',
             "Infrastructure and hosting providers — our servers, database, and object storage are hosted on third-party cloud infrastructure. These providers process data on our behalf under data processing agreements.",
-            "Payment processors — if you subscribe to a paid plan, payment is handled by our payment processor. We do not see or store your full card number.",
+            "Payment processors (Stripe) — if you subscribe to a paid plan, or if you advertise with us as a business, payment is handled by Stripe (including Stripe Tax for VAT). We do not see or store your full card number; Stripe processes payment data under a data processing agreement with appropriate transfer safeguards.",
           ]}
         />
         <P>

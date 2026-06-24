@@ -21,6 +21,9 @@ import LearnShelfLifePage from "./pages/LearnShelfLifePage";
 import AboutPage from "./pages/AboutPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
+import ForBusinessPage from "./pages/ForBusinessPage";
+import AdvertisingPolicyPage from "./pages/AdvertisingPolicyPage";
+import AdvertiserTermsPage from "./pages/AdvertiserTermsPage";
 import { FEATURES, USE_CASES } from "./content/pages";
 import { LOCALES, REDUCE_WASTE, UI, pick } from "./content/localized";
 
@@ -99,6 +102,13 @@ export default function App() {
             <Route path="/learn/:slug" element={<LearnShelfLifePage />} />
 
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/business" element={<ForBusinessPage />} />
+            <Route path="/advertise" element={<ForBusinessPage />} />
+            <Route
+              path="/advertising-policy"
+              element={<AdvertisingPolicyPage />}
+            />
+            <Route path="/advertiser-terms" element={<AdvertiserTermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
 

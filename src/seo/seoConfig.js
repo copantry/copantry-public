@@ -170,6 +170,34 @@ const STATIC = {
       ]),
     ],
   },
+  "/business": {
+    title: titled("For Business — advertise to cooks at the moment of intent"),
+    description:
+      "Reach an engaged, intent-rich cooking audience with clearly-labelled sponsored recipes, promoted brands and ads. Vetted, privacy-first, and free for cooks.",
+    priority: 0.6,
+    changefreq: "monthly",
+    schema: () => [
+      organizationSchema(),
+      breadcrumbSchema([
+        { name: "Home", path: "/" },
+        { name: "For Business", path: "/business" },
+      ]),
+    ],
+  },
+  "/advertising-policy": {
+    title: titled("Ad Policy"),
+    description:
+      "The rubric Copantry applies to every ad creative and sponsored recipe: labelling, prohibited content, regulated categories and quality.",
+    priority: 0.3,
+    changefreq: "yearly",
+  },
+  "/advertiser-terms": {
+    title: titled("Advertiser Terms"),
+    description:
+      "The terms that govern business accounts and advertising on Copantry, including billing, tax and refunds.",
+    priority: 0.3,
+    changefreq: "yearly",
+  },
   "/privacy": {
     title: titled("Privacy Policy"),
     description:

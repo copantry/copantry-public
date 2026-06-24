@@ -45,6 +45,7 @@ export default function Footer({ onContact }) {
         { label: "How long does food last?", to: "/learn" },
         { label: ui.nav.why, to: "/why-copantry" },
         { label: "About", to: "/about" },
+        { label: "For Business", to: "/business" },
       ],
     },
     {
