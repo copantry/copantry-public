@@ -1426,3 +1426,142 @@ export const REDUCE_WASTE = {
     ],
   },
 };
+
+/*
+ * Localized home-page FAQ (display + per-locale FAQPage JSON-LD). English reuses the
+ * canonical FAQS.home; the five locales are full translations of the same 6 Q&A. `us`
+ * falls back to `en` via pick(). Keep the item order in lock-step with FAQS.home.
+ */
+export const HOME_FAQ = {
+  en: FAQS.home,
+  fr: [
+    {
+      q: "Existe-t-il une application qui vous dit quoi cuisiner avant que les aliments ne périment ?",
+      a: "Oui. Copantry suit ce qui se trouve dans votre cuisine et le temps qu'il reste à chaque produit, puis suggère des recettes qui utilisent d'abord ce qui va bientôt périmer — et compose votre liste de courses uniquement avec ce qui vous manque.",
+    },
+    {
+      q: "Existe-t-il un planificateur de repas qui s'organise autour de ce qu'il y a dans votre frigo ?",
+      a: "Oui. Copantry part de votre garde-manger, pas d'un calendrier vide. Il regarde ce que vous avez déjà et ce qui va bientôt se gâter, puis planifie une semaine de repas qui utilisent d'abord ces ingrédients pour gaspiller moins et acheter moins.",
+    },
+    {
+      q: "Comment Copantry m'aide-t-il à gaspiller moins de nourriture ?",
+      a: "Copantry vous montre ce qui va bientôt périmer, suggère des plats qui utilisent ces produits en premier et n'ajoute à votre liste de courses que ce que vous n'avez pas déjà — vous arrêtez ainsi d'acheter en double et de jeter des aliments oubliés.",
+    },
+    {
+      q: "Copantry est-il gratuit ?",
+      a: "Copantry est gratuit, sans carte requise. Vous pouvez collecter des recettes, suivre votre garde-manger, planifier des repas et créer des listes de courses avec la version gratuite.",
+    },
+    {
+      q: "Sur quels appareils Copantry fonctionne-t-il ?",
+      a: "Copantry fonctionne dans votre navigateur web et sur Android, avec une application iOS à venir. Votre garde-manger, vos recettes et vos plans se synchronisent sur tous vos appareils.",
+    },
+    {
+      q: "Mon ou ma partenaire et ma famille peuvent-ils partager le même plan et la même liste de courses ?",
+      a: "Oui. Copantry est conçu pour les foyers : invitez votre famille à votre cuisine et vous partagez tous le même garde-manger, le même calendrier de repas et la même liste de courses, mise à jour en temps réel.",
+    },
+  ],
+  it: [
+    {
+      q: "Esiste un'app che ti dice cosa cucinare prima che il cibo scada?",
+      a: "Sì. Copantry tiene traccia di ciò che hai in cucina e di quanto manca alla scadenza di ogni prodotto, poi suggerisce ricette che usano per prime le cose in scadenza — e crea la lista della spesa solo con ciò che ti manca.",
+    },
+    {
+      q: "Esiste un pianificatore di pasti che organizza in base a ciò che hai in frigo?",
+      a: "Sì. Copantry parte dalla tua dispensa, non da un calendario vuoto. Guarda ciò che hai già e ciò che sta per andare a male, poi pianifica una settimana di pasti che usano prima quegli ingredienti, così sprechi meno e fai meno spesa.",
+    },
+    {
+      q: "Come mi aiuta Copantry a sprecare meno cibo?",
+      a: "Copantry ti mostra ciò che sta per scadere, suggerisce piatti che usano per primi quei prodotti e aggiunge alla lista della spesa solo ciò che non hai già — così smetti di comprare doppioni e di buttare cibo dimenticato.",
+    },
+    {
+      q: "Copantry è gratuito?",
+      a: "Copantry è gratuito da usare, senza carta richiesta. Puoi raccogliere ricette, gestire la dispensa, pianificare i pasti e creare liste della spesa con il piano gratuito.",
+    },
+    {
+      q: "Su quali dispositivi funziona Copantry?",
+      a: "Copantry funziona nel tuo browser web e su Android, con un'app per iOS in arrivo. La dispensa, le ricette e i piani si sincronizzano su tutti i tuoi dispositivi.",
+    },
+    {
+      q: "Il mio partner e la mia famiglia possono condividere lo stesso piano e la stessa lista della spesa?",
+      a: "Sì. Copantry è pensato per le famiglie: invita i tuoi cari nella tua cucina e condividerete tutti la stessa dispensa, lo stesso calendario dei pasti e la stessa lista della spesa, aggiornata in tempo reale.",
+    },
+  ],
+  es: [
+    {
+      q: "¿Hay una app que te diga qué cocinar antes de que la comida caduque?",
+      a: "Sí. Copantry controla lo que tienes en la cocina y cuánto le queda a cada producto, y luego sugiere recetas que usan primero lo que está a punto de caducar — y arma tu lista de la compra solo con lo que te falta.",
+    },
+    {
+      q: "¿Hay un planificador de comidas que se organice según lo que tienes en la nevera?",
+      a: "Sí. Copantry parte de tu despensa, no de un calendario vacío. Mira lo que ya tienes y lo que está por estropearse, y planifica una semana de comidas que usan primero esos ingredientes para desperdiciar menos y comprar menos.",
+    },
+    {
+      q: "¿Cómo me ayuda Copantry a desperdiciar menos comida?",
+      a: "Copantry te muestra lo que está por caducar, sugiere platos que usan primero esos productos y solo añade a tu lista de la compra lo que no tienes ya — así dejas de comprar duplicados y de tirar comida olvidada.",
+    },
+    {
+      q: "¿Copantry es gratis?",
+      a: "Copantry es gratis, sin tarjeta requerida. Puedes recopilar recetas, controlar tu despensa, planificar comidas y crear listas de la compra con la versión gratuita.",
+    },
+    {
+      q: "¿En qué dispositivos funciona Copantry?",
+      a: "Copantry funciona en tu navegador web y en Android, con una app para iOS en camino. Tu despensa, recetas y planes se sincronizan en todos tus dispositivos.",
+    },
+    {
+      q: "¿Pueden mi pareja y mi familia compartir el mismo plan y la misma lista de la compra?",
+      a: "Sí. Copantry está pensado para hogares: invita a tu familia a tu cocina y todos compartiréis la misma despensa, el mismo calendario de comidas y la misma lista de la compra, actualizada en tiempo real.",
+    },
+  ],
+  pt: [
+    {
+      q: "Existe uma aplicação que diz o que cozinhar antes de a comida estragar?",
+      a: "Sim. A Copantry acompanha o que tem na cozinha e quanto tempo falta a cada produto e, depois, sugere receitas que usam primeiro o que está prestes a expirar — e cria a sua lista de compras apenas com o que lhe falta.",
+    },
+    {
+      q: "Existe um planeador de refeições que se organiza com base no que tem no frigorífico?",
+      a: "Sim. A Copantry parte da sua despensa, não de um calendário vazio. Olha para o que já tem e para o que está prestes a estragar-se e planeia uma semana de refeições que usam primeiro esses ingredientes, para desperdiçar menos e comprar menos.",
+    },
+    {
+      q: "Como é que a Copantry me ajuda a desperdiçar menos comida?",
+      a: "A Copantry mostra-lhe o que está prestes a expirar, sugere pratos que usam primeiro esses produtos e só acrescenta à sua lista de compras o que ainda não tem — assim deixa de comprar duplicados e de deitar fora comida esquecida.",
+    },
+    {
+      q: "A Copantry é gratuita?",
+      a: "A Copantry é gratuita, sem cartão necessário. Pode reunir receitas, gerir a despensa, planear refeições e criar listas de compras na versão gratuita.",
+    },
+    {
+      q: "Em que dispositivos funciona a Copantry?",
+      a: "A Copantry funciona no seu navegador web e em Android, com uma aplicação para iOS a caminho. A sua despensa, receitas e planos sincronizam em todos os seus dispositivos.",
+    },
+    {
+      q: "O meu/minha parceiro(a) e a minha família podem partilhar o mesmo plano e a mesma lista de compras?",
+      a: "Sim. A Copantry foi pensada para famílias: convide os seus para a sua cozinha e partilham todos a mesma despensa, o mesmo calendário de refeições e a mesma lista de compras, atualizada em tempo real.",
+    },
+  ],
+  de: [
+    {
+      q: "Gibt es eine App, die dir sagt, was du kochen sollst, bevor Lebensmittel ablaufen?",
+      a: "Ja. Copantry verfolgt, was in deiner Küche ist und wie lange jedes Produkt noch haltbar ist, und schlägt dann Rezepte vor, die zuerst das verwenden, was bald abläuft — und erstellt deine Einkaufsliste nur aus dem, was dir fehlt.",
+    },
+    {
+      q: "Gibt es einen Essensplaner, der sich nach dem richtet, was in deinem Kühlschrank ist?",
+      a: "Ja. Copantry geht von deinem Vorrat aus, nicht von einem leeren Kalender. Es schaut, was du schon hast und was bald schlecht wird, und plant dann eine Woche mit Gerichten, die zuerst diese Zutaten verwenden, damit du weniger wegwirfst und weniger einkaufst.",
+    },
+    {
+      q: "Wie hilft mir Copantry, weniger Lebensmittel zu verschwenden?",
+      a: "Copantry zeigt dir, was bald abläuft, schlägt Gerichte vor, die zuerst diese Produkte verwenden, und setzt nur das auf deine Einkaufsliste, was du nicht schon hast — so kaufst du keine Dopplungen mehr und wirfst keine vergessenen Lebensmittel weg.",
+    },
+    {
+      q: "Ist Copantry kostenlos?",
+      a: "Copantry ist kostenlos nutzbar, ohne Karte. Du kannst Rezepte sammeln, deinen Vorrat verfolgen, Mahlzeiten planen und Einkaufslisten in der kostenlosen Version erstellen.",
+    },
+    {
+      q: "Auf welchen Geräten funktioniert Copantry?",
+      a: "Copantry läuft in deinem Webbrowser und auf Android, eine iOS-App ist in Arbeit. Dein Vorrat, deine Rezepte und Pläne werden auf all deinen Geräten synchronisiert.",
+    },
+    {
+      q: "Können mein Partner und meine Familie denselben Plan und dieselbe Einkaufsliste teilen?",
+      a: "Ja. Copantry ist für Haushalte gemacht: Lade deine Familie in deine Küche ein, und ihr teilt euch alle denselben Vorrat, denselben Essensplan und dieselbe Einkaufsliste, in Echtzeit aktualisiert.",
+    },
+  ],
+};

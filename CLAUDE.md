@@ -82,9 +82,10 @@ use `var(--color-brand-500)` or `bg-brand-500`.
 - **No fabricated stats:** attribute figures (WRAP/ADEME) with links.
 - **No named competitors** — contrast categories of apps only.
 - **Localization:** language is driven by the URL prefix (`/fr`, `/it`, `/es`,
-  `/pt`, `/de`; English at root). Home, How-it-works and the food-waste pillar are fully
-  localized; all translations live in `src/content/localized.js`; language is read
-  via `useLang()` (URL-based). Other pages are English-only for now. See the
+  `/pt`, `/de`; English at root). Home (incl. the **home FAQ** via `HOME_FAQ`),
+  How-it-works and the food-waste pillar are fully localized; all translations live in
+  `src/content/localized.js`; language is read via `useLang()` (URL-based). Other pages
+  (why-copantry, use-cases, other features, blog, learn) are English-only for now. See the
   runbook for how to localize more pages. Don't add browser-detection that changes
   the root language — the URL is canonical.
   - **`/us` is the US-English variant** (`LOCALES` includes `"us"`, advertised as

@@ -13,9 +13,9 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { APP_URL } from "../seo/constants";
-import { FAQS } from "../content/faqs";
 import {
   HOME,
+  HOME_FAQ,
   UI,
   pick,
   localizePath,
@@ -41,9 +41,8 @@ export default function HomePage() {
   const lng = useLang();
   const c = pick(HOME, lng);
   const ui = UI[lng] || UI.en;
-  // Home FAQ schema is English-only for now; localized FAQ display would need
-  // localized home FAQ content (tracked as a follow-up). English route uses FAQS.home.
-  const faqItems = lng === "en" ? FAQS.home : null;
+  // Home FAQ is now localized for every route (HOME_FAQ; `us` falls back to `en`).
+  const faqItems = pick(HOME_FAQ, lng);
 
   return (
     <>
