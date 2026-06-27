@@ -16,7 +16,14 @@ npm run dev        # Vite dev server, port 5174 (SPA only, no prerender)
 npm run build      # client build → SSR build → prerender → dist/ (static HTML per route + sitemap.xml)
 npm run build:ssr  # SSR bundle only (dist-ssr/)
 npm run prerender  # prerender step only (needs dist/ + dist-ssr/ present)
+npm run test:e2e   # Playwright browser E2E (e2e/**, desktop + mobile, Chromium)
 ```
+
+**E2E tests:** `e2e/` holds full end-to-end Playwright specs (home, route
+navigation, SEO `<head>`) — this site is static/no-auth so no backend is needed.
+The config auto-starts/reuses the dev server on port 5174. Vitest (`npm test`) is
+scoped to `tests/**` so it won't pick up the E2E specs. See
+[../docs/e2e-testing.md](../docs/e2e-testing.md).
 
 `npm run build` produces **static, crawlable HTML for every route** (view-source
 contains the copy + JSON-LD). If a route renders fine in `dev` but is missing
