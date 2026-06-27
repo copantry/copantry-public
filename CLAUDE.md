@@ -82,12 +82,20 @@ use `var(--color-brand-500)` or `bg-brand-500`.
 - **No fabricated stats:** attribute figures (WRAP/ADEME) with links.
 - **No named competitors** — contrast categories of apps only.
 - **Localization:** language is driven by the URL prefix (`/fr`, `/it`, `/es`,
-  `/pt`, `/de`; English at root). Home (incl. the **home FAQ** via `HOME_FAQ`),
-  How-it-works and the food-waste pillar are fully localized; all translations live in
-  `src/content/localized.js`; language is read via `useLang()` (URL-based). Other pages
-  (why-copantry, use-cases, other features, blog, learn) are English-only for now. See the
-  runbook for how to localize more pages. Don't add browser-detection that changes
-  the root language — the URL is canonical.
+  `/pt`, `/de`; English at root). **The whole marketing site is localized** — Home
+  (incl. the **home FAQ** via `HOME_FAQ`), How-it-works, why-copantry (`WHY_COPANTRY`),
+  the food-waste pillar (`REDUCE_WASTE`) and all `UI` chrome live in
+  `src/content/localized.js`; the other **feature + use-case** pages live in
+  `src/content/pagesLocalized.js` (`localizedPage()`), **Learn** (index + 23 shelf-life
+  pages) in `src/content/learnLocalized.js`, and the **Blog** (index + posts) in
+  `src/content/blogLocalized.js` (a JSX-free block model rendered by
+  `pages/blog/BlogBody.jsx`). `isLocalizedPath()` (in `localized.js`) is the single source
+  of truth for which paths get a locale prefix (exact pages + `/features/`, `/use-cases/`,
+  `/learn`, `/blog` prefixes; the MCP page is excluded). Language is read via `useLang()`
+  (URL-based). Only the **MCP page** (`/features/ai-assistant-mcp`) and legal/about pages
+  stay English. Don't add browser-detection that changes the root language — the URL is
+  canonical. Slugs (incl. `/learn/how-long-does-*-last` and `/blog/*`) stay English; only
+  the rendered copy is translated.
   - **`/us` is the US-English variant** (`LOCALES` includes `"us"`, advertised as
     `hreflang="en-US"` via `hreflangFor()`). It reuses the English chrome/copy
     (UI/HOME/HOW_IT_WORKS/REDUCE_WASTE fall back to `en`) and only overrides

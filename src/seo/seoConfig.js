@@ -25,6 +25,7 @@ import {
   HOME,
   HOW_IT_WORKS,
   REDUCE_WASTE,
+  WHY_COPANTRY,
   UI,
   LOCALES,
   HREFLANG_LANGS,
@@ -32,6 +33,13 @@ import {
   localizePath,
   pick,
 } from "../content/localized.js";
+import {
+  localizedPage,
+  LOCALIZED_FEATURE_SLUGS,
+  LOCALIZED_USE_CASE_SLUGS,
+} from "../content/pagesLocalized.js";
+import { LEARN_UI, localizedShelfItem } from "../content/learnLocalized.js";
+import { BLOG_UI, localizedPostMeta } from "../content/blogLocalized.js";
 
 const titled = (t) => `${t} | ${SITE_NAME}`;
 /**
@@ -243,10 +251,11 @@ function featureEntry(slug, page, section, sectionPath) {
 
 /* ── Localized routes (fr/it/es/pt) + hreflang ──────────────────────────── */
 
-// The three logical paths that have localized, prefixed versions.
+// The logical paths that have localized, prefixed versions.
 const LOCALIZED_SPECS = [
   { base: "/", content: HOME, kind: "home" },
   { base: "/how-it-works", content: HOW_IT_WORKS, kind: "how" },
+  { base: "/why-copantry", content: WHY_COPANTRY, kind: "why" },
   {
     base: "/features/reduce-food-waste",
     content: REDUCE_WASTE,
@@ -274,7 +283,10 @@ function localizedTitleDesc(spec, lng) {
       description: metaDescription(c.heroLede),
     };
   }
-  return { title: titled(c.h1), description: metaDescription(c.lede) };
+  return {
+    title: titled(c.metaTitle || c.h1),
+    description: metaDescription(c.lede),
+  };
 }
 
 function localizedSchema(spec, lng, path) {
@@ -292,6 +304,12 @@ function localizedSchema(spec, lng, path) {
         c.steps.map((s) => ({ name: s.title, text: s.desc })),
       ),
       breadcrumbSchema([...crumbsBase, { name: c.eyebrow, path }]),
+    ];
+  }
+  if (spec.kind === "why") {
+    return [
+      faqSchema(c.faqItems),
+      breadcrumbSchema([...crumbsBase, { name: c.crumb, path }]),
     ];
   }
   // pillar (reduce food waste)
@@ -329,6 +347,197 @@ function attachLocalized(reg) {
         priority: spec.kind === "home" ? 0.9 : 0.7,
         changefreq: "monthly",
         schema: () => localizedSchema(spec, lng, path),
+      };
+    }
+  }
+}
+
+/* ── Localized /features/* + /use-cases/* (fr/it/es/pt/de) + hreflang ───── */
+function localizedContentEntry(base, slug, lng, kind) {
+  const c = localizedPage(slug, lng);
+  const path = localizePath(base, lng);
+  const ui = UI[lng] || UI.en;
+  const sectionCrumb =
+    kind === "features"
+      ? {
+          name: ui.breadcrumbFeatures,
+          path: localizePath("/how-it-works", lng),
+        }
+      : { name: ui.breadcrumbUseCases, path: localizePath("/use-cases", lng) };
+  return [
+    path,
+    {
+      title: titled(c.metaTitle || c.h1),
+      description: metaDescription(c.lede),
+      lang: hreflangFor(lng),
+      alternates: alternatesFor(base),
+      priority: 0.7,
+      changefreq: "monthly",
+      schema: () => [
+        faqSchema(c.faqItems),
+        breadcrumbSchema([
+          { name: ui.breadcrumbHome, path: localizePath("/", lng) },
+          sectionCrumb,
+          { name: c.crumb ?? c.h1, path },
+        ]),
+      ],
+    },
+  ];
+}
+
+function attachLocalizedContentPages(reg) {
+  const groups = [
+    { slugs: LOCALIZED_FEATURE_SLUGS, prefix: "/features", kind: "features" },
+    {
+      slugs: LOCALIZED_USE_CASE_SLUGS,
+      prefix: "/use-cases",
+      kind: "use-cases",
+    },
+  ];
+  for (const g of groups) {
+    for (const slug of g.slugs) {
+      const base = `${g.prefix}/${slug}`;
+      const alternates = alternatesFor(base);
+      if (reg[base]) {
+        reg[base].alternates = alternates;
+        reg[base].lang = "en";
+      }
+      for (const lng of LOCALES) {
+        const [path, entry] = localizedContentEntry(base, slug, lng, g.kind);
+        reg[path] = entry;
+      }
+    }
+  }
+}
+
+/* ── Localized /learn index + shelf-life pages (fr/it/es/pt/de) + hreflang ── */
+function attachLocalizedLearn(reg) {
+  // Index page.
+  const indexAlt = alternatesFor("/learn");
+  if (reg["/learn"]) {
+    reg["/learn"].alternates = indexAlt;
+    reg["/learn"].lang = "en";
+  }
+  for (const lng of LOCALES) {
+    const ui = LEARN_UI[lng] || LEARN_UI.en;
+    const path = localizePath("/learn", lng);
+    reg[path] = {
+      title: titled(ui.h1),
+      description: metaDescription(ui.lede),
+      lang: hreflangFor(lng),
+      alternates: indexAlt,
+      priority: 0.7,
+      changefreq: "monthly",
+      schema: () => [
+        breadcrumbSchema([
+          {
+            name: (UI[lng] || UI.en).breadcrumbHome,
+            path: localizePath("/", lng),
+          },
+          { name: ui.breadcrumbLearn, path },
+        ]),
+      ],
+    };
+  }
+
+  // Per-ingredient pages.
+  for (const item of SHELF_LIFE) {
+    const base = learnPath(item.slug);
+    const alt = alternatesFor(base);
+    if (reg[base]) {
+      reg[base].alternates = alt;
+      reg[base].lang = "en";
+    }
+    for (const lng of LOCALES) {
+      const ui = LEARN_UI[lng] || LEARN_UI.en;
+      const c = localizedShelfItem(item, lng);
+      const path = localizePath(base, lng);
+      reg[path] = {
+        title: titled(c.question),
+        description: metaDescription(`${c.answer} ${c.store}`),
+        lang: hreflangFor(lng),
+        alternates: alt,
+        priority: 0.5,
+        changefreq: "yearly",
+        schema: () => [
+          faqSchema([{ q: c.question, a: `${c.answer} ${c.store}` }]),
+          breadcrumbSchema([
+            {
+              name: (UI[lng] || UI.en).breadcrumbHome,
+              path: localizePath("/", lng),
+            },
+            { name: ui.breadcrumbLearn, path: localizePath("/learn", lng) },
+            { name: c.question, path },
+          ]),
+        ],
+      };
+    }
+  }
+}
+
+/* ── Localized /blog index + posts (fr/it/es/pt/de) + hreflang ───────────── */
+function attachLocalizedBlog(reg) {
+  const indexAlt = alternatesFor("/blog");
+  if (reg["/blog"]) {
+    reg["/blog"].alternates = indexAlt;
+    reg["/blog"].lang = "en";
+  }
+  for (const lng of LOCALES) {
+    const ui = BLOG_UI[lng] || BLOG_UI.en;
+    const path = localizePath("/blog", lng);
+    reg[path] = {
+      title: titled(ui.h1),
+      description: metaDescription(ui.lede),
+      lang: hreflangFor(lng),
+      alternates: indexAlt,
+      priority: 0.7,
+      changefreq: "weekly",
+      schema: () => [
+        breadcrumbSchema([
+          {
+            name: (UI[lng] || UI.en).breadcrumbHome,
+            path: localizePath("/", lng),
+          },
+          { name: "Blog", path },
+        ]),
+      ],
+    };
+  }
+
+  for (const post of POSTS) {
+    const base = `/blog/${post.slug}`;
+    const alt = alternatesFor(base);
+    if (reg[base]) {
+      reg[base].alternates = alt;
+      reg[base].lang = "en";
+    }
+    for (const lng of LOCALES) {
+      const meta = localizedPostMeta(post.slug, lng);
+      const path = localizePath(base, lng);
+      reg[path] = {
+        title: titled(meta.title),
+        description: meta.description,
+        ogType: "article",
+        lang: hreflangFor(lng),
+        alternates: alt,
+        priority: 0.6,
+        changefreq: "yearly",
+        schema: () => [
+          articleSchema({
+            headline: meta.title,
+            description: meta.description,
+            path,
+            datePublished: post.date,
+          }),
+          breadcrumbSchema([
+            {
+              name: (UI[lng] || UI.en).breadcrumbHome,
+              path: localizePath("/", lng),
+            },
+            { name: "Blog", path: localizePath("/blog", lng) },
+            { name: meta.category, path },
+          ]),
+        ],
       };
     }
   }
@@ -392,6 +601,9 @@ function buildRegistry() {
   }
 
   attachLocalized(reg);
+  attachLocalizedContentPages(reg);
+  attachLocalizedLearn(reg);
+  attachLocalizedBlog(reg);
   return reg;
 }
 

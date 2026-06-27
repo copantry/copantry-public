@@ -1,16 +1,22 @@
 import { Link } from "react-router-dom";
 import { ChevronRight, Calendar, Clock } from "lucide-react";
+import { BLOG_UI } from "../../content/blogLocalized";
+import { localizePath, UI } from "../../content/localized";
+import { useLang } from "../../i18n/useLang";
 import { Section } from "../../components/ui";
 import CtaBand from "../../components/CtaBand";
 
 /*
  * Shared chrome for a blog post: breadcrumb, title, meta, prose body, CTA.
  * The `prose` styles below are scoped utility classes so we don't need the
- * Tailwind typography plugin.
+ * Tailwind typography plugin. Localized via blogLocalized.js (the `post` passed
+ * in is already locale-resolved).
  */
 
 export default function BlogPostLayout({ post, children }) {
-  const dateLabel = new Date(post.date).toLocaleDateString("en-GB", {
+  const lng = useLang();
+  const ui = BLOG_UI[lng] || BLOG_UI.en;
+  const dateLabel = new Date(post.date).toLocaleDateString(ui.locale, {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -23,11 +29,14 @@ export default function BlogPostLayout({ post, children }) {
           className="flex items-center gap-1.5 text-xs text-gray-400 font-medium"
           aria-label="Breadcrumb"
         >
-          <Link to="/" className="hover:text-orange-500">
-            Home
+          <Link to={localizePath("/", lng)} className="hover:text-orange-500">
+            {(UI[lng] || UI.en).breadcrumbHome}
           </Link>
           <ChevronRight size={12} />
-          <Link to="/blog" className="hover:text-orange-500">
+          <Link
+            to={localizePath("/blog", lng)}
+            className="hover:text-orange-500"
+          >
             Blog
           </Link>
           <ChevronRight size={12} />
@@ -47,7 +56,7 @@ export default function BlogPostLayout({ post, children }) {
             <Calendar size={13} /> {dateLabel}
           </span>
           <span className="flex items-center gap-1">
-            <Clock size={13} /> {post.readMins} min read
+            <Clock size={13} /> {post.readMins} {ui.minRead}
           </span>
         </div>
       </Section>

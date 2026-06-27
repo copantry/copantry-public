@@ -38,8 +38,8 @@ describe("SEO registry", () => {
       expect(e.title, e.path).toBeTruthy();
       // Primary pages stay tight (~60 + " | Copantry"); blog headlines are
       // deliberately question-shaped to match natural-language queries, so they
-      // are allowed to run longer.
-      const maxTitle = e.path.startsWith("/blog/") ? 95 : 70;
+      // are allowed to run longer (incl. their localized /<lng>/blog/* variants).
+      const maxTitle = e.path.includes("/blog/") ? 95 : 70;
       expect(e.title.length, `title too long: ${e.path}`).toBeLessThanOrEqual(
         maxTitle,
       );
@@ -175,7 +175,18 @@ describe("localization (fr/it/es/pt/de + en-US)", () => {
     expect(localizePath("/", "fr")).toBe("/fr");
     expect(localizePath("/how-it-works", "it")).toBe("/it/how-it-works");
     expect(localizePath("/", "en")).toBe("/");
-    expect(localizePath("/why-copantry", "fr")).toBe("/why-copantry"); // not localized
+    expect(localizePath("/why-copantry", "fr")).toBe("/fr/why-copantry");
+    expect(localizePath("/features/meal-planning", "fr")).toBe(
+      "/fr/features/meal-planning",
+    );
+    expect(localizePath("/use-cases/for-families", "de")).toBe(
+      "/de/use-cases/for-families",
+    );
+    // The MCP page stays English-only even though it lives under /features.
+    expect(localizePath("/features/ai-assistant-mcp", "fr")).toBe(
+      "/features/ai-assistant-mcp",
+    );
+    expect(localizePath("/about", "fr")).toBe("/about"); // not localized
   });
 
   it("localized routes are in the registry with lang + full hreflang set", () => {

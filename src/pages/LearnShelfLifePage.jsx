@@ -8,44 +8,51 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { findByPageSlug } from "../content/shelfLife";
+import { LEARN_UI, localizedShelfItem } from "../content/learnLocalized";
+import { localizePath, UI } from "../content/localized";
+import { useLang } from "../i18n/useLang";
 import { Section } from "../components/ui";
 import CtaBand from "../components/CtaBand";
 
 /*
  * Programmatic shelf-life page (/learn/how-long-does-<x>-last). Answer-first:
  * the opening sentence directly answers the query so an AI engine can lift it.
+ * Localized via learnLocalized.js; the URL slug stays English.
  */
-
-const BLOCKS = [
-  {
-    key: "why",
-    icon: HelpCircle,
-    color: "text-rose-500",
-    bg: "bg-rose-50",
-    title: "Why it goes off",
-  },
-  {
-    key: "store",
-    icon: Snowflake,
-    color: "text-blue-600",
-    bg: "bg-blue-50",
-    title: "How to store it so it lasts longer",
-  },
-  {
-    key: "cook",
-    icon: ChefHat,
-    color: "text-orange-500",
-    bg: "bg-orange-50",
-    title: "What to cook before it goes",
-  },
-];
 
 export default function LearnShelfLifePage() {
   const { slug } = useParams();
-  const item = findByPageSlug(slug);
-  if (!item) return <Navigate to="/learn" replace />;
+  const lng = useLang();
+  const ui = LEARN_UI[lng] || LEARN_UI.en;
+  const base = findByPageSlug(slug);
+  if (!base) return <Navigate to={localizePath("/learn", lng)} replace />;
 
-  const answer = `${item.name} typically lasts about ${item.min} to ${item.max} days in the fridge, though it varies with how fresh it was and how it is stored.`;
+  const item = localizedShelfItem(base, lng);
+  const breadcrumbHome = (UI[lng] || UI.en).breadcrumbHome;
+
+  const BLOCKS = [
+    {
+      key: "why",
+      icon: HelpCircle,
+      color: "text-rose-500",
+      bg: "bg-rose-50",
+      title: ui.blockWhy,
+    },
+    {
+      key: "store",
+      icon: Snowflake,
+      color: "text-blue-600",
+      bg: "bg-blue-50",
+      title: ui.blockStore,
+    },
+    {
+      key: "cook",
+      icon: ChefHat,
+      color: "text-orange-500",
+      bg: "bg-orange-50",
+      title: ui.blockCook,
+    },
+  ];
 
   return (
     <>
@@ -54,17 +61,18 @@ export default function LearnShelfLifePage() {
           className="flex items-center gap-1.5 text-xs text-gray-400 font-medium"
           aria-label="Breadcrumb"
         >
-          <Link to="/" className="hover:text-orange-500">
-            Home
+          <Link to={localizePath("/", lng)} className="hover:text-orange-500">
+            {breadcrumbHome}
           </Link>
           <ChevronRight size={12} />
-          <Link to="/learn" className="hover:text-orange-500">
-            Learn
+          <Link
+            to={localizePath("/learn", lng)}
+            className="hover:text-orange-500"
+          >
+            {ui.breadcrumbLearn}
           </Link>
           <ChevronRight size={12} />
-          <span className="text-gray-600">
-            How long does {item.name.toLowerCase()} last?
-          </span>
+          <span className="text-gray-600">{item.question}</span>
         </nav>
       </Section>
 
@@ -78,24 +86,24 @@ export default function LearnShelfLifePage() {
               {item.category}
             </p>
             <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight leading-tight">
-              How long does {item.name.toLowerCase()} last?
+              {item.question}
             </h1>
           </div>
         </div>
 
         {/* Answer-first lede + quick-fact card */}
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-          {answer}
+          {item.answer}
         </p>
 
         <div className="mt-6 inline-flex items-center gap-3 bg-green-50 border border-green-100 rounded-2xl px-5 py-4">
           <Clock size={22} className="text-green-600" />
           <div>
             <p className="text-2xl font-extrabold text-gray-900 leading-none">
-              {item.min}–{item.max} days
+              {ui.daysUnit(item.min, item.max)}
             </p>
             <p className="text-xs text-gray-500 font-semibold mt-1">
-              in the fridge (general guide)
+              {ui.inFridgeGuide}
             </p>
           </div>
         </div>
@@ -122,33 +130,27 @@ export default function LearnShelfLifePage() {
         </div>
 
         <p className="text-xs text-gray-400 mt-6">
-          These are general guides for a typical item stored well, not safety
-          guarantees. Always check use-by dates and trust your eyes and nose.
-          Copantry can date this for you automatically — see{" "}
+          {ui.disclaimerPre}
           <Link
-            to="/features/pantry-tracking"
+            to={localizePath("/features/pantry-tracking", lng)}
             className="text-orange-600 hover:underline"
           >
-            pantry tracking
+            {ui.pantryTrackingLabel}
           </Link>
           .
         </p>
 
         <div className="mt-8">
           <Link
-            to="/features/reduce-food-waste"
+            to={localizePath("/features/reduce-food-waste", lng)}
             className="inline-flex items-center gap-1.5 text-sm font-bold text-orange-600 hover:text-orange-700"
           >
-            Never bin {item.name.toLowerCase()} again — see how Copantry helps{" "}
-            <ArrowRight size={15} />
+            {ui.neverBin} <ArrowRight size={15} />
           </Link>
         </div>
       </Section>
 
-      <CtaBand
-        title="Know exactly what’s still good"
-        subtitle="Copantry tracks how long everything in your kitchen has left and tells you what to use up first. Free to use."
-      />
+      <CtaBand title={ui.ctaDetailTitle} subtitle={ui.ctaDetailSub} />
     </>
   );
 }

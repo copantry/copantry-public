@@ -25,24 +25,33 @@ import ForBusinessPage from "./pages/ForBusinessPage";
 import AdvertisingPolicyPage from "./pages/AdvertisingPolicyPage";
 import AdvertiserTermsPage from "./pages/AdvertiserTermsPage";
 import { FEATURES, USE_CASES } from "./content/pages";
-import { LOCALES, REDUCE_WASTE, UI, pick } from "./content/localized";
+import {
+  LOCALES,
+  REDUCE_WASTE,
+  UI,
+  pick,
+  localizePath,
+} from "./content/localized";
+import { localizedPage } from "./content/pagesLocalized";
+import {
+  localizedPostMeta,
+  localizedPostBlocks,
+} from "./content/blogLocalized";
+import BlogPostLayout from "./pages/blog/BlogPostLayout";
+import BlogBody from "./pages/blog/BlogBody";
 
-// Blog post bodies live as components; mapped to slugs here (blog.js stays JSX-free
-// so the Node prerender can import its metadata).
-import CookWithWhatYouHave from "./pages/blog/CookWithWhatYouHave";
-import FoodWasteStatistics from "./pages/blog/FoodWasteStatistics";
-import UseItUpMethod from "./pages/blog/UseItUpMethod";
-
-const BLOG_COMPONENTS = {
-  "what-can-i-cook-with-what-i-have": CookWithWhatYouHave,
-  "food-waste-statistics-uk": FoodWasteStatistics,
-  "use-it-up-method": UseItUpMethod,
-};
-
+// Blog bodies are a JSX-free block model (content/blogLocalized.js) rendered by
+// BlogBody; one generic component serves every post in every locale.
 function BlogPost() {
   const { slug } = useParams();
-  const Component = BLOG_COMPONENTS[slug];
-  return Component ? <Component /> : <Navigate to="/blog" replace />;
+  const lng = useLang();
+  const post = localizedPostMeta(slug, lng);
+  if (!post) return <Navigate to={localizePath("/blog", lng)} replace />;
+  return (
+    <BlogPostLayout post={post}>
+      <BlogBody blocks={localizedPostBlocks(slug, lng)} />
+    </BlogPostLayout>
+  );
 }
 
 // Localized food-waste pillar: feed ContentPage the localized content object.
@@ -52,6 +61,34 @@ function LocalizedReduceWaste() {
     <ContentPage
       page={pick(REDUCE_WASTE, lng)}
       sectionLabel={(UI[lng] || UI.en).breadcrumbFeatures}
+    />
+  );
+}
+
+// Localized /features/:slug and /use-cases/:slug — resolve the translated page
+// object by slug + URL locale (falls back to the localized home if unknown).
+function LocalizedFeature() {
+  const { slug } = useParams();
+  const lng = useLang();
+  const page = localizedPage(slug, lng);
+  if (!page) return <Navigate to={`/${lng}`} replace />;
+  return (
+    <ContentPage
+      page={page}
+      sectionLabel={(UI[lng] || UI.en).breadcrumbFeatures}
+    />
+  );
+}
+
+function LocalizedUseCase() {
+  const { slug } = useParams();
+  const lng = useLang();
+  const page = localizedPage(slug, lng);
+  if (!page) return <Navigate to={`/${lng}`} replace />;
+  return (
+    <ContentPage
+      page={page}
+      sectionLabel={(UI[lng] || UI.en).breadcrumbUseCases}
     />
   );
 }
@@ -122,9 +159,44 @@ export default function App() {
                 element={<HowItWorksPage />}
               />,
               <Route
+                key={`${lng}-why`}
+                path={`/${lng}/why-copantry`}
+                element={<WhyCopantryPage />}
+              />,
+              <Route
                 key={`${lng}-rfw`}
                 path={`/${lng}/features/reduce-food-waste`}
                 element={<LocalizedReduceWaste />}
+              />,
+              <Route
+                key={`${lng}-feat`}
+                path={`/${lng}/features/:slug`}
+                element={<LocalizedFeature />}
+              />,
+              <Route
+                key={`${lng}-uc`}
+                path={`/${lng}/use-cases/:slug`}
+                element={<LocalizedUseCase />}
+              />,
+              <Route
+                key={`${lng}-learn`}
+                path={`/${lng}/learn`}
+                element={<LearnIndexPage />}
+              />,
+              <Route
+                key={`${lng}-learn-slug`}
+                path={`/${lng}/learn/:slug`}
+                element={<LearnShelfLifePage />}
+              />,
+              <Route
+                key={`${lng}-blog`}
+                path={`/${lng}/blog`}
+                element={<BlogIndexPage />}
+              />,
+              <Route
+                key={`${lng}-blog-slug`}
+                path={`/${lng}/blog/:slug`}
+                element={<BlogPost />}
               />,
             ])}
 

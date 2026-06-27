@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
 import { Search } from "lucide-react";
-import { SHELF_LIFE, learnPath } from "../content/shelfLife";
+import { learnPath } from "../content/shelfLife";
+import { LEARN_UI, localizedShelfList } from "../content/learnLocalized";
+import { localizePath } from "../content/localized";
+import { useLang } from "../i18n/useLang";
 import { Section, Eyebrow } from "../components/ui";
 import CtaBand from "../components/CtaBand";
 
 export default function LearnIndexPage() {
-  // Group ingredients by category for a tidy directory.
-  const groups = SHELF_LIFE.reduce((acc, item) => {
+  const lng = useLang();
+  const ui = LEARN_UI[lng] || LEARN_UI.en;
+  const items = localizedShelfList(lng);
+
+  // Group ingredients by (localized) category for a tidy directory.
+  const groups = items.reduce((acc, item) => {
     (acc[item.category] ??= []).push(item);
     return acc;
   }, {});
@@ -18,29 +25,27 @@ export default function LearnIndexPage() {
         width="max-w-3xl"
       >
         <div className="text-center">
-          <Eyebrow className="mb-3">Learn</Eyebrow>
+          <Eyebrow className="mb-3">{ui.eyebrow}</Eyebrow>
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight leading-[1.08]">
-            How long does food last?
+            {ui.h1}
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed">
-            Simple, honest guides to how long everyday food keeps, why it
-            spoils, how to store it so it lasts longer, and what to cook before
-            it goes off. General guides — when in doubt, trust your senses.
+            {ui.lede}
           </p>
         </div>
       </Section>
 
       <Section className="py-14 md:py-20" width="max-w-4xl">
-        {Object.entries(groups).map(([category, items]) => (
+        {Object.entries(groups).map(([category, groupItems]) => (
           <div key={category} className="mb-12 last:mb-0">
             <h2 className="text-sm font-black text-gray-400 uppercase tracking-widest mb-4">
               {category}
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {items.map((item) => (
+              {groupItems.map((item) => (
                 <Link
                   key={item.slug}
-                  to={learnPath(item.slug)}
+                  to={localizePath(learnPath(item.slug), lng)}
                   className="flex items-center gap-3 bg-white border border-gray-100 hover:border-orange-300 rounded-2xl px-4 py-3.5 shadow-sm transition-colors group"
                 >
                   <span className="text-2xl" aria-hidden="true">
@@ -51,7 +56,7 @@ export default function LearnIndexPage() {
                       {item.name}
                     </span>
                     <span className="block text-xs text-gray-400">
-                      ~{item.min}–{item.max} days in the fridge
+                      {ui.fridgeShort(item.min, item.max)}
                     </span>
                   </span>
                   <Search
@@ -65,10 +70,7 @@ export default function LearnIndexPage() {
         ))}
       </Section>
 
-      <CtaBand
-        title="Stop guessing what’s still good"
-        subtitle="Copantry dates everything in your kitchen and tells you what to use up first. Free to use, no card needed."
-      />
+      <CtaBand title={ui.ctaIndexTitle} subtitle={ui.ctaIndexSub} />
     </>
   );
 }

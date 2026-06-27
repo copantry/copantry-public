@@ -55,19 +55,32 @@ export const LOCALE_LABEL = {
   us: "English (US)",
 };
 
-/** Pages that have localized, prefixed versions (logical path -> localizable). */
-export const LOCALIZED_PAGES = [
-  "/",
-  "/how-it-works",
-  "/features/reduce-food-waste",
-];
+/*
+ * Which logical paths have localized, URL-prefixed variants. Standalone pages are
+ * listed exactly; whole sections are matched by prefix (every /features/* except
+ * the MCP page, all /use-cases/*, and all /learn + /blog pages). `isLocalizedPath`
+ * is the single source of truth for both `localizePath()` and the language switcher.
+ */
+const LOCALIZED_EXACT = new Set(["/", "/how-it-works", "/why-copantry"]);
+const LOCALIZED_PREFIXES = ["/features/", "/use-cases/", "/learn", "/blog"];
+// Pages under a localized prefix that are deliberately NOT localized.
+const NOT_LOCALIZED = new Set(["/features/ai-assistant-mcp", "/mcp"]);
+
+export function isLocalizedPath(path) {
+  if (NOT_LOCALIZED.has(path)) return false;
+  if (LOCALIZED_EXACT.has(path)) return true;
+  return LOCALIZED_PREFIXES.some((p) => path === p || path.startsWith(p));
+}
+
+/** Back-compat: the standalone (non-section) localized pages. */
+export const LOCALIZED_PAGES = [...LOCALIZED_EXACT];
 
 export const pick = (obj, lng) => obj[lng] || obj.en;
 
 /** Prefix a logical path for a locale (en -> unprefixed). */
 export function localizePath(path, lng) {
   if (lng === "en" || !LOCALES.includes(lng)) return path;
-  if (!LOCALIZED_PAGES.includes(path)) return path;
+  if (!isLocalizedPath(path)) return path;
   return path === "/" ? `/${lng}` : `/${lng}${path}`;
 }
 
@@ -92,6 +105,7 @@ export const UI = {
     faqTitle: "Frequently asked questions",
     breadcrumbHome: "Home",
     breadcrumbFeatures: "Features",
+    breadcrumbUseCases: "Use cases",
     keepExploring: "Keep exploring",
     cta: {
       title: "Start cooking what you already have",
@@ -127,6 +141,7 @@ export const UI = {
     faqTitle: "Questions fréquentes",
     breadcrumbHome: "Accueil",
     breadcrumbFeatures: "Fonctionnalités",
+    breadcrumbUseCases: "Cas d’usage",
     keepExploring: "À découvrir aussi",
     cta: {
       title: "Commencez à cuisiner ce que vous avez déjà",
@@ -162,6 +177,7 @@ export const UI = {
     faqTitle: "Domande frequenti",
     breadcrumbHome: "Home",
     breadcrumbFeatures: "Funzioni",
+    breadcrumbUseCases: "Casi d’uso",
     keepExploring: "Continua a esplorare",
     cta: {
       title: "Inizia a cucinare ciò che hai già",
@@ -197,6 +213,7 @@ export const UI = {
     faqTitle: "Preguntas frecuentes",
     breadcrumbHome: "Inicio",
     breadcrumbFeatures: "Funciones",
+    breadcrumbUseCases: "Casos de uso",
     keepExploring: "Sigue explorando",
     cta: {
       title: "Empieza a cocinar lo que ya tienes",
@@ -232,6 +249,7 @@ export const UI = {
     faqTitle: "Perguntas frequentes",
     breadcrumbHome: "Início",
     breadcrumbFeatures: "Funcionalidades",
+    breadcrumbUseCases: "Casos de uso",
     keepExploring: "Continue a explorar",
     cta: {
       title: "Comece a cozinhar o que já tem",
@@ -267,6 +285,7 @@ export const UI = {
     faqTitle: "Häufige Fragen",
     breadcrumbHome: "Start",
     breadcrumbFeatures: "Funktionen",
+    breadcrumbUseCases: "Anwendungsfälle",
     keepExploring: "Weiter entdecken",
     cta: {
       title: "Kochen Sie, was Sie schon haben",
@@ -1422,6 +1441,419 @@ export const REDUCE_WASTE = {
       {
         q: "Kann ich Mahlzeiten nach Ablaufdaten statt nach Rezepten planen?",
         a: "Ja. Genau dafür ist Copantry gemacht. Statt von einem Rezept auszugehen, gehen Sie von dem aus, was bald abläuft, und Copantry schlägt Gerichte vor, die diese Zutaten zuerst nutzen.",
+      },
+    ],
+  },
+};
+
+/*
+ * Differentiator page (/why-copantry). Contrasts Copantry with *categories* of apps,
+ * never named competitors. English reuses the canonical whyCopantry FAQ; the five
+ * locales are full translations. `us` falls back to `en` via pick(). The three
+ * `categories` and the six `matrix` rows must stay in lock-step with the SCORES grid
+ * in WhyCopantryPage.jsx (scores are keyed by index, so they're language-independent).
+ */
+export const WHY_COPANTRY = {
+  en: {
+    eyebrow: "How Copantry is different",
+    h1: "What makes Copantry different from other meal & pantry apps",
+    metaTitle: "Why Copantry is different from other meal & pantry apps",
+    lede: "Most kitchen apps do one piece of the job. Calendar-first planners give you an empty week. Recipe-savers store links but do not know your kitchen. List apps make a list but do not plan or track expiry. Copantry connects all three: it knows what you have, tells you what to cook before it expires, and builds your shopping list around the gaps.",
+    catEyebrow: "By category, not by name",
+    catTitle: "Where other kinds of apps stop",
+    catLede:
+      "We won’t name competitors — features change and comparisons go stale. Instead, here is how Copantry compares to the broad categories of apps people use today.",
+    goodAt: "Good at:",
+    theGap: "The gap:",
+    categories: [
+      {
+        name: "Calendar-first meal planners",
+        fair: "Great if you already know exactly what you want to cook and just need a place to schedule it.",
+        gap: "They hand you an empty week to fill, with no idea what is in your kitchen or what is about to go off.",
+      },
+      {
+        name: "Recipe-savers & recipe boxes",
+        fair: "Lovely for collecting recipes you like — simpler than Copantry if bookmarking is all you need.",
+        gap: "They store recipes but do not know your pantry, so they cannot tell you what to cook before it expires or what to buy.",
+      },
+      {
+        name: "Basic shopping-list apps",
+        fair: "Quick and handy for jotting down what you remember you are out of.",
+        gap: "They make a list but do not plan meals or track expiry, so duplicates and forgotten food still happen.",
+      },
+    ],
+    matrixEyebrow: "Side by side",
+    matrixTitle: "The whole kitchen loop, in one place",
+    capability: "Capability",
+    matrix: [
+      "Tracks what is in your kitchen & when it expires",
+      "Tells you what to cook before food goes off",
+      "Plans a week around what you already have",
+      "Builds a shopping list of only the gaps",
+      "Shared household plan, list & pantry",
+      "Works in six languages",
+    ],
+    legendBuilt: "Built for this",
+    legendSometimes: "Sometimes / partly",
+    legendNot: "Not really",
+    notForTitle: "Copantry probably isn’t for you if…",
+    notForPre:
+      "…all you want is somewhere to bookmark recipe links, and you never plan meals or shop from a list. A simple recipe-saver will be lighter and that is genuinely fine. Copantry earns its place when you want to ",
+    notForStrong:
+      "waste less, plan around what you already have, and shop smarter",
+    notForPost: " — that is the job it is built for.",
+    faqEyebrow: "Evaluation",
+    faqTitle: "Best app for the job? Honest answers",
+    crumb: "Why Copantry",
+    faqItems: FAQS.whyCopantry,
+  },
+  fr: {
+    eyebrow: "En quoi Copantry est différent",
+    h1: "Ce qui distingue Copantry des autres applis de repas et de garde-manger",
+    metaTitle: "Pourquoi Copantry est différent des autres applis",
+    lede: "La plupart des applis de cuisine ne font qu’une partie du travail. Les planificateurs partent d’une semaine vide. Les carnets de recettes stockent des liens mais ignorent votre cuisine. Les applis de liste font une liste mais ne planifient rien et ne suivent pas les dates. Copantry relie les trois : il sait ce que vous avez, vous dit quoi cuisiner avant péremption et bâtit votre liste de courses autour de ce qui manque.",
+    catEyebrow: "Par catégorie, pas par nom",
+    catTitle: "Là où les autres types d’applis s’arrêtent",
+    catLede:
+      "Nous ne nommons pas de concurrents — les fonctionnalités changent et les comparaisons se périment. Voici plutôt comment Copantry se situe face aux grandes catégories d’applis utilisées aujourd’hui.",
+    goodAt: "Points forts :",
+    theGap: "La limite :",
+    categories: [
+      {
+        name: "Planificateurs centrés sur le calendrier",
+        fair: "Parfaits si vous savez déjà exactement quoi cuisiner et cherchez juste où le planifier.",
+        gap: "Ils vous laissent une semaine vide à remplir, sans rien savoir de votre cuisine ni de ce qui va bientôt se gâter.",
+      },
+      {
+        name: "Carnets et boîtes à recettes",
+        fair: "Très bien pour collectionner les recettes qui vous plaisent — plus simple que Copantry si marquer des pages vous suffit.",
+        gap: "Ils stockent des recettes mais ignorent votre garde-manger : impossible de vous dire quoi cuisiner avant péremption ni quoi acheter.",
+      },
+      {
+        name: "Applis de liste de courses basiques",
+        fair: "Rapides et pratiques pour noter ce qui vous manque quand vous y pensez.",
+        gap: "Elles font une liste mais ne planifient pas les repas et ne suivent pas les dates : doublons et aliments oubliés persistent.",
+      },
+    ],
+    matrixEyebrow: "Côte à côte",
+    matrixTitle: "Toute la boucle de la cuisine, au même endroit",
+    capability: "Capacité",
+    matrix: [
+      "Suit ce qu’il y a dans votre cuisine et les dates de péremption",
+      "Vous dit quoi cuisiner avant que ça se gâte",
+      "Planifie une semaine autour de ce que vous avez déjà",
+      "Compose une liste de courses limitée aux manques",
+      "Plan, liste et garde-manger partagés au foyer",
+      "Fonctionne en six langues",
+    ],
+    legendBuilt: "Conçu pour ça",
+    legendSometimes: "Parfois / en partie",
+    legendNot: "Pas vraiment",
+    notForTitle: "Copantry n’est sans doute pas fait pour vous si…",
+    notForPre:
+      "…tout ce que vous voulez, c’est un endroit pour marquer des liens de recettes, et vous ne planifiez jamais de repas ni ne faites les courses depuis une liste. Un simple carnet de recettes sera plus léger, et c’est très bien ainsi. Copantry prend tout son sens quand vous voulez ",
+    notForStrong:
+      "gaspiller moins, planifier autour de ce que vous avez déjà et acheter plus malin",
+    notForPost: " — c’est exactement la mission pour laquelle il est conçu.",
+    faqEyebrow: "Évaluation",
+    faqTitle: "La meilleure appli pour ce travail ? Réponses honnêtes",
+    crumb: "Pourquoi Copantry",
+    faqItems: [
+      {
+        q: "Quelle est la meilleure appli pour réduire le gaspillage alimentaire à la maison ?",
+        a: "La meilleure fait trois choses à la fois : suivre ce que vous avez et ses dates, vous dire quoi cuisiner pour l’écouler, et vous éviter de le racheter. Copantry est bâti précisément autour de cette boucle, là où la plupart des applis n’en font qu’une partie.",
+      },
+      {
+        q: "En quoi Copantry diffère-t-il des autres applis de planification et de garde-manger ?",
+        a: "Les planificateurs partent d’une semaine vide. Les carnets de recettes stockent des liens mais ignorent votre cuisine. Les applis de liste font une liste sans planifier ni suivre les dates. Copantry relie les trois : il sait ce que vous avez, vous dit quoi cuisiner avant péremption et bâtit votre liste autour des manques.",
+      },
+      {
+        q: "Pour qui Copantry n’est-il pas fait ?",
+        a: "Si vous voulez seulement marquer des liens de recettes sans jamais planifier ni faire les courses depuis une liste, un simple carnet sera plus léger. Copantry s’adresse aux foyers qui veulent gaspiller moins, planifier autour de ce qu’ils ont et acheter plus malin.",
+      },
+      {
+        q: "Existe-t-il un planificateur de repas qui se connecte à mon supermarché ?",
+        a: "Copantry est conçu pour mener votre plan jusqu’au magasin — en regroupant la liste par rayon et en visant la commande des manques chez votre supermarché — pour que le plan devienne des repas avec le moins de friction possible.",
+      },
+    ],
+  },
+  it: {
+    eyebrow: "In cosa Copantry è diverso",
+    h1: "Cosa distingue Copantry dalle altre app per pasti e dispensa",
+    metaTitle: "Perché Copantry è diverso dalle altre app",
+    lede: "La maggior parte delle app da cucina svolge solo una parte del lavoro. I pianificatori partono da una settimana vuota. I raccoglitori di ricette salvano link ma non conoscono la tua cucina. Le app per la lista fanno una lista ma non pianificano né seguono le scadenze. Copantry collega le tre cose: sa cosa hai, ti dice cosa cucinare prima che scada e crea la lista della spesa intorno a ciò che manca.",
+    catEyebrow: "Per categoria, non per nome",
+    catTitle: "Dove si fermano gli altri tipi di app",
+    catLede:
+      "Non nominiamo i concorrenti — le funzioni cambiano e i confronti invecchiano. Ecco invece come Copantry si pone rispetto alle grandi categorie di app usate oggi.",
+    goodAt: "Punti di forza:",
+    theGap: "Il limite:",
+    categories: [
+      {
+        name: "Pianificatori incentrati sul calendario",
+        fair: "Ottimi se sai già esattamente cosa cucinare e ti serve solo dove programmarlo.",
+        gap: "Ti lasciano una settimana vuota da riempire, senza sapere cosa c’è nella tua cucina o cosa sta per andare a male.",
+      },
+      {
+        name: "Raccoglitori e ricettari",
+        fair: "Perfetti per collezionare le ricette che ti piacciono — più semplici di Copantry se ti basta salvare le pagine.",
+        gap: "Salvano ricette ma non conoscono la tua dispensa, quindi non possono dirti cosa cucinare prima della scadenza né cosa comprare.",
+      },
+      {
+        name: "App per liste della spesa basiche",
+        fair: "Rapide e comode per annotare ciò che ti manca quando te ne accorgi.",
+        gap: "Fanno una lista ma non pianificano i pasti né seguono le scadenze: doppioni e cibo dimenticato restano.",
+      },
+    ],
+    matrixEyebrow: "A confronto",
+    matrixTitle: "Tutto il ciclo della cucina, in un unico posto",
+    capability: "Funzione",
+    matrix: [
+      "Tiene traccia di cosa c’è in cucina e di quando scade",
+      "Ti dice cosa cucinare prima che il cibo vada a male",
+      "Pianifica la settimana intorno a ciò che hai già",
+      "Crea una lista della spesa solo con ciò che manca",
+      "Piano, lista e dispensa condivisi in famiglia",
+      "Funziona in sei lingue",
+    ],
+    legendBuilt: "Fatto apposta",
+    legendSometimes: "A volte / in parte",
+    legendNot: "Non proprio",
+    notForTitle: "Copantry probabilmente non fa per te se…",
+    notForPre:
+      "…tutto ciò che vuoi è un posto dove salvare link di ricette e non pianifichi mai i pasti né fai la spesa da una lista. Un semplice ricettario sarà più leggero, ed è del tutto legittimo. Copantry dà il meglio quando vuoi ",
+    notForStrong:
+      "sprecare meno, pianificare intorno a ciò che hai già e fare una spesa più intelligente",
+    notForPost: " — è proprio il compito per cui è nato.",
+    faqEyebrow: "Valutazione",
+    faqTitle: "La migliore app per il compito? Risposte oneste",
+    crumb: "Perché Copantry",
+    faqItems: [
+      {
+        q: "Qual è la migliore app per ridurre lo spreco alimentare in casa?",
+        a: "La migliore fa tre cose insieme: tiene traccia di ciò che hai e delle scadenze, ti dice cosa cucinare per consumarlo e ti evita di ricomprarlo. Copantry è costruito proprio intorno a questo ciclo, dove la maggior parte delle app ne copre solo una parte.",
+      },
+      {
+        q: "In cosa Copantry è diverso dalle altre app di pianificazione e dispensa?",
+        a: "I pianificatori partono da una settimana vuota. I ricettari salvano link ma non sanno cosa c’è in cucina. Le app per la lista fanno una lista senza pianificare né seguire le scadenze. Copantry collega le tre cose: sa cosa hai, ti dice cosa cucinare prima della scadenza e crea la lista intorno a ciò che manca.",
+      },
+      {
+        q: "Per chi non è adatto Copantry?",
+        a: "Se vuoi solo salvare link di ricette e non pianifichi mai né fai la spesa da una lista, un semplice ricettario sarà più leggero. Copantry è per le famiglie che vogliono sprecare meno, pianificare intorno a ciò che hanno e fare una spesa più intelligente.",
+      },
+      {
+        q: "Esiste un pianificatore di pasti che si collega al mio supermercato?",
+        a: "Copantry è pensato per portare il tuo piano fino al negozio — raggruppando la lista per reparto e puntando a ordinare ciò che manca dal tuo supermercato — così il piano diventa cibo con il minimo attrito.",
+      },
+    ],
+  },
+  es: {
+    eyebrow: "En qué se diferencia Copantry",
+    h1: "Qué distingue a Copantry de otras apps de comidas y despensa",
+    metaTitle: "Por qué Copantry es diferente de otras apps",
+    lede: "La mayoría de las apps de cocina hace solo una parte del trabajo. Los planificadores te dan una semana vacía. Los guardarrecetas guardan enlaces pero no conocen tu cocina. Las apps de lista hacen una lista pero no planifican ni controlan caducidades. Copantry conecta las tres: sabe lo que tienes, te dice qué cocinar antes de que caduque y arma tu lista de la compra en torno a lo que falta.",
+    catEyebrow: "Por categoría, no por nombre",
+    catTitle: "Dónde se quedan cortas otras clases de apps",
+    catLede:
+      "No nombramos competidores — las funciones cambian y las comparaciones caducan. En su lugar, así se sitúa Copantry frente a las grandes categorías de apps que la gente usa hoy.",
+    goodAt: "Bueno en:",
+    theGap: "El hueco:",
+    categories: [
+      {
+        name: "Planificadores centrados en el calendario",
+        fair: "Geniales si ya sabes exactamente qué cocinar y solo necesitas dónde programarlo.",
+        gap: "Te dejan una semana vacía que llenar, sin saber qué hay en tu cocina ni qué está a punto de estropearse.",
+      },
+      {
+        name: "Guardarrecetas y recetarios",
+        fair: "Estupendos para coleccionar las recetas que te gustan — más simples que Copantry si solo necesitas guardar páginas.",
+        gap: "Guardan recetas pero no conocen tu despensa, así que no pueden decirte qué cocinar antes de que caduque ni qué comprar.",
+      },
+      {
+        name: "Apps de lista de la compra básicas",
+        fair: "Rápidas y cómodas para anotar lo que te falta cuando lo recuerdas.",
+        gap: "Hacen una lista pero no planifican comidas ni controlan caducidades: siguen los duplicados y la comida olvidada.",
+      },
+    ],
+    matrixEyebrow: "Cara a cara",
+    matrixTitle: "Todo el ciclo de la cocina, en un solo sitio",
+    capability: "Capacidad",
+    matrix: [
+      "Controla qué hay en tu cocina y cuándo caduca",
+      "Te dice qué cocinar antes de que la comida se estropee",
+      "Planifica la semana en torno a lo que ya tienes",
+      "Arma una lista de la compra solo con lo que falta",
+      "Plan, lista y despensa compartidos en el hogar",
+      "Funciona en seis idiomas",
+    ],
+    legendBuilt: "Hecho para esto",
+    legendSometimes: "A veces / en parte",
+    legendNot: "En realidad no",
+    notForTitle: "Copantry seguramente no es para ti si…",
+    notForPre:
+      "…lo único que quieres es un sitio para guardar enlaces de recetas y nunca planificas comidas ni compras desde una lista. Un simple guardarrecetas será más ligero, y eso está perfectamente bien. Copantry se gana su lugar cuando quieres ",
+    notForStrong:
+      "desperdiciar menos, planificar en torno a lo que ya tienes y comprar de forma más inteligente",
+    notForPost: " — ese es el trabajo para el que está hecho.",
+    faqEyebrow: "Evaluación",
+    faqTitle: "¿La mejor app para el trabajo? Respuestas honestas",
+    crumb: "Por qué Copantry",
+    faqItems: [
+      {
+        q: "¿Cuál es la mejor app para reducir el desperdicio de comida en casa?",
+        a: "La mejor hace tres cosas a la vez: controla lo que tienes y sus caducidades, te dice qué cocinar para gastarlo y evita que lo vuelvas a comprar. Copantry está construido justo en torno a ese ciclo, donde la mayoría de las apps solo cubre una parte.",
+      },
+      {
+        q: "¿En qué se diferencia Copantry de otras apps de planificación y despensa?",
+        a: "Los planificadores parten de una semana vacía. Los guardarrecetas guardan enlaces pero no saben qué hay en tu cocina. Las apps de lista hacen una lista sin planificar ni controlar caducidades. Copantry conecta las tres: sabe lo que tienes, te dice qué cocinar antes de que caduque y arma la lista en torno a lo que falta.",
+      },
+      {
+        q: "¿Para quién no es Copantry?",
+        a: "Si solo quieres guardar enlaces de recetas y nunca planificas ni compras desde una lista, un simple guardarrecetas será más ligero. Copantry es para hogares que quieren desperdiciar menos, planificar en torno a lo que tienen y comprar de forma más inteligente.",
+      },
+      {
+        q: "¿Existe un planificador de comidas que se conecte con mi supermercado?",
+        a: "Copantry está pensado para llevar tu plan hasta la tienda — agrupando la lista por pasillo y apuntando a pedir lo que falta en tu supermercado — para que el plan se convierta en comida con la menor fricción posible.",
+      },
+    ],
+  },
+  pt: {
+    eyebrow: "Em que o Copantry é diferente",
+    h1: "O que distingue o Copantry de outras apps de refeições e despensa",
+    metaTitle: "Porque o Copantry é diferente de outras apps",
+    lede: "A maioria das apps de cozinha faz apenas uma parte do trabalho. Os planeadores dão-lhe uma semana vazia. Os guarda-receitas guardam ligações mas não conhecem a sua cozinha. As apps de lista fazem uma lista mas não planeiam nem acompanham validades. O Copantry liga as três: sabe o que tem, diz-lhe o que cozinhar antes de expirar e monta a lista de compras em torno do que falta.",
+    catEyebrow: "Por categoria, não por nome",
+    catTitle: "Onde param os outros tipos de apps",
+    catLede:
+      "Não nomeamos concorrentes — as funcionalidades mudam e as comparações ficam desatualizadas. Em vez disso, eis como o Copantry se compara às grandes categorias de apps usadas hoje.",
+    goodAt: "Bom em:",
+    theGap: "A lacuna:",
+    categories: [
+      {
+        name: "Planeadores centrados no calendário",
+        fair: "Ótimos se já sabe exatamente o que quer cozinhar e só precisa de onde agendar.",
+        gap: "Deixam-lhe uma semana vazia para preencher, sem ideia do que há na sua cozinha ou do que está prestes a estragar-se.",
+      },
+      {
+        name: "Guarda-receitas e cadernos de receitas",
+        fair: "Ótimos para colecionar as receitas de que gosta — mais simples que o Copantry se guardar páginas é tudo o que precisa.",
+        gap: "Guardam receitas mas não conhecem a sua despensa, por isso não conseguem dizer o que cozinhar antes de expirar nem o que comprar.",
+      },
+      {
+        name: "Apps de lista de compras básicas",
+        fair: "Rápidas e úteis para anotar o que lhe falta quando se lembra.",
+        gap: "Fazem uma lista mas não planeiam refeições nem acompanham validades: duplicados e comida esquecida continuam a acontecer.",
+      },
+    ],
+    matrixEyebrow: "Lado a lado",
+    matrixTitle: "Todo o ciclo da cozinha, num só lugar",
+    capability: "Capacidade",
+    matrix: [
+      "Acompanha o que há na sua cozinha e quando expira",
+      "Diz-lhe o que cozinhar antes de a comida se estragar",
+      "Planeia a semana em torno do que já tem",
+      "Monta uma lista de compras só com o que falta",
+      "Plano, lista e despensa partilhados no agregado",
+      "Funciona em seis línguas",
+    ],
+    legendBuilt: "Feito para isto",
+    legendSometimes: "Às vezes / em parte",
+    legendNot: "Nem por isso",
+    notForTitle: "O Copantry provavelmente não é para si se…",
+    notForPre:
+      "…tudo o que quer é um sítio para guardar ligações de receitas e nunca planeia refeições nem faz compras a partir de uma lista. Um simples guarda-receitas será mais leve, e isso é perfeitamente legítimo. O Copantry ganha o seu lugar quando quer ",
+    notForStrong:
+      "desperdiçar menos, planear em torno do que já tem e comprar de forma mais inteligente",
+    notForPost: " — é precisamente a função para que foi feito.",
+    faqEyebrow: "Avaliação",
+    faqTitle: "A melhor app para o trabalho? Respostas honestas",
+    crumb: "Porquê o Copantry",
+    faqItems: [
+      {
+        q: "Qual é a melhor app para reduzir o desperdício alimentar em casa?",
+        a: "A melhor faz três coisas em conjunto: acompanha o que tem e as validades, diz-lhe o que cozinhar para o gastar e evita que o volte a comprar. O Copantry é construído precisamente em torno desse ciclo, onde a maioria das apps só cobre uma parte.",
+      },
+      {
+        q: "Em que é que o Copantry difere de outras apps de planeamento e despensa?",
+        a: "Os planeadores partem de uma semana vazia. Os guarda-receitas guardam ligações mas não sabem o que há na cozinha. As apps de lista fazem uma lista sem planear nem acompanhar validades. O Copantry liga as três: sabe o que tem, diz-lhe o que cozinhar antes de expirar e monta a lista em torno do que falta.",
+      },
+      {
+        q: "Para quem não serve o Copantry?",
+        a: "Se só quer guardar ligações de receitas e nunca planeia nem compra a partir de uma lista, um simples guarda-receitas será mais leve. O Copantry é para agregados que querem desperdiçar menos, planear em torno do que têm e comprar de forma mais inteligente.",
+      },
+      {
+        q: "Existe um planeador de refeições que se liga ao meu supermercado?",
+        a: "O Copantry foi pensado para levar o seu plano até à loja — agrupando a lista por corredor e visando encomendar o que falta no seu supermercado — para que o plano se transforme em comida com o mínimo de atrito.",
+      },
+    ],
+  },
+  de: {
+    eyebrow: "Worin sich Copantry unterscheidet",
+    h1: "Was Copantry von anderen Essens- und Vorrats-Apps unterscheidet",
+    metaTitle: "Warum Copantry anders ist als andere Apps",
+    lede: "Die meisten Küchen-Apps erledigen nur einen Teil der Arbeit. Kalender-Planer geben dir eine leere Woche. Rezeptsammler speichern Links, kennen aber deine Küche nicht. Listen-Apps machen eine Liste, planen aber nicht und verfolgen keine Ablaufdaten. Copantry verbindet alle drei: Es weiß, was du hast, sagt dir, was du vor dem Ablauf kochen solltest, und baut deine Einkaufsliste rund um die Lücken auf.",
+    catEyebrow: "Nach Kategorie, nicht nach Namen",
+    catTitle: "Wo andere Arten von Apps aufhören",
+    catLede:
+      "Wir nennen keine Konkurrenten — Funktionen ändern sich und Vergleiche veralten. Stattdessen hier, wie sich Copantry zu den großen Kategorien heute genutzter Apps verhält.",
+    goodAt: "Gut für:",
+    theGap: "Die Lücke:",
+    categories: [
+      {
+        name: "Kalender-orientierte Essensplaner",
+        fair: "Super, wenn du schon genau weißt, was du kochen willst, und nur einen Ort zum Planen brauchst.",
+        gap: "Sie geben dir eine leere Woche zum Füllen — ohne zu wissen, was in deiner Küche ist oder bald schlecht wird.",
+      },
+      {
+        name: "Rezeptsammler & Rezeptboxen",
+        fair: "Schön, um Rezepte zu sammeln, die dir gefallen — einfacher als Copantry, wenn dir Lesezeichen genügen.",
+        gap: "Sie speichern Rezepte, kennen aber deine Vorräte nicht und können dir daher nicht sagen, was du vor dem Ablauf kochen oder kaufen sollst.",
+      },
+      {
+        name: "Einfache Einkaufslisten-Apps",
+        fair: "Schnell und praktisch, um aufzuschreiben, was gerade fehlt.",
+        gap: "Sie machen eine Liste, planen aber keine Mahlzeiten und verfolgen keine Ablaufdaten: Doppelkäufe und vergessenes Essen bleiben.",
+      },
+    ],
+    matrixEyebrow: "Direkt verglichen",
+    matrixTitle: "Der ganze Küchenkreislauf, an einem Ort",
+    capability: "Fähigkeit",
+    matrix: [
+      "Verfolgt, was in deiner Küche ist und wann es abläuft",
+      "Sagt dir, was du kochen sollst, bevor Essen schlecht wird",
+      "Plant eine Woche rund um das, was du schon hast",
+      "Erstellt eine Einkaufsliste nur mit den Lücken",
+      "Geteilter Haushaltsplan, -liste & -vorrat",
+      "Funktioniert in sechs Sprachen",
+    ],
+    legendBuilt: "Dafür gemacht",
+    legendSometimes: "Manchmal / teils",
+    legendNot: "Eher nicht",
+    notForTitle: "Copantry ist wahrscheinlich nichts für dich, wenn…",
+    notForPre:
+      "…du nur einen Ort suchst, um Rezept-Links zu speichern, und nie Mahlzeiten planst oder von einer Liste einkaufst. Ein einfacher Rezeptsammler ist dann leichter, und das ist völlig in Ordnung. Copantry verdient seinen Platz, wenn du ",
+    notForStrong:
+      "weniger verschwenden, rund um das Vorhandene planen und klüger einkaufen",
+    notForPost: " willst — genau dafür ist es gebaut.",
+    faqEyebrow: "Bewertung",
+    faqTitle: "Die beste App für den Job? Ehrliche Antworten",
+    crumb: "Warum Copantry",
+    faqItems: [
+      {
+        q: "Welche App eignet sich am besten, um Lebensmittelverschwendung zu Hause zu reduzieren?",
+        a: "Die beste erledigt drei Dinge zugleich: Sie verfolgt, was du hast und wann es abläuft, sagt dir, was du kochen sollst, um es aufzubrauchen, und verhindert den Neukauf. Copantry ist genau um diesen Kreislauf herum gebaut, wo die meisten Apps nur einen Teil abdecken.",
+      },
+      {
+        q: "Wie unterscheidet sich Copantry von anderen Planungs- und Vorrats-Apps?",
+        a: "Planer starten mit einer leeren Woche. Rezeptsammler speichern Links, wissen aber nicht, was in der Küche ist. Listen-Apps machen eine Liste, ohne zu planen oder Ablaufdaten zu verfolgen. Copantry verbindet alle drei: Es weiß, was du hast, sagt dir, was du vor dem Ablauf kochen sollst, und baut die Liste rund um die Lücken auf.",
+      },
+      {
+        q: "Für wen ist Copantry nicht gedacht?",
+        a: "Wenn du nur Rezept-Links speichern willst und nie planst oder von einer Liste einkaufst, ist ein einfacher Rezeptsammler leichter. Copantry ist für Haushalte, die weniger verschwenden, rund um Vorhandenes planen und klüger einkaufen wollen.",
+      },
+      {
+        q: "Gibt es einen Essensplaner, der sich mit meinem Supermarkt verbindet?",
+        a: "Copantry ist darauf ausgelegt, deinen Plan bis ins Geschäft zu bringen — die Liste nach Gang gruppiert und mit dem Ziel, die Lücken bei deinem Supermarkt zu bestellen — damit aus dem Plan mit möglichst wenig Reibung Essen wird.",
       },
     ],
   },

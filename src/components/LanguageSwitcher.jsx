@@ -10,7 +10,7 @@ import IT from "country-flag-icons/react/3x2/IT";
 import PT from "country-flag-icons/react/3x2/PT";
 import i18n from "../i18n";
 import { useLang, basePath } from "../i18n/useLang";
-import { LOCALES, LOCALIZED_PAGES, localizePath } from "../content/localized";
+import { LOCALES, isLocalizedPath, localizePath } from "../content/localized";
 
 // Languages with published localized routes (+ English).
 const LANGUAGES = [
@@ -39,9 +39,7 @@ export default function LanguageSwitcher({ className = "" }) {
     // localized site at its home (English stays unprefixed).
     let target = base;
     if (LOCALES.includes(code))
-      target = LOCALIZED_PAGES.includes(base)
-        ? localizePath(base, code)
-        : `/${code}`;
+      target = isLocalizedPath(base) ? localizePath(base, code) : `/${code}`;
     i18n.changeLanguage(code);
     localStorage.setItem("copantry_lang", code);
     navigate(target);
