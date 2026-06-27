@@ -16,9 +16,9 @@ export default function NavBar() {
   // Links point at the localized URL where one exists, English otherwise.
   const navLinks = [
     { label: ui.nav.howItWorks, to: localizePath("/how-it-works", lng) },
-    { label: ui.nav.why, to: "/why-copantry" },
-    { label: ui.nav.learn, to: "/learn" },
-    { label: ui.nav.blog, to: "/blog" },
+    { label: ui.nav.why, to: localizePath("/why-copantry", lng) },
+    { label: ui.nav.learn, to: localizePath("/learn", lng) },
+    { label: ui.nav.blog, to: localizePath("/blog", lng) },
   ];
 
   return (

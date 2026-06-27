@@ -11,50 +11,47 @@ export default function Footer({ onContact }) {
   const ui = UI[lng] || UI.en;
   const f = ui.footer;
 
+  const l = f.links;
+  const lp = (path) => localizePath(path, lng);
+
   const COLUMNS = [
     {
       title: f.product,
       links: [
-        { label: ui.nav.howItWorks, to: localizePath("/how-it-works", lng) },
-        {
-          label: "Reduce food waste",
-          to: localizePath("/features/reduce-food-waste", lng),
-        },
-        { label: "Meal planning", to: "/features/meal-planning" },
-        { label: "Pantry tracking", to: "/features/pantry-tracking" },
-        { label: "Shopping lists", to: "/features/shopping-lists" },
-        { label: "Recipes", to: "/features/recipes" },
+        { label: ui.nav.howItWorks, to: lp("/how-it-works") },
+        { label: l.reduceFoodWaste, to: lp("/features/reduce-food-waste") },
+        { label: l.mealPlanning, to: lp("/features/meal-planning") },
+        { label: l.pantryTracking, to: lp("/features/pantry-tracking") },
+        { label: l.shoppingLists, to: lp("/features/shopping-lists") },
+        { label: l.recipes, to: lp("/features/recipes") },
       ],
     },
     {
       title: f.audience,
       links: [
-        { label: "For families", to: "/use-cases/for-families" },
-        { label: "For couples", to: "/use-cases/for-couples" },
-        { label: "Budget cooking", to: "/use-cases/budget-cooking" },
-        {
-          label: "Plan from ChatGPT or Claude",
-          to: "/features/ai-assistant-mcp",
-        },
+        { label: l.forFamilies, to: lp("/use-cases/for-families") },
+        { label: l.forCouples, to: lp("/use-cases/for-couples") },
+        { label: l.budgetCooking, to: lp("/use-cases/budget-cooking") },
+        { label: l.aiAssistant, to: lp("/features/ai-assistant-mcp") },
       ],
     },
     {
       title: f.learn,
       links: [
-        { label: ui.nav.blog, to: "/blog" },
-        { label: "How long does food last?", to: "/learn" },
-        { label: ui.nav.why, to: "/why-copantry" },
-        { label: "About", to: "/about" },
-        { label: "For Business", to: "/business" },
+        { label: ui.nav.blog, to: lp("/blog") },
+        { label: l.foodLasts, to: lp("/learn") },
+        { label: ui.nav.why, to: lp("/why-copantry") },
+        { label: l.about, to: lp("/about") },
+        { label: l.forBusiness, to: lp("/business") },
       ],
     },
     {
       title: f.company,
       links: [
-        { label: "Privacy", to: "/privacy" },
-        { label: "Terms", to: "/terms" },
-        { label: "Contact", onClick: () => onContact?.("contact") },
-        { label: "Investors", onClick: () => onContact?.("investors") },
+        { label: l.privacy, to: lp("/privacy") },
+        { label: l.terms, to: lp("/terms") },
+        { label: l.contact, onClick: () => onContact?.("contact") },
+        { label: l.investors, onClick: () => onContact?.("investors") },
       ],
     },
   ];
