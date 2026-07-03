@@ -1,16 +1,17 @@
 // Consent-gated Google Analytics 4 (gtag.js) for the marketing site.
 //
-// The Measurement ID is env-driven (`VITE_GA_MEASUREMENT_ID`, e.g. "G-XXXXXXXXXX")
-// so analytics is completely INERT unless configured — no tracking id is ever
-// hardcoded in source, and forks / local dev send nothing. Set the var at build
-// time to activate it (mirrors how OAuth client ids activate social login).
+// The Measurement ID defaults to CoPantry's own GA4 property (the same one the
+// web app initialises in frontend/src/main.jsx) so it works with no build config
+// — deploys are automated and .env is gitignored. `VITE_GA_MEASUREMENT_ID` still
+// overrides it (set it to "" to disable analytics entirely for a fork/staging).
 //
 // GDPR: nothing loads until the visitor has explicitly ACCEPTED cookies in the
 // CookieBanner (consent stored in `localStorage["copantry_cookie_consent"]`).
 // Declining sets Google's `ga-disable-<id>` kill switch. Nothing runs during the
 // static prerender (all access is guarded behind `isBrowser()` + effects).
 
-export const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || "";
+const DEFAULT_GA_ID = "G-YFW8NH2YNY";
+export const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID ?? DEFAULT_GA_ID;
 const CONSENT_KEY = "copantry_cookie_consent";
 
 let loaded = false;
