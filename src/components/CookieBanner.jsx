@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Cookie } from "lucide-react";
+import { revokeAnalyticsConsent } from "../lib/analytics";
 
 export default function CookieBanner() {
   const { t } = useTranslation();
@@ -21,11 +22,14 @@ export default function CookieBanner() {
     // choose it. Language is only written to localStorage when the user actively
     // picks one in LanguageSwitcher. This prevents traveling to Italy and coming
     // back to find the site stuck in Italian.
+    // Tell Analytics it may now load Google Analytics (gtag.js).
+    window.dispatchEvent(new Event("copantry:consent"));
     setVisible(false);
   }
 
   function decline() {
     localStorage.setItem("copantry_cookie_consent", "declined");
+    revokeAnalyticsConsent();
     setVisible(false);
   }
 

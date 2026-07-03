@@ -8,7 +8,7 @@
       "signup": "Get started free"
     },
     "cookie": {
-      "message": "We store your language preference in your browser to improve your experience.",
+      "message": "We store your language preference in your browser and, with your consent, use Google Analytics to understand site traffic.",
       "accept": "That's fine",
       "decline": "No thanks"
     },

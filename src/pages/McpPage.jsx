@@ -1507,7 +1507,7 @@ export default function McpPage() {
             },
             {
               q: "Are MCP calls counted against a rate limit?",
-              a: "Yes. Each plan includes a monthly MCP call allowance (200 on Hobbyist, 3,000 on Home, 10,000 on Family, 60,000 on Builder). Recipes, pantry items, and calendar entries are unlimited. Usage resets on your billing anniversary.",
+              a: "MCP calls are subject to a monthly usage limit to keep the service fast and fair for everyone. You can see your current usage and remaining calls any time in the app under Settings → AI & MCP. Recipes, pantry items, and calendar entries are unlimited.",
             },
             {
               q: "Can I use the MCP server without the CoPantry app?",

@@ -1,4 +1,4 @@
-const LAST_UPDATED = "23 June 2026";
+const LAST_UPDATED = "3 July 2026";
 
 function Section({ id, title, children }) {
   return (
@@ -136,6 +136,7 @@ export default function PrivacyPage() {
             'Sign-in providers (Google, Apple) — if you choose to sign in or register with Google or Apple, we receive a verified identifier and your email and name from that provider to create or access your account. If you use Apple\'s "Hide My Email", we only ever see the private relay address Apple provides. We do not post anything to those accounts.',
             "Infrastructure and hosting providers — our servers, database, and object storage are hosted on third-party cloud infrastructure. These providers process data on our behalf under data processing agreements.",
             "Payment processors (Stripe) — if you subscribe to a paid plan, or if you advertise with us as a business, payment is handled by Stripe (including Stripe Tax for VAT). We do not see or store your full card number; Stripe processes payment data under a data processing agreement with appropriate transfer safeguards.",
+            "Analytics (Google Analytics) — on our marketing site (www.copantry.com) we use Google Analytics to understand aggregate, anonymised traffic (pages viewed, approximate region). It loads only if you accept the cookie notice, with IP anonymisation and advertising/ad-personalisation signals disabled. Decline the cookie notice and no analytics cookies are set.",
           ]}
         />
         <P>
@@ -150,7 +151,7 @@ export default function PrivacyPage() {
           items={[
             "Contract performance — processing your account data, content, and usage data is necessary to deliver the service you signed up for.",
             "Legitimate interests — server logs and usage diagnostics are processed on the basis of our legitimate interest in operating a secure and stable service.",
-            "Consent — storing your language preference in localStorage on www.copantry.com is done only with your consent, which you can withdraw at any time by clearing your browser's localStorage or declining the cookie notice.",
+            "Consent — storing your language preference in localStorage, and loading Google Analytics, on www.copantry.com is done only with your consent, which you can withdraw at any time by clearing your browser's localStorage or declining the cookie notice.",
             "Legal obligation — we may process data where required to comply with applicable law.",
           ]}
         />

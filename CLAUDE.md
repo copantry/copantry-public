@@ -110,3 +110,14 @@ use `var(--color-brand-500)` or `bg-brand-500`.
     re-symbolised** — see `RESCUE_AMOUNT` (£8 ≈ €9 ≈ $10) and the per-country
     `HOOK` dishes. Add new currency-bearing copy via `RESCUE_AMOUNT`, never a
     hardcoded symbol.
+- **Analytics (consent-gated GA4):** `src/lib/analytics.js` + `components/Analytics.jsx`
+  (mounted in `App.jsx`). The Measurement ID is **env-driven** (`VITE_GA_MEASUREMENT_ID`)
+  and the whole thing is **inert unless set** — no tracking id in source, forks send
+  nothing. When set, gtag.js loads **only after** the visitor accepts the `CookieBanner`
+  (consent in `localStorage["copantry_cookie_consent"]`), with `anonymize_ip` + ad signals
+  off; Accept fires a `copantry:consent` window event → `grantAnalyticsConsent()`, Decline
+  flips Google's `ga-disable-<id>` kill switch. SPA route changes send a manual `page_view`
+  (`send_page_view:false`). All access is `isBrowser()`-guarded so the prerender is
+  unaffected. Disclosed in both PrivacyPage files + the cookie-banner copy (six locales).
+  **No pricing** for the MCP page either — the pricing-allowance FAQ answer was softened to
+  a plain usage-limit note (monetisation lives in the app, not the marketing site).

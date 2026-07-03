@@ -2,6 +2,7 @@ import "./i18n";
 import { useState, Suspense } from "react";
 import { Routes, Route, useParams, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import Analytics from "./components/Analytics";
 import Seo from "./seo/Seo";
 import LocaleSync from "./i18n/LocaleSync";
 import { useLang } from "./i18n/useLang";
@@ -100,6 +101,7 @@ export default function App() {
     <Suspense fallback={null}>
       <div className="min-h-screen flex flex-col">
         <ScrollToTop />
+        <Analytics />
         <LocaleSync />
         <Seo />
         <NavBar />

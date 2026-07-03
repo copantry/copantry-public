@@ -8,7 +8,7 @@
       "signup": "Commencer gratuitement"
     },
     "cookie": {
-      "message": "Nous enregistrons votre préférence de langue dans votre navigateur pour améliorer votre expérience.",
+      "message": "Nous enregistrons votre préférence de langue dans votre navigateur et, avec votre consentement, utilisons Google Analytics pour analyser le trafic du site.",
       "accept": "C'est parfait",
       "decline": "Non merci"
     },
