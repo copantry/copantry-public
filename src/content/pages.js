@@ -110,6 +110,7 @@ export const FEATURES = {
         label: "Plan from your AI assistant",
         to: "/features/ai-assistant-mcp",
       },
+      { label: "Wine Pairing", to: "/features/wine-pairing" },
     ],
   },
 
@@ -236,6 +237,93 @@ export const FEATURES = {
       { label: "Meal planning", to: "/features/meal-planning" },
       { label: "For families", to: "/use-cases/for-families" },
       { label: "Why Copantry", to: "/why-copantry" },
+      { label: "Recipe Discovery", to: "/features/recipe-discovery" },
+    ],
+  },
+
+  "recipe-discovery": {
+    accent: "violet",
+    heroEmoji: "🧭",
+    eyebrow: "Recipe Discovery",
+    crumb: "Recipe Discovery",
+    h1: "Explore recipes from across the web, without leaving Copantry",
+    lede: "Copantry's Discover tab searches a curated base of recipe websites and opens every result in a clean, ad-free reader right inside the app — find something you like and import it straight into your collection, still in its original language.",
+    sections: [
+      {
+        h2: "Search once, read anywhere — no ads, no fifteen tabs",
+        body: "Type what you fancy and Discover searches across a curated base of recipe sites at once. Tap a result and it opens in a distraction-free reader inside Copantry — no pop-ups, autoplay video or paywalled recipe blogs.",
+        bullets: [
+          {
+            title: "Curated sources",
+            desc: "Real recipe websites, not random search results.",
+          },
+          {
+            title: "Distraction-free reader",
+            desc: "Read the recipe, not the ad break around it.",
+          },
+          {
+            title: "One-tap import",
+            desc: "Like it? Bring it straight into your own collection.",
+          },
+          {
+            title: "Save for later",
+            desc: "Bookmark a find before you've decided what's for dinner.",
+          },
+        ],
+      },
+      {
+        h2: "Finds get better the more you use it",
+        body: "Discover leans toward sources and recipes that people actually go on to cook, and toward what's popular in your country — so results sharpen over time instead of staying generic.",
+      },
+    ],
+    faqKey: "discovery",
+    related: [
+      { label: "Recipes", to: "/features/recipes" },
+      { label: "Meal planning", to: "/features/meal-planning" },
+      { label: "Why Copantry", to: "/why-copantry" },
+    ],
+  },
+
+  "wine-pairing": {
+    accent: "orange",
+    heroEmoji: "🍷",
+    eyebrow: "Wine Pairing",
+    crumb: "Wine Pairing",
+    h1: "Know which wine to open, from the bottles you already have",
+    lede: "Copantry keeps a simple record of the wine in your cellar and, on request, suggests a pairing for tonight's meal — a bottle you already own when one genuinely fits, plus a general style to look for either way.",
+    sections: [
+      {
+        h2: "Your cellar, not a wine encyclopaedia",
+        body: "Add a bottle with just its name — producer, grape, year, and a note (where you bought it, who gave it to you) are all optional. Track how many you have and mark bottles as drunk as you go.",
+        bullets: [
+          {
+            title: "Barely-there entry",
+            desc: "Only the bottle's name is required to add it.",
+          },
+          {
+            title: "Pairing on request",
+            desc: "Ask for a match on a recipe or a full planned meal — never automatic.",
+          },
+          {
+            title: "Recommends what you own",
+            desc: "Suggests a bottle from your own cellar first, when one fits.",
+          },
+          {
+            title: "Always a fallback",
+            desc: "No match in your cellar? You still get a style to look for.",
+          },
+        ],
+      },
+      {
+        h2: "Works for one recipe or a whole planned meal",
+        body: "Get a pairing suggestion on any recipe page, or for everything planned in a calendar slot at once. Attach the pick to that meal and its stock updates automatically once you've cooked.",
+      },
+    ],
+    faqKey: "winePairing",
+    related: [
+      { label: "Recipes", to: "/features/recipes" },
+      { label: "Meal planning", to: "/features/meal-planning" },
+      { label: "Pantry tracking", to: "/features/pantry-tracking" },
     ],
   },
 };

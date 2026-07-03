@@ -59,6 +59,7 @@ export const PAGE_TX = {
         "Réduire le gaspillage",
         "Listes de courses",
         "Planifier depuis votre IA",
+        "Accord mets et vins",
       ],
     },
     it: {
@@ -99,6 +100,7 @@ export const PAGE_TX = {
         "Ridurre gli sprechi",
         "Liste della spesa",
         "Pianifica dalla tua IA",
+        "Abbinamento vino-cibo",
       ],
     },
     es: {
@@ -139,6 +141,7 @@ export const PAGE_TX = {
         "Reducir el desperdicio",
         "Listas de la compra",
         "Planifica desde tu IA",
+        "Maridaje de vinos",
       ],
     },
     pt: {
@@ -179,6 +182,7 @@ export const PAGE_TX = {
         "Reduzir o desperdício",
         "Listas de compras",
         "Planeie a partir da sua IA",
+        "Harmonização de vinhos",
       ],
     },
     de: {
@@ -219,6 +223,7 @@ export const PAGE_TX = {
         "Lebensmittel retten",
         "Einkaufslisten",
         "Aus deiner KI planen",
+        "Weinbegleitung",
       ],
     },
   },
@@ -664,6 +669,7 @@ export const PAGE_TX = {
         "Planification des repas",
         "Pour les familles",
         "Pourquoi Copantry",
+        "Découverte de recettes",
       ],
     },
     it: {
@@ -704,6 +710,7 @@ export const PAGE_TX = {
         "Pianificazione dei pasti",
         "Per le famiglie",
         "Perché Copantry",
+        "Scoperta di ricette",
       ],
     },
     es: {
@@ -744,6 +751,7 @@ export const PAGE_TX = {
         "Planificación de comidas",
         "Para familias",
         "Por qué Copantry",
+        "Descubrimiento de recetas",
       ],
     },
     pt: {
@@ -784,6 +792,7 @@ export const PAGE_TX = {
         "Planeamento de refeições",
         "Para famílias",
         "Porquê o Copantry",
+        "Descoberta de receitas",
       ],
     },
     de: {
@@ -820,7 +829,378 @@ export const PAGE_TX = {
           body: "Ein gespeichertes Rezept ist kein totes Lesezeichen. Plane es in deinen Kalender, und Copantry gleicht es mit deinem Vorrat ab, skaliert es und fügt deiner Liste nur die fehlenden Zutaten hinzu.",
         },
       ],
-      related: ["Essensplanung", "Für Familien", "Warum Copantry"],
+      related: [
+        "Essensplanung",
+        "Für Familien",
+        "Warum Copantry",
+        "Rezept-Entdeckung",
+      ],
+    },
+  },
+
+  "recipe-discovery": {
+    fr: {
+      metaTitle: "Découverte de recettes",
+      eyebrow: "Découverte de recettes",
+      crumb: "Découverte de recettes",
+      h1: "Explorez des recettes du web entier, sans quitter Copantry",
+      lede: "L’onglet Découvrir de Copantry cherche dans une base choisie de sites de recettes et ouvre chaque résultat dans un lecteur propre et sans publicité, directement dans l’appli — trouvez ce qui vous plaît et importez-le dans votre collection, toujours dans sa langue d’origine.",
+      sections: [
+        {
+          h2: "Cherchez une fois, lisez partout — sans pub, sans quinze onglets",
+          body: "Tapez ce dont vous avez envie et Découvrir cherche à la fois dans une base choisie de sites de recettes. Touchez un résultat et il s’ouvre dans un lecteur sans distraction à l’intérieur de Copantry — pas de pop-up, de vidéo automatique ni de blog de recettes payant.",
+          bullets: [
+            {
+              title: "Sources choisies",
+              desc: "De vrais sites de recettes, pas des résultats de recherche au hasard.",
+            },
+            {
+              title: "Lecteur sans distraction",
+              desc: "Lisez la recette, pas la pub tout autour.",
+            },
+            {
+              title: "Import en un geste",
+              desc: "Ça vous plaît ? Amenez-la directement dans votre collection.",
+            },
+            {
+              title: "Enregistrer pour plus tard",
+              desc: "Mettez une trouvaille de côté avant même d’avoir décidé du dîner.",
+            },
+          ],
+        },
+        {
+          h2: "Les trouvailles s’améliorent à l’usage",
+          body: "Découvrir privilégie les sources et recettes que les gens finissent vraiment par cuisiner, et ce qui est populaire dans votre pays — les résultats s’affinent avec le temps au lieu de rester génériques.",
+        },
+      ],
+      related: ["Recettes", "Planification des repas", "Pourquoi Copantry"],
+    },
+    it: {
+      metaTitle: "Scoperta di ricette",
+      eyebrow: "Scoperta di ricette",
+      crumb: "Scoperta di ricette",
+      h1: "Esplora ricette da tutto il web, senza uscire da Copantry",
+      lede: "La scheda Scopri di Copantry cerca in una base selezionata di siti di ricette e apre ogni risultato in un lettore pulito e senza pubblicità direttamente nell’app — trova qualcosa che ti piace e importalo nella tua raccolta, ancora nella sua lingua originale.",
+      sections: [
+        {
+          h2: "Cerca una volta, leggi ovunque — niente pubblicità, niente quindici schede",
+          body: "Digita cosa ti va e Scopri cerca contemporaneamente in una base selezionata di siti di ricette. Tocca un risultato e si apre in un lettore senza distrazioni dentro Copantry — niente pop-up, video automatici o blog di ricette a pagamento.",
+          bullets: [
+            {
+              title: "Fonti selezionate",
+              desc: "Veri siti di ricette, non risultati di ricerca casuali.",
+            },
+            {
+              title: "Lettore senza distrazioni",
+              desc: "Leggi la ricetta, non la pubblicità intorno.",
+            },
+            {
+              title: "Importa con un tocco",
+              desc: "Ti piace? Portala direttamente nella tua raccolta.",
+            },
+            {
+              title: "Salva per dopo",
+              desc: "Metti da parte una scoperta prima ancora di decidere cosa cucinare.",
+            },
+          ],
+        },
+        {
+          h2: "Le scoperte migliorano con l’uso",
+          body: "Scopri privilegia fonti e ricette che le persone poi cucinano davvero, e ciò che è popolare nel tuo paese — così i risultati migliorano nel tempo invece di restare generici.",
+        },
+      ],
+      related: ["Ricette", "Pianificazione dei pasti", "Perché Copantry"],
+    },
+    es: {
+      metaTitle: "Descubrimiento de recetas",
+      eyebrow: "Descubrimiento de recetas",
+      crumb: "Descubrimiento de recetas",
+      h1: "Explora recetas de toda la web, sin salir de Copantry",
+      lede: "La pestaña Descubrir de Copantry busca en una base seleccionada de sitios de recetas y abre cada resultado en un lector limpio y sin anuncios dentro de la app — encuentra algo que te guste e impórtalo directamente a tu colección, todavía en su idioma original.",
+      sections: [
+        {
+          h2: "Busca una vez, lee en cualquier sitio — sin anuncios, sin quince pestañas",
+          body: "Escribe lo que te apetece y Descubrir busca a la vez en una base seleccionada de sitios de recetas. Toca un resultado y se abre en un lector sin distracciones dentro de Copantry — sin ventanas emergentes, vídeo automático ni blogs de recetas de pago.",
+          bullets: [
+            {
+              title: "Fuentes seleccionadas",
+              desc: "Sitios de recetas reales, no resultados de búsqueda al azar.",
+            },
+            {
+              title: "Lector sin distracciones",
+              desc: "Lee la receta, no el anuncio a su alrededor.",
+            },
+            {
+              title: "Importa con un toque",
+              desc: "¿Te gusta? Llévala directamente a tu colección.",
+            },
+            {
+              title: "Guarda para más tarde",
+              desc: "Guarda un hallazgo antes incluso de decidir la cena.",
+            },
+          ],
+        },
+        {
+          h2: "Los hallazgos mejoran cuanto más lo usas",
+          body: "Descubrir prioriza fuentes y recetas que la gente realmente acaba cocinando, y lo que es popular en tu país — así los resultados mejoran con el tiempo en lugar de quedarse genéricos.",
+        },
+      ],
+      related: ["Recetas", "Planificación de comidas", "Por qué Copantry"],
+    },
+    pt: {
+      metaTitle: "Descoberta de receitas",
+      eyebrow: "Descoberta de receitas",
+      crumb: "Descoberta de receitas",
+      h1: "Explore receitas de toda a web, sem sair do Copantry",
+      lede: "O separador Descobrir do Copantry procura numa base selecionada de sites de receitas e abre cada resultado num leitor limpo e sem anúncios diretamente na app — encontre algo de que goste e importe-o para a sua coleção, ainda na língua original.",
+      sections: [
+        {
+          h2: "Procure uma vez, leia em qualquer lado — sem anúncios, sem quinze separadores",
+          body: "Escreva o que lhe apetece e o Descobrir procura ao mesmo tempo numa base selecionada de sites de receitas. Toque num resultado e ele abre-se num leitor sem distrações dentro do Copantry — sem pop-ups, vídeo automático ou blogues de receitas pagos.",
+          bullets: [
+            {
+              title: "Fontes selecionadas",
+              desc: "Sites de receitas reais, não resultados de pesquisa aleatórios.",
+            },
+            {
+              title: "Leitor sem distrações",
+              desc: "Leia a receita, não o anúncio à volta.",
+            },
+            {
+              title: "Importa com um toque",
+              desc: "Gostou? Traga-a diretamente para a sua coleção.",
+            },
+            {
+              title: "Guarde para mais tarde",
+              desc: "Guarde uma descoberta antes mesmo de decidir o jantar.",
+            },
+          ],
+        },
+        {
+          h2: "As descobertas melhoram quanto mais usa",
+          body: "O Descobrir dá prioridade a fontes e receitas que as pessoas realmente acabam por cozinhar, e ao que é popular no seu país — assim os resultados melhoram com o tempo em vez de ficarem genéricos.",
+        },
+      ],
+      related: ["Receitas", "Planeamento de refeições", "Porquê o Copantry"],
+    },
+    de: {
+      metaTitle: "Rezept-Entdeckung",
+      eyebrow: "Rezept-Entdeckung",
+      crumb: "Rezept-Entdeckung",
+      h1: "Entdecke Rezepte aus dem ganzen Web, ohne Copantry zu verlassen",
+      lede: "Der Entdecken-Tab von Copantry durchsucht eine kuratierte Basis von Rezept-Websites und öffnet jedes Ergebnis in einem sauberen, werbefreien Lesemodus direkt in der App — finde etwas, das dir gefällt, und importiere es direkt in deine Sammlung, weiterhin in der Originalsprache.",
+      sections: [
+        {
+          h2: "Einmal suchen, überall lesen — keine Werbung, keine fünfzehn Tabs",
+          body: "Tippe ein, worauf du Lust hast, und Entdecken durchsucht gleichzeitig eine kuratierte Basis von Rezept-Websites. Tippe auf ein Ergebnis, und es öffnet sich in einem ablenkungsfreien Lesemodus in Copantry — keine Pop-ups, automatisch startenden Videos oder zahlungspflichtigen Rezeptblogs.",
+          bullets: [
+            {
+              title: "Kuratierte Quellen",
+              desc: "Echte Rezept-Websites, keine zufälligen Suchergebnisse.",
+            },
+            {
+              title: "Ablenkungsfreier Lesemodus",
+              desc: "Lies das Rezept, nicht die Werbung drumherum.",
+            },
+            {
+              title: "Import mit einem Tipp",
+              desc: "Gefällt es dir? Hol es direkt in deine eigene Sammlung.",
+            },
+            {
+              title: "Für später merken",
+              desc: "Merke dir einen Fund vor, bevor du dich fürs Abendessen entschieden hast.",
+            },
+          ],
+        },
+        {
+          h2: "Funde werden mit der Nutzung besser",
+          body: "Entdecken bevorzugt Quellen und Rezepte, die Menschen tatsächlich nachkochen, und was in deinem Land beliebt ist — so werden die Ergebnisse mit der Zeit treffsicherer, statt generisch zu bleiben.",
+        },
+      ],
+      related: ["Rezepte", "Essensplanung", "Warum Copantry"],
+    },
+  },
+
+  "wine-pairing": {
+    fr: {
+      metaTitle: "Accord mets et vins",
+      eyebrow: "Accord mets et vins",
+      crumb: "Accord mets et vins",
+      h1: "Sachez quel vin ouvrir, parmi les bouteilles que vous avez déjà",
+      lede: "Copantry garde une trace simple des vins de votre cave et, sur demande, suggère un accord pour le repas du soir — une bouteille que vous possédez déjà quand elle convient vraiment, plus un style général à rechercher dans tous les cas.",
+      sections: [
+        {
+          h2: "Votre cave, pas une encyclopédie du vin",
+          body: "Ajoutez une bouteille avec juste son nom — producteur, cépage, année et une note (où vous l’avez achetée, qui vous l’a offerte) sont tous optionnels. Suivez votre stock et marquez les bouteilles bues au fil de l’eau.",
+          bullets: [
+            {
+              title: "Saisie minimale",
+              desc: "Seul le nom de la bouteille est requis pour l’ajouter.",
+            },
+            {
+              title: "Accord sur demande",
+              desc: "Demandez un accord pour une recette ou tout un repas planifié — jamais automatique.",
+            },
+            {
+              title: "Recommande ce que vous possédez",
+              desc: "Suggère d’abord une bouteille de votre propre cave, quand elle convient.",
+            },
+            {
+              title: "Toujours une solution de repli",
+              desc: "Rien qui convienne dans votre cave ? Vous obtenez quand même un style à rechercher.",
+            },
+          ],
+        },
+        {
+          h2: "Fonctionne pour une recette ou tout un repas planifié",
+          body: "Obtenez une suggestion d’accord sur n’importe quelle page recette, ou pour tout ce qui est planifié dans un créneau du calendrier à la fois. Attachez le choix à ce repas et son stock se met à jour automatiquement une fois cuisiné.",
+        },
+      ],
+      related: ["Recettes", "Planification des repas", "Suivi du garde-manger"],
+    },
+    it: {
+      metaTitle: "Abbinamento vino-cibo",
+      eyebrow: "Abbinamento vino-cibo",
+      crumb: "Abbinamento vino-cibo",
+      h1: "Sappi quale vino aprire, tra le bottiglie che hai già",
+      lede: "Copantry tiene un registro semplice del vino nella tua cantina e, su richiesta, suggerisce un abbinamento per il pasto di stasera — una bottiglia che possiedi già quando è davvero adatta, più uno stile generale da cercare in ogni caso.",
+      sections: [
+        {
+          h2: "La tua cantina, non un’enciclopedia del vino",
+          body: "Aggiungi una bottiglia con solo il suo nome — produttore, vitigno, anno e una nota (dove l’hai comprata, chi te l’ha regalata) sono tutti opzionali. Tieni traccia di quante ne hai e segna le bottiglie bevute man mano.",
+          bullets: [
+            {
+              title: "Inserimento minimo",
+              desc: "Serve solo il nome della bottiglia per aggiungerla.",
+            },
+            {
+              title: "Abbinamento su richiesta",
+              desc: "Chiedi un abbinamento per una ricetta o un intero pasto pianificato — mai automatico.",
+            },
+            {
+              title: "Consiglia ciò che possiedi",
+              desc: "Suggerisce prima una bottiglia della tua cantina, quando è adatta.",
+            },
+            {
+              title: "Sempre un ripiego",
+              desc: "Niente si adatta nella tua cantina? Ottieni comunque uno stile da cercare.",
+            },
+          ],
+        },
+        {
+          h2: "Funziona per una ricetta o per un intero pasto pianificato",
+          body: "Ottieni un suggerimento di abbinamento su qualsiasi pagina ricetta, o per tutto ciò che è pianificato in una fascia del calendario insieme. Collega la scelta a quel pasto e la sua scorta si aggiorna automaticamente una volta cucinato.",
+        },
+      ],
+      related: ["Ricette", "Pianificazione dei pasti", "Gestione della dispensa"],
+    },
+    es: {
+      metaTitle: "Maridaje de vinos",
+      eyebrow: "Maridaje de vinos",
+      crumb: "Maridaje de vinos",
+      h1: "Sabe qué vino abrir, entre las botellas que ya tienes",
+      lede: "Copantry lleva un registro sencillo del vino de tu bodega y, cuando lo pides, sugiere un maridaje para la cena de hoy — una botella que ya tienes cuando encaja de verdad, además de un estilo general que buscar en cualquier caso.",
+      sections: [
+        {
+          h2: "Tu bodega, no una enciclopedia del vino",
+          body: "Añade una botella con solo su nombre — productor, uva, año y una nota (dónde la compraste, quién te la regaló) son todos opcionales. Controla cuántas tienes y marca las botellas bebidas sobre la marcha.",
+          bullets: [
+            {
+              title: "Alta mínima",
+              desc: "Solo hace falta el nombre de la botella para añadirla.",
+            },
+            {
+              title: "Maridaje bajo demanda",
+              desc: "Pide un maridaje para una receta o una comida planificada entera — nunca automático.",
+            },
+            {
+              title: "Recomienda lo que ya tienes",
+              desc: "Sugiere primero una botella de tu propia bodega, cuando encaja.",
+            },
+            {
+              title: "Siempre hay una alternativa",
+              desc: "¿Nada encaja en tu bodega? Aun así obtienes un estilo que buscar.",
+            },
+          ],
+        },
+        {
+          h2: "Funciona para una receta o para toda una comida planificada",
+          body: "Obtén una sugerencia de maridaje en cualquier página de receta, o para todo lo planificado en una franja del calendario a la vez. Vincula la elección a esa comida y su stock se actualiza automáticamente en cuanto la cocines.",
+        },
+      ],
+      related: ["Recetas", "Planificación de comidas", "Control de la despensa"],
+    },
+    pt: {
+      metaTitle: "Harmonização de vinhos",
+      eyebrow: "Harmonização de vinhos",
+      crumb: "Harmonização de vinhos",
+      h1: "Saiba que vinho abrir, entre as garrafas que já tem",
+      lede: "O Copantry mantém um registo simples do vinho da sua adega e, quando pedido, sugere uma harmonização para a refeição de hoje — uma garrafa que já tem quando encaixa mesmo, além de um estilo geral a procurar de qualquer forma.",
+      sections: [
+        {
+          h2: "A sua adega, não uma enciclopédia do vinho",
+          body: "Adicione uma garrafa só com o nome — produtor, casta, ano e uma nota (onde a comprou, quem lha ofereceu) são todos opcionais. Acompanhe quantas tem e marque as garrafas bebidas à medida que avança.",
+          bullets: [
+            {
+              title: "Registo mínimo",
+              desc: "Só o nome da garrafa é necessário para a adicionar.",
+            },
+            {
+              title: "Harmonização a pedido",
+              desc: "Peça uma harmonização para uma receita ou uma refeição planeada inteira — nunca automática.",
+            },
+            {
+              title: "Recomenda o que já tem",
+              desc: "Sugere primeiro uma garrafa da sua própria adega, quando encaixa.",
+            },
+            {
+              title: "Sempre há alternativa",
+              desc: "Nada encaixa na sua adega? Ainda assim obtém um estilo a procurar.",
+            },
+          ],
+        },
+        {
+          h2: "Funciona para uma receita ou para uma refeição planeada inteira",
+          body: "Obtenha uma sugestão de harmonização em qualquer página de receita, ou para tudo o que está planeado num horário do calendário de uma vez. Associe a escolha a essa refeição e o stock atualiza-se automaticamente assim que a cozinhar.",
+        },
+      ],
+      related: ["Receitas", "Planeamento de refeições", "Controlo da despensa"],
+    },
+    de: {
+      metaTitle: "Weinbegleitung",
+      eyebrow: "Weinbegleitung",
+      crumb: "Weinbegleitung",
+      h1: "Wisse, welchen Wein du öffnest — aus den Flaschen, die du schon hast",
+      lede: "Copantry führt ein einfaches Verzeichnis der Weine in deinem Keller und schlägt auf Wunsch eine Begleitung für das heutige Essen vor — eine Flasche, die du schon besitzt, wenn sie wirklich passt, plus einen allgemeinen Stil, nach dem du in jedem Fall Ausschau halten kannst.",
+      sections: [
+        {
+          h2: "Dein Keller, keine Weinenzyklopädie",
+          body: "Füge eine Flasche nur mit ihrem Namen hinzu — Erzeuger, Rebsorte, Jahrgang und eine Notiz (wo du sie gekauft hast, wer sie dir geschenkt hat) sind alle optional. Behalte den Bestand im Blick und markiere getrunkene Flaschen nach und nach.",
+          bullets: [
+            {
+              title: "Minimale Eingabe",
+              desc: "Nur der Flaschenname ist zum Hinzufügen nötig.",
+            },
+            {
+              title: "Begleitung auf Anfrage",
+              desc: "Frag nach einer Begleitung zu einem Rezept oder einer ganzen geplanten Mahlzeit — nie automatisch.",
+            },
+            {
+              title: "Empfiehlt, was du besitzt",
+              desc: "Schlägt zuerst eine Flasche aus deinem eigenen Keller vor, wenn sie passt.",
+            },
+            {
+              title: "Immer eine Rückfalloption",
+              desc: "Nichts passt in deinem Keller? Du bekommst trotzdem einen Stil, nach dem du suchen kannst.",
+            },
+          ],
+        },
+        {
+          h2: "Funktioniert für ein Rezept oder eine ganze geplante Mahlzeit",
+          body: "Hol dir einen Vorschlag zu jedem Rezept, oder für alles, was gleichzeitig in einem Kalenderslot geplant ist. Verknüpfe die Wahl mit dieser Mahlzeit, und ihr Bestand aktualisiert sich automatisch, sobald du gekocht hast.",
+        },
+      ],
+      related: ["Rezepte", "Essensplanung", "Vorratsverwaltung"],
     },
   },
 
@@ -2003,6 +2383,192 @@ export const FAQ_TX = {
       {
         q: "Wie senke ich meine Lebensmittelrechnung, ohne schlechter zu essen?",
         a: "Indem du rund um deinen Vorrat planst und Doppelkäufe vermeidest, gibst du weniger aus, ohne schlechter zu essen. Copantry plant echte Mahlzeiten rund um echte Zutaten und hält deine Liste schlank.",
+      },
+    ],
+  },
+
+  discovery: {
+    fr: [
+      {
+        q: "Comment trouver de nouvelles recettes sans chercher sur plein de sites différents ?",
+        a: "L’onglet Découvrir de Copantry cherche dans une base choisie de sites de recettes au même endroit et ouvre les résultats dans un lecteur intégré, pour éviter de visiter site après site.",
+      },
+      {
+        q: "Puis-je lire une recette sans être gêné par des pubs ou des pop-ups ?",
+        a: "Oui. Découvrir ouvre chaque résultat dans un lecteur propre et nettoyé à l’intérieur de Copantry — pas de pub, de vidéo automatique ni de pop-up intrusif, juste la recette.",
+      },
+      {
+        q: "Puis-je importer une recette trouvée sur Découvrir dans ma propre collection ?",
+        a: "Oui. Ouvrez n’importe quel résultat et importez-le en un geste, avec le même import propulsé par l’IA que pour n’importe quelle URL de recette — la recette garde sa langue d’origine.",
+      },
+      {
+        q: "Puis-je chercher sur Découvrir dans ma propre langue ?",
+        a: "Oui. Découvrir utilise votre langue par défaut, et vous pouvez passer à une langue précise ou chercher dans toutes les langues.",
+      },
+    ],
+    it: [
+      {
+        q: "Come trovo nuove ricette senza cercare su tanti siti diversi?",
+        a: "La scheda Scopri di Copantry cerca in una base selezionata di siti di ricette in un solo posto e apre i risultati in un lettore integrato, così non devi visitare sito dopo sito.",
+      },
+      {
+        q: "Posso leggere una ricetta senza pubblicità o pop-up che disturbano?",
+        a: "Sì. Scopri apre ogni risultato in un lettore pulito e sanificato dentro Copantry — niente pubblicità, video automatici o pop-up invadenti, solo la ricetta.",
+      },
+      {
+        q: "Posso importare una ricetta trovata su Scopri nella mia raccolta?",
+        a: "Sì. Apri qualsiasi risultato e importalo con un tocco, con lo stesso import basato sull’IA usato per qualsiasi URL di ricetta — la ricetta resta nella sua lingua originale.",
+      },
+      {
+        q: "Posso cercare su Scopri nella mia lingua?",
+        a: "Sì. Scopri usa di default la tua lingua, e puoi passare a una lingua specifica o cercare in tutte le lingue.",
+      },
+    ],
+    es: [
+      {
+        q: "¿Cómo encuentro nuevas recetas sin buscar en muchas webs distintas?",
+        a: "La pestaña Descubrir de Copantry busca en una base seleccionada de sitios de recetas en un solo lugar y abre los resultados en un lector integrado, así no tienes que visitar sitio tras sitio.",
+      },
+      {
+        q: "¿Puedo leer una receta sin que me molesten anuncios o ventanas emergentes?",
+        a: "Sí. Descubrir abre cada resultado en un lector limpio y depurado dentro de Copantry — sin anuncios, vídeo automático ni ventanas emergentes invasivas, solo la receta.",
+      },
+      {
+        q: "¿Puedo importar una receta que encuentro en Descubrir a mi propia colección?",
+        a: "Sí. Abre cualquier resultado e impórtalo con un toque, con la misma importación con IA que Copantry usa para cualquier URL de receta — mantiene la receta en su idioma original.",
+      },
+      {
+        q: "¿Puedo buscar en Descubrir en mi propio idioma?",
+        a: "Sí. Descubrir usa tu idioma por defecto, y puedes cambiar a uno específico o buscar en todos.",
+      },
+    ],
+    pt: [
+      {
+        q: "Como encontro novas receitas sem procurar em muitos sites diferentes?",
+        a: "O separador Descobrir do Copantry procura numa base selecionada de sites de receitas num só lugar e abre os resultados num leitor integrado, para não ter de visitar site após site.",
+      },
+      {
+        q: "Posso ler uma receita sem anúncios ou pop-ups a atrapalhar?",
+        a: "Sim. O Descobrir abre cada resultado num leitor limpo e higienizado dentro do Copantry — sem anúncios, vídeo automático ou pop-ups intrusivos, só a receita.",
+      },
+      {
+        q: "Posso importar uma receita que encontro no Descobrir para a minha coleção?",
+        a: "Sim. Abra qualquer resultado e importe-o com um toque, com a mesma importação com IA que o Copantry usa para qualquer URL de receita — mantém a receita na língua original.",
+      },
+      {
+        q: "Posso pesquisar no Descobrir na minha própria língua?",
+        a: "Sim. O Descobrir usa a sua língua por predefinição, e pode mudar para uma língua específica ou pesquisar em todas.",
+      },
+    ],
+    de: [
+      {
+        q: "Wie finde ich neue Rezepte, ohne auf vielen verschiedenen Websites zu suchen?",
+        a: "Der Entdecken-Tab von Copantry durchsucht eine kuratierte Basis von Rezept-Websites an einem Ort und öffnet Ergebnisse in einem integrierten Lesemodus, sodass du nicht Seite für Seite besuchen musst.",
+      },
+      {
+        q: "Kann ich ein Rezept lesen, ohne dass Werbung oder Pop-ups stören?",
+        a: "Ja. Entdecken öffnet jedes Ergebnis in einem sauberen, bereinigten Lesemodus in Copantry — keine Werbung, automatisch startenden Videos oder aufdringlichen Pop-ups, nur das Rezept.",
+      },
+      {
+        q: "Kann ich ein auf Entdecken gefundenes Rezept in meine eigene Sammlung importieren?",
+        a: "Ja. Öffne ein beliebiges Ergebnis und importiere es mit einem Tipp, mit demselben KI-gestützten Import, den Copantry für jede Rezept-URL nutzt — das Rezept bleibt in seiner Originalsprache.",
+      },
+      {
+        q: "Kann ich auf Entdecken in meiner eigenen Sprache suchen?",
+        a: "Ja. Entdecken nutzt standardmäßig deine Sprache, du kannst aber auf eine bestimmte Sprache wechseln oder in allen suchen.",
+      },
+    ],
+  },
+
+  winePairing: {
+    fr: [
+      {
+        q: "Copantry suggère-t-il un vin pour accompagner une recette ?",
+        a: "Oui. Sur n’importe quelle page recette, ou pour tout ce qui est planifié dans un créneau de repas, vous pouvez demander un accord à Copantry — il recommande une bouteille que vous possédez déjà quand elle convient vraiment, plus un style général à rechercher.",
+      },
+      {
+        q: "Dois-je saisir tous les détails d’une bouteille pour la suivre ?",
+        a: "Non. Seul le nom de la bouteille est requis. Producteur, cépage, millésime, couleur et une note libre sont tous optionnels, donc ajouter une bouteille prend quelques secondes.",
+      },
+      {
+        q: "Et si aucun de mes vins ne convient au repas ?",
+        a: "Vous obtenez quand même une suggestion de style général — comme « un rouge de corps moyen » — même quand rien dans votre propre cave ne convient vraiment.",
+      },
+      {
+        q: "Ma cave se met-elle à jour toute seule à mesure que les bouteilles sont utilisées ?",
+        a: "Oui. Attachez une bouteille à un repas planifié et son stock diminue automatiquement une fois que vous confirmez l’avoir cuisiné, ou marquez n’importe quelle bouteille comme bue manuellement à tout moment.",
+      },
+    ],
+    it: [
+      {
+        q: "Copantry suggerisce un vino da abbinare a una ricetta?",
+        a: "Sì. Su qualsiasi pagina ricetta, o per tutto ciò che è pianificato in una fascia pasto, puoi chiedere a Copantry un abbinamento — consiglia una bottiglia che possiedi già quando è davvero adatta, più uno stile generale da cercare.",
+      },
+      {
+        q: "Devo inserire ogni dettaglio di una bottiglia per tenerne traccia?",
+        a: "No. Serve solo il nome della bottiglia. Produttore, vitigno, annata, colore e una nota libera sono tutti opzionali, quindi aggiungere una bottiglia richiede pochi secondi.",
+      },
+      {
+        q: "E se nessuno dei miei vini si adatta al pasto?",
+        a: "Ottieni comunque un suggerimento di stile generale — come «un rosso di corpo medio» — anche quando nulla nella tua cantina è davvero adatto.",
+      },
+      {
+        q: "La mia cantina si aggiorna da sola man mano che le bottiglie vengono usate?",
+        a: "Sì. Collega una bottiglia a un pasto pianificato e la sua scorta diminuisce automaticamente una volta confermato di averlo cucinato, oppure segna qualsiasi bottiglia come bevuta manualmente in qualsiasi momento.",
+      },
+    ],
+    es: [
+      {
+        q: "¿Copantry sugiere un vino para acompañar una receta?",
+        a: "Sí. En cualquier página de receta, o para todo lo planificado en una franja de comida, puedes pedirle a Copantry un maridaje — recomienda una botella que ya tienes cuando encaja de verdad, además de un estilo general que buscar.",
+      },
+      {
+        q: "¿Tengo que introducir todos los detalles de una botella para llevar el control?",
+        a: "No. Solo hace falta el nombre de la botella. Productor, uva, añada, color y una nota libre son todos opcionales, así que añadir una botella lleva segundos.",
+      },
+      {
+        q: "¿Y si ninguno de mis vinos encaja con la comida?",
+        a: "Aun así obtienes una sugerencia de estilo general — como «un tinto de cuerpo medio» — incluso cuando nada de tu propia bodega encaja bien.",
+      },
+      {
+        q: "¿Mi bodega se actualiza sola a medida que se usan las botellas?",
+        a: "Sí. Vincula una botella a una comida planificada y su stock baja automáticamente en cuanto confirmas que la has cocinado, o marca cualquier botella como bebida manualmente en cualquier momento.",
+      },
+    ],
+    pt: [
+      {
+        q: "O Copantry sugere um vinho para acompanhar uma receita?",
+        a: "Sim. Em qualquer página de receita, ou para tudo o que está planeado num horário de refeição, pode pedir ao Copantry uma harmonização — recomenda uma garrafa que já tem quando encaixa mesmo, além de um estilo geral a procurar.",
+      },
+      {
+        q: "Preciso de indicar todos os detalhes de uma garrafa para a acompanhar?",
+        a: "Não. Só o nome da garrafa é necessário. Produtor, casta, colheita, cor e uma nota livre são todos opcionais, por isso adicionar uma garrafa demora segundos.",
+      },
+      {
+        q: "E se nenhum dos meus vinhos encaixar na refeição?",
+        a: "Ainda assim obtém uma sugestão de estilo geral — como «um tinto de corpo médio» — mesmo quando nada na sua adega encaixa bem.",
+      },
+      {
+        q: "A minha adega atualiza-se sozinha à medida que as garrafas são usadas?",
+        a: "Sim. Associe uma garrafa a uma refeição planeada e o stock desce automaticamente assim que confirmar que a cozinhou, ou marque qualquer garrafa como bebida manualmente a qualquer momento.",
+      },
+    ],
+    de: [
+      {
+        q: "Schlägt Copantry einen Wein zu einem Rezept vor?",
+        a: "Ja. Auf jeder Rezeptseite oder für alles, was in einem Mahlzeiten-Slot geplant ist, kannst du Copantry nach einer Weinbegleitung fragen — es empfiehlt eine Flasche, die du schon besitzt, wenn sie wirklich passt, plus einen allgemeinen Stil, nach dem du suchen kannst.",
+      },
+      {
+        q: "Muss ich jedes Detail zu einer Flasche eingeben, um sie zu verfolgen?",
+        a: "Nein. Nur der Anzeigename der Flasche ist nötig. Erzeuger, Rebsorte, Jahrgang, Farbe und eine freie Notiz sind alle optional — eine Flasche hinzuzufügen dauert Sekunden.",
+      },
+      {
+        q: "Was, wenn keiner meiner Weine zum Essen passt?",
+        a: "Du bekommst trotzdem einen allgemeinen Stilvorschlag — etwa „ein mittelkräftiger Rotwein“ — selbst wenn nichts in deinem eigenen Keller wirklich passt.",
+      },
+      {
+        q: "Aktualisiert sich mein Weinkeller von selbst, während Flaschen verbraucht werden?",
+        a: "Ja. Verknüpfe eine Flasche mit einer geplanten Mahlzeit, und ihr Bestand sinkt automatisch, sobald du bestätigst, dass du gekocht hast — oder markiere jede Flasche jederzeit manuell als getrunken.",
       },
     ],
   },

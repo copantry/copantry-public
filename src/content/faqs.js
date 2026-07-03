@@ -197,6 +197,44 @@ export const FAQS = {
     },
   ],
 
+  discovery: [
+    {
+      q: "How do I find new recipes without searching lots of different websites?",
+      a: "Copantry's Discover tab searches a curated base of recipe websites in one place and opens results in an in-app reader, so you don't have to visit site after site to find something to cook.",
+    },
+    {
+      q: "Can I read a recipe without ads or pop-ups getting in the way?",
+      a: "Yes. Discover opens every result in a clean, sanitized reader inside Copantry — no ads, autoplay video or intrusive pop-ups, just the recipe.",
+    },
+    {
+      q: "Can I import a recipe I find on Discover into my own collection?",
+      a: "Yes. Open any result and import it with one tap, using the same AI-powered import Copantry uses for any recipe URL — it keeps the recipe in its original language.",
+    },
+    {
+      q: "Can I search Discover in my own language?",
+      a: "Yes. Discover defaults to your own language, and you can switch to a specific language or search across all of them.",
+    },
+  ],
+
+  winePairing: [
+    {
+      q: "Does Copantry suggest a wine to go with a recipe?",
+      a: "Yes. On any recipe page, or for everything planned in a meal slot, you can ask Copantry for a wine pairing — it recommends a bottle you already own when one genuinely fits, plus a general style to look for.",
+    },
+    {
+      q: "Do I need to enter every detail about a bottle to track it?",
+      a: "No. Only the bottle's display name is required. Producer, grape, vintage, colour and a free-text note are all optional, so adding a bottle takes seconds.",
+    },
+    {
+      q: "What if none of my wine fits the meal?",
+      a: "You still get a general style suggestion — such as a medium-bodied red — even when nothing in your own cellar is a good match.",
+    },
+    {
+      q: "Does my wine cellar update itself as bottles are used?",
+      a: "Yes. Attach a bottle to a planned meal and its stock decreases automatically once you confirm you've cooked it, or mark any bottle as drunk manually at any time.",
+    },
+  ],
+
   whyCopantry: [
     {
       q: "What is the best app to reduce food waste at home?",
