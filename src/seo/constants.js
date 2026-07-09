@@ -15,7 +15,7 @@ export const SITE_NAME = "Copantry";
 
 /** The one-sentence canonical description. Do not paraphrase elsewhere. */
 export const CANONICAL_DESCRIPTION =
-  "Copantry is a meal planner and pantry tracker that tells you what to cook before food goes to waste and builds your shopping list around what you already have.";
+  "Copantry is a meal planner, pantry tracker and shopping-list app for households that decides what's for dinner from the food you already have and builds your shopping list automatically — so you cook more, waste less and never scramble at 6pm.";
 
 /**
  * Default social share image — 1200×630 PNG (universally supported by Google,

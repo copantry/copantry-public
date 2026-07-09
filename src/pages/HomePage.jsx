@@ -36,6 +36,11 @@ const PILLAR_META = [
 ];
 const STEP_COLORS = ["bg-green-600", "bg-orange-500", "bg-violet-600"];
 const DIFF_ICONS = [Leaf, Sparkles, Globe, ShoppingCart, Heart, Bot];
+// Household cards: visual + link meta stays here; text comes from localized content by index.
+const HOUSEHOLD_META = [
+  { emoji: "👨‍👩‍👧", to: "/use-cases/for-families" },
+  { emoji: "🧑‍🍳", to: "/use-cases/for-couples" },
+];
 
 export default function HomePage() {
   const lng = useLang();
@@ -180,6 +185,35 @@ export default function HomePage() {
           </div>
         </Section>
       </section>
+
+      {/* ── Made for households ───────────────────────────── */}
+      <Section className="py-20 md:py-28">
+        <SectionHeading
+          eyebrow={c.households.eyebrow}
+          title={c.households.title}
+          lede={c.households.lede}
+        />
+        <div className="grid sm:grid-cols-2 gap-5 max-w-3xl mx-auto">
+          {c.households.cards.map((card, i) => (
+            <Link
+              key={card.title}
+              to={localizePath(HOUSEHOLD_META[i].to, lng)}
+              className="card-hover bg-white border border-gray-100 rounded-2xl p-7 shadow-sm flex flex-col"
+            >
+              <span className="text-3xl mb-3">{HOUSEHOLD_META[i].emoji}</span>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">
+                {card.title}
+              </h3>
+              <p className="text-sm text-gray-500 leading-relaxed flex-1">
+                {card.desc}
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-orange-600">
+                {card.cta} <ArrowRight size={15} />
+              </span>
+            </Link>
+          ))}
+        </div>
+      </Section>
 
       {/* ── Differentiators ──────────────────────────────── */}
       <Section className="py-20 md:py-28">

@@ -506,15 +506,15 @@ export const HOOK = {
 /* ── Homepage ───────────────────────────────────────────────────────────── */
 export const HOME = {
   en: {
-    badge: "Cook more · waste less · shop smarter",
-    h1a: "Cook it before",
-    h1b: "you",
-    h1accent: "bin it.",
+    badge: "Dinner sorted · less waste · shared kitchen",
+    h1a: "Never wonder",
+    h1b: "what’s for",
+    h1accent: "dinner.",
     heroLede:
-      "Copantry tells you what to cook before food goes to waste and builds your shopping list around what you already have. Less thrown away, less spent, less “what’s for dinner?”.",
+      "Copantry plans your week around what’s already in your kitchen and writes the shopping list for you. Less “what do we eat?”, less waste, less spent — one shared app for the whole household.",
     trustLine: "Free to use · no card · web today, apps soon",
     proof:
-      "UK households throw away around 6.4 million tonnes of food a year — roughly £1,000 for an average family with children, according to WRAP. Most of it could have been eaten. Copantry exists to keep that food on your plate.",
+      "An average family makes hundreds of “what’s for dinner?” decisions a year — and bins around £1,000 of food, according to WRAP. Copantry makes the call for you, from what you already have, so nothing goes to waste.",
     proofStat: "of food a typical dinner suggestion rescues from the bin",
     pillarsEyebrow: "The whole loop, in one app",
     pillarsTitle: "It knows your kitchen, so it can actually help",
@@ -552,7 +552,7 @@ export const HOME = {
     ],
     howMore: "See the full walk-through",
     diffEyebrow: "Why Copantry",
-    diffTitle: "Built around food waste, not around an empty calendar",
+    diffTitle: "Built to run your kitchen, not just fill a calendar",
     diffLede:
       "A few things you will notice quickly — and one you probably won’t find anywhere else.",
     differentiators: [
@@ -582,17 +582,34 @@ export const HOME = {
       },
     ],
     whyTeaser: "How Copantry compares to other kinds of apps",
+    households: {
+      eyebrow: "Made for households",
+      title: "One kitchen the whole house shares",
+      lede: "Copantry keeps couples and families on one live plan, pantry and shopping list — so the “what’s for dinner?” and “did you get milk?” texts just stop.",
+      cards: [
+        {
+          title: "For families",
+          desc: "One shared plan and list, recipes scaled to your family, and weaning-friendly notes for the little ones.",
+          cta: "See it for families",
+        },
+        {
+          title: "For couples",
+          desc: "The same kitchen on both phones in real time — even when each of you uses a different language.",
+          cta: "See it for couples",
+        },
+      ],
+    },
   },
   fr: {
-    badge: "Cuisinez plus · gaspillez moins · achetez malin",
-    h1a: "Cuisinez-le avant",
-    h1b: "de le",
-    h1accent: "jeter.",
+    badge: "Dîner réglé · moins de gaspi · cuisine partagée",
+    h1a: "Ne demandez plus",
+    h1b: "ce qu’on",
+    h1accent: "mange.",
     heroLede:
-      "Copantry vous dit quoi cuisiner avant que les aliments ne se gâtent et construit votre liste de courses autour de ce que vous avez déjà. Moins de gaspillage, moins de dépenses, moins de « qu’est-ce qu’on mange ce soir ? ».",
+      "Copantry planifie votre semaine autour de ce que vous avez déjà et rédige la liste de courses pour vous. Moins de « qu’est-ce qu’on mange ? », moins de gaspillage, moins de dépenses — une seule appli partagée pour tout le foyer.",
     trustLine: "Gratuit · sans carte · web aujourd’hui, applis bientôt",
     proof:
-      "En France, chaque foyer jette en moyenne des dizaines de kilos de nourriture par an — l’équivalent de centaines d’euros, selon l’ADEME. La plus grande partie aurait pu être mangée. Copantry existe pour garder cette nourriture dans votre assiette.",
+      "Une famille moyenne se demande des centaines de fois par an « qu’est-ce qu’on mange ? » — et jette l’équivalent de centaines d’euros de nourriture, selon l’ADEME. Copantry décide pour vous, à partir de ce que vous avez déjà, pour que rien ne soit gaspillé.",
     proofStat:
       "de nourriture sauvée de la poubelle par une suggestion de dîner type",
     pillarsEyebrow: "Toute la boucle, dans une seule appli",
@@ -633,7 +650,7 @@ export const HOME = {
     howMore: "Voir le parcours complet",
     diffEyebrow: "Pourquoi Copantry",
     diffTitle:
-      "Conçu autour du gaspillage alimentaire, pas autour d’un calendrier vide",
+      "Conçu pour gérer votre cuisine, pas seulement remplir un calendrier",
     diffLede:
       "Quelques points que vous remarquerez vite — et un que vous ne trouverez sans doute nulle part ailleurs.",
     differentiators: [
@@ -663,17 +680,34 @@ export const HOME = {
       },
     ],
     whyTeaser: "Comment Copantry se compare aux autres types d’applis",
+    households: {
+      eyebrow: "Pensé pour les foyers",
+      title: "Une cuisine que toute la maison partage",
+      lede: "Copantry garde couples et familles sur un même plan, garde-manger et liste de courses en direct — fini les « qu’est-ce qu’on mange ? » et les « t’as pris du lait ? ».",
+      cards: [
+        {
+          title: "Pour les familles",
+          desc: "Un plan et une liste partagés, des recettes ajustées à votre famille et des notes pour la diversification des tout-petits.",
+          cta: "Voir pour les familles",
+        },
+        {
+          title: "Pour les couples",
+          desc: "La même cuisine sur les deux téléphones, en temps réel — même si chacun utilise sa propre langue.",
+          cta: "Voir pour les couples",
+        },
+      ],
+    },
   },
   it: {
-    badge: "Cucina di più · spreca meno · fai la spesa furba",
-    h1a: "Cucinalo prima",
-    h1b: "di",
-    h1accent: "buttarlo.",
+    badge: "Cena decisa · meno sprechi · cucina condivisa",
+    h1a: "Mai più il dubbio",
+    h1b: "su cosa",
+    h1accent: "cucinare.",
     heroLede:
-      "Copantry ti dice cosa cucinare prima che il cibo vada a male e costruisce la lista della spesa intorno a ciò che hai già. Meno sprechi, meno spese, meno « cosa si mangia stasera? ».",
+      "Copantry pianifica la tua settimana intorno a ciò che hai già e scrive la lista della spesa per te. Meno « cosa si mangia? », meno sprechi, meno spese — un’unica app condivisa per tutta la famiglia.",
     trustLine: "Gratis · senza carta · web oggi, app presto",
     proof:
-      "In Italia ogni famiglia getta in media decine di chili di cibo all’anno — centinaia di euro. La maggior parte si sarebbe potuta mangiare. Copantry esiste per tenere quel cibo nel tuo piatto.",
+      "Una famiglia media si chiede centinaia di volte all’anno « cosa si mangia stasera? » — e butta l’equivalente di centinaia di euro di cibo. Copantry decide per te, a partire da ciò che hai già, così niente va sprecato.",
     proofStat: "di cibo che una tipica proposta di cena salva dalla pattumiera",
     pillarsEyebrow: "Tutto il ciclo, in un’unica app",
     pillarsTitle: "Conosce la tua cucina, così può aiutarti davvero",
@@ -712,7 +746,7 @@ export const HOME = {
     howMore: "Guarda il percorso completo",
     diffEyebrow: "Perché Copantry",
     diffTitle:
-      "Costruito intorno allo spreco alimentare, non intorno a un calendario vuoto",
+      "Costruito per gestire la tua cucina, non solo per riempire un calendario",
     diffLede:
       "Alcune cose le noterai subito — e una probabilmente non la troverai altrove.",
     differentiators: [
@@ -742,17 +776,34 @@ export const HOME = {
       },
     ],
     whyTeaser: "Come Copantry si confronta con gli altri tipi di app",
+    households: {
+      eyebrow: "Fatta per le famiglie",
+      title: "Una cucina condivisa da tutta la casa",
+      lede: "Copantry tiene coppie e famiglie su un unico piano, dispensa e lista della spesa in tempo reale — così spariscono i « cosa si mangia? » e i « hai preso il latte? ».",
+      cards: [
+        {
+          title: "Per le famiglie",
+          desc: "Un piano e una lista condivisi, ricette in scala per la tua famiglia e note per lo svezzamento dei più piccoli.",
+          cta: "Scopri per le famiglie",
+        },
+        {
+          title: "Per le coppie",
+          desc: "La stessa cucina su entrambi i telefoni in tempo reale — anche se ognuno usa la propria lingua.",
+          cta: "Scopri per le coppie",
+        },
+      ],
+    },
   },
   es: {
-    badge: "Cocina más · desperdicia menos · compra mejor",
-    h1a: "Cocínalo antes",
-    h1b: "de",
-    h1accent: "tirarlo.",
+    badge: "Cena resuelta · menos desperdicio · cocina compartida",
+    h1a: "No vuelvas a pensar",
+    h1b: "qué hay de",
+    h1accent: "cenar.",
     heroLede:
-      "Copantry te dice qué cocinar antes de que la comida se estropee y arma tu lista de la compra en torno a lo que ya tienes. Menos desperdicio, menos gasto, menos « ¿qué cenamos hoy? ».",
+      "Copantry planifica tu semana en torno a lo que ya tienes y escribe tu lista de la compra por ti. Menos « ¿qué cenamos? », menos desperdicio, menos gasto — una sola app compartida para todo el hogar.",
     trustLine: "Gratis · sin tarjeta · web hoy, apps pronto",
     proof:
-      "En España cada hogar tira de media decenas de kilos de comida al año — cientos de euros. La mayor parte se podría haber comido. Copantry existe para mantener esa comida en tu plato.",
+      "Una familia media se pregunta cientos de veces al año « ¿qué cenamos hoy? » — y tira el equivalente a cientos de euros de comida. Copantry lo decide por ti, a partir de lo que ya tienes, para que nada se desperdicie.",
     proofStat: "de comida que una sugerencia de cena típica salva de la basura",
     pillarsEyebrow: "Todo el ciclo, en una sola app",
     pillarsTitle: "Conoce tu cocina, así que puede ayudarte de verdad",
@@ -791,7 +842,7 @@ export const HOME = {
     howMore: "Ver el recorrido completo",
     diffEyebrow: "Por qué Copantry",
     diffTitle:
-      "Construido en torno al desperdicio de comida, no en torno a un calendario vacío",
+      "Diseñado para gestionar tu cocina, no solo para llenar un calendario",
     diffLede:
       "Algunas cosas las notarás enseguida — y una probablemente no la encuentres en ningún otro sitio.",
     differentiators: [
@@ -821,17 +872,34 @@ export const HOME = {
       },
     ],
     whyTeaser: "Cómo se compara Copantry con otros tipos de apps",
+    households: {
+      eyebrow: "Hecha para hogares",
+      title: "Una cocina que comparte toda la casa",
+      lede: "Copantry mantiene a parejas y familias en un mismo plan, despensa y lista de la compra en tiempo real — para que se acaben los « ¿qué cenamos? » y los « ¿compraste leche? ».",
+      cards: [
+        {
+          title: "Para familias",
+          desc: "Un plan y una lista compartidos, recetas ajustadas a tu familia y notas para la alimentación de los más pequeños.",
+          cta: "Verlo para familias",
+        },
+        {
+          title: "Para parejas",
+          desc: "La misma cocina en ambos móviles en tiempo real — aunque cada uno use su propio idioma.",
+          cta: "Verlo para parejas",
+        },
+      ],
+    },
   },
   pt: {
-    badge: "Cozinhe mais · desperdice menos · compre melhor",
-    h1a: "Cozinhe antes",
-    h1b: "de",
-    h1accent: "deitar fora.",
+    badge: "Jantar resolvido · menos desperdício · cozinha partilhada",
+    h1a: "Nunca mais pense",
+    h1b: "no que há para",
+    h1accent: "jantar.",
     heroLede:
-      "O Copantry diz-lhe o que cozinhar antes que a comida estrague e monta a sua lista de compras à volta do que já tem. Menos desperdício, menos gastos, menos « o que se janta hoje? ».",
+      "O Copantry planeia a sua semana à volta do que já tem e escreve a lista de compras por si. Menos « o que se janta? », menos desperdício, menos gastos — uma só app partilhada para todo o agregado.",
     trustLine: "Grátis · sem cartão · web hoje, apps em breve",
     proof:
-      "Em Portugal cada agregado deita fora, em média, dezenas de quilos de comida por ano — centenas de euros. A maior parte podia ter sido comida. O Copantry existe para manter essa comida no seu prato.",
+      "Uma família média pergunta-se centenas de vezes por ano « o que se janta hoje? » — e deita fora o equivalente a centenas de euros de comida. O Copantry decide por si, a partir do que já tem, para que nada se desperdice.",
     proofStat: "de comida que uma sugestão de jantar típica salva do lixo",
     pillarsEyebrow: "Todo o ciclo, numa só app",
     pillarsTitle: "Conhece a sua cozinha, por isso pode mesmo ajudar",
@@ -871,7 +939,7 @@ export const HOME = {
     howMore: "Ver o percurso completo",
     diffEyebrow: "Porquê o Copantry",
     diffTitle:
-      "Feito à volta do desperdício alimentar, não à volta de um calendário vazio",
+      "Feito para gerir a sua cozinha, não apenas para encher um calendário",
     diffLede:
       "Algumas coisas vai notar depressa — e uma provavelmente não encontra em mais lado nenhum.",
     differentiators: [
@@ -901,17 +969,34 @@ export const HOME = {
       },
     ],
     whyTeaser: "Como o Copantry se compara com outros tipos de apps",
+    households: {
+      eyebrow: "Feita para a casa toda",
+      title: "Uma cozinha que a casa toda partilha",
+      lede: "O Copantry mantém casais e famílias num só plano, despensa e lista de compras em tempo real — para acabarem os « o que se janta? » e os « compraste leite? ».",
+      cards: [
+        {
+          title: "Para famílias",
+          desc: "Um plano e uma lista partilhados, receitas à escala da sua família e notas para a introdução alimentar dos mais pequenos.",
+          cta: "Ver para famílias",
+        },
+        {
+          title: "Para casais",
+          desc: "A mesma cozinha nos dois telemóveis em tempo real — mesmo que cada um use a sua própria língua.",
+          cta: "Ver para casais",
+        },
+      ],
+    },
   },
   de: {
-    badge: "Mehr kochen · weniger wegwerfen · klüger einkaufen",
-    h1a: "Kochen Sie es, bevor",
-    h1b: "Sie es",
-    h1accent: "wegwerfen.",
+    badge: "Abendessen geklärt · weniger wegwerfen · geteilte Küche",
+    h1a: "Nie mehr fragen,",
+    h1b: "was es heute zu",
+    h1accent: "essen gibt.",
     heroLede:
-      "Copantry sagt Ihnen, was Sie kochen sollten, bevor Lebensmittel verderben, und baut Ihre Einkaufsliste rund um das auf, was Sie schon haben. Weniger weggeworfen, weniger ausgegeben, weniger „Was gibt’s heute zu essen?“.",
+      "Copantry plant Ihre Woche rund um das, was Sie schon haben, und schreibt die Einkaufsliste für Sie. Weniger „Was essen wir?“, weniger Verschwendung, weniger Ausgaben — eine geteilte App für den ganzen Haushalt.",
     trustLine: "Kostenlos · keine Karte · Web heute, Apps bald",
     proof:
-      "In Deutschland wirft jeder Haushalt im Schnitt etliche Kilogramm Lebensmittel pro Jahr weg — Hunderte von Euro. Das meiste hätte man essen können. Copantry sorgt dafür, dass dieses Essen auf Ihrem Teller landet.",
+      "Eine durchschnittliche Familie fragt sich hunderte Male im Jahr „Was gibt’s heute zu essen?“ — und wirft Lebensmittel im Wert von hunderten Euro weg. Copantry entscheidet für Sie, aus dem, was Sie schon haben, damit nichts verdirbt.",
     proofStat:
       "an Lebensmitteln, die ein typischer Abendessen-Vorschlag vor der Tonne rettet",
     pillarsEyebrow: "Der ganze Kreislauf, in einer App",
@@ -952,7 +1037,7 @@ export const HOME = {
     howMore: "Den ganzen Ablauf ansehen",
     diffEyebrow: "Warum Copantry",
     diffTitle:
-      "Rund um Lebensmittelverschwendung gebaut, nicht um einen leeren Kalender",
+      "Gebaut, um Ihre Küche zu führen, nicht nur einen Kalender zu füllen",
     diffLede:
       "Ein paar Dinge merken Sie schnell – und eines finden Sie wahrscheinlich nirgends sonst.",
     differentiators: [
@@ -982,6 +1067,23 @@ export const HOME = {
       },
     ],
     whyTeaser: "Wie sich Copantry mit anderen Arten von Apps vergleicht",
+    households: {
+      eyebrow: "Für den ganzen Haushalt",
+      title: "Eine Küche, die das ganze Haus teilt",
+      lede: "Copantry hält Paare und Familien auf einem gemeinsamen Plan, Vorrat und einer Einkaufsliste in Echtzeit — Schluss mit „Was essen wir?“ und „Hast du Milch geholt?“.",
+      cards: [
+        {
+          title: "Für Familien",
+          desc: "Ein geteilter Plan und eine Liste, Rezepte passend zur Familiengröße und Notizen für die Beikost der Kleinen.",
+          cta: "Für Familien ansehen",
+        },
+        {
+          title: "Für Paare",
+          desc: "Dieselbe Küche auf beiden Handys in Echtzeit — auch wenn jeder seine eigene Sprache nutzt.",
+          cta: "Für Paare ansehen",
+        },
+      ],
+    },
   },
 };
 

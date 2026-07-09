@@ -4,10 +4,17 @@ Marketing site for Copantry. React 19 + Vite 8 + Tailwind v4, **statically
 prerendered** for SEO/GEO. **ES modules**. Deployed independently — this repo has
 no access to the parent monorepo at runtime.
 
-**Positioning:** lead with the food-waste wedge ("cook it before you bin it"),
-not MCP. MCP is a differentiator section + the `/features/ai-assistant-mcp` page,
-never the headline. Full architecture & launch runbook:
-[../docs/marketing-site-seo-geo.md](../docs/marketing-site-seo-geo.md).
+**Positioning:** lead with the **dinner/household umbrella** — *"Never wonder
+what's for dinner again"* — aimed at busy families/couples. Food waste is now a
+**strong pillar/benefit, not the headline** (the guilt-y "cook it before you bin
+it" framing was retired in favour of relief-led copy; waste keeps its section +
+every SEO asset). MCP is a differentiator section + the `/features/ai-assistant-mcp`
+page, never the headline. The one-sentence entity anchor lives **only** in
+`src/seo/constants.js` (`CANONICAL_DESCRIPTION`) and must stay in lockstep with
+`src/seo/seoConfig.js` `"/"` description + `public/llms.txt`. Full architecture &
+launch runbook: [../docs/marketing-site-seo-geo.md](../docs/marketing-site-seo-geo.md).
+Design of the repositioning:
+[../docs/superpowers/specs/2026-07-09-positioning-onboarding-notifications-design.md](../docs/superpowers/specs/2026-07-09-positioning-onboarding-notifications-design.md).
 
 ## Commands
 
@@ -44,7 +51,7 @@ that registry.
 
 | Route                                   | File                                                                                | Purpose                                         |
 | --------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------- |
-| `/`                                     | `pages/HomePage.jsx`                                                                | Waste-first hero + hook card + pillars + FAQ    |
+| `/`                                     | `pages/HomePage.jsx`                                                                | Dinner/household hero + hook card + pillars + FAQ |
 | `/how-it-works`                         | `pages/HowItWorksPage.jsx`                                                          | 4-step HowTo                                    |
 | `/why-copantry`                         | `pages/WhyCopantryPage.jsx`                                                         | Differentiator (categories, never named rivals) |
 | `/features/:slug`                       | `pages/ContentPage.jsx` + `content/pages.js` (`FEATURES`)                           | Capability pages                                |

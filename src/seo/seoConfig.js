@@ -76,9 +76,9 @@ const HOW_IT_WORKS_STEPS = [
 /* ── Static routes ──────────────────────────────────────────────────────── */
 const STATIC = {
   "/": {
-    title: "Copantry — cook what you have before it goes to waste",
+    title: "Copantry — never wonder what's for dinner again",
     description:
-      "Copantry is a meal planner and pantry tracker that tells you what to cook before food goes to waste and builds your shopping list around what you already have.",
+      "Copantry is a meal planner, pantry tracker and shopping-list app for households that decides what's for dinner from the food you already have and builds your shopping list automatically — so you cook more, waste less and never scramble at 6pm.",
     priority: 1.0,
     changefreq: "weekly",
     schema: () => [

@@ -1,9 +1,10 @@
 # Copantry
 
-> Copantry is a meal planner and pantry tracker that tells you what to cook
-> before food goes to waste and builds your shopping list around what you
-> already have. Web today; native Android and iOS apps coming soon. UI in
-> English, French, Italian, Portuguese, German and Spanish; recipes stay in
+> Copantry is a meal planner, pantry tracker and shopping-list app for
+> households that decides what's for dinner from the food you already have and
+> builds your shopping list automatically — so you cook more, waste less and
+> never scramble at 6pm. Web today; native Android and iOS apps coming soon. UI
+> in English, French, Italian, Portuguese, German and Spanish; recipes stay in
 > their original language.
 
 - Website: https://www.copantry.com
@@ -13,7 +14,7 @@
 
 ## Core pages
 
-- [What Copantry is](https://www.copantry.com/): cook what you have before it goes to waste; shop only for the gaps.
+- [What Copantry is](https://www.copantry.com/): decides what's for dinner from what you already have, then builds the shopping list — one shared app for the whole household. Cooking more and wasting less is the built-in bonus.
 - [How it works](https://www.copantry.com/how-it-works): knows what you have → tells you what to cook → buys only what's missing.
 - [Reduce food waste](https://www.copantry.com/features/reduce-food-waste): expiry tracking and use-it-up meal suggestions.
 - [Meal planning](https://www.copantry.com/features/meal-planning): plan a week around your pantry, not an empty calendar.
