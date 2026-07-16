@@ -14,22 +14,63 @@
 export const TOKENS = {
   color: {
     brand: {
-      50: "#fff7ed",
-      100: "#ffedd5",
-      200: "#fed7aa",
-      500: "#f97316",
-      600: "#ea580c",
-      700: "#c2410c",
+      50:  '#fff7ed',
+      100: '#ffedd5',
+      200: '#fed7aa',
+      500: '#f97316',
+      600: '#ea580c',
+      700: '#c2410c',
     },
     accent: {
-      recipes: "#f97316",
-      pantry: "#16a34a",
-      calendar: "#7c3aed",
-      shopping: "#2563eb",
-      premium: "#f59e0b",
-      danger: "#f43f5e",
+      recipes:  '#f97316',
+      pantry:   '#16a34a',
+      calendar: '#7c3aed',
+      shopping: '#2563eb',
+      premium:  '#f59e0b',
+      danger:   '#f43f5e',
     },
-    foreground: "#111827", // gray-900
+    neutral: {
+      50:  '#fafafa',
+      100: '#f4f4f5',
+      200: '#e4e4e7',
+      300: '#d4d4d8',
+      400: '#a1a1aa',
+      500: '#71717a',
+      700: '#3f3f46',
+      800: '#27272a',
+      900: '#18181b',
+      950: '#09090b',
+    },
+    surface: {
+      canvas:       '#faf8f4',
+      raised:       '#fffefb',
+      dark:         '#18181b',
+      darkRaised:   '#1f1f23',
+      darkVariant:  '#27272a',
+      darkElevated: '#2e2e33',
+    },
+    status: {
+      fresh:           '#10b981',
+      freshContainer:  '#d1fae5',
+      attention:       '#f59e0b',
+      attentionSoft:   '#fef3c7',
+      expired:         '#f43f5e',
+      expiredContainer:'#ffe4e6',
+      danger:          '#ec2020',
+      dangerContainer: '#ffe5e5',
+    },
+    ai: {
+      surface:     '#e0e7ff',
+      action:      '#6366f1',
+      actionDark:  '#818cf8',
+      surfaceDark: '#1e1b4b',
+    },
+    overlay: {
+      scrim:     '#000000',
+      scrimSoft: '#cc000000',
+      scrimDark: '#e6000000',
+    },
+    foreground: '#111827', // gray-900
   },
 
   font: {
@@ -39,17 +80,17 @@ export const TOKENS = {
   },
 
   logo: {
-    tracking: "-0.02em",
-    weightCo: 600,
+    tracking:     '-0.02em',
+    weightCo:     600,
     weightPantry: 400,
   },
 
   radius: {
-    card: "1rem", // 16 px — rounded-2xl equivalent
-    input: "0.75rem", // 12 px — rounded-xl equivalent
-    badge: "9999px", // pill
+    card:  '1rem',    // 16 px — rounded-2xl equivalent
+    input: '0.75rem', // 12 px — rounded-xl equivalent
+    badge: '9999px',  // pill
   },
-};
+}
 
 // ─── Tailwind theme.extend object ────────────────────────────────────────────
 // Spread into each project's tailwind.config.js theme.extend.
@@ -59,32 +100,38 @@ export const TOKENS = {
 export const twExtend = {
   colors: {
     brand: {
-      50: "var(--color-brand-50)",
-      100: "var(--color-brand-100)",
-      200: "var(--color-brand-200)",
-      500: "var(--color-brand-500)",
-      600: "var(--color-brand-600)",
-      700: "var(--color-brand-700)",
+      50:  'var(--color-brand-50)',
+      100: 'var(--color-brand-100)',
+      200: 'var(--color-brand-200)',
+      500: 'var(--color-brand-500)',
+      600: 'var(--color-brand-600)',
+      700: 'var(--color-brand-700)',
     },
-    "accent-recipes": "var(--color-accent-recipes)",
-    "accent-pantry": "var(--color-accent-pantry)",
-    "accent-calendar": "var(--color-accent-calendar)",
-    "accent-shopping": "var(--color-accent-shopping)",
-    "accent-premium": "var(--color-accent-premium)",
-    "accent-danger": "var(--color-accent-danger)",
+    'accent-recipes':  'var(--color-accent-recipes)',
+    'accent-pantry':   'var(--color-accent-pantry)',
+    'accent-calendar': 'var(--color-accent-calendar)',
+    'accent-shopping': 'var(--color-accent-shopping)',
+    'accent-premium':  'var(--color-accent-premium)',
+    'accent-danger':   'var(--color-accent-danger)',
+    'surface-canvas':  'var(--color-surface-canvas)',
+    'surface-raised':  'var(--color-surface-raised)',
+    'status-fresh':    'var(--color-status-fresh)',
+    'status-attention':'var(--color-status-attention)',
+    'status-expired':  'var(--color-status-expired)',
+    'status-danger':   'var(--color-status-danger)',
   },
 
   fontFamily: {
-    logo: ["var(--font-logo)"],
-    body: ["var(--font-body)"],
-    mono: ["var(--font-mono)"],
+    logo: ['var(--font-logo)'],
+    body: ['var(--font-body)'],
+    mono: ['var(--font-mono)'],
   },
 
   borderRadius: {
-    card: "var(--radius-card)",
-    input: "var(--radius-input)",
-    badge: "var(--radius-badge)",
+    card:  'var(--radius-card)',
+    input: 'var(--radius-input)',
+    badge: 'var(--radius-badge)',
   },
-};
+}
 
-export default twExtend;
+export default twExtend

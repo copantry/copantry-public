@@ -12,7 +12,7 @@
 
 @theme {
   /* Brand palette — primary (CoPantry orange) */
-  --color-brand-50: #fff7ed;
+  --color-brand-50:  #fff7ed;
   --color-brand-100: #ffedd5;
   --color-brand-200: #fed7aa;
   --color-brand-500: #f97316;
@@ -20,20 +20,57 @@
   --color-brand-700: #c2410c;
 
   /* Category accent colours */
-  --color-accent-recipes: #f97316;
-  --color-accent-pantry: #16a34a;
+  --color-accent-recipes:  #f97316;
+  --color-accent-pantry:   #16a34a;
   --color-accent-calendar: #7c3aed;
   --color-accent-shopping: #2563eb;
-  --color-accent-premium: #f59e0b;
-  --color-accent-danger: #f43f5e;
+  --color-accent-premium:  #f59e0b;
+  --color-accent-danger:   #f43f5e;
+
+  /* Neutral, surface, and status palettes — shared semantic building blocks. */
+  --color-neutral-50:  #fafafa;
+  --color-neutral-100: #f4f4f5;
+  --color-neutral-200: #e4e4e7;
+  --color-neutral-300: #d4d4d8;
+  --color-neutral-400: #a1a1aa;
+  --color-neutral-500: #71717a;
+  --color-neutral-700: #3f3f46;
+  --color-neutral-800: #27272a;
+  --color-neutral-900: #18181b;
+  --color-neutral-950: #09090b;
+
+  --color-surface-canvas:       #faf8f4;
+  --color-surface-raised:       #fffefb;
+  --color-surface-dark:         #18181b;
+  --color-surface-dark-raised:  #1f1f23;
+  --color-surface-dark-variant: #27272a;
+  --color-surface-dark-elevated:#2e2e33;
+
+  --color-status-fresh:            #10b981;
+  --color-status-fresh-container:  #d1fae5;
+  --color-status-attention:        #f59e0b;
+  --color-status-attention-soft:   #fef3c7;
+  --color-status-expired:          #f43f5e;
+  --color-status-expired-container:#ffe4e6;
+  --color-status-danger:           #ec2020;
+  --color-status-danger-container: #ffe5e5;
+
+  --color-ai-surface:      #e0e7ff;
+  --color-ai-action:       #6366f1;
+  --color-ai-action-dark:  #818cf8;
+  --color-ai-surface-dark: #1e1b4b;
+
+  --color-overlay-scrim:      #000000;
+  --color-overlay-scrim-soft: #cc000000;
+  --color-overlay-scrim-dark: #e6000000;
 
   /* Typography — generates font-logo, font-body, font-mono utility classes */
-  --font-logo: "Poppins", sans-serif;
-  --font-body: "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  --font-logo: 'Poppins', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
 
   /* Shape — generates rounded-card, rounded-input, rounded-badge utility classes */
-  --radius-card: 1rem;
+  --radius-card:  1rem;
   --radius-input: 0.75rem;
   --radius-badge: 9999px;
 
@@ -53,7 +90,7 @@
  */
 :root {
   /* Brand */
-  --brand-50: var(--color-brand-50);
+  --brand-50:  var(--color-brand-50);
   --brand-100: var(--color-brand-100);
   --brand-200: var(--color-brand-200);
   --brand-500: var(--color-brand-500);
@@ -61,20 +98,28 @@
   --brand-700: var(--color-brand-700);
 
   /* Accents */
-  --accent-recipes: var(--color-accent-recipes);
-  --accent-pantry: var(--color-accent-pantry);
+  --accent-recipes:  var(--color-accent-recipes);
+  --accent-pantry:   var(--color-accent-pantry);
   --accent-calendar: var(--color-accent-calendar);
   --accent-shopping: var(--color-accent-shopping);
-  --accent-premium: var(--color-accent-premium);
-  --accent-danger: var(--color-accent-danger);
+  --accent-premium:  var(--color-accent-premium);
+  --accent-danger:   var(--color-accent-danger);
+
+  /* Surfaces and statuses */
+  --surface-canvas:  var(--color-surface-canvas);
+  --surface-raised:  var(--color-surface-raised);
+  --status-fresh:    var(--color-status-fresh);
+  --status-attention:var(--color-status-attention);
+  --status-expired:  var(--color-status-expired);
+  --status-danger:   var(--color-status-danger);
 
   /* Typography */
   --font-foreground: var(--font-body);
 
   /* Logo */
-  --logo-tracking: var(--tracking-logo);
-  --logo-weight-co: 600;
-  --logo-weight-pantry: 400;
+  --logo-tracking:       var(--tracking-logo);
+  --logo-weight-co:      600;
+  --logo-weight-pantry:  400;
 
   /* Foreground — use for logo text colour instead of hardcoded #111827 */
   --color-foreground: #111827;
