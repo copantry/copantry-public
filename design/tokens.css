@@ -15,9 +15,13 @@
   --color-brand-50:  #fff7ed;
   --color-brand-100: #ffedd5;
   --color-brand-200: #fed7aa;
+  --color-brand-300: #fdba74;
+  --color-brand-400: #fb923c;
   --color-brand-500: #f97316;
   --color-brand-600: #ea580c;
   --color-brand-700: #c2410c;
+  --color-brand-800: #9a3412;
+  --color-brand-900: #7c2d12;
 
   /* Category accent colours */
   --color-accent-recipes:  #f97316;
@@ -48,17 +52,31 @@
 
   --color-status-fresh:            #10b981;
   --color-status-fresh-container:  #d1fae5;
+  --color-status-fresh-light:      #34d399;
+  --color-status-fresh-dark:       #059669;
+  --color-status-fresh-deep:       #14532d;
   --color-status-attention:        #f59e0b;
   --color-status-attention-soft:   #fef3c7;
+  --color-status-attention-pale:   #fcd34d;
+  --color-status-attention-light:  #fbbf24;
+  --color-status-attention-dark:   #d97706;
   --color-status-expired:          #f43f5e;
   --color-status-expired-container:#ffe4e6;
+  --color-status-expired-light:    #fb7185;
+  --color-status-expired-dark:     #e11d48;
   --color-status-danger:           #ec2020;
   --color-status-danger-container: #ffe5e5;
+  --color-status-danger-light:     #ef6666;
+  --color-status-danger-dark:      #cc1a1a;
 
   --color-ai-surface:      #e0e7ff;
   --color-ai-action:       #6366f1;
   --color-ai-action-dark:  #818cf8;
+  --color-ai-action-deep:  #4f46e5;
   --color-ai-surface-dark: #1e1b4b;
+
+  --color-assistant-sky-light: #38bdf8;
+  --color-assistant-sky:       #0ea5e9;
 
   --color-overlay-scrim:      #000000;
   --color-overlay-scrim-soft: #cc000000;
