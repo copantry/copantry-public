@@ -90,6 +90,33 @@ export const TOKENS = {
       scrimDark: '#e6000000',
     },
     foreground: '#111827', // gray-900
+
+    // Semantic theme tokens — the dark-mode palette. Light defaults + the
+    // dark overrides (mirrors shared/tokens.css :root[data-theme="dark"]).
+    theme: {
+      canvas:        '#f9fafb',
+      raised:        '#ffffff',
+      sunken:        '#f3f4f6',
+      overlay:       '#ffffff',
+      content:       '#111827',
+      contentMuted:  '#4b5563',
+      contentSubtle: '#6b7280',
+      line:          '#e5e7eb',
+      lineStrong:    '#d1d5db',
+      brandContrast: '#ea580c',
+    },
+    themeDark: {
+      canvas:        '#17171a',
+      raised:        '#202024',
+      sunken:        '#0f0f11',
+      overlay:       '#26262b',
+      content:       '#ededf0',
+      contentMuted:  '#a1a1aa',
+      contentSubtle: '#8b8b93',
+      line:          '#2e2e33',
+      lineStrong:    '#3f3f46',
+      brandContrast: '#fb923c',
+    },
   },
 
   font: {
@@ -138,6 +165,21 @@ export const twExtend = {
     'status-attention':'var(--color-status-attention)',
     'status-expired':  'var(--color-status-expired)',
     'status-danger':   'var(--color-status-danger)',
+    // Semantic theme tokens (dark-mode palette; flip via [data-theme="dark"])
+    canvas:          'var(--color-canvas)',
+    raised:          'var(--color-raised)',
+    sunken:          'var(--color-sunken)',
+    overlay:         'var(--color-overlay)',
+    content: {
+      DEFAULT: 'var(--color-content)',
+      muted:   'var(--color-content-muted)',
+      subtle:  'var(--color-content-subtle)',
+    },
+    line: {
+      DEFAULT: 'var(--color-line)',
+      strong:  'var(--color-line-strong)',
+    },
+    'brand-contrast': 'var(--color-brand-contrast)',
   },
 
   fontFamily: {

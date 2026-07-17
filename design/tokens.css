@@ -82,6 +82,26 @@
   --color-overlay-scrim-soft: #cc000000;
   --color-overlay-scrim-dark: #e6000000;
 
+  /* ── Semantic theme tokens (light ⇄ dark) ─────────────────────────────────
+   * These are the dark-mode palette. Light values live here so Tailwind v4
+   * generates the utilities (bg-canvas, bg-raised, bg-sunken, bg-overlay,
+   * text-content / text-content-muted / text-content-subtle, border-line /
+   * border-line-strong, text-brand-contrast). The DARK values flip in the
+   * :root[data-theme="dark"] block after :root below. The light values match
+   * the existing gray/white so a component adopting them looks identical in
+   * light mode and only changes under dark. Prefer these over raw gray/white
+   * whenever a surface should adapt to the theme. */
+  --color-canvas:         #f9fafb; /* page background  (was bg-gray-50)  */
+  --color-raised:         #ffffff; /* cards / panels   (was bg-white)    */
+  --color-sunken:         #f3f4f6; /* insets / wells   (was bg-gray-100) */
+  --color-overlay:        #ffffff; /* modals / popovers                  */
+  --color-content:        #111827; /* primary text     (was gray-900)    */
+  --color-content-muted:  #4b5563; /* secondary text   (was gray-600)    */
+  --color-content-subtle: #6b7280; /* captions/hints   (was gray-500)    */
+  --color-line:           #e5e7eb; /* borders          (was gray-200)    */
+  --color-line-strong:    #d1d5db; /* strong borders   (was gray-300)    */
+  --color-brand-contrast: #ea580c; /* brand text on a surface (brand-600)*/
+
   /* Typography — generates font-logo, font-body, font-mono utility classes */
   --font-logo: 'Poppins', sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
@@ -142,3 +162,46 @@
   /* Foreground — use for logo text colour instead of hardcoded #111827 */
   --color-foreground: #111827;
 }
+
+/* ── Dark mode ────────────────────────────────────────────────────────────
+ * The dark-mode palette: flips the semantic theme tokens above. Deliberate,
+ * not a mechanical invert — surfaces get *lighter* as they rise (canvas →
+ * raised → overlay), text is off-white (never pure #fff) to cut halation, and
+ * the brand accent lifts to brand-400 so it stays legible on dark.
+ *
+ * Explicit opt-in via `data-theme="dark"` on <html> (a settings toggle drives
+ * it). It is intentionally kept OFF the OS media query until every surface is
+ * migrated to the semantic tokens — otherwise dark-OS users would get a
+ * half-dark UI. Once migration is complete, uncomment the @media block to also
+ * follow the OS (with data-theme="light" still able to force light). */
+:root[data-theme="dark"] {
+  --color-canvas:         #17171a;
+  --color-raised:         #202024;
+  --color-sunken:         #0f0f11;
+  --color-overlay:        #26262b;
+  --color-content:        #ededf0;
+  --color-content-muted:  #a1a1aa;
+  --color-content-subtle: #8b8b93;
+  --color-line:           #2e2e33;
+  --color-line-strong:    #3f3f46;
+  --color-brand-contrast: #fb923c;
+  color-scheme: dark; /* dark form controls, scrollbars, etc. */
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-canvas:         #17171a;
+    --color-raised:         #202024;
+    --color-sunken:         #0f0f11;
+    --color-overlay:        #26262b;
+    --color-content:        #ededf0;
+    --color-content-muted:  #a1a1aa;
+    --color-content-subtle: #8b8b93;
+    --color-line:           #2e2e33;
+    --color-line-strong:    #3f3f46;
+    --color-brand-contrast: #fb923c;
+    color-scheme: dark;
+  }
+}
+*/
