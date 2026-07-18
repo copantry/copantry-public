@@ -169,12 +169,15 @@
  * raised → overlay), text is off-white (never pure #fff) to cut halation, and
  * the brand accent lifts to brand-400 so it stays legible on dark.
  *
- * Explicit opt-in via `data-theme="dark"` on <html> (a settings toggle drives
- * it). It is intentionally kept OFF the OS media query until every surface is
- * migrated to the semantic tokens — otherwise dark-OS users would get a
- * half-dark UI. Once migration is complete, uncomment the @media block to also
- * follow the OS (with data-theme="light" still able to force light). */
-:root[data-theme="dark"] {
+ * Two triggers, one palette:
+ *   • `data-theme="dark"` on <html> — an explicit user choice (Dark).
+ *   • `prefers-color-scheme: dark` scoped to `:root:not([data-theme="light"])`
+ *     — the OS setting (System mode, the default: no data-theme attribute).
+ * `data-theme="light"` forces light and overrides the OS media query.
+ * The explicit dark rule is element-level (not :root-only) so a subtree — e.g.
+ * the always-dark admin panel — can force dark via a `data-theme="dark"`
+ * wrapper regardless of the page-level theme. */
+[data-theme="dark"] {
   --color-canvas:         #17171a;
   --color-raised:         #202024;
   --color-sunken:         #0f0f11;
@@ -188,7 +191,6 @@
   color-scheme: dark; /* dark form controls, scrollbars, etc. */
 }
 
-/*
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --color-canvas:         #17171a;
@@ -204,4 +206,3 @@
     color-scheme: dark;
   }
 }
-*/
