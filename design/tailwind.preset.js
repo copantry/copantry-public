@@ -104,6 +104,8 @@ export const TOKENS = {
       line:          '#e5e7eb',
       lineStrong:    '#d1d5db',
       brandContrast: '#ea580c',
+      inverse:       '#111827',
+      inverseContent:'#ffffff',
     },
     themeDark: {
       canvas:        '#17171a',
@@ -116,6 +118,8 @@ export const TOKENS = {
       line:          '#2e2e33',
       lineStrong:    '#3f3f46',
       brandContrast: '#fb923c',
+      inverse:       '#ededf0',
+      inverseContent:'#17171a',
     },
   },
 
@@ -180,6 +184,10 @@ export const twExtend = {
       strong:  'var(--color-line-strong)',
     },
     'brand-contrast': 'var(--color-brand-contrast)',
+    inverse: {
+      DEFAULT: 'var(--color-inverse)',
+      content: 'var(--color-inverse-content)',
+    },
   },
 
   fontFamily: {
