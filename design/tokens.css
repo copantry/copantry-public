@@ -192,6 +192,7 @@
   --color-brand-contrast: #fb923c;
   --color-inverse:         #ededf0;
   --color-inverse-content: #17171a;
+  --color-foreground:     #ededf0;
   color-scheme: dark; /* dark form controls, scrollbars, etc. */
 }
 
@@ -209,6 +210,7 @@
     --color-brand-contrast: #fb923c;
     --color-inverse:         #ededf0;
     --color-inverse-content: #17171a;
+    --color-foreground:     #ededf0;
     color-scheme: dark;
   }
 }
