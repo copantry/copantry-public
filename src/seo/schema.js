@@ -28,7 +28,7 @@ export function organizationSchema() {
     "@id": `${SITE_URL}/#organization`,
     name: SITE_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}/favicon.svg`,
+    logo: `${SITE_URL}/icon-512.png`,
     description: CANONICAL_DESCRIPTION,
     sameAs: SAME_AS,
   };
