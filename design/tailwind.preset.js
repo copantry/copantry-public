@@ -64,6 +64,7 @@ export const TOKENS = {
       attentionPale:   '#fcd34d',
       attentionLight:  '#fbbf24',
       attentionDark:   '#d97706',
+      attentionDeep:   '#78350f',
       expired:         '#f43f5e',
       expiredContainer:'#ffe4e6',
       expiredLight:    '#fb7185',
