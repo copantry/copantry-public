@@ -12,7 +12,7 @@
 
 @theme {
   /* Brand palette — primary (CoPantry orange) */
-  --color-brand-50: #fff7ed;
+  --color-brand-50:  #fff7ed;
   --color-brand-100: #ffedd5;
   --color-brand-200: #fed7aa;
   --color-brand-300: #fdba74;
@@ -24,15 +24,15 @@
   --color-brand-900: #7c2d12;
 
   /* Category accent colours */
-  --color-accent-recipes: #f97316;
-  --color-accent-pantry: #16a34a;
+  --color-accent-recipes:  #f97316;
+  --color-accent-pantry:   #16a34a;
   --color-accent-calendar: #7c3aed;
   --color-accent-shopping: #2563eb;
-  --color-accent-premium: #f59e0b;
-  --color-accent-danger: #f43f5e;
+  --color-accent-premium:  #f59e0b;
+  --color-accent-danger:   #f43f5e;
 
   /* Neutral, surface, and status palettes — shared semantic building blocks. */
-  --color-neutral-50: #fafafa;
+  --color-neutral-50:  #fafafa;
   --color-neutral-100: #f4f4f5;
   --color-neutral-200: #e4e4e7;
   --color-neutral-300: #d4d4d8;
@@ -43,32 +43,32 @@
   --color-neutral-900: #18181b;
   --color-neutral-950: #09090b;
 
-  --color-surface-canvas: #faf8f4;
-  --color-surface-raised: #fffefb;
-  --color-surface-dark: #18181b;
-  --color-surface-dark-raised: #1f1f23;
+  --color-surface-canvas:       #faf8f4;
+  --color-surface-raised:       #fffefb;
+  --color-surface-dark:         #18181b;
+  --color-surface-dark-raised:  #1f1f23;
   --color-surface-dark-variant: #27272a;
-  --color-surface-dark-elevated: #2e2e33;
+  --color-surface-dark-elevated:#2e2e33;
 
-  --color-status-fresh: #10b981;
-  --color-status-fresh-container: #d1fae5;
-  --color-status-fresh-light: #34d399;
-  --color-status-fresh-dark: #059669;
-  --color-status-fresh-deep: #14532d;
-  --color-status-attention: #f59e0b;
-  --color-status-attention-soft: #fef3c7;
-  --color-status-attention-pale: #fcd34d;
-  --color-status-attention-light: #fbbf24;
-  --color-status-attention-dark: #d97706;
-  --color-status-attention-deep: #78350f;
-  --color-status-expired: #f43f5e;
-  --color-status-expired-container: #ffe4e6;
-  --color-status-expired-light: #fb7185;
-  --color-status-expired-dark: #e11d48;
-  --color-status-danger: #ec2020;
+  --color-status-fresh:            #10b981;
+  --color-status-fresh-container:  #d1fae5;
+  --color-status-fresh-light:      #34d399;
+  --color-status-fresh-dark:       #059669;
+  --color-status-fresh-deep:       #14532d;
+  --color-status-attention:        #f59e0b;
+  --color-status-attention-soft:   #fef3c7;
+  --color-status-attention-pale:   #fcd34d;
+  --color-status-attention-light:  #fbbf24;
+  --color-status-attention-dark:   #d97706;
+  --color-status-attention-deep:   #78350f;
+  --color-status-expired:          #f43f5e;
+  --color-status-expired-container:#ffe4e6;
+  --color-status-expired-light:    #fb7185;
+  --color-status-expired-dark:     #e11d48;
+  --color-status-danger:           #ec2020;
   --color-status-danger-container: #ffe5e5;
-  --color-status-danger-light: #ef6666;
-  --color-status-danger-dark: #cc1a1a;
+  --color-status-danger-light:     #ef6666;
+  --color-status-danger-dark:      #cc1a1a;
 
   /* NOTE: the indigo --color-ai-* family was removed. It predated the admin
    * panel's move to the brand accent and survived only on the Fix Tasks page,
@@ -77,9 +77,9 @@
    * against dark-mode text. AI affordances now use the brand tokens. */
 
   --color-assistant-sky-light: #38bdf8;
-  --color-assistant-sky: #0ea5e9;
+  --color-assistant-sky:       #0ea5e9;
 
-  --color-overlay-scrim: #000000;
+  --color-overlay-scrim:      #000000;
   --color-overlay-scrim-soft: #cc000000;
   --color-overlay-scrim-dark: #e6000000;
 
@@ -92,26 +92,26 @@
    * the existing gray/white so a component adopting them looks identical in
    * light mode and only changes under dark. Prefer these over raw gray/white
    * whenever a surface should adapt to the theme. */
-  --color-canvas: #f9fafb; /* page background  (was bg-gray-50)  */
-  --color-raised: #ffffff; /* cards / panels   (was bg-white)    */
-  --color-sunken: #f3f4f6; /* insets / wells   (was bg-gray-100) */
-  --color-overlay: #ffffff; /* modals / popovers                  */
-  --color-content: #111827; /* primary text     (was gray-900)    */
-  --color-content-muted: #4b5563; /* secondary text   (was gray-600)    */
+  --color-canvas:         #f9fafb; /* page background  (was bg-gray-50)  */
+  --color-raised:         #ffffff; /* cards / panels   (was bg-white)    */
+  --color-sunken:         #f3f4f6; /* insets / wells   (was bg-gray-100) */
+  --color-overlay:        #ffffff; /* modals / popovers                  */
+  --color-content:        #111827; /* primary text     (was gray-900)    */
+  --color-content-muted:  #4b5563; /* secondary text   (was gray-600)    */
   --color-content-subtle: #6b7280; /* captions/hints   (was gray-500)    */
-  --color-line: #e5e7eb; /* borders          (was gray-200)    */
-  --color-line-strong: #d1d5db; /* strong borders   (was gray-300)    */
+  --color-line:           #e5e7eb; /* borders          (was gray-200)    */
+  --color-line-strong:    #d1d5db; /* strong borders   (was gray-300)    */
   --color-brand-contrast: #ea580c; /* brand text on a surface (brand-600)*/
-  --color-inverse: #111827; /* inverse surface (dark CTA bg)      */
+  --color-inverse:         #111827; /* inverse surface (dark CTA bg)      */
   --color-inverse-content: #ffffff; /* text on the inverse surface        */
 
   /* Typography — generates font-logo, font-body, font-mono utility classes */
-  --font-logo: "Poppins", sans-serif;
-  --font-body: "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  --font-logo: 'Poppins', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
 
   /* Shape — generates rounded-card, rounded-input, rounded-badge utility classes */
-  --radius-card: 1rem;
+  --radius-card:  1rem;
   --radius-input: 0.75rem;
   --radius-badge: 9999px;
 
@@ -131,7 +131,7 @@
  */
 :root {
   /* Brand */
-  --brand-50: var(--color-brand-50);
+  --brand-50:  var(--color-brand-50);
   --brand-100: var(--color-brand-100);
   --brand-200: var(--color-brand-200);
   --brand-500: var(--color-brand-500);
@@ -139,28 +139,28 @@
   --brand-700: var(--color-brand-700);
 
   /* Accents */
-  --accent-recipes: var(--color-accent-recipes);
-  --accent-pantry: var(--color-accent-pantry);
+  --accent-recipes:  var(--color-accent-recipes);
+  --accent-pantry:   var(--color-accent-pantry);
   --accent-calendar: var(--color-accent-calendar);
   --accent-shopping: var(--color-accent-shopping);
-  --accent-premium: var(--color-accent-premium);
-  --accent-danger: var(--color-accent-danger);
+  --accent-premium:  var(--color-accent-premium);
+  --accent-danger:   var(--color-accent-danger);
 
   /* Surfaces and statuses */
-  --surface-canvas: var(--color-surface-canvas);
-  --surface-raised: var(--color-surface-raised);
-  --status-fresh: var(--color-status-fresh);
-  --status-attention: var(--color-status-attention);
-  --status-expired: var(--color-status-expired);
-  --status-danger: var(--color-status-danger);
+  --surface-canvas:  var(--color-surface-canvas);
+  --surface-raised:  var(--color-surface-raised);
+  --status-fresh:    var(--color-status-fresh);
+  --status-attention:var(--color-status-attention);
+  --status-expired:  var(--color-status-expired);
+  --status-danger:   var(--color-status-danger);
 
   /* Typography */
   --font-foreground: var(--font-body);
 
   /* Logo */
-  --logo-tracking: var(--tracking-logo);
-  --logo-weight-co: 600;
-  --logo-weight-pantry: 400;
+  --logo-tracking:       var(--tracking-logo);
+  --logo-weight-co:      600;
+  --logo-weight-pantry:  400;
 
   /* Foreground — use for logo text colour instead of hardcoded #111827 */
   --color-foreground: #111827;
@@ -181,40 +181,41 @@
  * the always-dark admin panel — can force dark via a `data-theme="dark"`
  * wrapper regardless of the page-level theme. */
 [data-theme="dark"] {
-  --color-canvas: #17171a;
-  --color-raised: #202024;
-  --color-sunken: #0f0f11;
-  --color-overlay: #26262b;
-  --color-content: #ededf0;
-  --color-content-muted: #a1a1aa;
+  --color-canvas:         #17171a;
+  --color-raised:         #202024;
+  --color-sunken:         #0f0f11;
+  --color-overlay:        #26262b;
+  --color-content:        #ededf0;
+  --color-content-muted:  #a1a1aa;
   --color-content-subtle: #8b8b93;
-  --color-line: #2e2e33;
-  --color-line-strong: #3f3f46;
+  --color-line:           #2e2e33;
+  --color-line-strong:    #3f3f46;
   --color-brand-contrast: #fb923c;
-  --color-inverse: #ededf0;
+  --color-inverse:         #ededf0;
   --color-inverse-content: #17171a;
-  --color-foreground: #ededf0;
+  --color-foreground:     #ededf0;
   color-scheme: dark; /* dark form controls, scrollbars, etc. */
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --color-canvas: #17171a;
-    --color-raised: #202024;
-    --color-sunken: #0f0f11;
-    --color-overlay: #26262b;
-    --color-content: #ededf0;
-    --color-content-muted: #a1a1aa;
+    --color-canvas:         #17171a;
+    --color-raised:         #202024;
+    --color-sunken:         #0f0f11;
+    --color-overlay:        #26262b;
+    --color-content:        #ededf0;
+    --color-content-muted:  #a1a1aa;
     --color-content-subtle: #8b8b93;
-    --color-line: #2e2e33;
-    --color-line-strong: #3f3f46;
+    --color-line:           #2e2e33;
+    --color-line-strong:    #3f3f46;
     --color-brand-contrast: #fb923c;
-    --color-inverse: #ededf0;
+    --color-inverse:         #ededf0;
     --color-inverse-content: #17171a;
-    --color-foreground: #ededf0;
+    --color-foreground:     #ededf0;
     color-scheme: dark;
   }
 }
+
 
 /* ── Dark-mode remap of state-hue soft/deep shades ────────────────────────
  * Makes pastel callouts (bg-<hue>-50 + border-<hue>-100/200 + text-<hue>-700/800)
