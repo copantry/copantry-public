@@ -4,8 +4,8 @@ Marketing site for Copantry. React 19 + Vite 8 + Tailwind v4, **statically
 prerendered** for SEO/GEO. **ES modules**. Deployed independently — this repo has
 no access to the parent monorepo at runtime.
 
-**Positioning:** lead with the **dinner/household umbrella** — *"Never wonder
-what's for dinner again"* — aimed at busy families/couples. Food waste is now a
+**Positioning:** lead with the **dinner/household umbrella** — _"Never wonder
+what's for dinner again"_ — aimed at busy families/couples. Food waste is now a
 **strong pillar/benefit, not the headline** (the guilt-y "cook it before you bin
 it" framing was retired in favour of relief-led copy; waste keeps its section +
 every SEO asset). MCP is a differentiator section + the `/features/ai-assistant-mcp`
@@ -49,17 +49,17 @@ that registry.
 
 ## Pages
 
-| Route                                   | File                                                                                | Purpose                                         |
-| --------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Route                                   | File                                                                                | Purpose                                           |
+| --------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------- |
 | `/`                                     | `pages/HomePage.jsx`                                                                | Dinner/household hero + hook card + pillars + FAQ |
-| `/how-it-works`                         | `pages/HowItWorksPage.jsx`                                                          | 4-step HowTo                                    |
-| `/why-copantry`                         | `pages/WhyCopantryPage.jsx`                                                         | Differentiator (categories, never named rivals) |
-| `/features/:slug`                       | `pages/ContentPage.jsx` + `content/pages.js` (`FEATURES`)                           | Capability pages                                |
-| `/use-cases/:slug`                      | `pages/ContentPage.jsx` + `content/pages.js` (`USE_CASES`)                          | Audience pages                                  |
-| `/features/ai-assistant-mcp`, `/mcp`    | `pages/McpPage.jsx`                                                                 | MCP / AI assistant                              |
-| `/learn`, `/learn/how-long-does-*-last` | `pages/LearnIndexPage.jsx`, `pages/LearnShelfLifePage.jsx` + `content/shelfLife.js` | Programmatic shelf-life                         |
-| `/blog`, `/blog/:slug`                  | `pages/BlogIndexPage.jsx`, `pages/blog/*` + `content/blog.js`                       | Editorial pillars                               |
-| `/about`, `/privacy`, `/terms`          | `pages/AboutPage.jsx`, `PrivacyPage.jsx`, `TermsPage.jsx`                           | —                                               |
+| `/how-it-works`                         | `pages/HowItWorksPage.jsx`                                                          | 4-step HowTo                                      |
+| `/why-copantry`                         | `pages/WhyCopantryPage.jsx`                                                         | Differentiator (categories, never named rivals)   |
+| `/features/:slug`                       | `pages/ContentPage.jsx` + `content/pages.js` (`FEATURES`)                           | Capability pages                                  |
+| `/use-cases/:slug`                      | `pages/ContentPage.jsx` + `content/pages.js` (`USE_CASES`)                          | Audience pages                                    |
+| `/features/ai-assistant-mcp`, `/mcp`    | `pages/McpPage.jsx`                                                                 | MCP / AI assistant                                |
+| `/learn`, `/learn/how-long-does-*-last` | `pages/LearnIndexPage.jsx`, `pages/LearnShelfLifePage.jsx` + `content/shelfLife.js` | Programmatic shelf-life                           |
+| `/blog`, `/blog/:slug`                  | `pages/BlogIndexPage.jsx`, `pages/blog/*` + `content/blog.js`                       | Editorial pillars                                 |
+| `/about`, `/privacy`, `/terms`          | `pages/AboutPage.jsx`, `PrivacyPage.jsx`, `TermsPage.jsx`                           | —                                                 |
 
 **No pricing page** (deliberate — see the plan). CTAs link to
 `https://app.copantry.com`. Use `src/seo/constants.js` (`APP_URL`, `API_URL`) for

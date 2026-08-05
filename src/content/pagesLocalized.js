@@ -1092,7 +1092,11 @@ export const PAGE_TX = {
           body: "Ottieni un suggerimento di abbinamento su qualsiasi pagina ricetta, o per tutto ciò che è pianificato in una fascia del calendario insieme. Collega la scelta a quel pasto e la sua scorta si aggiorna automaticamente una volta cucinato.",
         },
       ],
-      related: ["Ricette", "Pianificazione dei pasti", "Gestione della dispensa"],
+      related: [
+        "Ricette",
+        "Pianificazione dei pasti",
+        "Gestione della dispensa",
+      ],
     },
     es: {
       metaTitle: "Maridaje de vinos",
@@ -1128,7 +1132,11 @@ export const PAGE_TX = {
           body: "Obtén una sugerencia de maridaje en cualquier página de receta, o para todo lo planificado en una franja del calendario a la vez. Vincula la elección a esa comida y su stock se actualiza automáticamente en cuanto la cocines.",
         },
       ],
-      related: ["Recetas", "Planificación de comidas", "Control de la despensa"],
+      related: [
+        "Recetas",
+        "Planificación de comidas",
+        "Control de la despensa",
+      ],
     },
     pt: {
       metaTitle: "Harmonização de vinhos",
