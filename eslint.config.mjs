@@ -46,6 +46,21 @@ export default [
     },
   },
 
-  // 3. Prettier (Must be last to override conflicting formatting rules)
+  // 4. Node-context files. These run under Node, not in the browser, so they
+  //    legitimately use `process` (env vars, CI detection) — which the browser
+  //    globals above don't define, so `no-undef` flagged every reference.
+  {
+    files: [
+      "*.config.{js,mjs,cjs}",
+      "prerender.mjs",
+      "e2e/**/*.{js,mjs}",
+      "scripts/**/*.{js,mjs,cjs}",
+    ],
+    languageOptions: {
+      globals: { ...globals.node },
+    },
+  },
+
+  // 5. Prettier (Must be last to override conflicting formatting rules)
   eslintConfigPrettier,
 ];
