@@ -1,0 +1,5 @@
+# Generated design-token copies — managed by scripts/sync-design-tokens.mjs at the
+# monorepo root, which compares them byte-for-byte against the canonical
+# tailwind.preset.js / shared/tokens.css. Formatting them rewrites that content and
+# fails `node scripts/sync-design-tokens.mjs --check`.
+design/
