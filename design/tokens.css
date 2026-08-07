@@ -166,6 +166,96 @@
   --color-foreground: #111827;
 }
 
+/* ── Auth hero scene palettes ─────────────────────────────────────────────
+ * Scene art, not brand colour: the six palettes behind the login/signup hero,
+ * selected by the viewer's UI language so the first screen of the product
+ * greets people with a table they recognise. They live here because this file
+ * is the only place a hex literal is permitted — treat them as illustration
+ * pigments, never as tokens to build components from.
+ *
+ * Each palette is five stops with one job apiece:
+ *   deep   — the top of the field, the cuisine's signature hue
+ *   mid    — where the field turns towards night
+ *   base   — the floor; near-black, so white type over it is always legible
+ *   light  — the warm pool of kitchen light
+ *   accent — the vessel on the table
+ *
+ * The composition is shared (see `.auth-backdrop` in the app's index.css) and
+ * twinned with the Android vector heroes at `auth_hero.xml` in the app's
+ * `res/drawable` and `res/drawable-{de,es,fr,it,pt}` directories, which Android
+ * selects through the same locale qualifiers. Keep the two in step: they are
+ * the same scene.
+ *
+ * `--auth-light-*` positions the light pool, so the six differ in where the
+ * light falls and not only in hue.
+ */
+:root {
+  /* en — Ember. A hearth burnt down to coals; the brand's own orange. */
+  --auth-deep: #8a3410;
+  --auth-mid: #40130a;
+  --auth-base: #0c0806;
+  --auth-light: #fb923c;
+  --auth-accent: #e08a4b;
+  --auth-light-x: 28%;
+  --auth-light-y: 22%;
+}
+
+/* fr — Bordeaux. Wine and butter, the light low and late. */
+[data-cuisine="fr"] {
+  --auth-deep: #5a1b31;
+  --auth-mid: #2c0d1a;
+  --auth-base: #0a0609;
+  --auth-light: #f0c674;
+  --auth-accent: #a63a55;
+  --auth-light-x: 74%;
+  --auth-light-y: 18%;
+}
+
+/* it — Orto. The kitchen garden: olive, basil, a tomato on the board. */
+[data-cuisine="it"] {
+  --auth-deep: #33502c;
+  --auth-mid: #172614;
+  --auth-base: #070b07;
+  --auth-light: #ebbe4d;
+  --auth-accent: #c0392b;
+  --auth-light-x: 50%;
+  --auth-light-y: 16%;
+}
+
+/* es — Azafrán. Saffron and paprika, the highest-key of the six. */
+[data-cuisine="es"] {
+  --auth-deep: #9a5c10;
+  --auth-mid: #4a2a07;
+  --auth-base: #0d0a05;
+  --auth-light: #ffd27a;
+  --auth-accent: #c0431e;
+  --auth-light-x: 22%;
+  --auth-light-y: 28%;
+}
+
+/* pt — Atlântico. Azulejo blue under a lemon-coloured lamp — the one cool
+   field in the set, which is what makes the warm light read as warm. */
+[data-cuisine="pt"] {
+  --auth-deep: #12525a;
+  --auth-mid: #0a2b31;
+  --auth-base: #05100f;
+  --auth-light: #f2c14e;
+  --auth-accent: #2e6fa8;
+  --auth-light-x: 82%;
+  --auth-light-y: 20%;
+}
+
+/* de — Roggen. Rye crust, amber, a line of hops. */
+[data-cuisine="de"] {
+  --auth-deep: #57381a;
+  --auth-mid: #281908;
+  --auth-base: #0a0806;
+  --auth-light: #e8b65c;
+  --auth-accent: #6e8b3d;
+  --auth-light-x: 40%;
+  --auth-light-y: 20%;
+}
+
 /* ── Dark mode ────────────────────────────────────────────────────────────
  * The dark-mode palette: flips the semantic theme tokens above. Deliberate,
  * not a mechanical invert — surfaces get *lighter* as they rise (canvas →
