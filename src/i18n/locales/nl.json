@@ -1,0 +1,248 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Functies",
+      "pricing": "Prijzen",
+      "developers": "Voor ontwikkelaars",
+      "signin": "Inloggen",
+      "signup": "Gratis beginnen"
+    },
+    "cookie": {
+      "message": "We bewaren je taalvoorkeur in je browser en gebruiken, met jouw toestemming, Google Analytics om het bezoek aan de site te begrijpen.",
+      "accept": "Prima",
+      "decline": "Nee, bedankt"
+    },
+    "footer": {
+      "tagline": "Slim receptbeheer voor het moderne huishouden.",
+      "product": "Product",
+      "developers": "Ontwikkelaars",
+      "company": "Bedrijf",
+      "copyright": "© {{year}} Copantry Ltd. Alle rechten voorbehouden.",
+      "links": {
+        "features": "Functies",
+        "pricing": "Prijzen",
+        "ai_mcp": "AI & MCP",
+        "android": "Android-app",
+        "mcp_docs": "MCP-serverdocumentatie",
+        "api_ref": "API-referentie",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Privacybeleid",
+        "terms": "Servicevoorwaarden",
+        "investors": "Investeerders",
+        "contact": "Contact"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Gratis te gebruiken · Altijd opzegbaar",
+        "title1": "Je hele keuken,",
+        "title2": "perfect georganiseerd",
+        "subtitle": "CoPantry verzamelt je recepten, houdt je voorraadkast bij en plant je maaltijden — zo bespaar je tijd, verspil je minder eten en weet je altijd wat je gaat koken.",
+        "cta_primary": "Begin gratis met koken",
+        "cta_secondary": "Voor ontwikkelaars",
+        "social_proof": "Geliefd bij huishoudens over de hele wereld"
+      },
+      "trust": {
+        "gdpr": "AVG-vriendelijk",
+        "gdpr_sub": "Je gegevens blijven van jou, altijd",
+        "available": "Werkt overal",
+        "available_sub": "Web, mobiel en AI-assistenten",
+        "sharing": "Delen met je huishouden",
+        "sharing_sub": "Meerdere leden, één voorraadkast"
+      },
+      "features": {
+        "eyebrow": "Alles wat je nodig hebt",
+        "title": "Eén app voor je hele keuken",
+        "subtitle": "Van een recept bewaren tot je mandje vullen — alles op één plek.",
+        "ai_import_title": "Recepten importeren met AI",
+        "ai_import_desc": "Plak een URL, maak een foto of kopieer platte tekst — AI haalt er in enkele seconden elk ingrediënt en elke stap uit. Werkt met YouTube, Instagram, TikTok en meer dan 50.000 receptensites.",
+        "pantry_title": "Slimme voorraadkast",
+        "pantry_desc": "Houd bij wat je in huis hebt, inclusief houdbaarheidsdatum. Krijg een seintje voordat eten bederft. Kook met wat je al hebt dankzij zero waste-suggesties.",
+        "calendar_title": "Maaltijdkalender",
+        "calendar_desc": "Plan ontbijt, lunch en avondeten voor het hele huishouden. Bevestig een maaltijd en de ingrediënten gaan automatisch van je voorraad af — zonder handmatig bijwerken.",
+        "shopping_title": "Boodschappenlijsten",
+        "shopping_desc": "Maak met één tik een boodschappenlijst op basis van je maaltijdplan. Deel hem in realtime met je gezin.",
+        "multilingual_title": "Elke taal",
+        "multilingual_desc": "Verzamel recepten van Italiaanse blogs, Japanse kookboeken en Franse tijdschriften. Het recept blijft in zijn eigen taal; de app past zich aan de jouwe aan.",
+        "ai_title": "Klaar voor je AI-assistent",
+        "ai_desc": "Koppel Claude, ChatGPT of een andere MCP-compatibele assistent om je keuken met je stem te beheren. Volledig optioneel — de app werkt er prima zonder."
+      },
+      "how": {
+        "eyebrow": "Eenvoudig van opzet",
+        "title": "Zo werkt het",
+        "step1_title": "Verzamel je recepten",
+        "step1_desc": "Importeer vanaf elke URL, foto of platte tekst. AI leest ingrediënten, stappen en tijden automatisch uit. Je hele kookboek op één plek.",
+        "step2_title": "Plan je week",
+        "step2_desc": "Zet recepten op je maaltijdkalender. Je voorraadkast werkt zichzelf bij zodra je een maaltijd bevestigt. En je boodschappenlijst maakt zichzelf.",
+        "step3_title": "Ga verder met AI",
+        "step3_label": "optioneel",
+        "step3_desc": "Koppel Claude of een andere MCP-compatibele assistent om je keuken met je stem te beheren. Werkt ook prima zonder."
+      },
+      "platform": {
+        "eyebrow": "Gebouwd voor het AI-tijdperk",
+        "title": "Een platform, niet zomaar een app",
+        "subtitle": "CoPantry is de infrastructuur voor de manier waarop huishoudens met AI om zullen gaan — te beginnen in de keuken.",
+        "stat1_value": "10",
+        "stat1_label": "MCP-tools",
+        "stat2_value": "12",
+        "stat2_label": "Talen",
+        "stat3_value": "50K+",
+        "stat3_label": "Receptbronnen",
+        "stat4_value": "99,9%",
+        "stat4_label": "API-beschikbaarheid",
+        "point1_title": "Voorloper in keuken-AI",
+        "point1_desc": "Nu AI-assistenten gemeengoed worden in huis, is CoPantry de schakel tussen AI en de gegevens in je keuken.",
+        "point2_title": "Echte netwerkeffecten per huishouden",
+        "point2_desc": "Elk lid dat erbij komt maakt de gedeelde voorraadkast, kalender en boodschappen waardevoller voor het hele gezin.",
+        "point3_title": "Een API-first verdienmodel",
+        "point3_desc": "Abonnementen schalen mee met het AI-gebruik. Ontwikkelaars die bouwen op de MCP-server van CoPantry zorgen voor terugkerende API-omzet naast de abonnementen van huishoudens.",
+        "investors_cta": "Vragen van investeerders"
+      },
+      "spotlight": {
+        "eyebrow": "Voor ontwikkelaars en AI-liefhebbers",
+        "optional_note": "De meeste gebruikers zijn dol op CoPantry zonder hier ooit naar te kijken. Voor wie het wel wil:",
+        "title1": "Jouw keuken,",
+        "title2": "aangestuurd door AI",
+        "desc": "Koppel Claude Desktop, Cursor of een andere MCP-compatibele AI-client en beheer je keuken handsfree. 10 tools voor recepten, voorraadkast, maaltijdplanning en boodschappen.",
+        "cta_docs": "Lees de MCP-documentatie",
+        "cta_key": "API-sleutel ophalen",
+        "examples": [
+          "\"Plan een week zonder verspilling met wat er in mijn voorraadkast ligt\"",
+          "\"Voeg 3 eieren en 500 g kipfilet toe aan mijn voorraadkast\"",
+          "\"Zet risotto op vrijdag op het menu\"",
+          "\"Maak mijn boodschappenlijst voor volgende week\""
+        ],
+        "tools_note": "10 tools beschikbaar · Werkt met Claude, Cursor, Windsurf en npx"
+      },
+      "pricing": {
+        "eyebrow": "Eenvoudige prijzen",
+        "title": "Begin gratis en groei mee met je huishouden",
+        "subtitle": "Elk abonnement bevat onbeperkt recepten en onbeperkt leden van je huishouden.",
+        "ai_note": "Er geldt een maandelijkse limiet op AI-acties. Recepten, voorraadkast en kalender zijn altijd onbeperkt.",
+        "full_compare": "Volledige vergelijking",
+        "ai_actions": "AI-acties/mnd",
+        "most_popular": "Populairst",
+        "get_started": "Aan de slag",
+        "free": "Gratis"
+      },
+      "cta": {
+        "title": "Je keuken staat te wachten",
+        "subtitle": "Sluit je aan bij duizenden huishoudens die slimmer plannen, minder verspillen en beter koken — met of zonder AI-assistent.",
+        "primary": "Maak je gratis account",
+        "secondary": "Bekijk de documentatie voor ontwikkelaars",
+        "proof1": "Voor altijd gratis abonnement",
+        "proof2": "Geen creditcard nodig",
+        "proof3": "Altijd opzegbaar"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Eenvoudige, transparante prijzen",
+      "title": "Groei mee met je huishouden",
+      "subtitle": "Alle abonnementen bevatten onbeperkt recepten, voorraadkast en maaltijdplanning. De limiet op AI-acties geldt alleen voor het gebruik van de AI-assistent.",
+      "most_popular": "Populairst",
+      "ai_actions": "AI-acties/maand",
+      "forever": "voor altijd",
+      "per_month": "/ maand",
+      "always_included": "Bij elk abonnement inbegrepen",
+      "faq_title": "Veelgestelde vragen over prijzen",
+      "not_sure_title": "Weet je niet welk abonnement?",
+      "not_sure_desc": "Begin met het gratis Hobbyist-abonnement — geen creditcard nodig. Upgraden kan wanneer je er klaar voor bent.",
+      "start_free": "Begin gratis",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyist",
+          "cta": "Begin gratis",
+          "features": [
+            "Onbeperkt recepten",
+            "Onbeperkt producten in je voorraadkast",
+            "Maaltijdkalender",
+            "Boodschappenlijsten",
+            "1 huishouden",
+            "200 AI-acties/maand",
+            "Ondersteuning via de community"
+          ]
+        },
+        "home": {
+          "name": "Home",
+          "cta": "Kies Home",
+          "features": [
+            "Alles uit Hobbyist",
+            "3.000 AI-acties/maand",
+            "Delen met je huishouden (tot 4 personen)",
+            "Voorrang bij ondersteuning"
+          ]
+        },
+        "family": {
+          "name": "Family",
+          "cta": "Kies Family",
+          "features": [
+            "Alles uit Home",
+            "10.000 AI-acties/maand",
+            "Onbeperkt leden in je huishouden",
+            "Meerdere huishoudens",
+            "Voorrang bij ondersteuning"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Kies Builder",
+          "features": [
+            "Alles uit Family",
+            "60.000 AI-acties/maand",
+            "Dashboard voor het beheren van API-sleutels",
+            "Eigen aanspreekpunt voor ondersteuning"
+          ]
+        }
+      },
+      "included": [
+        "Onbeperkt recepten — importeer er zoveel als je wilt",
+        "Onbeperkt producten in je voorraadkast en onbeperkt boodschappenlijsten",
+        "Toegang tot de AI-assistent bij elk abonnement",
+        "Delen met je huishouden bij elk betaald abonnement"
+      ],
+      "faq": [
+        {
+          "q": "Wat telt als een AI-actie?",
+          "a": "Elke tool-aanroep vanuit een MCP-client (Claude, Cursor, npx of gewone HTTP) telt als één actie. De app gewoon bekijken of een recept importeren vanuit je browser kost geen AI-acties."
+        },
+        {
+          "q": "Wat gebeurt er als ik de maandlimiet bereik?",
+          "a": "AI-tool-aanroepen geven dan een 429-melding terug. Je gebruik van de app zelf (recepten, voorraadkast, maaltijden plannen in de browser) wordt nooit geraakt. Upgrade wanneer je wilt om meteen weer toegang te krijgen."
+        },
+        {
+          "q": "Kan ik op elk moment van abonnement wisselen?",
+          "a": "Ja. Upgrades gaan direct in en worden naar rato verrekend. Downgrades gaan in aan het einde van de lopende factuurperiode."
+        },
+        {
+          "q": "Is er ook een jaarabonnement?",
+          "a": "Een jaarabonnement met 20% korting komt binnenkort. Meld je aan voor onze nieuwsbrief om een seintje te krijgen."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "Geen ontwikkelaar?",
+      "user_intro_title": "Je hebt dit niet nodig om CoPantry te gebruiken.",
+      "user_intro_desc": "CoPantry is een app voor recepten en maaltijdplanning die iedereen vanuit een browser of telefoon kan gebruiken. Deze pagina legt uit hoe je er desgewenst een AI-assistent zoals Claude aan koppelt om CoPantry met je stem te bedienen. Het is een extraatje voor gevorderden — de app werkt er prima zonder.",
+      "user_intro_skip": "Wil je gewoon je recepten beheren?",
+      "user_intro_link": "Ga direct naar de app →",
+      "setup_title": "Installatiegids",
+      "setup_subtitle": "In drie stappen koppel je je AI-assistent aan CoPantry.",
+      "step1_title": "Maak een API-sleutel aan",
+      "step1_desc": "Log in bij CoPantry en ga naar Instellingen → AI & MCP. Geef je sleutel een naam (bijv. \"Claude Desktop\") en kopieer hem — hij wordt maar één keer getoond.",
+      "step1_btn": "Instellingen voor API-sleutels openen",
+      "step2_title": "Stel je MCP-client in",
+      "step3_title": "Begin met vragen stellen",
+      "step3_desc": "Start je MCP-client opnieuw op (Claude Desktop moet volledig herstart worden). Probeer daarna:",
+      "step3_example": "\"Zoek in mijn CoPantry-recepten iets met kip en zet het morgen op het menu voor het avondeten.\"",
+      "tools_title": "Overzicht van de tools",
+      "ready_title": "Klaar om je AI te koppelen?",
+      "ready_desc": "Maak in 30 seconden je API-sleutel aan en laat je AI-assistent je keuken overnemen.",
+      "ready_btn": "Haal je API-sleutel op via app.copantry.com",
+      "ready_note": "Het gratis abonnement bevat 200 AI-acties/maand · Geen creditcard nodig",
+      "what_ai_title": "Wat je AI-assistent kan doen",
+      "what_ai_subtitle": "Eenmaal gekoppeld kan je AI-assistent deze verzoeken afhandelen zonder dat je de app opent:",
+      "starter_prompt_label": "Voorbeeldprompt"
+    }
+  }
+}

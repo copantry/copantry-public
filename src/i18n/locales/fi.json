@@ -1,0 +1,248 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Ominaisuudet",
+      "pricing": "Hinnat",
+      "developers": "Kehittäjille",
+      "signin": "Kirjaudu sisään",
+      "signup": "Aloita ilmaiseksi"
+    },
+    "cookie": {
+      "message": "Tallennamme kielivalintasi selaimeesi ja käytämme suostumuksellasi Google Analyticsia sivuston liikenteen ymmärtämiseen.",
+      "accept": "Sopii hyvin",
+      "decline": "Ei kiitos"
+    },
+    "footer": {
+      "tagline": "Älykäs reseptien hallinta nykyaikaisille kotitalouksille.",
+      "product": "Tuote",
+      "developers": "Kehittäjät",
+      "company": "Yritys",
+      "copyright": "© {{year}} Copantry Ltd. Kaikki oikeudet pidätetään.",
+      "links": {
+        "features": "Ominaisuudet",
+        "pricing": "Hinnat",
+        "ai_mcp": "Tekoäly ja MCP",
+        "android": "Android-sovellus",
+        "mcp_docs": "MCP-palvelimen dokumentaatio",
+        "api_ref": "API-viite",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Tietosuojakäytäntö",
+        "terms": "Käyttöehdot",
+        "investors": "Sijoittajat",
+        "contact": "Yhteystiedot"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Ilmainen käyttää · Peru milloin tahansa",
+        "title1": "Koko keittiösi,",
+        "title2": "täydellisessä järjestyksessä",
+        "subtitle": "CoPantry kokoaa reseptisi, seuraa ruokakaappiasi ja suunnittelee ateriasi – niin säästät aikaa, hävität vähemmän ruokaa ja tiedät aina, mitä kokkaat seuraavaksi.",
+        "cta_primary": "Aloita kokkaaminen ilmaiseksi",
+        "cta_secondary": "Kehittäjille",
+        "social_proof": "Kotitalouksien rakastama ympäri maailman"
+      },
+      "trust": {
+        "gdpr": "GDPR-ystävällinen",
+        "gdpr_sub": "Tietosi pysyvät sinun, aina",
+        "available": "Toimii kaikkialla",
+        "available_sub": "Verkossa, mobiilissa ja tekoälyavustajissa",
+        "sharing": "Kotitalouden jakaminen",
+        "sharing_sub": "Useita jäseniä, yksi ruokakaappi"
+      },
+      "features": {
+        "eyebrow": "Kaikki mitä tarvitset",
+        "title": "Yksi sovellus koko keittiöllesi",
+        "subtitle": "Reseptin tallentamisesta ostoskorin täyttämiseen – kaikki yhdessä paikassa.",
+        "ai_import_title": "Tekoälyllä reseptien tuonti",
+        "ai_import_desc": "Liitä osoite, ota valokuva tai kopioi raakaa tekstiä – tekoäly poimii jokaisen raaka-aineen ja vaiheen sekunneissa. Tukee YouTubea, Instagramia, TikTokia ja yli 50 000 reseptisivustoa.",
+        "pantry_title": "Älykäs ruokakaappi",
+        "pantry_desc": "Seuraa mitä sinulla on, päiväyksineen. Saat varoituksen ennen kuin ruoka pilaantuu. Kokkaa siitä, mitä jo omistat, nollahävikin ehdotusten avulla.",
+        "calendar_title": "Ateriakalenteri",
+        "calendar_desc": "Suunnittele aamiainen, lounas ja päivällinen koko kotitaloudelle. Vahvista ateriat, niin raaka-aineet vähennetään ruokakaapista automaattisesti – ei käsin päivittämistä.",
+        "shopping_title": "Ostoslistat",
+        "shopping_desc": "Luo ostoslistat ateriasuunnitelmastasi yhdellä napautuksella. Jaa perheenjäsenten kanssa reaaliajassa.",
+        "multilingual_title": "Kaikki kielet",
+        "multilingual_desc": "Kerää reseptejä italialaisista blogeista, japanilaisista keittokirjoista ja ranskalaisista lehdistä. Resepti pysyy alkukielellään; käyttöliittymä mukautuu sinun kieleesi.",
+        "ai_title": "Valmis tekoälyavustajille",
+        "ai_desc": "Yhdistä Claude, ChatGPT tai mikä tahansa MCP-yhteensopiva avustaja ja hallitse keittiötäsi puheella. Täysin valinnainen – sovellus toimii mainiosti ilmankin."
+      },
+      "how": {
+        "eyebrow": "Tarkoituksella yksinkertainen",
+        "title": "Näin se toimii",
+        "step1_title": "Kokoa reseptisi",
+        "step1_desc": "Tuo mistä tahansa osoitteesta, valokuvasta tai raa'asta tekstistä. Tekoäly tulkitsee raaka-aineet, vaiheet ja ajat automaattisesti. Koko keittokirjasi yhdessä paikassa.",
+        "step2_title": "Suunnittele viikkosi",
+        "step2_desc": "Lisää reseptejä ateriakalenteriisi. Ruokakaappi päivittyy automaattisesti, kun vahvistat aterian. Katso, kuinka ostoslista syntyy itsestään.",
+        "step3_title": "Ota tekoäly avuksi",
+        "step3_label": "valinnainen",
+        "step3_desc": "Yhdistä Claude tai mikä tahansa MCP-yhteensopiva avustaja ja hallitse keittiötäsi puheella. Toimii hienosti ilmankin."
+      },
+      "platform": {
+        "eyebrow": "Rakennettu tekoälyn aikaan",
+        "title": "Alusta, ei pelkkä sovellus",
+        "subtitle": "CoPantry on infrastruktuuri sille, miten kotitaloudet tulevat käyttämään tekoälyä – alkaen keittiöstä.",
+        "stat1_value": "10",
+        "stat1_label": "MCP-työkalua",
+        "stat2_value": "12",
+        "stat2_label": "Kieltä",
+        "stat3_value": "50K+",
+        "stat3_label": "Reseptilähdettä",
+        "stat4_value": "99.9%",
+        "stat4_label": "API:n käytettävyys",
+        "point1_title": "Edelläkävijä keittiön tekoälyssä",
+        "point1_desc": "Kun tekoälyavustajista tulee kotien perustyökaluja, CoPantry on integraatiokerros tekoälyn ja keittiötietojesi välillä.",
+        "point2_title": "Aitoja verkostovaikutuksia kotitaloudessa",
+        "point2_desc": "Jokainen liittyvä jäsen kasvattaa jaetun ruokakaapin, kalenterin ja ostostietojen arvoa koko perheelle.",
+        "point3_title": "API-ensin-liiketoimintamalli",
+        "point3_desc": "Tilaukset skaalautuvat tekoälyn käytön mukaan. CoPantryn MCP-palvelimen päälle rakentavat kehittäjät tuovat toistuvaa API-liikevaihtoa kotitaloustilausten rinnalle.",
+        "investors_cta": "Sijoittajatiedustelut"
+      },
+      "spotlight": {
+        "eyebrow": "Kehittäjille ja tekoälyn tehokäyttäjille",
+        "optional_note": "Useimmat rakastavat CoPantrya koskematta tähän koskaan. Niille, jotka haluavat:",
+        "title1": "Keittiösi,",
+        "title2": "tekoälyn ohjaamana",
+        "desc": "Yhdistä Claude Desktop, Cursor tai mikä tahansa MCP-yhteensopiva tekoälyasiakas ja hallitse keittiötä kädet vapaana. 10 työkalua, jotka kattavat reseptit, ruokakaapin, ateriasuunnittelun ja ostokset.",
+        "cta_docs": "Lue MCP-dokumentaatio",
+        "cta_key": "Hanki API-avain",
+        "examples": [
+          "”Suunnittele hävikitön viikko ruokakaappini sisällöstä”",
+          "”Lisää ruokakaappiini 3 kananmunaa ja 500 g kanan rintafileetä”",
+          "”Laita risotto perjantain päivälliseksi”",
+          "”Luo ostoslistani ensi viikolle”"
+        ],
+        "tools_note": "10 työkalua saatavilla · Toimii Clauden, Cursorin, Windsurfin ja npx:n kanssa"
+      },
+      "pricing": {
+        "eyebrow": "Selkeä hinnoittelu",
+        "title": "Aloita ilmaiseksi, kasva kotitaloutesi mukana",
+        "subtitle": "Jokaiseen tilaukseen sisältyy rajattomasti reseptejä ja kotitalouden jäseniä.",
+        "ai_note": "Tekoälytoimintojen rajat ovat kuukausikohtaisia. Reseptit, ruokakaappi ja kalenteri ovat aina rajattomia.",
+        "full_compare": "Täysi vertailu",
+        "ai_actions": "Tekoälytoimintoa/kk",
+        "most_popular": "Suosituin",
+        "get_started": "Aloita",
+        "free": "Ilmainen"
+      },
+      "cta": {
+        "title": "Keittiösi odottaa",
+        "subtitle": "Liity tuhansiin kotitalouksiin, jotka suunnittelevat fiksummin, hävittävät vähemmän ja kokkaavat paremmin – tekoälyavustajan kanssa tai ilman.",
+        "primary": "Luo ilmainen tili",
+        "secondary": "Tutustu kehittäjädokumentaatioon",
+        "proof1": "Ilmainen ikuisesti",
+        "proof2": "Luottokorttia ei tarvita",
+        "proof3": "Peru milloin tahansa"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Selkeä ja läpinäkyvä hinnoittelu",
+      "title": "Kasva kotitaloutesi mukana",
+      "subtitle": "Kaikkiin tilauksiin sisältyy rajattomasti reseptejä, ruokakaappi ja ateriasuunnittelu. Tekoälytoimintojen rajat koskevat vain tekoälyavustajan käyttöä.",
+      "most_popular": "Suosituin",
+      "ai_actions": "Tekoälytoimintoa/kuukausi",
+      "forever": "ikuisesti",
+      "per_month": "/ kuukausi",
+      "always_included": "Sisältyy jokaiseen tilaukseen",
+      "faq_title": "Hinnoittelun UKK",
+      "not_sure_title": "Etkö ole varma, mikä tilaus sopii?",
+      "not_sure_desc": "Aloita maksuttomalla Hobbyist-tilauksella – luottokorttia ei tarvita. Päivitä silloin kun olet valmis.",
+      "start_free": "Aloita ilmaiseksi",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyist",
+          "cta": "Aloita ilmaiseksi",
+          "features": [
+            "Rajattomasti reseptejä",
+            "Rajattomasti ruokakaapin tuotteita",
+            "Ateriakalenteri",
+            "Ostoslistat",
+            "1 kotitalous",
+            "200 tekoälytoimintoa/kk",
+            "Yhteisötuki"
+          ]
+        },
+        "home": {
+          "name": "Home",
+          "cta": "Valitse Home",
+          "features": [
+            "Kaikki Hobbyistista",
+            "3 000 tekoälytoimintoa/kk",
+            "Kotitalouden jakaminen (enintään 4)",
+            "Priorisoitu tuki"
+          ]
+        },
+        "family": {
+          "name": "Family",
+          "cta": "Valitse Family",
+          "features": [
+            "Kaikki Homesta",
+            "10 000 tekoälytoimintoa/kk",
+            "Rajattomasti kotitalouden jäseniä",
+            "Useita kotitalouksia",
+            "Priorisoitu tuki"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Valitse Builder",
+          "features": [
+            "Kaikki Familysta",
+            "60 000 tekoälytoimintoa/kk",
+            "API-avainten hallintapaneeli",
+            "Oma tuki"
+          ]
+        }
+      },
+      "included": [
+        "Rajattomasti reseptejä – tuo niin monta kuin haluat",
+        "Rajattomasti ruokakaapin tuotteita ja ostoslistoja",
+        "Tekoälyavustaja kaikissa tilauksissa",
+        "Kotitalouden jakaminen kaikissa maksullisissa tilauksissa"
+      ],
+      "faq": [
+        {
+          "q": "Mikä lasketaan tekoälytoiminnoksi?",
+          "a": "Jokainen työkalukutsu MCP-asiakasohjelmasta (Claude, Cursor, npx tai suora HTTP) lasketaan yhdeksi toiminnoksi. Pelkkä sovelluksen käyttö tai reseptin tuonti selaimesta ei kuluta tekoälytoimintoja."
+        },
+        {
+          "q": "Mitä tapahtuu, kun kuukausiraja täyttyy?",
+          "a": "Tekoälytyökalujen kutsut palauttavat 429-vastauksen. Sovelluksen käyttöön (reseptit, ruokakaappi, ateriasuunnittelu selaimessa) tämä ei koskaan vaikuta. Päivitä milloin tahansa, niin käyttöoikeus palautuu heti."
+        },
+        {
+          "q": "Voinko vaihtaa tilausta milloin tahansa?",
+          "a": "Kyllä. Päivitykset astuvat voimaan heti ja hinnoitellaan suhteutettuna. Alennukset astuvat voimaan nykyisen laskutuskauden lopussa."
+        },
+        {
+          "q": "Onko vuosilaskutusta?",
+          "a": "Vuosilaskutus 20 %:n alennuksella on tulossa pian. Tilaa uutiskirjeemme, niin saat ilmoituksen."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "Etkö ole kehittäjä?",
+      "user_intro_title": "Et tarvitse tätä käyttääksesi CoPantrya.",
+      "user_intro_desc": "CoPantry on reseptien ja ateriasuunnittelun sovellus, jota kuka tahansa voi käyttää selaimella tai puhelimella. Tämä sivu kertoo, miten voit halutessasi yhdistää tekoälyavustajan, kuten Clauden, ohjaamaan CoPantrya puheella. Se on tehokäyttäjän ominaisuus – sovellus toimii mainiosti ilmankin.",
+      "user_intro_skip": "Haluatko vain hallita reseptejä?",
+      "user_intro_link": "Siirry suoraan sovellukseen →",
+      "setup_title": "Käyttöönotto-opas",
+      "setup_subtitle": "Kolme vaihetta tekoälyavustajan yhdistämiseen CoPantryyn.",
+      "step1_title": "Luo API-avain",
+      "step1_desc": "Kirjaudu CoPantryyn ja siirry kohtaan Asetukset → Tekoäly ja MCP. Nimeä avaimesi (esim. ”Claude Desktop”) ja kopioi se – se näytetään vain kerran.",
+      "step1_btn": "Avaa API-avainten asetukset",
+      "step2_title": "Määritä MCP-asiakasohjelmasi",
+      "step3_title": "Ala kysellä",
+      "step3_desc": "Käynnistä MCP-asiakasohjelmasi uudelleen (Claude Desktop vaatii täyden uudelleenkäynnistyksen). Kokeile sitten:",
+      "step3_example": "”Hae CoPantry-resepteistäni jotain kanalla ja laita se huomiseksi päivälliseksi.”",
+      "tools_title": "Työkaluviite",
+      "ready_title": "Valmiina yhdistämään tekoälysi?",
+      "ready_desc": "Luo API-avaimesi 30 sekunnissa ja anna tekoälyavustajasi ottaa keittiö haltuun.",
+      "ready_btn": "Hanki API-avain osoitteesta app.copantry.com",
+      "ready_note": "Maksuttomaan tilaukseen sisältyy 200 tekoälytoimintoa/kk · Luottokorttia ei tarvita",
+      "what_ai_title": "Mitä tekoälyavustajasi osaa",
+      "what_ai_subtitle": "Kun yhteys on luotu, tekoälyavustajasi hoitaa nämä pyynnöt ilman että avaat sovellusta:",
+      "starter_prompt_label": "Aloituskehote"
+    }
+  }
+}

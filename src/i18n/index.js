@@ -7,6 +7,12 @@ import it from "./locales/it.json";
 import pt from "./locales/pt.json";
 import de from "./locales/de.json";
 import es from "./locales/es.json";
+import nl from "./locales/nl.json";
+import sv from "./locales/sv.json";
+import pl from "./locales/pl.json";
+import da from "./locales/da.json";
+import fi from "./locales/fi.json";
+import no from "./locales/no.json";
 
 // Language detection strategy:
 //   - Always check localStorage first so an explicit user choice (set via
@@ -25,9 +31,22 @@ if (typeof window !== "undefined") {
 }
 
 i18n.use(initReactI18next).init({
-  resources: { en, fr, it, pt, de, es },
+  resources: { en, fr, it, pt, de, es, nl, sv, pl, da, fi, no },
   fallbackLng: "en",
-  supportedLngs: ["en", "fr", "it", "pt", "de", "es"],
+  supportedLngs: [
+    "en",
+    "fr",
+    "it",
+    "pt",
+    "de",
+    "es",
+    "nl",
+    "sv",
+    "pl",
+    "da",
+    "fi",
+    "no",
+  ],
   interpolation: { escapeValue: false },
   detection: {
     order: ["localStorage", "navigator"],

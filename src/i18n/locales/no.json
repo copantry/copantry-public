@@ -1,0 +1,248 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Funksjoner",
+      "pricing": "Priser",
+      "developers": "For utviklere",
+      "signin": "Logg inn",
+      "signup": "Kom i gang gratis"
+    },
+    "cookie": {
+      "message": "Vi lagrer språkvalget ditt i nettleseren din og bruker, med samtykket ditt, Google Analytics for å forstå trafikken på nettstedet.",
+      "accept": "Det er greit",
+      "decline": "Nei takk"
+    },
+    "footer": {
+      "tagline": "Smart oppskriftshåndtering for moderne husstander.",
+      "product": "Produkt",
+      "developers": "Utviklere",
+      "company": "Selskap",
+      "copyright": "© {{year}} Copantry Ltd. Alle rettigheter forbeholdt.",
+      "links": {
+        "features": "Funksjoner",
+        "pricing": "Priser",
+        "ai_mcp": "KI og MCP",
+        "android": "Android-app",
+        "mcp_docs": "MCP-serverdokumentasjon",
+        "api_ref": "API-referanse",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Personvernerklæring",
+        "terms": "Vilkår for bruk",
+        "investors": "Investorer",
+        "contact": "Kontakt"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Gratis å bruke · Avslutt når du vil",
+        "title1": "Hele kjøkkenet ditt,",
+        "title2": "perfekt organisert",
+        "subtitle": "CoPantry samler oppskriftene dine, holder styr på spiskammeret og planlegger måltidene – så du sparer tid, kaster mindre mat og alltid vet hva du skal lage.",
+        "cta_primary": "Begynn å lage mat gratis",
+        "cta_secondary": "For utviklere",
+        "social_proof": "Elsket av husstander over hele verden"
+      },
+      "trust": {
+        "gdpr": "GDPR-vennlig",
+        "gdpr_sub": "Dataene dine forblir dine, alltid",
+        "available": "Fungerer overalt",
+        "available_sub": "Web, mobil og KI-assistenter",
+        "sharing": "Deling i husstanden",
+        "sharing_sub": "Flere medlemmer, ett spiskammer"
+      },
+      "features": {
+        "eyebrow": "Alt du trenger",
+        "title": "Én app for hele kjøkkenet ditt",
+        "subtitle": "Fra å lagre en oppskrift til å fylle handlekurven – alt på ett sted.",
+        "ai_import_title": "KI-import av oppskrifter",
+        "ai_import_desc": "Lim inn en lenke, ta et bilde eller kopier rå tekst – KI henter ut hver ingrediens og hvert steg på sekunder. Støtter YouTube, Instagram, TikTok og over 50 000 oppskriftssider.",
+        "pantry_title": "Smart spiskammer",
+        "pantry_desc": "Hold styr på hva du har, med utløpsdatoer. Få varsler før maten blir dårlig. Lag mat av det du allerede har, med forslag uten svinn.",
+        "calendar_title": "Måltidskalender",
+        "calendar_desc": "Planlegg frokost, lunsj og middag for hele husstanden. Bekreft måltider, så trekkes ingrediensene automatisk fra spiskammeret – ingen manuelle oppdateringer.",
+        "shopping_title": "Handlelister",
+        "shopping_desc": "Lag handlelister fra måltidsplanen med ett trykk. Del med familien i sanntid.",
+        "multilingual_title": "Alle språk",
+        "multilingual_desc": "Samle oppskrifter fra italienske blogger, japanske kokebøker og franske magasiner. Oppskriften blir værende på originalspråket; grensesnittet tilpasser seg ditt.",
+        "ai_title": "Klar for KI-assistenter",
+        "ai_desc": "Koble til Claude, ChatGPT eller en hvilken som helst MCP-kompatibel assistent og styr kjøkkenet med stemmen. Helt valgfritt – appen fungerer utmerket uten."
+      },
+      "how": {
+        "eyebrow": "Enkel med vilje",
+        "title": "Slik fungerer det",
+        "step1_title": "Samle oppskriftene dine",
+        "step1_desc": "Importer fra en hvilken som helst lenke, et bilde eller rå tekst. KI tolker ingredienser, steg og tider automatisk. Hele kokeboken din på ett sted.",
+        "step2_title": "Planlegg uken din",
+        "step2_desc": "Legg oppskrifter i måltidskalenderen. Spiskammeret oppdateres automatisk når du bekrefter et måltid. Se handlelisten lage seg selv.",
+        "step3_title": "Ta steget med KI",
+        "step3_label": "valgfritt",
+        "step3_desc": "Koble til Claude eller en hvilken som helst MCP-kompatibel assistent og styr kjøkkenet med stemmen. Fungerer flott uten også."
+      },
+      "platform": {
+        "eyebrow": "Bygget for KI-æraen",
+        "title": "En plattform, ikke bare en app",
+        "subtitle": "CoPantry er infrastrukturen for hvordan husstander kommer til å bruke KI – med start på kjøkkenet.",
+        "stat1_value": "10",
+        "stat1_label": "MCP-verktøy",
+        "stat2_value": "12",
+        "stat2_label": "Språk",
+        "stat3_value": "50K+",
+        "stat3_label": "Oppskriftskilder",
+        "stat4_value": "99.9%",
+        "stat4_label": "API-oppetid",
+        "point1_title": "Først ute innen kjøkken-KI",
+        "point1_desc": "Etter hvert som KI-assistenter blir hverdagskost i hjemmene, er CoPantry integrasjonslaget mellom KI og kjøkkendataene dine.",
+        "point2_title": "Ekte nettverkseffekter i husstanden",
+        "point2_desc": "Hvert medlem som blir med, øker verdien av delt spiskammer, kalender og handledata for hele familien.",
+        "point3_title": "API-først inntektsmodell",
+        "point3_desc": "Abonnementene skalerer med KI-bruken. Utviklere som bygger på CoPantrys MCP-server, gir gjentakende API-inntekter ved siden av husstandsabonnementene.",
+        "investors_cta": "Investorhenvendelser"
+      },
+      "spotlight": {
+        "eyebrow": "For utviklere og KI-superbrukere",
+        "optional_note": "De fleste elsker CoPantry uten å røre dette. For dem som vil ha det:",
+        "title1": "Kjøkkenet ditt,",
+        "title2": "styrt av KI",
+        "desc": "Koble til Claude Desktop, Cursor eller en hvilken som helst MCP-kompatibel KI-klient for håndfri kjøkkenstyring. 10 verktøy som dekker oppskrifter, spiskammer, måltidsplanlegging og handling.",
+        "cta_docs": "Les MCP-dokumentasjonen",
+        "cta_key": "Hent API-nøkkel",
+        "examples": [
+          "«Planlegg en uke uten svinn med det jeg har i spiskammeret»",
+          "«Legg til 3 egg og 500 g kyllingfilet i spiskammeret mitt»",
+          "«Sett opp risotto til middag på fredag»",
+          "«Lag handlelisten min for neste uke»"
+        ],
+        "tools_note": "10 verktøy tilgjengelig · Fungerer med Claude, Cursor, Windsurf og npx"
+      },
+      "pricing": {
+        "eyebrow": "Enkle priser",
+        "title": "Start gratis, voks med husstanden din",
+        "subtitle": "Alle abonnementer inkluderer ubegrenset antall oppskrifter og husstandsmedlemmer.",
+        "ai_note": "Grenser for KI-handlinger gjelder per måned. Oppskrifter, spiskammer og kalender er alltid ubegrenset.",
+        "full_compare": "Full sammenligning",
+        "ai_actions": "KI-handlinger/mnd",
+        "most_popular": "Mest populær",
+        "get_started": "Kom i gang",
+        "free": "Gratis"
+      },
+      "cta": {
+        "title": "Kjøkkenet ditt venter",
+        "subtitle": "Bli med tusenvis av husstander som planlegger smartere, kaster mindre og lager bedre mat – med eller uten KI-assistent.",
+        "primary": "Opprett gratiskontoen din",
+        "secondary": "Utforsk utviklerdokumentasjonen",
+        "proof1": "Gratis for alltid",
+        "proof2": "Ingen betalingskort nødvendig",
+        "proof3": "Avslutt når du vil"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Enkle, gjennomsiktige priser",
+      "title": "Voks med husstanden din",
+      "subtitle": "Alle abonnementer inkluderer ubegrenset antall oppskrifter, spiskammer og måltidsplanlegging. Grenser for KI-handlinger gjelder bare bruken av KI-assistenten.",
+      "most_popular": "Mest populær",
+      "ai_actions": "KI-handlinger/måned",
+      "forever": "for alltid",
+      "per_month": "/ måned",
+      "always_included": "Inkludert i alle abonnementer",
+      "faq_title": "Vanlige spørsmål om priser",
+      "not_sure_title": "Usikker på hvilket abonnement?",
+      "not_sure_desc": "Start på det gratis Hobbyist-abonnementet – ingen betalingskort nødvendig. Oppgrader når du er klar.",
+      "start_free": "Start gratis",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyist",
+          "cta": "Start gratis",
+          "features": [
+            "Ubegrenset antall oppskrifter",
+            "Ubegrenset antall varer i spiskammeret",
+            "Måltidskalender",
+            "Handlelister",
+            "1 husstand",
+            "200 KI-handlinger/måned",
+            "Fellesskapsstøtte"
+          ]
+        },
+        "home": {
+          "name": "Home",
+          "cta": "Velg Home",
+          "features": [
+            "Alt i Hobbyist",
+            "3 000 KI-handlinger/måned",
+            "Deling i husstanden (opptil 4)",
+            "Prioritert støtte"
+          ]
+        },
+        "family": {
+          "name": "Family",
+          "cta": "Velg Family",
+          "features": [
+            "Alt i Home",
+            "10 000 KI-handlinger/måned",
+            "Ubegrenset antall husstandsmedlemmer",
+            "Flere husstander",
+            "Prioritert støtte"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Velg Builder",
+          "features": [
+            "Alt i Family",
+            "60 000 KI-handlinger/måned",
+            "Dashbord for administrasjon av API-nøkler",
+            "Dedikert støtte"
+          ]
+        }
+      },
+      "included": [
+        "Ubegrenset antall oppskrifter – importer så mange du vil",
+        "Ubegrenset antall varer i spiskammeret og handlelister",
+        "Tilgang til KI-assistent på alle abonnementer",
+        "Deling i husstanden på alle betalte abonnementer"
+      ],
+      "faq": [
+        {
+          "q": "Hva teller som en KI-handling?",
+          "a": "Hvert verktøykall fra en MCP-klient (Claude, Cursor, npx eller rå HTTP) teller som én handling. Å bruke appen eller importere en oppskrift fra nettleseren bruker ingen KI-handlinger."
+        },
+        {
+          "q": "Hva skjer når jeg når månedsgrensen?",
+          "a": "KI-verktøykall returnerer et 429-svar. Bruken din av appen (oppskrifter, spiskammer, måltidsplanlegging i nettleseren) påvirkes aldri. Oppgrader når som helst for å få tilgang igjen umiddelbart."
+        },
+        {
+          "q": "Kan jeg bytte abonnement når som helst?",
+          "a": "Ja. Oppgraderinger trer i kraft umiddelbart og beregnes forholdsmessig. Nedgraderinger trer i kraft ved slutten av den gjeldende faktureringsperioden."
+        },
+        {
+          "q": "Finnes det årlig fakturering?",
+          "a": "Årlig fakturering med 20 % rabatt kommer snart. Abonner på nyhetsbrevet vårt for å få beskjed."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "Ikke utvikler?",
+      "user_intro_title": "Du trenger ikke dette for å bruke CoPantry.",
+      "user_intro_desc": "CoPantry er en app for oppskrifter og måltidsplanlegging som hvem som helst kan bruke fra en nettleser eller telefon. Denne siden forklarer hvordan du eventuelt kobler til en KI-assistent som Claude for å styre CoPantry med stemmen. Det er en ekstrafunksjon – appen fungerer perfekt uten.",
+      "user_intro_skip": "Vil du bare styre oppskrifter?",
+      "user_intro_link": "Gå rett til appen →",
+      "setup_title": "Oppsettsveiledning",
+      "setup_subtitle": "Tre steg for å koble KI-assistenten din til CoPantry.",
+      "step1_title": "Opprett en API-nøkkel",
+      "step1_desc": "Logg inn på CoPantry og gå til Innstillinger → KI og MCP. Gi nøkkelen et navn (f.eks. «Claude Desktop») og kopier den – den vises bare én gang.",
+      "step1_btn": "Åpne innstillinger for API-nøkler",
+      "step2_title": "Konfigurer MCP-klienten din",
+      "step3_title": "Begynn å stille spørsmål",
+      "step3_desc": "Start MCP-klienten din på nytt (Claude Desktop krever full omstart). Prøv så:",
+      "step3_example": "«Søk i CoPantry-oppskriftene mine etter noe med kylling, og legg det inn som middag i morgen.»",
+      "tools_title": "Verktøyreferanse",
+      "ready_title": "Klar til å koble til KI-en din?",
+      "ready_desc": "Opprett API-nøkkelen din på 30 sekunder, og la KI-assistenten ta over kjøkkenet.",
+      "ready_btn": "Hent API-nøkkel på app.copantry.com",
+      "ready_note": "Gratisabonnementet inkluderer 200 KI-handlinger/måned · Ingen betalingskort nødvendig",
+      "what_ai_title": "Hva KI-assistenten din kan gjøre",
+      "what_ai_subtitle": "Når tilkoblingen er på plass, kan KI-assistenten din håndtere disse forespørslene uten at du åpner appen:",
+      "starter_prompt_label": "Startprompt"
+    }
+  }
+}

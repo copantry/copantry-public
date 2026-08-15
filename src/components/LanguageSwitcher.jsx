@@ -8,6 +8,12 @@ import DE from "country-flag-icons/react/3x2/DE";
 import ES from "country-flag-icons/react/3x2/ES";
 import IT from "country-flag-icons/react/3x2/IT";
 import PT from "country-flag-icons/react/3x2/PT";
+import NL from "country-flag-icons/react/3x2/NL";
+import SE from "country-flag-icons/react/3x2/SE";
+import PL from "country-flag-icons/react/3x2/PL";
+import DK from "country-flag-icons/react/3x2/DK";
+import FI from "country-flag-icons/react/3x2/FI";
+import NO from "country-flag-icons/react/3x2/NO";
 import i18n from "../i18n";
 import { useLang, basePath } from "../i18n/useLang";
 import { LOCALES, isLocalizedPath, localizePath } from "../content/localized";
@@ -21,6 +27,13 @@ const LANGUAGES = [
   { code: "it", Flag: IT, label: "Italiano" },
   { code: "es", Flag: ES, label: "Español" },
   { code: "pt", Flag: PT, label: "Português" },
+  // The flag is the language's COUNTRY, not its code: sv→SE, da→DK.
+  { code: "nl", Flag: NL, label: "Nederlands" },
+  { code: "sv", Flag: SE, label: "Svenska" },
+  { code: "pl", Flag: PL, label: "Polski" },
+  { code: "da", Flag: DK, label: "Dansk" },
+  { code: "fi", Flag: FI, label: "Suomi" },
+  { code: "no", Flag: NO, label: "Norsk bokmål" },
 ];
 
 export default function LanguageSwitcher({ className = "" }) {

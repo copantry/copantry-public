@@ -1,0 +1,248 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Funkcje",
+      "pricing": "Cennik",
+      "developers": "Dla programistów",
+      "signin": "Zaloguj się",
+      "signup": "Zacznij za darmo"
+    },
+    "cookie": {
+      "message": "Zapisujemy Twój wybór języka w przeglądarce i — za Twoją zgodą — używamy Google Analytics, aby rozumieć ruch na stronie.",
+      "accept": "W porządku",
+      "decline": "Nie, dziękuję"
+    },
+    "footer": {
+      "tagline": "Inteligentne zarządzanie przepisami dla nowoczesnych gospodarstw domowych.",
+      "product": "Produkt",
+      "developers": "Programiści",
+      "company": "Firma",
+      "copyright": "© {{year}} Copantry Ltd. Wszelkie prawa zastrzeżone.",
+      "links": {
+        "features": "Funkcje",
+        "pricing": "Cennik",
+        "ai_mcp": "AI i MCP",
+        "android": "Aplikacja Android",
+        "mcp_docs": "Dokumentacja serwera MCP",
+        "api_ref": "Dokumentacja API",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Polityka prywatności",
+        "terms": "Regulamin",
+        "investors": "Inwestorzy",
+        "contact": "Kontakt"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Darmowe · Anuluj w każdej chwili",
+        "title1": "Cała Twoja kuchnia,",
+        "title2": "idealnie uporządkowana",
+        "subtitle": "CoPantry zbiera Twoje przepisy, pilnuje spiżarni i planuje posiłki — dzięki czemu oszczędzasz czas, marnujesz mniej jedzenia i zawsze wiesz, co ugotować.",
+        "cta_primary": "Zacznij gotować za darmo",
+        "cta_secondary": "Dla programistów",
+        "social_proof": "Uwielbiane przez domy na całym świecie"
+      },
+      "trust": {
+        "gdpr": "Zgodne z RODO",
+        "gdpr_sub": "Twoje dane pozostają Twoje, zawsze",
+        "available": "Działa wszędzie",
+        "available_sub": "Przeglądarka, telefon i asystenci AI",
+        "sharing": "Wspólne gospodarstwo",
+        "sharing_sub": "Wiele osób, jedna spiżarnia"
+      },
+      "features": {
+        "eyebrow": "Wszystko, czego potrzebujesz",
+        "title": "Jedna aplikacja do całej kuchni",
+        "subtitle": "Od zapisania przepisu po zapełnienie koszyka — wszystko w jednym miejscu.",
+        "ai_import_title": "Import przepisów przez AI",
+        "ai_import_desc": "Wklej link, zrób zdjęcie albo skopiuj surowy tekst — AI wyciągnie każdy składnik i krok w kilka sekund. Obsługuje YouTube, Instagram, TikTok i ponad 50 000 stron z przepisami.",
+        "pantry_title": "Inteligentna spiżarnia",
+        "pantry_desc": "Śledź, co masz, wraz z terminami przydatności. Dostawaj alerty, zanim jedzenie się zepsuje. Gotuj z tego, co już masz, dzięki propozycjom bez marnowania.",
+        "calendar_title": "Kalendarz posiłków",
+        "calendar_desc": "Planuj śniadania, lunche i obiady dla całego domu. Potwierdź posiłek, a składniki zostaną automatycznie odjęte ze spiżarni — bez ręcznych aktualizacji.",
+        "shopping_title": "Listy zakupów",
+        "shopping_desc": "Twórz listy zakupów z planu posiłków jednym dotknięciem. Dziel się nimi z rodziną w czasie rzeczywistym.",
+        "multilingual_title": "Dowolny język",
+        "multilingual_desc": "Zbieraj przepisy z włoskich blogów, japońskich książek kucharskich i francuskich magazynów. Przepis zostaje w oryginalnym języku; interfejs dopasowuje się do Twojego.",
+        "ai_title": "Gotowe na asystentów AI",
+        "ai_desc": "Podłącz Claude, ChatGPT lub dowolnego asystenta zgodnego z MCP i zarządzaj kuchnią głosem. Całkowicie opcjonalne — aplikacja świetnie działa i bez tego."
+      },
+      "how": {
+        "eyebrow": "Prosta z założenia",
+        "title": "Jak to działa",
+        "step1_title": "Zbierz swoje przepisy",
+        "step1_desc": "Importuj z dowolnego linku, zdjęcia lub surowego tekstu. AI automatycznie odczyta składniki, kroki i czasy. Cała Twoja książka kucharska w jednym miejscu.",
+        "step2_title": "Zaplanuj swój tydzień",
+        "step2_desc": "Dodawaj przepisy do kalendarza posiłków. Spiżarnia aktualizuje się sama, gdy potwierdzisz posiłek. Zobacz, jak lista zakupów tworzy się sama.",
+        "step3_title": "Wejdź na wyższy poziom z AI",
+        "step3_label": "opcjonalnie",
+        "step3_desc": "Podłącz Claude lub dowolnego asystenta zgodnego z MCP i zarządzaj kuchnią głosem. Bez tego też działa świetnie."
+      },
+      "platform": {
+        "eyebrow": "Zbudowane na erę AI",
+        "title": "Platforma, a nie tylko aplikacja",
+        "subtitle": "CoPantry to infrastruktura dla tego, jak gospodarstwa domowe będą korzystać z AI — zaczynając od kuchni.",
+        "stat1_value": "10",
+        "stat1_label": "Narzędzi MCP",
+        "stat2_value": "12",
+        "stat2_label": "Języków",
+        "stat3_value": "50K+",
+        "stat3_label": "Źródeł przepisów",
+        "stat4_value": "99.9%",
+        "stat4_label": "Dostępność API",
+        "point1_title": "Pionier AI w kuchni",
+        "point1_desc": "Gdy asystenci AI staną się domowym standardem, CoPantry będzie warstwą integracji między AI a danymi Twojej kuchni.",
+        "point2_title": "Prawdziwe efekty sieciowe w gospodarstwie",
+        "point2_desc": "Każda dołączająca osoba zwiększa wartość wspólnej spiżarni, kalendarza i danych zakupowych dla całej rodziny.",
+        "point3_title": "Model przychodów oparty na API",
+        "point3_desc": "Plany skalują się wraz z użyciem AI. Programiści budujący na serwerze MCP CoPantry generują powtarzalne przychody z API obok abonamentów domowych.",
+        "investors_cta": "Zapytania inwestorskie"
+      },
+      "spotlight": {
+        "eyebrow": "Dla programistów i zaawansowanych użytkowników AI",
+        "optional_note": "Większość osób uwielbia CoPantry, nigdy tego nie dotykając. Dla tych, którzy chcą:",
+        "title1": "Twoja kuchnia,",
+        "title2": "sterowana przez AI",
+        "desc": "Podłącz Claude Desktop, Cursor lub dowolnego klienta AI zgodnego z MCP i zarządzaj kuchnią bez użycia rąk. 10 narzędzi obejmujących przepisy, spiżarnię, planowanie posiłków i zakupy.",
+        "cta_docs": "Przeczytaj dokumentację MCP",
+        "cta_key": "Uzyskaj klucz API",
+        "examples": [
+          "„Zaplanuj tydzień bez marnowania z tego, co mam w spiżarni”",
+          "„Dodaj 3 jajka i 500 g piersi z kurczaka do mojej spiżarni”",
+          "„Zaplanuj risotto na obiad w piątek”",
+          "„Wygeneruj moją listę zakupów na przyszły tydzień”"
+        ],
+        "tools_note": "Dostępnych 10 narzędzi · Działa z Claude, Cursor, Windsurf i npx"
+      },
+      "pricing": {
+        "eyebrow": "Prosty cennik",
+        "title": "Zacznij za darmo, rozwijaj się razem z domem",
+        "subtitle": "Każdy plan obejmuje nielimitowane przepisy i nielimitowaną liczbę domowników.",
+        "ai_note": "Limity działań AI obowiązują miesięcznie. Przepisy, spiżarnia i kalendarz są zawsze bez limitu.",
+        "full_compare": "Pełne porównanie",
+        "ai_actions": "Działań AI/mies.",
+        "most_popular": "Najpopularniejszy",
+        "get_started": "Zacznij",
+        "free": "Za darmo"
+      },
+      "cta": {
+        "title": "Twoja kuchnia czeka",
+        "subtitle": "Dołącz do tysięcy domów, które planują mądrzej, marnują mniej i gotują lepiej — z asystentem AI albo bez.",
+        "primary": "Załóż darmowe konto",
+        "secondary": "Poznaj dokumentację dla programistów",
+        "proof1": "Darmowy plan na zawsze",
+        "proof2": "Bez karty kredytowej",
+        "proof3": "Anuluj w każdej chwili"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Prosty, przejrzysty cennik",
+      "title": "Rozwijaj się razem z domem",
+      "subtitle": "Wszystkie plany obejmują nielimitowane przepisy, spiżarnię i planowanie posiłków. Limity działań AI dotyczą wyłącznie korzystania z asystenta AI.",
+      "most_popular": "Najpopularniejszy",
+      "ai_actions": "Działań AI/miesiąc",
+      "forever": "na zawsze",
+      "per_month": "/ miesiąc",
+      "always_included": "W każdym planie",
+      "faq_title": "Najczęstsze pytania o cennik",
+      "not_sure_title": "Nie wiesz, który plan wybrać?",
+      "not_sure_desc": "Zacznij od darmowego planu Hobbyist — bez karty kredytowej. Przejdź wyżej, kiedy będziesz gotowy.",
+      "start_free": "Zacznij za darmo",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyist",
+          "cta": "Zacznij za darmo",
+          "features": [
+            "Nielimitowane przepisy",
+            "Nielimitowane produkty w spiżarni",
+            "Kalendarz posiłków",
+            "Listy zakupów",
+            "1 gospodarstwo",
+            "200 działań AI/miesiąc",
+            "Wsparcie społeczności"
+          ]
+        },
+        "home": {
+          "name": "Home",
+          "cta": "Wybierz Home",
+          "features": [
+            "Wszystko z Hobbyist",
+            "3000 działań AI/miesiąc",
+            "Współdzielenie gospodarstwa (do 4 osób)",
+            "Wsparcie priorytetowe"
+          ]
+        },
+        "family": {
+          "name": "Family",
+          "cta": "Wybierz Family",
+          "features": [
+            "Wszystko z Home",
+            "10 000 działań AI/miesiąc",
+            "Nielimitowana liczba domowników",
+            "Wiele gospodarstw",
+            "Wsparcie priorytetowe"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Wybierz Builder",
+          "features": [
+            "Wszystko z Family",
+            "60 000 działań AI/miesiąc",
+            "Panel zarządzania kluczami API",
+            "Dedykowane wsparcie"
+          ]
+        }
+      },
+      "included": [
+        "Nielimitowane przepisy — importuj, ile chcesz",
+        "Nielimitowane produkty w spiżarni i listy zakupów",
+        "Dostęp do asystenta AI we wszystkich planach",
+        "Współdzielenie gospodarstwa we wszystkich planach płatnych"
+      ],
+      "faq": [
+        {
+          "q": "Co liczy się jako działanie AI?",
+          "a": "Każde wywołanie narzędzia z klienta MCP (Claude, Cursor, npx lub surowe HTTP) liczy się jako jedno działanie. Samo korzystanie z aplikacji czy import przepisu z przeglądarki nie zużywa działań AI."
+        },
+        {
+          "q": "Co się stanie, gdy osiągnę miesięczny limit?",
+          "a": "Wywołania narzędzi AI zwrócą odpowiedź 429. Korzystanie z aplikacji (przepisy, spiżarnia, planowanie posiłków w przeglądarce) nigdy nie jest ograniczane. Przejdź na wyższy plan w dowolnym momencie, aby natychmiast odzyskać dostęp."
+        },
+        {
+          "q": "Czy mogę zmienić plan w dowolnym momencie?",
+          "a": "Tak. Zmiany na wyższy plan działają natychmiast i są rozliczane proporcjonalnie. Zmiany na niższy plan wchodzą w życie z końcem bieżącego okresu rozliczeniowego."
+        },
+        {
+          "q": "Czy jest opcja rozliczenia rocznego?",
+          "a": "Rozliczenie roczne z 20% rabatem pojawi się wkrótce. Zapisz się do naszego newslettera, aby dostać powiadomienie."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "Nie jesteś programistą?",
+      "user_intro_title": "Nie potrzebujesz tego, aby korzystać z CoPantry.",
+      "user_intro_desc": "CoPantry to aplikacja do przepisów i planowania posiłków, z której każdy może korzystać w przeglądarce lub na telefonie. Ta strona wyjaśnia, jak opcjonalnie podłączyć asystenta AI, takiego jak Claude, aby sterować CoPantry głosem. To funkcja dla zaawansowanych — aplikacja świetnie działa i bez niej.",
+      "user_intro_skip": "Chcesz tylko zarządzać przepisami?",
+      "user_intro_link": "Przejdź prosto do aplikacji →",
+      "setup_title": "Przewodnik konfiguracji",
+      "setup_subtitle": "Trzy kroki, aby podłączyć asystenta AI do CoPantry.",
+      "step1_title": "Utwórz klucz API",
+      "step1_desc": "Zaloguj się do CoPantry i przejdź do Ustawienia → AI i MCP. Nazwij swój klucz (np. „Claude Desktop”), a potem go skopiuj — pokazujemy go tylko raz.",
+      "step1_btn": "Otwórz ustawienia kluczy API",
+      "step2_title": "Skonfiguruj swojego klienta MCP",
+      "step3_title": "Zacznij zadawać pytania",
+      "step3_desc": "Uruchom ponownie klienta MCP (Claude Desktop wymaga pełnego restartu). Następnie spróbuj:",
+      "step3_example": "„Poszukaj w moich przepisach CoPantry czegoś z kurczakiem i zaplanuj to na jutrzejszy obiad.”",
+      "tools_title": "Dokumentacja narzędzi",
+      "ready_title": "Gotowy, aby podłączyć swoje AI?",
+      "ready_desc": "Utwórz klucz API w 30 sekund i pozwól asystentowi AI przejąć kuchnię.",
+      "ready_btn": "Uzyskaj klucz API na app.copantry.com",
+      "ready_note": "Darmowy plan obejmuje 200 działań AI/miesiąc · Bez karty kredytowej",
+      "what_ai_title": "Co potrafi Twój asystent AI",
+      "what_ai_subtitle": "Po podłączeniu asystent AI obsłuży te prośby bez otwierania aplikacji:",
+      "starter_prompt_label": "Przykładowy prompt"
+    }
+  }
+}

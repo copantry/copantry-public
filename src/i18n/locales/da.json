@@ -1,0 +1,248 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Funktioner",
+      "pricing": "Priser",
+      "developers": "For udviklere",
+      "signin": "Log ind",
+      "signup": "Kom gratis i gang"
+    },
+    "cookie": {
+      "message": "Vi gemmer dit sprogvalg i din browser og bruger, med dit samtykke, Google Analytics til at forstå trafikken på sitet.",
+      "accept": "Det er fint",
+      "decline": "Nej tak"
+    },
+    "footer": {
+      "tagline": "Smart opskriftshåndtering til moderne husstande.",
+      "product": "Produkt",
+      "developers": "Udviklere",
+      "company": "Virksomhed",
+      "copyright": "© {{year}} Copantry Ltd. Alle rettigheder forbeholdes.",
+      "links": {
+        "features": "Funktioner",
+        "pricing": "Priser",
+        "ai_mcp": "AI og MCP",
+        "android": "Android-app",
+        "mcp_docs": "MCP-serverdokumentation",
+        "api_ref": "API-reference",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Privatlivspolitik",
+        "terms": "Servicevilkår",
+        "investors": "Investorer",
+        "contact": "Kontakt"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Gratis at bruge · Opsig når som helst",
+        "title1": "Hele dit køkken,",
+        "title2": "perfekt organiseret",
+        "subtitle": "CoPantry samler dine opskrifter, holder styr på dit spisekammer og planlægger dine måltider – så du sparer tid, spilder mindre mad og altid ved, hvad du skal lave.",
+        "cta_primary": "Begynd at lave mad gratis",
+        "cta_secondary": "For udviklere",
+        "social_proof": "Elsket af husstande verden over"
+      },
+      "trust": {
+        "gdpr": "GDPR-venligt",
+        "gdpr_sub": "Dine data forbliver dine, altid",
+        "available": "Virker overalt",
+        "available_sub": "Web, mobil og AI-assistenter",
+        "sharing": "Deling i husstanden",
+        "sharing_sub": "Flere medlemmer, ét spisekammer"
+      },
+      "features": {
+        "eyebrow": "Alt hvad du har brug for",
+        "title": "Én app til hele dit køkken",
+        "subtitle": "Fra at gemme en opskrift til at fylde kurven – det hele ét sted.",
+        "ai_import_title": "AI-opskriftsimport",
+        "ai_import_desc": "Indsæt et link, tag et foto, eller kopiér rå tekst – AI trækker hver ingrediens og hvert trin ud på få sekunder. Understøtter YouTube, Instagram, TikTok og over 50.000 opskriftssider.",
+        "pantry_title": "Smart spisekammer",
+        "pantry_desc": "Hold styr på, hvad du har, med udløbsdatoer. Få varsler, før maden bliver dårlig. Lav mad af det, du allerede har, med forslag uden madspild.",
+        "calendar_title": "Måltidskalender",
+        "calendar_desc": "Planlæg morgenmad, frokost og aftensmad for hele husstanden. Bekræft måltider, så ingredienserne automatisk trækkes fra spisekammeret – ingen manuelle opdateringer.",
+        "shopping_title": "Indkøbslister",
+        "shopping_desc": "Lav indkøbslister ud fra din madplan med ét tryk. Del med familien i realtid.",
+        "multilingual_title": "Alle sprog",
+        "multilingual_desc": "Saml opskrifter fra italienske blogs, japanske kogebøger og franske magasiner. Opskriften bliver på originalsproget; brugerfladen tilpasser sig dit.",
+        "ai_title": "Klar til AI-assistenter",
+        "ai_desc": "Forbind Claude, ChatGPT eller enhver MCP-kompatibel assistent, og styr køkkenet med stemmen. Helt valgfrit – appen fungerer perfekt uden."
+      },
+      "how": {
+        "eyebrow": "Enkel med vilje",
+        "title": "Sådan virker det",
+        "step1_title": "Saml dine opskrifter",
+        "step1_desc": "Importér fra ethvert link, foto eller rå tekst. AI fortolker automatisk ingredienser, trin og tider. Hele din kogebog ét sted.",
+        "step2_title": "Planlæg din uge",
+        "step2_desc": "Føj opskrifter til din måltidskalender. Spisekammeret opdateres automatisk, når du bekræfter et måltid. Se indkøbslisten skabe sig selv.",
+        "step3_title": "Tag skridtet med AI",
+        "step3_label": "valgfrit",
+        "step3_desc": "Forbind Claude eller enhver MCP-kompatibel assistent, og styr køkkenet med stemmen. Fungerer også fint uden."
+      },
+      "platform": {
+        "eyebrow": "Bygget til AI-æraen",
+        "title": "En platform, ikke bare en app",
+        "subtitle": "CoPantry er infrastrukturen for den måde, husstande kommer til at bruge AI på – med start i køkkenet.",
+        "stat1_value": "10",
+        "stat1_label": "MCP-værktøjer",
+        "stat2_value": "12",
+        "stat2_label": "Sprog",
+        "stat3_value": "50K+",
+        "stat3_label": "Opskriftskilder",
+        "stat4_value": "99.9%",
+        "stat4_label": "API-oppetid",
+        "point1_title": "Først på markedet inden for køkken-AI",
+        "point1_desc": "Efterhånden som AI-assistenter bliver hverdag i hjemmene, er CoPantry integrationslaget mellem AI og dine køkkendata.",
+        "point2_title": "Ægte netværkseffekter i husstanden",
+        "point2_desc": "Hvert medlem, der kommer til, øger værdien af det delte spisekammer, kalenderen og indkøbsdataene for hele familien.",
+        "point3_title": "API-først forretningsmodel",
+        "point3_desc": "Abonnementer skalerer med AI-forbruget. Udviklere, der bygger på CoPantrys MCP-server, skaber tilbagevendende API-omsætning ved siden af husstandsabonnementerne.",
+        "investors_cta": "Investorhenvendelser"
+      },
+      "spotlight": {
+        "eyebrow": "For udviklere og AI-superbrugere",
+        "optional_note": "De fleste elsker CoPantry uden nogensinde at røre dette. For dem, der vil have det:",
+        "title1": "Dit køkken,",
+        "title2": "styret af AI",
+        "desc": "Forbind Claude Desktop, Cursor eller enhver MCP-kompatibel AI-klient, og styr køkkenet håndfrit. 10 værktøjer, der dækker opskrifter, spisekammer, måltidsplanlægning og indkøb.",
+        "cta_docs": "Læs MCP-dokumentationen",
+        "cta_key": "Hent API-nøgle",
+        "examples": [
+          "“Planlæg en uge uden madspild med det, jeg har i spisekammeret”",
+          "“Tilføj 3 æg og 500 g kyllingebryst til mit spisekammer”",
+          "“Læg risotto ind som aftensmad på fredag”",
+          "“Lav min indkøbsliste til næste uge”"
+        ],
+        "tools_note": "10 værktøjer tilgængelige · Virker med Claude, Cursor, Windsurf og npx"
+      },
+      "pricing": {
+        "eyebrow": "Enkle priser",
+        "title": "Start gratis, skalér med din husstand",
+        "subtitle": "Alle abonnementer omfatter ubegrænset antal opskrifter og husstandsmedlemmer.",
+        "ai_note": "Grænser for AI-handlinger gælder pr. måned. Opskrifter, spisekammer og kalender er altid ubegrænsede.",
+        "full_compare": "Fuld sammenligning",
+        "ai_actions": "AI-handlinger/md.",
+        "most_popular": "Mest populære",
+        "get_started": "Kom i gang",
+        "free": "Gratis"
+      },
+      "cta": {
+        "title": "Dit køkken venter",
+        "subtitle": "Bliv en del af tusindvis af husstande, der planlægger klogere, spilder mindre og laver bedre mad – med eller uden en AI-assistent.",
+        "primary": "Opret din gratis konto",
+        "secondary": "Udforsk udviklerdokumentationen",
+        "proof1": "Gratis for altid",
+        "proof2": "Intet kreditkort påkrævet",
+        "proof3": "Opsig når som helst"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Enkle, gennemsigtige priser",
+      "title": "Skalér med din husstand",
+      "subtitle": "Alle abonnementer omfatter ubegrænsede opskrifter, spisekammer og måltidsplanlægning. Grænser for AI-handlinger gælder kun brugen af AI-assistenten.",
+      "most_popular": "Mest populære",
+      "ai_actions": "AI-handlinger/måned",
+      "forever": "for altid",
+      "per_month": "/ måned",
+      "always_included": "Inkluderet i alle abonnementer",
+      "faq_title": "Ofte stillede spørgsmål om priser",
+      "not_sure_title": "Usikker på hvilket abonnement?",
+      "not_sure_desc": "Start på det gratis Hobbyist-abonnement – intet kreditkort påkrævet. Opgradér, når du er klar.",
+      "start_free": "Start gratis",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyist",
+          "cta": "Start gratis",
+          "features": [
+            "Ubegrænsede opskrifter",
+            "Ubegrænsede varer i spisekammeret",
+            "Måltidskalender",
+            "Indkøbslister",
+            "1 husstand",
+            "200 AI-handlinger/måned",
+            "Community-support"
+          ]
+        },
+        "home": {
+          "name": "Home",
+          "cta": "Vælg Home",
+          "features": [
+            "Alt i Hobbyist",
+            "3.000 AI-handlinger/måned",
+            "Deling i husstanden (op til 4)",
+            "Prioriteret support"
+          ]
+        },
+        "family": {
+          "name": "Family",
+          "cta": "Vælg Family",
+          "features": [
+            "Alt i Home",
+            "10.000 AI-handlinger/måned",
+            "Ubegrænset antal husstandsmedlemmer",
+            "Flere husstande",
+            "Prioriteret support"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Vælg Builder",
+          "features": [
+            "Alt i Family",
+            "60.000 AI-handlinger/måned",
+            "Dashboard til styring af API-nøgler",
+            "Dedikeret support"
+          ]
+        }
+      },
+      "included": [
+        "Ubegrænsede opskrifter – importér så mange du vil",
+        "Ubegrænsede varer i spisekammeret og indkøbslister",
+        "Adgang til AI-assistenten på alle abonnementer",
+        "Deling i husstanden på alle betalte abonnementer"
+      ],
+      "faq": [
+        {
+          "q": "Hvad tæller som en AI-handling?",
+          "a": "Hvert værktøjskald fra en MCP-klient (Claude, Cursor, npx eller rå HTTP) tæller som én handling. At bruge appen eller importere en opskrift fra browseren bruger ingen AI-handlinger."
+        },
+        {
+          "q": "Hvad sker der, når jeg når månedsgrænsen?",
+          "a": "AI-værktøjskald returnerer et 429-svar. Din brug af appen (opskrifter, spisekammer, måltidsplanlægning i browseren) påvirkes aldrig. Opgradér når som helst for straks at få adgang igen."
+        },
+        {
+          "q": "Kan jeg skifte abonnement når som helst?",
+          "a": "Ja. Opgraderinger træder i kraft med det samme og beregnes forholdsmæssigt. Nedgraderinger træder i kraft ved udgangen af den aktuelle betalingsperiode."
+        },
+        {
+          "q": "Findes der årlig betaling?",
+          "a": "Årlig betaling med 20 % rabat kommer snart. Tilmeld dig vores nyhedsbrev for at få besked."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "Ikke udvikler?",
+      "user_intro_title": "Du har ikke brug for dette for at bruge CoPantry.",
+      "user_intro_desc": "CoPantry er en app til opskrifter og måltidsplanlægning, som alle kan bruge fra en browser eller telefon. Denne side forklarer, hvordan du valgfrit forbinder en AI-assistent som Claude for at styre CoPantry med stemmen. Det er en ekstrafunktion – appen fungerer perfekt uden.",
+      "user_intro_skip": "Vil du bare styre opskrifter?",
+      "user_intro_link": "Gå direkte til appen →",
+      "setup_title": "Opsætningsguide",
+      "setup_subtitle": "Tre trin til at forbinde din AI-assistent med CoPantry.",
+      "step1_title": "Opret en API-nøgle",
+      "step1_desc": "Log ind på CoPantry, og gå til Indstillinger → AI og MCP. Navngiv din nøgle (f.eks. “Claude Desktop”), og kopiér den – den vises kun én gang.",
+      "step1_btn": "Åbn indstillinger for API-nøgler",
+      "step2_title": "Konfigurér din MCP-klient",
+      "step3_title": "Begynd at stille spørgsmål",
+      "step3_desc": "Genstart din MCP-klient (Claude Desktop kræver en fuld genstart). Prøv derefter:",
+      "step3_example": "“Søg i mine CoPantry-opskrifter efter noget med kylling, og læg det ind som aftensmad i morgen.”",
+      "tools_title": "Værktøjsreference",
+      "ready_title": "Klar til at forbinde din AI?",
+      "ready_desc": "Opret din API-nøgle på 30 sekunder, og lad din AI-assistent overtage køkkenet.",
+      "ready_btn": "Hent API-nøgle på app.copantry.com",
+      "ready_note": "Gratisabonnementet omfatter 200 AI-handlinger/måned · Intet kreditkort påkrævet",
+      "what_ai_title": "Hvad din AI-assistent kan",
+      "what_ai_subtitle": "Når forbindelsen er oprettet, kan din AI-assistent klare disse forespørgsler, uden at du åbner appen:",
+      "starter_prompt_label": "Startprompt"
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "translation": {
+    "nav": {
+      "features": "Funktioner",
+      "pricing": "Priser",
+      "developers": "För utvecklare",
+      "signin": "Logga in",
+      "signup": "Kom igång gratis"
+    },
+    "cookie": {
+      "message": "Vi lagrar ditt språkval i din webbläsare och använder, med ditt samtycke, Google Analytics för att förstå trafiken på webbplatsen.",
+      "accept": "Det är okej",
+      "decline": "Nej tack"
+    },
+    "footer": {
+      "tagline": "Smart recepthantering för moderna hushåll.",
+      "product": "Produkt",
+      "developers": "Utvecklare",
+      "company": "Företag",
+      "copyright": "© {{year}} Copantry Ltd. Alla rättigheter förbehållna.",
+      "links": {
+        "features": "Funktioner",
+        "pricing": "Priser",
+        "ai_mcp": "AI och MCP",
+        "android": "Android-app",
+        "mcp_docs": "MCP-serverdokumentation",
+        "api_ref": "API-referens",
+        "llms_txt": "llms.txt",
+        "robots_txt": "robots.txt",
+        "privacy": "Integritetspolicy",
+        "terms": "Användarvillkor",
+        "investors": "Investerare",
+        "contact": "Kontakt"
+      }
+    },
+    "home": {
+      "hero": {
+        "badge": "Gratis att använda · Avsluta när du vill",
+        "title1": "Hela ditt kök,",
+        "title2": "perfekt organiserat",
+        "subtitle": "CoPantry samlar dina recept, håller koll på skafferiet och planerar dina måltider – så att du sparar tid, slänger mindre mat och alltid vet vad du ska laga härnäst.",
+        "cta_primary": "Börja laga mat gratis",
+        "cta_secondary": "För utvecklare",
+        "social_proof": "Älskat av hushåll världen över"
+      },
+      "trust": {
+        "gdpr": "GDPR-vänligt",
+        "gdpr_sub": "Dina data förblir dina, alltid",
+        "available": "Fungerar överallt",
+        "available_sub": "Webb, mobil och AI-assistenter",
+        "sharing": "Delning i hushållet",
+        "sharing_sub": "Flera medlemmar, ett skafferi"
+      },
+      "features": {
+        "eyebrow": "Allt du behöver",
+        "title": "En app för hela ditt kök",
+        "subtitle": "Från att spara ett recept till att fylla varukorgen – allt på ett ställe.",
+        "ai_import_title": "AI-receptimport",
+        "ai_import_desc": "Klistra in en länk, ta ett foto eller kopiera rå text – AI plockar ut varje ingrediens och steg på några sekunder. Stöder YouTube, Instagram, TikTok och över 50 000 receptsajter.",
+        "pantry_title": "Smart skafferi",
+        "pantry_desc": "Håll koll på vad du har med utgångsdatum. Få varningar innan maten blir dålig. Laga av det du redan äger med nollsvinnsförslag.",
+        "calendar_title": "Måltidskalender",
+        "calendar_desc": "Planera frukost, lunch och middag för hela hushållet. Bekräfta måltider så dras ingredienserna automatiskt från skafferiet – inga manuella uppdateringar.",
+        "shopping_title": "Inköpslistor",
+        "shopping_desc": "Skapa inköpslistor från din matsedel med en knapptryckning. Dela med familjen i realtid.",
+        "multilingual_title": "Alla språk",
+        "multilingual_desc": "Samla recept från italienska bloggar, japanska kokböcker och franska tidningar. Receptet stannar på originalspråket; gränssnittet anpassar sig efter ditt.",
+        "ai_title": "Redo för AI-assistenter",
+        "ai_desc": "Koppla Claude, ChatGPT eller vilken MCP-kompatibel assistent som helst för att sköta köket med rösten. Helt valfritt – appen fungerar utmärkt utan det."
+      },
+      "how": {
+        "eyebrow": "Enkel med flit",
+        "title": "Så fungerar det",
+        "step1_title": "Samla dina recept",
+        "step1_desc": "Importera från vilken länk, foto eller rå text som helst. AI tolkar ingredienser, steg och tider automatiskt. Hela din kokbok på ett ställe.",
+        "step2_title": "Planera din vecka",
+        "step2_desc": "Lägg till recept i måltidskalendern. Skafferiet uppdateras automatiskt när du bekräftar en måltid. Se inköpslistan skapa sig själv.",
+        "step3_title": "Väx med AI",
+        "step3_label": "valfritt",
+        "step3_desc": "Koppla Claude eller vilken MCP-kompatibel assistent som helst för att sköta köket med rösten. Fungerar utmärkt utan också."
+      },
+      "platform": {
+        "eyebrow": "Byggt för AI-eran",
+        "title": "En plattform, inte bara en app",
+        "subtitle": "CoPantry är infrastrukturen för hur hushåll kommer att samspela med AI – med start i köket.",
+        "stat1_value": "10",
+        "stat1_label": "MCP-verktyg",
+        "stat2_value": "12",
+        "stat2_label": "Språk",
+        "stat3_value": "50K+",
+        "stat3_label": "Receptkällor",
+        "stat4_value": "99.9%",
+        "stat4_label": "API-drifttid",
+        "point1_title": "Först ut inom AI för köket",
+        "point1_desc": "När AI-assistenter blir vardagsmat i hemmen är CoPantry integrationslagret mellan AI och dina köksdata.",
+        "point2_title": "Verkliga nätverkseffekter i hushållet",
+        "point2_desc": "Varje medlem som går med ökar värdet av delat skafferi, kalender och inköpsdata för hela familjen.",
+        "point3_title": "API-först som intäktsmodell",
+        "point3_desc": "Abonnemangen skalar med AI-användningen. Utvecklare som bygger på CoPantrys MCP-server driver återkommande API-intäkter vid sidan av hushållens abonnemang.",
+        "investors_cta": "Investerarförfrågningar"
+      },
+      "spotlight": {
+        "eyebrow": "För utvecklare och AI-entusiaster",
+        "optional_note": "De flesta älskar CoPantry utan att någonsin röra det här. För dig som vill ha det:",
+        "title1": "Ditt kök,",
+        "title2": "styrt av AI",
+        "desc": "Koppla Claude Desktop, Cursor eller vilken MCP-kompatibel AI-klient som helst för att sköta köket handsfree. 10 verktyg som täcker recept, skafferi, måltidsplanering och inköp.",
+        "cta_docs": "Läs MCP-dokumentationen",
+        "cta_key": "Hämta API-nyckel",
+        "examples": [
+          "”Planera en svinnfri vecka med det som finns i mitt skafferi”",
+          "”Lägg till 3 ägg och 500 g kycklingfilé i mitt skafferi”",
+          "”Lägg in risotto som middag på fredag”",
+          "”Skapa min inköpslista för nästa vecka”"
+        ],
+        "tools_note": "10 verktyg tillgängliga · Fungerar med Claude, Cursor, Windsurf och npx"
+      },
+      "pricing": {
+        "eyebrow": "Enkla priser",
+        "title": "Börja gratis, väx med ditt hushåll",
+        "subtitle": "Alla abonnemang omfattar obegränsat antal recept och hushållsmedlemmar.",
+        "ai_note": "Gränserna för AI-åtgärder gäller per månad. Recept, skafferi och kalender är alltid obegränsade.",
+        "full_compare": "Fullständig jämförelse",
+        "ai_actions": "AI-åtgärder/mån",
+        "most_popular": "Populärast",
+        "get_started": "Kom igång",
+        "free": "Gratis"
+      },
+      "cta": {
+        "title": "Ditt kök väntar",
+        "subtitle": "Gå med bland tusentals hushåll som planerar smartare, slänger mindre och lagar bättre – med eller utan AI-assistent.",
+        "primary": "Skapa ditt gratiskonto",
+        "secondary": "Utforska utvecklardokumentationen",
+        "proof1": "Gratis för alltid",
+        "proof2": "Inget kreditkort krävs",
+        "proof3": "Avsluta när du vill"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Enkla, transparenta priser",
+      "title": "Väx med ditt hushåll",
+      "subtitle": "Alla abonnemang omfattar obegränsat antal recept, skafferi och måltidsplanering. Gränserna för AI-åtgärder gäller bara användningen av AI-assistenten.",
+      "most_popular": "Populärast",
+      "ai_actions": "AI-åtgärder/månad",
+      "forever": "för alltid",
+      "per_month": "/ månad",
+      "always_included": "Ingår i alla abonnemang",
+      "faq_title": "Vanliga frågor om priser",
+      "not_sure_title": "Osäker på vilket abonnemang?",
+      "not_sure_desc": "Börja med gratisabonnemanget Hobbyist – inget kreditkort krävs. Uppgradera när du är redo.",
+      "start_free": "Börja gratis",
+      "plans": {
+        "hobbyist": {
+          "name": "Hobbyist",
+          "cta": "Börja gratis",
+          "features": [
+            "Obegränsat antal recept",
+            "Obegränsat antal varor i skafferiet",
+            "Måltidskalender",
+            "Inköpslistor",
+            "1 hushåll",
+            "200 AI-åtgärder/månad",
+            "Community-support"
+          ]
+        },
+        "home": {
+          "name": "Home",
+          "cta": "Välj Home",
+          "features": [
+            "Allt i Hobbyist",
+            "3 000 AI-åtgärder/månad",
+            "Hushållsdelning (upp till 4)",
+            "Prioriterad support"
+          ]
+        },
+        "family": {
+          "name": "Family",
+          "cta": "Välj Family",
+          "features": [
+            "Allt i Home",
+            "10 000 AI-åtgärder/månad",
+            "Obegränsat antal hushållsmedlemmar",
+            "Flera hushåll",
+            "Prioriterad support"
+          ]
+        },
+        "builder": {
+          "name": "Builder",
+          "cta": "Välj Builder",
+          "features": [
+            "Allt i Family",
+            "60 000 AI-åtgärder/månad",
+            "Panel för hantering av API-nycklar",
+            "Dedikerad support"
+          ]
+        }
+      },
+      "included": [
+        "Obegränsat antal recept – importera hur många du vill",
+        "Obegränsat antal varor i skafferiet och inköpslistor",
+        "Tillgång till AI-assistenten i alla abonnemang",
+        "Hushållsdelning i alla betalabonnemang"
+      ],
+      "faq": [
+        {
+          "q": "Vad räknas som en AI-åtgärd?",
+          "a": "Varje verktygsanrop från en MCP-klient (Claude, Cursor, npx eller rå HTTP) räknas som en åtgärd. Att bara använda appen eller importera ett recept från webbläsaren förbrukar inga AI-åtgärder."
+        },
+        {
+          "q": "Vad händer när jag når månadsgränsen?",
+          "a": "AI-verktygsanrop returnerar då ett 429-svar. Din användning av appen (recept, skafferi, måltidsplanering i webbläsaren) påverkas aldrig. Uppgradera när som helst för att återfå åtkomsten direkt."
+        },
+        {
+          "q": "Kan jag byta abonnemang när som helst?",
+          "a": "Ja. Uppgraderingar träder i kraft direkt och proportioneras. Nedgraderingar träder i kraft i slutet av den aktuella faktureringsperioden."
+        },
+        {
+          "q": "Finns det årsbetalning?",
+          "a": "Årsbetalning med 20 % rabatt kommer snart. Prenumerera på vårt nyhetsbrev för att få besked."
+        }
+      ]
+    },
+    "mcp": {
+      "user_intro_badge": "Inte utvecklare?",
+      "user_intro_title": "Du behöver inte det här för att använda CoPantry.",
+      "user_intro_desc": "CoPantry är en app för recept och måltidsplanering som vem som helst kan använda från en webbläsare eller telefon. Den här sidan förklarar hur du valfritt kopplar en AI-assistent som Claude för att styra CoPantry med rösten. Det är en extrafunktion – appen fungerar utmärkt utan den.",
+      "user_intro_skip": "Vill du bara sköta recept?",
+      "user_intro_link": "Gå direkt till appen →",
+      "setup_title": "Installationsguide",
+      "setup_subtitle": "Tre steg för att koppla din AI-assistent till CoPantry.",
+      "step1_title": "Skapa en API-nyckel",
+      "step1_desc": "Logga in på CoPantry och gå till Inställningar → AI och MCP. Namnge din nyckel (t.ex. ”Claude Desktop”) och kopiera den – den visas bara en gång.",
+      "step1_btn": "Öppna inställningar för API-nycklar",
+      "step2_title": "Konfigurera din MCP-klient",
+      "step3_title": "Börja ställa frågor",
+      "step3_desc": "Starta om din MCP-klient (Claude Desktop kräver en fullständig omstart). Prova sedan:",
+      "step3_example": "”Sök i mina CoPantry-recept efter något med kyckling och lägg in det som middag i morgon.”",
+      "tools_title": "Verktygsreferens",
+      "ready_title": "Redo att koppla din AI?",
+      "ready_desc": "Skapa din API-nyckel på 30 sekunder och låt AI-assistenten ta över köket.",
+      "ready_btn": "Hämta API-nyckel på app.copantry.com",
+      "ready_note": "Gratisabonnemanget omfattar 200 AI-åtgärder/månad · Inget kreditkort krävs",
+      "what_ai_title": "Vad din AI-assistent kan göra",
+      "what_ai_subtitle": "När allt är kopplat kan din AI-assistent hantera de här förfrågningarna utan att du öppnar appen:",
+      "starter_prompt_label": "Startprompt"
+    }
+  }
+}
