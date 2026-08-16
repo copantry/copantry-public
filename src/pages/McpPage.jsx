@@ -78,17 +78,22 @@ const TOOLS = [
       {
         name: "create_recipe",
         summary:
-          "Manually create a brand-new recipe from a title, ingredient list and method.",
-        when: "Use when the user dictates or types a recipe directly rather than importing it. Instructions go in notes (free text).",
+          "Create a brand-new recipe — from schema.org/Recipe JSON-LD if you have it, otherwise from a title, ingredient list and method.",
+        when: "Use when the user dictates or types a recipe directly rather than importing it. Prefer passing JSON-LD: it is parsed natively, so quantities, units, ISO-8601 times and per-step instructions survive intact. Instructions go in notes (free text) when you have no JSON-LD.",
         params: [
+          {
+            name: "jsonLd",
+            type: "object | array | string?",
+            desc: "PREFERRED. schema.org/Recipe JSON-LD — a Recipe node, an array, an @graph document, or the raw JSON string. Any flat field sent alongside it overrides the matching JSON-LD value.",
+          },
           {
             name: "title",
             type: "string",
-            desc: "Recipe title in its original language.",
+            desc: "Recipe title in its original language. Required unless jsonLd carries one.",
           },
           {
             name: "ingredients",
-            type: "array of {name, quantity?, unit?}",
+            type: "array of {name, quantity?, unit?}?",
             desc: "Full ingredient list. Names are normalised automatically.",
           },
           {
@@ -114,7 +119,7 @@ const TOOLS = [
         ],
         returns: "{ success, recipeId, title } for the created recipe.",
         example:
-          '{ "title": "Aglio e Olio", "ingredients": [{ "name": "spaghetti", "quantity": 400, "unit": "g" }], "notes": "Boil pasta…" }',
+          '{ "jsonLd": { "@type": "Recipe", "name": "Aglio e Olio", "recipeYield": "2", "recipeIngredient": ["400 g spaghetti"], "recipeInstructions": ["Boil pasta…"] } }',
       },
       {
         name: "update_recipe",

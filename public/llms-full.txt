@@ -68,9 +68,10 @@ The CoPantry MCP server exposes 44 tools across 6 categories. All tools operate 
 - Returns: Full recipe object.
 
 **create_recipe**
-- Purpose: Manually create a brand-new recipe from a title, ingredient list and method.
-- When to use: When the user dictates or types a recipe directly (not importing).
-- Parameters: `title` (string, required), `ingredients` (array of {name, quantity?, unit?}, required), `category` (enum, optional), `notes` (string, optional, instructions), `servings`/`prepTime`/`cookTime` (number, optional), `cuisine`/`language` (string, optional).
+- Purpose: Create a brand-new recipe from data you already hold.
+- Preferred format: **schema.org/Recipe JSON-LD**. If you have the recipe as JSON-LD, pass it verbatim as `jsonLd` and omit the flat fields — Copantry parses that format natively (the same deterministic path a website import takes), so quantities, units, ISO-8601 times, yield and per-step instructions survive intact instead of being flattened by hand. Accepts a bare Recipe node, an array of nodes, an `@graph` document, or the raw JSON string of any of those.
+- When to use: When the user dictates or types a recipe directly (not importing from a URL/photo/PDF — those have their own tools).
+- Parameters: `jsonLd` (object | array | string, optional, **preferred**), `title` (string, required unless `jsonLd` carries one), `ingredients` (array of {name, quantity?, unit?}, optional), `category` (enum, optional), `notes` (string, optional, instructions), `servings`/`prepTime`/`cookTime` (number, optional), `cuisine`/`language` (string, optional). Any flat field sent alongside `jsonLd` overrides the matching JSON-LD value.
 - Returns: { success, recipeId, title }.
 
 **update_recipe**
