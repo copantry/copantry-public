@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Non sei uno sviluppatore?",
       "user_intro_title": "Non hai bisogno di questo per usare CoPantry.",
-      "user_intro_desc": "CoPantry è un'app di gestione ricette e pianificazione pasti che chiunque può usare da browser o telefono. Questa pagina spiega come collegare opzionalmente un assistente IA come Claude. È una funzione avanzata — l'app funziona perfettamente senza.",
+      "user_intro_desc": "CoPantry è un'app di ricette e pianificazione dei pasti che chiunque può usare da browser o telefono. Questa pagina spiega come collegare, facoltativamente, un assistente IA come ChatGPT o Claude, così da usare CoPantry semplicemente chiedendo. Lo aggiungi tu come connettore personalizzato — nessun agente da costruire e nessun codice da scrivere — e resta facoltativo: l'app funziona benissimo anche senza.",
       "user_intro_skip": "Vuoi solo gestire le ricette?",
       "user_intro_link": "Vai direttamente all'app →",
       "setup_title": "Guida all'installazione",
-      "setup_subtitle": "Tre passaggi per collegare il tuo assistente IA a CoPantry.",
+      "setup_subtitle": "Due modi per collegarsi. Alla maggior parte basta il primo.",
       "step1_title": "Crea una chiave API",
       "step1_desc": "Accedi a CoPantry e vai su Impostazioni → IA & MCP. Dai un nome alla chiave (es. «Claude Desktop»), poi copiala — viene mostrata solo una volta.",
       "step1_btn": "Apri le impostazioni chiave API",
@@ -237,12 +237,22 @@
       "step3_example": "«Cerca nelle mie ricette CoPantry qualcosa con il pollo e programmalo per la cena di domani.»",
       "tools_title": "Riferimento strumenti",
       "ready_title": "Pronto a collegare la tua IA?",
-      "ready_desc": "Crea la tua chiave API in 30 secondi e lascia che il tuo assistente IA prenda il controllo della tua cucina.",
-      "ready_btn": "Ottieni chiave API su app.copantry.com",
-      "ready_note": "Il piano gratuito include 200 azioni IA/mese · Nessuna carta di credito richiesta",
+      "ready_desc": "Aggiungi CoPantry come connettore personalizzato nel tuo assistente, oppure prendi una chiave API per un client configurato da file. In entrambi i casi ci vuole circa un minuto.",
+      "ready_btn": "Apri le impostazioni IA e MCP",
+      "ready_note": "Collegarsi è gratis · Nessuna carta richiesta · Alle azioni IA si applica un limite mensile",
       "what_ai_title": "Cosa può fare il tuo assistente IA",
       "what_ai_subtitle": "Una volta collegato, il tuo assistente IA può gestire queste richieste senza aprire l'app:",
-      "starter_prompt_label": "Prompt di avvio"
+      "starter_prompt_label": "Prompt di avvio",
+      "connector_badge": "Nessun agente necessario",
+      "connector_title": "Aggiungi CoPantry al tuo assistente come connettore personalizzato",
+      "connector_lede": "CoPantry non è ancora nell'elenco dei connettori integrati di ChatGPT o Claude — ma non devi aspettare, e non serve costruire un agente. Entrambi permettono di aggiungere da soli un server MCP personalizzato. Richiede circa un minuto e non serve né chiave API, né file di configurazione, né codice.",
+      "connector_step1": "Apri le impostazioni dei connettori del tuo assistente e scegli di aggiungere un server MCP personalizzato o remoto. In Claude: Impostazioni → Connettori → Aggiungi connettore personalizzato; in ChatGPT si trova in Impostazioni → Connettori, con disponibilità che dipende dal piano.",
+      "connector_step2": "Incolla l'indirizzo MCP di CoPantry qui sotto come URL del server.",
+      "connector_step3": "Accedi con il tuo account CoPantry e approva l'accesso. Poi chiedi semplicemente, nella chat di sempre: «Cosa posso cucinare stasera con quello che ho?»",
+      "connector_url_label": "URL del server MCP",
+      "connector_note": "Il tuo assistente accede tramite la schermata di autorizzazione di CoPantry: nessuna chiave viene salvata nel client e puoi revocare l'accesso quando vuoi in Impostazioni → IA e MCP.",
+      "manual_title": "Preferisci un file di configurazione? Collegati con una chiave API",
+      "manual_lede": "Per i client desktop e di sviluppo configurati tramite file — Claude Desktop, Cursor, Windsurf — o per i tuoi script."
     }
   }
 }

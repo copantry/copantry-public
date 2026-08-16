@@ -25,6 +25,7 @@
 ## For AI assistants & agents
 
 - [Plan from ChatGPT or Claude (MCP)](https://www.copantry.com/features/ai-assistant-mcp): drive Copantry from an MCP-compatible assistant.
+- MCP endpoint: `https://api.copantry.com/mcp`. Copantry is **not listed in any assistant's built-in connector directory yet** — users add it themselves as a **custom (remote) MCP server**: paste that URL into the assistant's custom-connector setting and sign in with a Copantry account. No agent to build, no local install, no code, and no API key on that path (an API key is only for file-configured desktop/coding clients).
 - [Full MCP tool reference](https://www.copantry.com/llms-full.txt): every MCP tool, its parameters and when to use it.
 
 ## Learn

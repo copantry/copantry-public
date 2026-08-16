@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Ikke utvikler?",
       "user_intro_title": "Du trenger ikke dette for å bruke CoPantry.",
-      "user_intro_desc": "CoPantry er en app for oppskrifter og måltidsplanlegging som hvem som helst kan bruke fra en nettleser eller telefon. Denne siden forklarer hvordan du eventuelt kobler til en KI-assistent som Claude for å styre CoPantry med stemmen. Det er en ekstrafunksjon – appen fungerer perfekt uten.",
+      "user_intro_desc": "CoPantry er en oppskrifts- og måltidsplanleggingsapp som hvem som helst kan bruke i nettleseren eller på telefonen. Denne siden forklarer hvordan du eventuelt kobler til en KI-assistent som ChatGPT eller Claude, slik at du kan styre CoPantry bare ved å spørre. Du legger den til selv som en egendefinert kobling — ingen agent å bygge og ingen kode å skrive — og det er fortsatt valgfritt: appen fungerer utmerket uten.",
       "user_intro_skip": "Vil du bare styre oppskrifter?",
       "user_intro_link": "Gå rett til appen →",
       "setup_title": "Oppsettsveiledning",
-      "setup_subtitle": "Tre steg for å koble KI-assistenten din til CoPantry.",
+      "setup_subtitle": "To måter å koble til på. De fleste trenger bare den første.",
       "step1_title": "Opprett en API-nøkkel",
       "step1_desc": "Logg inn på CoPantry og gå til Innstillinger → KI og MCP. Gi nøkkelen et navn (f.eks. «Claude Desktop») og kopier den – den vises bare én gang.",
       "step1_btn": "Åpne innstillinger for API-nøkler",
@@ -237,12 +237,22 @@
       "step3_example": "«Søk i CoPantry-oppskriftene mine etter noe med kylling, og legg det inn som middag i morgen.»",
       "tools_title": "Verktøyreferanse",
       "ready_title": "Klar til å koble til KI-en din?",
-      "ready_desc": "Opprett API-nøkkelen din på 30 sekunder, og la KI-assistenten ta over kjøkkenet.",
-      "ready_btn": "Hent API-nøkkel på app.copantry.com",
-      "ready_note": "Gratisabonnementet inkluderer 200 KI-handlinger/måned · Ingen betalingskort nødvendig",
+      "ready_desc": "Legg CoPantry til som en egendefinert kobling i assistenten din, eller hent en API-nøkkel til en klient som settes opp via fil. Begge deler tar omtrent ett minutt.",
+      "ready_btn": "Åpne KI- og MCP-innstillinger",
+      "ready_note": "Gratis å koble til · Ingen bankkort · Det gjelder en månedlig grense for KI-handlinger",
       "what_ai_title": "Hva KI-assistenten din kan gjøre",
       "what_ai_subtitle": "Når tilkoblingen er på plass, kan KI-assistenten din håndtere disse forespørslene uten at du åpner appen:",
-      "starter_prompt_label": "Startprompt"
+      "starter_prompt_label": "Startprompt",
+      "connector_badge": "Ingen agent nødvendig",
+      "connector_title": "Legg CoPantry til i assistenten din som en egendefinert kobling",
+      "connector_lede": "CoPantry står ennå ikke i den innebygde koblingsoversikten til ChatGPT eller Claude — men det trenger du ikke vente på, og du trenger ingen agent. Begge lar deg legge til en egendefinert MCP-server selv. Det tar omtrent ett minutt og krever verken API-nøkkel, konfigurasjonsfil eller kode.",
+      "connector_step1": "Åpne koblingsinnstillingene i assistenten din og velg å legge til en egendefinert eller ekstern MCP-server. I Claude: Innstillinger → Koblinger → Legg til egendefinert kobling; i ChatGPT ligger det under Innstillinger → Koblinger, der tilgjengeligheten avhenger av abonnementet ditt.",
+      "connector_step2": "Lim inn CoPantry-MCP-adressen nedenfor som server-URL.",
+      "connector_step3": "Logg inn med CoPantry-kontoen din og godkjenn tilgangen. Så spør du bare, i den vanlige chatten: «Hva kan jeg lage i kveld med det jeg har?»",
+      "connector_url_label": "URL til MCP-serveren",
+      "connector_note": "Assistenten din logger inn via CoPantrys eget godkjenningsvindu, så ingen nøkkel lagres i klienten, og du kan når som helst trekke tilbake tilgangen under Innstillinger → KI og MCP.",
+      "manual_title": "Foretrekker du en konfigurasjonsfil? Koble til med en API-nøkkel",
+      "manual_lede": "For skrivebords- og utviklerklienter som settes opp via en fil — Claude Desktop, Cursor, Windsurf — eller for dine egne skript."
     }
   }
 }

@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Ikke udvikler?",
       "user_intro_title": "Du har ikke brug for dette for at bruge CoPantry.",
-      "user_intro_desc": "CoPantry er en app til opskrifter og måltidsplanlægning, som alle kan bruge fra en browser eller telefon. Denne side forklarer, hvordan du valgfrit forbinder en AI-assistent som Claude for at styre CoPantry med stemmen. Det er en ekstrafunktion – appen fungerer perfekt uden.",
+      "user_intro_desc": "CoPantry er en opskrifts- og madplanlægningsapp, som alle kan bruge i browseren eller på telefonen. Denne side forklarer, hvordan du eventuelt forbinder en AI-assistent som ChatGPT eller Claude, så du kan styre CoPantry ved bare at spørge. Du tilføjer den selv som en brugerdefineret forbindelse — ingen agent at bygge og ingen kode at skrive — og det er stadig valgfrit: appen fungerer fint uden.",
       "user_intro_skip": "Vil du bare styre opskrifter?",
       "user_intro_link": "Gå direkte til appen →",
       "setup_title": "Opsætningsguide",
-      "setup_subtitle": "Tre trin til at forbinde din AI-assistent med CoPantry.",
+      "setup_subtitle": "To måder at forbinde på. De fleste har kun brug for den første.",
       "step1_title": "Opret en API-nøgle",
       "step1_desc": "Log ind på CoPantry, og gå til Indstillinger → AI og MCP. Navngiv din nøgle (f.eks. “Claude Desktop”), og kopiér den – den vises kun én gang.",
       "step1_btn": "Åbn indstillinger for API-nøgler",
@@ -237,12 +237,22 @@
       "step3_example": "“Søg i mine CoPantry-opskrifter efter noget med kylling, og læg det ind som aftensmad i morgen.”",
       "tools_title": "Værktøjsreference",
       "ready_title": "Klar til at forbinde din AI?",
-      "ready_desc": "Opret din API-nøgle på 30 sekunder, og lad din AI-assistent overtage køkkenet.",
-      "ready_btn": "Hent API-nøgle på app.copantry.com",
-      "ready_note": "Gratisabonnementet omfatter 200 AI-handlinger/måned · Intet kreditkort påkrævet",
+      "ready_desc": "Tilføj CoPantry som en brugerdefineret forbindelse i din assistent, eller hent en API-nøgle til en klient, der sættes op via en fil. Begge dele tager cirka et minut.",
+      "ready_btn": "Åbn AI- og MCP-indstillinger",
+      "ready_note": "Gratis at forbinde · Intet kreditkort · Der gælder en månedlig grænse for AI-handlinger",
       "what_ai_title": "Hvad din AI-assistent kan",
       "what_ai_subtitle": "Når forbindelsen er oprettet, kan din AI-assistent klare disse forespørgsler, uden at du åbner appen:",
-      "starter_prompt_label": "Startprompt"
+      "starter_prompt_label": "Startprompt",
+      "connector_badge": "Ingen agent nødvendig",
+      "connector_title": "Tilføj CoPantry til din assistent som en brugerdefineret forbindelse",
+      "connector_lede": "CoPantry står endnu ikke i ChatGPT's eller Claudes indbyggede oversigt over forbindelser — men det behøver du ikke vente på, og du skal ikke bygge en agent. Begge lader dig selv tilføje en brugerdefineret MCP-server. Det tager cirka et minut og kræver hverken API-nøgle, konfigurationsfil eller kode.",
+      "connector_step1": "Åbn assistentens indstillinger for forbindelser, og vælg at tilføje en brugerdefineret eller ekstern MCP-server. I Claude: Indstillinger → Forbindelser → Tilføj brugerdefineret forbindelse; i ChatGPT ligger det under Indstillinger → Forbindelser, hvor tilgængeligheden afhænger af dit abonnement.",
+      "connector_step2": "Indsæt CoPantrys MCP-adresse nedenfor som server-URL.",
+      "connector_step3": "Log ind med din CoPantry-konto, og godkend adgangen. Derefter spørger du bare i din sædvanlige chat: “Hvad kan jeg lave i aften med det, jeg har?”",
+      "connector_url_label": "URL til MCP-serveren",
+      "connector_note": "Din assistent logger ind via CoPantrys eget godkendelsesbillede, så der gemmes ingen nøgle i klienten, og du kan altid trække adgangen tilbage under Indstillinger → AI og MCP.",
+      "manual_title": "Foretrækker du en konfigurationsfil? Forbind med en API-nøgle",
+      "manual_lede": "Til skrivebords- og udviklerklienter, der sættes op via en fil — Claude Desktop, Cursor, Windsurf — eller til dine egne scripts."
     }
   }
 }

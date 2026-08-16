@@ -118,7 +118,7 @@ const STATIC = {
   "/features/ai-assistant-mcp": {
     title: titled("Plan meals from ChatGPT or Claude (MCP)"),
     description:
-      "Copantry runs an MCP server, so AI assistants like Claude and ChatGPT-style tools can read your pantry, plan meals, import recipes and build shopping lists for you.",
+      "Add Copantry to ChatGPT or Claude yourself as a custom connector — no agent, no code — and let your assistant read your pantry, plan meals, import recipes and build your shopping list.",
     priority: 0.8,
     changefreq: "monthly",
     schema: () => [
@@ -133,7 +133,7 @@ const STATIC = {
   "/mcp": {
     title: titled("MCP server & API for AI assistants"),
     description:
-      "Connect Copantry to any MCP-compatible AI assistant. Read your pantry, plan meals, import recipes and manage shopping lists over the Model Context Protocol.",
+      "Connect Copantry to any MCP-compatible assistant as a custom connector in about a minute — no agent required. Pantry, meal plans, recipe imports and shopping lists over the Model Context Protocol.",
     priority: 0.6,
     changefreq: "monthly",
     schema: () => [faqSchema(FAQS.aiAssistant)],

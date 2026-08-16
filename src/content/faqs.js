@@ -177,6 +177,14 @@ export const FAQS = {
       a: 'MCP (Model Context Protocol) is an open standard that lets AI assistants securely use external tools. Because Copantry exposes its features over MCP, you can simply ask your assistant to "plan a waste-free week" and it can act in your real kitchen data.',
     },
     {
+      q: "Can I add Copantry to ChatGPT or Claude myself?",
+      a: "Yes. Copantry is not in their built-in connector directories yet, but you do not have to wait for that: both let you add a custom (remote) MCP server yourself. Paste https://api.copantry.com/mcp into your assistant's custom-connector setting, sign in with your Copantry account, and it behaves like any listed connector.",
+    },
+    {
+      q: "Do I need an AI agent, a plugin install, or any code?",
+      a: "No. There is no agent to build, nothing to install and no code to write — adding Copantry as a custom connector takes about a minute in your assistant's settings, and you then just talk to the assistant you already use. Configuring an API key by hand is only needed for desktop and coding clients that are set up through a file.",
+    },
+    {
       q: "Do I need to use AI to use Copantry?",
       a: "No. The AI assistant connection is an optional power feature. Copantry works fully on its own through the web and mobile apps — the MCP server is there for people who want to drive it from their assistant.",
     },

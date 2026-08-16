@@ -27,9 +27,26 @@ CoPantry operates a production-ready Model Context Protocol (MCP) server. This a
 
 - **URL**: https://api.copantry.com/mcp
 - **Transport**: Streamable HTTP (stateless, JSON responses)
-- **Auth**: Bearer token - API key generated at https://app.copantry.com/settings/mcp
+- **Auth**: OAuth 2.1 (dynamic client registration + PKCE) for remote connectors, or a Bearer API key generated at https://app.copantry.com/settings/mcp
 - **SDK**: @modelcontextprotocol/sdk v2.0 (official Anthropic MCP TypeScript SDK)
-- **Scope**: Each API key is scoped to one household
+- **Scope**: Each connection is scoped to one household
+
+### Adding CoPantry as a custom connector (no agent, no code)
+
+CoPantry is **not yet listed in any assistant's built-in connector directory**. Users do
+not need to wait for that, and they do not need to build an agent or run anything locally:
+ChatGPT and Claude both allow adding a **custom (remote) MCP server** manually.
+
+1. In the assistant's connector settings, choose to add a custom / remote MCP server.
+   (Claude: Settings → Connectors → Add custom connector. ChatGPT: Settings → Connectors,
+   where availability depends on the plan.)
+2. Enter `https://api.copantry.com/mcp` as the server URL.
+3. Sign in with a CoPantry account and approve access.
+
+The client registers itself (`POST /oauth/register`) and completes an authorization-code
++ PKCE flow, so **no API key is entered or stored in the client**. Access is revocable at
+any time from Settings → AI & MCP in the app. The API-key setup below is only for desktop
+and coding clients that are configured through a file.
 
 ### Quick Setup (Claude Desktop)
 

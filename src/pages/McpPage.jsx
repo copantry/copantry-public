@@ -1215,14 +1215,24 @@ export default function McpPage() {
         <p className="text-lg text-gray-500 leading-relaxed max-w-2xl">
           A production-ready MCP implementation that lets Claude, GPT, and any
           AI assistant read and write your household's recipes, pantry, meal
-          calendar, and shopping lists.
+          calendar, and shopping lists. Add it to the assistant you already use
+          as a custom connector — there is no agent to build and no code to
+          write.
         </p>
-        <a
-          href="https://app.copantry.com/settings/mcp"
-          className="mt-6 inline-flex items-center gap-2 px-5 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl transition-colors shadow-md shadow-orange-200/60"
-        >
-          <Key size={16} /> Get your API key <ArrowRight size={15} />
-        </a>
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <a
+            href="#custom-connector"
+            className="inline-flex items-center gap-2 px-5 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl transition-colors shadow-md shadow-orange-200/60"
+          >
+            <Bot size={16} /> Add it to your assistant <ArrowRight size={15} />
+          </a>
+          <a
+            href="https://app.copantry.com/settings/mcp"
+            className="inline-flex items-center gap-2 px-5 py-3 border border-gray-200 text-gray-700 font-bold rounded-xl hover:bg-gray-50 transition-colors"
+          >
+            <Key size={16} /> Get an API key
+          </a>
+        </div>
       </div>
 
       {/* ── What is MCP ──────────────────────────────────── */}
@@ -1251,9 +1261,11 @@ export default function McpPage() {
               https://api.copantry.com/mcp
             </code>{" "}
             that exposes {totalTools} tools covering your household's recipes,
-            pantry, meal calendar, and shopping lists. Each request is
-            authenticated with a personal API key scoped to your household. The
-            server is implemented using the{" "}
+            pantry, meal calendar, and shopping lists. It is a standard remote
+            MCP server, so you can add it to ChatGPT or Claude yourself as a
+            custom connector and sign in with your CoPantry account — no agent
+            and no code. Every request is authenticated and scoped to a single
+            household. The server is implemented using the{" "}
             <a
               href="https://modelcontextprotocol.io"
               target="_blank"
@@ -1337,8 +1349,8 @@ export default function McpPage() {
             },
             {
               icon: Shield,
-              title: "Bearer Token Auth",
-              desc: "Every request requires an Authorization: Bearer <key> header. Keys are scoped to your household.",
+              title: "OAuth 2.1 or API key",
+              desc: "Remote connectors register themselves and sign in with PKCE — no key to paste. File-configured clients send an Authorization: Bearer header. Either way, access is scoped to one household.",
             },
             {
               icon: Code2,
@@ -1375,6 +1387,63 @@ export default function McpPage() {
           {t("mcp.setup_title")}
         </h2>
         <p className="text-gray-500 mb-6">{t("mcp.setup_subtitle")}</p>
+
+        {/* ── Route A: add it yourself as a custom connector ──
+            This is how most people will actually connect, and it needs no
+            API key, no config file and no agent — so it leads. */}
+        <div
+          className="mb-10 border-2 border-orange-200 bg-orange-50/60 rounded-2xl p-5 md:p-6"
+          id="custom-connector"
+        >
+          <span className="inline-block text-[10px] font-black uppercase tracking-widest text-orange-600 bg-orange-100 px-2 py-0.5 rounded-full mb-2">
+            {t("mcp.connector_badge")}
+          </span>
+          <h3 className="text-lg font-extrabold text-gray-900 mb-2">
+            {t("mcp.connector_title")}
+          </h3>
+          <p className="text-sm text-gray-600 leading-relaxed mb-4">
+            {t("mcp.connector_lede")}
+          </p>
+
+          <ol className="space-y-3 mb-4">
+            {[
+              t("mcp.connector_step1"),
+              t("mcp.connector_step2"),
+              t("mcp.connector_step3"),
+            ].map((step, i) => (
+              <li key={step} className="flex gap-3">
+                <span className="flex items-center justify-center w-6 h-6 rounded-full bg-white border border-orange-200 text-orange-600 text-xs font-black shrink-0">
+                  {i + 1}
+                </span>
+                <span className="text-sm text-gray-700 leading-relaxed">
+                  {step}
+                </span>
+              </li>
+            ))}
+          </ol>
+
+          <div className="bg-white border border-orange-100 rounded-xl p-4 flex flex-col sm:flex-row sm:items-center gap-3">
+            <div className="flex-1 min-w-0">
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">
+                {t("mcp.connector_url_label")}
+              </p>
+              <code className="text-sm font-mono text-gray-800 break-all">
+                https://api.copantry.com/mcp
+              </code>
+            </div>
+            <CopyButton text="https://api.copantry.com/mcp" />
+          </div>
+
+          <p className="text-xs text-gray-500 leading-relaxed mt-3">
+            {t("mcp.connector_note")}
+          </p>
+        </div>
+
+        {/* ── Route B: the manual, key-based configuration ── */}
+        <h3 className="text-lg font-extrabold text-gray-900 mb-1">
+          {t("mcp.manual_title")}
+        </h3>
+        <p className="text-sm text-gray-500 mb-6">{t("mcp.manual_lede")}</p>
 
         {/* Step 1 */}
         <div className="mb-6">
@@ -1501,6 +1570,14 @@ export default function McpPage() {
             {
               q: "Does the MCP server work with Claude, ChatGPT, and other AI assistants?",
               a: "Yes. CoPantry uses the standard Streamable HTTP transport defined by the MCP specification, which is supported by Claude Desktop, Cursor, Windsurf, and any client that implements the MCP protocol. For stdio-only clients, use the @copantry/mcp-server npx package.",
+            },
+            {
+              q: "Is CoPantry an official ChatGPT or Claude connector?",
+              a: "Not yet — CoPantry is not listed in their built-in connector directories. That does not stop you using it: both let you add a custom (remote) MCP server yourself, and CoPantry is a standard one. Paste https://api.copantry.com/mcp into your assistant's custom-connector setting, sign in with your CoPantry account, and it works exactly like a listed connector.",
+            },
+            {
+              q: "Do I need to build an agent, install anything, or write code?",
+              a: "No. Adding CoPantry as a custom connector takes about a minute in your assistant's settings — no agent framework, no local install, no code, and no API key. You then talk to your usual assistant in plain language and it calls CoPantry for you. The API key route below exists for desktop and coding clients that are configured through a file, not because it is required.",
             },
             {
               q: "How is my data secured?",

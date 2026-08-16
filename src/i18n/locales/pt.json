@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Não é programador?",
       "user_intro_title": "Não precisa disto para usar o CoPantry.",
-      "user_intro_desc": "O CoPantry é uma app de gestão de receitas e planeamento de refeições que qualquer pessoa pode usar no browser ou no telemóvel. Esta página explica como ligar opcionalmente um assistente IA como o Claude. É uma funcionalidade avançada — a app funciona perfeitamente sem isso.",
+      "user_intro_desc": "O CoPantry é uma aplicação de receitas e planeamento de refeições que qualquer pessoa pode usar no navegador ou no telemóvel. Esta página explica como ligar, opcionalmente, um assistente de IA como o ChatGPT ou o Claude, para usar o CoPantry apenas pedindo. É você que o adiciona como conector personalizado — não há agente para construir nem código para escrever — e continua a ser opcional: a aplicação funciona perfeitamente sem isso.",
       "user_intro_skip": "Só quer gerir receitas?",
       "user_intro_link": "Ir diretamente para a app →",
       "setup_title": "Guia de configuração",
-      "setup_subtitle": "Três passos para ligar o seu assistente IA ao CoPantry.",
+      "setup_subtitle": "Duas formas de ligar. À maioria basta a primeira.",
       "step1_title": "Criar uma chave API",
       "step1_desc": "Inicie sessão no CoPantry e vá a Definições → IA & MCP. Dê um nome à chave (ex. «Claude Desktop»), depois copie-a — só é mostrada uma vez.",
       "step1_btn": "Abrir definições de chave API",
@@ -237,12 +237,22 @@
       "step3_example": "\"Procura nas minhas receitas CoPantry algo com frango e agenda-o para o jantar de amanhã.\"",
       "tools_title": "Referência de ferramentas",
       "ready_title": "Pronto para ligar a sua IA?",
-      "ready_desc": "Crie a sua chave API em 30 segundos e deixe o seu assistente IA tomar conta da sua cozinha.",
-      "ready_btn": "Obter chave API em app.copantry.com",
-      "ready_note": "O plano gratuito inclui 200 ações IA/mês · Sem cartão de crédito",
+      "ready_desc": "Adicione o CoPantry como conector personalizado no seu assistente, ou obtenha uma chave de API para um cliente configurado por ficheiro. Em qualquer dos casos demora cerca de um minuto.",
+      "ready_btn": "Abrir definições de IA e MCP",
+      "ready_note": "Ligar é gratuito · Sem cartão de crédito · Aplica-se um limite mensal às ações de IA",
       "what_ai_title": "O que o seu assistente IA pode fazer",
       "what_ai_subtitle": "Uma vez ligado, o seu assistente IA pode gerir estes pedidos sem abrir a app:",
-      "starter_prompt_label": "Prompt inicial"
+      "starter_prompt_label": "Prompt inicial",
+      "connector_badge": "Não é preciso agente",
+      "connector_title": "Adicione o CoPantry ao seu assistente como conector personalizado",
+      "connector_lede": "O CoPantry ainda não consta do diretório de conectores integrado do ChatGPT nem do Claude — mas não precisa de esperar, nem de construir um agente. Ambos permitem adicionar você mesmo um servidor MCP personalizado. Demora cerca de um minuto e não exige chave de API, ficheiro de configuração nem código.",
+      "connector_step1": "Abra as definições de conectores do seu assistente e escolha adicionar um servidor MCP personalizado ou remoto. No Claude: Definições → Conectores → Adicionar conector personalizado; no ChatGPT fica em Definições → Conectores, com disponibilidade dependente do seu plano.",
+      "connector_step2": "Cole o endereço MCP do CoPantry abaixo como URL do servidor.",
+      "connector_step3": "Inicie sessão com a sua conta CoPantry e aprove o acesso. Depois é só pedir, na conversa do costume: «O que posso cozinhar hoje com o que tenho?»",
+      "connector_url_label": "URL do servidor MCP",
+      "connector_note": "O seu assistente inicia sessão no ecrã de autorização do próprio CoPantry, por isso nenhuma chave fica guardada no cliente e pode revogar o acesso quando quiser em Definições → IA e MCP.",
+      "manual_title": "Prefere um ficheiro de configuração? Ligue-se com uma chave de API",
+      "manual_lede": "Para clientes de desktop e de programação configurados por ficheiro — Claude Desktop, Cursor, Windsurf — ou para os seus próprios scripts."
     }
   }
 }

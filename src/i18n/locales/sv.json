@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Inte utvecklare?",
       "user_intro_title": "Du behöver inte det här för att använda CoPantry.",
-      "user_intro_desc": "CoPantry är en app för recept och måltidsplanering som vem som helst kan använda från en webbläsare eller telefon. Den här sidan förklarar hur du valfritt kopplar en AI-assistent som Claude för att styra CoPantry med rösten. Det är en extrafunktion – appen fungerar utmärkt utan den.",
+      "user_intro_desc": "CoPantry är en recept- och måltidsplaneringsapp som vem som helst kan använda i webbläsaren eller mobilen. Den här sidan förklarar hur du valfritt kopplar in en AI-assistent som ChatGPT eller Claude, så att du kan styra CoPantry genom att bara fråga. Du lägger till den själv som en anpassad anslutning — ingen agent att bygga och ingen kod att skriva — och det förblir frivilligt: appen fungerar utmärkt utan.",
       "user_intro_skip": "Vill du bara sköta recept?",
       "user_intro_link": "Gå direkt till appen →",
       "setup_title": "Installationsguide",
-      "setup_subtitle": "Tre steg för att koppla din AI-assistent till CoPantry.",
+      "setup_subtitle": "Två sätt att ansluta. De flesta behöver bara det första.",
       "step1_title": "Skapa en API-nyckel",
       "step1_desc": "Logga in på CoPantry och gå till Inställningar → AI och MCP. Namnge din nyckel (t.ex. ”Claude Desktop”) och kopiera den – den visas bara en gång.",
       "step1_btn": "Öppna inställningar för API-nycklar",
@@ -237,12 +237,22 @@
       "step3_example": "”Sök i mina CoPantry-recept efter något med kyckling och lägg in det som middag i morgon.”",
       "tools_title": "Verktygsreferens",
       "ready_title": "Redo att koppla din AI?",
-      "ready_desc": "Skapa din API-nyckel på 30 sekunder och låt AI-assistenten ta över köket.",
-      "ready_btn": "Hämta API-nyckel på app.copantry.com",
-      "ready_note": "Gratisabonnemanget omfattar 200 AI-åtgärder/månad · Inget kreditkort krävs",
+      "ready_desc": "Lägg till CoPantry som en anpassad anslutning i din assistent, eller hämta en API-nyckel för en klient som ställs in via fil. Båda tar ungefär en minut.",
+      "ready_btn": "Öppna AI- och MCP-inställningar",
+      "ready_note": "Gratis att ansluta · Inget kort behövs · En månadsgräns gäller för AI-åtgärder",
       "what_ai_title": "Vad din AI-assistent kan göra",
       "what_ai_subtitle": "När allt är kopplat kan din AI-assistent hantera de här förfrågningarna utan att du öppnar appen:",
-      "starter_prompt_label": "Startprompt"
+      "starter_prompt_label": "Startprompt",
+      "connector_badge": "Ingen agent behövs",
+      "connector_title": "Lägg till CoPantry i din assistent som en anpassad anslutning",
+      "connector_lede": "CoPantry finns ännu inte i ChatGPT:s eller Claudes inbyggda katalog över anslutningar — men du behöver inte vänta på det, och du behöver ingen agent. Båda låter dig lägga till en egen MCP-server själv. Det tar ungefär en minut och kräver varken API-nyckel, konfigurationsfil eller kod.",
+      "connector_step1": "Öppna assistentens inställningar för anslutningar och välj att lägga till en anpassad eller fjärransluten MCP-server. I Claude: Inställningar → Anslutningar → Lägg till anpassad anslutning; i ChatGPT finns det under Inställningar → Anslutningar, där tillgängligheten beror på ditt abonnemang.",
+      "connector_step2": "Klistra in CoPantrys MCP-adress nedan som server-URL.",
+      "connector_step3": "Logga in med ditt CoPantry-konto och godkänn åtkomsten. Fråga sedan bara, i din vanliga chatt: ”Vad kan jag laga i kväll med det jag har hemma?”",
+      "connector_url_label": "URL till MCP-servern",
+      "connector_note": "Din assistent loggar in via CoPantrys eget godkännandefönster, så ingen nyckel sparas i klienten och du kan när som helst återkalla åtkomsten under Inställningar → AI och MCP.",
+      "manual_title": "Föredrar du en konfigurationsfil? Anslut med en API-nyckel",
+      "manual_lede": "För skrivbords- och utvecklarklienter som ställs in via en fil — Claude Desktop, Cursor, Windsurf — eller för dina egna skript."
     }
   }
 }

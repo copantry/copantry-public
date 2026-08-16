@@ -88,6 +88,20 @@ use `var(--color-brand-500)` or `bg-brand-500`.
 
 ## Conventions
 
+- **The MCP page leads with the self-service route, not the API key.** Copantry is
+  **not listed in any assistant's built-in connector directory**, and the page says so
+  plainly rather than implying otherwise: readers add it themselves as a **custom
+  (remote) MCP server** — paste `https://api.copantry.com/mcp`, sign in with a Copantry
+  account, done. That path is real because the backend runs full OAuth (dynamic client
+  registration + PKCE, `backend/routes/mcpOAuth.js`), so **no API key is entered or
+  stored in the client**. The API-key + JSON steps still exist, demoted to "prefer a
+  config file?" for file-configured desktop/coding clients. Keep the two in that order:
+  the old page implied a key was mandatory, which reads as "you need to be a developer",
+  and the whole point is that you do not. Copy lives under `mcp.connector_*` /
+  `mcp.manual_*` in **all twelve locale JSONs** (the page is English-only via
+  `NOT_LOCALIZED`, but i18n language follows whatever the visitor arrived with, so the
+  keys must exist everywhere); the assistants' exact menu paths are described loosely
+  on purpose — they move.
 - **Answer-first:** every page/section leads with a direct, self-contained answer
   (the prerendered HTML is what AI engines extract). FAQ answers live in
   `content/faqs.js` and double as `FAQPage` JSON-LD.

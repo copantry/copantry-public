@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Not a developer?",
       "user_intro_title": "You don't need this to use CoPantry.",
-      "user_intro_desc": "CoPantry is a recipe and meal planning app that anyone can use from a browser or phone. This page explains how to optionally connect an AI assistant like Claude to control CoPantry by voice. It's a power feature — the app works perfectly without it.",
+      "user_intro_desc": "CoPantry is a recipe and meal planning app that anyone can use from a browser or phone. This page explains how to optionally connect an AI assistant like ChatGPT or Claude, so you can run CoPantry by just asking. You add it yourself as a custom connector — there is no agent to build and no code to write — and it stays optional: the app works perfectly without it.",
       "user_intro_skip": "Just want to manage recipes?",
       "user_intro_link": "Go straight to the app →",
       "setup_title": "Setup guide",
-      "setup_subtitle": "Three steps to connect your AI assistant to CoPantry.",
+      "setup_subtitle": "Two ways to connect. Most people only need the first.",
       "step1_title": "Create an API key",
       "step1_desc": "Log in to CoPantry and go to Settings → AI & MCP. Name your key (e.g. \"Claude Desktop\"), then copy it — it is only shown once.",
       "step1_btn": "Open API key settings",
@@ -237,12 +237,22 @@
       "step3_example": "\"Search my CoPantry recipes for something with chicken and schedule it for dinner tomorrow.\"",
       "tools_title": "Tool Reference",
       "ready_title": "Ready to connect your AI?",
-      "ready_desc": "Create your API key in 30 seconds and let your AI assistant take control of your kitchen.",
-      "ready_btn": "Get API key at app.copantry.com",
-      "ready_note": "Free plan includes 200 AI actions/month · No credit card required",
+      "ready_desc": "Add CoPantry as a custom connector in your assistant, or grab an API key for a file-configured client. Either way, it takes about a minute.",
+      "ready_btn": "Open AI & MCP settings",
+      "ready_note": "Free to connect · No credit card required · A monthly limit applies to AI actions",
       "what_ai_title": "What your AI assistant can do",
       "what_ai_subtitle": "Once connected, your AI assistant can handle these requests without you opening the app:",
-      "starter_prompt_label": "Starter prompt"
+      "starter_prompt_label": "Starter prompt",
+      "connector_badge": "No agent required",
+      "connector_title": "Add CoPantry to your assistant as a custom connector",
+      "connector_lede": "CoPantry is not listed in ChatGPT's or Claude's built-in connector directory yet — but you do not have to wait for that, and you do not need to build an agent. Both let you add a custom MCP server yourself. It takes about a minute and needs no API key, no config file and no code.",
+      "connector_step1": "Open your assistant's connector settings and choose to add a custom or remote MCP server. In Claude that is Settings → Connectors → Add custom connector; in ChatGPT it is under Settings → Connectors, where availability depends on your plan.",
+      "connector_step2": "Paste the CoPantry MCP address below as the server URL.",
+      "connector_step3": "Sign in with your CoPantry account and approve access. Then just ask, in your normal chat: “What can I cook tonight with what I have?”",
+      "connector_url_label": "MCP server URL",
+      "connector_note": "Your assistant signs in through CoPantry's own approval screen, so no key is stored in the client and you can revoke access at any time in Settings → AI & MCP.",
+      "manual_title": "Prefer a config file? Connect with an API key",
+      "manual_lede": "For desktop and coding clients that are set up through a file — Claude Desktop, Cursor, Windsurf — or for your own scripts."
     }
   }
 }

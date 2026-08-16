@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Pas développeur ?",
       "user_intro_title": "Vous n'avez pas besoin de ceci pour utiliser CoPantry.",
-      "user_intro_desc": "CoPantry est une application de gestion de recettes et de planification de repas que tout le monde peut utiliser depuis un navigateur ou un téléphone. Cette page explique comment connecter optionnellement un assistant IA comme Claude. C'est une fonctionnalité avancée — l'application fonctionne parfaitement sans.",
+      "user_intro_desc": "CoPantry est une application de recettes et de planification de repas que tout le monde peut utiliser depuis un navigateur ou un téléphone. Cette page explique comment y connecter, en option, un assistant IA comme ChatGPT ou Claude, pour piloter CoPantry simplement en le lui demandant. Vous l'ajoutez vous-même comme connecteur personnalisé — aucun agent à développer, aucun code à écrire — et cela reste facultatif : l'application fonctionne très bien sans.",
       "user_intro_skip": "Vous voulez juste gérer des recettes ?",
       "user_intro_link": "Aller directement à l'application →",
       "setup_title": "Guide d'installation",
-      "setup_subtitle": "Trois étapes pour connecter votre assistant IA à CoPantry.",
+      "setup_subtitle": "Deux façons de connecter. La première suffit à la plupart des gens.",
       "step1_title": "Créer une clé API",
       "step1_desc": "Connectez-vous à CoPantry et allez dans Paramètres → IA & MCP. Nommez votre clé (ex. « Claude Desktop »), puis copiez-la — elle n'est affichée qu'une seule fois.",
       "step1_btn": "Ouvrir les paramètres de clé API",
@@ -237,12 +237,22 @@
       "step3_example": "« Cherche dans mes recettes CoPantry quelque chose avec du poulet et programme-le pour le dîner demain. »",
       "tools_title": "Référence des outils",
       "ready_title": "Prêt à connecter votre IA ?",
-      "ready_desc": "Créez votre clé API en 30 secondes et laissez votre assistant IA prendre le contrôle de votre cuisine.",
-      "ready_btn": "Obtenir une clé API sur app.copantry.com",
-      "ready_note": "Le plan gratuit inclut 200 actions IA/mois · Aucune carte bancaire requise",
+      "ready_desc": "Ajoutez CoPantry comme connecteur personnalisé dans votre assistant, ou récupérez une clé d'API pour un client configuré par fichier. Dans les deux cas, cela prend environ une minute.",
+      "ready_btn": "Ouvrir les réglages IA et MCP",
+      "ready_note": "Connexion gratuite · Sans carte bancaire · Une limite mensuelle s'applique aux actions IA",
       "what_ai_title": "Ce que votre assistant IA peut faire",
       "what_ai_subtitle": "Une fois connecté, votre assistant IA peut gérer ces demandes sans que vous ouvriez l'application :",
-      "starter_prompt_label": "Invite de démarrage"
+      "starter_prompt_label": "Invite de démarrage",
+      "connector_badge": "Aucun agent nécessaire",
+      "connector_title": "Ajoutez CoPantry à votre assistant comme connecteur personnalisé",
+      "connector_lede": "CoPantry ne figure pas encore dans l'annuaire de connecteurs intégré de ChatGPT ou de Claude — mais vous n'avez pas à attendre, et vous n'avez pas besoin de développer un agent. Les deux permettent d'ajouter soi-même un serveur MCP personnalisé. Cela prend environ une minute, sans clé d'API, sans fichier de configuration et sans code.",
+      "connector_step1": "Ouvrez les réglages de connecteurs de votre assistant et choisissez d'ajouter un serveur MCP personnalisé ou distant. Dans Claude : Réglages → Connecteurs → Ajouter un connecteur personnalisé ; dans ChatGPT, sous Réglages → Connecteurs, la disponibilité dépendant de votre forfait.",
+      "connector_step2": "Collez l'adresse MCP de CoPantry ci-dessous comme URL du serveur.",
+      "connector_step3": "Connectez-vous avec votre compte CoPantry et autorisez l'accès. Ensuite, demandez simplement, dans votre conversation habituelle : « Qu'est-ce que je peux cuisiner ce soir avec ce que j'ai ? »",
+      "connector_url_label": "URL du serveur MCP",
+      "connector_note": "Votre assistant se connecte via l'écran d'autorisation de CoPantry : aucune clé n'est stockée dans le client et vous pouvez révoquer l'accès à tout moment dans Réglages → IA et MCP.",
+      "manual_title": "Vous préférez un fichier de configuration ? Connectez-vous avec une clé d'API",
+      "manual_lede": "Pour les clients de bureau et de développement configurés par fichier — Claude Desktop, Cursor, Windsurf — ou pour vos propres scripts."
     }
   }
 }

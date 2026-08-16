@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Kein Entwickler?",
       "user_intro_title": "Sie brauchen das nicht, um CoPantry zu nutzen.",
-      "user_intro_desc": "CoPantry ist eine Rezept- und Mahlzeitenplanungs-App, die jeder im Browser oder auf dem Handy nutzen kann. Diese Seite erklärt, wie man optional einen KI-Assistenten wie Claude verbindet. Es ist eine Power-User-Funktion — die App funktioniert auch ohne perfekt.",
+      "user_intro_desc": "CoPantry ist eine Rezept- und Essensplanungs-App, die jede und jeder im Browser oder auf dem Handy nutzen kann. Diese Seite erklärt, wie Sie optional einen KI-Assistenten wie ChatGPT oder Claude anbinden, um CoPantry einfach per Nachfrage zu steuern. Sie fügen ihn selbst als benutzerdefinierten Connector hinzu — kein Agent zu bauen, kein Code zu schreiben — und es bleibt optional: Die App funktioniert auch ohne bestens.",
       "user_intro_skip": "Möchten Sie nur Rezepte verwalten?",
       "user_intro_link": "Direkt zur App →",
       "setup_title": "Einrichtungsanleitung",
-      "setup_subtitle": "Drei Schritte, um Ihren KI-Assistenten mit CoPantry zu verbinden.",
+      "setup_subtitle": "Zwei Wege zur Verbindung. Für die meisten reicht der erste.",
       "step1_title": "API-Schlüssel erstellen",
       "step1_desc": "Melden Sie sich bei CoPantry an und gehen Sie zu Einstellungen → KI & MCP. Benennen Sie Ihren Schlüssel (z.B. »Claude Desktop«), dann kopieren Sie ihn — er wird nur einmal angezeigt.",
       "step1_btn": "API-Schlüssel-Einstellungen öffnen",
@@ -237,12 +237,22 @@
       "step3_example": "»Suche in meinen CoPantry-Rezepten nach etwas mit Hühnchen und plane es für das Abendessen morgen.«",
       "tools_title": "Tool-Referenz",
       "ready_title": "Bereit, Ihre KI zu verbinden?",
-      "ready_desc": "Erstellen Sie Ihren API-Schlüssel in 30 Sekunden und lassen Sie Ihren KI-Assistenten Ihre Küche übernehmen.",
-      "ready_btn": "API-Schlüssel bei app.copantry.com holen",
-      "ready_note": "Kostenloser Plan enthält 200 KI-Aktionen/Monat · Keine Kreditkarte erforderlich",
+      "ready_desc": "Fügen Sie CoPantry als benutzerdefinierten Connector in Ihrem Assistenten hinzu, oder holen Sie sich einen API-Schlüssel für einen per Datei konfigurierten Client. Beides dauert etwa eine Minute.",
+      "ready_btn": "KI- und MCP-Einstellungen öffnen",
+      "ready_note": "Verbinden ist kostenlos · Keine Kreditkarte nötig · Für KI-Aktionen gilt ein Monatslimit",
       "what_ai_title": "Was Ihr KI-Assistent tun kann",
       "what_ai_subtitle": "Einmal verbunden, kann Ihr KI-Assistent diese Anfragen bearbeiten, ohne die App zu öffnen:",
-      "starter_prompt_label": "Starter-Prompt"
+      "starter_prompt_label": "Starter-Prompt",
+      "connector_badge": "Kein Agent nötig",
+      "connector_title": "CoPantry als benutzerdefinierten Connector in Ihrem Assistenten hinzufügen",
+      "connector_lede": "CoPantry steht noch nicht im integrierten Connector-Verzeichnis von ChatGPT oder Claude — darauf müssen Sie aber nicht warten, und einen Agenten brauchen Sie auch nicht. Bei beiden können Sie selbst einen benutzerdefinierten MCP-Server hinzufügen. Das dauert etwa eine Minute und braucht weder API-Schlüssel noch Konfigurationsdatei noch Code.",
+      "connector_step1": "Öffnen Sie die Connector-Einstellungen Ihres Assistenten und wählen Sie das Hinzufügen eines benutzerdefinierten bzw. Remote-MCP-Servers. In Claude: Einstellungen → Connectors → Benutzerdefinierten Connector hinzufügen; in ChatGPT unter Einstellungen → Connectors, wobei die Verfügbarkeit vom Tarif abhängt.",
+      "connector_step2": "Fügen Sie die untenstehende CoPantry-MCP-Adresse als Server-URL ein.",
+      "connector_step3": "Melden Sie sich mit Ihrem CoPantry-Konto an und bestätigen Sie den Zugriff. Danach fragen Sie einfach im gewohnten Chat: „Was kann ich heute Abend mit dem kochen, was da ist?“",
+      "connector_url_label": "MCP-Server-URL",
+      "connector_note": "Ihr Assistent meldet sich über den Freigabe-Dialog von CoPantry an. Es wird kein Schlüssel im Client gespeichert, und Sie können den Zugriff jederzeit unter Einstellungen → KI & MCP widerrufen.",
+      "manual_title": "Lieber eine Konfigurationsdatei? Mit API-Schlüssel verbinden",
+      "manual_lede": "Für Desktop- und Entwickler-Clients, die über eine Datei eingerichtet werden — Claude Desktop, Cursor, Windsurf — oder für eigene Skripte."
     }
   }
 }

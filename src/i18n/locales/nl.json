@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Geen ontwikkelaar?",
       "user_intro_title": "Je hebt dit niet nodig om CoPantry te gebruiken.",
-      "user_intro_desc": "CoPantry is een app voor recepten en maaltijdplanning die iedereen vanuit een browser of telefoon kan gebruiken. Deze pagina legt uit hoe je er desgewenst een AI-assistent zoals Claude aan koppelt om CoPantry met je stem te bedienen. Het is een extraatje voor gevorderden — de app werkt er prima zonder.",
+      "user_intro_desc": "CoPantry is een recepten- en maaltijdplanner die iedereen kan gebruiken in de browser of op de telefoon. Deze pagina legt uit hoe je er optioneel een AI-assistent zoals ChatGPT of Claude aan koppelt, zodat je CoPantry kunt bedienen door het gewoon te vragen. Je voegt het zelf toe als aangepaste connector — geen agent om te bouwen en geen code om te schrijven — en het blijft optioneel: de app werkt prima zonder.",
       "user_intro_skip": "Wil je gewoon je recepten beheren?",
       "user_intro_link": "Ga direct naar de app →",
       "setup_title": "Installatiegids",
-      "setup_subtitle": "In drie stappen koppel je je AI-assistent aan CoPantry.",
+      "setup_subtitle": "Twee manieren om te koppelen. De meesten hebben genoeg aan de eerste.",
       "step1_title": "Maak een API-sleutel aan",
       "step1_desc": "Log in bij CoPantry en ga naar Instellingen → AI & MCP. Geef je sleutel een naam (bijv. \"Claude Desktop\") en kopieer hem — hij wordt maar één keer getoond.",
       "step1_btn": "Instellingen voor API-sleutels openen",
@@ -237,12 +237,22 @@
       "step3_example": "\"Zoek in mijn CoPantry-recepten iets met kip en zet het morgen op het menu voor het avondeten.\"",
       "tools_title": "Overzicht van de tools",
       "ready_title": "Klaar om je AI te koppelen?",
-      "ready_desc": "Maak in 30 seconden je API-sleutel aan en laat je AI-assistent je keuken overnemen.",
-      "ready_btn": "Haal je API-sleutel op via app.copantry.com",
-      "ready_note": "Het gratis abonnement bevat 200 AI-acties/maand · Geen creditcard nodig",
+      "ready_desc": "Voeg CoPantry toe als aangepaste connector in je assistent, of haal een API-sleutel op voor een client die via een bestand wordt ingesteld. Allebei kost het ongeveer een minuut.",
+      "ready_btn": "AI- en MCP-instellingen openen",
+      "ready_note": "Koppelen is gratis · Geen creditcard nodig · Voor AI-acties geldt een maandlimiet",
       "what_ai_title": "Wat je AI-assistent kan doen",
       "what_ai_subtitle": "Eenmaal gekoppeld kan je AI-assistent deze verzoeken afhandelen zonder dat je de app opent:",
-      "starter_prompt_label": "Voorbeeldprompt"
+      "starter_prompt_label": "Voorbeeldprompt",
+      "connector_badge": "Geen agent nodig",
+      "connector_title": "Voeg CoPantry als aangepaste connector toe aan je assistent",
+      "connector_lede": "CoPantry staat nog niet in de ingebouwde connectorlijst van ChatGPT of Claude — maar daar hoef je niet op te wachten, en je hoeft ook geen agent te bouwen. Bij allebei kun je zelf een aangepaste MCP-server toevoegen. Dat kost ongeveer een minuut en vraagt geen API-sleutel, geen configuratiebestand en geen code.",
+      "connector_step1": "Open de connectorinstellingen van je assistent en kies voor het toevoegen van een aangepaste of externe MCP-server. In Claude: Instellingen → Connectors → Aangepaste connector toevoegen; in ChatGPT staat het onder Instellingen → Connectors, waarbij de beschikbaarheid van je abonnement afhangt.",
+      "connector_step2": "Plak het CoPantry-MCP-adres hieronder als server-URL.",
+      "connector_step3": "Log in met je CoPantry-account en keur de toegang goed. Vraag daarna gewoon in je gebruikelijke chat: “Wat kan ik vanavond koken met wat ik in huis heb?”",
+      "connector_url_label": "URL van de MCP-server",
+      "connector_note": "Je assistent logt in via het goedkeuringsscherm van CoPantry zelf, dus er wordt geen sleutel in de client bewaard en je kunt de toegang altijd intrekken bij Instellingen → AI en MCP.",
+      "manual_title": "Liever een configuratiebestand? Koppelen met een API-sleutel",
+      "manual_lede": "Voor desktop- en ontwikkelclients die via een bestand worden ingesteld — Claude Desktop, Cursor, Windsurf — of voor je eigen scripts."
     }
   }
 }

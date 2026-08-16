@@ -1002,7 +1002,7 @@ export const HOME = {
       },
       {
         title: "Plan from ChatGPT or Claude",
-        desc: "Connect your AI assistant and just ask it to plan a waste-free week. You may not find this anywhere else.",
+        desc: "Add Copantry as a custom connector in ChatGPT or Claude — no agent, no code — then just ask it to plan a waste-free week. Almost nowhere else lets you do that.",
       },
     ],
     whyTeaser: "How Copantry compares to other kinds of apps",
@@ -1100,7 +1100,7 @@ export const HOME = {
       },
       {
         title: "Planifiez depuis ChatGPT ou Claude",
-        desc: "Connectez votre assistant IA et demandez-lui simplement de planifier une semaine zéro gaspi. Vous ne trouverez ça presque nulle part ailleurs.",
+        desc: "Ajoutez Copantry comme connecteur personnalisé dans ChatGPT ou Claude — sans agent ni code — puis demandez-lui de planifier une semaine zéro gaspi. Vous ne trouverez ça presque nulle part ailleurs.",
       },
     ],
     whyTeaser: "Comment Copantry se compare aux autres types d’applis",
@@ -1196,7 +1196,7 @@ export const HOME = {
       },
       {
         title: "Pianifica da ChatGPT o Claude",
-        desc: "Collega il tuo assistente IA e chiedigli di pianificare una settimana senza sprechi. Difficile trovarlo altrove.",
+        desc: "Aggiungi Copantry come connettore personalizzato in ChatGPT o Claude — senza agenti né codice — e chiedigli di pianificare una settimana senza sprechi. Difficile trovarlo altrove.",
       },
     ],
     whyTeaser: "Come Copantry si confronta con gli altri tipi di app",
@@ -1292,7 +1292,7 @@ export const HOME = {
       },
       {
         title: "Planifica desde ChatGPT o Claude",
-        desc: "Conecta tu asistente de IA y solo pídele que planifique una semana sin desperdicio. Difícil de encontrar en otro sitio.",
+        desc: "Añade Copantry como conector personalizado en ChatGPT o Claude — sin agentes ni código — y pídele que planifique una semana sin desperdicio. Difícil de encontrar en otro sitio.",
       },
     ],
     whyTeaser: "Cómo se compara Copantry con otros tipos de apps",
@@ -1389,7 +1389,7 @@ export const HOME = {
       },
       {
         title: "Planeie a partir do ChatGPT ou Claude",
-        desc: "Ligue o seu assistente de IA e peça-lhe para planear uma semana sem desperdício. Dificilmente encontra isto noutro lado.",
+        desc: "Adicione o Copantry como conector personalizado no ChatGPT ou no Claude — sem agentes nem código — e peça-lhe para planear uma semana sem desperdício. Dificilmente encontra isto noutro lado.",
       },
     ],
     whyTeaser: "Como o Copantry se compara com outros tipos de apps",
@@ -1487,7 +1487,7 @@ export const HOME = {
       },
       {
         title: "Planen Sie aus ChatGPT oder Claude",
-        desc: "Verbinden Sie Ihren KI-Assistenten und bitten Sie ihn einfach, eine verschwendungsfreie Woche zu planen. Das finden Sie fast nirgends sonst.",
+        desc: "Fügen Sie Copantry in ChatGPT oder Claude als benutzerdefinierten Connector hinzu — ohne Agent und ohne Code — und bitten Sie einfach um eine verschwendungsfreie Woche. Das finden Sie fast nirgends sonst.",
       },
     ],
     whyTeaser: "Wie sich Copantry mit anderen Arten von Apps vergleicht",
@@ -1583,7 +1583,7 @@ export const HOME = {
       },
       {
         title: "Plan vanuit ChatGPT of Claude",
-        desc: "Koppel je AI-assistent en vraag hem gewoon een week zonder verspilling te plannen. Dat vind je vrijwel nergens anders.",
+        desc: "Voeg Copantry als aangepaste connector toe in ChatGPT of Claude — geen agent, geen code — en vraag gewoon om een week zonder verspilling. Dat vind je vrijwel nergens anders.",
       },
     ],
     whyTeaser: "Hoe Copantry zich verhoudt tot andere soorten apps",
@@ -1678,7 +1678,7 @@ export const HOME = {
       },
       {
         title: "Planera från ChatGPT eller Claude",
-        desc: "Koppla ihop din AI-assistent och be den helt enkelt planera en vecka utan svinn. Det hittar du knappt någon annanstans.",
+        desc: "Lägg till Copantry som en anpassad anslutning i ChatGPT eller Claude — ingen agent, ingen kod — och be den planera en vecka utan svinn. Det hittar du knappt någon annanstans.",
       },
     ],
     whyTeaser: "Så står sig Copantry mot andra typer av appar",
@@ -1773,7 +1773,7 @@ export const HOME = {
       },
       {
         title: "Planlæg fra ChatGPT eller Claude",
-        desc: "Forbind din AI-assistent, og bed den ganske enkelt planlægge en uge uden spild. Det finder du næsten ingen andre steder.",
+        desc: "Tilføj Copantry som en brugerdefineret forbindelse i ChatGPT eller Claude — ingen agent, ingen kode — og bed den planlægge en uge uden spild. Det finder du næsten ingen andre steder.",
       },
     ],
     whyTeaser: "Sådan står Copantry sig mod andre typer apps",
@@ -1869,7 +1869,7 @@ export const HOME = {
       },
       {
         title: "Suunnittele ChatGPT:stä tai Claudesta",
-        desc: "Yhdistä tekoälyavustajasi ja pyydä sitä yksinkertaisesti suunnittelemaan hävikitön viikko. Tätä ei juuri muualta löydy.",
+        desc: "Lisää Copantry mukautettuna liittimenä ChatGPT:hen tai Claudeen — ilman agenttia ja ilman koodia — ja pyydä sitä suunnittelemaan hävikitön viikko. Tätä ei juuri muualta löydy.",
       },
     ],
     whyTeaser: "Näin Copantry vertautuu muihin sovellustyyppeihin",
@@ -1964,7 +1964,7 @@ export const HOME = {
       },
       {
         title: "Planlegg fra ChatGPT eller Claude",
-        desc: "Koble til KI-assistenten din, og be den ganske enkelt planlegge en uke uten svinn. Det finner du nesten ingen andre steder.",
+        desc: "Legg Copantry til som en egendefinert kobling i ChatGPT eller Claude — ingen agent, ingen kode — og be den planlegge en uke uten svinn. Det finner du nesten ingen andre steder.",
       },
     ],
     whyTeaser: "Slik står Copantry seg mot andre typer apper",
@@ -2061,7 +2061,7 @@ export const HOME = {
       },
       {
         title: "Planuj z ChatGPT albo Claude",
-        desc: "Podłącz swojego asystenta SI i po prostu poproś go o zaplanowanie tygodnia bez marnowania. Tego prawie nigdzie indziej nie znajdziesz.",
+        desc: "Dodaj Copantry jako własny łącznik w ChatGPT lub Claude — bez agenta i bez kodu — i po prostu poproś o zaplanowanie tygodnia bez marnowania. Tego prawie nigdzie indziej nie znajdziesz.",
       },
     ],
     whyTeaser: "Jak Copantry wypada na tle innych rodzajów aplikacji",

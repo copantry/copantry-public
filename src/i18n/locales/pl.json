@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Nie jesteś programistą?",
       "user_intro_title": "Nie potrzebujesz tego, aby korzystać z CoPantry.",
-      "user_intro_desc": "CoPantry to aplikacja do przepisów i planowania posiłków, z której każdy może korzystać w przeglądarce lub na telefonie. Ta strona wyjaśnia, jak opcjonalnie podłączyć asystenta AI, takiego jak Claude, aby sterować CoPantry głosem. To funkcja dla zaawansowanych — aplikacja świetnie działa i bez niej.",
+      "user_intro_desc": "CoPantry to aplikacja do przepisów i planowania posiłków, z której każdy może korzystać w przeglądarce lub na telefonie. Ta strona wyjaśnia, jak opcjonalnie podłączyć asystenta AI, takiego jak ChatGPT czy Claude, żeby sterować CoPantry, po prostu o coś prosząc. Dodajesz go samodzielnie jako własny łącznik — nie trzeba budować agenta ani pisać kodu — i pozostaje to opcjonalne: aplikacja świetnie działa również bez tego.",
       "user_intro_skip": "Chcesz tylko zarządzać przepisami?",
       "user_intro_link": "Przejdź prosto do aplikacji →",
       "setup_title": "Przewodnik konfiguracji",
-      "setup_subtitle": "Trzy kroki, aby podłączyć asystenta AI do CoPantry.",
+      "setup_subtitle": "Dwa sposoby połączenia. Większości wystarczy pierwszy.",
       "step1_title": "Utwórz klucz API",
       "step1_desc": "Zaloguj się do CoPantry i przejdź do Ustawienia → AI i MCP. Nazwij swój klucz (np. „Claude Desktop”), a potem go skopiuj — pokazujemy go tylko raz.",
       "step1_btn": "Otwórz ustawienia kluczy API",
@@ -237,12 +237,22 @@
       "step3_example": "„Poszukaj w moich przepisach CoPantry czegoś z kurczakiem i zaplanuj to na jutrzejszy obiad.”",
       "tools_title": "Dokumentacja narzędzi",
       "ready_title": "Gotowy, aby podłączyć swoje AI?",
-      "ready_desc": "Utwórz klucz API w 30 sekund i pozwól asystentowi AI przejąć kuchnię.",
-      "ready_btn": "Uzyskaj klucz API na app.copantry.com",
-      "ready_note": "Darmowy plan obejmuje 200 działań AI/miesiąc · Bez karty kredytowej",
+      "ready_desc": "Dodaj CoPantry jako własny łącznik w swoim asystencie albo pobierz klucz API dla klienta konfigurowanego plikiem. Jedno i drugie zajmuje około minuty.",
+      "ready_btn": "Otwórz ustawienia AI i MCP",
+      "ready_note": "Połączenie jest bezpłatne · Bez karty · Działania AI mają limit miesięczny",
       "what_ai_title": "Co potrafi Twój asystent AI",
       "what_ai_subtitle": "Po podłączeniu asystent AI obsłuży te prośby bez otwierania aplikacji:",
-      "starter_prompt_label": "Przykładowy prompt"
+      "starter_prompt_label": "Przykładowy prompt",
+      "connector_badge": "Agent niepotrzebny",
+      "connector_title": "Dodaj CoPantry do swojego asystenta jako własny łącznik",
+      "connector_lede": "CoPantry nie ma jeszcze wpisu we wbudowanym katalogu łączników ChatGPT ani Claude'a — ale nie musisz na to czekać i nie musisz budować agenta. Oba pozwalają samodzielnie dodać własny serwer MCP. Zajmuje to około minuty i nie wymaga klucza API, pliku konfiguracyjnego ani kodu.",
+      "connector_step1": "Otwórz ustawienia łączników swojego asystenta i wybierz dodanie własnego lub zdalnego serwera MCP. W Claude: Ustawienia → Łączniki → Dodaj własny łącznik; w ChatGPT znajdziesz to w Ustawieniach → Łączniki, a dostępność zależy od Twojego planu.",
+      "connector_step2": "Wklej poniższy adres MCP CoPantry jako adres URL serwera.",
+      "connector_step3": "Zaloguj się na swoje konto CoPantry i zatwierdź dostęp. Potem po prostu zapytaj w zwykłym czacie: „Co mogę dziś ugotować z tego, co mam?”",
+      "connector_url_label": "Adres URL serwera MCP",
+      "connector_note": "Twój asystent loguje się przez własny ekran zgody CoPantry, więc w kliencie nie jest przechowywany żaden klucz, a dostęp możesz w każdej chwili cofnąć w Ustawieniach → AI i MCP.",
+      "manual_title": "Wolisz plik konfiguracyjny? Połącz się kluczem API",
+      "manual_lede": "Dla klientów desktopowych i programistycznych konfigurowanych plikiem — Claude Desktop, Cursor, Windsurf — albo dla własnych skryptów."
     }
   }
 }

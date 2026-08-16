@@ -223,11 +223,11 @@
     "mcp": {
       "user_intro_badge": "Etkö ole kehittäjä?",
       "user_intro_title": "Et tarvitse tätä käyttääksesi CoPantrya.",
-      "user_intro_desc": "CoPantry on reseptien ja ateriasuunnittelun sovellus, jota kuka tahansa voi käyttää selaimella tai puhelimella. Tämä sivu kertoo, miten voit halutessasi yhdistää tekoälyavustajan, kuten Clauden, ohjaamaan CoPantrya puheella. Se on tehokäyttäjän ominaisuus – sovellus toimii mainiosti ilmankin.",
+      "user_intro_desc": "CoPantry on resepti- ja ateriasuunnittelusovellus, jota kuka tahansa voi käyttää selaimessa tai puhelimessa. Tämä sivu kertoo, miten voit halutessasi yhdistää tekoälyavustajan, kuten ChatGPT:n tai Clauden, ja ohjata CoPantrya pelkästään kysymällä. Lisäät sen itse mukautettuna liittimenä — mitään agenttia ei tarvitse rakentaa eikä koodia kirjoittaa — ja se pysyy valinnaisena: sovellus toimii mainiosti ilmankin.",
       "user_intro_skip": "Haluatko vain hallita reseptejä?",
       "user_intro_link": "Siirry suoraan sovellukseen →",
       "setup_title": "Käyttöönotto-opas",
-      "setup_subtitle": "Kolme vaihetta tekoälyavustajan yhdistämiseen CoPantryyn.",
+      "setup_subtitle": "Kaksi tapaa yhdistää. Useimmille riittää ensimmäinen.",
       "step1_title": "Luo API-avain",
       "step1_desc": "Kirjaudu CoPantryyn ja siirry kohtaan Asetukset → Tekoäly ja MCP. Nimeä avaimesi (esim. ”Claude Desktop”) ja kopioi se – se näytetään vain kerran.",
       "step1_btn": "Avaa API-avainten asetukset",
@@ -237,12 +237,22 @@
       "step3_example": "”Hae CoPantry-resepteistäni jotain kanalla ja laita se huomiseksi päivälliseksi.”",
       "tools_title": "Työkaluviite",
       "ready_title": "Valmiina yhdistämään tekoälysi?",
-      "ready_desc": "Luo API-avaimesi 30 sekunnissa ja anna tekoälyavustajasi ottaa keittiö haltuun.",
-      "ready_btn": "Hanki API-avain osoitteesta app.copantry.com",
-      "ready_note": "Maksuttomaan tilaukseen sisältyy 200 tekoälytoimintoa/kk · Luottokorttia ei tarvita",
+      "ready_desc": "Lisää CoPantry mukautettuna liittimenä avustajaasi tai hae API-avain tiedostolla määritettävää ohjelmaa varten. Kumpikin vie noin minuutin.",
+      "ready_btn": "Avaa tekoäly- ja MCP-asetukset",
+      "ready_note": "Yhdistäminen on ilmaista · Ei luottokorttia · Tekoälytoiminnoilla on kuukausiraja",
       "what_ai_title": "Mitä tekoälyavustajasi osaa",
       "what_ai_subtitle": "Kun yhteys on luotu, tekoälyavustajasi hoitaa nämä pyynnöt ilman että avaat sovellusta:",
-      "starter_prompt_label": "Aloituskehote"
+      "starter_prompt_label": "Aloituskehote",
+      "connector_badge": "Agenttia ei tarvita",
+      "connector_title": "Lisää CoPantry avustajaasi mukautettuna liittimenä",
+      "connector_lede": "CoPantry ei ole vielä ChatGPT:n tai Clauden valmiiden liittimien luettelossa — mutta sitä ei tarvitse jäädä odottamaan, eikä agenttia tarvitse rakentaa. Molemmissa voit lisätä mukautetun MCP-palvelimen itse. Siihen menee noin minuutti, eikä se vaadi API-avainta, asetustiedostoa eikä koodia.",
+      "connector_step1": "Avaa avustajasi liitinasetukset ja valitse mukautetun tai etä-MCP-palvelimen lisääminen. Claudessa: Asetukset → Liittimet → Lisää mukautettu liitin; ChatGPT:ssä se löytyy kohdasta Asetukset → Liittimet, ja saatavuus riippuu tilauksestasi.",
+      "connector_step2": "Liitä alla oleva CoPantryn MCP-osoite palvelimen URL-osoitteeksi.",
+      "connector_step3": "Kirjaudu sisään CoPantry-tililläsi ja hyväksy käyttöoikeus. Kysy sitten tavalliseen tapaan chatissa: ”Mitä voisin laittaa tänään ruoaksi näillä aineksilla?”",
+      "connector_url_label": "MCP-palvelimen URL-osoite",
+      "connector_note": "Avustajasi kirjautuu CoPantryn omalla hyväksyntänäytöllä, joten asiakasohjelmaan ei tallennu avainta ja voit perua käyttöoikeuden milloin tahansa kohdassa Asetukset → Tekoäly ja MCP.",
+      "manual_title": "Haluatko mieluummin asetustiedoston? Yhdistä API-avaimella",
+      "manual_lede": "Työpöytä- ja kehitysohjelmille, jotka määritetään tiedoston kautta — Claude Desktop, Cursor, Windsurf — tai omille skripteillesi."
     }
   }
 }
