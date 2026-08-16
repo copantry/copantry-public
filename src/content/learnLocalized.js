@@ -166,6 +166,156 @@ export const LEARN_UI = {
     ctaDetailSub:
       "Copantry verfolgt, wie lange jedes Lebensmittel noch hält, und sagt dir, was zuerst dran ist. Kostenlos.",
   },
+  nl: {
+    eyebrow: "Leren",
+    breadcrumbLearn: "Leren",
+    h1: "Hoelang blijft voedsel goed?",
+    lede: "Eenvoudige, eerlijke gidsen over hoelang alledaags eten goed blijft, waarom het bederft, hoe je het bewaart zodat het langer meegaat, en wat je ervan kookt voordat het over is. Algemene richtlijnen — vertrouw bij twijfel op je zintuigen.",
+    fridgeShort: (min, max) => `~${min}–${max} dagen in de koelkast`,
+    daysUnit: (min, max) => `${min}–${max} dagen`,
+    inFridgeGuide: "in de koelkast (algemene richtlijn)",
+    blockWhy: "Waarom het bederft",
+    blockStore: "Zo bewaar je het langer",
+    blockCook: "Wat je ervan kookt voordat het over is",
+    question: (name) => `Hoelang blijft ${name.toLowerCase()} goed?`,
+    answer: (name, min, max) =>
+      `${name} blijft meestal ongeveer ${min} tot ${max} dagen goed in de koelkast, afhankelijk van hoe vers het was en hoe je het bewaart.`,
+    disclaimerPre:
+      "Dit zijn algemene richtlijnen voor een gemiddeld, goed bewaard product, geen veiligheidsgaranties. Controleer altijd de houdbaarheidsdatum en vertrouw op je ogen en neus. Copantry kan dit automatisch voor je dateren — zie ",
+    pantryTrackingLabel: "voorraadkast bijhouden",
+    neverBin: "Gooi geen goed eten meer weg — zie hoe Copantry helpt",
+    ctaIndexTitle: "Stop met gissen wat nog goed is",
+    ctaIndexSub:
+      "Copantry dateert alles in je keuken en vertelt je wat er als eerste op moet. Gratis te gebruiken, geen creditcard nodig.",
+    ctaDetailTitle: "Weet precies wat nog goed is",
+    ctaDetailSub:
+      "Copantry houdt bij hoelang alles in je keuken nog goed is en vertelt je wat er als eerste op moet. Gratis te gebruiken.",
+  },
+  sv: {
+    eyebrow: "Lär dig",
+    breadcrumbLearn: "Lär dig",
+    h1: "Hur länge håller maten?",
+    lede: "Enkla, ärliga guider till hur länge vardagsmat håller, varför den blir dålig, hur du förvarar den så att den håller längre och vad du lagar innan den tar slut. Allmänna riktvärden — tveka du, lita på dina sinnen.",
+    fridgeShort: (min, max) => `~${min}–${max} dagar i kylen`,
+    daysUnit: (min, max) => `${min}–${max} dagar`,
+    inFridgeGuide: "i kylen (allmänt riktvärde)",
+    blockWhy: "Varför den blir dålig",
+    blockStore: "Så förvarar du den så att den håller längre",
+    blockCook: "Vad du lagar innan den blir dålig",
+    question: (name) => `Hur länge håller ${name.toLowerCase()}?`,
+    answer: (name, min, max) =>
+      `${name} håller vanligtvis ungefär ${min} till ${max} dagar i kylen, men det varierar med hur färsk den var och hur den förvaras.`,
+    disclaimerPre:
+      "Det här är allmänna riktvärden för en typisk, välförvarad vara, inte säkerhetsgarantier. Kontrollera alltid sista förbrukningsdag och lita på ögon och näsa. Copantry kan datera det åt dig automatiskt — se ",
+    pantryTrackingLabel: "koll på skafferiet",
+    neverBin: "Sluta slänga fullgod mat — se hur Copantry hjälper",
+    ctaIndexTitle: "Sluta gissa vad som fortfarande är bra",
+    ctaIndexSub:
+      "Copantry daterar allt i ditt kök och säger vad du ska använda först. Gratis att använda, inget kort behövs.",
+    ctaDetailTitle: "Vet exakt vad som fortfarande är bra",
+    ctaDetailSub:
+      "Copantry håller koll på hur länge allt i ditt kök har kvar och säger vad du ska använda först. Gratis att använda.",
+  },
+  da: {
+    eyebrow: "Lær",
+    breadcrumbLearn: "Lær",
+    h1: "Hvor længe holder maden?",
+    lede: "Enkle, ærlige guides til, hvor længe hverdagsmad holder, hvorfor den bliver dårlig, hvordan du opbevarer den, så den holder længere, og hvad du laver af den, før den er for gammel. Generelle retningslinjer — er du i tvivl, så stol på dine sanser.",
+    fridgeShort: (min, max) => `~${min}–${max} dage i køleskabet`,
+    daysUnit: (min, max) => `${min}–${max} dage`,
+    inFridgeGuide: "i køleskabet (generel rettesnor)",
+    blockWhy: "Hvorfor den bliver dårlig",
+    blockStore: "Sådan opbevarer du den, så den holder længere",
+    blockCook: "Hvad du laver af den, før den er for gammel",
+    question: (name) => `Hvor længe holder ${name.toLowerCase()}?`,
+    answer: (name, min, max) =>
+      `${name} holder typisk omkring ${min} til ${max} dage i køleskabet, men det afhænger af, hvor frisk den var, og hvordan den opbevares.`,
+    disclaimerPre:
+      "Det er generelle retningslinjer for en typisk, velopbevaret vare, ikke sikkerhedsgarantier. Tjek altid sidste anvendelsesdato, og stol på dine øjne og din næse. Copantry kan datere det for dig automatisk — se ",
+    pantryTrackingLabel: "styr på spisekammeret",
+    neverBin: "Hold op med at smide god mad ud — se, hvordan Copantry hjælper",
+    ctaIndexTitle: "Hold op med at gætte på, hvad der stadig er godt",
+    ctaIndexSub:
+      "Copantry sætter dato på alt i dit køkken og fortæller dig, hvad du skal bruge først. Gratis at bruge, intet kort nødvendigt.",
+    ctaDetailTitle: "Vid præcis, hvad der stadig er godt",
+    ctaDetailSub:
+      "Copantry holder styr på, hvor længe alt i dit køkken har tilbage, og fortæller dig, hvad du skal bruge først. Gratis at bruge.",
+  },
+  fi: {
+    eyebrow: "Opi",
+    breadcrumbLearn: "Opi",
+    h1: "Kuinka kauan ruoka säilyy?",
+    lede: "Selkeitä ja rehellisiä oppaita siitä, kuinka kauan arkiruoka säilyy, miksi se pilaantuu, miten se kannattaa säilyttää ja mitä siitä laittaa ennen kuin se menee huonoksi. Yleisiä suuntaviivoja — epävarmassa tilanteessa luota aisteihisi.",
+    fridgeShort: (min, max) => `~${min}–${max} päivää jääkaapissa`,
+    daysUnit: (min, max) => `${min}–${max} päivää`,
+    inFridgeGuide: "jääkaapissa (yleinen suuntaviiva)",
+    blockWhy: "Miksi se pilaantuu",
+    blockStore: "Näin säilytät sen pidempään",
+    blockCook: "Mitä siitä laittaa ennen kuin se menee huonoksi",
+    question: (name) => `Kuinka kauan ${name.toLowerCase()} säilyy?`,
+    answer: (name, min, max) =>
+      `${name} säilyy jääkaapissa yleensä noin ${min}–${max} päivää, mutta se riippuu tuoreudesta ja säilytystavasta.`,
+    disclaimerPre:
+      "Nämä ovat yleisiä suuntaviivoja tavanomaiselle, hyvin säilytetylle tuotteelle, eivät turvallisuustakuita. Tarkista aina viimeinen käyttöpäivä ja luota silmiisi ja nenääsi. Copantry voi päivätä tämän puolestasi automaattisesti — katso ",
+    pantryTrackingLabel: "ruokakomeron seuranta",
+    neverBin: "Lopeta hyvän ruoan heittäminen — katso, miten Copantry auttaa",
+    ctaIndexTitle: "Lopeta arvailu siitä, mikä on vielä hyvää",
+    ctaIndexSub:
+      "Copantry päivää kaiken keittiössäsi ja kertoo, mikä pitää käyttää ensin. Ilmainen käyttää, korttia ei tarvita.",
+    ctaDetailTitle: "Tiedä tarkalleen, mikä on vielä hyvää",
+    ctaDetailSub:
+      "Copantry seuraa, kuinka kauan kaikella keittiössäsi on aikaa jäljellä, ja kertoo, mikä pitää käyttää ensin. Ilmainen käyttää.",
+  },
+  no: {
+    eyebrow: "Lær",
+    breadcrumbLearn: "Lær",
+    h1: "Hvor lenge holder maten?",
+    lede: "Enkle, ærlige guider til hvor lenge hverdagsmat holder, hvorfor den blir dårlig, hvordan du oppbevarer den så den varer lenger, og hva du lager av den før den er for gammel. Generelle retningslinjer — er du i tvil, stol på sansene dine.",
+    fridgeShort: (min, max) => `~${min}–${max} dager i kjøleskapet`,
+    daysUnit: (min, max) => `${min}–${max} dager`,
+    inFridgeGuide: "i kjøleskapet (generell rettesnor)",
+    blockWhy: "Hvorfor den blir dårlig",
+    blockStore: "Slik oppbevarer du den så den varer lenger",
+    blockCook: "Hva du lager av den før den blir dårlig",
+    question: (name) => `Hvor lenge holder ${name.toLowerCase()}?`,
+    answer: (name, min, max) =>
+      `${name} holder som regel rundt ${min} til ${max} dager i kjøleskapet, men det varierer med hvor fersk den var og hvordan den oppbevares.`,
+    disclaimerPre:
+      "Dette er generelle retningslinjer for en typisk, godt oppbevart vare, ikke sikkerhetsgarantier. Sjekk alltid siste forbruksdag, og stol på øynene og nesen din. Copantry kan datere dette for deg automatisk — se ",
+    pantryTrackingLabel: "oversikt over spiskammeret",
+    neverBin: "Slutt å kaste god mat — se hvordan Copantry hjelper",
+    ctaIndexTitle: "Slutt å gjette på hva som fortsatt er godt",
+    ctaIndexSub:
+      "Copantry setter dato på alt på kjøkkenet ditt og forteller deg hva du bør bruke først. Gratis å bruke, ingen kort nødvendig.",
+    ctaDetailTitle: "Vit nøyaktig hva som fortsatt er godt",
+    ctaDetailSub:
+      "Copantry holder oversikt over hvor lenge alt på kjøkkenet ditt har igjen, og forteller deg hva du bør bruke først. Gratis å bruke.",
+  },
+  pl: {
+    eyebrow: "Poradnik",
+    breadcrumbLearn: "Poradnik",
+    h1: "Jak długo trzyma się jedzenie?",
+    lede: "Proste, uczciwe poradniki o tym, jak długo trzyma się codzienne jedzenie, dlaczego się psuje, jak je przechowywać, żeby wytrzymało dłużej, i co z niego ugotować, zanim się zepsuje. To ogólne wskazówki — w razie wątpliwości zaufaj zmysłom.",
+    fridgeShort: (min, max) => `~${min}–${max} dni w lodówce`,
+    daysUnit: (min, max) => `${min}–${max} dni`,
+    inFridgeGuide: "w lodówce (ogólna wskazówka)",
+    blockWhy: "Dlaczego się psuje",
+    blockStore: "Jak przechowywać, żeby wytrzymało dłużej",
+    blockCook: "Co ugotować, zanim się zepsuje",
+    question: (name) => `Jak długo trzyma się ${name.toLowerCase()}?`,
+    answer: (name, min, max) =>
+      `${name} trzyma się w lodówce zwykle około ${min}–${max} dni, choć zależy to od świeżości przy zakupie i sposobu przechowywania.`,
+    disclaimerPre:
+      "To ogólne wskazówki dla typowego, dobrze przechowywanego produktu, a nie gwarancje bezpieczeństwa. Zawsze sprawdzaj datę przydatności i ufaj oczom oraz nosowi. Copantry może opatrzyć to datą automatycznie — zobacz ",
+    pantryTrackingLabel: "prowadzenie spiżarni",
+    neverBin: "Przestań wyrzucać dobre jedzenie — zobacz, jak pomaga Copantry",
+    ctaIndexTitle: "Przestań zgadywać, co jest jeszcze dobre",
+    ctaIndexSub:
+      "Copantry opatruje datą wszystko w twojej kuchni i mówi, co zużyć najpierw. Bezpłatnie, bez podawania karty.",
+    ctaDetailTitle: "Wiedz dokładnie, co jest jeszcze dobre",
+    ctaDetailSub:
+      "Copantry pilnuje, ile czasu zostało wszystkiemu w twojej kuchni, i mówi, co zużyć najpierw. Bezpłatnie.",
+  },
 };
 
 // ── Category labels (also used as index group headings) ──────────────────────
@@ -176,6 +326,12 @@ export const CATEGORY_TX = {
     es: "Verduras",
     pt: "Legumes",
     de: "Gemüse",
+    nl: "Groenten",
+    sv: "Grönsaker",
+    da: "Grøntsager",
+    fi: "Kasvikset",
+    no: "Grønnsaker",
+    pl: "Warzywa",
   },
   "Meat & fish": {
     fr: "Viande & poisson",
@@ -183,6 +339,12 @@ export const CATEGORY_TX = {
     es: "Carne y pescado",
     pt: "Carne e peixe",
     de: "Fleisch & Fisch",
+    nl: "Vlees en vis",
+    sv: "Kött & fisk",
+    da: "Kød & fisk",
+    fi: "Liha & kala",
+    no: "Kjøtt & fisk",
+    pl: "Mięso i ryby",
   },
   Dairy: {
     fr: "Produits laitiers",
@@ -190,6 +352,12 @@ export const CATEGORY_TX = {
     es: "Lácteos",
     pt: "Laticínios",
     de: "Milchprodukte",
+    nl: "Zuivel",
+    sv: "Mejeri",
+    da: "Mejeri",
+    fi: "Maitotuotteet",
+    no: "Meieri",
+    pl: "Nabiał",
   },
   Fruit: {
     fr: "Fruits",
@@ -197,6 +365,12 @@ export const CATEGORY_TX = {
     es: "Fruta",
     pt: "Fruta",
     de: "Obst",
+    nl: "Fruit",
+    sv: "Frukt",
+    da: "Frugt",
+    fi: "Hedelmät",
+    no: "Frukt",
+    pl: "Owoce",
   },
   Bakery: {
     fr: "Boulangerie",
@@ -204,6 +378,12 @@ export const CATEGORY_TX = {
     es: "Panadería",
     pt: "Padaria",
     de: "Backwaren",
+    nl: "Bakkerij",
+    sv: "Bageri",
+    da: "Bageri",
+    fi: "Leipomo",
+    no: "Bakeri",
+    pl: "Pieczywo",
   },
   "Cooked food": {
     fr: "Plats cuisinés",
@@ -211,6 +391,12 @@ export const CATEGORY_TX = {
     es: "Comida cocinada",
     pt: "Comida cozinhada",
     de: "Gekochtes",
+    nl: "Bereide gerechten",
+    sv: "Tillagad mat",
+    da: "Tilberedt mad",
+    fi: "Valmis ruoka",
+    no: "Tilberedt mat",
+    pl: "Dania gotowane",
   },
 };
 
@@ -257,6 +443,54 @@ export const SHELF_LIFE_TX = {
         "Trocken in einem locker verschlossenen Beutel oder einer Box mit Küchenpapier (saugt Feuchtigkeit) im Gemüsefach lagern.",
       cook: "Beim ersten Anzeichen von Weichwerden in Pasta, Curry, Omelett oder Suppe zusammenfallen lassen — gekocht hält er länger als roh.",
     },
+    nl: {
+      name: "Spinazie",
+      question: "Hoelang blijft spinazie goed?",
+      why: "Spinazie heeft dunne, tere blaadjes met veel vocht, dus hij verlept en wordt snel slijmerig zodra hij gesneden en gekoeld is.",
+      store:
+        "Bewaar hem droog in een losjes gesloten zak of bak met keukenpapier om vocht op te nemen, in de groentelade van de koelkast.",
+      cook: "Laat hem slinken in pasta, curry, omelet of soep bij het eerste teken van slapheid — gekookte spinazie blijft langer goed dan rauwe.",
+    },
+    sv: {
+      name: "Spenat",
+      question: "Hur länge håller spenat?",
+      why: "Spenat har tunna, ömtåliga blad med hög vattenhalt, så den vissnar och blir slemmig snabbt när den väl är skuren och kyld.",
+      store:
+        "Håll den torr i en löst tillsluten påse eller ask med hushållspapper som suger upp fukt, i kylens grönsakslåda.",
+      cook: "Låt den falla ihop i pasta, curry, omelett eller soppa vid första tecken på slokande — tillagad spenat håller längre än rå.",
+    },
+    da: {
+      name: "Spinat",
+      question: "Hvor længe holder spinat?",
+      why: "Spinat har tynde, sarte blade med højt vandindhold, så den visner og bliver slimet hurtigt, når den først er snittet og kølet.",
+      store:
+        "Hold den tør i en løst lukket pose eller boks med køkkenrulle, der suger fugt, i køleskabets grøntsagsskuffe.",
+      cook: "Lad den falde sammen i pasta, karry, omelet eller suppe ved første tegn på slaphed — tilberedt spinat holder længere end rå.",
+    },
+    fi: {
+      name: "Pinaatti",
+      question: "Kuinka kauan pinaatti säilyy?",
+      why: "Pinaatilla on ohuet ja herkät lehdet, joissa on paljon vettä, joten se nuutuu ja limaantuu nopeasti, kun se on leikattu ja jäähdytetty.",
+      store:
+        "Pidä se kuivana löyhästi suljetussa pussissa tai rasiassa, jonka pohjalla on talouspaperia kosteutta imemässä, jääkaapin vihanneslaatikossa.",
+      cook: "Kuullota se pastaan, curryyn, munakkaaseen tai keittoon heti kun se alkaa nuutua — kypsennetty pinaatti säilyy raakaa pidempään.",
+    },
+    no: {
+      name: "Spinat",
+      question: "Hvor lenge holder spinat?",
+      why: "Spinat har tynne, sarte blader med høyt vanninnhold, så den visner og blir slimete raskt når den først er skåret og avkjølt.",
+      store:
+        "Hold den tørr i en løst lukket pose eller boks med tørkepapir som suger fukt, i kjøleskapets grønnsaksskuff.",
+      cook: "La den falle sammen i pasta, karri, omelett eller suppe ved første tegn på slapphet — tilberedt spinat holder lenger enn rå.",
+    },
+    pl: {
+      name: "Szpinak",
+      question: "Jak długo trzyma się szpinak?",
+      why: "Szpinak ma cienkie, delikatne liście o dużej zawartości wody, więc po pokrojeniu i schłodzeniu szybko więdnie i robi się śliski.",
+      store:
+        "Trzymaj go suchy w luźno zamkniętej torebce lub pojemniku wyłożonym ręcznikiem papierowym, w szufladzie na warzywa.",
+      cook: "Poddusz go w makaronie, curry, omlecie albo zupie przy pierwszych oznakach więdnięcia — ugotowany szpinak trzyma się dłużej niż surowy.",
+    },
   },
   chicken: {
     fr: {
@@ -298,6 +532,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Im kältesten Teil des Kühlschranks (meist unten) lagern, gut verschlossen und unter anderen Lebensmitteln, damit nichts tropft.",
       cook: "Innerhalb von ein bis zwei Tagen garen oder am Einkaufstag einfrieren. Gegart innerhalb von 2–3 Tagen essen.",
+    },
+    nl: {
+      name: "Rauwe kip",
+      question: "Hoelang blijft rauwe kip goed?",
+      why: "Rauw gevogelte is vochtig en eiwitrijk, waardoor bacteriën zich er snel op vermenigvuldigen; daarom heeft het een strikte uiterste gebruiksdatum.",
+      store:
+        "Bewaar hem in het koudste deel van de koelkast (meestal de onderste plank), afgesloten en onder ander eten zodat er niets op kan druppelen.",
+      cook: "Bereid hem binnen een dag of twee, of vries hem in op de dag van aankoop. Eenmaal gaar: binnen 2–3 dagen opeten.",
+    },
+    sv: {
+      name: "Rå kyckling",
+      question: "Hur länge håller rå kyckling?",
+      why: "Rå fågel är fuktig och proteinrik, så bakterier förökar sig snabbt på den — därför har den ett strikt sista förbrukningsdatum.",
+      store:
+        "Förvara den i kylens kallaste del (oftast nedersta hyllan), försluten och under annan mat så att den inte kan droppa.",
+      cook: "Tillaga inom ett eller två dygn, eller frys in den samma dag du köpte den. Färdiglagad: ät inom 2–3 dagar.",
+    },
+    da: {
+      name: "Rå kylling",
+      question: "Hvor længe holder rå kylling?",
+      why: "Råt fjerkræ er fugtigt og proteinrigt, så bakterier formerer sig hurtigt på det — derfor har det en streng sidste anvendelsesdato.",
+      store:
+        "Opbevar den i køleskabets koldeste del (oftest nederste hylde), lukket og under anden mad, så den ikke kan dryppe.",
+      cook: "Tilbered inden for en dag eller to, eller frys den ned samme dag, du køber den. Færdigtilberedt: spis inden for 2–3 dage.",
+    },
+    fi: {
+      name: "Raaka broileri",
+      question: "Kuinka kauan raaka broileri säilyy?",
+      why: "Raaka siipikarja on kosteaa ja proteiinipitoista, joten bakteerit lisääntyvät siinä nopeasti — siksi sillä on tiukka viimeinen käyttöpäivä.",
+      store:
+        "Säilytä se jääkaapin kylmimmässä osassa (yleensä alimmalla hyllyllä), suljettuna ja muun ruoan alapuolella, jottei siitä valu mitään.",
+      cook: "Kypsennä päivän tai kahden sisällä tai pakasta ostopäivänä. Kypsennettynä: syö 2–3 päivässä.",
+    },
+    no: {
+      name: "Rå kylling",
+      question: "Hvor lenge holder rå kylling?",
+      why: "Rått fjørfe er fuktig og proteinrikt, så bakterier formerer seg raskt på det — derfor har det en streng siste forbruksdag.",
+      store:
+        "Oppbevar den i kjøleskapets kaldeste del (som regel nederste hylle), lukket og under annen mat så den ikke kan dryppe.",
+      cook: "Tilbered innen en dag eller to, eller frys den samme dag du kjøper den. Ferdig stekt: spis innen 2–3 dager.",
+    },
+    pl: {
+      name: "Surowy kurczak",
+      question: "Jak długo trzyma się surowy kurczak?",
+      why: "Surowy drób jest wilgotny i bogaty w białko, więc bakterie mnożą się na nim szybko — dlatego ma ścisły termin przydatności do spożycia.",
+      store:
+        "Trzymaj go w najzimniejszej części lodówki (zwykle na dolnej półce), szczelnie zamkniętego i poniżej innych produktów, żeby nic z niego nie kapało.",
+      cook: "Ugotuj w ciągu dnia lub dwóch albo zamroź w dniu zakupu. Po ugotowaniu: zjedz w ciągu 2–3 dni.",
     },
   },
   milk: {
@@ -341,6 +623,54 @@ export const SHELF_LIFE_TX = {
         "Auf einem Kühlschrankfach lagern, nicht in der Tür, wo die Temperatur gleichmäßiger und kälter ist.",
       cook: "In Porridge, Pfannkuchen, Béchamel oder Suppe aufbrauchen; nahe am Datum ist sie oft noch gut — erst riechen.",
     },
+    nl: {
+      name: "Melk",
+      question: "Hoelang blijft melk goed?",
+      why: "Zelfs gepasteuriseerde melk bevat bacteriën die zich langzaam vermeerderen en hem zuur maken, sneller zodra hij open is en warmte krijgt.",
+      store:
+        "Bewaar hem op een plank in de koelkast, niet in de deur, waar het kouder en gelijkmatiger is.",
+      cook: "Maak hem op in pap, pannenkoeken, bechamel of soep; melk tegen de datum is vaak nog prima — ruik er eerst aan.",
+    },
+    sv: {
+      name: "Mjölk",
+      question: "Hur länge håller mjölk?",
+      why: "Även pastöriserad mjölk innehåller bakterier som långsamt förökar sig och surar den, snabbare när den väl är öppnad och utsatt för värme.",
+      store:
+        "Förvara den på en kylhylla, inte i dörren, där temperaturen är jämnare och kallare.",
+      cook: "Använd upp den i gröt, pannkakor, béchamel eller soppa; mjölk nära datumet är ofta helt fin — lukta först.",
+    },
+    da: {
+      name: "Mælk",
+      question: "Hvor længe holder mælk?",
+      why: "Selv pasteuriseret mælk indeholder bakterier, der langsomt formerer sig og gør den sur — hurtigere når den først er åbnet og udsat for varme.",
+      store:
+        "Opbevar den på en køleskabshylde, ikke i døren, hvor temperaturen er jævnere og koldere.",
+      cook: "Brug den op i grød, pandekager, bechamel eller suppe; mælk tæt på datoen er ofte stadig fin — lugt først.",
+    },
+    fi: {
+      name: "Maito",
+      question: "Kuinka kauan maito säilyy?",
+      why: "Pastöroidussakin maidossa on bakteereja, jotka lisääntyvät hitaasti ja happamoittavat sen — nopeammin avaamisen ja lämmön jälkeen.",
+      store:
+        "Säilytä se jääkaapin hyllyllä, ei ovessa, jossa lämpötila on tasaisempi ja kylmempi.",
+      cook: "Käytä se puuroon, lettuihin, bechameliin tai keittoon; päiväyksen lähellä oleva maito on usein aivan hyvää — haista ensin.",
+    },
+    no: {
+      name: "Melk",
+      question: "Hvor lenge holder melk?",
+      why: "Selv pasteurisert melk inneholder bakterier som sakte formerer seg og gjør den sur, raskere når den først er åpnet og utsatt for varme.",
+      store:
+        "Oppbevar den på en kjøleskapshylle, ikke i døren, der temperaturen er jevnere og kaldere.",
+      cook: "Bruk den opp i grøt, pannekaker, bechamel eller suppe; melk nær datoen er ofte helt fin — lukt først.",
+    },
+    pl: {
+      name: "Mleko",
+      question: "Jak długo trzyma się mleko?",
+      why: "Nawet pasteryzowane mleko zawiera bakterie, które powoli się mnożą i je zakwaszają — szybciej po otwarciu i w cieple.",
+      store:
+        "Trzymaj je na półce lodówki, nie w drzwiach, gdzie temperatura jest stabilniejsza i niższa.",
+      cook: "Zużyj je do owsianki, naleśników, beszamelu albo zupy; mleko blisko terminu często wciąż jest dobre — najpierw powąchaj.",
+    },
   },
   avocado: {
     fr: {
@@ -382,6 +712,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Bei Zimmertemperatur reifen lassen, dann in den Kühlschrank zum Bremsen. Eine angeschnittene Hälfte mit Kern und Zitrone obenauf aufbewahren.",
       cook: "Reif rasch verwenden — als Guacamole, auf Brot, im Smoothie oder im Dressing.",
+    },
+    nl: {
+      name: "Avocado",
+      question: "Hoelang blijft een avocado goed?",
+      why: "Avocado's geven ethyleen af en rijpen snel; eenmaal rijp verkleurt en verweekt het vruchtvlees binnen een paar dagen.",
+      store:
+        "Laat hem op kamertemperatuur rijpen en leg hem daarna in de koelkast om het af te remmen. Bewaar een aangesneden helft met de pit erin en citroen erop.",
+      cook: "Gebruik hem eenmaal rijp snel in guacamole, op toast, in een smoothie of een dressing.",
+    },
+    sv: {
+      name: "Avokado",
+      question: "Hur länge håller avokado?",
+      why: "Avokado avger etylen och mognar snabbt; när den väl är mogen brunar och mjuknar fruktköttet på ett par dagar.",
+      store:
+        "Låt den mogna i rumstemperatur och flytta den sedan till kylen för att bromsa. En uppskuren halva förvaras med kärnan kvar och citron ovanpå.",
+      cook: "När den är mogen, använd den snabbt i guacamole, på macka, mixad i en smoothie eller en dressing.",
+    },
+    da: {
+      name: "Avocado",
+      question: "Hvor længe holder avocado?",
+      why: "Avocado afgiver ethylen og modner hurtigt; når den først er moden, brunes og blødgøres kødet på et par dage.",
+      store:
+        "Lad den modne ved stuetemperatur, og flyt den så til køleskabet for at bremse den. En overskåret halvdel gemmes med stenen i og citron ovenpå.",
+      cook: "Når den er moden, brug den hurtigt i guacamole, på brød, blendet i en smoothie eller en dressing.",
+    },
+    fi: {
+      name: "Avokado",
+      question: "Kuinka kauan avokado säilyy?",
+      why: "Avokado luovuttaa etyleeniä ja kypsyy nopeasti; kypsänä hedelmäliha tummuu ja pehmenee parissa päivässä.",
+      store:
+        "Anna sen kypsyä huoneenlämmössä ja siirrä se sitten jääkaappiin hidastamaan. Leikattu puolikas säilytetään kivi paikallaan ja sitruunaa päällä.",
+      cook: "Kun se on kypsä, käytä se nopeasti guacamoleen, leivän päälle, smoothieen tai kastikkeeseen.",
+    },
+    no: {
+      name: "Avokado",
+      question: "Hvor lenge holder avokado?",
+      why: "Avokado avgir etylen og modnes raskt; når den først er moden, blir fruktkjøttet brunt og mykt på et par dager.",
+      store:
+        "La den modne i romtemperatur, og flytt den så til kjøleskapet for å bremse den. En oppskåret halvdel oppbevares med steinen i og sitron oppå.",
+      cook: "Når den er moden, bruk den raskt i guacamole, på brødskiven, i en smoothie eller en dressing.",
+    },
+    pl: {
+      name: "Awokado",
+      question: "Jak długo trzyma się awokado?",
+      why: "Awokado wydziela etylen i szybko dojrzewa; po dojrzeniu miąższ ciemnieje i mięknie w ciągu kilku dni.",
+      store:
+        "Pozwól mu dojrzeć w temperaturze pokojowej, a potem przenieś do lodówki, żeby to spowolnić. Przekrojoną połówkę trzymaj z pestką i sokiem z cytryny na wierzchu.",
+      cook: "Gdy dojrzeje, zużyj je szybko do guacamole, na kanapkę, do koktajlu albo dressingu.",
     },
   },
   bananas: {
@@ -425,6 +803,54 @@ export const SHELF_LIFE_TX = {
         "Bis zur Reife außerhalb des Kühlschranks lagern; getrennt reifen sie langsamer. Sehr reif lassen sie sich gut einfrieren.",
       cook: "Fleckige Bananen zu Bananenbrot, Pfannkuchen oder Smoothie verarbeiten, statt sie wegzuwerfen.",
     },
+    nl: {
+      name: "Bananen",
+      question: "Hoelang blijven bananen goed?",
+      why: "Bananen produceren veel ethyleen, dus ze rijpen door op het aanrecht en worden binnen enkele dagen bruin.",
+      store:
+        "Houd ze uit de koelkast tot ze rijp zijn; ze los van elkaar leggen vertraagt het rijpen. Zeer rijpe bananen kun je goed invriezen.",
+      cook: "Maak van gespikkelde bananen bananenbrood, pannenkoeken of een smoothie in plaats van ze weg te gooien.",
+    },
+    sv: {
+      name: "Bananer",
+      question: "Hur länge håller bananer?",
+      why: "Bananer avger mycket etylen, så de fortsätter mogna på bänken och blir bruna på några dagar.",
+      store:
+        "Håll dem utanför kylen tills de är mogna; att skilja dem åt bromsar mognaden. Mycket mogna bananer går bra att frysa.",
+      cook: "Gör bananbröd, pannkakor eller en smoothie av prickiga bananer i stället för att slänga dem.",
+    },
+    da: {
+      name: "Bananer",
+      question: "Hvor længe holder bananer?",
+      why: "Bananer afgiver meget ethylen, så de modner videre på køkkenbordet og bliver brune på få dage.",
+      store:
+        "Hold dem uden for køleskabet, indtil de er modne; at skille dem ad bremser modningen. Meget modne bananer kan fint fryses.",
+      cook: "Lav bananbrød, pandekager eller en smoothie af plettede bananer i stedet for at smide dem ud.",
+    },
+    fi: {
+      name: "Banaanit",
+      question: "Kuinka kauan banaanit säilyvät?",
+      why: "Banaanit tuottavat runsaasti etyleeniä, joten ne kypsyvät edelleen pöydällä ja tummuvat päivissä.",
+      store:
+        "Pidä ne poissa jääkaapista, kunnes ne ovat kypsiä; erilleen irrottaminen hidastaa kypsymistä. Hyvin kypsät banaanit pakastuvat hyvin.",
+      cook: "Tee täplikkäistä banaaneista banaanileipää, lettuja tai smoothie sen sijaan että heittäisit ne pois.",
+    },
+    no: {
+      name: "Bananer",
+      question: "Hvor lenge holder bananer?",
+      why: "Bananer avgir mye etylen, så de fortsetter å modnes på benken og blir brune på få dager.",
+      store:
+        "Hold dem utenfor kjøleskapet til de er modne; å skille dem fra hverandre bremser modningen. Svært modne bananer kan fint fryses.",
+      cook: "Lag bananbrød, pannekaker eller en smoothie av flekkete bananer i stedet for å kaste dem.",
+    },
+    pl: {
+      name: "Banany",
+      question: "Jak długo trzymają się banany?",
+      why: "Banany wydzielają dużo etylenu, więc dojrzewają dalej na blacie i w kilka dni robią się brązowe.",
+      store:
+        "Trzymaj je poza lodówką, dopóki nie dojrzeją; rozdzielenie ich spowalnia dojrzewanie. Bardzo dojrzałe banany dobrze się mrożą.",
+      cook: "Z nakrapianych bananów zrób chlebek bananowy, naleśniki albo koktajl, zamiast je wyrzucać.",
+    },
   },
   strawberries: {
     fr: {
@@ -466,6 +892,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Trocken und ungewaschen im Kühlschrank lagern; erst direkt vorm Essen waschen. Schimmlige sofort entfernen.",
       cook: "Weiche Beeren zu Kompott, Marmelade, Smoothie oder in Muffins verarbeiten.",
+    },
+    nl: {
+      name: "Aardbeien",
+      question: "Hoelang blijven aardbeien goed?",
+      why: "Zacht fruit kneust makkelijk en schimmelt snel door de zachte, vochtige schil.",
+      store:
+        "Bewaar ze droog en ongewassen in de koelkast; was ze pas vlak voor het eten. Haal beschimmelde exemplaren er meteen uit.",
+      cook: "Gebruik zachte bessen in compote, jam, een smoothie of gebakken in muffins.",
+    },
+    sv: {
+      name: "Jordgubbar",
+      question: "Hur länge håller jordgubbar?",
+      why: "Bär stöts lätt och möglar snabbt på grund av sitt mjuka, fuktiga skal.",
+      store:
+        "Förvara dem torra och otvättade i kylen; skölj först precis före servering. Plocka bort möglade bär direkt.",
+      cook: "Använd mjuka bär i kompott, sylt, smoothie eller inbakade i muffins.",
+    },
+    da: {
+      name: "Jordbær",
+      question: "Hvor længe holder jordbær?",
+      why: "Bær får let stødmærker og mugner hurtigt på grund af deres bløde, fugtige skind.",
+      store:
+        "Opbevar dem tørre og uvaskede i køleskabet; skyl dem først lige før servering. Fjern mugne bær med det samme.",
+      cook: "Brug bløde bær i kompot, marmelade, smoothie eller bagt i muffins.",
+    },
+    fi: {
+      name: "Mansikat",
+      question: "Kuinka kauan mansikat säilyvät?",
+      why: "Marjat kolhiintuvat helposti ja homehtuvat nopeasti pehmeän ja kostean kuorensa vuoksi.",
+      store:
+        "Säilytä ne kuivina ja pesemättöminä jääkaapissa; huuhtele vasta juuri ennen syömistä. Poista homeiset heti.",
+      cook: "Käytä pehmeät marjat kompottiin, hilloon, smoothieen tai muffinsseihin.",
+    },
+    no: {
+      name: "Jordbær",
+      question: "Hvor lenge holder jordbær?",
+      why: "Bær får lett støtskader og mugner raskt på grunn av det myke, fuktige skinnet.",
+      store:
+        "Oppbevar dem tørre og uvaskede i kjøleskapet; skyll dem først rett før servering. Fjern muggne bær med én gang.",
+      cook: "Bruk myke bær i kompott, syltetøy, smoothie eller bakt i muffins.",
+    },
+    pl: {
+      name: "Truskawki",
+      question: "Jak długo trzymają się truskawki?",
+      why: "Owoce jagodowe łatwo się obijają i szybko pleśnieją przez miękką, wilgotną skórkę.",
+      store:
+        "Trzymaj je suche i nieumyte w lodówce; myj dopiero tuż przed jedzeniem. Spleśniałe usuwaj natychmiast.",
+      cook: "Miękkie owoce zużyj na kompot, dżem, koktajl albo upiecz w muffinkach.",
     },
   },
   bread: {
@@ -509,6 +983,54 @@ export const SHELF_LIFE_TX = {
         "In einem Brotkasten bei Zimmertemperatur lagern oder das, was nicht in ein paar Tagen aufgegessen wird, in Scheiben einfrieren.",
       cook: "Altbackenes Brot zu Toast, Croutons, Semmelbröseln, Arme Ritter oder einem Brotauflauf verarbeiten.",
     },
+    nl: {
+      name: "Brood",
+      question: "Hoelang blijft brood goed?",
+      why: "Brood droogt uit en schimmelt; de koelkast maakt het juist sneller oudbakken, niet langzamer.",
+      store:
+        "Bewaar het in een broodtrommel op kamertemperatuur, of snijd het en vries in wat je niet binnen een paar dagen opeet.",
+      cook: "Maak van oudbakken brood toast, croutons, paneermeel, wentelteefjes of een broodpudding.",
+    },
+    sv: {
+      name: "Bröd",
+      question: "Hur länge håller bröd?",
+      why: "Bröd torkar ut och möglar; kylen gör faktiskt att det blir torrt snabbare, inte långsammare.",
+      store:
+        "Förvara det i en brödburk i rumstemperatur, eller skiva och frys in det du inte äter upp inom några dagar.",
+      cook: "Gör rostat bröd, krutonger, ströbröd, fattiga riddare eller en brödpudding av torrt bröd.",
+    },
+    da: {
+      name: "Brød",
+      question: "Hvor længe holder brød?",
+      why: "Brød tørrer ud og mugner; køleskabet gør det faktisk hurtigere gammelt, ikke langsommere.",
+      store:
+        "Opbevar det i en brødkasse ved stuetemperatur, eller skær det i skiver og frys det, du ikke spiser inden for få dage.",
+      cook: "Lav ristet brød, croutoner, rasp, arme riddere eller en brødbudding af tørt brød.",
+    },
+    fi: {
+      name: "Leipä",
+      question: "Kuinka kauan leipä säilyy?",
+      why: "Leipä kuivuu ja homehtuu; jääkaappi itse asiassa vanhentaa sen nopeammin, ei hitaammin.",
+      store:
+        "Säilytä se leipälaatikossa huoneenlämmössä tai viipaloi ja pakasta se, mitä et syö parissa päivässä.",
+      cook: "Tee kuivasta leivästä paahtoleipää, krutonkeja, korppujauhoja, köyhiä ritareita tai leipävanukasta.",
+    },
+    no: {
+      name: "Brød",
+      question: "Hvor lenge holder brød?",
+      why: "Brød tørker ut og mugner; kjøleskapet gjør det faktisk raskere tørt, ikke langsommere.",
+      store:
+        "Oppbevar det i en brødboks i romtemperatur, eller skjær det opp og frys det du ikke spiser innen noen dager.",
+      cook: "Lag ristet brød, krutonger, griljermel, arme riddere eller en brødpudding av tørt brød.",
+    },
+    pl: {
+      name: "Chleb",
+      question: "Jak długo trzyma się chleb?",
+      why: "Chleb wysycha i pleśnieje; lodówka w rzeczywistości przyspiesza czerstwienie, a nie je spowalnia.",
+      store:
+        "Trzymaj go w chlebaku w temperaturze pokojowej albo pokrój i zamroź to, czego nie zjesz w ciągu kilku dni.",
+      cook: "Z czerstwego chleba zrób grzanki, grzanki do sałatki, bułkę tartą, tosty francuskie albo pudding chlebowy.",
+    },
   },
   eggs: {
     fr: {
@@ -550,6 +1072,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Im Kühlschrank im Karton lagern, mit der Spitze nach unten. Ein frisches Ei sinkt in Wasser, ein altes schwimmt.",
       cook: "Ältere Eier zum Backen, für Frittata oder hartgekocht verwenden. Im Zweifel den Wassertest machen.",
+    },
+    nl: {
+      name: "Eieren",
+      question: "Hoelang blijven eieren goed?",
+      why: "Eieren blijven relatief lang goed, maar verliezen over weken langzaam vocht en versheid door de schaal.",
+      store:
+        "Bewaar ze in de koelkast in hun doosje, met de punt naar beneden. Een vers ei zinkt in water; een oud ei drijft.",
+      cook: "Gebruik oudere eieren om te bakken, in een frittata of hardgekookt. Doe bij twijfel de drijftest.",
+    },
+    sv: {
+      name: "Ägg",
+      question: "Hur länge håller ägg?",
+      why: "Ägg håller relativt bra men förlorar långsamt fukt och färskhet genom skalet under veckornas gång.",
+      store:
+        "Förvara dem i kylen i sin kartong, med spetsen nedåt. Ett färskt ägg sjunker i vatten; ett gammalt flyter.",
+      cook: "Använd äldre ägg till bakning, frittata eller hårdkokning. Är du osäker, gör flyttestet.",
+    },
+    da: {
+      name: "Æg",
+      question: "Hvor længe holder æg?",
+      why: "Æg holder forholdsvis godt, men mister langsomt fugt og friskhed gennem skallen i løbet af uger.",
+      store:
+        "Opbevar dem i køleskabet i deres bakke med spidsen nedad. Et friskt æg synker i vand; et gammelt flyder.",
+      cook: "Brug ældre æg til bagning, frittata eller hårdkogning. Er du i tvivl, så lav flydetesten.",
+    },
+    fi: {
+      name: "Kananmunat",
+      question: "Kuinka kauan kananmunat säilyvät?",
+      why: "Kananmunat säilyvät melko hyvin, mutta menettävät kuoren läpi hitaasti kosteutta ja tuoreutta viikkojen kuluessa.",
+      store:
+        "Säilytä ne jääkaapissa omassa kennossaan terävä pää alaspäin. Tuore muna uppoaa veteen; vanha kelluu.",
+      cook: "Käytä vanhemmat munat leivontaan, frittataan tai koviksi keitettyinä. Jos epäröit, tee kellutustesti.",
+    },
+    no: {
+      name: "Egg",
+      question: "Hvor lenge holder egg?",
+      why: "Egg holder forholdsvis godt, men mister sakte fuktighet og friskhet gjennom skallet i løpet av uker.",
+      store:
+        "Oppbevar dem i kjøleskapet i kartongen, med spissen ned. Et ferskt egg synker i vann; et gammelt flyter.",
+      cook: "Bruk eldre egg til baking, frittata eller hardkoking. Er du i tvil, gjør flytetesten.",
+    },
+    pl: {
+      name: "Jajka",
+      question: "Jak długo trzymają się jajka?",
+      why: "Jajka trzymają się stosunkowo długo, ale przez tygodnie powoli tracą wilgoć i świeżość przez skorupkę.",
+      store:
+        "Trzymaj je w lodówce w oryginalnym opakowaniu, czubkiem w dół. Świeże jajko tonie w wodzie; stare unosi się.",
+      cook: "Starsze jajka wykorzystaj do pieczenia, frittaty albo ugotuj na twardo. W razie wątpliwości zrób test w wodzie.",
     },
   },
   tomatoes: {
@@ -593,6 +1163,54 @@ export const SHELF_LIFE_TX = {
         "Für den Geschmack bei Zimmertemperatur und vor Sonne geschützt lagern; nur sehr reife kühlen, um ein bis zwei Tage zu gewinnen.",
       cook: "Weiche Tomaten für eine Sauce, Suppe oder ein Ofengericht rösten.",
     },
+    nl: {
+      name: "Tomaten",
+      question: "Hoelang blijven tomaten goed?",
+      why: "Tomaten rijpen na de pluk door en worden zacht en melig, vooral als je ze te vroeg koelt.",
+      store:
+        "Bewaar ze op kamertemperatuur uit de zon voor de beste smaak; koel alleen heel rijpe exemplaren om er een dag of twee bij te winnen.",
+      cook: "Rooster zachte tomaten voor een saus, soep of ovenschotel.",
+    },
+    sv: {
+      name: "Tomater",
+      question: "Hur länge håller tomater?",
+      why: "Tomater fortsätter mogna efter skörd och blir mjuka och mjöliga, särskilt om de kyls för tidigt.",
+      store:
+        "Förvara dem i rumstemperatur utan direkt sol för bästa smak; kyl bara riktigt mogna för att vinna ett dygn eller två.",
+      cook: "Rosta mjuka tomater till en sås, soppa eller plåtmiddag.",
+    },
+    da: {
+      name: "Tomater",
+      question: "Hvor længe holder tomater?",
+      why: "Tomater modner videre efter høst og bliver bløde og melede, især hvis de køles for tidligt.",
+      store:
+        "Opbevar dem ved stuetemperatur uden direkte sol for den bedste smag; køl kun helt modne for at vinde en dag eller to.",
+      cook: "Rist bløde tomater til en sauce, suppe eller en ovnret.",
+    },
+    fi: {
+      name: "Tomaatit",
+      question: "Kuinka kauan tomaatit säilyvät?",
+      why: "Tomaatit kypsyvät poiminnan jälkeen edelleen ja muuttuvat pehmeiksi ja jauhoisiksi, varsinkin jos ne jäähdytetään liian aikaisin.",
+      store:
+        "Säilytä ne huoneenlämmössä auringolta suojassa parhaan maun vuoksi; jäähdytä vain hyvin kypsät voittaaksesi päivän tai kaksi.",
+      cook: "Paahda pehmeät tomaatit kastikkeeksi, keitoksi tai uunivuokaan.",
+    },
+    no: {
+      name: "Tomater",
+      question: "Hvor lenge holder tomater?",
+      why: "Tomater fortsetter å modnes etter innhøsting og blir myke og melne, særlig hvis de kjøles for tidlig.",
+      store:
+        "Oppbevar dem i romtemperatur uten direkte sol for best smak; kjøl bare helt modne for å vinne en dag eller to.",
+      cook: "Stek myke tomater i ovnen til en saus, suppe eller langpanne.",
+    },
+    pl: {
+      name: "Pomidory",
+      question: "Jak długo trzymają się pomidory?",
+      why: "Pomidory dojrzewają dalej po zerwaniu i miękną oraz stają się mączyste, zwłaszcza gdy schłodzi się je za wcześnie.",
+      store:
+        "Dla najlepszego smaku trzymaj je w temperaturze pokojowej z dala od słońca; chłodź tylko bardzo dojrzałe, by zyskać dzień lub dwa.",
+      cook: "Miękkie pomidory upiecz na sos, zupę albo danie z blachy.",
+    },
   },
   carrots: {
     fr: {
@@ -634,6 +1252,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Im Gemüsefach lagern, idealerweise im Beutel; das Grün entfernen, da es Feuchtigkeit zieht.",
       cook: "Weiche Karotten in Suppen, Eintöpfen, Braten oder einem geraspelten Salat verwenden — gekocht sind sie top.",
+    },
+    nl: {
+      name: "Wortels",
+      question: "Hoelang blijven wortels goed?",
+      why: "Wortels zijn stevige knollen, maar worden rubberig als ze vocht verliezen.",
+      store:
+        "Bewaar ze in de groentelade van de koelkast, het liefst in een zak; haal het loof eraf, dat vocht onttrekt.",
+      cook: "Gebruik slappe wortels in soepen, stoofpotten, ovenschotels of een rauwkostsalade — gekookt zijn ze prima.",
+    },
+    sv: {
+      name: "Morötter",
+      question: "Hur länge håller morötter?",
+      why: "Morötter är tåliga rotfrukter men blir sladdriga när de förlorar fukt.",
+      store:
+        "Förvara dem i kylens grönsakslåda, helst i en påse; ta bort blasten, som drar ut fukt.",
+      cook: "Använd slaka morötter i soppor, grytor, ugnsrätter eller en riven sallad — tillagade är de utmärkta.",
+    },
+    da: {
+      name: "Gulerødder",
+      question: "Hvor længe holder gulerødder?",
+      why: "Gulerødder er hårdføre rodfrugter, men bliver bløde og gummiagtige, når de mister fugt.",
+      store:
+        "Opbevar dem i køleskabets grøntsagsskuffe, helst i en pose; fjern toppen, som trækker fugt ud.",
+      cook: "Brug bløde gulerødder i supper, gryderetter, ovnretter eller en revet salat — tilberedt er de helt fine.",
+    },
+    fi: {
+      name: "Porkkanat",
+      question: "Kuinka kauan porkkanat säilyvät?",
+      why: "Porkkanat ovat kestäviä juureksia, mutta muuttuvat kumimaisiksi menettäessään kosteutta.",
+      store:
+        "Säilytä ne jääkaapin vihanneslaatikossa, mieluiten pussissa; poista naatit, jotka imevät kosteutta.",
+      cook: "Käytä notkeat porkkanat keittoihin, patoihin, uuniruokiin tai raasteeksi — kypsennettyinä ne ovat aivan hyviä.",
+    },
+    no: {
+      name: "Gulrøtter",
+      question: "Hvor lenge holder gulrøtter?",
+      why: "Gulrøtter er hardføre rotgrønnsaker, men blir gummiaktige når de mister fuktighet.",
+      store:
+        "Oppbevar dem i kjøleskapets grønnsaksskuff, helst i en pose; fjern toppen, som trekker ut fuktighet.",
+      cook: "Bruk slappe gulrøtter i supper, gryter, ovnsretter eller en revet salat — tilberedt er de helt fine.",
+    },
+    pl: {
+      name: "Marchew",
+      question: "Jak długo trzyma się marchew?",
+      why: "Marchew to twardy korzeń, ale robi się gumowata, gdy traci wilgoć.",
+      store:
+        "Trzymaj ją w szufladzie na warzywa, najlepiej w torebce; usuń natkę, która wyciąga wilgoć.",
+      cook: "Wiotką marchew zużyj do zup, gulaszy, pieczeni albo surówki — po ugotowaniu jest zupełnie dobra.",
     },
   },
   potatoes: {
@@ -677,6 +1343,54 @@ export const SHELF_LIFE_TX = {
         "An einem kühlen, dunklen, luftigen Ort lagern — nicht im Kühlschrank, der ihre Stärke in Zucker umwandelt. Getrennt von Zwiebeln.",
       cook: "Weich werdende Kartoffeln als Püree, Suppe, Gratin oder Bratkartoffeln verwenden.",
     },
+    nl: {
+      name: "Aardappelen",
+      question: "Hoelang blijven aardappelen goed?",
+      why: "Aardappelen gaan uitlopen en groen worden bij blootstelling aan licht en warmte.",
+      store:
+        "Bewaar ze koel, donker en luchtig — niet in de koelkast, die hun zetmeel in suiker omzet. Uit de buurt van uien.",
+      cook: "Gebruik zacht wordende aardappelen in puree, soep, een gratin of gebakken in de oven.",
+    },
+    sv: {
+      name: "Potatis",
+      question: "Hur länge håller potatis?",
+      why: "Potatis gror och blir grön när den utsätts för ljus och värme.",
+      store:
+        "Förvara den svalt, mörkt och luftigt — inte i kylen, som omvandlar stärkelsen till socker. Åtskild från lök.",
+      cook: "Använd mjuknande potatis till mos, soppa, gratäng eller ugnsrostad.",
+    },
+    da: {
+      name: "Kartofler",
+      question: "Hvor længe holder kartofler?",
+      why: "Kartofler spirer og bliver grønne, når de udsættes for lys og varme.",
+      store:
+        "Opbevar dem køligt, mørkt og luftigt — ikke i køleskabet, som omdanner deres stivelse til sukker. Væk fra løg.",
+      cook: "Brug blødende kartofler i mos, suppe, en gratin eller som ovnbagte.",
+    },
+    fi: {
+      name: "Perunat",
+      question: "Kuinka kauan perunat säilyvät?",
+      why: "Perunat itävät ja vihertyvät valolle ja lämmölle altistuessaan.",
+      store:
+        "Säilytä ne viileässä, pimeässä ja ilmavassa paikassa — ei jääkaapissa, joka muuttaa tärkkelyksen sokeriksi. Erillään sipuleista.",
+      cook: "Käytä pehmenevät perunat muusiin, keittoon, gratiiniin tai uunissa paahdettuina.",
+    },
+    no: {
+      name: "Poteter",
+      question: "Hvor lenge holder poteter?",
+      why: "Poteter spirer og blir grønne når de utsettes for lys og varme.",
+      store:
+        "Oppbevar dem kjølig, mørkt og luftig — ikke i kjøleskapet, som gjør stivelsen om til sukker. Vekk fra løk.",
+      cook: "Bruk poteter som mykner i puré, suppe, grateng eller ovnsstekt.",
+    },
+    pl: {
+      name: "Ziemniaki",
+      question: "Jak długo trzymają się ziemniaki?",
+      why: "Ziemniaki kiełkują i zielenieją, gdy są wystawione na światło i ciepło.",
+      store:
+        "Trzymaj je w chłodnym, ciemnym i przewiewnym miejscu — nie w lodówce, która zamienia ich skrobię w cukier. Z dala od cebuli.",
+      cook: "Miękknące ziemniaki zużyj na puree, zupę, zapiekankę albo upiecz w piekarniku.",
+    },
   },
   onions: {
     fr: {
@@ -718,6 +1432,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Ganze Zwiebeln kühl, trocken und luftig lagern, getrennt von Kartoffeln. Angeschnittene eingewickelt im Kühlschrank aufbewahren.",
       cook: "Weiche Zwiebeln karamellisieren oder als Basis fast jeder Suppe, jedes Eintopfs oder jeder Sauce nutzen.",
+    },
+    nl: {
+      name: "Uien",
+      question: "Hoelang blijven uien goed?",
+      why: "Hele uien blijven weken goed, maar lopen uit of worden zacht in vochtige, warme omstandigheden.",
+      store:
+        "Bewaar hele uien koel, droog en geventileerd, uit de buurt van aardappelen. Aangesneden ui verpakt in de koelkast.",
+      cook: "Karameliseer zacht wordende uien, of gebruik ze als basis voor vrijwel elke soep, stoofpot of saus.",
+    },
+    sv: {
+      name: "Lök",
+      question: "Hur länge håller lök?",
+      why: "Hel lök håller i veckor men gror eller mjuknar i fuktiga, varma förhållanden.",
+      store:
+        "Förvara hel lök svalt, torrt och luftigt, åtskild från potatis. Uppskuren lök förvaras inplastad i kylen.",
+      cook: "Karamellisera lök som mjuknar, eller använd den som bas i nästan vilken soppa, gryta eller sås som helst.",
+    },
+    da: {
+      name: "Løg",
+      question: "Hvor længe holder løg?",
+      why: "Hele løg holder i uger, men spirer eller bliver bløde under fugtige, varme forhold.",
+      store:
+        "Opbevar hele løg køligt, tørt og med luft omkring, væk fra kartofler. Skåret løg opbevares indpakket i køleskabet.",
+      cook: "Karamellisér løg, der bliver bløde, eller brug dem som base i næsten enhver suppe, gryderet eller sauce.",
+    },
+    fi: {
+      name: "Sipulit",
+      question: "Kuinka kauan sipulit säilyvät?",
+      why: "Kokonaiset sipulit säilyvät viikkoja, mutta itävät tai pehmenevät kosteassa ja lämpimässä.",
+      store:
+        "Säilytä kokonaiset sipulit viileässä, kuivassa ja ilmavassa paikassa erillään perunoista. Leikattu sipuli säilytetään kääreessä jääkaapissa.",
+      cook: "Karamellisoi pehmenevät sipulit tai käytä ne lähes minkä tahansa keiton, padan tai kastikkeen pohjaksi.",
+    },
+    no: {
+      name: "Løk",
+      question: "Hvor lenge holder løk?",
+      why: "Hel løk holder i uker, men spirer eller mykner under fuktige, varme forhold.",
+      store:
+        "Oppbevar hel løk kjølig, tørt og luftig, vekk fra poteter. Oppskåret løk oppbevares innpakket i kjøleskapet.",
+      cook: "Karamelliser løk som mykner, eller bruk den som base i nesten hvilken som helst suppe, gryte eller saus.",
+    },
+    pl: {
+      name: "Cebula",
+      question: "Jak długo trzyma się cebula?",
+      why: "Cała cebula trzyma się tygodniami, ale kiełkuje albo mięknie w wilgotnych i ciepłych warunkach.",
+      store:
+        "Całą cebulę trzymaj w chłodnym, suchym i przewiewnym miejscu, z dala od ziemniaków. Pokrojoną owiń i trzymaj w lodówce.",
+      cook: "Miękknącą cebulę skarmelizuj albo wykorzystaj jako bazę niemal każdej zupy, gulaszu czy sosu.",
     },
   },
   cheese: {
@@ -761,6 +1523,54 @@ export const SHELF_LIFE_TX = {
         "In Backpapier und dann locker in Folie im Kühlschrank lagern; so atmet er, ohne auszutrocknen.",
       cook: "Festeren Käse über Pasta, in eine Sauce oder auf ein Gratin reiben. Kleinen Oberflächenschimmel beim Hartkäse abschneiden.",
     },
+    nl: {
+      name: "Harde kaas",
+      question: "Hoelang blijft harde kaas goed?",
+      why: "Harde kazen blijven lang goed, maar kunnen uitdrogen of schimmel aan de buitenkant krijgen.",
+      store:
+        "Wikkel hem in bakpapier en daarna losjes in folie, in de koelkast; zo kan hij ademen zonder uit te drogen.",
+      cook: "Rasp hardere wordende kaas over pasta, door een saus of op een gratin. Snijd kleine oppervlakteschimmel van harde kaas weg.",
+    },
+    sv: {
+      name: "Hårdost",
+      question: "Hur länge håller hårdost?",
+      why: "Hårdostar håller bra men kan torka ut eller få mögel på ytan.",
+      store:
+        "Slå in den i bakplåtspapper och sedan löst i folie, i kylen; då kan den andas utan att torka ut.",
+      cook: "Riv ost som hårdnar över pasta, i en sås eller på en gratäng. Skär bort litet ytmögel från hårdost.",
+    },
+    da: {
+      name: "Hård ost",
+      question: "Hvor længe holder hård ost?",
+      why: "Hårde oste holder godt, men kan tørre ud eller få mug på overfladen.",
+      store:
+        "Pak den ind i bagepapir og derefter løst i folie, i køleskabet; så kan den ånde uden at tørre ud.",
+      cook: "Riv ost, der bliver hård, over pasta, i en sauce eller på en gratin. Skær lidt overflademug af hård ost.",
+    },
+    fi: {
+      name: "Kova juusto",
+      question: "Kuinka kauan kova juusto säilyy?",
+      why: "Kovat juustot säilyvät hyvin, mutta voivat kuivua tai saada pintahometta.",
+      store:
+        "Kääri se leivinpaperiin ja sitten löyhästi folioon, jääkaapissa; näin se hengittää kuivumatta.",
+      cook: "Raasta kovettuva juusto pastan päälle, kastikkeeseen tai gratiiniin. Leikkaa pieni pintahome pois kovasta juustosta.",
+    },
+    no: {
+      name: "Fast ost",
+      question: "Hvor lenge holder fast ost?",
+      why: "Faste oster holder godt, men kan tørke ut eller få mugg på overflaten.",
+      store:
+        "Pakk den inn i bakepapir og deretter løst i folie, i kjøleskapet; da kan den puste uten å tørke ut.",
+      cook: "Riv ost som blir hard over pasta, i en saus eller på en gratrett. Skjær litt overflatemugg av fast ost.",
+    },
+    pl: {
+      name: "Ser twardy",
+      question: "Jak długo trzyma się ser twardy?",
+      why: "Twarde sery trzymają się dobrze, ale mogą wysychać albo dostać pleśni na powierzchni.",
+      store:
+        "Owiń go papierem do pieczenia, a potem luźno folią i trzymaj w lodówce; dzięki temu oddycha, nie wysychając.",
+      cook: "Twardniejący ser zetrzyj na makaron, do sosu albo na zapiekankę. Niewielką pleśń z powierzchni twardego sera po prostu odetnij.",
+    },
   },
   yoghurt: {
     fr: {
@@ -802,6 +1612,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Auf einem kalten Kühlschrankfach lagern und einen sauberen Löffel nehmen, um keine Bakterien einzubringen.",
       cook: "Joghurt nahe am Datum in Marinaden, Smoothies, Gebäck oder einem Curry verwenden.",
+    },
+    nl: {
+      name: "Yoghurt",
+      question: "Hoelang blijft yoghurt goed?",
+      why: "Yoghurt is gefermenteerd en vrij stabiel, maar schift uiteindelijk en wordt te zuur.",
+      store:
+        "Bewaar hem op een koude plank in de koelkast en gebruik een schone lepel om geen bacteriën te introduceren.",
+      cook: "Gebruik yoghurt tegen de datum in marinades, smoothies, baksels of een curry.",
+    },
+    sv: {
+      name: "Yoghurt",
+      question: "Hur länge håller yoghurt?",
+      why: "Yoghurt är syrad och ganska stabil, men skiktar sig till slut och blir för sur.",
+      store:
+        "Förvara den på en kall kylhylla och använd en ren sked så att du inte tillför bakterier.",
+      cook: "Använd yoghurt nära datumet i marinader, smoothies, bakning eller en curry.",
+    },
+    da: {
+      name: "Yoghurt",
+      question: "Hvor længe holder yoghurt?",
+      why: "Yoghurt er syrnet og ret stabil, men skiller til sidst og bliver for sur.",
+      store:
+        "Opbevar den på en kold hylde i køleskabet, og brug en ren ske, så du ikke tilfører bakterier.",
+      cook: "Brug yoghurt tæt på datoen i marinader, smoothies, bagværk eller en karryret.",
+    },
+    fi: {
+      name: "Jogurtti",
+      question: "Kuinka kauan jogurtti säilyy?",
+      why: "Jogurtti on hapatettu ja melko vakaa, mutta lopulta se erottuu ja happamoituu liikaa.",
+      store:
+        "Säilytä se jääkaapin kylmällä hyllyllä ja käytä puhdasta lusikkaa, jottet tuo mukanasi bakteereja.",
+      cook: "Käytä päiväyksen lähellä oleva jogurtti marinadeihin, smoothieihin, leivontaan tai curryyn.",
+    },
+    no: {
+      name: "Yoghurt",
+      question: "Hvor lenge holder yoghurt?",
+      why: "Yoghurt er syrnet og ganske stabil, men skiller seg til slutt og blir for sur.",
+      store:
+        "Oppbevar den på en kald hylle i kjøleskapet, og bruk en ren skje så du ikke tilfører bakterier.",
+      cook: "Bruk yoghurt nær datoen i marinader, smoothies, bakst eller en karrirett.",
+    },
+    pl: {
+      name: "Jogurt",
+      question: "Jak długo trzyma się jogurt?",
+      why: "Jogurt jest fermentowany i dość stabilny, ale w końcu się rozwarstwia i robi zbyt kwaśny.",
+      store:
+        "Trzymaj go na zimnej półce lodówki i używaj czystej łyżki, żeby nie wprowadzać bakterii.",
+      cook: "Jogurt blisko terminu zużyj do marynat, koktajli, wypieków albo curry.",
     },
   },
   mushrooms: {
@@ -845,6 +1703,54 @@ export const SHELF_LIFE_TX = {
         "In einer Papiertüte im Kühlschrank lagern, nicht in geschlossener Folie, damit sie atmen.",
       cook: "Ältere Pilze mit Knoblauch anbraten und zu Pasta, Risotto, Omeletts oder auf Brot geben.",
     },
+    nl: {
+      name: "Champignons",
+      question: "Hoelang blijven champignons goed?",
+      why: "Champignons zijn spons-achtig en worden slijmerig of droog naarmate ze vocht verliezen of opnemen.",
+      store:
+        "Bewaar ze in een papieren zak in de koelkast, niet in afgesloten plastic, zodat ze kunnen ademen.",
+      cook: "Bak oudere champignons met knoflook en voeg ze toe aan pasta, risotto, omeletten of op toast.",
+    },
+    sv: {
+      name: "Champinjoner",
+      question: "Hur länge håller champinjoner?",
+      why: "Svamp är svampliknande och blir slemmig eller torr när den förlorar eller tar upp fukt.",
+      store:
+        "Förvara dem i en papperspåse i kylen, inte i sluten plast, så att de kan andas.",
+      cook: "Fräs äldre svamp med vitlök och lägg i pasta, risotto, omelett eller på rostat bröd.",
+    },
+    da: {
+      name: "Champignoner",
+      question: "Hvor længe holder champignoner?",
+      why: "Svampe er svampeagtige og bliver slimede eller tørre, når de mister eller optager fugt.",
+      store:
+        "Opbevar dem i en papirspose i køleskabet, ikke i lukket plastik, så de kan ånde.",
+      cook: "Svits ældre svampe med hvidløg, og kom dem i pasta, risotto, omelet eller på ristet brød.",
+    },
+    fi: {
+      name: "Herkkusienet",
+      question: "Kuinka kauan herkkusienet säilyvät?",
+      why: "Sienet ovat sienimäisiä ja muuttuvat limaisiksi tai kuiviksi menettäessään tai imiessään kosteutta.",
+      store:
+        "Säilytä ne paperipussissa jääkaapissa, ei suljetussa muovissa, jotta ne pääsevät hengittämään.",
+      cook: "Kuullota vanhenevat sienet valkosipulin kanssa ja lisää pastaan, risottoon, munakkaisiin tai leivän päälle.",
+    },
+    no: {
+      name: "Sjampinjonger",
+      question: "Hvor lenge holder sjampinjonger?",
+      why: "Sopp er svampaktig og blir slimete eller tørr etter hvert som den mister eller tar opp fuktighet.",
+      store:
+        "Oppbevar dem i en papirpose i kjøleskapet, ikke i lukket plast, så de får puste.",
+      cook: "Surr eldre sopp med hvitløk og ha den i pasta, risotto, omelett eller på ristet brød.",
+    },
+    pl: {
+      name: "Pieczarki",
+      question: "Jak długo trzymają się pieczarki?",
+      why: "Grzyby są gąbczaste i robią się śliskie albo suche, tracąc lub chłonąc wilgoć.",
+      store:
+        "Trzymaj je w papierowej torebce w lodówce, a nie w zamkniętym plastiku, żeby mogły oddychać.",
+      cook: "Podstarzałe grzyby podsmaż z czosnkiem i dodaj do makaronu, risotta, omletu albo na grzankę.",
+    },
   },
   lettuce: {
     fr: {
@@ -886,6 +1792,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Trocken und locker in Küchenpapier gewickelt im Gemüsefach lagern.",
       cook: "Müden Salat in einer Suppe oder Pfanne zusammenfallen lassen — Romana eignet sich auch geschmort oder gegrillt.",
+    },
+    nl: {
+      name: "Sla",
+      question: "Hoelang blijft sla goed?",
+      why: "Bladsla verlept en verkleurt bruin aan de snijranden naarmate hij vocht verliest.",
+      store:
+        "Bewaar hem droog en losjes gewikkeld met keukenpapier in de groentelade.",
+      cook: "Laat slappe sla slinken in soep of een roerbakgerecht — little gem en romaine zijn goed gesmoord of gegrild.",
+    },
+    sv: {
+      name: "Sallad",
+      question: "Hur länge håller sallad?",
+      why: "Bladsallad vissnar och brunar i snittkanterna när den förlorar fukt.",
+      store:
+        "Håll den torr och löst inslagen med hushållspapper i grönsakslådan.",
+      cook: "Låt trött sallad falla ihop i en soppa eller wok — romansallad och lilla gem är goda bräserade eller grillade.",
+    },
+    da: {
+      name: "Salat",
+      question: "Hvor længe holder salat?",
+      why: "Bladsalat visner og bliver brun i snitkanterne, når den mister fugt.",
+      store:
+        "Hold den tør og løst pakket ind med køkkenrulle i grøntsagsskuffen.",
+      cook: "Lad træt salat falde sammen i en suppe eller wok — romaine og lille gem er gode braiserede eller grillede.",
+    },
+    fi: {
+      name: "Lehtisalaatti",
+      question: "Kuinka kauan lehtisalaatti säilyy?",
+      why: "Lehtisalaatti nuutuu ja ruskettuu leikkuureunoista menettäessään kosteutta.",
+      store:
+        "Pidä se kuivana ja löyhästi talouspaperiin käärittynä vihanneslaatikossa.",
+      cook: "Kuullota väsynyt salaatti keittoon tai wokkiin — romaine ja pikkusalaatti ovat hyviä haudutettuina tai grillattuina.",
+    },
+    no: {
+      name: "Salat",
+      question: "Hvor lenge holder salat?",
+      why: "Bladsalat visner og blir brun i snittkantene når den mister fuktighet.",
+      store:
+        "Hold den tørr og løst pakket inn med tørkepapir i grønnsaksskuffen.",
+      cook: "La trøtt salat falle sammen i en suppe eller wok — romanosalat og små salathoder er gode braiserte eller grillede.",
+    },
+    pl: {
+      name: "Sałata",
+      question: "Jak długo trzyma się sałata?",
+      why: "Sałata liściasta więdnie i brązowieje na przekrojonych brzegach, tracąc wilgoć.",
+      store:
+        "Trzymaj ją suchą i luźno owiniętą ręcznikiem papierowym w szufladzie na warzywa.",
+      cook: "Zmęczoną sałatę poddusz w zupie albo na patelni — rzymska i mała sałata dobrze wypadają duszone lub grillowane.",
     },
   },
   "bell-peppers": {
@@ -929,6 +1883,54 @@ export const SHELF_LIFE_TX = {
         "Ganz und trocken im Gemüsefach lagern; angeschnitten einwickeln und in ein paar Tagen verbrauchen.",
       cook: "Weiche Paprika für eine Sauce, Suppe, Fajitas oder ein Ofengericht rösten.",
     },
+    nl: {
+      name: "Paprika's",
+      question: "Hoelang blijven paprika's goed?",
+      why: "Paprika's rimpelen en worden langzaam zacht naarmate ze uitdrogen.",
+      store:
+        "Bewaar ze heel en droog in de groentelade; eenmaal gesneden verpakken en binnen een paar dagen gebruiken.",
+      cook: "Rooster zacht wordende paprika's voor een saus, soep, fajita's of een ovenschotel.",
+    },
+    sv: {
+      name: "Paprika",
+      question: "Hur länge håller paprika?",
+      why: "Paprika skrynklar sig långsamt och mjuknar när den torkar ut.",
+      store:
+        "Förvara dem hela och torra i grönsakslådan; när de väl är skurna, slå in dem och använd inom några dagar.",
+      cook: "Rosta paprika som mjuknar till en sås, soppa, fajitas eller en plåtmiddag.",
+    },
+    da: {
+      name: "Peberfrugter",
+      question: "Hvor længe holder peberfrugter?",
+      why: "Peberfrugter rynker langsomt og bliver bløde, efterhånden som de tørrer ud.",
+      store:
+        "Opbevar dem hele og tørre i grøntsagsskuffen; når de først er skåret, pak dem ind, og brug dem inden for få dage.",
+      cook: "Rist peberfrugter, der bliver bløde, til en sauce, suppe, fajitas eller en ovnret.",
+    },
+    fi: {
+      name: "Paprikat",
+      question: "Kuinka kauan paprikat säilyvät?",
+      why: "Paprikat kurttuuntuvat ja pehmenevät hitaasti kuivuessaan.",
+      store:
+        "Säilytä ne kokonaisina ja kuivina vihanneslaatikossa; leikattuina kääri ja käytä parissa päivässä.",
+      cook: "Paahda pehmenevät paprikat kastikkeeksi, keitoksi, fajitoihin tai uunivuokaan.",
+    },
+    no: {
+      name: "Paprika",
+      question: "Hvor lenge holder paprika?",
+      why: "Paprika rynker seg sakte og mykner etter hvert som den tørker ut.",
+      store:
+        "Oppbevar dem hele og tørre i grønnsaksskuffen; når de først er skåret, pakk dem inn og bruk dem innen noen dager.",
+      cook: "Stek paprika som mykner i ovnen til en saus, suppe, fajitas eller en langpanne.",
+    },
+    pl: {
+      name: "Papryka",
+      question: "Jak długo trzyma się papryka?",
+      why: "Papryka powoli się marszczy i mięknie w miarę wysychania.",
+      store:
+        "Trzymaj ją w całości i sucho w szufladzie na warzywa; po pokrojeniu owiń i zużyj w ciągu kilku dni.",
+      cook: "Miękknącą paprykę upiecz na sos, zupę, fajitas albo danie z blachy.",
+    },
   },
   broccoli: {
     fr: {
@@ -970,6 +1972,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Ungewaschen im Kühlschrank lagern, locker eingewickelt; ein feuchtes Küchentuch hält ihn knackig.",
       cook: "Älteren Brokkoli rösten oder anbraten oder zu einer Suppe pürieren — Stiele inklusive.",
+    },
+    nl: {
+      name: "Broccoli",
+      question: "Hoelang blijft broccoli goed?",
+      why: "Broccoli wordt geel en zacht naarmate de roosjes ouder worden.",
+      store:
+        "Bewaar hem ongewassen en losjes in een zak in de koelkast; een vochtig stukje keukenpapier houdt hem knapperig.",
+      cook: "Rooster of roerbak oudere broccoli, of pureer hem tot soep — stelen en al.",
+    },
+    sv: {
+      name: "Broccoli",
+      question: "Hur länge håller broccoli?",
+      why: "Broccoli gulnar och mjuknar när buketterna åldras.",
+      store:
+        "Förvara den otvättad i kylen, löst i en påse; en fuktig hushållspappersbit hjälper den att hålla sig krispig.",
+      cook: "Rosta eller woka äldre broccoli, eller mixa den till en soppa — stjälkarna med.",
+    },
+    da: {
+      name: "Broccoli",
+      question: "Hvor længe holder broccoli?",
+      why: "Broccoli bliver gullig og blød, efterhånden som buketterne ældes.",
+      store:
+        "Opbevar den uvasket i køleskabet, løst i en pose; et fugtigt stykke køkkenrulle holder den sprød.",
+      cook: "Rist eller wok ældre broccoli, eller blend den til en suppe — stokken med.",
+    },
+    fi: {
+      name: "Parsakaali",
+      question: "Kuinka kauan parsakaali säilyy?",
+      why: "Parsakaali kellastuu ja pehmenee kukintojen vanhetessa.",
+      store:
+        "Säilytä se pesemättömänä jääkaapissa löyhästi pussissa; kostea talouspaperi auttaa sitä pysymään rapeana.",
+      cook: "Paahda tai wokkaa vanheneva parsakaali tai soseuta se keitoksi — kannat mukaan lukien.",
+    },
+    no: {
+      name: "Brokkoli",
+      question: "Hvor lenge holder brokkoli?",
+      why: "Brokkoli gulner og mykner etter hvert som buketten eldes.",
+      store:
+        "Oppbevar den uvasket i kjøleskapet, løst i en pose; et fuktig stykke tørkepapir hjelper den å holde seg sprø.",
+      cook: "Stek eller wok eldre brokkoli, eller kjør den til en suppe — stilken inkludert.",
+    },
+    pl: {
+      name: "Brokuły",
+      question: "Jak długo trzymają się brokuły?",
+      why: "Brokuły żółkną i miękną w miarę starzenia się różyczek.",
+      store:
+        "Trzymaj je nieumyte w lodówce, luźno w torebce; wilgotny ręcznik papierowy pomoże im zachować jędrność.",
+      cook: "Starsze brokuły upiecz lub podsmaż albo zmiksuj na zupę — razem z łodygami.",
     },
   },
   apples: {
@@ -1013,6 +2063,54 @@ export const SHELF_LIFE_TX = {
         "Im Gemüsefach lagern, getrennt von anderem Obst und Gemüse, das sie überreif werden ließen.",
       cook: "Weiche Äpfel zu Kompott, Crumble oder als Porridge-Topping einkochen.",
     },
+    nl: {
+      name: "Appels",
+      question: "Hoelang blijven appels goed?",
+      why: "Appels blijven weken goed, maar worden melig en rimpelig naarmate ze hun knapperigheid verliezen, en ze versnellen het rijpen van fruit ernaast.",
+      store:
+        "Bewaar ze in de groentelade van de koelkast, uit de buurt van ander fruit en groente die ze te snel zouden laten rijpen.",
+      cook: "Stoof zachte appels tot compote, een crumble of topping voor je pap.",
+    },
+    sv: {
+      name: "Äpplen",
+      question: "Hur länge håller äpplen?",
+      why: "Äpplen håller i veckor men blir mjöliga och skrynkliga när de förlorar sin knaprighet, och de påskyndar mognaden hos närliggande varor.",
+      store:
+        "Förvara dem i kylens grönsakslåda, åtskilda från annan frukt och grönt som de skulle övermogna.",
+      cook: "Koka mjuka äpplen till kompott, en smulpaj eller topping till gröten.",
+    },
+    da: {
+      name: "Æbler",
+      question: "Hvor længe holder æbler?",
+      why: "Æbler holder i uger, men bliver melede og rynkede, når de mister sprødheden, og de fremskynder modningen af varer ved siden af.",
+      store:
+        "Opbevar dem i køleskabets grøntsagsskuffe, væk fra anden frugt og grønt, som de ville overmodne.",
+      cook: "Kog bløde æbler til kompot, en crumble eller topping til grøden.",
+    },
+    fi: {
+      name: "Omenat",
+      question: "Kuinka kauan omenat säilyvät?",
+      why: "Omenat säilyvät viikkoja, mutta muuttuvat jauhoisiksi ja kurttuisiksi menettäessään rapeutensa, ja ne nopeuttavat viereisten tuotteiden kypsymistä.",
+      store:
+        "Säilytä ne jääkaapin vihanneslaatikossa erillään muista hedelmistä ja vihanneksista, jotka ne ylikypsyttäisivät.",
+      cook: "Hauduta pehmeät omenat kompotiksi, murupiirakaksi tai puuron päälle.",
+    },
+    no: {
+      name: "Epler",
+      question: "Hvor lenge holder epler?",
+      why: "Epler holder i uker, men blir melne og rynkete når de mister sprøheten, og de framskynder modningen av varer i nærheten.",
+      store:
+        "Oppbevar dem i kjøleskapets grønnsaksskuff, vekk fra annen frukt og grønt som de ville overmodnet.",
+      cook: "Kok myke epler til kompott, en crumble eller topping til grøten.",
+    },
+    pl: {
+      name: "Jabłka",
+      question: "Jak długo trzymają się jabłka?",
+      why: "Jabłka trzymają się tygodniami, ale robią się mączyste i pomarszczone, tracąc jędrność, i przyspieszają dojrzewanie sąsiednich produktów.",
+      store:
+        "Trzymaj je w szufladzie na warzywa, z dala od innych owoców i warzyw, którym przyspieszyłyby dojrzewanie.",
+      cook: "Miękkie jabłka uduś na kompot, kruche ciasto albo dodatek do owsianki.",
+    },
   },
   fish: {
     fr: {
@@ -1054,6 +2152,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Auf Eis oder im kältesten Teil des Kühlschranks lagern und am Kauftag oder am Tag danach garen.",
       cook: "Innerhalb eines Tages garen oder am Kauftag einfrieren. Vertrau der Nase — frischer Fisch riecht nach Meer, nicht „fischig“.",
+    },
+    nl: {
+      name: "Verse vis",
+      question: "Hoelang blijft verse vis goed?",
+      why: "Verse vis is zeer bederfelijk en gaat zelfs gekoeld snel achteruit.",
+      store:
+        "Bewaar hem op ijs of in het koudste deel van de koelkast en bereid hem op de dag van aankoop of de dag erna.",
+      cook: 'Bereid hem binnen een dag, of vries hem in op de dag dat je hem koopt. Vertrouw op je neus — verse vis ruikt naar zee, niet "vissig".',
+    },
+    sv: {
+      name: "Färsk fisk",
+      question: "Hur länge håller färsk fisk?",
+      why: "Färsk fisk är mycket ömtålig och försämras snabbt även i kyla.",
+      store:
+        "Förvara den på is eller i kylens kallaste del och tillaga den samma dag eller dagen efter köpet.",
+      cook: 'Tillaga inom ett dygn, eller frys in den samma dag du köper den. Lita på näsan — färsk fisk luktar hav, inte "fisk".',
+    },
+    da: {
+      name: "Frisk fisk",
+      question: "Hvor længe holder frisk fisk?",
+      why: "Frisk fisk er meget letfordærvelig og forringes hurtigt, selv når den er kølet.",
+      store:
+        "Opbevar den på is eller i køleskabets koldeste del, og tilbered den samme dag eller dagen efter købet.",
+      cook: 'Tilbered inden for en dag, eller frys den ned samme dag, du køber den. Stol på næsen — frisk fisk lugter af hav, ikke af "fisk".',
+    },
+    fi: {
+      name: "Tuore kala",
+      question: "Kuinka kauan tuore kala säilyy?",
+      why: "Tuore kala on erittäin pilaantuvaa ja heikkenee nopeasti jäähdytettynäkin.",
+      store:
+        "Säilytä se jäissä tai jääkaapin kylmimmässä osassa ja kypsennä osto- tai seuraavana päivänä.",
+      cook: 'Kypsennä päivän sisällä tai pakasta ostopäivänä. Luota nenääsi — tuore kala tuoksuu merelle, ei "kalalta".',
+    },
+    no: {
+      name: "Fersk fisk",
+      question: "Hvor lenge holder fersk fisk?",
+      why: "Fersk fisk er svært lett bedervelig og forringes raskt selv når den er kjølt.",
+      store:
+        "Oppbevar den på is eller i kjøleskapets kaldeste del, og tilbered den samme dag eller dagen etter kjøpet.",
+      cook: 'Tilbered innen en dag, eller frys den samme dag du kjøper den. Stol på nesen — fersk fisk lukter hav, ikke "fisk".',
+    },
+    pl: {
+      name: "Świeża ryba",
+      question: "Jak długo trzyma się świeża ryba?",
+      why: "Świeża ryba szybko się psuje i traci jakość nawet w lodówce.",
+      store:
+        "Trzymaj ją na lodzie albo w najzimniejszej części lodówki i przyrządź w dniu zakupu lub następnego dnia.",
+      cook: 'Przyrządź w ciągu doby albo zamroź w dniu zakupu. Zaufaj nosowi — świeża ryba pachnie morzem, a nie "rybą".',
     },
   },
   herbs: {
@@ -1097,6 +2243,54 @@ export const SHELF_LIFE_TX = {
         "Weiche Kräuter wie Blumen in ein Glas Wasser stellen, locker abgedeckt, im Kühlschrank (Basilikum mag die Arbeitsfläche).",
       cook: "Müde Kräuter zu Pesto, Salsa verde oder Marinade pürieren oder in Öl in einer Eiswürfelform einfrieren.",
     },
+    nl: {
+      name: "Verse kruiden",
+      question: "Hoelang blijven verse kruiden goed?",
+      why: "Zachte kruiden zoals koriander en basilicum verleppen snel; ze bestaan vooral uit water in dunne blaadjes.",
+      store:
+        "Zet zachte kruiden als bloemen in een glas water, losjes afgedekt, in de koelkast (basilicum staat liever op het aanrecht).",
+      cook: "Pureer slappe kruiden tot pesto, salsa verde of een marinade, of vries ze in olie in een ijsblokjesvorm in.",
+    },
+    sv: {
+      name: "Färska örter",
+      question: "Hur länge håller färska örter?",
+      why: "Mjuka örter som koriander och basilika vissnar snabbt; de är mest vatten i tunna blad.",
+      store:
+        "Ställ mjuka örter i ett glas vatten som blommor, löst täckta, i kylen (basilika trivs bättre på bänken).",
+      cook: "Mixa trötta örter till pesto, salsa verde eller en marinad, eller frys dem i olja i en istärningsform.",
+    },
+    da: {
+      name: "Friske krydderurter",
+      question: "Hvor længe holder friske krydderurter?",
+      why: "Bløde krydderurter som koriander og basilikum visner hurtigt; de er mest vand i tynde blade.",
+      store:
+        "Stil bløde krydderurter i et glas vand som blomster, løst tildækket, i køleskabet (basilikum foretrækker køkkenbordet).",
+      cook: "Blend trætte krydderurter til pesto, salsa verde eller en marinade, eller frys dem i olie i en isterningebakke.",
+    },
+    fi: {
+      name: "Tuoreet yrtit",
+      question: "Kuinka kauan tuoreet yrtit säilyvät?",
+      why: "Pehmeät yrtit kuten korianteri ja basilika nuutuvat nopeasti; ne ovat lähinnä vettä ohuissa lehdissä.",
+      store:
+        "Laita pehmeät yrtit kukkien tavoin lasiin vettä, löyhästi peitettynä, jääkaappiin (basilika viihtyy paremmin pöydällä).",
+      cook: "Soseuta väsyneet yrtit pestoksi, salsa verdeksi tai marinadiksi, tai pakasta ne öljyssä jääpalamuotissa.",
+    },
+    no: {
+      name: "Ferske urter",
+      question: "Hvor lenge holder ferske urter?",
+      why: "Myke urter som koriander og basilikum visner raskt; de er stort sett vann i tynne blader.",
+      store:
+        "Sett myke urter i et glass vann som blomster, løst tildekket, i kjøleskapet (basilikum trives bedre på benken).",
+      cook: "Kjør trøtte urter til pesto, salsa verde eller en marinade, eller frys dem i olje i en isbitform.",
+    },
+    pl: {
+      name: "Świeże zioła",
+      question: "Jak długo trzymają się świeże zioła?",
+      why: "Miękkie zioła, jak kolendra i bazylia, szybko więdną; to głównie woda w cienkich listkach.",
+      store:
+        "Wstaw miękkie zioła do szklanki z wodą jak kwiaty, luźno przykryte, do lodówki (bazylia woli blat).",
+      cook: "Zwiotczałe zioła zmiksuj na pesto, salsę verde albo marynatę, lub zamroź je w oleju w foremce na lód.",
+    },
   },
   butter: {
     fr: {
@@ -1139,6 +2333,54 @@ export const SHELF_LIFE_TX = {
         "Eingewickelt im Kühlschrank lagern; überzählige Stücke einfrieren. Etwas in einer abgedeckten Butterdose bei Zimmertemperatur ist für den täglichen Gebrauch okay.",
       cook: "Butter nahe am Datum zum Backen, für Saucen oder als braune Butter verwenden.",
     },
+    nl: {
+      name: "Boter",
+      question: "Hoelang blijft boter goed?",
+      why: "Boter is vetrijk en blijft lang goed, maar kan koelkastgeurtjes opnemen en wordt uiteindelijk ransig.",
+      store:
+        "Bewaar hem verpakt in de koelkast; vries reservepakjes in. Een beetje in een gesloten botervloot op kamertemperatuur is prima voor dagelijks gebruik.",
+      cook: "Gebruik boter tegen de datum in baksels, sauzen of als bruine boter.",
+    },
+    sv: {
+      name: "Smör",
+      question: "Hur länge håller smör?",
+      why: "Smör är fettrikt och håller bra, men kan ta upp kylsmaker och härsknar till slut.",
+      store:
+        "Förvara det inslaget i kylen; frys in extra paket. Lite i en täckt smörask i rumstemperatur går bra till dagligt bruk.",
+      cook: "Använd smör nära datumet i bakning, såser eller brynt smör.",
+    },
+    da: {
+      name: "Smør",
+      question: "Hvor længe holder smør?",
+      why: "Smør er fedtrigt og holder godt, men kan optage lugte fra køleskabet og bliver til sidst harsk.",
+      store:
+        "Opbevar det indpakket i køleskabet; frys ekstra pakker ned. Lidt i en tildækket smørskål ved stuetemperatur er fint til daglig brug.",
+      cook: "Brug smør tæt på datoen i bagværk, saucer eller brunet smør.",
+    },
+    fi: {
+      name: "Voi",
+      question: "Kuinka kauan voi säilyy?",
+      why: "Voi on rasvaista ja säilyy hyvin, mutta se voi imeä jääkaapin hajuja ja lopulta härskiintyä.",
+      store:
+        "Säilytä se käärittynä jääkaapissa; pakasta ylimääräiset paketit. Vähän voita kannellisessa rasiassa huoneenlämmössä käy hyvin päivittäiskäyttöön.",
+      cook: "Käytä päiväyksen lähellä oleva voi leivontaan, kastikkeisiin tai ruskistettuna voina.",
+    },
+    no: {
+      name: "Smør",
+      question: "Hvor lenge holder smør?",
+      why: "Smør er fettrikt og holder godt, men kan ta opp lukter fra kjøleskapet og blir til slutt harskt.",
+      store:
+        "Oppbevar det innpakket i kjøleskapet; frys ekstra pakker. Litt i en smørform med lokk i romtemperatur går fint til daglig bruk.",
+      cook: "Bruk smør nær datoen i bakst, sauser eller brunet smør.",
+    },
+    pl: {
+      name: "Masło",
+      question: "Jak długo trzyma się masło?",
+      why: "Masło jest tłuste i trzyma się dobrze, ale może chłonąć zapachy z lodówki i w końcu jełczeje.",
+      store:
+        "Trzymaj je zawinięte w lodówce; zapasowe kostki zamroź. Odrobina w przykrytej masielniczce w temperaturze pokojowej jest w porządku do codziennego użytku.",
+      cook: "Masło blisko terminu zużyj do wypieków, sosów albo zrób z niego masło klarowane na brązowo.",
+    },
   },
   leftovers: {
     fr: {
@@ -1180,6 +2422,54 @@ export const SHELF_LIFE_TX = {
       store:
         "Innerhalb von zwei Stunden abkühlen, in einem geschlossenen Behälter aufbewahren und höchstens 2–3 Tage halten — oder für später einfrieren.",
       cook: "Reste nur einmal aufwärmen, bis sie dampfend heiß sind. Copantry verfolgt deine Restportionen, damit sie nicht vergessen werden.",
+    },
+    nl: {
+      name: "Gekookte restjes",
+      question: "Hoelang blijven gekookte restjes goed?",
+      why: "In bereide gerechten kunnen zich na het afkoelen bacteriën ontwikkelen, dus ze hebben een korte veilige periode in de koelkast.",
+      store:
+        "Laat ze binnen twee uur afkoelen, bewaar ze in een afgesloten bak en houd ze niet langer dan 2–3 dagen — of vries ze in voor later.",
+      cook: "Verwarm restjes tot ze door en door heet zijn, en maar één keer. Copantry houdt je restporties bij zodat ze niet worden vergeten.",
+    },
+    sv: {
+      name: "Matrester",
+      question: "Hur länge håller matrester?",
+      why: "Tillagade rätter kan få bakterietillväxt när de svalnat, så de har ett kort säkert fönster i kylen.",
+      store:
+        "Kyl ner dem inom två timmar, förvara i en tät låda och håll dem högst 2–3 dagar — eller frys in för senare.",
+      cook: "Värm rester tills de är rykande heta, och bara en gång. Copantry håller koll på dina restportioner så att de inte glöms bort.",
+    },
+    da: {
+      name: "Rester",
+      question: "Hvor længe holder rester?",
+      why: "Tilberedte retter kan få bakterievækst, når de er kølet af, så de har et kort sikkert vindue i køleskabet.",
+      store:
+        "Køl dem ned inden for to timer, opbevar dem i en lufttæt boks, og hold dem højst 2–3 dage — eller frys dem ned til senere.",
+      cook: "Varm rester op, til de er rygende varme, og kun én gang. Copantry holder styr på dine restportioner, så de ikke bliver glemt.",
+    },
+    fi: {
+      name: "Kypsät tähteet",
+      question: "Kuinka kauan kypsät tähteet säilyvät?",
+      why: "Kypsissä ruoissa voi jäähtymisen jälkeen kasvaa bakteereja, joten niillä on lyhyt turvallinen aika jääkaapissa.",
+      store:
+        "Jäähdytä ne kahdessa tunnissa, säilytä suljetussa rasiassa ja pidä korkeintaan 2–3 päivää — tai pakasta myöhempää varten.",
+      cook: "Kuumenna tähteet kiehuvan kuumiksi, ja vain kerran. Copantry pitää kirjaa tähdeannoksistasi, jotta ne eivät unohdu.",
+    },
+    no: {
+      name: "Matrester",
+      question: "Hvor lenge holder matrester?",
+      why: "Tilberedte retter kan få bakterievekst når de er avkjølt, så de har et kort trygt vindu i kjøleskapet.",
+      store:
+        "Kjøl dem ned innen to timer, oppbevar dem i en tett boks, og hold dem høyst 2–3 dager — eller frys dem til senere.",
+      cook: "Varm rester til de er rykende varme, og bare én gang. Copantry holder oversikt over restporsjonene dine så de ikke blir glemt.",
+    },
+    pl: {
+      name: "Resztki po gotowaniu",
+      question: "Jak długo trzymają się resztki po gotowaniu?",
+      why: "W ugotowanych potrawach po ostygnięciu mogą namnażać się bakterie, więc mają krótkie bezpieczne okno w lodówce.",
+      store:
+        "Schłodź je w ciągu dwóch godzin, przechowuj w szczelnym pojemniku i trzymaj najwyżej 2–3 dni — albo zamroź na później.",
+      cook: "Resztki podgrzewaj do wrzenia i tylko raz. Copantry pilnuje twoich porcji resztek, żeby o nich nie zapomnieć.",
     },
   },
 };

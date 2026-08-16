@@ -226,6 +226,252 @@ export const PAGE_TX = {
         "Weinbegleitung",
       ],
     },
+    nl: {
+      metaTitle: "Maaltijden plannen",
+      eyebrow: "Maaltijden plannen",
+      crumb: "Maaltijden plannen",
+      h1: "Plan je week rond wat je al hebt",
+      lede: "Copantry plant een week aan maaltijden vanuit je voorraadkast, niet vanuit een lege agenda. Het geeft voorrang aan ingrediënten die bijna over de datum zijn, schaalt recepten naar je huishouden en maakt daarna een boodschappenlijst van alleen wat je mist.",
+      sections: [
+        {
+          h2: "Laat het de week voor je plannen",
+          body: "Vraag Copantry een week te genereren en het bouwt een gevarieerde planning die eerst het bijna-bedorven eten opmaakt — of sleep je eigen recepten op de agenda. Jij houdt de regie en wisselt elke maaltijd met één tik.",
+        },
+        {
+          h2: "Een planning die je echt volhoudt",
+          body: "Een planning houdt stand als hij past bij je echte kast, je echte week en je echte huishouden.",
+          bullets: [
+            {
+              title: "Gebouwd rond je voorraadkast",
+              desc: "Gebruikt wat je hebt voordat het bederft, dus er gaat minder verloren.",
+            },
+            {
+              title: "Afgestemd op je huishouden",
+              desc: "Stel in voor hoeveel mensen je kookt en de hoeveelheden volgen.",
+            },
+            {
+              title: "Met iedereen gedeeld",
+              desc: "Het hele huishouden ziet en bewerkt één planning, in realtime.",
+            },
+            {
+              title: "Restjes bijgehouden",
+              desc: "Kook één keer en Copantry houdt de overgebleven porties bij voor later.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Minder verspilling",
+        "Boodschappenlijsten",
+        "Plannen vanuit je AI-assistent",
+        "Wijn erbij",
+      ],
+    },
+    sv: {
+      metaTitle: "Måltidsplanering",
+      eyebrow: "Måltidsplanering",
+      crumb: "Måltidsplanering",
+      h1: "Planera veckan kring det du redan har",
+      lede: "Copantry planerar en vecka med måltider utifrån ditt skafferi, inte utifrån en tom kalender. Den prioriterar råvaror som snart går ut, anpassar recepten efter hushållet och bygger sedan en inköpslista med bara det du saknar.",
+      sections: [
+        {
+          h2: "Låt den planera veckan åt dig",
+          body: "Be Copantry skapa en vecka så bygger den en varierad plan som först använder upp det som snart går ut — eller dra in dina egna recept i kalendern. Du behåller kontrollen och kan byta vilken måltid som helst med ett tryck.",
+        },
+        {
+          h2: "En plan du faktiskt håller",
+          body: "Planer håller när de passar ditt riktiga skåp, din riktiga vecka och ditt riktiga hushåll.",
+          bullets: [
+            {
+              title: "Byggd kring ditt skafferi",
+              desc: "Använder det du har innan det går ut, så mindre slängs.",
+            },
+            {
+              title: "Anpassad efter hushållet",
+              desc: "Ange hur många du lagar till, så följer mängderna med.",
+            },
+            {
+              title: "Delad med alla",
+              desc: "Hela hushållet ser och redigerar en och samma plan i realtid.",
+            },
+            {
+              title: "Rester hålls koll på",
+              desc: "Laga en gång, så håller Copantry koll på portionerna som blir över.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Minska svinnet",
+        "Inköpslistor",
+        "Planera från din AI-assistent",
+        "Vinmatchning",
+      ],
+    },
+    da: {
+      metaTitle: "Madplanlægning",
+      eyebrow: "Madplanlægning",
+      crumb: "Madplanlægning",
+      h1: "Planlæg ugen ud fra det, du allerede har",
+      lede: "Copantry planlægger en uges måltider med udgangspunkt i dit spisekammer, ikke i en tom kalender. Den prioriterer råvarer, der snart udløber, tilpasser opskrifterne til husstanden og laver derefter en indkøbsliste med kun det, du mangler.",
+      sections: [
+        {
+          h2: "Lad den planlægge ugen for dig",
+          body: "Bed Copantry lave en uge, så bygger den en varieret plan, der først bruger det, som snart udløber — eller træk dine egne opskrifter ind i kalenderen. Du har styringen og kan bytte ethvert måltid med ét tryk.",
+        },
+        {
+          h2: "En plan, du faktisk holder",
+          body: "Planer holder, når de passer til dit rigtige skab, din rigtige uge og din rigtige husstand.",
+          bullets: [
+            {
+              title: "Bygget om dit spisekammer",
+              desc: "Bruger det, du har, før det udløber, så mindre går til spilde.",
+            },
+            {
+              title: "Tilpasset husstanden",
+              desc: "Angiv hvor mange I er, så følger mængderne med.",
+            },
+            {
+              title: "Delt med alle",
+              desc: "Hele husstanden ser og redigerer én og samme plan i realtid.",
+            },
+            {
+              title: "Styr på resterne",
+              desc: "Lav mad én gang, så holder Copantry styr på de portioner, der bliver tilovers.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Mindre madspild",
+        "Indkøbslister",
+        "Planlæg fra din AI-assistent",
+        "Vin til maden",
+      ],
+    },
+    fi: {
+      metaTitle: "Ateriasuunnittelu",
+      eyebrow: "Ateriasuunnittelu",
+      crumb: "Ateriasuunnittelu",
+      h1: "Suunnittele viikkosi sen ympärille, mitä sinulla jo on",
+      lede: "Copantry suunnittelee viikon ateriat ruokakomerostasi käsin, ei tyhjästä kalenterista. Se asettaa etusijalle pian vanhenevat raaka-aineet, mitoittaa reseptit talouteesi ja kokoaa sitten ostoslistan vain siitä, mitä sinulta puuttuu.",
+      sections: [
+        {
+          h2: "Anna sen suunnitella viikko puolestasi",
+          body: "Pyydä Copantrya luomaan viikko, niin se rakentaa monipuolisen suunnitelman, joka käyttää ensin vanhenevat raaka-aineet — tai vedä omat reseptisi kalenteriin. Ohjat pysyvät sinulla, ja vaihdat minkä tahansa aterian yhdellä napautuksella.",
+        },
+        {
+          h2: "Suunnitelma, jossa oikeasti pysyt",
+          body: "Suunnitelmat pitävät, kun ne sopivat oikeaan kaappiisi, oikeaan viikkoosi ja oikeaan talouteesi.",
+          bullets: [
+            {
+              title: "Rakennettu ruokakomerosi ympärille",
+              desc: "Käyttää sen, mitä omistat, ennen vanhenemista, joten hävikki pienenee.",
+            },
+            {
+              title: "Mitoitettu talouteesi",
+              desc: "Kerro, kuinka monelle laitat, niin määrät seuraavat perässä.",
+            },
+            {
+              title: "Jaettu kaikkien kesken",
+              desc: "Koko talous näkee ja muokkaa samaa suunnitelmaa reaaliajassa.",
+            },
+            {
+              title: "Tähteet kirjataan",
+              desc: "Kokkaa kerran, niin Copantry pitää kirjaa yli jääneistä annoksista.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Vähemmän hävikkiä",
+        "Ostoslistat",
+        "Suunnittele tekoälyavustajastasi",
+        "Viinisuositukset",
+      ],
+    },
+    no: {
+      metaTitle: "Måltidsplanlegging",
+      eyebrow: "Måltidsplanlegging",
+      crumb: "Måltidsplanlegging",
+      h1: "Planlegg uken rundt det du allerede har",
+      lede: "Copantry planlegger en uke med måltider ut fra spiskammeret ditt, ikke ut fra en tom kalender. Den prioriterer råvarer som snart går ut, tilpasser oppskriftene til husholdningen og bygger så en handleliste med bare det du mangler.",
+      sections: [
+        {
+          h2: "La den planlegge uken for deg",
+          body: "Be Copantry lage en uke, så bygger den en variert plan som først bruker opp det som snart går ut — eller dra dine egne oppskrifter inn i kalenderen. Du har kontrollen og kan bytte hvilket som helst måltid med ett trykk.",
+        },
+        {
+          h2: "En plan du faktisk holder",
+          body: "Planer holder når de passer det virkelige skapet ditt, den virkelige uken din og den virkelige husholdningen din.",
+          bullets: [
+            {
+              title: "Bygget rundt spiskammeret ditt",
+              desc: "Bruker det du har før det går ut, så mindre blir kastet.",
+            },
+            {
+              title: "Tilpasset husholdningen",
+              desc: "Angi hvor mange du lager til, så følger mengdene med.",
+            },
+            {
+              title: "Delt med alle",
+              desc: "Hele husholdningen ser og redigerer én og samme plan i sanntid.",
+            },
+            {
+              title: "Oversikt over restene",
+              desc: "Lag mat én gang, så holder Copantry oversikt over porsjonene som blir til overs.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Mindre matsvinn",
+        "Handlelister",
+        "Planlegg fra KI-assistenten din",
+        "Vin til maten",
+      ],
+    },
+    pl: {
+      metaTitle: "Planowanie posiłków",
+      eyebrow: "Planowanie posiłków",
+      crumb: "Planowanie posiłków",
+      h1: "Zaplanuj tydzień wokół tego, co już masz",
+      lede: "Copantry planuje tydzień posiłków, zaczynając od twojej spiżarni, a nie od pustego kalendarza. Stawia na składniki, którym kończy się termin, przelicza przepisy na twoje gospodarstwo i układa listę zakupów wyłącznie z braków.",
+      sections: [
+        {
+          h2: "Niech zaplanuje tydzień za ciebie",
+          body: "Poproś Copantry o wygenerowanie tygodnia, a ułoży urozmaicony plan, który najpierw zużywa kończące się produkty — albo przeciągnij własne przepisy na kalendarz. Ty masz kontrolę i wymieniasz dowolny posiłek jednym dotknięciem.",
+        },
+        {
+          h2: "Plan, którego naprawdę się trzymasz",
+          body: "Plany się trzymają, gdy pasują do twojej prawdziwej szafki, prawdziwego tygodnia i prawdziwego gospodarstwa.",
+          bullets: [
+            {
+              title: "Zbudowany wokół twojej spiżarni",
+              desc: "Zużywa to, co masz, zanim skończy się termin, więc mniej się marnuje.",
+            },
+            {
+              title: "Przeliczony na twoje gospodarstwo",
+              desc: "Ustaw, dla ilu osób gotujesz, a ilości się dopasują.",
+            },
+            {
+              title: "Dzielony ze wszystkimi",
+              desc: "Całe gospodarstwo widzi i edytuje jeden plan na bieżąco.",
+            },
+            {
+              title: "Resztki pod kontrolą",
+              desc: "Ugotuj raz, a Copantry policzy porcje, które zostały na później.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Mniej marnowania",
+        "Listy zakupów",
+        "Planuj ze swojego asystenta SI",
+        "Dobór wina",
+      ],
+    },
   },
 
   "pantry-tracking": {
@@ -429,6 +675,234 @@ export const PAGE_TX = {
         "Einkaufslisten",
       ],
     },
+    nl: {
+      metaTitle: "Voorraadkast bijhouden",
+      eyebrow: "Voorraadkast bijhouden",
+      crumb: "Voorraadkast bijhouden",
+      h1: "Houd bij wat er allemaal in je keuken ligt",
+      lede: "Copantry houdt een actueel overzicht bij van je voorraadkast, koelkast en vriezer, gesorteerd op wat het eerst over de datum gaat. Voeg producten toe via foto, kassabon, spraak of tekst — en vraag je nooit meer af wat je hebt of net op is.",
+      sections: [
+        {
+          h2: "Voeg boodschappen toe zonder alles in te typen",
+          body: "Maak een foto van je boodschappen, een kassabon of een schap in je kast; Copantry leest hem met AI en vult je voorraadkast in seconden. Je kunt ook een lijst plakken of producten met de hand toevoegen.",
+        },
+        {
+          h2: "Altijd kloppend, omdat het meebeweegt terwijl je kookt",
+          body: "Als je een geplande maaltijd kookt, trekt Copantry de gebruikte ingrediënten af. Je voorraadkast blijft eerlijk, dus het weet waar je bijna doorheen bent en kan het automatisch op je volgende lijst zetten.",
+          bullets: [
+            {
+              title: "Foto's en kassabonnen scannen",
+              desc: "AI maakt van een foto gedateerde producten in je voorraadkast.",
+            },
+            {
+              title: "Houdbaarheidsschatting",
+              desc: "Copantry stelt voor elk product een verstandige uiterste datum voor.",
+            },
+            {
+              title: "Eerst wat het snelst over de datum gaat",
+              desc: "Wat op moet, staat altijd bovenaan.",
+            },
+            {
+              title: "Gedeeld in huis",
+              desc: "Iedereen ziet dezelfde actuele keuken.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Minder verspilling",
+        "Hoelang blijft voedsel goed?",
+        "Boodschappenlijsten",
+      ],
+    },
+    sv: {
+      metaTitle: "Koll på skafferiet",
+      eyebrow: "Koll på skafferiet",
+      crumb: "Koll på skafferiet",
+      h1: "Håll koll på allt i ditt kök",
+      lede: "Copantry håller ett levande register över skafferi, kyl och frys, sorterat efter vad som går ut först. Lägg till varor med foto, kvitto, röst eller text — och undra aldrig igen vad du har eller vad som tagit slut.",
+      sections: [
+        {
+          h2: "Lägg till varor utan att skriva in allt",
+          body: "Fotografera din handling, ett kvitto eller en skafferihylla, så läser Copantry det med AI och fyller skafferiet på några sekunder. Du kan också klistra in en lista eller lägga till varor för hand.",
+        },
+        {
+          h2: "Alltid rätt, för den uppdateras medan du lagar",
+          body: "När du lagar en planerad måltid drar Copantry av ingredienserna du använde. Skafferiet förblir ärligt, så appen vet vad som håller på att ta slut och kan lägga till det på nästa lista automatiskt.",
+          bullets: [
+            {
+              title: "Skanning av foto och kvitto",
+              desc: "AI gör en bild till daterade skafferivaror.",
+            },
+            {
+              title: "Uppskattad hållbarhet",
+              desc: "Copantry föreslår ett rimligt sista datum för varje vara.",
+            },
+            {
+              title: "Det som går ut först överst",
+              desc: "Det som behöver användas ligger alltid högst upp.",
+            },
+            {
+              title: "Delat i hela hemmet",
+              desc: "Alla ser samma uppdaterade kök.",
+            },
+          ],
+        },
+      ],
+      related: ["Minska svinnet", "Hur länge håller maten?", "Inköpslistor"],
+    },
+    da: {
+      metaTitle: "Styr på spisekammeret",
+      eyebrow: "Styr på spisekammeret",
+      crumb: "Styr på spisekammeret",
+      h1: "Hold styr på alt i dit køkken",
+      lede: "Copantry fører et levende overblik over spisekammer, køleskab og fryser, sorteret efter, hvad der udløber først. Tilføj varer med billede, kvittering, stemme eller tekst — og undr dig aldrig igen over, hvad du har, eller hvad der er sluppet op.",
+      sections: [
+        {
+          h2: "Tilføj varer uden at skrive det hele ind",
+          body: "Tag et billede af dine indkøb, en kvittering eller en hylde, så læser Copantry det med AI og fylder spisekammeret på få sekunder. Du kan også indsætte en liste eller tilføje varer i hånden.",
+        },
+        {
+          h2: "Altid korrekt, fordi den opdateres, mens du laver mad",
+          body: "Når du laver et planlagt måltid, trækker Copantry de brugte ingredienser fra. Dit spisekammer forbliver ærligt, så appen ved, hvad du er ved at løbe tør for, og kan sætte det på næste liste automatisk.",
+          bullets: [
+            {
+              title: "Skanning af billede og kvittering",
+              desc: "AI gør et billede til daterede varer i spisekammeret.",
+            },
+            {
+              title: "Skøn over holdbarhed",
+              desc: "Copantry foreslår en fornuftig sidste dato for hver vare.",
+            },
+            {
+              title: "Det, der udløber først, øverst",
+              desc: "Det, der skal bruges, ligger altid øverst.",
+            },
+            {
+              title: "Delt i hele hjemmet",
+              desc: "Alle ser det samme opdaterede køkken.",
+            },
+          ],
+        },
+      ],
+      related: ["Mindre madspild", "Hvor længe holder maden?", "Indkøbslister"],
+    },
+    fi: {
+      metaTitle: "Ruokakomeron seuranta",
+      eyebrow: "Ruokakomeron seuranta",
+      crumb: "Ruokakomeron seuranta",
+      h1: "Pidä kirjaa kaikesta keittiössäsi",
+      lede: "Copantry pitää elävää kirjanpitoa ruokakomerostasi, jääkaapistasi ja pakastimestasi, järjestettynä sen mukaan, mikä vanhenee seuraavaksi. Lisää tuotteita kuvalla, kuitilla, puheella tai tekstillä — etkä enää koskaan mieti, mitä sinulla on tai mikä on loppunut.",
+      sections: [
+        {
+          h2: "Lisää ostokset ilman että näpyttelet kaiken",
+          body: "Ota kuva ostoksistasi, kuitista tai kaapin hyllystä, niin Copantry lukee sen tekoälyllä ja täyttää ruokakomerosi sekunneissa. Voit myös liittää listan tai lisätä tuotteet käsin.",
+        },
+        {
+          h2: "Aina paikkansapitävä, koska se päivittyy kokatessasi",
+          body: "Kun laitat suunnitellun aterian, Copantry vähentää käyttämäsi ainekset. Ruokakomerosi pysyy rehellisenä, joten se tietää, mikä on loppumassa, ja voi lisätä sen automaattisesti seuraavalle listallesi.",
+          bullets: [
+            {
+              title: "Kuvan ja kuitin skannaus",
+              desc: "Tekoäly muuttaa kuvan päivätyiksi ruokakomeron tuotteiksi.",
+            },
+            {
+              title: "Säilyvyysarviot",
+              desc: "Copantry ehdottaa jokaiselle tuotteelle järkevän viimeisen käyttöajan.",
+            },
+            {
+              title: "Ensin vanhenevat ylimpänä",
+              desc: "Käytettävät asiat ovat aina ylimpänä.",
+            },
+            {
+              title: "Jaettu koko kodin kesken",
+              desc: "Kaikki näkevät saman ajantasaisen keittiön.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Vähemmän hävikkiä",
+        "Kuinka kauan ruoka säilyy?",
+        "Ostoslistat",
+      ],
+    },
+    no: {
+      metaTitle: "Oversikt over spiskammeret",
+      eyebrow: "Oversikt over spiskammeret",
+      crumb: "Oversikt over spiskammeret",
+      h1: "Hold oversikt over alt på kjøkkenet ditt",
+      lede: "Copantry fører en levende oversikt over spiskammer, kjøleskap og fryser, sortert etter hva som går ut først. Legg til varer med bilde, kvittering, stemme eller tekst — og lur aldri igjen på hva du har, eller hva som er tomt.",
+      sections: [
+        {
+          h2: "Legg til varer uten å skrive inn alt",
+          body: "Ta et bilde av handleturen, en kvittering eller en hylle, så leser Copantry det med KI og fyller spiskammeret på sekunder. Du kan også lime inn en liste eller legge til varer for hånd.",
+        },
+        {
+          h2: "Alltid riktig, fordi den oppdateres mens du lager mat",
+          body: "Når du lager et planlagt måltid, trekker Copantry fra ingrediensene du brukte. Spiskammeret forblir ærlig, så appen vet hva du er i ferd med å gå tom for, og kan legge det på neste liste automatisk.",
+          bullets: [
+            {
+              title: "Skanning av bilde og kvittering",
+              desc: "KI gjør et bilde om til daterte varer i spiskammeret.",
+            },
+            {
+              title: "Anslått holdbarhet",
+              desc: "Copantry foreslår en fornuftig siste dato for hver vare.",
+            },
+            {
+              title: "Det som går ut først øverst",
+              desc: "Det som må brukes, ligger alltid øverst.",
+            },
+            {
+              title: "Delt i hele hjemmet",
+              desc: "Alle ser det samme oppdaterte kjøkkenet.",
+            },
+          ],
+        },
+      ],
+      related: ["Mindre matsvinn", "Hvor lenge holder maten?", "Handlelister"],
+    },
+    pl: {
+      metaTitle: "Prowadzenie spiżarni",
+      eyebrow: "Prowadzenie spiżarni",
+      crumb: "Prowadzenie spiżarni",
+      h1: "Miej pod kontrolą wszystko w swojej kuchni",
+      lede: "Copantry prowadzi żywy spis twojej spiżarni, lodówki i zamrażarki, uporządkowany według tego, czemu termin kończy się najwcześniej. Dodawaj produkty zdjęciem, paragonem, głosem albo tekstem — i nigdy więcej nie zastanawiaj się, co masz i czego zabrakło.",
+      sections: [
+        {
+          h2: "Dodawaj zakupy bez wpisywania wszystkiego",
+          body: "Zrób zdjęcie zakupów, paragonu albo półki w szafce, a Copantry odczyta je SI i zapełni spiżarnię w kilka sekund. Możesz też wkleić listę albo dodać produkty ręcznie.",
+        },
+        {
+          h2: "Zawsze aktualna, bo zmienia się, kiedy gotujesz",
+          body: "Gdy ugotujesz zaplanowany posiłek, Copantry odejmie zużyte składniki. Twoja spiżarnia pozostaje uczciwa, więc aplikacja wie, czego ci brakuje, i sama dopisze to do kolejnej listy.",
+          bullets: [
+            {
+              title: "Skanowanie zdjęć i paragonów",
+              desc: "SI zamienia zdjęcie w opatrzone datą produkty w spiżarni.",
+            },
+            {
+              title: "Szacowane terminy",
+              desc: "Copantry proponuje rozsądny termin przydatności dla każdego produktu.",
+            },
+            {
+              title: "Najpilniejsze na górze",
+              desc: "To, co trzeba zużyć, jest zawsze na samej górze.",
+            },
+            {
+              title: "Wspólne dla całego domu",
+              desc: "Wszyscy widzą tę samą, aktualną kuchnię.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Mniej marnowania",
+        "Jak długo trzyma się jedzenie?",
+        "Listy zakupów",
+      ],
+    },
   },
 
   "shopping-lists": {
@@ -627,6 +1101,242 @@ export const PAGE_TX = {
         },
       ],
       related: ["Essensplanung", "Vorratsverwaltung", "Günstig kochen"],
+    },
+    nl: {
+      metaTitle: "Boodschappenlijsten",
+      eyebrow: "Boodschappenlijsten",
+      crumb: "Boodschappenlijsten",
+      h1: "Een boodschappenlijst die zichzelf maakt",
+      lede: "Copantry vergelijkt je weekmenu met wat er al in je voorraadkast ligt en maakt een boodschappenlijst van alleen de ontbrekende producten — geordend op schap en realtime gedeeld met je hele huishouden.",
+      sections: [
+        {
+          h2: "Koop niets meer wat je al hebt",
+          body: "Omdat Copantry je voorraadkast controleert voordat het iets toevoegt, zet het nooit iets op je lijst wat je al hebt. Die ene gewoonte haalt de meeste dubbele aankopen weg — en de meeste verspilling.",
+        },
+        {
+          h2: "Gemaakt voor de winkel zelf",
+          body: "Je lijst is per schap gegroepeerd zodat je de winkel in één ronde doorloopt, en producten worden voor iedereen in het huishouden live afgevinkt.",
+          bullets: [
+            {
+              title: "Automatisch uit je planning",
+              desc: "Plan maaltijden en krijg precies wat je moet kopen.",
+            },
+            {
+              title: "Op schapvolgorde",
+              desc: "Geen dubbele rondjes door de winkel.",
+            },
+            {
+              title: "Realtime gedeeld",
+              desc: "Wie in de winkel staat, ziet de actuele lijst.",
+            },
+            {
+              title: "Op weg naar online bestellen",
+              desc: "Gebouwd om de gaten helemaal tot de kassa te brengen.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Maaltijden plannen",
+        "Voorraadkast bijhouden",
+        "Koken met een budget",
+      ],
+    },
+    sv: {
+      metaTitle: "Inköpslistor",
+      eyebrow: "Inköpslistor",
+      crumb: "Inköpslistor",
+      h1: "En inköpslista som bygger sig själv",
+      lede: "Copantry jämför din matsedel med det som redan finns i skafferiet och skapar en inköpslista med bara det som saknas — ordnad efter butiksgång och delad med hela hushållet i realtid.",
+      sections: [
+        {
+          h2: "Sluta köpa sådant du redan har",
+          body: "Eftersom Copantry kollar skafferiet innan den lägger till något, hamnar aldrig något du redan äger på listan. Den enda vanan tar bort de flesta dubbelköpen — och det mesta svinnet.",
+        },
+        {
+          h2: "Gjord för själva butiken",
+          body: "Listan är grupperad efter avdelning så att du går igenom butiken i ett svep, och varor bockas av live för alla i hushållet.",
+          bullets: [
+            {
+              title: "Skapas automatiskt ur planen",
+              desc: "Planera måltider, få exakt det du behöver köpa.",
+            },
+            {
+              title: "Sorterad efter butiksgång",
+              desc: "Inga extra vändor genom butiken.",
+            },
+            {
+              title: "Delas i realtid",
+              desc: "Den som är i butiken ser listan direkt.",
+            },
+            {
+              title: "På väg mot nätbeställning",
+              desc: "Byggd för att ta luckorna hela vägen till kassan.",
+            },
+          ],
+        },
+      ],
+      related: ["Måltidsplanering", "Koll på skafferiet", "Laga mat på budget"],
+    },
+    da: {
+      metaTitle: "Indkøbslister",
+      eyebrow: "Indkøbslister",
+      crumb: "Indkøbslister",
+      h1: "En indkøbsliste, der bygger sig selv",
+      lede: "Copantry sammenligner din madplan med det, der allerede står i spisekammeret, og laver en indkøbsliste med kun de manglende varer — ordnet efter butiksgang og delt med hele husstanden i realtid.",
+      sections: [
+        {
+          h2: "Hold op med at købe det, du allerede har",
+          body: "Fordi Copantry tjekker dit spisekammer, før den tilføjer noget, ender der aldrig noget på listen, som du allerede ejer. Den ene vane fjerner de fleste dobbeltkøb — og det meste spild.",
+        },
+        {
+          h2: "Lavet til selve butikken",
+          body: "Listen er grupperet efter afdeling, så du går gennem butikken i én omgang, og varer bliver krydset af live for alle i husstanden.",
+          bullets: [
+            {
+              title: "Laves automatisk ud fra planen",
+              desc: "Planlæg måltider, og få præcis det, du skal købe.",
+            },
+            {
+              title: "Sorteret efter butiksgang",
+              desc: "Ingen ekstra ture frem og tilbage i butikken.",
+            },
+            {
+              title: "Deles i realtid",
+              desc: "Den, der står i butikken, ser den aktuelle liste.",
+            },
+            {
+              title: "På vej mod onlinebestilling",
+              desc: "Bygget til at tage hullerne hele vejen til kassen.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Madplanlægning",
+        "Styr på spisekammeret",
+        "Madlavning på budget",
+      ],
+    },
+    fi: {
+      metaTitle: "Ostoslistat",
+      eyebrow: "Ostoslistat",
+      crumb: "Ostoslistat",
+      h1: "Ostoslista, joka kokoaa itsensä",
+      lede: "Copantry vertaa ruokasuunnitelmaasi siihen, mitä ruokakomerossasi jo on, ja luo ostoslistan vain puuttuvista tuotteista — hyllyjärjestyksessä ja jaettuna koko talouden kanssa reaaliajassa.",
+      sections: [
+        {
+          h2: "Lopeta sellaisen ostaminen, mitä sinulla jo on",
+          body: "Koska Copantry tarkistaa ruokakomerosi ennen kuin lisää mitään, listalle ei koskaan päädy jotain, mitä jo omistat. Tuo yksi tapa poistaa suurimman osan tuplaostoista — ja suurimman osan hävikistä.",
+        },
+        {
+          h2: "Suunniteltu itse kauppareissua varten",
+          body: "Listasi on ryhmitelty hyllyjen mukaan, joten kuljet kaupan läpi yhdellä kierroksella, ja tuotteet ruksitaan reaaliajassa kaikille talouden jäsenille.",
+          bullets: [
+            {
+              title: "Syntyy automaattisesti suunnitelmastasi",
+              desc: "Suunnittele ateriat, saat täsmälleen sen, mitä pitää ostaa.",
+            },
+            {
+              title: "Hyllyjärjestyksessä",
+              desc: "Ei enää edestakaisin ravaamista kaupassa.",
+            },
+            {
+              title: "Jaettu reaaliajassa",
+              desc: "Kaupassa oleva näkee listan elävänä.",
+            },
+            {
+              title: "Kohti verkkotilausta",
+              desc: "Rakennettu viemään puuttuvat aina kassalle asti.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Ateriasuunnittelu",
+        "Ruokakomeron seuranta",
+        "Edullinen ruoanlaitto",
+      ],
+    },
+    no: {
+      metaTitle: "Handlelister",
+      eyebrow: "Handlelister",
+      crumb: "Handlelister",
+      h1: "En handleliste som bygger seg selv",
+      lede: "Copantry sammenligner matplanen din med det som allerede står i spiskammeret, og lager en handleliste med bare det som mangler — ordnet etter butikkgang og delt med hele husholdningen i sanntid.",
+      sections: [
+        {
+          h2: "Slutt å kjøpe det du allerede har",
+          body: "Fordi Copantry sjekker spiskammeret før den legger til noe, havner aldri noe du allerede eier på listen. Den ene vanen fjerner de fleste dobbeltkjøpene — og det meste av svinnet.",
+        },
+        {
+          h2: "Laget for selve butikken",
+          body: "Listen er gruppert etter avdeling så du går gjennom butikken i én runde, og varer krysses av live for alle i husholdningen.",
+          bullets: [
+            {
+              title: "Lages automatisk fra planen",
+              desc: "Planlegg måltider, få nøyaktig det du må kjøpe.",
+            },
+            {
+              title: "Sortert etter butikkgang",
+              desc: "Ingen ekstra runder gjennom butikken.",
+            },
+            {
+              title: "Deles i sanntid",
+              desc: "Den som er i butikken ser listen live.",
+            },
+            {
+              title: "På vei mot nettbestilling",
+              desc: "Bygget for å ta hullene hele veien til kassen.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Måltidsplanlegging",
+        "Oversikt over spiskammeret",
+        "Lage mat på budsjett",
+      ],
+    },
+    pl: {
+      metaTitle: "Listy zakupów",
+      eyebrow: "Listy zakupów",
+      crumb: "Listy zakupów",
+      h1: "Lista zakupów, która układa się sama",
+      lede: "Copantry porównuje twój jadłospis z zawartością spiżarni i tworzy listę zakupów wyłącznie z brakujących produktów — uporządkowaną według alejek i dzieloną z całym gospodarstwem na bieżąco.",
+      sections: [
+        {
+          h2: "Przestań kupować to, co już masz",
+          body: "Ponieważ Copantry sprawdza spiżarnię, zanim cokolwiek doda, nigdy nie wpisze na listę czegoś, co już masz. Ten jeden nawyk usuwa większość podwójnych zakupów — i większość marnotrawstwa.",
+        },
+        {
+          h2: "Zaprojektowana pod prawdziwe zakupy",
+          body: "Twoja lista jest pogrupowana według alejek, więc przechodzisz sklep jednym przejściem, a produkty odhaczają się na żywo dla wszystkich domowników.",
+          bullets: [
+            {
+              title: "Tworzona automatycznie z planu",
+              desc: "Zaplanuj posiłki i dostaniesz dokładnie to, co trzeba kupić.",
+            },
+            {
+              title: "W kolejności alejek",
+              desc: "Koniec z zawracaniem przez cały sklep.",
+            },
+            {
+              title: "Dzielona na bieżąco",
+              desc: "Kto jest w sklepie, widzi aktualną listę.",
+            },
+            {
+              title: "W stronę zamówień online",
+              desc: "Zbudowana, by doprowadzić braki aż do kasy.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Planowanie posiłków",
+        "Prowadzenie spiżarni",
+        "Gotowanie z budżetem",
+      ],
     },
   },
 
@@ -836,6 +1546,252 @@ export const PAGE_TX = {
         "Rezept-Entdeckung",
       ],
     },
+    nl: {
+      metaTitle: "Recepten",
+      eyebrow: "Recepten",
+      crumb: "Recepten",
+      h1: "Al je recepten, waar ze ook vandaan komen, op één plek",
+      lede: "Copantry importeert met AI recepten van elke website, foto, pdf of lap tekst en bewaart ze in één doorzoekbare verzameling. Elk recept blijft in zijn oorspronkelijke taal, schaalt naar je huishouden en stroomt rechtstreeks door naar je weekmenu en boodschappenlijst.",
+      sections: [
+        {
+          h2: "Bewaar in seconden een recept van waar dan ook",
+          body: "Plak een link, fotografeer een pagina uit een kookboek of plak tekst, en Copantry haalt de ingrediënten, stappen, foto en tijden eruit in een net, bewerkbaar recept — ongeacht waar het vandaan kwam.",
+          bullets: [
+            {
+              title: "Importeer vanaf elke URL",
+              desc: "Blogs, videosites en socialmediaposts inbegrepen.",
+            },
+            {
+              title: "Foto- en pdf-import",
+              desc: "Maak van een kookboekpagina of receptkaart een echt recept.",
+            },
+            {
+              title: "Schaalt naar je tafel",
+              desc: "Stel het aantal porties in en de hoeveelheden passen zich aan.",
+            },
+            {
+              title: "Blijft meertalig",
+              desc: "Een Frans recept blijft Frans; de app spreekt jouw taal.",
+            },
+          ],
+        },
+        {
+          h2: "Recepten die echt iets doen",
+          body: "Een bewaard recept is geen dode bladwijzer. Plan het op je agenda en Copantry legt het naast je voorraadkast, schaalt het en zet alleen de ontbrekende ingrediënten op je boodschappenlijst.",
+        },
+      ],
+      related: [
+        "Maaltijden plannen",
+        "Voor gezinnen",
+        "Waarom Copantry",
+        "Recepten ontdekken",
+      ],
+    },
+    sv: {
+      metaTitle: "Recept",
+      eyebrow: "Recept",
+      crumb: "Recept",
+      h1: "Alla dina recept, varifrån som helst, på ett ställe",
+      lede: "Copantry importerar recept från vilken webbplats, bild, PDF eller textmassa som helst med hjälp av AI och samlar dem i en sökbar samling. Varje recept stannar på sitt originalspråk, anpassas efter hushållet och går rakt in i din matsedel och inköpslista.",
+      sections: [
+        {
+          h2: "Spara ett recept varifrån som helst på några sekunder",
+          body: "Klistra in en länk, fotografera en kokbokssida eller klistra in text, så plockar Copantry ut ingredienser, steg, bild och tider till ett rent, redigerbart recept — oavsett var det kom ifrån.",
+          bullets: [
+            {
+              title: "Importera från vilken webbadress som helst",
+              desc: "Bloggar, videosajter och sociala inlägg inkluderade.",
+            },
+            {
+              title: "Import från foto och PDF",
+              desc: "Gör en kokbokssida eller ett receptkort till ett riktigt recept.",
+            },
+            {
+              title: "Anpassas efter ditt bord",
+              desc: "Ställ in antal portioner så justeras mängderna.",
+            },
+            {
+              title: "Förblir flerspråkigt",
+              desc: "Ett franskt recept förblir franskt; appen talar ditt språk.",
+            },
+          ],
+        },
+        {
+          h2: "Recept som faktiskt gör något",
+          body: "Ett sparat recept är inget dött bokmärke. Planera in det i kalendern så stämmer Copantry av det mot skafferiet, anpassar mängderna och lägger bara de ingredienser som saknas på inköpslistan.",
+        },
+      ],
+      related: [
+        "Måltidsplanering",
+        "För familjer",
+        "Varför Copantry",
+        "Upptäck recept",
+      ],
+    },
+    da: {
+      metaTitle: "Opskrifter",
+      eyebrow: "Opskrifter",
+      crumb: "Opskrifter",
+      h1: "Alle dine opskrifter, fra hvor som helst, ét sted",
+      lede: "Copantry importerer opskrifter fra en hvilken som helst hjemmeside, et billede, en PDF eller en tekstblok ved hjælp af AI og samler dem i én søgbar samling. Hver opskrift bliver på sit originalsprog, tilpasses husstanden og går direkte videre til din madplan og indkøbsliste.",
+      sections: [
+        {
+          h2: "Gem en opskrift fra hvor som helst på få sekunder",
+          body: "Indsæt et link, fotografér en kogebogsside eller indsæt tekst, så trækker Copantry ingredienser, trin, billede og tider ud i en ren, redigerbar opskrift — uanset hvor den kom fra.",
+          bullets: [
+            {
+              title: "Importér fra enhver URL",
+              desc: "Blogs, videosider og opslag på sociale medier inkluderet.",
+            },
+            {
+              title: "Import fra billede og PDF",
+              desc: "Gør en kogebogsside eller et opskriftskort til en rigtig opskrift.",
+            },
+            {
+              title: "Tilpasses dit bord",
+              desc: "Angiv antal portioner, så justeres mængderne.",
+            },
+            {
+              title: "Forbliver flersproget",
+              desc: "En fransk opskrift bliver fransk; appen taler dit sprog.",
+            },
+          ],
+        },
+        {
+          h2: "Opskrifter, der faktisk gør noget",
+          body: "En gemt opskrift er ikke et dødt bogmærke. Planlæg den ind i kalenderen, så holder Copantry den op mod dit spisekammer, tilpasser mængderne og sætter kun de manglende ingredienser på indkøbslisten.",
+        },
+      ],
+      related: [
+        "Madplanlægning",
+        "Til familier",
+        "Hvorfor Copantry",
+        "Opdag opskrifter",
+      ],
+    },
+    fi: {
+      metaTitle: "Reseptit",
+      eyebrow: "Reseptit",
+      crumb: "Reseptit",
+      h1: "Kaikki reseptisi, mistä tahansa, yhdessä paikassa",
+      lede: "Copantry tuo tekoälyn avulla reseptejä mistä tahansa verkkosivulta, kuvasta, PDF:stä tai tekstipätkästä ja säilyttää ne yhdessä haettavassa kokoelmassa. Jokainen resepti pysyy alkukielellään, mitoittuu talouteesi ja siirtyy suoraan ruokasuunnitelmaasi ja ostoslistallesi.",
+      sections: [
+        {
+          h2: "Tallenna resepti mistä tahansa sekunneissa",
+          body: "Liitä linkki, kuvaa keittokirjan sivu tai liitä tekstiä, niin Copantry poimii ainekset, vaiheet, kuvan ja ajat siistiksi, muokattavaksi reseptiksi — riippumatta siitä, mistä se on peräisin.",
+          bullets: [
+            {
+              title: "Tuo mistä tahansa osoitteesta",
+              desc: "Myös blogit, videosivustot ja somejulkaisut.",
+            },
+            {
+              title: "Tuonti kuvasta ja PDF:stä",
+              desc: "Tee keittokirjan sivusta tai reseptikortista oikea resepti.",
+            },
+            {
+              title: "Mitoittuu pöytääsi",
+              desc: "Aseta annosmäärä, niin määrät mukautuvat.",
+            },
+            {
+              title: "Pysyy monikielisenä",
+              desc: "Ranskalainen resepti pysyy ranskaksi; sovellus puhuu sinun kieltäsi.",
+            },
+          ],
+        },
+        {
+          h2: "Reseptit, jotka oikeasti tekevät jotain",
+          body: "Tallennettu resepti ei ole kuollut kirjanmerkki. Suunnittele se kalenteriisi, niin Copantry vertaa sen ruokakomeroosi, mitoittaa sen ja lisää ostoslistallesi vain puuttuvat ainekset.",
+        },
+      ],
+      related: [
+        "Ateriasuunnittelu",
+        "Perheille",
+        "Miksi Copantry",
+        "Reseptien löytäminen",
+      ],
+    },
+    no: {
+      metaTitle: "Oppskrifter",
+      eyebrow: "Oppskrifter",
+      crumb: "Oppskrifter",
+      h1: "Alle oppskriftene dine, fra hvor som helst, på ett sted",
+      lede: "Copantry importerer oppskrifter fra hvilken som helst nettside, bilde, PDF eller tekstblokk ved hjelp av KI og samler dem i én søkbar samling. Hver oppskrift blir på sitt originalspråk, tilpasses husholdningen og går rett videre til matplanen og handlelisten din.",
+      sections: [
+        {
+          h2: "Lagre en oppskrift fra hvor som helst på sekunder",
+          body: "Lim inn en lenke, fotografer en kokebokside eller lim inn tekst, så henter Copantry ut ingredienser, trinn, bilde og tider til en ryddig, redigerbar oppskrift — uansett hvor den kom fra.",
+          bullets: [
+            {
+              title: "Importer fra hvilken som helst nettadresse",
+              desc: "Blogger, videosider og innlegg i sosiale medier inkludert.",
+            },
+            {
+              title: "Import fra bilde og PDF",
+              desc: "Gjør en kokebokside eller et oppskriftskort til en ekte oppskrift.",
+            },
+            {
+              title: "Tilpasses bordet ditt",
+              desc: "Angi antall porsjoner, så justeres mengdene.",
+            },
+            {
+              title: "Forblir flerspråklig",
+              desc: "En fransk oppskrift blir fransk; appen snakker ditt språk.",
+            },
+          ],
+        },
+        {
+          h2: "Oppskrifter som faktisk gjør noe",
+          body: "En lagret oppskrift er ikke et dødt bokmerke. Planlegg den inn i kalenderen, så holder Copantry den opp mot spiskammeret, tilpasser mengdene og legger bare de manglende ingrediensene på handlelisten.",
+        },
+      ],
+      related: [
+        "Måltidsplanlegging",
+        "For familier",
+        "Hvorfor Copantry",
+        "Oppdag oppskrifter",
+      ],
+    },
+    pl: {
+      metaTitle: "Przepisy",
+      eyebrow: "Przepisy",
+      crumb: "Przepisy",
+      h1: "Wszystkie twoje przepisy, skądkolwiek pochodzą, w jednym miejscu",
+      lede: "Copantry importuje przepisy z dowolnej strony, zdjęcia, pliku PDF czy bloku tekstu przy pomocy SI i trzyma je w jednej przeszukiwalnej kolekcji. Każdy przepis zostaje w swoim oryginalnym języku, przelicza się na twoje gospodarstwo i trafia prosto do jadłospisu i listy zakupów.",
+      sections: [
+        {
+          h2: "Zapisz przepis skądkolwiek w kilka sekund",
+          body: "Wklej link, sfotografuj stronę książki kucharskiej albo wklej tekst, a Copantry wyciągnie składniki, kroki, zdjęcie i czasy do czytelnego, edytowalnego przepisu — niezależnie od tego, skąd pochodzi.",
+          bullets: [
+            {
+              title: "Import z dowolnego adresu URL",
+              desc: "Także blogi, serwisy wideo i wpisy w mediach społecznościowych.",
+            },
+            {
+              title: "Import ze zdjęcia i PDF-u",
+              desc: "Zamień stronę książki kucharskiej lub fiszkę w prawdziwy przepis.",
+            },
+            {
+              title: "Przelicza się na twój stół",
+              desc: "Ustaw liczbę porcji, a ilości się dopasują.",
+            },
+            {
+              title: "Pozostaje wielojęzyczny",
+              desc: "Francuski przepis zostaje francuski; aplikacja mówi twoim językiem.",
+            },
+          ],
+        },
+        {
+          h2: "Przepisy, które naprawdę coś robią",
+          body: "Zapisany przepis to nie martwa zakładka. Wstaw go do kalendarza, a Copantry porówna go ze spiżarnią, przeliczy ilości i dopisze do listy zakupów wyłącznie brakujące składniki.",
+        },
+      ],
+      related: [
+        "Planowanie posiłków",
+        "Dla rodzin",
+        "Dlaczego Copantry",
+        "Odkrywanie przepisów",
+      ],
+    },
   },
 
   "recipe-discovery": {
@@ -1018,6 +1974,222 @@ export const PAGE_TX = {
         },
       ],
       related: ["Rezepte", "Essensplanung", "Warum Copantry"],
+    },
+    nl: {
+      metaTitle: "Recepten ontdekken",
+      eyebrow: "Recepten ontdekken",
+      crumb: "Recepten ontdekken",
+      h1: "Verken recepten van het hele web, zonder Copantry te verlaten",
+      lede: "Het tabblad Ontdekken van Copantry doorzoekt een geselecteerde verzameling receptensites en opent elk resultaat in een schone, advertentievrije lezer in de app zelf — vind iets wat je aanstaat en importeer het direct in je verzameling, nog altijd in de oorspronkelijke taal.",
+      sections: [
+        {
+          h2: "Eén keer zoeken, overal lezen — geen advertenties, geen vijftien tabbladen",
+          body: "Typ waar je zin in hebt en Ontdekken zoekt in één keer over een geselecteerde verzameling receptensites. Tik op een resultaat en het opent in een rustige lezer binnen Copantry — geen pop-ups, geen automatisch startende video's en geen receptblogs achter een betaalmuur.",
+          bullets: [
+            {
+              title: "Geselecteerde bronnen",
+              desc: "Echte receptensites, geen willekeurige zoekresultaten.",
+            },
+            {
+              title: "Lezer zonder afleiding",
+              desc: "Lees het recept, niet de reclame eromheen.",
+            },
+            {
+              title: "Importeren met één tik",
+              desc: "Bevalt het? Haal het meteen in je eigen verzameling.",
+            },
+            {
+              title: "Bewaren voor later",
+              desc: "Sla een vondst op voordat je hebt besloten wat je eet.",
+            },
+          ],
+        },
+        {
+          h2: "De vondsten worden beter naarmate je het meer gebruikt",
+          body: "Ontdekken leunt naar bronnen en recepten die mensen daadwerkelijk gaan koken, en naar wat populair is in jouw land — zodat de resultaten scherper worden in plaats van algemeen te blijven.",
+        },
+      ],
+      related: ["Recepten", "Maaltijden plannen", "Waarom Copantry"],
+    },
+    sv: {
+      metaTitle: "Upptäck recept",
+      eyebrow: "Upptäck recept",
+      crumb: "Upptäck recept",
+      h1: "Utforska recept från hela webben, utan att lämna Copantry",
+      lede: "Copantrys Upptäck-flik söker i en utvald bas av receptsajter och öppnar varje träff i en ren, annonsfri läsare direkt i appen — hitta något du gillar och importera det rakt in i din samling, fortfarande på originalspråket.",
+      sections: [
+        {
+          h2: "Sök en gång, läs var som helst — inga annonser, inga femton flikar",
+          body: "Skriv vad du är sugen på, så söker Upptäck i en utvald bas av receptsajter på en gång. Tryck på en träff så öppnas den i en distraktionsfri läsare inuti Copantry — inga popup-fönster, ingen autostartande video och inga receptbloggar bakom betalvägg.",
+          bullets: [
+            {
+              title: "Utvalda källor",
+              desc: "Riktiga receptsajter, inte slumpmässiga sökträffar.",
+            },
+            {
+              title: "Distraktionsfri läsare",
+              desc: "Läs receptet, inte reklampausen runt omkring.",
+            },
+            {
+              title: "Import med ett tryck",
+              desc: "Gillar du det? Ta in det direkt i din egen samling.",
+            },
+            {
+              title: "Spara till senare",
+              desc: "Bokmärk ett fynd innan du bestämt vad det blir till middag.",
+            },
+          ],
+        },
+        {
+          h2: "Träffarna blir bättre ju mer du använder den",
+          body: "Upptäck lutar åt källor och recept som folk faktiskt lagar, och åt det som är populärt i ditt land — så resultaten skärps med tiden i stället för att förbli generiska.",
+        },
+      ],
+      related: ["Recept", "Måltidsplanering", "Varför Copantry"],
+    },
+    da: {
+      metaTitle: "Opdag opskrifter",
+      eyebrow: "Opdag opskrifter",
+      crumb: "Opdag opskrifter",
+      h1: "Udforsk opskrifter fra hele nettet uden at forlade Copantry",
+      lede: "Copantrys Opdag-fane søger i en udvalgt base af opskriftssider og åbner hvert resultat i en ren, reklamefri læser direkte i appen — find noget, du kan lide, og importér det lige ind i din samling, stadig på originalsproget.",
+      sections: [
+        {
+          h2: "Søg én gang, læs hvor som helst — ingen reklamer, ingen femten faner",
+          body: "Skriv, hvad du har lyst til, så søger Opdag på tværs af en udvalgt base af opskriftssider på én gang. Tryk på et resultat, og det åbner i en rolig læser inde i Copantry — ingen pop op-vinduer, ingen video, der starter af sig selv, og ingen opskriftsblogs bag betalingsmur.",
+          bullets: [
+            {
+              title: "Udvalgte kilder",
+              desc: "Rigtige opskriftssider, ikke tilfældige søgeresultater.",
+            },
+            {
+              title: "Læser uden forstyrrelser",
+              desc: "Læs opskriften, ikke reklamepausen omkring den.",
+            },
+            {
+              title: "Import med ét tryk",
+              desc: "Kan du lide den? Tag den direkte ind i din egen samling.",
+            },
+            {
+              title: "Gem til senere",
+              desc: "Sæt et bogmærke, før du har besluttet, hvad der skal spises.",
+            },
+          ],
+        },
+        {
+          h2: "Fundene bliver bedre, jo mere du bruger den",
+          body: "Opdag læner sig mod kilder og opskrifter, som folk rent faktisk går i gang med at lave, og mod det, der er populært i dit land — så resultaterne bliver skarpere med tiden i stedet for at forblive generiske.",
+        },
+      ],
+      related: ["Opskrifter", "Madplanlægning", "Hvorfor Copantry"],
+    },
+    fi: {
+      metaTitle: "Reseptien löytäminen",
+      eyebrow: "Reseptien löytäminen",
+      crumb: "Reseptien löytäminen",
+      h1: "Tutki koko verkon reseptejä poistumatta Copantrysta",
+      lede: "Copantryn Löydä-välilehti hakee valikoidusta joukosta reseptisivustoja ja avaa jokaisen tuloksen siistiin, mainoksettomaan lukunäkymään suoraan sovelluksessa — löydä jotain mieluista ja tuo se suoraan kokoelmaasi, edelleen alkukielellään.",
+      sections: [
+        {
+          h2: "Hae kerran, lue missä vain — ei mainoksia, ei viittätoista välilehteä",
+          body: "Kirjoita, mitä tekisi mieli, niin Löydä hakee kerralla valikoidusta joukosta reseptisivustoja. Napauta tulosta, ja se avautuu häiriöttömään lukunäkymään Copantryn sisällä — ei ponnahdusikkunoita, itsestään käynnistyviä videoita eikä maksumuurin takana olevia reseptiblogeja.",
+          bullets: [
+            {
+              title: "Valikoidut lähteet",
+              desc: "Oikeita reseptisivustoja, ei satunnaisia hakutuloksia.",
+            },
+            {
+              title: "Häiriötön lukunäkymä",
+              desc: "Lue resepti, älä sen ympärillä olevaa mainoskatkoa.",
+            },
+            {
+              title: "Tuonti yhdellä napautuksella",
+              desc: "Pidätkö siitä? Tuo se suoraan omaan kokoelmaasi.",
+            },
+            {
+              title: "Talteen myöhemmäksi",
+              desc: "Merkitse löytö muistiin ennen kuin olet päättänyt päivällisestä.",
+            },
+          ],
+        },
+        {
+          h2: "Löydöt paranevat sitä mukaa kun käytät sitä",
+          body: "Löydä painottaa lähteitä ja reseptejä, joita ihmiset oikeasti päätyvät tekemään, sekä sitä, mikä on suosittua omassa maassasi — joten tulokset terävöityvät ajan myötä sen sijaan että pysyisivät yleisluontoisina.",
+        },
+      ],
+      related: ["Reseptit", "Ateriasuunnittelu", "Miksi Copantry"],
+    },
+    no: {
+      metaTitle: "Oppdag oppskrifter",
+      eyebrow: "Oppdag oppskrifter",
+      crumb: "Oppdag oppskrifter",
+      h1: "Utforsk oppskrifter fra hele nettet uten å forlate Copantry",
+      lede: "Copantrys Oppdag-fane søker i en utvalgt base av oppskriftssider og åpner hvert treff i en ren, reklamefri leser rett i appen — finn noe du liker, og importer det rett inn i samlingen din, fortsatt på originalspråket.",
+      sections: [
+        {
+          h2: "Søk én gang, les hvor som helst — ingen reklame, ingen femten faner",
+          body: "Skriv hva du har lyst på, så søker Oppdag gjennom en utvalgt base av oppskriftssider på én gang. Trykk på et treff, og det åpnes i en rolig leser inne i Copantry — ingen sprettoppvinduer, ingen video som starter av seg selv, og ingen oppskriftsblogger bak betalingsmur.",
+          bullets: [
+            {
+              title: "Utvalgte kilder",
+              desc: "Ekte oppskriftssider, ikke tilfeldige søketreff.",
+            },
+            {
+              title: "Leser uten forstyrrelser",
+              desc: "Les oppskriften, ikke reklamepausen rundt den.",
+            },
+            {
+              title: "Import med ett trykk",
+              desc: "Liker du den? Ta den rett inn i din egen samling.",
+            },
+            {
+              title: "Lagre til senere",
+              desc: "Sett et bokmerke før du har bestemt hva det blir til middag.",
+            },
+          ],
+        },
+        {
+          h2: "Funnene blir bedre jo mer du bruker den",
+          body: "Oppdag lener seg mot kilder og oppskrifter som folk faktisk går i gang med å lage, og mot det som er populært i landet ditt — så resultatene blir skarpere over tid i stedet for å forbli generiske.",
+        },
+      ],
+      related: ["Oppskrifter", "Måltidsplanlegging", "Hvorfor Copantry"],
+    },
+    pl: {
+      metaTitle: "Odkrywanie przepisów",
+      eyebrow: "Odkrywanie przepisów",
+      crumb: "Odkrywanie przepisów",
+      h1: "Przeglądaj przepisy z całej sieci, nie wychodząc z Copantry",
+      lede: "Zakładka Odkrywaj w Copantry przeszukuje wyselekcjonowaną bazę stron z przepisami i otwiera każdy wynik w czystym, wolnym od reklam czytniku wewnątrz aplikacji — znajdź coś, co ci się spodoba, i zaimportuj to prosto do swojej kolekcji, wciąż w oryginalnym języku.",
+      sections: [
+        {
+          h2: "Szukaj raz, czytaj wszędzie — bez reklam, bez piętnastu kart",
+          body: "Wpisz, na co masz ochotę, a Odkrywaj przeszuka naraz wyselekcjonowaną bazę stron z przepisami. Dotknij wyniku, a otworzy się w spokojnym czytniku wewnątrz Copantry — bez wyskakujących okienek, samoodtwarzających się filmów i blogów za paywallem.",
+          bullets: [
+            {
+              title: "Wyselekcjonowane źródła",
+              desc: "Prawdziwe strony z przepisami, a nie przypadkowe wyniki wyszukiwania.",
+            },
+            {
+              title: "Czytnik bez rozpraszaczy",
+              desc: "Czytaj przepis, a nie reklamę wokół niego.",
+            },
+            {
+              title: "Import jednym dotknięciem",
+              desc: "Podoba ci się? Weź go od razu do własnej kolekcji.",
+            },
+            {
+              title: "Zapisz na później",
+              desc: "Zapisz znalezisko, zanim zdecydujesz, co na kolację.",
+            },
+          ],
+        },
+        {
+          h2: "Wyniki są coraz lepsze, im częściej korzystasz",
+          body: "Odkrywaj skłania się ku źródłom i przepisom, które ludzie faktycznie gotują, oraz ku temu, co jest popularne w twoim kraju — więc wyniki wyostrzają się z czasem, zamiast pozostawać ogólne.",
+        },
+      ],
+      related: ["Przepisy", "Planowanie posiłków", "Dlaczego Copantry"],
     },
   },
 
@@ -1210,6 +2382,226 @@ export const PAGE_TX = {
       ],
       related: ["Rezepte", "Essensplanung", "Vorratsverwaltung"],
     },
+    nl: {
+      metaTitle: "Wijn erbij",
+      eyebrow: "Wijn erbij",
+      crumb: "Wijn erbij",
+      h1: "Weet welke wijn je opentrekt, uit de flessen die je al hebt",
+      lede: "Copantry houdt eenvoudig bij welke wijn er in je kelder ligt en stelt op verzoek een combinatie voor bij de maaltijd van vanavond — een fles die je al hebt als er echt een past, plus altijd een algemene stijl om naar te zoeken.",
+      sections: [
+        {
+          h2: "Jouw kelder, geen wijnencyclopedie",
+          body: "Voeg een fles toe met alleen de naam — producent, druif, jaar en een notitie (waar je hem kocht, wie hem gaf) zijn allemaal optioneel. Houd bij hoeveel je er hebt en vink flessen af zodra je ze drinkt.",
+          bullets: [
+            {
+              title: "Bijna niets invullen",
+              desc: "Alleen de naam van de fles is verplicht om hem toe te voegen.",
+            },
+            {
+              title: "Combinatie op verzoek",
+              desc: "Vraag om een match bij een recept of een hele geplande maaltijd — nooit automatisch.",
+            },
+            {
+              title: "Raadt aan wat je hebt",
+              desc: "Stelt eerst een fles uit je eigen kelder voor, als er een past.",
+            },
+            {
+              title: "Altijd een alternatief",
+              desc: "Niets passends in je kelder? Je krijgt nog steeds een stijl om naar te zoeken.",
+            },
+          ],
+        },
+        {
+          h2: "Werkt voor één recept of een hele geplande maaltijd",
+          body: "Krijg een wijnsuggestie op elke receptpagina, of in één keer voor alles wat op een dag gepland staat. Koppel de keuze aan die maaltijd en de voorraad wordt automatisch bijgewerkt zodra je gekookt hebt.",
+        },
+      ],
+      related: ["Recepten", "Maaltijden plannen", "Voorraadkast bijhouden"],
+    },
+    sv: {
+      metaTitle: "Vinmatchning",
+      eyebrow: "Vinmatchning",
+      crumb: "Vinmatchning",
+      h1: "Vet vilket vin du ska öppna, bland flaskorna du redan har",
+      lede: "Copantry håller ett enkelt register över vinet i din källare och föreslår, på begäran, en matchning till kvällens måltid — en flaska du redan äger när någon verkligen passar, plus en allmän stil att leta efter oavsett.",
+      sections: [
+        {
+          h2: "Din källare, inte ett vinlexikon",
+          body: "Lägg till en flaska med bara namnet — producent, druva, årgång och en anteckning (var du köpte den, vem som gav dig den) är alla frivilliga. Håll koll på hur många du har och markera flaskor som urdruckna efter hand.",
+          bullets: [
+            {
+              title: "Knappt något att fylla i",
+              desc: "Bara flaskans namn krävs för att lägga till den.",
+            },
+            {
+              title: "Matchning på begäran",
+              desc: "Be om en matchning till ett recept eller en hel planerad måltid — aldrig automatiskt.",
+            },
+            {
+              title: "Rekommenderar det du äger",
+              desc: "Föreslår i första hand en flaska ur din egen källare, när någon passar.",
+            },
+            {
+              title: "Alltid ett alternativ",
+              desc: "Ingen matchning i källaren? Du får ändå en stil att leta efter.",
+            },
+          ],
+        },
+        {
+          h2: "Fungerar för ett recept eller en hel planerad måltid",
+          body: "Få ett vinförslag på vilken receptsida som helst, eller för allt som är planerat i en kalenderlucka på en gång. Koppla valet till måltiden så uppdateras lagret automatiskt när du har lagat.",
+        },
+      ],
+      related: ["Recept", "Måltidsplanering", "Koll på skafferiet"],
+    },
+    da: {
+      metaTitle: "Vin til maden",
+      eyebrow: "Vin til maden",
+      crumb: "Vin til maden",
+      h1: "Vid, hvilken vin du skal åbne, blandt de flasker du allerede har",
+      lede: "Copantry fører et enkelt register over vinen i din kælder og foreslår på anmodning en vin til aftenens måltid — en flaske, du allerede ejer, når en virkelig passer, plus en generel stil at lede efter under alle omstændigheder.",
+      sections: [
+        {
+          h2: "Din kælder, ikke et vinleksikon",
+          body: "Tilføj en flaske med bare navnet — producent, drue, årgang og en note (hvor du købte den, hvem der gav dig den) er alle valgfrie. Hold styr på, hvor mange du har, og markér flasker som drukket undervejs.",
+          bullets: [
+            {
+              title: "Næsten intet at udfylde",
+              desc: "Kun flaskens navn er nødvendigt for at tilføje den.",
+            },
+            {
+              title: "Forslag på anmodning",
+              desc: "Bed om et match til en opskrift eller et helt planlagt måltid — aldrig automatisk.",
+            },
+            {
+              title: "Anbefaler det, du ejer",
+              desc: "Foreslår først en flaske fra din egen kælder, når en passer.",
+            },
+            {
+              title: "Altid et alternativ",
+              desc: "Intet match i kælderen? Du får stadig en stil at lede efter.",
+            },
+          ],
+        },
+        {
+          h2: "Virker til én opskrift eller et helt planlagt måltid",
+          body: "Få et vinforslag på enhver opskriftsside eller til alt, der er planlagt i en kalenderplads, på én gang. Knyt valget til måltidet, så opdateres beholdningen automatisk, når du har lavet maden.",
+        },
+      ],
+      related: ["Opskrifter", "Madplanlægning", "Styr på spisekammeret"],
+    },
+    fi: {
+      metaTitle: "Viinisuositukset",
+      eyebrow: "Viinisuositukset",
+      crumb: "Viinisuositukset",
+      h1: "Tiedä, mikä viini avata niistä pulloista, joita sinulla jo on",
+      lede: "Copantry pitää yksinkertaista kirjaa viinikellarisi pulloista ja ehdottaa pyydettäessä paria illan ateriaan — pullon, joka sinulla jo on, kun jokin aidosti sopii, sekä joka tapauksessa yleisen tyylin, jota kannattaa etsiä.",
+      sections: [
+        {
+          h2: "Sinun kellarisi, ei viinitietosanakirja",
+          body: "Lisää pullo pelkällä nimellä — tuottaja, rypäle, vuosikerta ja muistiinpano (mistä ostit, kuka antoi) ovat kaikki valinnaisia. Seuraa, montako sinulla on, ja merkitse pullot juoduiksi sitä mukaa.",
+          bullets: [
+            {
+              title: "Tuskin mitään täytettävää",
+              desc: "Vain pullon nimi vaaditaan sen lisäämiseen.",
+            },
+            {
+              title: "Suositus pyydettäessä",
+              desc: "Pyydä paria reseptille tai koko suunnitellulle aterialle — ei koskaan automaattisesti.",
+            },
+            {
+              title: "Suosittelee sitä, mitä omistat",
+              desc: "Ehdottaa ensin pulloa omasta kellaristasi, kun jokin sopii.",
+            },
+            {
+              title: "Aina varavaihtoehto",
+              desc: "Eikö kellarista löydy sopivaa? Saat silti tyylin, jota etsiä.",
+            },
+          ],
+        },
+        {
+          h2: "Toimii yhdelle reseptille tai koko suunnitellulle aterialle",
+          body: "Saat viiniehdotuksen millä tahansa reseptisivulla tai kerralla kaikelle, mitä kalenteripaikkaan on suunniteltu. Liitä valinta ateriaan, niin varasto päivittyy automaattisesti, kun olet kokannut.",
+        },
+      ],
+      related: ["Reseptit", "Ateriasuunnittelu", "Ruokakomeron seuranta"],
+    },
+    no: {
+      metaTitle: "Vin til maten",
+      eyebrow: "Vin til maten",
+      crumb: "Vin til maten",
+      h1: "Vit hvilken vin du skal åpne, blant flaskene du allerede har",
+      lede: "Copantry fører en enkel oversikt over vinen i kjelleren din og foreslår, på forespørsel, en vin til kveldens måltid — en flaske du allerede eier når en virkelig passer, pluss en generell stil å se etter uansett.",
+      sections: [
+        {
+          h2: "Kjelleren din, ikke et vinleksikon",
+          body: "Legg til en flaske med bare navnet — produsent, drue, årgang og et notat (hvor du kjøpte den, hvem som ga deg den) er alle valgfrie. Hold oversikt over hvor mange du har, og merk flasker som drukket underveis.",
+          bullets: [
+            {
+              title: "Nesten ingenting å fylle ut",
+              desc: "Bare flaskens navn kreves for å legge den til.",
+            },
+            {
+              title: "Forslag på forespørsel",
+              desc: "Be om et treff til en oppskrift eller et helt planlagt måltid — aldri automatisk.",
+            },
+            {
+              title: "Anbefaler det du eier",
+              desc: "Foreslår først en flaske fra din egen kjeller, når en passer.",
+            },
+            {
+              title: "Alltid et alternativ",
+              desc: "Ingen treff i kjelleren? Du får likevel en stil å se etter.",
+            },
+          ],
+        },
+        {
+          h2: "Virker for én oppskrift eller et helt planlagt måltid",
+          body: "Få et vinforslag på hvilken som helst oppskriftsside, eller for alt som er planlagt i en kalenderplass på én gang. Knytt valget til måltidet, så oppdateres beholdningen automatisk når du har laget maten.",
+        },
+      ],
+      related: [
+        "Oppskrifter",
+        "Måltidsplanlegging",
+        "Oversikt over spiskammeret",
+      ],
+    },
+    pl: {
+      metaTitle: "Dobór wina",
+      eyebrow: "Dobór wina",
+      crumb: "Dobór wina",
+      h1: "Wiedz, które wino otworzyć, spośród butelek, które już masz",
+      lede: "Copantry prowadzi prosty spis wina w twojej piwniczce i na życzenie proponuje dobór do dzisiejszego posiłku — butelkę, którą już masz, jeśli któraś naprawdę pasuje, a poza tym zawsze ogólny styl, którego warto szukać.",
+      sections: [
+        {
+          h2: "Twoja piwniczka, a nie encyklopedia win",
+          body: "Dodaj butelkę, podając samą nazwę — producent, szczep, rocznik i notatka (gdzie kupiłeś, kto ci ją dał) są nieobowiązkowe. Śledź, ile masz, i zaznaczaj butelki jako wypite na bieżąco.",
+          bullets: [
+            {
+              title: "Prawie nic do wypełnienia",
+              desc: "Do dodania butelki wystarczy sama nazwa.",
+            },
+            {
+              title: "Dobór na życzenie",
+              desc: "Poproś o dopasowanie do przepisu albo całego zaplanowanego posiłku — nigdy automatycznie.",
+            },
+            {
+              title: "Poleca to, co masz",
+              desc: "W pierwszej kolejności proponuje butelkę z twojej piwniczki, jeśli któraś pasuje.",
+            },
+            {
+              title: "Zawsze jest alternatywa",
+              desc: "Nic nie pasuje w piwniczce? I tak dostaniesz styl, którego warto poszukać.",
+            },
+          ],
+        },
+        {
+          h2: "Działa dla jednego przepisu albo całego zaplanowanego posiłku",
+          body: "Propozycję wina dostaniesz na dowolnej stronie przepisu albo naraz dla wszystkiego zaplanowanego w danym miejscu kalendarza. Przypisz wybór do posiłku, a zapas zaktualizuje się sam, gdy już ugotujesz.",
+        },
+      ],
+      related: ["Przepisy", "Planowanie posiłków", "Prowadzenie spiżarni"],
+    },
   },
 
   "for-families": {
@@ -1400,6 +2792,222 @@ export const PAGE_TX = {
         },
       ],
       related: ["Essensplanung", "Für Paare", "Günstig kochen"],
+    },
+    nl: {
+      metaTitle: "Voor gezinnen",
+      eyebrow: "Voor gezinnen",
+      crumb: "Voor gezinnen",
+      h1: "Voed het hele gezin met minder verspilling en minder stress",
+      lede: "Copantry houdt je gezin op één gedeelde weekplanning en boodschappenlijst, plant rond het eten dat je al hebt en schaalt elk recept naar de grootte van je gezin — zodat niemand hoeft te raden wat er op tafel komt en er veel minder in de bak belandt.",
+      sections: [
+        {
+          h2: "Kook één keer, voed iedereen — ook de kleintjes",
+          body: "Plan gezinsmaaltijden waarbij een baby of peuter een versie eet van wat de volwassenen eten, en houd bij elk recept notities bij over wat je apart houdt of aanpast. Je kunt ook samen bijhouden welke nieuwe voedingsmiddelen en allergenen je hebt geïntroduceerd.",
+        },
+        {
+          h2: "Eén waarheid voor het hele huishouden",
+          body: "Geen “heb jij melk gehaald?”-berichtjes meer.",
+          bullets: [
+            {
+              title: "Gedeelde planning en lijst",
+              desc: "Iedereen ziet dezelfde week en boodschappenlijst, live.",
+            },
+            {
+              title: "Op maat van je gezin",
+              desc: "Recepten passen zich aan het aantal eters aan.",
+            },
+            {
+              title: "Minder verspilling, lagere rekening",
+              desc: "Planningen gebruiken wat je hebt voordat het bederft.",
+            },
+            {
+              title: "Handig bij het bijvoeden",
+              desc: "Notities om maaltijden aan te passen voor baby's en peuters.",
+            },
+          ],
+        },
+      ],
+      related: ["Maaltijden plannen", "Voor stellen", "Koken met een budget"],
+    },
+    sv: {
+      metaTitle: "För familjer",
+      eyebrow: "För familjer",
+      crumb: "För familjer",
+      h1: "Mätta hela familjen med mindre svinn och mindre stress",
+      lede: "Copantry håller familjen på en gemensam matsedel och inköpslista, planerar utifrån maten ni redan har och anpassar varje recept efter familjens storlek — så ingen behöver gissa vad det blir till middag och långt mindre hamnar i soporna.",
+      sections: [
+        {
+          h2: "Laga en gång, mätta alla — även de allra minsta",
+          body: "Planera familjemåltider där en bebis eller ettåring äter en variant av det de vuxna äter, och håll anteckningar på varje recept om vad som ska tas undan eller anpassas. Ni kan också föra en gemensam logg över nya smaker och allergener ni har introducerat.",
+        },
+        {
+          h2: "En enda sanning för hushållet",
+          body: "Slut på ”köpte du mjölk?”-meddelanden.",
+          bullets: [
+            {
+              title: "Delad plan och lista",
+              desc: "Alla ser samma vecka och inköpslista, live.",
+            },
+            {
+              title: "Anpassad efter familjen",
+              desc: "Recepten justeras efter hur många ni är.",
+            },
+            {
+              title: "Mindre svinn, lägre nota",
+              desc: "Planerna använder det ni har innan det går ut.",
+            },
+            {
+              title: "Bra vid smakportioner",
+              desc: "Anteckningar för att anpassa måltider till bebisar och små barn.",
+            },
+          ],
+        },
+      ],
+      related: ["Måltidsplanering", "För par", "Laga mat på budget"],
+    },
+    da: {
+      metaTitle: "Til familier",
+      eyebrow: "Til familier",
+      crumb: "Til familier",
+      h1: "Mæt hele familien med mindre spild og mindre stress",
+      lede: "Copantry holder familien på én fælles madplan og indkøbsliste, planlægger ud fra den mad, I allerede har, og tilpasser hver opskrift til familiens størrelse — så ingen skal gætte, hvad der er til aftensmad, og langt mindre ender i skraldespanden.",
+      sections: [
+        {
+          h2: "Lav mad én gang, mæt alle — også de mindste",
+          body: "Planlæg familiemåltider, hvor en baby eller et lille barn spiser en udgave af det, de voksne spiser, og hold noter på hver opskrift om, hvad der skal tages fra eller tilpasses. I kan også føre en fælles log over nye fødevarer og allergener, I har introduceret.",
+        },
+        {
+          h2: "Én sandhed for husstanden",
+          body: "Slut med „købte du mælk?“-beskeder.",
+          bullets: [
+            {
+              title: "Delt plan og liste",
+              desc: "Alle ser den samme uge og indkøbsliste, live.",
+            },
+            {
+              title: "Tilpasset familien",
+              desc: "Opskrifterne justeres efter, hvor mange I er.",
+            },
+            {
+              title: "Mindre spild, lavere regning",
+              desc: "Planerne bruger det, I har, før det udløber.",
+            },
+            {
+              title: "Velegnet til overgangskost",
+              desc: "Noter til at tilpasse måltider til babyer og småbørn.",
+            },
+          ],
+        },
+      ],
+      related: ["Madplanlægning", "Til par", "Madlavning på budget"],
+    },
+    fi: {
+      metaTitle: "Perheille",
+      eyebrow: "Perheille",
+      crumb: "Perheille",
+      h1: "Ruoki koko perhe pienemmällä hävikillä ja vähemmällä stressillä",
+      lede: "Copantry pitää perheesi yhdessä jaetussa ruokasuunnitelmassa ja ostoslistassa, suunnittelee sen ruoan ympärille, joka teillä jo on, ja mitoittaa jokaisen reseptin perheenne kokoon — niin kenenkään ei tarvitse arvailla, mitä on ruokana, ja roskiin päätyy paljon vähemmän.",
+      sections: [
+        {
+          h2: "Kokkaa kerran, ruoki kaikki — myös pienimmät",
+          body: "Suunnittele perheaterioita, joissa vauva tai taapero syö oman versionsa aikuisten ruoasta, ja pidä jokaisessa reseptissä muistiinpanoja siitä, mitä otetaan erikseen tai mukautetaan. Voitte myös pitää yhteistä kirjaa uusista ruoka-aineista ja allergeeneista, joita olette esitelleet.",
+        },
+        {
+          h2: "Yksi totuus koko taloudelle",
+          body: "Ei enää ”ostitko maitoa?” -viestejä.",
+          bullets: [
+            {
+              title: "Jaettu suunnitelma ja lista",
+              desc: "Kaikki näkevät saman viikon ja ostoslistan, elävänä.",
+            },
+            {
+              title: "Mitoitettu perheeseenne",
+              desc: "Reseptit mukautuvat syöjien määrään.",
+            },
+            {
+              title: "Vähemmän hävikkiä, pienempi lasku",
+              desc: "Suunnitelmat käyttävät sen, mitä teillä on, ennen vanhenemista.",
+            },
+            {
+              title: "Sopii kiinteiden aloitukseen",
+              desc: "Muistiinpanoja aterioiden mukauttamiseen vauvoille ja taaperoille.",
+            },
+          ],
+        },
+      ],
+      related: ["Ateriasuunnittelu", "Pareille", "Edullinen ruoanlaitto"],
+    },
+    no: {
+      metaTitle: "For familier",
+      eyebrow: "For familier",
+      crumb: "For familier",
+      h1: "Mett hele familien med mindre svinn og mindre stress",
+      lede: "Copantry holder familien på én felles matplan og handleliste, planlegger ut fra maten dere allerede har, og tilpasser hver oppskrift til familiens størrelse — så ingen trenger å gjette hva det blir til middag, og langt mindre havner i søpla.",
+      sections: [
+        {
+          h2: "Lag mat én gang, mett alle — også de minste",
+          body: "Planlegg familiemåltider der en baby eller ettåring spiser en variant av det de voksne spiser, og hold notater på hver oppskrift om hva som skal settes til side eller tilpasses. Dere kan også føre en felles logg over nye matvarer og allergener dere har introdusert.",
+        },
+        {
+          h2: "Én sannhet for husholdningen",
+          body: "Slutt med «kjøpte du melk?»-meldinger.",
+          bullets: [
+            {
+              title: "Delt plan og liste",
+              desc: "Alle ser den samme uken og handlelisten, live.",
+            },
+            {
+              title: "Tilpasset familien",
+              desc: "Oppskriftene justeres etter hvor mange dere er.",
+            },
+            {
+              title: "Mindre svinn, lavere regning",
+              desc: "Planene bruker det dere har før det går ut.",
+            },
+            {
+              title: "Egnet for smakeporsjoner",
+              desc: "Notater for å tilpasse måltider til babyer og småbarn.",
+            },
+          ],
+        },
+      ],
+      related: ["Måltidsplanlegging", "For par", "Lage mat på budsjett"],
+    },
+    pl: {
+      metaTitle: "Dla rodzin",
+      eyebrow: "Dla rodzin",
+      crumb: "Dla rodzin",
+      h1: "Nakarm całą rodzinę, marnując mniej i mniej się stresując",
+      lede: "Copantry trzyma twoją rodzinę przy jednym wspólnym planie posiłków i liście zakupów, planuje wokół jedzenia, które już macie, i przelicza każdy przepis na wielkość rodziny — więc nikt nie musi zgadywać, co będzie na kolację, a do kosza trafia znacznie mniej.",
+      sections: [
+        {
+          h2: "Ugotuj raz, nakarm wszystkich — także najmłodszych",
+          body: "Planuj rodzinne posiłki, w których niemowlę albo maluch je wersję tego, co dorośli, i zapisuj przy każdym przepisie, co odłożyć na bok lub zmienić. Możecie też prowadzić wspólny zapis nowych produktów i alergenów, które wprowadziliście.",
+        },
+        {
+          h2: "Jedno źródło prawdy dla całego domu",
+          body: "Koniec z wiadomościami „kupiłeś mleko?”.",
+          bullets: [
+            {
+              title: "Wspólny plan i lista",
+              desc: "Wszyscy widzą ten sam tydzień i tę samą listę zakupów, na żywo.",
+            },
+            {
+              title: "Przeliczone na twoją rodzinę",
+              desc: "Przepisy dopasowują się do liczby jedzących.",
+            },
+            {
+              title: "Mniej marnowania, niższy rachunek",
+              desc: "Plany zużywają to, co macie, zanim skończy się termin.",
+            },
+            {
+              title: "Przyjazne przy rozszerzaniu diety",
+              desc: "Notatki o tym, jak dostosować posiłki dla niemowląt i maluchów.",
+            },
+          ],
+        },
+      ],
+      related: ["Planowanie posiłków", "Dla par", "Gotowanie z budżetem"],
     },
   },
 
@@ -1600,6 +3208,222 @@ export const PAGE_TX = {
       ],
       related: ["Essensplanung", "Für Familien", "Einkaufslisten"],
     },
+    nl: {
+      metaTitle: "Voor stellen",
+      eyebrow: "Voor stellen",
+      crumb: "Voor stellen",
+      h1: "Plan samen maaltijden, zonder het heen-en-weer",
+      lede: "Copantry geeft stellen één gedeelde keuken: dezelfde voorraadkast, weekplanning en boodschappenlijst, realtime bijgewerkt. Voeg recepten toe waar jullie allebei zin in hebben, zie wat op moet, spreek de week op één plek af — en laat de boodschappenlijst zichzelf maken.",
+      sections: [
+        {
+          h2: "Eén planning in plaats van twee botsende ideeën",
+          body: "Nodig je partner uit in je huishouden en jullie werken allebei vanuit dezelfde planning. Ieder van jullie kan een recept toevoegen, een maaltijd inplannen of boodschappen afvinken — en jullie kunnen de app allebei in je eigen taal gebruiken.",
+        },
+        {
+          h2: "Deel de mentale last",
+          body: "De vraag “wat eten we vanavond?” is niet langer de taak van één persoon.",
+          bullets: [
+            {
+              title: "Realtime synchronisatie",
+              desc: "Beide telefoons tonen meteen dezelfde keuken.",
+            },
+            {
+              title: "Twee talen, één huis",
+              desc: "Ieder gebruikt zijn eigen voorkeurstaal.",
+            },
+            {
+              title: "Minder ritjes en dubbelingen",
+              desc: "Eén keer boodschappen doen, precies wat je nodig hebt.",
+            },
+            {
+              title: "Samen minder verspillen",
+              desc: "Maak op wat jullie allebei kochten voordat het bederft.",
+            },
+          ],
+        },
+      ],
+      related: ["Maaltijden plannen", "Voor gezinnen", "Boodschappenlijsten"],
+    },
+    sv: {
+      metaTitle: "För par",
+      eyebrow: "För par",
+      crumb: "För par",
+      h1: "Planera måltider tillsammans, utan fram och tillbaka",
+      lede: "Copantry ger par ett gemensamt kök: samma skafferi, matsedel och inköpslista, uppdaterade i realtid. Lägg till recept ni båda är sugna på, se vad som behöver användas, kom överens om veckan på ett ställe — och låt inköpslistan bygga sig själv.",
+      sections: [
+        {
+          h2: "En plan i stället för två krockande idéer",
+          body: "Bjud in din partner till ditt hushåll så utgår ni båda från samma plan. Vem som helst av er kan lägga till ett recept, planera in en måltid eller bocka av inköpen — och ni kan var för sig använda appen på ert eget språk.",
+        },
+        {
+          h2: "Dela på den mentala bördan",
+          body: "Frågan ”vad blir det till middag?” slutar vara en persons jobb.",
+          bullets: [
+            {
+              title: "Synk i realtid",
+              desc: "Båda telefonerna visar samma kök direkt.",
+            },
+            {
+              title: "Två språk, ett hem",
+              desc: "Var och en använder sitt föredragna språk.",
+            },
+            {
+              title: "Färre turer och dubbletter",
+              desc: "Handla en gång, exakt det ni behöver.",
+            },
+            {
+              title: "Mindre svinn tillsammans",
+              desc: "Använd upp det ni båda köpte innan det blir dåligt.",
+            },
+          ],
+        },
+      ],
+      related: ["Måltidsplanering", "För familjer", "Inköpslistor"],
+    },
+    da: {
+      metaTitle: "Til par",
+      eyebrow: "Til par",
+      crumb: "Til par",
+      h1: "Planlæg måltider sammen, uden frem og tilbage",
+      lede: "Copantry giver par ét fælles køkken: det samme spisekammer, den samme madplan og den samme indkøbsliste, opdateret i realtid. Tilføj opskrifter, I begge har lyst til, se hvad der skal bruges, bliv enige om ugen ét sted — og lad indkøbslisten bygge sig selv.",
+      sections: [
+        {
+          h2: "Én plan i stedet for to modstridende idéer",
+          body: "Inviter din partner ind i din husstand, så arbejder I begge ud fra den samme plan. Hvem som helst af jer kan tilføje en opskrift, planlægge et måltid eller krydse indkøbene af — og I kan hver især bruge appen på jeres eget sprog.",
+        },
+        {
+          h2: "Del den mentale byrde",
+          body: "Spørgsmålet „hvad skal vi have?“ holder op med at være én persons opgave.",
+          bullets: [
+            {
+              title: "Synkronisering i realtid",
+              desc: "Begge telefoner viser det samme køkken med det samme.",
+            },
+            {
+              title: "To sprog, ét hjem",
+              desc: "Hver person bruger sit foretrukne sprog.",
+            },
+            {
+              title: "Færre ture og dubletter",
+              desc: "Handl én gang, præcis det I har brug for.",
+            },
+            {
+              title: "Mindre spild sammen",
+              desc: "Brug det op, I begge købte, før det bliver dårligt.",
+            },
+          ],
+        },
+      ],
+      related: ["Madplanlægning", "Til familier", "Indkøbslister"],
+    },
+    fi: {
+      metaTitle: "Pareille",
+      eyebrow: "Pareille",
+      crumb: "Pareille",
+      h1: "Suunnitelkaa ateriat yhdessä, ilman edestakaista viestittelyä",
+      lede: "Copantry antaa pariskunnille yhden jaetun keittiön: saman ruokakomeron, ruokasuunnitelman ja ostoslistan, reaaliajassa päivittyen. Lisätkää reseptejä, joita molemmat tekevät mieli, nähkää mikä pitää käyttää, sopikaa viikosta yhdessä paikassa — ja antakaa ostoslistan koota itsensä.",
+      sections: [
+        {
+          h2: "Yksi suunnitelma kahden ristiriitaisen idean sijaan",
+          body: "Kutsu kumppanisi talouteesi, niin työskentelette molemmat samasta suunnitelmasta. Kumpi tahansa voi lisätä reseptin, aikatauluttaa aterian tai ruksia ostokset — ja kumpikin voi käyttää sovellusta omalla kielellään.",
+        },
+        {
+          h2: "Jakakaa henkinen kuorma",
+          body: "Kysymys ”mitä syödään?” lakkaa olemasta yhden ihmisen työ.",
+          bullets: [
+            {
+              title: "Reaaliaikainen synkronointi",
+              desc: "Molemmat puhelimet näyttävät saman keittiön heti.",
+            },
+            {
+              title: "Kaksi kieltä, yksi koti",
+              desc: "Kumpikin käyttää omaa kieltään.",
+            },
+            {
+              title: "Vähemmän reissuja ja tuplia",
+              desc: "Yksi kauppareissu, täsmälleen se mitä tarvitsette.",
+            },
+            {
+              title: "Vähemmän hävikkiä yhdessä",
+              desc: "Käyttäkää loppuun se, minkä molemmat ostitte, ennen kuin se pilaantuu.",
+            },
+          ],
+        },
+      ],
+      related: ["Ateriasuunnittelu", "Perheille", "Ostoslistat"],
+    },
+    no: {
+      metaTitle: "For par",
+      eyebrow: "For par",
+      crumb: "For par",
+      h1: "Planlegg måltider sammen, uten frem og tilbake",
+      lede: "Copantry gir par ett felles kjøkken: det samme spiskammeret, den samme matplanen og den samme handlelisten, oppdatert i sanntid. Legg til oppskrifter dere begge har lyst på, se hva som må brukes, bli enige om uken på ett sted — og la handlelisten bygge seg selv.",
+      sections: [
+        {
+          h2: "Én plan i stedet for to motstridende idéer",
+          body: "Inviter partneren din inn i husholdningen din, så jobber dere begge ut fra den samme planen. Hvem som helst av dere kan legge til en oppskrift, planlegge et måltid eller krysse av handlelisten — og dere kan hver bruke appen på deres eget språk.",
+        },
+        {
+          h2: "Del den mentale belastningen",
+          body: "Spørsmålet «hva skal vi ha til middag?» slutter å være én persons jobb.",
+          bullets: [
+            {
+              title: "Synkronisering i sanntid",
+              desc: "Begge telefonene viser det samme kjøkkenet med én gang.",
+            },
+            {
+              title: "To språk, ett hjem",
+              desc: "Hver person bruker sitt foretrukne språk.",
+            },
+            {
+              title: "Færre turer og dubletter",
+              desc: "Handle én gang, nøyaktig det dere trenger.",
+            },
+            {
+              title: "Mindre svinn sammen",
+              desc: "Bruk opp det dere begge kjøpte før det blir dårlig.",
+            },
+          ],
+        },
+      ],
+      related: ["Måltidsplanlegging", "For familier", "Handlelister"],
+    },
+    pl: {
+      metaTitle: "Dla par",
+      eyebrow: "Dla par",
+      crumb: "Dla par",
+      h1: "Planujcie posiłki razem, bez odbijania piłeczki",
+      lede: "Copantry daje parom jedną wspólną kuchnię: tę samą spiżarnię, plan posiłków i listę zakupów, aktualizowane na bieżąco. Dodawajcie przepisy, na które oboje macie ochotę, patrzcie, co trzeba zużyć, ustalcie tydzień w jednym miejscu — a lista zakupów ułoży się sama.",
+      sections: [
+        {
+          h2: "Jeden plan zamiast dwóch sprzecznych pomysłów",
+          body: "Zaproś partnera do swojego gospodarstwa, a oboje będziecie pracować na tym samym planie. Każde z was może dodać przepis, wstawić posiłek do kalendarza albo odhaczyć zakupy — i każde może korzystać z aplikacji we własnym języku.",
+        },
+        {
+          h2: "Podzielcie się obciążeniem psychicznym",
+          body: "Pytanie „co dziś na kolację?” przestaje być zadaniem jednej osoby.",
+          bullets: [
+            {
+              title: "Synchronizacja na bieżąco",
+              desc: "Oba telefony od razu pokazują tę samą kuchnię.",
+            },
+            {
+              title: "Dwa języki, jeden dom",
+              desc: "Każde używa swojego preferowanego języka.",
+            },
+            {
+              title: "Mniej wypraw i dubli",
+              desc: "Zrób zakupy raz, dokładnie to, czego potrzebujecie.",
+            },
+            {
+              title: "Mniej marnowania razem",
+              desc: "Zużyjcie to, co oboje kupiliście, zanim się zepsuje.",
+            },
+          ],
+        },
+      ],
+      related: ["Planowanie posiłków", "Dla rodzin", "Listy zakupów"],
+    },
   },
 
   "budget-cooking": {
@@ -1799,6 +3623,226 @@ export const PAGE_TX = {
       ],
       related: ["Lebensmittel retten", "Einkaufslisten", "Essensplanung"],
     },
+    nl: {
+      metaTitle: "Koken met een budget",
+      eyebrow: "Koken met een budget",
+      crumb: "Koken met een budget",
+      h1: "Geef minder uit aan boodschappen zonder slechter te eten",
+      lede: "De grootste besparing op boodschappen komt van minder verspillen en minder kopen. Copantry helpt je te koken met wat je al hebt voordat het bederft en alleen de gaten in te kopen — waardoor zowel je voedselverspilling als je weekrekening daalt, terwijl je goed blijft eten.",
+      sections: [
+        {
+          h2: "Haal meer maaltijden uit wat je al gekocht hebt",
+          body: "Copantry stelt maaltijden voor die zijn gebouwd rond de ingrediënten in je keuken, zodat het eten waarvoor je hebt betaald het avondeten wordt in plaats van te bederven en vervangen te worden.",
+        },
+        {
+          h2: "Krapper en slimmer boodschappen doen",
+          body: "Door te plannen rond je voorraadkast en nooit opnieuw te kopen wat je al hebt, blijft je lijst mager.",
+          bullets: [
+            {
+              title: "Geen dubbele aankopen",
+              desc: "Het controleert je voorraadkast voordat het iets toevoegt.",
+            },
+            {
+              title: "Opmaak-maaltijden",
+              desc: "Maak van “bijna over de datum” een avondmaaltijd in plaats van afval.",
+            },
+            {
+              title: "Plannen binnen een budget",
+              desc: "Bouw de week rond wat je al hebt.",
+            },
+            {
+              title: "Minder verspilling = echte besparing",
+              desc: "Huishoudens gooien jaarlijks voor honderden euro's aan eten weg.",
+            },
+          ],
+        },
+      ],
+      related: [
+        "Minder verspilling",
+        "Boodschappenlijsten",
+        "Maaltijden plannen",
+      ],
+    },
+    sv: {
+      metaTitle: "Laga mat på budget",
+      eyebrow: "Laga mat på budget",
+      crumb: "Laga mat på budget",
+      h1: "Lägg mindre pengar på mat utan att äta sämre",
+      lede: "De största besparingarna i matbutiken kommer av att slänga mindre och köpa mindre. Copantry hjälper dig att laga det du redan har innan det går ut och bara handla luckorna — vilket sänker både matsvinnet och veckonotan, samtidigt som du fortsätter äta gott.",
+      sections: [
+        {
+          h2: "Få fler måltider ur det du redan köpt",
+          body: "Copantry föreslår måltider byggda kring råvarorna i ditt kök, så att maten du har betalat för blir middag i stället för att bli dålig och ersättas.",
+        },
+        {
+          h2: "En stramare, smartare handling",
+          body: "Genom att planera kring skafferiet och aldrig köpa om det du redan äger håller sig listan slimmad.",
+          bullets: [
+            {
+              title: "Inga dubbelköp",
+              desc: "Den kollar skafferiet innan den lägger till något.",
+            },
+            {
+              title: "Använd-upp-måltider",
+              desc: "Gör ”snart för gammalt” till middag i stället för svinn.",
+            },
+            {
+              title: "Planera efter budget",
+              desc: "Bygg veckan kring det du redan har.",
+            },
+            {
+              title: "Mindre svinn = riktiga pengar",
+              desc: "Hushåll slänger mat för tusentals kronor varje år.",
+            },
+          ],
+        },
+      ],
+      related: ["Minska svinnet", "Inköpslistor", "Måltidsplanering"],
+    },
+    da: {
+      metaTitle: "Madlavning på budget",
+      eyebrow: "Madlavning på budget",
+      crumb: "Madlavning på budget",
+      h1: "Brug færre penge på mad uden at spise dårligere",
+      lede: "De største besparelser i supermarkedet kommer af at smide mindre ud og købe mindre ind. Copantry hjælper dig med at lave mad af det, du allerede har, før det udløber, og kun købe det, der mangler — så både madspild og ugeregning falder, mens du bliver ved med at spise godt.",
+      sections: [
+        {
+          h2: "Få flere måltider ud af det, du allerede har købt",
+          body: "Copantry foreslår måltider bygget om de råvarer, du har i køkkenet, så maden, du har betalt for, bliver til aftensmad i stedet for at blive dårlig og skiftet ud.",
+        },
+        {
+          h2: "En strammere, klogere indkøbstur",
+          body: "Ved at planlægge ud fra spisekammeret og aldrig genkøbe det, du ejer, holder listen sig slank.",
+          bullets: [
+            {
+              title: "Ingen dobbeltkøb",
+              desc: "Den tjekker dit spisekammer, før den tilføjer noget.",
+            },
+            {
+              title: "Brug-op-måltider",
+              desc: "Gør „snart for gammelt“ til aftensmad i stedet for spild.",
+            },
+            {
+              title: "Planlæg efter budget",
+              desc: "Byg ugen om det, du allerede har.",
+            },
+            {
+              title: "Mindre spild = rigtige penge",
+              desc: "Husstande smider mad ud for tusindvis af kroner om året.",
+            },
+          ],
+        },
+      ],
+      related: ["Mindre madspild", "Indkøbslister", "Madplanlægning"],
+    },
+    fi: {
+      metaTitle: "Edullinen ruoanlaitto",
+      eyebrow: "Edullinen ruoanlaitto",
+      crumb: "Edullinen ruoanlaitto",
+      h1: "Käytä ruokaan vähemmän rahaa syömättä huonommin",
+      lede: "Suurimmat säästöt ruokakaupassa syntyvät siitä, että hävikkiä ja ostoksia on vähemmän. Copantry auttaa sinua laittamaan ruokaa siitä, mitä sinulla jo on, ennen kuin se vanhenee, ja ostamaan vain puuttuvat — mikä pienentää sekä ruokahävikkiä että viikkolaskua samalla kun syöt edelleen hyvin.",
+      sections: [
+        {
+          h2: "Saa enemmän aterioita siitä, minkä jo ostit",
+          body: "Copantry ehdottaa aterioita, jotka rakentuvat keittiösi ainesten ympärille, jotta ruoasta, josta olet maksanut, tulee päivällinen sen sijaan että se pilaantuisi ja korvattaisiin.",
+        },
+        {
+          h2: "Tiiviimpi ja fiksumpi kauppareissu",
+          body: "Kun suunnittelet ruokakomerosi ympärille etkä koskaan osta uudelleen sitä, mitä jo omistat, listasi pysyy hoikkana.",
+          bullets: [
+            {
+              title: "Ei tuplaostoksia",
+              desc: "Se tarkistaa ruokakomerosi ennen kuin lisää mitään.",
+            },
+            {
+              title: "Loppuun käyttävät ateriat",
+              desc: "Tee ”pian vanhenevasta” päivällinen, ei hävikkiä.",
+            },
+            {
+              title: "Suunnittele budjettiin",
+              desc: "Rakenna viikko sen ympärille, mitä sinulla jo on.",
+            },
+            {
+              title: "Vähemmän hävikkiä = oikeaa säästöä",
+              desc: "Taloudet heittävät vuosittain satojen eurojen edestä ruokaa.",
+            },
+          ],
+        },
+      ],
+      related: ["Vähemmän hävikkiä", "Ostoslistat", "Ateriasuunnittelu"],
+    },
+    no: {
+      metaTitle: "Lage mat på budsjett",
+      eyebrow: "Lage mat på budsjett",
+      crumb: "Lage mat på budsjett",
+      h1: "Bruk mindre penger på mat uten å spise dårligere",
+      lede: "De største besparelsene i butikken kommer av å kaste mindre og kjøpe mindre. Copantry hjelper deg å lage mat av det du allerede har før det går ut, og bare handle det som mangler — så både matsvinnet og ukeregningen faller, samtidig som du fortsetter å spise godt.",
+      sections: [
+        {
+          h2: "Få flere måltider ut av det du allerede har kjøpt",
+          body: "Copantry foreslår måltider bygget rundt råvarene du har på kjøkkenet, så maten du har betalt for blir til middag i stedet for å bli dårlig og erstattet.",
+        },
+        {
+          h2: "En strammere, smartere handletur",
+          body: "Ved å planlegge ut fra spiskammeret og aldri kjøpe om igjen det du eier, holder listen seg slank.",
+          bullets: [
+            {
+              title: "Ingen dobbeltkjøp",
+              desc: "Den sjekker spiskammeret før den legger til noe.",
+            },
+            {
+              title: "Bruk-opp-måltider",
+              desc: "Gjør «snart for gammelt» til middag i stedet for svinn.",
+            },
+            {
+              title: "Planlegg etter budsjett",
+              desc: "Bygg uken rundt det du allerede har.",
+            },
+            {
+              title: "Mindre svinn = ekte penger",
+              desc: "Husholdninger kaster mat for tusenvis av kroner i året.",
+            },
+          ],
+        },
+      ],
+      related: ["Mindre matsvinn", "Handlelister", "Måltidsplanlegging"],
+    },
+    pl: {
+      metaTitle: "Gotowanie z budżetem",
+      eyebrow: "Gotowanie z budżetem",
+      crumb: "Gotowanie z budżetem",
+      h1: "Wydawaj mniej na jedzenie, nie jedząc gorzej",
+      lede: "Największe oszczędności na zakupach biorą się z mniejszego marnowania i mniejszych zakupów. Copantry pomaga gotować z tego, co już masz, zanim skończy się termin, i kupować wyłącznie braki — obniżając i marnotrawstwo, i tygodniowy rachunek, a ty dalej jesz dobrze.",
+      sections: [
+        {
+          h2: "Wyciśnij więcej posiłków z tego, co już kupiłeś",
+          body: "Copantry proponuje dania zbudowane wokół składników z twojej kuchni, żeby jedzenie, za które zapłaciłeś, stało się kolacją, zamiast się zepsuć i zostać kupione na nowo.",
+        },
+        {
+          h2: "Ciaśniejsze, mądrzejsze zakupy",
+          body: "Kiedy planujesz wokół spiżarni i nigdy nie dokupujesz tego, co już masz, twoja lista pozostaje szczupła.",
+          bullets: [
+            {
+              title: "Bez podwójnych zakupów",
+              desc: "Sprawdza spiżarnię, zanim cokolwiek doda.",
+            },
+            {
+              title: "Dania na zużycie zapasów",
+              desc: "Zamień „zaraz się zepsuje” w kolację, a nie w odpad.",
+            },
+            {
+              title: "Planuj do budżetu",
+              desc: "Zbuduj tydzień wokół tego, co już masz.",
+            },
+            {
+              title: "Mniej marnowania = realne oszczędności",
+              desc: "Gospodarstwa domowe wyrzucają rocznie jedzenie za setki złotych.",
+            },
+          ],
+        },
+      ],
+      related: ["Mniej marnowania", "Listy zakupów", "Planowanie posiłków"],
+    },
   },
 };
 
@@ -1895,6 +3939,114 @@ export const FAQ_TX = {
         a: "Pläne halten, wenn sie zu deinem echten Leben und Schrank passen. Copantry plant rund um das Vorhandene, die Saison und deine Zeit — und hält den ganzen Haushalt auf demselben Stand.",
       },
     ],
+    nl: [
+      {
+        q: "Hoe plan ik maaltijden voor de week?",
+        a: "In Copantry sleep je recepten op een weekagenda, of je laat het een planning voorstellen rond wat je al hebt. Zodra je week staat, maakt Copantry een boodschappenlijst van alleen de ingrediënten die je mist.",
+      },
+      {
+        q: "Kan de app mijn week aan avondmaaltijden voor me plannen?",
+        a: "Ja. Copantry kan automatisch een hele week aan maaltijden genereren, met voorrang voor ingrediënten die bijna over de datum zijn en met genoeg afwisseling zodat je niet twee keer hetzelfde eet. Jij houdt de regie en kunt elke maaltijd wisselen.",
+      },
+      {
+        q: "Hoe plan ik maaltijden rond wat ik al heb?",
+        a: "Copantry leest je voorraadkast en bouwt de planning daaromheen, zodat het eten dat je al hebt op gaat voordat het bederft. Je koopt alleen de gaten bij.",
+      },
+      {
+        q: "Hoe maak ik een weekmenu dat ik echt volhoud?",
+        a: "Planningen houden stand als ze passen bij je echte leven en je echte kast. Copantry plant rond wat je al hebt, wat in het seizoen is en hoeveel tijd je hebt — en houdt het hele huishouden op één lijn.",
+      },
+    ],
+    sv: [
+      {
+        q: "Hur planerar jag veckans måltider?",
+        a: "I Copantry drar du recept till en veckokalender, eller låter appen föreslå en plan byggd kring det du redan har. När veckan är planerad skapar Copantry en inköpslista med bara de ingredienser du saknar.",
+      },
+      {
+        q: "Kan appen planera veckans middagar åt mig?",
+        a: "Ja. Copantry kan skapa en hel vecka med måltider automatiskt, prioritera råvaror som snart går ut och lägga in variation så att du inte äter samma sak två gånger. Du behåller kontrollen och kan byta vilken måltid som helst.",
+      },
+      {
+        q: "Hur planerar jag måltider kring det jag redan har?",
+        a: "Copantry läser ditt skafferi och bygger planerna kring det, så att maten du redan äger används innan den blir dålig. Du handlar bara luckorna.",
+      },
+      {
+        q: "Hur gör jag en matsedel jag faktiskt håller?",
+        a: "Planer håller när de passar ditt riktiga liv och ditt riktiga skåp. Copantry planerar kring det du redan har, vad som är i säsong och hur mycket tid du har — och håller hela hushållet uppdaterat.",
+      },
+    ],
+    da: [
+      {
+        q: "Hvordan planlægger jeg ugens måltider?",
+        a: "I Copantry trækker du opskrifter ind i en ugekalender, eller du lader appen foreslå en plan bygget om det, du allerede har. Når ugen er planlagt, laver Copantry en indkøbsliste med kun de ingredienser, du mangler.",
+      },
+      {
+        q: "Kan appen planlægge ugens aftensmad for mig?",
+        a: "Ja. Copantry kan lave en hel uges måltider automatisk, prioritere råvarer, der snart udløber, og skabe variation, så du ikke spiser det samme to gange. Du har styringen og kan bytte ethvert måltid.",
+      },
+      {
+        q: "Hvordan planlægger jeg måltider ud fra det, jeg allerede har?",
+        a: "Copantry læser dit spisekammer og bygger planerne om det, så maden, du allerede ejer, bliver brugt, før den bliver dårlig. Du køber kun det, der mangler.",
+      },
+      {
+        q: "Hvordan laver jeg en madplan, jeg faktisk holder?",
+        a: "Planer holder, når de passer til dit rigtige liv og dit rigtige skab. Copantry planlægger ud fra det, du allerede har, hvad der er i sæson, og hvor meget tid du har — og holder hele husstanden på samme side.",
+      },
+    ],
+    fi: [
+      {
+        q: "Miten suunnittelen viikon ateriat?",
+        a: "Copantryssa vedät reseptit viikkokalenteriin tai annat sovelluksen ehdottaa suunnitelmaa sen ympärille, mitä sinulla jo on. Kun viikko on suunniteltu, Copantry luo ostoslistan vain puuttuvista aineksista.",
+      },
+      {
+        q: "Voiko sovellus suunnitella viikon päivälliset puolestani?",
+        a: "Kyllä. Copantry voi luoda kokonaisen viikon ateriat automaattisesti, asettaa etusijalle pian vanhenevat raaka-aineet ja tuoda vaihtelua, jottet syö samaa kahdesti. Ohjat pysyvät sinulla ja voit vaihtaa minkä tahansa aterian.",
+      },
+      {
+        q: "Miten suunnittelen ateriat sen ympärille, mitä minulla jo on?",
+        a: "Copantry lukee ruokakomerosi ja rakentaa suunnitelmat sen ympärille, jotta jo omistamasi ruoka tulee käytettyä ennen pilaantumista. Ostat vain puuttuvat.",
+      },
+      {
+        q: "Miten teen ruokalistan, jossa oikeasti pysyn?",
+        a: "Suunnitelmat pitävät, kun ne sopivat oikeaan elämääsi ja oikeaan kaappiisi. Copantry suunnittelee sen ympärille, mitä sinulla jo on, mikä on sesongissa ja kuinka paljon sinulla on aikaa — ja pitää koko talouden kartalla.",
+      },
+    ],
+    no: [
+      {
+        q: "Hvordan planlegger jeg ukens måltider?",
+        a: "I Copantry drar du oppskrifter inn i en ukekalender, eller lar appen foreslå en plan bygget rundt det du allerede har. Når uken er planlagt, lager Copantry en handleliste med bare de ingrediensene du mangler.",
+      },
+      {
+        q: "Kan appen planlegge ukens middager for meg?",
+        a: "Ja. Copantry kan lage en hel uke med måltider automatisk, prioritere råvarer som snart går ut og legge inn variasjon så du ikke spiser det samme to ganger. Du har kontrollen og kan bytte hvilket som helst måltid.",
+      },
+      {
+        q: "Hvordan planlegger jeg måltider ut fra det jeg allerede har?",
+        a: "Copantry leser spiskammeret ditt og bygger planene rundt det, så maten du allerede eier blir brukt før den blir dårlig. Du handler bare det som mangler.",
+      },
+      {
+        q: "Hvordan lager jeg en matplan jeg faktisk holder?",
+        a: "Planer holder når de passer det virkelige livet ditt og det virkelige skapet ditt. Copantry planlegger ut fra det du allerede har, hva som er i sesong og hvor mye tid du har — og holder hele husholdningen oppdatert.",
+      },
+    ],
+    pl: [
+      {
+        q: "Jak zaplanować posiłki na tydzień?",
+        a: "W Copantry przeciągasz przepisy na tygodniowy kalendarz albo pozwalasz aplikacji zaproponować plan zbudowany wokół tego, co już masz. Gdy tydzień jest gotowy, Copantry układa listę zakupów wyłącznie z brakujących składników.",
+      },
+      {
+        q: "Czy aplikacja zaplanuje za mnie tydzień kolacji?",
+        a: "Tak. Copantry potrafi automatycznie ułożyć cały tydzień posiłków, stawiając na składniki, którym kończy się termin, i dbając o urozmaicenie, żebyś nie jadł dwa razy tego samego. Ty masz kontrolę i możesz wymienić dowolny posiłek.",
+      },
+      {
+        q: "Jak planować posiłki wokół tego, co już mam?",
+        a: "Copantry czyta twoją spiżarnię i buduje wokół niej plany, żeby jedzenie, które już masz, zostało zużyte, zanim się zepsuje. Kupujesz tylko braki.",
+      },
+      {
+        q: "Jak ułożyć jadłospis, którego naprawdę się będę trzymał?",
+        a: "Plany się trzymają, gdy pasują do twojego prawdziwego życia i prawdziwej szafki. Copantry planuje wokół tego, co już masz, tego, co jest w sezonie, i tego, ile masz czasu — a przy tym trzyma cały dom przy jednej wersji.",
+      },
+    ],
   },
 
   pantryTracking: {
@@ -1986,6 +4138,114 @@ export const FAQ_TX = {
       {
         q: "Woher weiß ich, was ausgegangen ist?",
         a: "Weil Copantry beim Kochen die Zutaten abzieht, bleibt dein Vorrat korrekt — er weiß, was knapp wird, und fügt es automatisch der nächsten Liste hinzu.",
+      },
+    ],
+    nl: [
+      {
+        q: "Hoe houd ik bij wat er in mijn keuken ligt?",
+        a: "Copantry houdt een actueel overzicht bij van je voorraadkast, koelkast en vriezer. Je kunt producten toevoegen via een foto, je stem, een kassabon of door te typen — en alles wordt gesorteerd op houdbaarheid, zodat je altijd weet wat er als eerste op moet.",
+      },
+      {
+        q: "Kan ik een kassabon of foto scannen om aan mijn voorraadkast toe te voegen?",
+        a: "Ja. Copantry gebruikt AI om een foto van je boodschappen, een kassabon of een getypte lijst te lezen en voegt elk product automatisch toe aan je voorraadkast, zodat je niets één voor één hoeft in te typen.",
+      },
+      {
+        q: "Hoe houd ik de houdbaarheidsdata van mijn boodschappen bij?",
+        a: "Voeg een product toe en Copantry schat er een verstandige uiterste datum bij, die je kunt aanpassen. Je voorraadkast staat altijd gesorteerd op wat het eerst over de datum gaat, zodat er niets achter in de koelkast wordt vergeten.",
+      },
+      {
+        q: "Hoe weet ik waar ik doorheen ben?",
+        a: "Omdat Copantry ingrediënten aftrekt zodra je een geplande maaltijd kookt, blijft je voorraadkast kloppen — dus het weet waar je bijna doorheen bent en kan het automatisch op je volgende boodschappenlijst zetten.",
+      },
+    ],
+    sv: [
+      {
+        q: "Hur håller jag koll på vad jag har i köket?",
+        a: "Copantry håller ett levande register över skafferi, kyl och frys. Du kan lägga till varor med foto, röst, kvitto eller genom att skriva — och allt sorteras efter hållbarhet, så du alltid vet vad som ska användas härnäst.",
+      },
+      {
+        q: "Kan jag skanna ett kvitto eller foto för att fylla på skafferiet?",
+        a: "Ja. Copantry använder AI för att läsa ett foto av dina varor, ett kvitto eller en inskriven lista och lägger till varje vara automatiskt, så att du slipper skriva in dem en och en.",
+      },
+      {
+        q: "Hur håller jag reda på utgångsdatum för mina varor?",
+        a: "Lägg till en vara så uppskattar Copantry ett rimligt sista datum, som du kan justera. Ditt skafferi är alltid sorterat med det som går ut först överst, så inget glöms längst in i kylen.",
+      },
+      {
+        q: "Hur vet jag vad som har tagit slut?",
+        a: "Eftersom Copantry drar av ingredienser när du lagar planerade måltider förblir skafferiet korrekt — så appen vet vad som håller på att ta slut och kan lägga det på nästa inköpslista automatiskt.",
+      },
+    ],
+    da: [
+      {
+        q: "Hvordan holder jeg styr på, hvad jeg har i køkkenet?",
+        a: "Copantry fører et levende register over spisekammer, køleskab og fryser. Du kan tilføje varer med billede, stemme, kvittering eller ved at skrive — og alt sorteres efter holdbarhed, så du altid ved, hvad der skal bruges næst.",
+      },
+      {
+        q: "Kan jeg skanne en kvittering eller et billede for at fylde spisekammeret?",
+        a: "Ja. Copantry bruger AI til at læse et billede af dine varer, en kvittering eller en indtastet liste og tilføjer hver vare automatisk, så du slipper for at skrive dem ind én for én.",
+      },
+      {
+        q: "Hvordan holder jeg styr på udløbsdatoerne på mine varer?",
+        a: "Tilføj en vare, så vurderer Copantry en fornuftig sidste dato, som du kan justere. Dit spisekammer er altid sorteret med det, der udløber først, øverst, så intet glemmes bagerst i køleskabet.",
+      },
+      {
+        q: "Hvordan ved jeg, hvad jeg er løbet tør for?",
+        a: "Fordi Copantry trækker ingredienser fra, når du laver planlagte måltider, forbliver spisekammeret korrekt — så appen ved, hvad du er ved at løbe tør for, og kan sætte det på næste indkøbsliste automatisk.",
+      },
+    ],
+    fi: [
+      {
+        q: "Miten pidän kirjaa siitä, mitä keittiössäni on?",
+        a: "Copantry pitää elävää kirjanpitoa ruokakomerosta, jääkaapista ja pakastimesta. Voit lisätä tuotteita kuvalla, puheella, kuitilta tai kirjoittamalla — ja kaikki järjestyy säilyvyyden mukaan, joten tiedät aina, mikä pitää käyttää seuraavaksi.",
+      },
+      {
+        q: "Voinko skannata kuitin tai kuvan ruokakomeroon lisäämistä varten?",
+        a: "Kyllä. Copantry lukee tekoälyllä kuvan ostoksistasi, kuitin tai kirjoitetun listan ja lisää jokaisen tuotteen ruokakomeroosi automaattisesti, joten mitään ei tarvitse näpytellä yksi kerrallaan.",
+      },
+      {
+        q: "Miten seuraan ostosteni parasta ennen -päiviä?",
+        a: "Lisää tuote, niin Copantry arvioi sille järkevän viimeisen käyttöajan, jota voit muokata. Ruokakomerosi on aina järjestetty ensin vanhenevat ylimpänä, joten mikään ei unohdu jääkaapin perälle.",
+      },
+      {
+        q: "Mistä tiedän, mikä on loppunut?",
+        a: "Koska Copantry vähentää ainekset, kun laitat suunnitellun aterian, ruokakomerosi pysyy paikkansapitävänä — joten se tietää, mikä on loppumassa, ja voi lisätä sen automaattisesti seuraavalle ostoslistallesi.",
+      },
+    ],
+    no: [
+      {
+        q: "Hvordan holder jeg oversikt over hva jeg har på kjøkkenet?",
+        a: "Copantry fører en levende oversikt over spiskammer, kjøleskap og fryser. Du kan legge til varer med bilde, stemme, kvittering eller ved å skrive — og alt sorteres etter holdbarhet, så du alltid vet hva som må brukes neste gang.",
+      },
+      {
+        q: "Kan jeg skanne en kvittering eller et bilde for å fylle spiskammeret?",
+        a: "Ja. Copantry bruker KI til å lese et bilde av varene dine, en kvittering eller en innskrevet liste og legger til hver vare automatisk, så du slipper å skrive dem inn én for én.",
+      },
+      {
+        q: "Hvordan holder jeg oversikt over utløpsdatoene på varene mine?",
+        a: "Legg til en vare, så anslår Copantry en fornuftig siste dato som du kan justere. Spiskammeret er alltid sortert med det som går ut først øverst, så ingenting blir glemt bakerst i kjøleskapet.",
+      },
+      {
+        q: "Hvordan vet jeg hva jeg har gått tom for?",
+        a: "Fordi Copantry trekker fra ingredienser når du lager planlagte måltider, forblir spiskammeret riktig — så appen vet hva du er i ferd med å gå tom for, og kan legge det på neste handleliste automatisk.",
+      },
+    ],
+    pl: [
+      {
+        q: "Jak mieć pod kontrolą to, co mam w kuchni?",
+        a: "Copantry prowadzi żywy spis spiżarni, lodówki i zamrażarki. Produkty możesz dodawać zdjęciem, głosem, z paragonu albo wpisując je — a wszystko porządkuje się według terminu przydatności, więc zawsze wiesz, co zużyć jako następne.",
+      },
+      {
+        q: "Czy mogę zeskanować paragon albo zdjęcie, żeby uzupełnić spiżarnię?",
+        a: "Tak. Copantry odczytuje SI zdjęcie zakupów, paragon albo wpisaną listę i dodaje każdy produkt do spiżarni automatycznie, więc nie musisz wpisywać ich po kolei.",
+      },
+      {
+        q: "Jak pilnować terminów przydatności moich zakupów?",
+        a: "Dodaj produkt, a Copantry oszacuje rozsądny termin przydatności, który możesz poprawić. Twoja spiżarnia jest zawsze uporządkowana tak, że najpilniejsze jest na górze, więc nic nie zaginie z tyłu lodówki.",
+      },
+      {
+        q: "Skąd mam wiedzieć, czego mi zabrakło?",
+        a: "Ponieważ Copantry odejmuje składniki, gdy gotujesz zaplanowane posiłki, twoja spiżarnia pozostaje zgodna z rzeczywistością — więc aplikacja wie, czego ci brakuje, i sama dopisze to do kolejnej listy zakupów.",
       },
     ],
   },
@@ -2081,6 +4341,114 @@ export const FAQ_TX = {
         a: "Copantry beantwortet das für dich: Es vergleicht deine geplanten Mahlzeiten mit deinem aktuellen Vorrat und zeigt genau, was fehlt — nicht mehr und nicht weniger.",
       },
     ],
+    nl: [
+      {
+        q: "Hoe maak ik automatisch een boodschappenlijst uit mijn weekmenu?",
+        a: "Plan je maaltijden in Copantry; het berekent het verschil tussen wat die maaltijden nodig hebben en wat je al hebt, en maakt daarna een boodschappenlijst van alleen de ontbrekende producten.",
+      },
+      {
+        q: "Hoe stop ik met kopen wat ik al heb?",
+        a: "Copantry controleert je voorraadkast voordat het iets aan je lijst toevoegt, dus het zegt nooit dat je iets moet kopen wat je al hebt. Dat alleen al haalt de meeste dubbele aankopen weg.",
+      },
+      {
+        q: "Hoe orden ik mijn boodschappenlijst op supermarktschap?",
+        a: "Copantry groepeert je boodschappenlijst per schap, zodat je de winkel in één ronde doorloopt in plaats van terug te moeten lopen. Iedereen in het huishouden ziet dezelfde lijst en producten worden realtime afgevinkt.",
+      },
+      {
+        q: "Wat moet ik deze week kopen?",
+        a: "Copantry beantwoordt dat voor je: het vergelijkt je geplande maaltijden met je huidige voorraadkast en laat precies zien wat ontbreekt — niets meer, niets minder.",
+      },
+    ],
+    sv: [
+      {
+        q: "Hur gör jag automatiskt en inköpslista från min matsedel?",
+        a: "Planera dina måltider i Copantry, så räknar den ut skillnaden mellan vad måltiderna behöver och vad du redan har, och bygger sedan en inköpslista med bara de varor som saknas.",
+      },
+      {
+        q: "Hur slutar jag köpa sådant jag redan har?",
+        a: "Copantry kollar ditt skafferi innan den lägger till något på listan, så den säger aldrig åt dig att köpa något du redan äger. Bara det tar bort de flesta dubbelköpen.",
+      },
+      {
+        q: "Hur ordnar jag inköpslistan efter butiksavdelning?",
+        a: "Copantry grupperar listan efter avdelning så att du kan gå igenom butiken i ett svep i stället för att vända tillbaka. Alla i hushållet ser samma lista och varor bockas av i realtid.",
+      },
+      {
+        q: "Vad behöver jag handla den här veckan?",
+        a: "Copantry svarar på det åt dig: den jämför dina planerade måltider med det aktuella skafferiet och visar exakt vad som saknas — varken mer eller mindre.",
+      },
+    ],
+    da: [
+      {
+        q: "Hvordan laver jeg automatisk en indkøbsliste ud fra min madplan?",
+        a: "Planlæg dine måltider i Copantry, så regner den forskellen ud mellem, hvad måltiderne kræver, og hvad du allerede har, og bygger derefter en indkøbsliste med kun de manglende varer.",
+      },
+      {
+        q: "Hvordan holder jeg op med at købe det, jeg allerede har?",
+        a: "Copantry tjekker dit spisekammer, før den tilføjer noget til listen, så den beder dig aldrig købe noget, du allerede ejer. Alene det fjerner de fleste dobbeltkøb.",
+      },
+      {
+        q: "Hvordan ordner jeg indkøbslisten efter butiksafdeling?",
+        a: "Copantry grupperer listen efter afdeling, så du kan gå gennem butikken i én omgang i stedet for at vende tilbage. Alle i husstanden ser den samme liste, og varer krydses af i realtid.",
+      },
+      {
+        q: "Hvad skal jeg købe denne uge?",
+        a: "Copantry svarer på det for dig: den sammenligner dine planlagte måltider med det nuværende spisekammer og viser præcis, hvad der mangler — hverken mere eller mindre.",
+      },
+    ],
+    fi: [
+      {
+        q: "Miten teen ostoslistan ruokasuunnitelmastani automaattisesti?",
+        a: "Suunnittele ateriasi Copantryssa, niin se laskee eron sen välillä, mitä ateriat vaativat ja mitä sinulla jo on, ja kokoaa sitten ostoslistan vain puuttuvista tuotteista.",
+      },
+      {
+        q: "Miten lopetan sellaisen ostamisen, mitä minulla jo on?",
+        a: "Copantry tarkistaa ruokakomerosi ennen kuin lisää mitään listalle, joten se ei koskaan kehota ostamaan jotain, mitä jo omistat. Jo pelkästään se poistaa suurimman osan tuplaostoista.",
+      },
+      {
+        q: "Miten järjestän ostoslistani kaupan hyllyjen mukaan?",
+        a: "Copantry ryhmittelee ostoslistasi hyllyjen mukaan, jotta kuljet kaupan läpi yhdellä kierroksella etkä joudu palaamaan takaisin. Kaikki talouden jäsenet näkevät saman listan ja tuotteet ruksitaan reaaliajassa.",
+      },
+      {
+        q: "Mitä minun pitää ostaa tällä viikolla?",
+        a: "Copantry vastaa tähän puolestasi: se vertaa suunniteltuja aterioitasi nykyiseen ruokakomeroosi ja näyttää täsmälleen, mitä puuttuu — ei enempää eikä vähempää.",
+      },
+    ],
+    no: [
+      {
+        q: "Hvordan lager jeg automatisk en handleliste fra matplanen min?",
+        a: "Planlegg måltidene dine i Copantry, så regner den ut forskjellen mellom hva måltidene trenger og hva du allerede har, og bygger deretter en handleliste med bare de manglende varene.",
+      },
+      {
+        q: "Hvordan slutter jeg å kjøpe det jeg allerede har?",
+        a: "Copantry sjekker spiskammeret ditt før den legger noe til på listen, så den ber deg aldri kjøpe noe du allerede eier. Bare det fjerner de fleste dobbeltkjøpene.",
+      },
+      {
+        q: "Hvordan ordner jeg handlelisten etter butikkavdeling?",
+        a: "Copantry grupperer listen etter avdeling, så du kan gå gjennom butikken i én runde i stedet for å snu tilbake. Alle i husholdningen ser den samme listen, og varer krysses av i sanntid.",
+      },
+      {
+        q: "Hva må jeg kjøpe denne uken?",
+        a: "Copantry svarer på det for deg: den sammenligner de planlagte måltidene med spiskammeret slik det er nå, og viser nøyaktig hva som mangler — verken mer eller mindre.",
+      },
+    ],
+    pl: [
+      {
+        q: "Jak automatycznie zrobić listę zakupów z mojego jadłospisu?",
+        a: "Zaplanuj posiłki w Copantry, a aplikacja policzy różnicę między tym, czego te posiłki wymagają, a tym, co już masz, i ułoży listę zakupów wyłącznie z brakujących produktów.",
+      },
+      {
+        q: "Jak przestać kupować to, co już mam?",
+        a: "Copantry sprawdza spiżarnię, zanim doda cokolwiek do listy, więc nigdy nie każe ci kupić czegoś, co już masz. Samo to usuwa większość podwójnych zakupów.",
+      },
+      {
+        q: "Jak uporządkować listę zakupów według alejek sklepowych?",
+        a: "Copantry grupuje listę według alejek, żebyś przeszedł sklep jednym przejściem, zamiast zawracać. Wszyscy domownicy widzą tę samą listę, a produkty odhaczają się na bieżąco.",
+      },
+      {
+        q: "Co muszę kupić w tym tygodniu?",
+        a: "Copantry odpowiada za ciebie: porównuje zaplanowane posiłki z obecną spiżarnią i pokazuje dokładnie, czego brakuje — ani mniej, ani więcej.",
+      },
+    ],
   },
 
   recipes: {
@@ -2174,6 +4542,114 @@ export const FAQ_TX = {
         a: "Ja. Copantry hält jedes Rezept in seiner Originalsprache: Ein auf Französisch importiertes Rezept bleibt französisch, während der Rest der App deine Sprache spricht. Es ist für mehrsprachige Haushalte gemacht.",
       },
     ],
+    nl: [
+      {
+        q: "Hoe bewaar ik recepten van elke website op één plek?",
+        a: "Plak een link in Copantry en het importeert het volledige recept — ingrediënten, stappen, foto en tijden — in je verzameling, ongeacht van welke site het komt. Alles staat op één doorzoekbare plek.",
+      },
+      {
+        q: "Hoe importeer ik een recept vanaf een foto of een kookboekpagina?",
+        a: "Maak een foto van een kookboekpagina, een receptkaart of een schermafbeelding; Copantry leest hem met AI en bewaart hem als een echt, bewerkbaar recept. Je kunt ook importeren vanuit tekst of een pdf.",
+      },
+      {
+        q: "Hoe schaal ik een recept voor meer of minder mensen?",
+        a: "Stel in voor hoeveel mensen je kookt en Copantry past de hoeveelheden voor je aan, en houdt daar op je boodschappenlijst rekening mee.",
+      },
+      {
+        q: "Kan ik recepten in verschillende talen bewaren?",
+        a: "Ja. Copantry houdt elk recept in zijn oorspronkelijke taal, dus een in het Frans geïmporteerd recept blijft Frans terwijl de rest van de app jouw taal spreekt. Het is gemaakt voor meertalige huishoudens.",
+      },
+    ],
+    sv: [
+      {
+        q: "Hur sparar jag recept från vilken webbplats som helst på ett ställe?",
+        a: "Klistra in en länk i Copantry så importeras hela receptet — ingredienser, steg, bild och tider — till din samling, oavsett vilken sajt det kom från. Allt finns på ett sökbart ställe.",
+      },
+      {
+        q: "Hur importerar jag ett recept från ett foto eller en kokbokssida?",
+        a: "Ta ett foto av en kokbokssida, ett receptkort eller en skärmbild, så läser Copantry det med AI och sparar det som ett riktigt, redigerbart recept. Du kan också importera från text eller en PDF.",
+      },
+      {
+        q: "Hur skalar jag ett recept för fler eller färre personer?",
+        a: "Ange hur många du lagar till, så justerar Copantry ingrediensmängderna åt dig och tar hänsyn till det i inköpslistan.",
+      },
+      {
+        q: "Kan jag ha recept på olika språk?",
+        a: "Ja. Copantry behåller varje recept på sitt originalspråk, så ett recept som importerats på franska förblir franskt medan resten av appen talar ditt språk. Den är byggd för flerspråkiga hushåll.",
+      },
+    ],
+    da: [
+      {
+        q: "Hvordan gemmer jeg opskrifter fra en hvilken som helst hjemmeside ét sted?",
+        a: "Indsæt et link i Copantry, så importeres hele opskriften — ingredienser, trin, billede og tider — til din samling, uanset hvilken side den kom fra. Alt ligger ét søgbart sted.",
+      },
+      {
+        q: "Hvordan importerer jeg en opskrift fra et billede eller en kogebogsside?",
+        a: "Tag et billede af en kogebogsside, et opskriftskort eller et skærmbillede, så læser Copantry det med AI og gemmer det som en rigtig, redigerbar opskrift. Du kan også importere fra tekst eller en PDF.",
+      },
+      {
+        q: "Hvordan skalerer jeg en opskrift til flere eller færre personer?",
+        a: "Angiv, hvor mange du laver mad til, så justerer Copantry ingrediensmængderne for dig og tager højde for det på indkøbslisten.",
+      },
+      {
+        q: "Kan jeg have opskrifter på forskellige sprog?",
+        a: "Ja. Copantry beholder hver opskrift på sit originalsprog, så en opskrift importeret på fransk bliver fransk, mens resten af appen taler dit sprog. Den er bygget til flersprogede husstande.",
+      },
+    ],
+    fi: [
+      {
+        q: "Miten tallennan reseptejä mistä tahansa verkkosivustolta yhteen paikkaan?",
+        a: "Liitä linkki Copantryyn, niin se tuo koko reseptin — ainekset, vaiheet, kuvan ja ajat — kokoelmaasi riippumatta siitä, miltä sivustolta se on peräisin. Kaikki on yhdessä haettavassa paikassa.",
+      },
+      {
+        q: "Miten tuon reseptin kuvasta tai keittokirjan sivulta?",
+        a: "Ota kuva keittokirjan sivusta, reseptikortista tai kuvakaappauksesta, niin Copantry lukee sen tekoälyllä ja tallentaa sen kunnollisena, muokattavana reseptinä. Voit tuoda myös tekstistä tai PDF:stä.",
+      },
+      {
+        q: "Miten mitoitan reseptin useammalle tai harvemmalle?",
+        a: "Aseta, kuinka monelle laitat ruokaa, niin Copantry säätää ainesmäärät puolestasi ja ottaa sen huomioon ostoslistallasi.",
+      },
+      {
+        q: "Voinko säilyttää reseptejä eri kielillä?",
+        a: "Kyllä. Copantry säilyttää jokaisen reseptin alkukielellään, joten ranskaksi tuotu resepti pysyy ranskaksi, vaikka muu sovellus puhuu sinun kieltäsi. Se on tehty monikielisille talouksille.",
+      },
+    ],
+    no: [
+      {
+        q: "Hvordan lagrer jeg oppskrifter fra hvilken som helst nettside på ett sted?",
+        a: "Lim inn en lenke i Copantry, så importeres hele oppskriften — ingredienser, trinn, bilde og tider — til samlingen din, uansett hvilken side den kom fra. Alt ligger på ett søkbart sted.",
+      },
+      {
+        q: "Hvordan importerer jeg en oppskrift fra et bilde eller en kokebokside?",
+        a: "Ta et bilde av en kokebokside, et oppskriftskort eller et skjermbilde, så leser Copantry det med KI og lagrer det som en ordentlig, redigerbar oppskrift. Du kan også importere fra tekst eller en PDF.",
+      },
+      {
+        q: "Hvordan skalerer jeg en oppskrift til flere eller færre personer?",
+        a: "Angi hvor mange du lager mat til, så justerer Copantry ingrediensmengdene for deg og tar hensyn til det på handlelisten.",
+      },
+      {
+        q: "Kan jeg ha oppskrifter på ulike språk?",
+        a: "Ja. Copantry beholder hver oppskrift på originalspråket sitt, så en oppskrift importert på fransk blir fransk mens resten av appen snakker ditt språk. Den er bygget for flerspråklige husholdninger.",
+      },
+    ],
+    pl: [
+      {
+        q: "Jak zapisywać przepisy z dowolnej strony w jednym miejscu?",
+        a: "Wklej link do Copantry, a aplikacja zaimportuje cały przepis — składniki, kroki, zdjęcie i czasy — do twojej kolekcji, niezależnie od tego, z jakiej strony pochodzi. Wszystko jest w jednym przeszukiwalnym miejscu.",
+      },
+      {
+        q: "Jak zaimportować przepis ze zdjęcia albo strony książki kucharskiej?",
+        a: "Zrób zdjęcie strony książki kucharskiej, fiszki z przepisem albo zrzut ekranu, a Copantry odczyta je SI i zapisze jako pełnoprawny, edytowalny przepis. Możesz też importować z tekstu albo pliku PDF.",
+      },
+      {
+        q: "Jak przeliczyć przepis na więcej lub mniej osób?",
+        a: "Ustaw, dla ilu osób gotujesz, a Copantry przeliczy ilości składników i uwzględni to na twojej liście zakupów.",
+      },
+      {
+        q: "Czy mogę trzymać przepisy w różnych językach?",
+        a: "Tak. Copantry zachowuje każdy przepis w jego oryginalnym języku, więc przepis zaimportowany po francusku zostaje francuski, a reszta aplikacji mówi twoim językiem. Powstała z myślą o wielojęzycznych domach.",
+      },
+    ],
   },
 
   forFamilies: {
@@ -2245,6 +4721,90 @@ export const FAQ_TX = {
       {
         q: "Wie plane ich die Mahlzeiten für eine Familie?",
         a: "Copantry hält die ganze Familie auf einem geteilten Plan und einer Liste, plant rund um das Vorhandene und skaliert Rezepte auf die Familiengröße, damit niemand rät, was es zu essen gibt.",
+      },
+    ],
+    nl: [
+      {
+        q: "Hoe kook ik uit één maaltijd voor een baby en voor volwassenen?",
+        a: "Copantry helpt je gezinsmaaltijden te plannen waarbij een baby of peuter een versie eet van wat de volwassenen eten, zodat je maar één keer kookt. Bij elk recept kun je notities bijhouden over wat je apart houdt of aanpast voor de kleintjes.",
+      },
+      {
+        q: "Hoe houd ik bij welke voeding mijn baby geprobeerd heeft?",
+        a: "Je kunt receptnotities en je kookgeschiedenis in Copantry gebruiken om vast te leggen welke nieuwe voedingsmiddelen en allergenen je hebt geïntroduceerd, zodat het hele huishouden één gedeeld naslagwerk heeft.",
+      },
+      {
+        q: "Hoe plan ik maaltijden voor een gezin?",
+        a: "Copantry houdt het hele gezin op één gedeelde planning en boodschappenlijst, plant rond wat je al hebt en schaalt recepten naar je gezinsgrootte, zodat niemand hoeft te raden wat er op tafel komt.",
+      },
+    ],
+    sv: [
+      {
+        q: "Hur lagar jag mat till en bebis och vuxna ur samma måltid?",
+        a: "Copantry hjälper dig planera familjemåltider där en bebis eller ettåring äter en variant av det de vuxna äter, så du lagar bara en gång. Du kan hålla anteckningar på varje recept om vad som ska tas undan eller anpassas till de minsta.",
+      },
+      {
+        q: "Hur håller jag reda på vilka smaker min bebis har provat?",
+        a: "Du kan använda receptanteckningar och din tillagningshistorik i Copantry för att föra register över nya smaker och allergener du har introducerat, så att hela hushållet har en gemensam referens.",
+      },
+      {
+        q: "Hur planerar jag måltider för en familj?",
+        a: "Copantry håller hela familjen på en gemensam plan och inköpslista, planerar utifrån det ni redan har och anpassar recepten efter familjens storlek, så ingen behöver gissa vad det blir till middag.",
+      },
+    ],
+    da: [
+      {
+        q: "Hvordan laver jeg mad til en baby og voksne ud fra det samme måltid?",
+        a: "Copantry hjælper dig med at planlægge familiemåltider, hvor en baby eller et lille barn spiser en udgave af det, de voksne spiser, så du kun laver mad én gang. Du kan holde noter på hver opskrift om, hvad der skal tages fra eller tilpasses til de mindste.",
+      },
+      {
+        q: "Hvordan holder jeg styr på, hvilke fødevarer min baby har prøvet?",
+        a: "Du kan bruge opskriftsnoter og din madlavningshistorik i Copantry til at føre register over nye fødevarer og allergener, du har introduceret, så hele husstanden har én fælles reference.",
+      },
+      {
+        q: "Hvordan planlægger jeg måltider til en familie?",
+        a: "Copantry holder hele familien på én fælles plan og indkøbsliste, planlægger ud fra det, I allerede har, og tilpasser opskrifterne til familiens størrelse, så ingen skal gætte, hvad der er til aftensmad.",
+      },
+    ],
+    fi: [
+      {
+        q: "Miten teen samasta ateriasta ruokaa vauvalle ja aikuisille?",
+        a: "Copantry auttaa suunnittelemaan perheaterioita, joissa vauva tai taapero syö oman versionsa aikuisten ruoasta, joten kokkaat vain kerran. Voit pitää jokaisessa reseptissä muistiinpanoja siitä, mitä otetaan erikseen tai mukautetaan pienimmille.",
+      },
+      {
+        q: "Miten seuraan, mitä ruokia vauvani on kokeillut?",
+        a: "Voit käyttää Copantryn reseptimuistiinpanoja ja kokkaushistoriaa pitääksesi kirjaa uusista ruoka-aineista ja allergeeneista, joita olet esitellyt, jolloin koko taloudella on yksi yhteinen lähde.",
+      },
+      {
+        q: "Miten suunnittelen ateriat perheelle?",
+        a: "Copantry pitää koko perheen yhdessä jaetussa suunnitelmassa ja ostoslistassa, suunnittelee sen ympärille, mitä teillä jo on, ja mitoittaa reseptit perheenne kokoon, joten kenenkään ei tarvitse arvailla, mitä on ruokana.",
+      },
+    ],
+    no: [
+      {
+        q: "Hvordan lager jeg mat til en baby og voksne ut fra det samme måltidet?",
+        a: "Copantry hjelper deg å planlegge familiemåltider der en baby eller ettåring spiser en variant av det de voksne spiser, så du lager mat bare én gang. Du kan holde notater på hver oppskrift om hva som skal settes til side eller tilpasses de minste.",
+      },
+      {
+        q: "Hvordan holder jeg oversikt over hvilke matvarer babyen min har prøvd?",
+        a: "Du kan bruke oppskriftsnotater og tilberedningshistorikken i Copantry til å føre register over nye matvarer og allergener du har introdusert, så hele husholdningen har én felles referanse.",
+      },
+      {
+        q: "Hvordan planlegger jeg måltider for en familie?",
+        a: "Copantry holder hele familien på én felles plan og handleliste, planlegger ut fra det dere allerede har, og tilpasser oppskriftene til familiens størrelse, så ingen trenger å gjette hva det blir til middag.",
+      },
+    ],
+    pl: [
+      {
+        q: "Jak z jednego posiłku ugotować dla niemowlaka i dorosłych?",
+        a: "Copantry pomaga planować rodzinne posiłki, w których niemowlę albo maluch je wersję tego, co dorośli, więc gotujesz tylko raz. Przy każdym przepisie możesz zapisać, co odłożyć na bok lub zmienić dla najmłodszych.",
+      },
+      {
+        q: "Jak śledzić, jakie produkty próbowało moje dziecko?",
+        a: "Możesz wykorzystać notatki przy przepisach i historię gotowania w Copantry, aby prowadzić zapis nowych produktów i alergenów, które wprowadziliście, dzięki czemu cały dom ma jedno wspólne źródło.",
+      },
+      {
+        q: "Jak planować posiłki dla rodziny?",
+        a: "Copantry trzyma całą rodzinę przy jednym wspólnym planie i liście zakupów, planuje wokół tego, co już macie, i przelicza przepisy na wielkość rodziny, więc nikt nie musi zgadywać, co będzie na kolację.",
       },
     ],
   },
@@ -2320,6 +4880,90 @@ export const FAQ_TX = {
         a: "Ja. Jeder kann Copantry in seiner eigenen Sprache nutzen und denselben Haushalt teilen, und Rezepte bleiben in der Sprache, in der sie geschrieben wurden.",
       },
     ],
+    nl: [
+      {
+        q: "Hoe delen mijn partner en ik een weekmenu en boodschappenlijst?",
+        a: "Nodig je partner uit in je Copantry-huishouden en jullie zien allebei dezelfde voorraadkast, planning en boodschappenlijst in realtime. Ieder van jullie kan een recept toevoegen, een maaltijd inplannen of boodschappen afvinken.",
+      },
+      {
+        q: "Hoe plannen we samen maaltijden zonder ruzie?",
+        a: "Copantry geeft je één gedeelde planning in plaats van twee botsende ideeën. Jullie kunnen allebei recepten toevoegen waar je zin in hebt, zien wat bijna over de datum is en de week op één plek afspreken — daarna maakt de boodschappenlijst zichzelf.",
+      },
+      {
+        q: "Kunnen we maaltijden in twee verschillende talen plannen?",
+        a: "Ja. Ieder kan Copantry in zijn eigen taal gebruiken terwijl jullie hetzelfde huishouden delen, en recepten blijven in de taal waarin ze zijn geschreven.",
+      },
+    ],
+    sv: [
+      {
+        q: "Hur delar min partner och jag en matsedel och inköpslista?",
+        a: "Bjud in din partner till ditt Copantry-hushåll så ser ni båda samma skafferi, plan och inköpslista i realtid. Vem som helst av er kan lägga till ett recept, planera en måltid eller bocka av inköpen.",
+      },
+      {
+        q: "Hur planerar vi måltider tillsammans utan att bråka?",
+        a: "Copantry ger er en gemensam plan i stället för två krockande idéer. Ni kan båda lägga till recept ni är sugna på, se vad som snart går ut och komma överens om veckan på ett ställe — sedan bygger inköpslistan sig själv.",
+      },
+      {
+        q: "Kan vi planera måltider på två olika språk?",
+        a: "Ja. Var och en kan använda Copantry på sitt eget språk samtidigt som ni delar hushåll, och recepten stannar på det språk de skrevs på.",
+      },
+    ],
+    da: [
+      {
+        q: "Hvordan deler min partner og jeg en madplan og indkøbsliste?",
+        a: "Inviter din partner ind i din Copantry-husstand, så ser I begge det samme spisekammer, den samme plan og den samme indkøbsliste i realtid. Hvem som helst af jer kan tilføje en opskrift, planlægge et måltid eller krydse indkøbene af.",
+      },
+      {
+        q: "Hvordan planlægger vi måltider sammen uden at skændes?",
+        a: "Copantry giver jer én fælles plan i stedet for to modstridende idéer. I kan begge tilføje opskrifter, I har lyst til, se hvad der snart udløber, og blive enige om ugen ét sted — derefter bygger indkøbslisten sig selv.",
+      },
+      {
+        q: "Kan vi planlægge måltider på to forskellige sprog?",
+        a: "Ja. Hver person kan bruge Copantry på sit eget sprog, mens I deler husstand, og opskrifterne bliver på det sprog, de blev skrevet på.",
+      },
+    ],
+    fi: [
+      {
+        q: "Miten kumppanini ja minä jaamme ruokasuunnitelman ja ostoslistan?",
+        a: "Kutsu kumppanisi Copantry-talouteesi, niin näette molemmat saman ruokakomeron, suunnitelman ja ostoslistan reaaliajassa. Kumpi tahansa voi lisätä reseptin, suunnitella aterian tai ruksia ostokset.",
+      },
+      {
+        q: "Miten suunnittelemme ateriat yhdessä riitelemättä?",
+        a: "Copantry antaa teille yhden jaetun suunnitelman kahden ristiriitaisen idean sijaan. Molemmat voivat lisätä reseptejä, joita tekee mieli, nähdä mikä on vanhenemassa ja sopia viikosta yhdessä paikassa — sen jälkeen ostoslista kokoaa itsensä.",
+      },
+      {
+        q: "Voimmeko suunnitella ateriat kahdella eri kielellä?",
+        a: "Kyllä. Kumpikin voi käyttää Copantrya omalla kielellään samalla kun jaatte saman talouden, ja reseptit pysyvät sillä kielellä, jolla ne on kirjoitettu.",
+      },
+    ],
+    no: [
+      {
+        q: "Hvordan deler partneren min og jeg en matplan og handleliste?",
+        a: "Inviter partneren din inn i Copantry-husholdningen din, så ser dere begge det samme spiskammeret, den samme planen og den samme handlelisten i sanntid. Hvem som helst av dere kan legge til en oppskrift, planlegge et måltid eller krysse av handlelisten.",
+      },
+      {
+        q: "Hvordan planlegger vi måltider sammen uten å krangle?",
+        a: "Copantry gir dere én felles plan i stedet for to motstridende idéer. Dere kan begge legge til oppskrifter dere har lyst på, se hva som snart går ut og bli enige om uken på ett sted — så bygger handlelisten seg selv.",
+      },
+      {
+        q: "Kan vi planlegge måltider på to forskjellige språk?",
+        a: "Ja. Hver person kan bruke Copantry på sitt eget språk mens dere deler husholdning, og oppskriftene blir på det språket de ble skrevet på.",
+      },
+    ],
+    pl: [
+      {
+        q: "Jak z partnerem możemy dzielić plan posiłków i listę zakupów?",
+        a: "Zaproś partnera do swojego gospodarstwa w Copantry, a oboje będziecie widzieć tę samą spiżarnię, plan i listę zakupów na bieżąco. Każde z was może dodać przepis, zaplanować posiłek albo odhaczyć zakupy.",
+      },
+      {
+        q: "Jak planować posiłki razem bez kłótni?",
+        a: "Copantry daje wam jeden wspólny plan zamiast dwóch sprzecznych pomysłów. Oboje możecie dodawać przepisy, na które macie ochotę, widzieć, czemu kończy się termin, i ustalić tydzień w jednym miejscu — a potem lista zakupów ułoży się sama.",
+      },
+      {
+        q: "Czy możemy planować posiłki w dwóch różnych językach?",
+        a: "Tak. Każde z was może korzystać z Copantry we własnym języku, dzieląc to samo gospodarstwo, a przepisy zostają w języku, w którym zostały napisane.",
+      },
+    ],
   },
 
   budgetCooking: {
@@ -2391,6 +5035,90 @@ export const FAQ_TX = {
       {
         q: "Wie senke ich meine Lebensmittelrechnung, ohne schlechter zu essen?",
         a: "Indem du rund um deinen Vorrat planst und Doppelkäufe vermeidest, gibst du weniger aus, ohne schlechter zu essen. Copantry plant echte Mahlzeiten rund um echte Zutaten und hält deine Liste schlank.",
+      },
+    ],
+    nl: [
+      {
+        q: "Hoe bespaar ik geld op boodschappen?",
+        a: "De grootste besparing op boodschappen komt van minder verspillen en minder kopen. Copantry helpt je te koken met wat je al hebt voordat het bederft en alleen de gaten in te kopen, wat zowel je voedselverspilling als je rekening verlaagt.",
+      },
+      {
+        q: "Hoe kook ik goedkoper met wat ik al heb?",
+        a: "Copantry stelt maaltijden voor die zijn gebouwd rond de ingrediënten die al in je keuken liggen, zodat je meer maaltijden haalt uit wat je hebt gekocht in plaats van het te laten bederven en opnieuw te beginnen.",
+      },
+      {
+        q: "Hoe verlaag ik mijn boodschappenrekening zonder slechter te eten?",
+        a: "Door te plannen rond je voorraadkast en dubbele aankopen te vermijden geef je minder uit zonder minder goed te eten. Copantry plant echte maaltijden rond echte ingrediënten en houdt je boodschappenlijst strak.",
+      },
+    ],
+    sv: [
+      {
+        q: "Hur sparar jag pengar på mat?",
+        a: "De största besparingarna i matbutiken kommer av att slänga mindre och köpa mindre. Copantry hjälper dig laga det du redan har innan det går ut och bara handla luckorna, vilket sänker både matsvinnet och notan.",
+      },
+      {
+        q: "Hur lagar jag billigare mat med det jag redan har?",
+        a: "Copantry föreslår måltider byggda kring de råvaror du redan har i köket, så att du får fler måltider ur det du köpt i stället för att låta det bli dåligt och börja om.",
+      },
+      {
+        q: "Hur sänker jag matkontot utan att äta sämre?",
+        a: "Genom att planera kring skafferiet och undvika dubbelköp lägger du mindre pengar utan att äta sämre. Copantry planerar riktiga måltider kring riktiga råvaror och håller inköpslistan stram.",
+      },
+    ],
+    da: [
+      {
+        q: "Hvordan sparer jeg penge på mad?",
+        a: "De største besparelser i supermarkedet kommer af at smide mindre ud og købe mindre ind. Copantry hjælper dig med at lave mad af det, du allerede har, før det udløber, og kun købe det, der mangler, hvilket sænker både madspild og regning.",
+      },
+      {
+        q: "Hvordan laver jeg billigere mad med det, jeg allerede har?",
+        a: "Copantry foreslår måltider bygget om de råvarer, du allerede har i køkkenet, så du får flere måltider ud af det, du har købt, i stedet for at lade det blive dårligt og starte forfra.",
+      },
+      {
+        q: "Hvordan sænker jeg mit madbudget uden at spise dårligere?",
+        a: "Ved at planlægge ud fra spisekammeret og undgå dobbeltkøb bruger du færre penge uden at spise mindre godt. Copantry planlægger rigtige måltider om rigtige råvarer og holder indkøbslisten stram.",
+      },
+    ],
+    fi: [
+      {
+        q: "Miten säästän rahaa ruokaostoksissa?",
+        a: "Suurimmat säästöt ruokakaupassa syntyvät siitä, että hävikkiä ja ostoksia on vähemmän. Copantry auttaa laittamaan ruokaa siitä, mitä sinulla jo on, ennen kuin se vanhenee, ja ostamaan vain puuttuvat, mikä pienentää sekä hävikkiä että laskua.",
+      },
+      {
+        q: "Miten laitan halvempaa ruokaa siitä, mitä minulla jo on?",
+        a: "Copantry ehdottaa aterioita, jotka rakentuvat keittiössäsi jo olevien ainesten ympärille, joten saat ostamastasi enemmän aterioita sen sijaan että antaisit sen pilaantua ja aloittaisit alusta.",
+      },
+      {
+        q: "Miten pienennän ruokalaskuani syömättä huonommin?",
+        a: "Kun suunnittelet ruokakomerosi ympärille ja vältät tuplaostoksia, kulutat vähemmän syömättä huonommin. Copantry suunnittelee oikeita aterioita oikeiden ainesten ympärille ja pitää ostoslistasi tiukkana.",
+      },
+    ],
+    no: [
+      {
+        q: "Hvordan sparer jeg penger på mat?",
+        a: "De største besparelsene i butikken kommer av å kaste mindre og kjøpe mindre. Copantry hjelper deg å lage mat av det du allerede har før det går ut, og bare handle det som mangler, noe som senker både matsvinnet og regningen.",
+      },
+      {
+        q: "Hvordan lager jeg billigere mat av det jeg allerede har?",
+        a: "Copantry foreslår måltider bygget rundt råvarene du allerede har på kjøkkenet, så du får flere måltider ut av det du har kjøpt, i stedet for å la det bli dårlig og begynne på nytt.",
+      },
+      {
+        q: "Hvordan kutter jeg matbudsjettet uten å spise dårligere?",
+        a: "Ved å planlegge ut fra spiskammeret og unngå dobbeltkjøp bruker du mindre penger uten å spise dårligere. Copantry planlegger ekte måltider rundt ekte råvarer og holder handlelisten stram.",
+      },
+    ],
+    pl: [
+      {
+        q: "Jak zaoszczędzić na zakupach spożywczych?",
+        a: "Największe oszczędności biorą się z mniejszego marnowania i mniejszych zakupów. Copantry pomaga gotować z tego, co już masz, zanim skończy się termin, i kupować wyłącznie braki, co obniża i marnotrawstwo, i rachunek.",
+      },
+      {
+        q: "Jak gotować taniej z tego, co już mam?",
+        a: "Copantry proponuje dania zbudowane wokół składników, które już masz w kuchni, więc wyciskasz więcej posiłków z tego, co kupiłeś, zamiast pozwolić temu się zepsuć i zaczynać od nowa.",
+      },
+      {
+        q: "Jak obniżyć rachunek za jedzenie, nie jedząc gorzej?",
+        a: "Planując wokół spiżarni i unikając podwójnych zakupów, wydajesz mniej, nie jedząc gorzej. Copantry planuje prawdziwe posiłki wokół prawdziwych składników i pilnuje, by lista zakupów pozostała zwięzła.",
       },
     ],
   },
@@ -2486,6 +5214,114 @@ export const FAQ_TX = {
         a: "Ja. Entdecken nutzt standardmäßig deine Sprache, du kannst aber auf eine bestimmte Sprache wechseln oder in allen suchen.",
       },
     ],
+    nl: [
+      {
+        q: "Hoe vind ik nieuwe recepten zonder allerlei verschillende websites af te zoeken?",
+        a: "Het tabblad Ontdekken van Copantry doorzoekt op één plek een geselecteerde verzameling receptensites en opent de resultaten in een lezer binnen de app, zodat je niet site na site hoeft te bezoeken om iets te vinden om te koken.",
+      },
+      {
+        q: "Kan ik een recept lezen zonder advertenties of pop-ups ertussen?",
+        a: "Ja. Ontdekken opent elk resultaat in een schone, opgeschoonde lezer binnen Copantry — geen advertenties, geen automatisch startende video's en geen opdringerige pop-ups, alleen het recept.",
+      },
+      {
+        q: "Kan ik een recept dat ik in Ontdekken vind in mijn eigen verzameling importeren?",
+        a: "Ja. Open een resultaat en importeer het met één tik, via dezelfde AI-import die Copantry voor elke recept-URL gebruikt — het recept blijft in zijn oorspronkelijke taal.",
+      },
+      {
+        q: "Kan ik in Ontdekken in mijn eigen taal zoeken?",
+        a: "Ja. Ontdekken staat standaard op je eigen taal, en je kunt overschakelen naar een specifieke taal of in alle talen tegelijk zoeken.",
+      },
+    ],
+    sv: [
+      {
+        q: "Hur hittar jag nya recept utan att söka på massor av olika webbplatser?",
+        a: "Copantrys Upptäck-flik söker i en utvald bas av receptsajter på ett ställe och öppnar träffarna i en läsare inuti appen, så du slipper besöka sajt efter sajt för att hitta något att laga.",
+      },
+      {
+        q: "Kan jag läsa ett recept utan att annonser eller popup-fönster är i vägen?",
+        a: "Ja. Upptäck öppnar varje träff i en ren, rensad läsare inuti Copantry — inga annonser, ingen autostartande video och inga påträngande popup-fönster, bara receptet.",
+      },
+      {
+        q: "Kan jag importera ett recept jag hittar i Upptäck till min egen samling?",
+        a: "Ja. Öppna en träff och importera den med ett tryck, med samma AI-drivna import som Copantry använder för vilken recept-länk som helst — receptet stannar på sitt originalspråk.",
+      },
+      {
+        q: "Kan jag söka i Upptäck på mitt eget språk?",
+        a: "Ja. Upptäck utgår från ditt eget språk, och du kan byta till ett visst språk eller söka i alla på en gång.",
+      },
+    ],
+    da: [
+      {
+        q: "Hvordan finder jeg nye opskrifter uden at søge på en masse forskellige hjemmesider?",
+        a: "Copantrys Opdag-fane søger i en udvalgt base af opskriftssider ét sted og åbner resultaterne i en læser inde i appen, så du slipper for at besøge side efter side for at finde noget at lave.",
+      },
+      {
+        q: "Kan jeg læse en opskrift uden reklamer og pop op-vinduer i vejen?",
+        a: "Ja. Opdag åbner hvert resultat i en ren, renset læser inde i Copantry — ingen reklamer, ingen video, der starter af sig selv, og ingen påtrængende pop op-vinduer, bare opskriften.",
+      },
+      {
+        q: "Kan jeg importere en opskrift, jeg finder i Opdag, til min egen samling?",
+        a: "Ja. Åbn et resultat, og importér det med ét tryk med den samme AI-drevne import, som Copantry bruger til enhver opskrifts-URL — opskriften bliver på sit originalsprog.",
+      },
+      {
+        q: "Kan jeg søge i Opdag på mit eget sprog?",
+        a: "Ja. Opdag tager udgangspunkt i dit eget sprog, og du kan skifte til et bestemt sprog eller søge på tværs af dem alle.",
+      },
+    ],
+    fi: [
+      {
+        q: "Miten löydän uusia reseptejä ilman että haen monilta eri sivustoilta?",
+        a: "Copantryn Löydä-välilehti hakee valikoidusta joukosta reseptisivustoja yhdessä paikassa ja avaa tulokset sovelluksen sisäiseen lukunäkymään, joten sinun ei tarvitse käydä sivustolta toiselle löytääksesi jotain kokattavaa.",
+      },
+      {
+        q: "Voinko lukea reseptin ilman että mainokset tai ponnahdusikkunat ovat tiellä?",
+        a: "Kyllä. Löydä avaa jokaisen tuloksen siistiin, puhdistettuun lukunäkymään Copantryn sisällä — ei mainoksia, itsestään käynnistyviä videoita eikä tungettelevia ponnahdusikkunoita, pelkkä resepti.",
+      },
+      {
+        q: "Voinko tuoda Löydä-välilehdeltä löytämäni reseptin omaan kokoelmaani?",
+        a: "Kyllä. Avaa mikä tahansa tulos ja tuo se yhdellä napautuksella samalla tekoälytuonnilla, jota Copantry käyttää mille tahansa reseptiosoitteelle — resepti pysyy alkukielellään.",
+      },
+      {
+        q: "Voinko hakea Löydä-välilehdeltä omalla kielelläni?",
+        a: "Kyllä. Löydä käyttää oletuksena omaa kieltäsi, ja voit vaihtaa tiettyyn kieleen tai hakea kaikilla kielillä.",
+      },
+    ],
+    no: [
+      {
+        q: "Hvordan finner jeg nye oppskrifter uten å søke på mange ulike nettsider?",
+        a: "Copantrys Oppdag-fane søker i en utvalgt base av oppskriftssider på ett sted og åpner treffene i en leser inne i appen, så du slipper å besøke side etter side for å finne noe å lage.",
+      },
+      {
+        q: "Kan jeg lese en oppskrift uten at reklame eller sprettoppvinduer er i veien?",
+        a: "Ja. Oppdag åpner hvert treff i en ren, renset leser inne i Copantry — ingen reklame, ingen video som starter av seg selv og ingen påtrengende sprettoppvinduer, bare oppskriften.",
+      },
+      {
+        q: "Kan jeg importere en oppskrift jeg finner i Oppdag til min egen samling?",
+        a: "Ja. Åpne et hvilket som helst treff og importer det med ett trykk, med den samme KI-drevne importen som Copantry bruker for enhver oppskriftslenke — oppskriften blir på originalspråket sitt.",
+      },
+      {
+        q: "Kan jeg søke i Oppdag på mitt eget språk?",
+        a: "Ja. Oppdag tar utgangspunkt i ditt eget språk, og du kan bytte til et bestemt språk eller søke på tvers av alle.",
+      },
+    ],
+    pl: [
+      {
+        q: "Jak znaleźć nowe przepisy bez przeszukiwania mnóstwa różnych stron?",
+        a: "Zakładka Odkrywaj w Copantry przeszukuje wyselekcjonowaną bazę stron z przepisami w jednym miejscu i otwiera wyniki w czytniku wewnątrz aplikacji, więc nie musisz odwiedzać strony po stronie, żeby znaleźć coś do ugotowania.",
+      },
+      {
+        q: "Czy mogę czytać przepis bez reklam i wyskakujących okienek?",
+        a: "Tak. Odkrywaj otwiera każdy wynik w czystym, oczyszczonym czytniku wewnątrz Copantry — bez reklam, samoodtwarzających się filmów i natrętnych okienek, sam przepis.",
+      },
+      {
+        q: "Czy mogę zaimportować przepis znaleziony w Odkrywaj do własnej kolekcji?",
+        a: "Tak. Otwórz dowolny wynik i zaimportuj go jednym dotknięciem, tym samym importem SI, którego Copantry używa dla każdego adresu przepisu — przepis zostaje w swoim oryginalnym języku.",
+      },
+      {
+        q: "Czy mogę szukać w Odkrywaj we własnym języku?",
+        a: "Tak. Odkrywaj domyślnie korzysta z twojego języka, a ty możesz przełączyć się na konkretny język albo szukać we wszystkich naraz.",
+      },
+    ],
   },
 
   winePairing: {
@@ -2577,6 +5413,114 @@ export const FAQ_TX = {
       {
         q: "Aktualisiert sich mein Weinkeller von selbst, während Flaschen verbraucht werden?",
         a: "Ja. Verknüpfe eine Flasche mit einer geplanten Mahlzeit, und ihr Bestand sinkt automatisch, sobald du bestätigst, dass du gekocht hast — oder markiere jede Flasche jederzeit manuell als getrunken.",
+      },
+    ],
+    nl: [
+      {
+        q: "Stelt Copantry een wijn voor bij een recept?",
+        a: "Ja. Op elke receptpagina, of voor alles wat in een maaltijdmoment gepland staat, kun je Copantry om een wijncombinatie vragen — het raadt een fles aan die je al hebt als er echt een past, plus een algemene stijl om naar te zoeken.",
+      },
+      {
+        q: "Moet ik elk detail van een fles invoeren om hem bij te houden?",
+        a: "Nee. Alleen de weergavenaam van de fles is verplicht. Producent, druif, jaargang, kleur en een vrije notitie zijn allemaal optioneel, dus een fles toevoegen kost enkele seconden.",
+      },
+      {
+        q: "Wat als geen van mijn wijnen bij de maaltijd past?",
+        a: "Je krijgt nog steeds een algemene stijlsuggestie — bijvoorbeeld een middelvolle rode — zelfs als niets in je eigen kelder een goede match is.",
+      },
+      {
+        q: "Werkt mijn wijnkelder zichzelf bij als er flessen op gaan?",
+        a: "Ja. Koppel een fles aan een geplande maaltijd en de voorraad daalt automatisch zodra je bevestigt dat je hebt gekookt, of markeer elke fles op elk moment handmatig als gedronken.",
+      },
+    ],
+    sv: [
+      {
+        q: "Föreslår Copantry ett vin till ett recept?",
+        a: "Ja. På vilken receptsida som helst, eller för allt som är planerat i en måltidslucka, kan du be Copantry om en vinmatchning — den rekommenderar en flaska du redan äger när någon verkligen passar, plus en allmän stil att leta efter.",
+      },
+      {
+        q: "Måste jag fylla i varje detalj om en flaska för att hålla koll på den?",
+        a: "Nej. Bara flaskans visningsnamn krävs. Producent, druva, årgång, färg och en fritextanteckning är alla frivilliga, så det tar sekunder att lägga till en flaska.",
+      },
+      {
+        q: "Vad händer om inget av mitt vin passar måltiden?",
+        a: "Du får ändå ett allmänt stilförslag — till exempel ett medelfylligt rött — även när inget i din egen källare är en bra matchning.",
+      },
+      {
+        q: "Uppdaterar sig vinkällaren själv när flaskor används?",
+        a: "Ja. Koppla en flaska till en planerad måltid så minskar lagret automatiskt när du bekräftar att du har lagat den, eller markera vilken flaska som helst som urdrucken manuellt när du vill.",
+      },
+    ],
+    da: [
+      {
+        q: "Foreslår Copantry en vin til en opskrift?",
+        a: "Ja. På enhver opskriftsside, eller til alt, der er planlagt i en måltidsplads, kan du bede Copantry om en vin — den anbefaler en flaske, du allerede ejer, når en virkelig passer, plus en generel stil at lede efter.",
+      },
+      {
+        q: "Skal jeg indtaste hver eneste detalje om en flaske for at holde styr på den?",
+        a: "Nej. Kun flaskens visningsnavn er nødvendigt. Producent, drue, årgang, farve og en fri note er alle valgfrie, så det tager sekunder at tilføje en flaske.",
+      },
+      {
+        q: "Hvad hvis ingen af mine vine passer til måltidet?",
+        a: "Du får stadig et generelt stilforslag — for eksempel en mellemfyldig rødvin — også når intet i din egen kælder er et godt match.",
+      },
+      {
+        q: "Opdaterer min vinkælder sig selv, efterhånden som flasker bliver brugt?",
+        a: "Ja. Knyt en flaske til et planlagt måltid, så falder beholdningen automatisk, når du bekræfter, at du har lavet det, eller markér når som helst en flaske som drukket manuelt.",
+      },
+    ],
+    fi: [
+      {
+        q: "Ehdottaako Copantry viiniä reseptin seuraksi?",
+        a: "Kyllä. Millä tahansa reseptisivulla tai kaikelle, mitä ateriapaikkaan on suunniteltu, voit pyytää Copantrylta viinisuositusta — se suosittelee pulloa, joka sinulla jo on, kun jokin aidosti sopii, sekä yleisen tyylin, jota etsiä.",
+      },
+      {
+        q: "Pitääkö minun syöttää pullosta jokainen yksityiskohta, jotta voin seurata sitä?",
+        a: "Ei. Vain pullon näyttönimi vaaditaan. Tuottaja, rypäle, vuosikerta, väri ja vapaa muistiinpano ovat kaikki valinnaisia, joten pullon lisääminen vie sekunteja.",
+      },
+      {
+        q: "Entä jos mikään viineistäni ei sovi ateriaan?",
+        a: "Saat silti yleisen tyyliehdotuksen — esimerkiksi keskitäyteläisen punaviinin — vaikka mikään omassa kellarissasi ei olisi hyvä pari.",
+      },
+      {
+        q: "Päivittyykö viinikellarini itsestään, kun pulloja käytetään?",
+        a: "Kyllä. Liitä pullo suunniteltuun ateriaan, niin varasto vähenee automaattisesti, kun vahvistat kokanneesi sen, tai merkitse mikä tahansa pullo juoduksi käsin milloin tahansa.",
+      },
+    ],
+    no: [
+      {
+        q: "Foreslår Copantry en vin til en oppskrift?",
+        a: "Ja. På hvilken som helst oppskriftsside, eller for alt som er planlagt i en måltidsplass, kan du be Copantry om en vin — den anbefaler en flaske du allerede eier når en virkelig passer, pluss en generell stil å se etter.",
+      },
+      {
+        q: "Må jeg fylle inn hver eneste detalj om en flaske for å holde oversikt over den?",
+        a: "Nei. Bare flaskens visningsnavn kreves. Produsent, drue, årgang, farge og et fritt notat er alle valgfrie, så det tar sekunder å legge til en flaske.",
+      },
+      {
+        q: "Hva om ingen av vinene mine passer til måltidet?",
+        a: "Du får likevel et generelt stilforslag — for eksempel en middels fyldig rødvin — også når ingenting i din egen kjeller er et godt treff.",
+      },
+      {
+        q: "Oppdaterer vinkjelleren min seg selv etter hvert som flasker brukes?",
+        a: "Ja. Knytt en flaske til et planlagt måltid, så synker beholdningen automatisk når du bekrefter at du har laget det, eller merk når som helst en flaske som drukket manuelt.",
+      },
+    ],
+    pl: [
+      {
+        q: "Czy Copantry proponuje wino do przepisu?",
+        a: "Tak. Na dowolnej stronie przepisu albo dla wszystkiego zaplanowanego w danym posiłku możesz poprosić Copantry o dobór wina — poleci butelkę, którą już masz, jeśli któraś naprawdę pasuje, a poza tym ogólny styl, którego warto szukać.",
+      },
+      {
+        q: "Czy muszę wpisać każdy szczegół butelki, żeby ją śledzić?",
+        a: "Nie. Wymagana jest tylko nazwa wyświetlana butelki. Producent, szczep, rocznik, kolor i dowolna notatka są nieobowiązkowe, więc dodanie butelki zajmuje kilka sekund.",
+      },
+      {
+        q: "Co jeśli żadne z moich win nie pasuje do posiłku?",
+        a: "I tak dostaniesz ogólną propozycję stylu — na przykład czerwone o średniej pełni — nawet gdy nic w twojej piwniczce nie jest dobrym dopasowaniem.",
+      },
+      {
+        q: "Czy moja piwniczka aktualizuje się sama, gdy butelki są zużywane?",
+        a: "Tak. Przypisz butelkę do zaplanowanego posiłku, a zapas zmniejszy się automatycznie, gdy potwierdzisz, że go ugotowałeś, albo w dowolnej chwili ręcznie oznacz butelkę jako wypitą.",
       },
     ],
   },

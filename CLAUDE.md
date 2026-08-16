@@ -126,6 +126,6 @@ use `var(--color-brand-500)` or `bg-brand-500`.
   off; Accept fires a `copantry:consent` window event → `grantAnalyticsConsent()`, Decline
   flips Google's `ga-disable-<id>` kill switch. SPA route changes send a manual `page_view`
   (`send_page_view:false`). All access is `isBrowser()`-guarded so the prerender is
-  unaffected. Disclosed in both PrivacyPage files + the cookie-banner copy (six locales).
+  unaffected. Disclosed in both PrivacyPage files + the cookie-banner copy (all twelve locales).
   **No pricing** for the MCP page either — the pricing-allowance FAQ answer was softened to
   a plain usage-limit note (monetisation lives in the app, not the marketing site).

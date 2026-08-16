@@ -61,6 +61,54 @@ export const BLOG_UI = {
     minRead: "Min. Lesezeit",
     locale: "de-DE",
   },
+  nl: {
+    eyebrow: "De Copantry-blog",
+    h1: "Verspil minder, kook slimmer, geef minder uit",
+    lede: "Praktische, nuchtere gidsen om te koken met wat je hebt, te plannen rond je koelkast en thuis minder voedsel te verspillen.",
+    readMore: "Lees verder",
+    minRead: "min lezen",
+    locale: "nl-NL",
+  },
+  sv: {
+    eyebrow: "Copantry-bloggen",
+    h1: "Släng mindre, laga smartare, lägg mindre pengar",
+    lede: "Praktiska, raka guider till att laga det du har, planera utifrån kylen och minska matsvinnet hemma.",
+    readMore: "Läs mer",
+    minRead: "min läsning",
+    locale: "sv-SE",
+  },
+  da: {
+    eyebrow: "Copantry-bloggen",
+    h1: "Smid mindre ud, lav klogere mad, brug færre penge",
+    lede: "Praktiske, ligefremme guides til at lave mad af det, du har, planlægge ud fra køleskabet og mindske madspild derhjemme.",
+    readMore: "Læs mere",
+    minRead: "min læsning",
+    locale: "da-DK",
+  },
+  fi: {
+    eyebrow: "Copantryn blogi",
+    h1: "Hävitä vähemmän, kokkaa fiksummin, kuluta vähemmän",
+    lede: "Käytännöllisiä ja suoraviivaisia oppaita siihen, miten laittaa ruokaa olemassa olevasta, suunnitella jääkaapin ehdoilla ja vähentää ruokahävikkiä kotona.",
+    readMore: "Lue lisää",
+    minRead: "min lukuaika",
+    locale: "fi-FI",
+  },
+  no: {
+    eyebrow: "Copantry-bloggen",
+    h1: "Kast mindre, lag smartere mat, bruk mindre penger",
+    lede: "Praktiske, likefremme guider til å lage mat av det du har, planlegge ut fra kjøleskapet og redusere matsvinn hjemme.",
+    readMore: "Les mer",
+    minRead: "min lesing",
+    locale: "nb-NO",
+  },
+  pl: {
+    eyebrow: "Blog Copantry",
+    h1: "Marnuj mniej, gotuj mądrzej, wydawaj mniej",
+    lede: "Praktyczne, konkretne poradniki o gotowaniu z tego, co masz, planowaniu wokół lodówki i ograniczaniu marnowania jedzenia w domu.",
+    readMore: "Czytaj dalej",
+    minRead: "min czytania",
+    locale: "pl-PL",
+  },
 };
 
 const CATEGORY_TX = {
@@ -70,6 +118,12 @@ const CATEGORY_TX = {
     es: "Cocina",
     pt: "Cozinha",
     de: "Kochen",
+    nl: "Koken",
+    sv: "Matlagning",
+    da: "Madlavning",
+    fi: "Ruoanlaitto",
+    no: "Matlaging",
+    pl: "Gotowanie",
   },
   "Food waste": {
     fr: "Gaspillage alimentaire",
@@ -77,6 +131,12 @@ const CATEGORY_TX = {
     es: "Desperdicio de comida",
     pt: "Desperdício alimentar",
     de: "Lebensmittelverschwendung",
+    nl: "Voedselverspilling",
+    sv: "Matsvinn",
+    da: "Madspild",
+    fi: "Ruokahävikki",
+    no: "Matsvinn",
+    pl: "Marnowanie żywności",
   },
   "Meal planning": {
     fr: "Planification des repas",
@@ -84,6 +144,12 @@ const CATEGORY_TX = {
     es: "Planificación de comidas",
     pt: "Planeamento de refeições",
     de: "Essensplanung",
+    nl: "Maaltijden plannen",
+    sv: "Måltidsplanering",
+    da: "Madplanlægning",
+    fi: "Ateriasuunnittelu",
+    no: "Måltidsplanlegging",
+    pl: "Planowanie posiłków",
   },
 };
 
@@ -583,6 +649,636 @@ export const POST_TX = {
           c: [
             "Aus dem zu kochen, was du hast, ist die wirksamste Alltagsgewohnheit, um weniger zu verschwenden und auszugeben — und meist schneller, als zum Laden zu gehen. Für den größeren Zusammenhang siehe ",
             { l: "/blog/use-it-up-method", t: "die Aufbrauch-Methode" },
+            ".",
+          ],
+        },
+      ],
+    },
+    nl: {
+      title: "Wat kan ik koken met wat er nu in mijn koelkast ligt?",
+      description:
+        "Een eenvoudige methode om wat er al in je koelkast ligt vanavond in een echte maaltijd te veranderen — zonder boodschappen te doen.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Om te koken met wat je al hebt, begin je bij je koelkast in plaats van bij een recept: kies de twee of drie dingen die het eerst op moeten, kies een vorm (een ovenschotel, een roerbakgerecht, een soep, een pasta, een omelet) en bouw daaromheen met basisproducten uit de kast. Je hebt bijna altijd al een maaltijd — je ziet hem alleen nog niet.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "1. Kijk naar wat bijna bederft, niet naar wat ontbreekt",
+        },
+        {
+          k: "p",
+          c: [
+            "De truc is de vraag om te draaien. In plaats van “wat moet ik kopen om dit recept te maken?” vraag je “wat heb ik al dat ik als eerste moet gebruiken?”. Verlepte spinazie, een paar kippendijen en een citroen zijn geen restjes — dat is een ovenschotel met kip, citroen en spinazie.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "2. Kies een vorm en vul hem in",
+        },
+        {
+          k: "p",
+          c: [
+            "De meeste doordeweekse maaltijden zijn een van een handvol flexibele vormen:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Ovenschotel:",
+              },
+              " een eiwitbron + stevige groenten + olie + kruiden, samen geroosterd.",
+            ],
+            [
+              {
+                b: "Roerbak:",
+              },
+              " alles wat knapperig is + een eiwitbron + een saus, over rijst of noedels.",
+            ],
+            [
+              {
+                b: "Soep:",
+              },
+              " een basis van ui + welke groente ook slap wordt + bouillon, gepureerd of niet.",
+            ],
+            [
+              {
+                b: "Pasta:",
+              },
+              " een saus van een blik tomaten of wat room + allerlei restjes.",
+            ],
+            [
+              {
+                b: "Frittata of omelet:",
+              },
+              " eieren + kaas + overgebleven groente of kruiden.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Kies de vorm die past bij je ingrediënten en de tijd die je hebt, en het “recept” schrijft zichzelf grotendeels.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "3. Laat de app het matchen doen",
+        },
+        {
+          k: "p",
+          c: [
+            "Dit is precies waarvoor Copantry is gemaakt. Het weet al wat er in je keuken ligt en hoelang alles nog goed is, dus het kan echte maaltijden voorstellen die eerst je bijna-bedorven ingrediënten gebruiken — afgestemd op het aantal eters. Zie ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "hoe het voedselverspilling vermindert",
+            },
+            " en ",
+            {
+              l: "/features/meal-planning",
+              t: "hoe maaltijden plannen werkt",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Koken met wat je hebt is de meest effectieve dagelijkse gewoonte om minder te verspillen en minder uit te geven — en meestal is het sneller dan naar de winkel gaan. Voor het grotere plaatje, zie ",
+            {
+              l: "/blog/use-it-up-method",
+              t: "de opmaakmethode",
+            },
+            ".",
+          ],
+        },
+      ],
+    },
+    sv: {
+      title: "Vad kan jag laga av det som finns i kylen just nu?",
+      description:
+        "En enkel metod för att göra det som redan står i kylen till en riktig middag i kväll — utan att handla.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "För att laga av det du redan har börjar du i kylen i stället för i ett recept: välj de två eller tre saker som måste användas först, välj en form (en plåtmiddag, en wok, en soppa, en pasta, en omelett) och bygg runt dem med skafferivaror. Du har nästan alltid en måltid redan — du ser den bara inte än.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "1. Titta på det som snart blir dåligt, inte på det som saknas",
+        },
+        {
+          k: "p",
+          c: [
+            "Knepet är att vända på frågan. I stället för ”vad måste jag köpa för att laga det här receptet?” frågar du ”vad har jag redan som borde användas först?”. Slokande spenat, ett par kycklinglår och en citron är inga rester — det är en plåtmiddag med kyckling, citron och spenat.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "2. Välj en form och fyll i den",
+        },
+        {
+          k: "p",
+          c: [
+            "De flesta vardagsmiddagar är en av en handfull flexibla former:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Plåtmiddag:",
+              },
+              " en proteinkälla + tåliga grönsaker + olja + krydda, rostat tillsammans.",
+            ],
+            [
+              {
+                b: "Wok:",
+              },
+              " allt som är krispigt + en proteinkälla + en sås, över ris eller nudlar.",
+            ],
+            [
+              {
+                b: "Soppa:",
+              },
+              " en lökbas + vilka grönsaker som än är trötta + buljong, mixat eller inte.",
+            ],
+            [
+              {
+                b: "Pasta:",
+              },
+              " en sås byggd på en burk tomater eller lite grädde + lite av varje.",
+            ],
+            [
+              {
+                b: "Frittata eller omelett:",
+              },
+              " ägg + ost + eventuella grönsaks- eller örtrester.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Välj den form som passar dina råvaror och den tid du har, så skriver ”receptet” mest sig självt.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "3. Låt appen göra matchningen",
+        },
+        {
+          k: "p",
+          c: [
+            "Det här är precis vad Copantry är byggt för. Den vet redan vad du har i köket och hur länge varje sak har kvar, så den kan föreslå riktiga måltider som först använder de råvaror som snart går ut — anpassade efter hur många du lagar till. Se ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "hur den minskar matsvinnet",
+            },
+            " och ",
+            {
+              l: "/features/meal-planning",
+              t: "hur måltidsplaneringen fungerar",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Att laga av det du har är den enskilt mest effektiva vardagsvanan för att slänga mindre och lägga mindre pengar — och det går oftast snabbare än att gå till butiken. För helhetsbilden, se ",
+            {
+              l: "/blog/use-it-up-method",
+              t: "använd-upp-metoden",
+            },
+            ".",
+          ],
+        },
+      ],
+    },
+    da: {
+      title: "Hvad kan jeg lave af det, der står i køleskabet lige nu?",
+      description:
+        "En enkel metode til at gøre det, der allerede står i dit køleskab, til rigtig aftensmad i aften — uden en tur i butikken.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "For at lave mad af det, du allerede har, starter du i køleskabet i stedet for i en opskrift: vælg de to eller tre ting, der skal bruges først, vælg en form (en ovnret, en wok, en suppe, en pasta, en omelet) og byg omkring dem med varer fra skabet. Du har næsten altid et måltid allerede — du kan bare ikke se det endnu.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "1. Kig på det, der snart bliver dårligt, ikke på det, der mangler",
+        },
+        {
+          k: "p",
+          c: [
+            "Tricket er at vende spørgsmålet om. I stedet for „hvad skal jeg købe for at lave denne opskrift?“ spørger du „hvad har jeg allerede, som bør bruges først?“. Slasket spinat, et par kyllingelår og en citron er ikke rester — det er en ovnret med kylling, citron og spinat.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "2. Vælg en form, og fyld den ud",
+        },
+        {
+          k: "p",
+          c: [
+            "De fleste hverdagsmiddage er en af en håndfuld fleksible former:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Ovnret:",
+              },
+              " en proteinkilde + hårdføre grøntsager + olie + krydderi, bagt sammen.",
+            ],
+            [
+              {
+                b: "Wok:",
+              },
+              " alt sprødt + en proteinkilde + en sauce, over ris eller nudler.",
+            ],
+            [
+              {
+                b: "Suppe:",
+              },
+              " en løgbase + hvilke grøntsager der end er trætte + fond, blendet eller ej.",
+            ],
+            [
+              {
+                b: "Pasta:",
+              },
+              " en sauce bygget på en dåse tomater eller lidt fløde + lidt af hvert.",
+            ],
+            [
+              {
+                b: "Frittata eller omelet:",
+              },
+              " æg + ost + eventuelle rester af grøntsager eller krydderurter.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Vælg den form, der passer til dine råvarer og den tid, du har, så skriver „opskriften“ stort set sig selv.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "3. Lad appen klare matchningen",
+        },
+        {
+          k: "p",
+          c: [
+            "Det er præcis det, Copantry er bygget til. Den ved allerede, hvad du har i køkkenet, og hvor længe hver ting holder, så den kan foreslå rigtige måltider, der først bruger de råvarer, som snart udløber — tilpasset hvor mange I er. Se ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "hvordan den mindsker madspild",
+            },
+            " og ",
+            {
+              l: "/features/meal-planning",
+              t: "hvordan madplanlægningen virker",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "At lave mad af det, du har, er den enkeltvis mest effektive hverdagsvane til at smide mindre ud og bruge færre penge — og det er som regel hurtigere end at gå i butikken. For det store billede, se ",
+            {
+              l: "/blog/use-it-up-method",
+              t: "brug-op-metoden",
+            },
+            ".",
+          ],
+        },
+      ],
+    },
+    fi: {
+      title: "Mitä voin laittaa siitä, mitä jääkaapissani juuri nyt on?",
+      description:
+        "Yksinkertainen tapa muuttaa jääkaapin sisältö oikeaksi päivälliseksi tänä iltana — ilman kauppareissua.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Kun laitat ruokaa siitä, mitä sinulla jo on, aloita jääkaapista etkä reseptistä: valitse ne kaksi tai kolme asiaa, jotka pitää käyttää ensin, valitse muoto (uunivuoka, wokki, keitto, pasta, munakas) ja rakenna niiden ympärille kaapin perustarvikkeilla. Sinulla on lähes aina jo ateria — et vain vielä näe sitä.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "1. Katso sitä, mikä on pilaantumassa, älä sitä, mikä puuttuu",
+        },
+        {
+          k: "p",
+          c: [
+            "Kikka on kääntää kysymys. Sen sijaan että kysyisit ”mitä minun pitää ostaa tämän reseptin tekemiseen?”, kysy ”mitä minulla jo on, joka pitäisi käyttää ensin?”. Nuutunut pinaatti, pari broilerin koipireittä ja sitruuna eivät ole tähteitä — ne ovat sitruunainen pinaatti-broilerivuoka.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "2. Valitse muoto ja täytä se",
+        },
+        {
+          k: "p",
+          c: [
+            "Useimmat arki-illan päivälliset ovat jokin kourallisesta joustavia muotoja:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Uunivuoka:",
+              },
+              " proteiini + kestävät kasvikset + öljy + mausteet, paahdettuna yhdessä.",
+            ],
+            [
+              {
+                b: "Wokki:",
+              },
+              " kaikki rapea + proteiini + kastike, riisin tai nuudelien päällä.",
+            ],
+            [
+              {
+                b: "Keitto:",
+              },
+              " sipulipohja + mitkä tahansa nuutuneet kasvikset + liemi, soseutettuna tai ei.",
+            ],
+            [
+              {
+                b: "Pasta:",
+              },
+              " kastike tomaattipurkista tai kermasta + sitä sun tätä.",
+            ],
+            [
+              {
+                b: "Frittata tai munakas:",
+              },
+              " kananmunat + juusto + mitkä tahansa ylijääneet kasvikset tai yrtit.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Valitse muoto, joka sopii aineksiisi ja käytettävissä olevaan aikaan, niin ”resepti” kirjoittaa itsensä lähes kokonaan.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "3. Anna sovelluksen hoitaa yhteensovitus",
+        },
+        {
+          k: "p",
+          c: [
+            "Juuri tähän Copantry on rakennettu. Se tietää jo, mitä keittiössäsi on ja kuinka kauan kullakin on aikaa, joten se voi ehdottaa oikeita aterioita, jotka käyttävät ensin pian vanhenevat ainekset — mitoitettuna syöjien määrään. Katso ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "miten se vähentää ruokahävikkiä",
+            },
+            " ja ",
+            {
+              l: "/features/meal-planning",
+              t: "miten ateriasuunnittelu toimii",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Siitä laittaminen, mitä sinulla on, on yksittäisistä arjen tavoista tehokkain tapa vähentää hävikkiä ja menoja — ja se on yleensä nopeampaa kuin kauppareissu. Isomman kuvan saat täältä: ",
+            {
+              l: "/blog/use-it-up-method",
+              t: "loppuun käyttämisen menetelmä",
+            },
+            ".",
+          ],
+        },
+      ],
+    },
+    no: {
+      title: "Hva kan jeg lage av det som står i kjøleskapet akkurat nå?",
+      description:
+        "En enkel metode for å gjøre det som allerede står i kjøleskapet til ordentlig middag i kveld — uten en tur i butikken.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "For å lage mat av det du allerede har, starter du i kjøleskapet i stedet for i en oppskrift: velg de to eller tre tingene som må brukes først, velg en form (en langpanne, en wok, en suppe, en pasta, en omelett) og bygg rundt dem med varer fra skapet. Du har nesten alltid et måltid allerede — du ser det bare ikke ennå.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "1. Se på det som snart blir dårlig, ikke på det som mangler",
+        },
+        {
+          k: "p",
+          c: [
+            "Trikset er å snu spørsmålet. I stedet for «hva må jeg kjøpe for å lage denne oppskriften?» spør du «hva har jeg allerede som bør brukes først?». Slapp spinat, et par kyllinglår og en sitron er ingen rester — det er en langpanne med kylling, sitron og spinat.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "2. Velg en form, og fyll den ut",
+        },
+        {
+          k: "p",
+          c: [
+            "De fleste hverdagsmiddager er én av en håndfull fleksible former:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Langpanne:",
+              },
+              " en proteinkilde + hardføre grønnsaker + olje + krydder, stekt sammen.",
+            ],
+            [
+              {
+                b: "Wok:",
+              },
+              " alt som er sprøtt + en proteinkilde + en saus, over ris eller nudler.",
+            ],
+            [
+              {
+                b: "Suppe:",
+              },
+              " en løkbase + hvilke grønnsaker som enn er slappe + kraft, most eller ikke.",
+            ],
+            [
+              {
+                b: "Pasta:",
+              },
+              " en saus bygget på en boks tomater eller litt fløte + litt av hvert.",
+            ],
+            [
+              {
+                b: "Frittata eller omelett:",
+              },
+              " egg + ost + eventuelle rester av grønnsaker eller urter.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Velg den formen som passer råvarene dine og tiden du har, så skriver «oppskriften» stort sett seg selv.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "3. La appen gjøre matchingen",
+        },
+        {
+          k: "p",
+          c: [
+            "Dette er nettopp det Copantry er bygget for. Den vet allerede hva du har på kjøkkenet og hvor lenge hver ting holder, så den kan foreslå ekte måltider som først bruker råvarene som snart går ut — tilpasset hvor mange du lager til. Se ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "hvordan den reduserer matsvinn",
+            },
+            " og ",
+            {
+              l: "/features/meal-planning",
+              t: "hvordan måltidsplanleggingen virker",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Å lage mat av det du har er den enkeltvis mest effektive hverdagsvanen for å kaste mindre og bruke mindre — og det går som regel raskere enn å dra i butikken. For det store bildet, se ",
+            {
+              l: "/blog/use-it-up-method",
+              t: "bruk-opp-metoden",
+            },
+            ".",
+          ],
+        },
+      ],
+    },
+    pl: {
+      title: "Co mogę ugotować z tego, co mam teraz w lodówce?",
+      description:
+        "Prosta metoda, jak zamienić zawartość lodówki w prawdziwą kolację już dziś — bez wyprawy na zakupy.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Żeby ugotować z tego, co już masz, zacznij od lodówki, a nie od przepisu: wybierz dwie albo trzy rzeczy, które trzeba zużyć najpierw, wybierz formę (danie z blachy, stir-fry, zupa, makaron, omlet) i zbuduj wokół nich z produktów z szafki. Prawie zawsze masz już gotowy posiłek — po prostu jeszcze go nie widzisz.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "1. Patrz na to, co zaraz się zepsuje, a nie na to, czego brakuje",
+        },
+        {
+          k: "p",
+          c: [
+            "Sztuka polega na odwróceniu pytania. Zamiast „co muszę kupić, żeby zrobić ten przepis?”, zapytaj „co już mam i powinienem zużyć najpierw?”. Zwiędły szpinak, para udek z kurczaka i cytryna to nie resztki — to zapiekany kurczak z cytryną i szpinakiem.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "2. Wybierz formę i ją wypełnij",
+        },
+        {
+          k: "p",
+          c: [
+            "Większość kolacji w tygodniu to jedna z kilku elastycznych form:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Danie z blachy:",
+              },
+              " białko + twarde warzywa + olej + przyprawy, upieczone razem.",
+            ],
+            [
+              {
+                b: "Stir-fry:",
+              },
+              " wszystko, co chrupiące + białko + sos, na ryżu albo makaronie.",
+            ],
+            [
+              {
+                b: "Zupa:",
+              },
+              " baza z cebuli + jakiekolwiek zwiotczałe warzywa + bulion, zmiksowane lub nie.",
+            ],
+            [
+              {
+                b: "Makaron:",
+              },
+              " sos z puszki pomidorów albo odrobiny śmietanki + różności.",
+            ],
+            [
+              {
+                b: "Frittata albo omlet:",
+              },
+              " jajka + ser + resztki warzyw lub ziół.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Wybierz formę pasującą do twoich składników i czasu, którym dysponujesz, a „przepis” w większości napisze się sam.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "3. Niech aplikacja dobierze za ciebie",
+        },
+        {
+          k: "p",
+          c: [
+            "Dokładnie po to powstało Copantry. Wie już, co masz w kuchni i ile czasu zostało każdej rzeczy, więc potrafi zaproponować prawdziwe posiłki, które najpierw zużywają kończące się składniki — przeliczone na liczbę jedzących. Zobacz ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "jak ogranicza marnowanie jedzenia",
+            },
+            " i ",
+            {
+              l: "/features/meal-planning",
+              t: "jak działa planowanie posiłków",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Gotowanie z tego, co masz, to najskuteczniejszy codzienny nawyk, żeby marnować mniej i wydawać mniej — a zwykle jest szybsze niż wyprawa do sklepu. Szerszy obraz znajdziesz tutaj: ",
+            {
+              l: "/blog/use-it-up-method",
+              t: "metoda zużywania zapasów",
+            },
             ".",
           ],
         },
@@ -1169,6 +1865,772 @@ export const POST_TX = {
         },
       ],
     },
+    nl: {
+      title:
+        "Hoeveel eten gooit een huishouden weg — en de 5 dingen die het vaakst in de bak gaan",
+      description:
+        "Wat de cijfers van WRAP echt zeggen over voedselverspilling thuis, welk eten we het vaakst weggooien en wat het je kost.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Volgens WRAP gooien Britse huishoudens jaarlijks zo'n 6,4 miljoen ton voedsel weg, waarvan het overgrote deel gegeten had kunnen worden. Voor een gemiddeld gezin met kinderen komt dat neer op ongeveer £1.000 aan weggegooid eten per jaar. Het goede nieuws: het meeste ervan is te voorkomen met een paar simpele gewoontes.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Wat de cijfers zeggen",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAP — het Britse orgaan voor afval en grondstoffen — is de meest geciteerde bron hierover. Hun onderzoek naar huishoudelijke voedselverspilling laat steeds weer zien dat het grootste deel van wat we weggooien ooit prima eetbaar was, en dat het zowel de CO₂-voetafdruk van een huishouden als het weekbudget flink raakt. (Controleer de actuele cijfers altijd op ",
+            {
+              a: "https://wrap.org.uk",
+              t: "wrap.org.uk",
+            },
+            " — die worden periodiek bijgewerkt.)",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Het eten dat we het vaakst weggooien",
+        },
+        {
+          k: "p",
+          c: [
+            "De data van WRAP wijzen keer op keer dezelfde schuldigen aan: verse, snel bederfelijke alledaagse producten:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Brood",
+              },
+              " — in grote hoeveelheden gekocht, droogt uit en schimmelt voordat we het op hebben.",
+            ],
+            [
+              {
+                b: "Melk en zuivel",
+              },
+              " — geopend, vergeten, tegen de datum weggegooid.",
+            ],
+            [
+              {
+                b: "Verse groente en sla",
+              },
+              " — verlepte zakken bladgroente zijn een klassieker.",
+            ],
+            [
+              {
+                b: "Vers fruit",
+              },
+              " — bananen en bessen die sneller rijpen dan we ze opeten.",
+            ],
+            [
+              {
+                b: "Restjes en zelfgemaakt eten",
+              },
+              " — gekookt, gekoeld, nooit opgewarmd.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Wil je weten hoelang deze producten echt goed blijven? Zie onze ",
+            {
+              l: "/learn",
+              t: "gidsen over hoelang voedsel goed blijft",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Waarom het gebeurt — en hoe je het stopt",
+        },
+        {
+          k: "p",
+          c: [
+            "Bijna alle voedselverspilling thuis komt neer op twee dingen: meer kopen dan we gebruiken en het overzicht kwijtraken van wat we al hebben. De oplossingen zijn simpel:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              "Houd in de gaten wat bijna over de datum is en kook dat als eerste.",
+            ],
+            [
+              "Plan maaltijden rond je koelkast in plaats van steeds voor nieuwe recepten te winkelen.",
+            ],
+            ["Koop alleen wat je nog niet hebt."],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Dat is precies het idee achter Copantry. Het houdt bij hoelang alles in je keuken nog goed is, stelt maaltijden voor om het op te maken en maakt een boodschappenlijst van alleen de gaten — zie ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "minder verspilling",
+            },
+            " en ",
+            {
+              l: "/use-cases/budget-cooking",
+              t: "koken met een budget",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "note",
+          c: [
+            "Cijfers toegeschreven aan WRAP en bedoeld als algemene richtlijn; controleer de actuele statistieken bij de bron voordat je erop vertrouwt.",
+          ],
+        },
+      ],
+    },
+    sv: {
+      title:
+        "Hur mycket mat slänger ett hushåll — och de 5 saker vi kastar mest",
+      description:
+        "Vad WRAP:s siffror faktiskt säger om matsvinnet i hemmet, vilken mat vi slänger mest och vad det kostar dig.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Enligt WRAP slänger brittiska hushåll omkring 6,4 miljoner ton mat om året, varav den stora merparten hade kunnat ätas. För en genomsnittlig familj med barn blir det ungefär 1 000 £ slängd mat årligen. Den goda nyheten: det mesta går att undvika med några enkla vanor.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Vad siffrorna säger",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAP — Storbritanniens myndighet för avfall och resurser — är den mest citerade källan på området. Deras forskning om hushållens matsvinn visar genomgående att merparten av det vi slänger en gång var fullt ätbart, och att det både tynger hushållets klimatavtryck och veckobudgeten. (Kontrollera alltid de senaste siffrorna på ",
+            {
+              a: "https://wrap.org.uk",
+              t: "wrap.org.uk",
+            },
+            " — de uppdateras med jämna mellanrum.)",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Maten vi slänger mest",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAP:s data pekar gång på gång ut samma bovar — färska vardagsvaror som snabbt blir dåliga:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Bröd",
+              },
+              " — köps i storpack, torkar ut och möglar innan vi hinner äta upp det.",
+            ],
+            [
+              {
+                b: "Mjölk och mejeri",
+              },
+              " — öppnat, bortglömt, hällt ut nära datumet.",
+            ],
+            [
+              {
+                b: "Färska grönsaker och sallad",
+              },
+              " — slokande påsar med blad är en klassiker.",
+            ],
+            [
+              {
+                b: "Färsk frukt",
+              },
+              " — bananer och bär som mognar snabbare än vi äter dem.",
+            ],
+            [
+              {
+                b: "Rester och hemlagad mat",
+              },
+              " — lagat, nedkylt, aldrig uppvärmt.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Vill du veta hur länge något av det här faktiskt håller? Se våra ",
+            {
+              l: "/learn",
+              t: "guider till hur länge maten håller",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Varför det händer — och hur du stoppar det",
+        },
+        {
+          k: "p",
+          c: [
+            "Nästan allt matsvinn i hemmet handlar om två saker: att köpa mer än vi använder och att tappa koll på vad vi redan har. Lösningarna är enkla:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            ["Håll koll på vad som snart går ut, och laga det först."],
+            [
+              "Planera måltider utifrån kylen i stället för att handla efter nya recept varje gång.",
+            ],
+            ["Köp bara det du inte redan har."],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Det är hela idén bakom Copantry. Den håller koll på hur länge allt i köket har kvar, föreslår måltider för att använda upp det och bygger en inköpslista med bara luckorna — se ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "minska svinnet",
+            },
+            " och ",
+            {
+              l: "/use-cases/budget-cooking",
+              t: "laga mat på budget",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "note",
+          c: [
+            "Siffrorna tillskrivs WRAP och är avsedda som en allmän vägledning; kontrollera aktuell statistik hos källan innan du förlitar dig på den.",
+          ],
+        },
+      ],
+    },
+    da: {
+      title:
+        "Hvor meget mad smider en husstand ud — og de 5 ting, vi kasserer mest",
+      description:
+        "Hvad WRAP's tal faktisk siger om madspild i hjemmet, hvilken mad vi oftest smider ud, og hvad det koster dig.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Ifølge WRAP smider britiske husstande omkring 6,4 millioner tons mad ud om året, hvoraf langt størstedelen kunne have været spist. For en gennemsnitlig familie med børn svarer det til cirka 1.000 £ kasseret mad årligt. Den gode nyhed: det meste kan undgås med nogle få enkle vaner.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Hvad tallene siger",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAP — Storbritanniens myndighed for affald og ressourcer — er den mest citerede kilde på området. Deres forskning i husstandenes madspild viser konsekvent, at hovedparten af det, vi smider ud, engang var fuldt spiseligt, og at det både belaster husstandens klimaaftryk og ugebudgettet. (Tjek altid de nyeste tal på ",
+            {
+              a: "https://wrap.org.uk",
+              t: "wrap.org.uk",
+            },
+            " — de opdateres jævnligt.)",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Den mad, vi oftest smider ud",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAP's data peger igen og igen på de samme syndere — friske hverdagsvarer, der hurtigt bliver dårlige:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Brød",
+              },
+              " — købt i store portioner, tørrer ud og mugner, før vi når at spise det.",
+            ],
+            [
+              {
+                b: "Mælk og mejeri",
+              },
+              " — åbnet, glemt, hældt ud tæt på datoen.",
+            ],
+            [
+              {
+                b: "Friske grøntsager og salat",
+              },
+              " — slaskede poser med blade er en klassiker.",
+            ],
+            [
+              {
+                b: "Frisk frugt",
+              },
+              " — bananer og bær, der modner hurtigere, end vi spiser dem.",
+            ],
+            [
+              {
+                b: "Rester og hjemmelavet mad",
+              },
+              " — tilberedt, afkølet, aldrig varmet op.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Vil du vide, hvor længe noget af det her faktisk holder? Se vores ",
+            {
+              l: "/learn",
+              t: "guides til, hvor længe maden holder",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Hvorfor det sker — og hvordan du stopper det",
+        },
+        {
+          k: "p",
+          c: [
+            "Næsten alt madspild i hjemmet handler om to ting: at købe mere, end vi bruger, og at miste overblikket over, hvad vi allerede har. Løsningerne er enkle:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            ["Hold øje med det, der snart udløber, og lav det først."],
+            [
+              "Planlæg måltider ud fra køleskabet i stedet for at handle efter nye opskrifter hver gang.",
+            ],
+            ["Køb kun det, du ikke allerede har."],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Det er hele idéen bag Copantry. Den holder styr på, hvor længe alt i dit køkken har tilbage, foreslår måltider til at bruge det op og bygger en indkøbsliste med kun hullerne — se ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "mindre madspild",
+            },
+            " og ",
+            {
+              l: "/use-cases/budget-cooking",
+              t: "madlavning på budget",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "note",
+          c: [
+            "Tallene tilskrives WRAP og er ment som en generel vejledning; tjek den aktuelle statistik ved kilden, før du forlader dig på den.",
+          ],
+        },
+      ],
+    },
+    fi: {
+      title:
+        "Kuinka paljon ruokaa talous heittää pois — ja 5 asiaa, joita roskaamme eniten",
+      description:
+        "Mitä WRAPin luvut oikeasti kertovat kotitalouksien ruokahävikistä, mitä ruokaa heitämme eniten pois ja mitä se maksaa sinulle.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "WRAPin mukaan brittiläiset kotitaloudet heittävät pois noin 6,4 miljoonaa tonnia ruokaa vuodessa, ja suurin osa siitä olisi ollut syötävissä. Keskivertoperheelle, jossa on lapsia, se tarkoittaa noin 1 000 punnan edestä roskiin heitettyä ruokaa vuosittain. Hyvä uutinen: suurin osa on vältettävissä muutamalla yksinkertaisella tavalla.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Mitä luvut kertovat",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAP — Britannian jäte- ja resurssiviranomainen — on tämän aiheen siteeratuin lähde. Sen kotitalouksien ruokahävikkiä koskeva tutkimus osoittaa johdonmukaisesti, että valtaosa poisheitetystä oli aikanaan täysin syötävää, ja että se rasittaa sekä kotitalouden hiilijalanjälkeä että viikkobudjettia. (Tarkista tuoreimmat luvut aina osoitteesta ",
+            {
+              a: "https://wrap.org.uk",
+              t: "wrap.org.uk",
+            },
+            " — niitä päivitetään ajoittain.)",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Ruoat, joita heitämme eniten pois",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAPin data osoittaa yhä uudelleen samoihin syyllisiin — tuoreisiin, nopeasti pilaantuviin arkituotteisiin:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Leipä",
+              },
+              " — ostetaan isoissa erissä, kuivuu ja homehtuu ennen kuin ehdimme syödä sen.",
+            ],
+            [
+              {
+                b: "Maito ja maitotuotteet",
+              },
+              " — avattu, unohdettu, kaadettu pois päiväyksen lähellä.",
+            ],
+            [
+              {
+                b: "Tuoreet vihannekset ja salaatti",
+              },
+              " — nuutuneet lehtipussit ovat klassikko.",
+            ],
+            [
+              {
+                b: "Tuoreet hedelmät",
+              },
+              " — banaanit ja marjat kypsyvät nopeammin kuin ehdimme syödä ne.",
+            ],
+            [
+              {
+                b: "Tähteet ja kotiruoka",
+              },
+              " — kypsennetty, jäähdytetty, ei koskaan lämmitetty.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Haluatko tietää, kuinka kauan nämä oikeasti säilyvät? Katso ",
+            {
+              l: "/learn",
+              t: "oppaamme ruoan säilyvyydestä",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Miksi näin käy — ja miten sen lopettaa",
+        },
+        {
+          k: "p",
+          c: [
+            "Lähes kaikki kotitalouden ruokahävikki tiivistyy kahteen asiaan: ostamme enemmän kuin käytämme ja hukkaamme käsityksen siitä, mitä meillä jo on. Ratkaisut ovat yksinkertaisia:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            ["Pidä silmällä, mikä on vanhenemassa, ja laita se ensin."],
+            [
+              "Suunnittele ateriat jääkaapin ehdoilla sen sijaan että tekisit ostoksia joka kerta uusien reseptien mukaan.",
+            ],
+            ["Osta vain se, mitä sinulla ei jo ole."],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Juuri tähän Copantry perustuu. Se seuraa, kuinka kauan kaikella keittiössäsi on aikaa jäljellä, ehdottaa aterioita niiden käyttämiseksi ja kokoaa ostoslistan vain aukoista — katso ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "vähemmän hävikkiä",
+            },
+            " ja ",
+            {
+              l: "/use-cases/budget-cooking",
+              t: "edullinen ruoanlaitto",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "note",
+          c: [
+            "Luvut on esitetty WRAPin nimissä ja tarkoitettu yleisohjeeksi; tarkista ajantasaiset tilastot lähteestä ennen kuin nojaat niihin.",
+          ],
+        },
+      ],
+    },
+    no: {
+      title:
+        "Hvor mye mat kaster en husholdning — og de 5 tingene vi kaster mest",
+      description:
+        "Hva tallene fra WRAP faktisk sier om matsvinn i hjemmet, hvilken mat vi kaster mest, og hva det koster deg.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Ifølge WRAP kaster britiske husholdninger rundt 6,4 millioner tonn mat i året, og det aller meste av det kunne vært spist. For en gjennomsnittlig familie med barn tilsvarer det omtrent 1 000 £ kastet mat årlig. Den gode nyheten: det meste kan unngås med noen få enkle vaner.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Hva tallene sier",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAP — Storbritannias myndighet for avfall og ressurser — er den mest siterte kilden på området. Forskningen deres på husholdningenes matsvinn viser gjennomgående at det meste av det vi kaster en gang var fullt spiselig, og at det både tynger husholdningens klimaavtrykk og ukebudsjettet. (Sjekk alltid de nyeste tallene på ",
+            {
+              a: "https://wrap.org.uk",
+              t: "wrap.org.uk",
+            },
+            " — de oppdateres jevnlig.)",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Maten vi kaster mest",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAPs data peker gang på gang på de samme synderne — ferske hverdagsvarer som raskt blir dårlige:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Brød",
+              },
+              " — kjøpt i store porsjoner, tørker ut og mugner før vi rekker å spise det.",
+            ],
+            [
+              {
+                b: "Melk og meieri",
+              },
+              " — åpnet, glemt, helt ut nær datoen.",
+            ],
+            [
+              {
+                b: "Ferske grønnsaker og salat",
+              },
+              " — slappe poser med blader er en klassiker.",
+            ],
+            [
+              {
+                b: "Fersk frukt",
+              },
+              " — bananer og bær som modnes raskere enn vi spiser dem.",
+            ],
+            [
+              {
+                b: "Rester og hjemmelaget mat",
+              },
+              " — laget, avkjølt, aldri varmet opp.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Vil du vite hvor lenge noe av dette faktisk holder? Se våre ",
+            {
+              l: "/learn",
+              t: "guider til hvor lenge maten holder",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Hvorfor det skjer — og hvordan du stopper det",
+        },
+        {
+          k: "p",
+          c: [
+            "Nesten alt matsvinn i hjemmet koker ned til to ting: vi kjøper mer enn vi bruker, og vi mister oversikten over hva vi allerede har. Løsningene er enkle:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            ["Følg med på hva som snart går ut, og lag det først."],
+            [
+              "Planlegg måltider ut fra kjøleskapet i stedet for å handle etter nye oppskrifter hver gang.",
+            ],
+            ["Kjøp bare det du ikke allerede har."],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Det er hele idéen bak Copantry. Den holder oversikt over hvor lenge alt på kjøkkenet ditt har igjen, foreslår måltider for å bruke det opp og bygger en handleliste med bare hullene — se ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "mindre matsvinn",
+            },
+            " og ",
+            {
+              l: "/use-cases/budget-cooking",
+              t: "lage mat på budsjett",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "note",
+          c: [
+            "Tallene tilskrives WRAP og er ment som en generell veiledning; sjekk den gjeldende statistikken hos kilden før du stoler på den.",
+          ],
+        },
+      ],
+    },
+    pl: {
+      title:
+        "Ile jedzenia wyrzuca gospodarstwo domowe — i 5 rzeczy, które lądują w koszu najczęściej",
+      description:
+        "Co dane WRAP naprawdę mówią o marnowaniu żywności w domu, jakie jedzenie wyrzucamy najczęściej i ile cię to kosztuje.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Według WRAP brytyjskie gospodarstwa domowe wyrzucają rocznie około 6,4 miliona ton jedzenia, z czego zdecydowana większość nadawała się do zjedzenia. Dla przeciętnej rodziny z dziećmi to mniej więcej 1000 £ wyrzuconego jedzenia rocznie. Dobra wiadomość: większości da się uniknąć kilkoma prostymi nawykami.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Co mówią liczby",
+        },
+        {
+          k: "p",
+          c: [
+            "WRAP — brytyjska instytucja zajmująca się odpadami i zasobami — jest najczęściej cytowanym źródłem w tej sprawie. Ich badania nad marnowaniem żywności w domach konsekwentnie pokazują, że większość tego, co wyrzucamy, była kiedyś w pełni jadalna i że mocno obciąża zarówno ślad węglowy gospodarstwa, jak i tygodniowy budżet. (Aktualne liczby zawsze sprawdzaj na ",
+            {
+              a: "https://wrap.org.uk",
+              t: "wrap.org.uk",
+            },
+            " — są okresowo aktualizowane.)",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Jedzenie, które wyrzucamy najczęściej",
+        },
+        {
+          k: "p",
+          c: [
+            "Dane WRAP raz po raz wskazują tych samych winowajców — świeże, szybko psujące się produkty codziennego użytku:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              {
+                b: "Chleb",
+              },
+              " — kupowany na zapas, wysycha i pleśnieje, zanim zdążymy go zjeść.",
+            ],
+            [
+              {
+                b: "Mleko i nabiał",
+              },
+              " — otwarte, zapomniane, wylane tuż przy terminie.",
+            ],
+            [
+              {
+                b: "Świeże warzywa i sałata",
+              },
+              " — zwiędłe torebki liści to klasyka.",
+            ],
+            [
+              {
+                b: "Świeże owoce",
+              },
+              " — banany i jagody dojrzewające szybciej, niż je zjadamy.",
+            ],
+            [
+              {
+                b: "Resztki i domowe jedzenie",
+              },
+              " — ugotowane, schłodzone, nigdy nieodgrzane.",
+            ],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Chcesz wiedzieć, jak długo naprawdę trzyma się każdy z nich? Zajrzyj do naszych ",
+            {
+              l: "/learn",
+              t: "poradników o trwałości jedzenia",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Dlaczego tak się dzieje — i jak to przerwać",
+        },
+        {
+          k: "p",
+          c: [
+            "Niemal całe domowe marnowanie żywności sprowadza się do dwóch rzeczy: kupujemy więcej, niż zużywamy, i tracimy rozeznanie w tym, co już mamy. Rozwiązania są proste:",
+          ],
+        },
+        {
+          k: "ul",
+          c: [
+            [
+              "Pilnuj tego, czemu kończy się termin, i gotuj to w pierwszej kolejności.",
+            ],
+            [
+              "Planuj posiłki wokół lodówki, zamiast za każdym razem kupować pod nowe przepisy.",
+            ],
+            ["Kupuj tylko to, czego jeszcze nie masz."],
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Na tym właśnie opiera się całe Copantry. Pilnuje, ile czasu zostało wszystkiemu w twojej kuchni, proponuje posiłki, które to zużyją, i układa listę zakupów wyłącznie z braków — zobacz ",
+            {
+              l: "/features/reduce-food-waste",
+              t: "mniej marnowania",
+            },
+            " i ",
+            {
+              l: "/use-cases/budget-cooking",
+              t: "gotowanie z budżetem",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "note",
+          c: [
+            "Dane przypisane WRAP i przeznaczone jako ogólna wskazówka; przed powołaniem się na nie sprawdź aktualne statystyki u źródła.",
+          ],
+        },
+      ],
+    },
   },
 
   "use-it-up-method": {
@@ -1572,6 +3034,528 @@ export const POST_TX = {
             {
               l: "/blog/what-can-i-cook-with-what-i-have",
               t: "Was kann ich mit dem kochen, was ich habe?",
+            },
+          ],
+        },
+      ],
+    },
+    nl: {
+      title:
+        "De opmaakmethode: plan maaltijden rond je koelkast, niet rond een kookboek",
+      description:
+        "De meeste maaltijdplanning begint bij een recept en stuurt je naar de winkel. Draai het om: begin bij wat je al hebt. Dit is de methode.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "De opmaakmethode is maaltijdplanning in omgekeerde volgorde: in plaats van recepten te kiezen en daarvoor te winkelen, begin je bij wat er al in je keuken ligt en wat bijna over de datum is, en plan je daaromheen — je koopt alleen wat je echt mist. Het verspilt minder, kost minder en vraagt minder moeite dan een klassiek recept-eerst-plan.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Waarom recept-eerst plannen ongemerkt eten verspilt",
+        },
+        {
+          k: "p",
+          c: [
+            "De gebruikelijke aanpak — recepten doorbladeren, een boodschappenlijst schrijven, alles kopen — negeert wat je al hebt. Dus koop je een tweede potje komijn, bederft de halve zak spinazie in de la en verdwijnen de restjes van gisteren achterin de koelkast. Het plan zag er netjes uit; de vuilnisbak vertelt een ander verhaal.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "De methode, in vier stappen",
+        },
+        {
+          k: "ol",
+          c: [
+            [
+              {
+                b: "Maak de balans op.",
+              },
+              " Noteer wat je hebt en, cruciaal, wat bijna over de datum is.",
+            ],
+            [
+              {
+                b: "Kook eerst wat bederft.",
+              },
+              " Bouw de maaltijden van deze week rond die producten.",
+            ],
+            [
+              {
+                b: "Vul de gaten.",
+              },
+              " Voeg een paar flexibele maaltijden toe en noteer daarna alleen de ingrediënten die je nog niet hebt.",
+            ],
+            [
+              {
+                b: "Houd het bij.",
+              },
+              " Werk tijdens het koken bij wat er over is, zodat de volgende week vanuit de werkelijkheid begint.",
+            ],
+          ],
+        },
+        {
+          k: "h2",
+          c: "Zo kost het geen moeite",
+        },
+        {
+          k: "p",
+          c: [
+            "Op papier werkt de methode, maar met de hand is hij bewerkelijk — en daarom haken de meeste mensen af. Copantry bestaat juist om hem te automatiseren: het houdt je voorraadkast bij, laat zien wat bijna over de datum is, stelt daar maaltijden bij voor en maakt van de gaten een boodschappenlijst. Zie ",
+            {
+              l: "/how-it-works",
+              t: "hoe het werkt",
+            },
+            ", of waarom dit beter is dan een ",
+            {
+              l: "/why-copantry",
+              t: "agendagerichte planner of een receptendoos",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Begin klein: open deze week vóór je boodschappen doet de koelkast en plan één avondmaaltijd rond het product dat het meest kans maakt om weggegooid te worden. Die ene gewoonte is de opmaakmethode in het klein — en het telt snel op. Verwant: ",
+            {
+              l: "/blog/what-can-i-cook-with-what-i-have",
+              t: "wat kan ik koken met wat ik heb?",
+            },
+          ],
+        },
+      ],
+    },
+    sv: {
+      title:
+        "Använd-upp-metoden: planera måltider utifrån kylen, inte en kokbok",
+      description:
+        "De flesta matsedlar börjar i ett recept och skickar dig till butiken. Vänd på det: börja med det du redan har. Så här går metoden till.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Använd-upp-metoden är måltidsplanering baklänges: i stället för att välja recept och handla till dem börjar du med det som redan finns i köket och det som snart går ut, och planerar måltider utifrån det — och köper bara det du verkligen saknar. Det slänger mindre, kostar mindre och kräver mindre möda än en traditionell receptplan.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Varför receptet-först tyst orsakar matsvinn",
+        },
+        {
+          k: "p",
+          c: [
+            "Det vanliga upplägget — bläddra bland recept, skriva en inköpslista, köpa allt — bortser från det du redan äger. Så du köper en andra burk spiskummin, halva påsen spenat i lådan blir dålig och gårdagens rester puttas längst in i kylen. Planen såg prydlig ut; soppåsen berättar något annat.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Metoden, i fyra steg",
+        },
+        {
+          k: "ol",
+          c: [
+            [
+              {
+                b: "Gör en inventering.",
+              },
+              " Notera vad du har och, framför allt, vad som snart går ut.",
+            ],
+            [
+              {
+                b: "Laga det som snart går ut först.",
+              },
+              " Bygg veckans måltider kring de varorna.",
+            ],
+            [
+              {
+                b: "Fyll luckorna.",
+              },
+              " Lägg till några flexibla måltider, och skriv sedan bara upp de ingredienser du inte redan har.",
+            ],
+            [
+              {
+                b: "Håll det aktuellt.",
+              },
+              " Uppdatera vad som är kvar allteftersom du lagar, så att nästa vecka utgår från verkligheten.",
+            ],
+          ],
+        },
+        {
+          k: "h2",
+          c: "Så blir det enkelt",
+        },
+        {
+          k: "p",
+          c: [
+            "Metoden fungerar på papper, men den är tjatig för hand — vilket är varför de flesta ger upp. Hela poängen med Copantry är att automatisera den: den håller skafferiet uppdaterat, visar vad som snart går ut, föreslår måltider kring det och gör luckorna till en inköpslista. Se ",
+            {
+              l: "/how-it-works",
+              t: "hur det fungerar",
+            },
+            ", eller varför det slår en ",
+            {
+              l: "/why-copantry",
+              t: "kalenderdriven planerare eller en receptlåda",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Börja smått: den här veckan, innan du handlar, öppna kylen och planera en middag kring det som mest sannolikt hamnar i soporna. Den enda vanan är använd-upp-metoden i miniatyr — och det växer snabbt. Relaterat: ",
+            {
+              l: "/blog/what-can-i-cook-with-what-i-have",
+              t: "vad kan jag laga av det jag har?",
+            },
+          ],
+        },
+      ],
+    },
+    da: {
+      title:
+        "Brug-op-metoden: planlæg måltider ud fra køleskabet, ikke en kogebog",
+      description:
+        "De fleste madplaner starter i en opskrift og sender dig i butikken. Vend det om: start med det, du allerede har. Her er metoden.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Brug-op-metoden er madplanlægning baglæns: i stedet for at vælge opskrifter og handle til dem starter du med det, der allerede er i køkkenet, og det, der snart udløber, og planlægger måltider ud fra det — og køber kun det, du reelt mangler. Det giver mindre spild, koster mindre og kræver mindre besvær end en traditionel opskrift-først-plan.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Hvorfor opskrift-først i stilhed skaber madspild",
+        },
+        {
+          k: "p",
+          c: [
+            "Den sædvanlige fremgangsmåde — bladre i opskrifter, skrive en indkøbsliste, købe det hele — ser bort fra det, du allerede ejer. Så du køber et glas spidskommen mere, den halve pose spinat i skuffen bliver dårlig, og gårsdagens rester skubbes bagerst i køleskabet. Planen så pæn ud; skraldespanden fortæller en anden historie.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Metoden i fire trin",
+        },
+        {
+          k: "ol",
+          c: [
+            [
+              {
+                b: "Gør status.",
+              },
+              " Notér, hvad du har, og ikke mindst hvad der snart udløber.",
+            ],
+            [
+              {
+                b: "Lav det, der snart udløber, først.",
+              },
+              " Byg ugens måltider omkring de varer.",
+            ],
+            [
+              {
+                b: "Fyld hullerne.",
+              },
+              " Tilføj et par fleksible måltider, og skriv derefter kun de ingredienser op, du ikke allerede har.",
+            ],
+            [
+              {
+                b: "Hold det opdateret.",
+              },
+              " Opdatér, hvad der er tilbage, mens du laver mad, så næste uge starter i virkeligheden.",
+            ],
+          ],
+        },
+        {
+          k: "h2",
+          c: "Sådan bliver det ubesværet",
+        },
+        {
+          k: "p",
+          c: [
+            "Metoden virker på papiret, men den er besværlig i hånden — og derfor giver de fleste op. Hele pointen med Copantry er at automatisere den: den holder spisekammeret opdateret, viser hvad der snart udløber, foreslår måltider omkring det og gør hullerne til en indkøbsliste. Se ",
+            {
+              l: "/how-it-works",
+              t: "hvordan det virker",
+            },
+            ", eller hvorfor det slår en ",
+            {
+              l: "/why-copantry",
+              t: "kalenderbaseret planlægger eller en opskriftskasse",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Start i det små: åbn køleskabet i denne uge, inden du handler, og planlæg ét måltid omkring det, der er mest sandsynligt at ende i skraldespanden. Den ene vane er brug-op-metoden i miniature — og det lægger hurtigt sammen. Relateret: ",
+            {
+              l: "/blog/what-can-i-cook-with-what-i-have",
+              t: "hvad kan jeg lave af det, jeg har?",
+            },
+          ],
+        },
+      ],
+    },
+    fi: {
+      title:
+        "Loppuun käyttämisen menetelmä: suunnittele ateriat jääkaapin, ei keittokirjan ehdoilla",
+      description:
+        "Useimmat ruokasuunnitelmat alkavat reseptistä ja lähettävät sinut kauppaan. Käännä se: aloita siitä, mitä sinulla jo on. Tässä on menetelmä.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Loppuun käyttämisen menetelmä on ateriasuunnittelua takaperin: sen sijaan että valitsisit reseptit ja ostaisit niihin, aloitat siitä, mitä keittiössäsi jo on ja mikä on vanhenemassa, ja suunnittelet ateriat sen ympärille — ostaen vain sen, mikä oikeasti puuttuu. Se tuottaa vähemmän hävikkiä, maksaa vähemmän ja vaatii vähemmän vaivaa kuin perinteinen resepti edellä tehty suunnitelma.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Miksi resepti edellä suunnittelu hukkaa ruokaa huomaamatta",
+        },
+        {
+          k: "p",
+          c: [
+            "Tavanomainen tapa — selaa reseptejä, kirjoita ostoslista, osta kaikki — sivuuttaa sen, mitä jo omistat. Niinpä ostat toisen purkin juustokuminaa, laatikossa oleva puolikas pinaattipussi pilaantuu ja eilisillan tähteet työntyvät jääkaapin perälle. Suunnitelma näytti siistiltä; roskis kertoo toista tarinaa.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Menetelmä neljässä vaiheessa",
+        },
+        {
+          k: "ol",
+          c: [
+            [
+              {
+                b: "Tee inventaario.",
+              },
+              " Kirjaa, mitä sinulla on ja ennen kaikkea mikä on vanhenemassa.",
+            ],
+            [
+              {
+                b: "Laita vanhenevat ensin.",
+              },
+              " Rakenna tämän viikon ateriat niiden ympärille.",
+            ],
+            [
+              {
+                b: "Täytä aukot.",
+              },
+              " Lisää muutama joustava ateria ja listaa sitten vain ne ainekset, joita sinulla ei jo ole.",
+            ],
+            [
+              {
+                b: "Pidä se ajan tasalla.",
+              },
+              " Päivitä kokatessasi, mitä on jäljellä, jotta ensi viikko alkaa todellisuudesta.",
+            ],
+          ],
+        },
+        {
+          k: "h2",
+          c: "Näin siitä tulee vaivatonta",
+        },
+        {
+          k: "p",
+          c: [
+            "Menetelmä toimii paperilla, mutta käsin se on työlästä — siksi useimmat luovuttavat. Copantryn koko idea on automatisoida se: se pitää ruokakomerosi ajan tasalla, nostaa esiin vanhenevat, ehdottaa niiden ympärille aterioita ja muuttaa aukot ostoslistaksi. Katso ",
+            {
+              l: "/how-it-works",
+              t: "miten se toimii",
+            },
+            " tai miksi tämä voittaa ",
+            {
+              l: "/why-copantry",
+              t: "kalenterivetoisen suunnittelijan tai reseptilaatikon",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Aloita pienesti: avaa tällä viikolla ennen kauppareissua jääkaappi ja suunnittele yksi päivällinen sen ympärille, mikä todennäköisimmin päätyisi roskiin. Tuo yksi tapa on loppuun käyttämisen menetelmä pienoiskoossa — ja se kertyy nopeasti. Aiheeseen liittyvää: ",
+            {
+              l: "/blog/what-can-i-cook-with-what-i-have",
+              t: "mitä voin laittaa siitä, mitä minulla on?",
+            },
+          ],
+        },
+      ],
+    },
+    no: {
+      title:
+        "Bruk-opp-metoden: planlegg måltider ut fra kjøleskapet, ikke en kokebok",
+      description:
+        "De fleste matplaner starter i en oppskrift og sender deg i butikken. Snu det: start med det du allerede har. Her er metoden.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Bruk-opp-metoden er måltidsplanlegging baklengs: i stedet for å velge oppskrifter og handle til dem, starter du med det som allerede er på kjøkkenet og det som snart går ut, og planlegger måltider ut fra det — og kjøper bare det du virkelig mangler. Det gir mindre svinn, koster mindre og krever mindre strev enn en tradisjonell oppskrift-først-plan.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Hvorfor oppskrift-først i det stille gir matsvinn",
+        },
+        {
+          k: "p",
+          c: [
+            "Den vanlige framgangsmåten — bla i oppskrifter, skrive en handleliste, kjøpe alt — ser bort fra det du allerede eier. Så du kjøper enda et glass spisskummen, den halve posen spinat i skuffen blir dårlig, og gårsdagens rester skyves bakerst i kjøleskapet. Planen så ryddig ut; søppelbøtta forteller en annen historie.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Metoden, i fire steg",
+        },
+        {
+          k: "ol",
+          c: [
+            [
+              {
+                b: "Ta status.",
+              },
+              " Noter hva du har og, ikke minst, hva som snart går ut.",
+            ],
+            [
+              {
+                b: "Lag det som snart går ut først.",
+              },
+              " Bygg ukens måltider rundt de varene.",
+            ],
+            [
+              {
+                b: "Fyll hullene.",
+              },
+              " Legg til noen fleksible måltider, og skriv så bare opp ingrediensene du ikke allerede har.",
+            ],
+            [
+              {
+                b: "Hold det oppdatert.",
+              },
+              " Oppdater hva som er igjen mens du lager mat, så neste uke starter i virkeligheten.",
+            ],
+          ],
+        },
+        {
+          k: "h2",
+          c: "Slik blir det uanstrengt",
+        },
+        {
+          k: "p",
+          c: [
+            "Metoden fungerer på papiret, men den er tungvint for hånd — og derfor gir de fleste opp. Hele poenget med Copantry er å automatisere den: den holder spiskammeret oppdatert, viser hva som snart går ut, foreslår måltider rundt det og gjør hullene om til en handleliste. Se ",
+            {
+              l: "/how-it-works",
+              t: "hvordan det virker",
+            },
+            ", eller hvorfor dette slår en ",
+            {
+              l: "/why-copantry",
+              t: "kalenderdrevet planlegger eller en oppskriftsboks",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Start i det små: denne uken, før du handler, åpne kjøleskapet og planlegg én middag rundt det som mest sannsynlig havner i søpla. Den ene vanen er bruk-opp-metoden i miniatyr — og det summerer seg raskt. Relatert: ",
+            {
+              l: "/blog/what-can-i-cook-with-what-i-have",
+              t: "hva kan jeg lage av det jeg har?",
+            },
+          ],
+        },
+      ],
+    },
+    pl: {
+      title:
+        "Metoda zużywania zapasów: planuj posiłki wokół lodówki, a nie książki kucharskiej",
+      description:
+        "Większość planowania posiłków zaczyna się od przepisu i wysyła cię na zakupy. Odwróć to: zacznij od tego, co już masz. Oto metoda.",
+      blocks: [
+        {
+          k: "lead",
+          c: [
+            "Metoda zużywania zapasów to planowanie posiłków na odwrót: zamiast wybierać przepisy i robić pod nie zakupy, zaczynasz od tego, co już jest w kuchni i czemu kończy się termin, a potem planujesz wokół tego — kupując wyłącznie to, czego naprawdę brakuje. Marnujesz mniej, wydajesz mniej i wkładasz w to mniej wysiłku niż w klasyczny plan zaczynający się od przepisu.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Dlaczego planowanie od przepisu po cichu marnuje jedzenie",
+        },
+        {
+          k: "p",
+          c: [
+            "Zwykłe podejście — przeglądasz przepisy, spisujesz listę zakupów, kupujesz wszystko — pomija to, co już masz. Kupujesz więc drugi słoiczek kminu, pół torebki szpinaku w szufladzie się psuje, a wczorajsze resztki lądują z tyłu lodówki. Plan wyglądał schludnie; kosz mówi co innego.",
+          ],
+        },
+        {
+          k: "h2",
+          c: "Metoda w czterech krokach",
+        },
+        {
+          k: "ol",
+          c: [
+            [
+              {
+                b: "Zrób przegląd.",
+              },
+              " Zapisz, co masz, a przede wszystkim czemu kończy się termin.",
+            ],
+            [
+              {
+                b: "Najpierw ugotuj to, co się kończy.",
+              },
+              " Zbuduj posiłki na ten tydzień wokół tych produktów.",
+            ],
+            [
+              {
+                b: "Uzupełnij braki.",
+              },
+              " Dorzuć kilka elastycznych posiłków, a potem spisz wyłącznie te składniki, których jeszcze nie masz.",
+            ],
+            [
+              {
+                b: "Trzymaj to na bieżąco.",
+              },
+              " W trakcie gotowania aktualizuj, co zostało, żeby kolejny tydzień zaczynał się od rzeczywistości.",
+            ],
+          ],
+        },
+        {
+          k: "h2",
+          c: "Jak sprawić, żeby to nie kosztowało wysiłku",
+        },
+        {
+          k: "p",
+          c: [
+            "Na papierze metoda działa, ale ręcznie jest żmudna — i dlatego większość ludzi rezygnuje. Cały sens Copantry polega na jej zautomatyzowaniu: aplikacja utrzymuje spiżarnię w aktualnym stanie, pokazuje, czemu kończy się termin, proponuje wokół tego posiłki i zamienia braki w listę zakupów. Zobacz ",
+            {
+              l: "/how-it-works",
+              t: "jak to działa",
+            },
+            " albo dlaczego bije to ",
+            {
+              l: "/why-copantry",
+              t: "planner oparty na kalendarzu czy pudełko z przepisami",
+            },
+            ".",
+          ],
+        },
+        {
+          k: "p",
+          c: [
+            "Zacznij od małego: w tym tygodniu, zanim pójdziesz na zakupy, otwórz lodówkę i zaplanuj jedną kolację wokół tego, co najpewniej wylądowałoby w koszu. Ten jeden nawyk to metoda zużywania zapasów w pigułce — a efekty szybko się sumują. Powiązane: ",
+            {
+              l: "/blog/what-can-i-cook-with-what-i-have",
+              t: "co mogę ugotować z tego, co mam?",
             },
           ],
         },

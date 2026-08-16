@@ -13,7 +13,7 @@ const VALUES = [
   {
     icon: Globe,
     title: "For every kitchen",
-    desc: "Copantry works in six languages and keeps recipes in their original language, because real households aren’t monolingual.",
+    desc: "Copantry works in twelve languages and keeps recipes in their original language, because real households aren’t monolingual.",
   },
   {
     icon: Heart,
