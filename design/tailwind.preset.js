@@ -85,6 +85,13 @@ export const TOKENS = {
       skyLight: '#38bdf8',
       sky:      '#0ea5e9',
     },
+    pantrySpeedDial: {
+      main:          '#ed6c02',
+      autoCapture:   '#fff3e0',
+      quickAdd:      '#e0f2fe',
+      staples:       '#dcfce7',
+      manualEntry:   '#f3f4f6',
+    },
     overlay: {
       scrim:     '#000000',
       scrimSoft: '#cc000000',

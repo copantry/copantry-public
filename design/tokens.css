@@ -79,6 +79,13 @@
   --color-assistant-sky-light: #38bdf8;
   --color-assistant-sky:       #0ea5e9;
 
+  /* Pantry inventory creation speed dial */
+  --color-pantry-speed-dial-main:         #ed6c02;
+  --color-pantry-speed-dial-auto-capture: #fff3e0;
+  --color-pantry-speed-dial-quick-add:    #e0f2fe;
+  --color-pantry-speed-dial-staples:      #dcfce7;
+  --color-pantry-speed-dial-manual-entry: #f3f4f6;
+
   --color-overlay-scrim:      #000000;
   --color-overlay-scrim-soft: #cc000000;
   --color-overlay-scrim-dark: #e6000000;
