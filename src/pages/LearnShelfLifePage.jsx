@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import { findByPageSlug } from "../content/shelfLife";
 import { LEARN_UI, localizedShelfItem } from "../content/learnLocalized";
-import { localizePath, UI } from "../content/localized";
+import { localizePath, UI, pick } from "../content/localized";
 import { useLang } from "../i18n/useLang";
 import { Section } from "../components/ui";
 import CtaBand from "../components/CtaBand";
@@ -23,12 +23,12 @@ import CtaBand from "../components/CtaBand";
 export default function LearnShelfLifePage() {
   const { slug } = useParams();
   const lng = useLang();
-  const ui = LEARN_UI[lng] || LEARN_UI.en;
+  const ui = pick(LEARN_UI, lng);
   const base = findByPageSlug(slug);
   if (!base) return <Navigate to={localizePath("/learn", lng)} replace />;
 
   const item = localizedShelfItem(base, lng);
-  const breadcrumbHome = (UI[lng] || UI.en).breadcrumbHome;
+  const breadcrumbHome = pick(UI, lng).breadcrumbHome;
 
   const BLOCKS = [
     {

@@ -8,7 +8,7 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowRight, Check, ChevronRight } from "lucide-react";
 import { APP_URL } from "../seo/constants";
 import { FAQS } from "../content/faqs";
-import { UI, localizePath } from "../content/localized";
+import { UI, localizePath, pick } from "../content/localized";
 import { useLang } from "../i18n/useLang";
 import { Section, Eyebrow, Pill } from "../components/ui";
 import AppButtons from "../components/AppButtons";
@@ -29,7 +29,7 @@ export default function ContentPage({
 }) {
   const { slug } = useParams();
   const lng = useLang();
-  const ui = UI[lng] || UI.en;
+  const ui = pick(UI, lng);
   const page = pageProp ?? registry?.[slug];
   if (!page) return <Navigate to="/" replace />;
 

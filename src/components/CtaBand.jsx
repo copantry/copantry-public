@@ -5,13 +5,15 @@
 
 import { ArrowRight } from "lucide-react";
 import { APP_URL } from "../seo/constants";
-import { UI } from "../content/localized";
+import { UI, pick } from "../content/localized";
 import { useLang } from "../i18n/useLang";
+import { regionalMarketingPayload, trackEvent } from "../lib/analytics.js";
 import { Section } from "./ui";
 import AppButtons from "./AppButtons";
 
 export default function CtaBand({ title, subtitle }) {
-  const ui = UI[useLang()] || UI.en;
+  const locale = useLang();
+  const ui = pick(UI, locale);
   const heading = title ?? ui.cta.title;
   const sub = subtitle ?? ui.cta.subtitle;
   return (
@@ -28,6 +30,12 @@ export default function CtaBand({ title, subtitle }) {
           <div className="mt-8 flex flex-col items-center gap-4">
             <a
               href={`${APP_URL}/signup`}
+              onClick={() =>
+                trackEvent(
+                  "regional_marketing_cta_clicked",
+                  regionalMarketingPayload(locale, "cta_band"),
+                )
+              }
               className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold text-base rounded-xl transition-colors shadow-lg shadow-orange-900/30"
             >
               {ui.ctaPrimary} <ArrowRight size={16} />

@@ -10,6 +10,8 @@
 // Declining sets Google's `ga-disable-<id>` kill switch. Nothing runs during the
 // static prerender (all access is guarded behind `isBrowser()` + effects).
 
+import { localeConfig } from "../content/localized.js";
+
 const DEFAULT_GA_ID = "G-YFW8NH2YNY";
 export const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID ?? DEFAULT_GA_ID;
 const CONSENT_KEY = "copantry_cookie_consent";
@@ -17,6 +19,19 @@ const CONSENT_KEY = "copantry_cookie_consent";
 let loaded = false;
 
 const isBrowser = () => typeof window !== "undefined";
+
+/** Build the bounded, privacy-safe properties used by regional marketing events. */
+export function regionalMarketingPayload(locale, surface) {
+  const normalized = String(locale || "en").toLowerCase();
+  const config = localeConfig(normalized);
+  return {
+    uiLocale: config.hreflang,
+    baseLanguage: config.baseLanguage,
+    country: config.regionalCountry ?? null,
+    surface,
+    source: "marketing_route",
+  };
+}
 
 export function hasAnalyticsConsent() {
   if (!isBrowser()) return false;
@@ -63,6 +78,17 @@ export function trackPageview(path) {
     page_location: window.location.href,
     page_title: document.title,
   });
+}
+
+/** Send a consent-gated product event without adding identity or free-text properties. */
+export function trackEvent(event, properties = {}) {
+  if (
+    !isBrowser() ||
+    !hasAnalyticsConsent() ||
+    typeof window.gtag !== "function"
+  )
+    return;
+  window.gtag("event", event, properties);
 }
 
 // The visitor just accepted cookies: load GA and record the current page.

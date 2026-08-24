@@ -4,7 +4,7 @@
  * full answers. The matching FAQPage JSON-LD is emitted via seoConfig.
  */
 
-import { UI } from "../content/localized";
+import { UI, pick } from "../content/localized";
 import { useLang } from "../i18n/useLang";
 import { Section, SectionHeading } from "./ui";
 
@@ -14,7 +14,7 @@ export default function Faq({
   eyebrow,
   className = "py-20 md:py-28",
 }) {
-  const ui = UI[useLang()] || UI.en;
+  const ui = pick(UI, useLang());
   if (!items?.length) return null;
   return (
     <Section className={className} width="max-w-3xl">

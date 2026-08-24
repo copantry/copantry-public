@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ChevronRight, Calendar, Clock } from "lucide-react";
 import { BLOG_UI } from "../../content/blogLocalized";
-import { localizePath, UI } from "../../content/localized";
+import { localizePath, UI, pick } from "../../content/localized";
 import { useLang } from "../../i18n/useLang";
 import { Section } from "../../components/ui";
 import CtaBand from "../../components/CtaBand";
@@ -15,7 +15,7 @@ import CtaBand from "../../components/CtaBand";
 
 export default function BlogPostLayout({ post, children }) {
   const lng = useLang();
-  const ui = BLOG_UI[lng] || BLOG_UI.en;
+  const ui = pick(BLOG_UI, lng);
   const dateLabel = new Date(post.date).toLocaleDateString(ui.locale, {
     day: "numeric",
     month: "long",
@@ -30,7 +30,7 @@ export default function BlogPostLayout({ post, children }) {
           aria-label="Breadcrumb"
         >
           <Link to={localizePath("/", lng)} className="hover:text-orange-500">
-            {(UI[lng] || UI.en).breadcrumbHome}
+            {pick(UI, lng).breadcrumbHome}
           </Link>
           <ChevronRight size={12} />
           <Link

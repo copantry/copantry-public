@@ -19,7 +19,7 @@ import {
   UI,
   pick,
   localizePath,
-  RESCUE_AMOUNT,
+  localeConfig,
 } from "../content/localized";
 import { useLang } from "../i18n/useLang";
 import { Section, SectionHeading, Pill } from "../components/ui";
@@ -27,6 +27,7 @@ import HookCard from "../components/HookCard";
 import AppButtons from "../components/AppButtons";
 import Faq from "../components/Faq";
 import CtaBand from "../components/CtaBand";
+import { regionalMarketingPayload, trackEvent } from "../lib/analytics";
 
 // Visual metadata (icons/colours) stays here; text comes from localized content by index.
 const PILLAR_META = [
@@ -45,7 +46,7 @@ const HOUSEHOLD_META = [
 export default function HomePage() {
   const lng = useLang();
   const c = pick(HOME, lng);
-  const ui = UI[lng] || UI.en;
+  const ui = pick(UI, lng);
   // Home FAQ is now localized for every route (HOME_FAQ; `us` falls back to `en`).
   const faqItems = pick(HOME_FAQ, lng);
 
@@ -72,6 +73,12 @@ export default function HomePage() {
             <div className="mt-8 flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3">
               <a
                 href={`${APP_URL}/signup`}
+                onClick={() =>
+                  trackEvent(
+                    "regional_marketing_cta_clicked",
+                    regionalMarketingPayload(lng, "home_hero"),
+                  )
+                }
                 className="flex items-center gap-2 px-6 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-bold text-base rounded-xl transition-colors shadow-md shadow-orange-200/60"
               >
                 {ui.ctaPrimary} <ArrowRight size={16} />
@@ -109,7 +116,7 @@ export default function HomePage() {
             </div>
             <div className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
               <p className="text-3xl font-extrabold text-green-600">
-                {RESCUE_AMOUNT[lng] || RESCUE_AMOUNT.en}
+                {localeConfig(lng).rescueAmount}
               </p>
               <p className="text-xs text-gray-500 font-semibold mt-0.5">
                 {c.proofStat}

@@ -78,7 +78,7 @@ const STATIC = {
   "/": {
     title: "Copantry — never wonder what's for dinner again",
     description:
-      "Copantry is a meal planner, pantry tracker and shopping-list app for households that decides what's for dinner from the food you already have and builds your shopping list automatically — so you cook more, waste less and never scramble at 6pm.",
+      "Plan meals from food you already have, track your pantry, and build shopping lists automatically with Copantry — so your household cooks more and wastes less.",
     priority: 1.0,
     changefreq: "weekly",
     schema: () => [
@@ -292,7 +292,7 @@ function localizedTitleDesc(spec, lng) {
 function localizedSchema(spec, lng, path) {
   const c = pick(spec.content, lng);
   const crumbsBase = [
-    { name: (UI[lng] || UI.en).breadcrumbHome, path: localizePath("/", lng) },
+    { name: pick(UI, lng).breadcrumbHome, path: localizePath("/", lng) },
   ];
   if (spec.kind === "home") {
     return [organizationSchema(), softwareApplicationSchema()];
@@ -319,7 +319,7 @@ function localizedSchema(spec, lng, path) {
     breadcrumbSchema([
       ...crumbsBase,
       {
-        name: (UI[lng] || UI.en).breadcrumbFeatures,
+        name: pick(UI, lng).breadcrumbFeatures,
         path: localizePath("/how-it-works", lng),
       },
       { name: c.crumb, path },
@@ -333,7 +333,7 @@ function attachLocalized(reg) {
     // Tag the English entry with its alternates + lang.
     if (reg[spec.base]) {
       reg[spec.base].alternates = alternates;
-      reg[spec.base].lang = "en";
+      reg[spec.base].lang = hreflangFor("en");
     }
     // Add one entry per localized prefix.
     for (const lng of LOCALES) {
@@ -356,7 +356,7 @@ function attachLocalized(reg) {
 function localizedContentEntry(base, slug, lng, kind) {
   const c = localizedPage(slug, lng);
   const path = localizePath(base, lng);
-  const ui = UI[lng] || UI.en;
+  const ui = pick(UI, lng);
   const sectionCrumb =
     kind === "features"
       ? {
@@ -419,7 +419,7 @@ function attachLocalizedLearn(reg) {
     reg["/learn"].lang = "en";
   }
   for (const lng of LOCALES) {
-    const ui = LEARN_UI[lng] || LEARN_UI.en;
+    const ui = pick(LEARN_UI, lng);
     const path = localizePath("/learn", lng);
     reg[path] = {
       title: titled(ui.h1),
@@ -431,7 +431,7 @@ function attachLocalizedLearn(reg) {
       schema: () => [
         breadcrumbSchema([
           {
-            name: (UI[lng] || UI.en).breadcrumbHome,
+            name: pick(UI, lng).breadcrumbHome,
             path: localizePath("/", lng),
           },
           { name: ui.breadcrumbLearn, path },
@@ -446,10 +446,10 @@ function attachLocalizedLearn(reg) {
     const alt = alternatesFor(base);
     if (reg[base]) {
       reg[base].alternates = alt;
-      reg[base].lang = "en";
+      reg[base].lang = hreflangFor("en");
     }
     for (const lng of LOCALES) {
-      const ui = LEARN_UI[lng] || LEARN_UI.en;
+      const ui = pick(LEARN_UI, lng);
       const c = localizedShelfItem(item, lng);
       const path = localizePath(base, lng);
       reg[path] = {
@@ -463,7 +463,7 @@ function attachLocalizedLearn(reg) {
           faqSchema([{ q: c.question, a: `${c.answer} ${c.store}` }]),
           breadcrumbSchema([
             {
-              name: (UI[lng] || UI.en).breadcrumbHome,
+              name: pick(UI, lng).breadcrumbHome,
               path: localizePath("/", lng),
             },
             { name: ui.breadcrumbLearn, path: localizePath("/learn", lng) },
@@ -483,7 +483,7 @@ function attachLocalizedBlog(reg) {
     reg["/blog"].lang = "en";
   }
   for (const lng of LOCALES) {
-    const ui = BLOG_UI[lng] || BLOG_UI.en;
+    const ui = pick(BLOG_UI, lng);
     const path = localizePath("/blog", lng);
     reg[path] = {
       title: titled(ui.h1),
@@ -495,7 +495,7 @@ function attachLocalizedBlog(reg) {
       schema: () => [
         breadcrumbSchema([
           {
-            name: (UI[lng] || UI.en).breadcrumbHome,
+            name: pick(UI, lng).breadcrumbHome,
             path: localizePath("/", lng),
           },
           { name: "Blog", path },
@@ -531,7 +531,7 @@ function attachLocalizedBlog(reg) {
           }),
           breadcrumbSchema([
             {
-              name: (UI[lng] || UI.en).breadcrumbHome,
+              name: pick(UI, lng).breadcrumbHome,
               path: localizePath("/", lng),
             },
             { name: "Blog", path: localizePath("/blog", lng) },
@@ -604,6 +604,9 @@ function buildRegistry() {
   attachLocalizedContentPages(reg);
   attachLocalizedLearn(reg);
   attachLocalizedBlog(reg);
+  for (const entry of Object.values(reg)) {
+    if (!entry.lang) entry.lang = hreflangFor("en");
+  }
   return reg;
 }
 

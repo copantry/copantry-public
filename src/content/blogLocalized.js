@@ -8,6 +8,7 @@
  */
 
 import { POSTS } from "./blog.js";
+import { baseLocaleOf } from "./localized.js";
 
 const BY_SLUG = Object.fromEntries(POSTS.map((p) => [p.slug, p]));
 
@@ -3570,18 +3571,28 @@ export const POST_TX = {
 export function localizedPostMeta(slug, lng) {
   const base = BY_SLUG[slug];
   if (!base) return null;
-  const tx = POST_TX[slug]?.[lng] ?? POST_TX[slug]?.en;
+  const baseLocale = baseLocaleOf(lng);
+  const tx =
+    POST_TX[slug]?.[lng] ?? POST_TX[slug]?.[baseLocale] ?? POST_TX[slug]?.en;
   return {
     ...base,
     title: tx?.title ?? base.title,
     description: tx?.description ?? base.description,
-    category: CATEGORY_TX[base.category]?.[lng] ?? base.category,
+    category:
+      CATEGORY_TX[base.category]?.[lng] ??
+      CATEGORY_TX[base.category]?.[baseLocale] ??
+      base.category,
   };
 }
 
 /** Localized body blocks for a post (English fallback). */
 export function localizedPostBlocks(slug, lng) {
-  return POST_TX[slug]?.[lng]?.blocks ?? POST_TX[slug]?.en?.blocks ?? [];
+  return (
+    POST_TX[slug]?.[lng]?.blocks ??
+    POST_TX[slug]?.[baseLocaleOf(lng)]?.blocks ??
+    POST_TX[slug]?.en?.blocks ??
+    []
+  );
 }
 
 /** All posts (localized metadata), newest first — for the blog index. */

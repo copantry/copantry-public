@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import i18n from "./index";
 import { langFromPath } from "./useLang";
+import { hreflangFor } from "../content/localized.js";
 
 /*
  * Keeps i18n.language and <html lang> aligned to the URL prefix. The page bodies
@@ -15,7 +16,8 @@ export default function LocaleSync() {
 
   useEffect(() => {
     if (i18n.language !== lng) i18n.changeLanguage(lng);
-    if (typeof document !== "undefined") document.documentElement.lang = lng;
+    if (typeof document !== "undefined")
+      document.documentElement.lang = hreflangFor(lng);
   }, [lng]);
 
   return null;

@@ -8,6 +8,7 @@ import DE from "country-flag-icons/react/3x2/DE";
 import ES from "country-flag-icons/react/3x2/ES";
 import IT from "country-flag-icons/react/3x2/IT";
 import PT from "country-flag-icons/react/3x2/PT";
+import BR from "country-flag-icons/react/3x2/BR";
 import NL from "country-flag-icons/react/3x2/NL";
 import SE from "country-flag-icons/react/3x2/SE";
 import PL from "country-flag-icons/react/3x2/PL";
@@ -16,25 +17,20 @@ import FI from "country-flag-icons/react/3x2/FI";
 import NO from "country-flag-icons/react/3x2/NO";
 import i18n from "../i18n";
 import { useLang, basePath } from "../i18n/useLang";
-import { LOCALES, isLocalizedPath, localizePath } from "../content/localized";
+import {
+  LOCALE_CONFIG,
+  LOCALES,
+  isLocalizedPath,
+  localizePath,
+} from "../content/localized";
 
-// Languages with published localized routes (+ English).
-const LANGUAGES = [
-  { code: "en", Flag: GB, label: "English" },
-  { code: "us", Flag: US, label: "English (US)" },
-  { code: "fr", Flag: FR, label: "Français" },
-  { code: "de", Flag: DE, label: "Deutsch" },
-  { code: "it", Flag: IT, label: "Italiano" },
-  { code: "es", Flag: ES, label: "Español" },
-  { code: "pt", Flag: PT, label: "Português" },
-  // The flag is the language's COUNTRY, not its code: sv→SE, da→DK.
-  { code: "nl", Flag: NL, label: "Nederlands" },
-  { code: "sv", Flag: SE, label: "Svenska" },
-  { code: "pl", Flag: PL, label: "Polski" },
-  { code: "da", Flag: DK, label: "Dansk" },
-  { code: "fi", Flag: FI, label: "Suomi" },
-  { code: "no", Flag: NO, label: "Norsk bokmål" },
-];
+const FLAGS = { GB, US, FR, DE, ES, IT, PT, BR, NL, SE, PL, DK, FI, NO };
+// Labels and flag identities come from the canonical registry; components stay local to React.
+const LANGUAGES = Object.entries(LOCALE_CONFIG).map(([code, config]) => ({
+  code,
+  Flag: FLAGS[config.flag],
+  label: config.label,
+}));
 
 export default function LanguageSwitcher({ className = "" }) {
   const [open, setOpen] = useState(false);

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { BLOG_UI, localizedPostList } from "../content/blogLocalized";
+import { pick } from "../content/localized";
 import { localizePath } from "../content/localized";
 import { useLang } from "../i18n/useLang";
 import { Section, Eyebrow } from "../components/ui";
@@ -8,7 +9,7 @@ import CtaBand from "../components/CtaBand";
 
 export default function BlogIndexPage() {
   const lng = useLang();
-  const ui = BLOG_UI[lng] || BLOG_UI.en;
+  const ui = pick(BLOG_UI, lng);
   const posts = localizedPostList(lng);
 
   return (

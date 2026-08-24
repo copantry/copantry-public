@@ -9,7 +9,7 @@
  * of overflowing) inside narrow columns such as the footer.
  */
 
-import { UI } from "../content/localized";
+import { UI, pick } from "../content/localized";
 import { useLang } from "../i18n/useLang";
 
 const ANDROID_URL = null; // e.g. 'https://play.google.com/store/apps/details?id=com.copantry'
@@ -106,7 +106,7 @@ function StoreButton({ href, Logo, line1, line2, soon }) {
 }
 
 export default function AppButtons({ className = "", note = true }) {
-  const ui = UI[useLang()] || UI.en;
+  const ui = pick(UI, useLang());
   return (
     <div className={className}>
       <div className="flex flex-wrap gap-3">

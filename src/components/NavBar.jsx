@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ExternalLink } from "lucide-react";
 import { APP_URL } from "../seo/constants";
-import { UI, localizePath } from "../content/localized";
+import { UI, localizePath, pick } from "../content/localized";
 import { useLang } from "../i18n/useLang";
 import Logo from "./Logo";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -11,7 +11,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
   const lng = useLang();
-  const ui = UI[lng] || UI.en;
+  const ui = pick(UI, lng);
 
   // Links point at the localized URL where one exists, English otherwise.
   const navLinks = [

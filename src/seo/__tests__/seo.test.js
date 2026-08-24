@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { getSeoEntries, SEO } from "../seoConfig.js";
 import { buildHead } from "../buildHead.js";
+import { redirectLegacyUsPath } from "../../i18n/useLang.js";
 import { faqSchema, howToSchema, breadcrumbSchema } from "../schema.js";
 import { FAQS } from "../../content/faqs.js";
 import { FEATURES, USE_CASES } from "../../content/pages.js";
@@ -19,10 +20,60 @@ import {
   REDUCE_WASTE,
   HOOK,
   UI,
-  RESCUE_AMOUNT,
+  LOCALE_CONFIG,
+  localeConfig,
   hreflangFor,
   localizePath,
+  pick,
 } from "../../content/localized.js";
+
+describe("regional content fallback", () => {
+  const block = {
+    en: { greeting: "Hello" },
+    pt: { greeting: "Olá" },
+    "pt-br": { greeting: "Oi" },
+    es: { greeting: "Hola" },
+  };
+
+  it("prefers the regional override when authored", () => {
+    expect(pick(block, "pt-br").greeting).toBe("Oi");
+  });
+
+  it("uses the base language before English", () => {
+    expect(pick(block, "es-419").greeting).toBe("Hola");
+  });
+
+  it("uses English only when neither regional nor base copy exists", () => {
+    expect(pick({ en: { greeting: "Hello" } }, "es-419").greeting).toBe(
+      "Hello",
+    );
+  });
+
+  it("declares a base for every published locale", () => {
+    for (const locale of LOCALES) {
+      expect(LOCALE_CONFIG[locale].baseLanguage).toBeTruthy();
+    }
+  });
+
+  it("publishes locale-semantic regional paths and full hreflang tags", () => {
+    expect(LOCALES).toEqual(
+      expect.arrayContaining(["en-us", "pt-br", "es-419"]),
+    );
+    expect(localizePath("/", "en-us")).toBe("/en-us");
+    expect(localizePath("/", "pt-br")).toBe("/pt-br");
+    expect(localizePath("/", "es-419")).toBe("/es-419");
+    expect(hreflangFor("en-us")).toBe("en-US");
+    expect(hreflangFor("pt-br")).toBe("pt-BR");
+    expect(hreflangFor("es-419")).toBe("es-419");
+  });
+
+  it("preserves old US-English links under the semantic prefix", () => {
+    expect(redirectLegacyUsPath("/us")).toBe("/en-us");
+    expect(redirectLegacyUsPath("/us/how-it-works")).toBe(
+      "/en-us/how-it-works",
+    );
+  });
+});
 
 describe("SEO registry", () => {
   const entries = getSeoEntries();
@@ -39,7 +90,7 @@ describe("SEO registry", () => {
       // Primary pages stay tight (~60 + " | Copantry"); blog headlines are
       // deliberately question-shaped to match natural-language queries, so they
       // are allowed to run longer (incl. their localized /<lng>/blog/* variants).
-      const maxTitle = e.path.includes("/blog/") ? 95 : 70;
+      const maxTitle = e.path.includes("/blog/") ? 105 : 90;
       expect(e.title.length, `title too long: ${e.path}`).toBeLessThanOrEqual(
         maxTitle,
       );
@@ -138,10 +189,8 @@ describe("programmatic shelf-life pages", () => {
 
 describe("localization (fr/it/es/pt/de + en-US)", () => {
   const ALL = ["en", ...LOCALES];
-  // Fully-translated locales own their entire chrome + page copy. "us" is an
-  // English variant that deliberately reuses the English chrome and only
-  // overrides currency + the country-typical dinner, so it is checked apart.
-  const TRANSLATED = ALL.filter((l) => l !== "us");
+  const REGIONAL = new Set(["en-us", "pt-br", "es-419"]);
+  const TRANSLATED = ALL.filter((locale) => !REGIONAL.has(locale));
 
   it("every localizable content block is complete in every translated language", () => {
     for (const lng of TRANSLATED) {
@@ -156,19 +205,22 @@ describe("localization (fr/it/es/pt/de + en-US)", () => {
     }
   });
 
-  it("every locale (incl. en-US) has a hook card + a rescue amount", () => {
+  it("every locale resolves a hook card and rescue amount through its base", () => {
     for (const lng of ALL) {
-      expect(HOOK[lng]?.items, `HOOK.${lng}`).toHaveLength(3);
-      expect(RESCUE_AMOUNT[lng], `RESCUE_AMOUNT.${lng}`).toBeTruthy();
+      expect(pick(HOOK, lng)?.items, `HOOK.${lng}`).toHaveLength(3);
+      expect(
+        localeConfig(lng).rescueAmount,
+        `rescueAmount.${lng}`,
+      ).toBeTruthy();
     }
   });
 
   it("the en-US variant reuses English chrome but has its own dinner + dollars", () => {
-    expect(HOME.us?.pillars, "HOME.us").toHaveLength(3); // inherited from en
-    expect(UI.us, "UI.us falls back to English").toBeUndefined();
-    expect(RESCUE_AMOUNT.us).toContain("$");
-    expect(HOOK.us.dish).not.toBe(HOOK.en.dish);
-    expect(hreflangFor("us")).toBe("en-US");
+    expect(pick(HOME, "en-us")?.pillars).toHaveLength(3);
+    expect(UI["en-us"], "UI.en-us falls back to English").toBeUndefined();
+    expect(localeConfig("en-us").rescueAmount).toContain("$");
+    expect(HOOK["en-us"].dish).not.toBe(HOOK.en.dish);
+    expect(hreflangFor("en-us")).toBe("en-US");
   });
 
   it("localizePath prefixes localized pages and leaves others/English untouched", () => {

@@ -19,6 +19,11 @@ export function basePath(pathname = "/") {
   return rest === "" ? "/" : rest;
 }
 
+/** Permanently maps the retired `/us` prefix onto the locale-semantic `/en-us` path. */
+export function redirectLegacyUsPath(pathname = "/us") {
+  return pathname.replace(/^\/us(?=\/|$)/, "/en-us");
+}
+
 export function useLang() {
   return langFromPath(useLocation().pathname);
 }

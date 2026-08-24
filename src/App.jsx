@@ -1,11 +1,17 @@
 import "./i18n";
 import { useState, Suspense } from "react";
-import { Routes, Route, useParams, Navigate } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  useParams,
+  useLocation,
+  Navigate,
+} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Analytics from "./components/Analytics";
 import Seo from "./seo/Seo";
 import LocaleSync from "./i18n/LocaleSync";
-import { useLang } from "./i18n/useLang";
+import { redirectLegacyUsPath, useLang } from "./i18n/useLang";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import CookieBanner from "./components/CookieBanner";
@@ -38,6 +44,16 @@ import {
   localizedPostMeta,
   localizedPostBlocks,
 } from "./content/blogLocalized";
+
+function LegacyUsRedirect() {
+  const { pathname, search, hash } = useLocation();
+  return (
+    <Navigate
+      replace
+      to={`${redirectLegacyUsPath(pathname)}${search}${hash}`}
+    />
+  );
+}
 import BlogPostLayout from "./pages/blog/BlogPostLayout";
 import BlogBody from "./pages/blog/BlogBody";
 
@@ -61,7 +77,7 @@ function LocalizedReduceWaste() {
   return (
     <ContentPage
       page={pick(REDUCE_WASTE, lng)}
-      sectionLabel={(UI[lng] || UI.en).breadcrumbFeatures}
+      sectionLabel={pick(UI, lng).breadcrumbFeatures}
     />
   );
 }
@@ -74,10 +90,7 @@ function LocalizedFeature() {
   const page = localizedPage(slug, lng);
   if (!page) return <Navigate to={`/${lng}`} replace />;
   return (
-    <ContentPage
-      page={page}
-      sectionLabel={(UI[lng] || UI.en).breadcrumbFeatures}
-    />
+    <ContentPage page={page} sectionLabel={pick(UI, lng).breadcrumbFeatures} />
   );
 }
 
@@ -87,10 +100,7 @@ function LocalizedUseCase() {
   const page = localizedPage(slug, lng);
   if (!page) return <Navigate to={`/${lng}`} replace />;
   return (
-    <ContentPage
-      page={page}
-      sectionLabel={(UI[lng] || UI.en).breadcrumbUseCases}
-    />
+    <ContentPage page={page} sectionLabel={pick(UI, lng).breadcrumbUseCases} />
   );
 }
 
@@ -150,6 +160,7 @@ export default function App() {
             <Route path="/advertiser-terms" element={<AdvertiserTermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/terms" element={<TermsPage />} />
+            <Route path="/us/*" element={<LegacyUsRedirect />} />
 
             {/* Localized routes (fr/it/es/pt) for the core pages. Components read
                 their language from the URL prefix via useLang(). */}

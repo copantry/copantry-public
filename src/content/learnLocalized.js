@@ -13,6 +13,7 @@
  */
 
 import { SHELF_LIFE } from "./shelfLife.js";
+import { baseLocaleOf } from "./localized.js";
 
 // ── Page chrome + sentence templates ─────────────────────────────────────────
 export const LEARN_UI = {
@@ -2478,7 +2479,11 @@ export const SHELF_LIFE_TX = {
 
 /** Localized category label (falls back to the English key). */
 export function localizedCategory(category, lng) {
-  return CATEGORY_TX[category]?.[lng] ?? category;
+  return (
+    CATEGORY_TX[category]?.[lng] ??
+    CATEGORY_TX[category]?.[baseLocaleOf(lng)] ??
+    category
+  );
 }
 
 /**
@@ -2487,8 +2492,10 @@ export function localizedCategory(category, lng) {
  * sentence. English/`us` use the English templates and source text.
  */
 export function localizedShelfItem(item, lng) {
-  const ui = LEARN_UI[lng] || LEARN_UI.en;
-  const tx = SHELF_LIFE_TX[item.slug]?.[lng];
+  const baseLocale = baseLocaleOf(lng);
+  const ui = LEARN_UI[lng] || LEARN_UI[baseLocale] || LEARN_UI.en;
+  const tx =
+    SHELF_LIFE_TX[item.slug]?.[lng] ?? SHELF_LIFE_TX[item.slug]?.[baseLocale];
   const name = tx?.name ?? item.name;
   return {
     ...item,

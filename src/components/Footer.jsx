@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { APP_URL, API_URL, COMPANY_LINE } from "../seo/constants";
-import { UI, localizePath } from "../content/localized";
+import { UI, localizePath, pick } from "../content/localized";
 import { useLang } from "../i18n/useLang";
 import Logo from "./Logo";
 import AppButtons from "./AppButtons";
@@ -8,7 +8,7 @@ import AppButtons from "./AppButtons";
 export default function Footer({ onContact }) {
   const year = new Date().getFullYear();
   const lng = useLang();
-  const ui = UI[lng] || UI.en;
+  const ui = pick(UI, lng);
   const f = ui.footer;
 
   const l = f.links;

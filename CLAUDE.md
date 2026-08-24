@@ -16,6 +16,13 @@ launch runbook: [../docs/marketing-site-seo-geo.md](../docs/marketing-site-seo-g
 Design of the repositioning:
 [../docs/superpowers/specs/2026-07-09-positioning-onboarding-notifications-design.md](../docs/superpowers/specs/2026-07-09-positioning-onboarding-notifications-design.md).
 
+Locale routing metadata has one source: `src/content/localized.js` `LOCALE_CONFIG` owns each
+route's base language, label, BCP-47 tag, flag, rescue amount, and regional market metadata. Never
+reintroduce parallel locale maps. `/` is canonical/x-default British English and advertises
+`en-GB`; `/en-us`, `/pt-br`, and `/es-419` advertise their full regional tags. Generic two-letter
+tags are valid BCP-47. Keep this registry, route/SEO tests, root `AGENTS.md`, and platform
+`CLAUDE.md` locale contracts synchronized whenever a locale changes.
+
 ## Commands
 
 ```bash

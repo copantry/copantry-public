@@ -15,73 +15,132 @@ import { FEATURES } from "./pages.js";
 import { FAQS } from "./faqs.js";
 
 /**
- * Locales we publish prefixed, localized routes for (English is the unprefixed
- * default). "us" is the US-English variant: same English copy as the root, but
- * with US currency (dollars) and a US-typical dinner — served at /us.
+ * Canonical marketing locale registry. Routing, fallback, labels, BCP-47 metadata and localized
+ * proof values derive from this record so adding a locale cannot leave a parallel map incomplete.
+ * The unprefixed English copy is British; account language storage remains the base code `en`.
  */
-export const LOCALES = [
-  "fr",
-  "it",
-  "es",
-  "pt",
-  "de",
-  "nl",
-  "sv",
-  "pl",
-  "da",
-  "fi",
-  "no",
-  "us",
-];
-/** All languages with hreflang alternates (English included as x-default). */
-export const HREFLANG_LANGS = ["en", ...LOCALES];
-
-/**
- * Map an internal locale code to a valid BCP-47 hreflang / html-lang value.
- * "us" is an English variant, so it must advertise as "en-US" (not "us").
- */
-export const LOCALE_HREFLANG = { us: "en-US" };
-export const hreflangFor = (code) => LOCALE_HREFLANG[code] || code;
-
-/**
- * Typical amount of food a single dinner suggestion rescues from the bin,
- * shown on the homepage proof strip and the hero hook card. Converted (not just
- * re-symbolised) per currency zone: £8 (UK) ≈ €9 (EU) ≈ $10 (US).
- */
-// Converted per currency zone, never just re-symbolised: £8 (UK) ≈ €9 (EU) ≈ $10 (US)
-// ≈ 100 kr (SE) ≈ 70 kr (DK) ≈ 110 kr (NO) ≈ 40 zł (PL). Four of the six new markets
-// are outside the euro, so this table cannot simply default to "9 €".
-export const RESCUE_AMOUNT = {
-  en: "£8",
-  us: "$10",
-  fr: "9 €",
-  it: "9 €",
-  es: "9 €",
-  pt: "9 €",
-  de: "9 €",
-  nl: "9 €",
-  fi: "9 €",
-  sv: "100 kr",
-  da: "70 kr",
-  no: "110 kr",
-  pl: "40 zł",
+export const LOCALE_CONFIG = {
+  en: {
+    baseLanguage: "en",
+    label: "English (UK)",
+    hreflang: "en-GB",
+    rescueAmount: "£8",
+    flag: "GB",
+  },
+  fr: {
+    baseLanguage: "fr",
+    label: "Français",
+    hreflang: "fr",
+    rescueAmount: "9 €",
+    flag: "FR",
+  },
+  it: {
+    baseLanguage: "it",
+    label: "Italiano",
+    hreflang: "it",
+    rescueAmount: "9 €",
+    flag: "IT",
+  },
+  es: {
+    baseLanguage: "es",
+    label: "Español",
+    hreflang: "es",
+    rescueAmount: "9 €",
+    flag: "ES",
+  },
+  pt: {
+    baseLanguage: "pt",
+    label: "Português",
+    hreflang: "pt",
+    rescueAmount: "9 €",
+    flag: "PT",
+  },
+  de: {
+    baseLanguage: "de",
+    label: "Deutsch",
+    hreflang: "de",
+    rescueAmount: "9 €",
+    flag: "DE",
+  },
+  nl: {
+    baseLanguage: "nl",
+    label: "Nederlands",
+    hreflang: "nl",
+    rescueAmount: "9 €",
+    flag: "NL",
+  },
+  sv: {
+    baseLanguage: "sv",
+    label: "Svenska",
+    hreflang: "sv",
+    rescueAmount: "100 kr",
+    flag: "SE",
+  },
+  pl: {
+    baseLanguage: "pl",
+    label: "Polski",
+    hreflang: "pl",
+    rescueAmount: "40 zł",
+    flag: "PL",
+  },
+  da: {
+    baseLanguage: "da",
+    label: "Dansk",
+    hreflang: "da",
+    rescueAmount: "70 kr",
+    flag: "DK",
+  },
+  fi: {
+    baseLanguage: "fi",
+    label: "Suomi",
+    hreflang: "fi",
+    rescueAmount: "9 €",
+    flag: "FI",
+  },
+  no: {
+    baseLanguage: "no",
+    label: "Norsk bokmål",
+    hreflang: "no",
+    rescueAmount: "110 kr",
+    flag: "NO",
+  },
+  "en-us": {
+    baseLanguage: "en",
+    label: "English (US)",
+    hreflang: "en-US",
+    rescueAmount: "$10",
+    flag: "US",
+    regionalCountry: "US",
+  },
+  "pt-br": {
+    baseLanguage: "pt",
+    label: "Português (Brasil)",
+    hreflang: "pt-BR",
+    rescueAmount: "9 €",
+    flag: "BR",
+    regionalCountry: "BR",
+  },
+  "es-419": {
+    baseLanguage: "es",
+    label: "Español (Latinoamérica)",
+    hreflang: "es-419",
+    rescueAmount: "9 €",
+    flag: "ES",
+  },
 };
 
-export const LOCALE_LABEL = {
-  en: "English",
-  fr: "Français",
-  it: "Italiano",
-  es: "Español",
-  pt: "Português",
-  de: "Deutsch",
-  nl: "Nederlands",
-  sv: "Svenska",
-  pl: "Polski",
-  da: "Dansk",
-  fi: "Suomi",
-  no: "Norsk bokmål",
-  us: "English (US)",
-};
+/** Return a complete registry entry, falling back to the British-English root entry. */
+export const localeConfig = (code) => LOCALE_CONFIG[code] || LOCALE_CONFIG.en;
+/** Locales with URL-prefixed routes; English remains canonical at the unprefixed root. */
+export const LOCALES = Object.keys(LOCALE_CONFIG).filter(
+  (code) => code !== "en",
+);
+/** All locale codes for hreflang alternates, including the unprefixed English root. */
+export const HREFLANG_LANGS = Object.keys(LOCALE_CONFIG);
+/** Resolve a route code to its standards-cased BCP-47 language tag. */
+export const hreflangFor = (code) => localeConfig(code).hreflang;
+/** Return the base-language catalogue used by a published route locale. */
+export const baseLocaleOf = (code) => localeConfig(code).baseLanguage;
 
 /*
  * Which logical paths have localized, URL-prefixed variants. Standalone pages are
@@ -103,7 +162,12 @@ export function isLocalizedPath(path) {
 /** Back-compat: the standalone (non-section) localized pages. */
 export const LOCALIZED_PAGES = [...LOCALIZED_EXACT];
 
-export const pick = (obj, lng) => obj[lng] || obj.en;
+/** Resolve regional copy through its base language before using English. */
+export const pick = (obj, lng) => {
+  if (obj[lng]) return obj[lng];
+  const base = baseLocaleOf(lng);
+  return (base && obj[base]) || obj.en;
+};
 
 /** Prefix a logical path for a locale (en -> unprefixed). */
 export function localizePath(path, lng) {
@@ -768,7 +832,7 @@ export const UI = {
 export const HOOK = {
   // Each locale's "tonight's dinner" is a dish typical of that country, built
   // from three items about to expire. Saved amount is currency-converted, not
-  // just re-symbolised (£8 ≈ €9 ≈ $10) — see RESCUE_AMOUNT.
+  // just re-symbolised (£8 ≈ €9 ≈ $10) — see LOCALE_CONFIG.
   en: {
     firstToGo: "First to go",
     tonight: "Tonight's dinner",
@@ -781,7 +845,7 @@ export const HOOK = {
     dishMeta: "Uses 3 items before they go off · 35 min",
     saved: "£8 of food rescued, not binned",
   },
-  us: {
+  "en-us": {
     firstToGo: "First to go",
     tonight: "Tonight's dinner",
     items: [
@@ -2087,7 +2151,7 @@ export const HOME = {
 
 // US English: identical copy to the root English homepage, but with a
 // US-relevant food-waste figure (dollars) instead of the UK WRAP stat.
-HOME.us = {
+HOME["en-us"] = {
   ...HOME.en,
   proof:
     "US households throw away tens of millions of tons of food a year — around $1,500 for the average family, according to the USDA. Most of it could have been eaten. Copantry exists to keep that food on your plate.",

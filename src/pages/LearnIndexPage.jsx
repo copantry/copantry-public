@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Search } from "lucide-react";
 import { learnPath } from "../content/shelfLife";
 import { LEARN_UI, localizedShelfList } from "../content/learnLocalized";
+import { pick } from "../content/localized";
 import { localizePath } from "../content/localized";
 import { useLang } from "../i18n/useLang";
 import { Section, Eyebrow } from "../components/ui";
@@ -9,7 +10,7 @@ import CtaBand from "../components/CtaBand";
 
 export default function LearnIndexPage() {
   const lng = useLang();
-  const ui = LEARN_UI[lng] || LEARN_UI.en;
+  const ui = pick(LEARN_UI, lng);
   const items = localizedShelfList(lng);
 
   // Group ingredients by (localized) category for a tidy directory.
