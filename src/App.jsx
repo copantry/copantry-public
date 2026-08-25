@@ -15,6 +15,7 @@ import { redirectLegacyUsPath, useLang } from "./i18n/useLang";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import CookieBanner from "./components/CookieBanner";
+import LanguageSuggestion from "./components/LanguageSuggestion";
 import ContactModal from "./components/ContactModal";
 
 import HomePage from "./pages/HomePage";
@@ -115,6 +116,7 @@ export default function App() {
         <LocaleSync />
         <Seo />
         <NavBar />
+        <LanguageSuggestion />
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<HomePage />} />

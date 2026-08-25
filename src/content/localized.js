@@ -176,6 +176,64 @@ export function localizePath(path, lng) {
   return path === "/" ? `/${lng}` : `/${lng}${path}`;
 }
 
+/*
+ * Copy for the language suggestion bar (components/LanguageSuggestion.jsx).
+ * Written in the SUGGESTED language, not the current one — a Brazilian reader
+ * who landed on the English root cannot be assumed to read the English offer.
+ * Only base languages are listed; `pick()` resolves regional routes through
+ * `baseLanguage`, so /pt-br reads the `pt` entry.
+ */
+export const LANGUAGE_HINT = {
+  en: {
+    prompt: "This page is also available in your language.",
+    dismiss: "No thanks",
+  },
+  fr: {
+    prompt: "Cette page est aussi disponible dans votre langue.",
+    dismiss: "Non merci",
+  },
+  it: {
+    prompt: "Questa pagina è disponibile anche nella tua lingua.",
+    dismiss: "No, grazie",
+  },
+  pt: {
+    prompt: "Esta página também está disponível no seu idioma.",
+    dismiss: "Não, obrigado",
+  },
+  de: {
+    prompt: "Diese Seite ist auch in Ihrer Sprache verfügbar.",
+    dismiss: "Nein, danke",
+  },
+  es: {
+    prompt: "Esta página también está disponible en tu idioma.",
+    dismiss: "No, gracias",
+  },
+  nl: {
+    prompt: "Deze pagina is ook beschikbaar in jouw taal.",
+    dismiss: "Nee, bedankt",
+  },
+  sv: {
+    prompt: "Den här sidan finns även på ditt språk.",
+    dismiss: "Nej tack",
+  },
+  pl: {
+    prompt: "Ta strona jest dostępna także w Twoim języku.",
+    dismiss: "Nie, dziękuję",
+  },
+  da: {
+    prompt: "Denne side findes også på dit sprog.",
+    dismiss: "Nej tak",
+  },
+  fi: {
+    prompt: "Tämä sivu on saatavilla myös omalla kielelläsi.",
+    dismiss: "Ei kiitos",
+  },
+  no: {
+    prompt: "Denne siden er også tilgjengelig på ditt språk.",
+    dismiss: "Nei takk",
+  },
+};
+
 /* ── Shared UI / chrome ─────────────────────────────────────────────────── */
 export const UI = {
   en: {

@@ -25,16 +25,25 @@ import {
 } from "../content/localized";
 
 const FLAGS = { GB, US, FR, DE, ES, IT, PT, BR, NL, SE, PL, DK, FI, NO };
-// Labels and flag identities come from the canonical registry; components stay local to React.
-const LANGUAGES = Object.entries(LOCALE_CONFIG).map(([code, config]) => ({
-  code,
-  Flag: FLAGS[config.flag],
-  label: config.label,
-}));
+/*
+ * Labels and flag identities come from the canonical registry; components stay local to React.
+ * The registry's own key order is meaningful elsewhere (hreflang alternates, sitemap emission),
+ * so the alphabetical ordering readers expect in the picker is applied here rather than by
+ * reordering LOCALE_CONFIG. An explicit collator locale keeps prerender and hydration identical.
+ */
+const COLLATOR = new Intl.Collator("en", { sensitivity: "base" });
+const LANGUAGES = Object.entries(LOCALE_CONFIG)
+  .map(([code, config]) => ({
+    code,
+    Flag: FLAGS[config.flag],
+    label: config.label,
+  }))
+  .sort((a, b) => COLLATOR.compare(a.label, b.label));
 
 export default function LanguageSwitcher({ className = "" }) {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
+  const listRef = useRef(null);
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const lng = useLang();
@@ -53,6 +62,17 @@ export default function LanguageSwitcher({ className = "" }) {
     localStorage.setItem("copantry_lang", code);
     navigate(target);
   }
+
+  /*
+   * The list is taller than a phone viewport, so it scrolls. Bring the active
+   * language into view on open — otherwise a reader whose language sorts late
+   * (Svenska) opens the picker onto an unrelated part of the alphabet.
+   */
+  useEffect(() => {
+    if (!open || !listRef.current) return;
+    const active = listRef.current.querySelector('[data-active="true"]');
+    if (active) active.scrollIntoView({ block: "nearest" });
+  }, [open]);
 
   useEffect(() => {
     function handleClick(e) {
@@ -80,10 +100,24 @@ export default function LanguageSwitcher({ className = "" }) {
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-1.5 w-44 bg-white border border-gray-100 rounded-xl shadow-lg shadow-gray-200/60 overflow-hidden z-50">
+        /*
+         * Capped height + own scroll: with fifteen published locales the full
+         * list is taller than a phone viewport, and the picker hangs off a
+         * `sticky` header, so the page scroll can never reach its lower half.
+         * `overscroll-contain` keeps that scroll from chaining to the page.
+         */
+        <div
+          ref={listRef}
+          role="listbox"
+          aria-label="Language"
+          className="absolute right-0 top-full mt-1.5 w-44 max-h-[min(60vh,18rem)] overflow-y-auto overscroll-contain bg-white border border-gray-100 rounded-xl shadow-lg shadow-gray-200/60 z-50"
+        >
           {LANGUAGES.map(({ code, Flag, label }) => (
             <button
               key={code}
+              role="option"
+              aria-selected={code === lng}
+              data-active={code === lng}
               onClick={() => select(code)}
               className={`w-full flex items-center gap-2.5 px-3 py-2.5 text-sm transition-colors text-left ${
                 code === lng
@@ -92,7 +126,7 @@ export default function LanguageSwitcher({ className = "" }) {
               }`}
             >
               <Flag className="w-5 h-auto rounded-sm shrink-0" />
-              {label}
+              <span className="truncate">{label}</span>
             </button>
           ))}
         </div>

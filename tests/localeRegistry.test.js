@@ -1,11 +1,13 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  LANGUAGE_HINT,
   LOCALE_CONFIG,
   LOCALES,
   baseLocaleOf,
   hreflangFor,
   localeConfig,
+  pick,
 } from "../src/content/localized.js";
 
 describe("marketing locale registry", () => {
@@ -42,5 +44,21 @@ describe("marketing locale registry", () => {
     expect(baseLocaleOf("pt-br")).toBe("pt");
     expect(hreflangFor("pt-br")).toBe("pt-BR");
     expect(localeConfig("pt-br").rescueAmount).toBe("9 €");
+  });
+
+  it("offers the language-suggestion copy in every published locale", () => {
+    // The bar speaks the SUGGESTED language, so an English fallback here would
+    // show an English offer to exactly the reader who cannot read it.
+    for (const code of Object.keys(LOCALE_CONFIG)) {
+      const copy = pick(LANGUAGE_HINT, code);
+      expect(copy, code).toEqual(
+        expect.objectContaining({
+          prompt: expect.any(String),
+          dismiss: expect.any(String),
+        }),
+      );
+      // Regional routes resolve through baseLanguage rather than to English.
+      expect(copy, code).toBe(LANGUAGE_HINT[baseLocaleOf(code)]);
+    }
   });
 });
