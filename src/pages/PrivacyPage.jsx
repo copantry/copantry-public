@@ -1,4 +1,4 @@
-const LAST_UPDATED = "3 July 2026";
+const LAST_UPDATED = "31 August 2026";
 
 function Section({ id, title, children }) {
   return (
@@ -94,6 +94,14 @@ export default function PrivacyPage() {
           <strong>Technical data</strong> — IP addresses and basic HTTP request
           metadata are captured in server logs for security and diagnostic
           purposes. Log retention is limited to 30 days.
+        </P>
+        <P>
+          <strong>Holiday windows</strong> — if you use Holiday mode, we store
+          the dates you choose so that we can pause reminders while you are
+          away. Because those dates say when you are not at home, we treat them
+          as private to you and your household: they are never shown on your
+          public profile, shared with people who follow you, included in any
+          public recipe page, or made available to advertisers.
         </P>
         <P>
           <strong>Language preference</strong> — if you accept our cookie notice
