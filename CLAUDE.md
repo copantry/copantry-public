@@ -93,6 +93,15 @@ use `var(--color-brand-500)` or `bg-brand-500`.
 | `sitemap.xml`   | **Auto-generated** by the prerender from `seoConfig.js` — don't hand-edit     |
 | `og-image.svg`  | Social image (export a 1200×630 PNG before launch — see constants.js)         |
 
+`public/.well-known/assetlinks.json` is an **origin fallback only**. The live
+Digital Asset Links statement is served by the `copantry-assetlinks` Cloudflare
+Worker (`assetlinks/src/index.js`), which intercepts
+`/.well-known/assetlinks.json` and `/.well-known/apple-app-site-association` on
+the apex, `www` and `app` hosts before the request ever reaches this site — so
+the Worker is authoritative and this file must mirror it byte-for-byte. It lived
+outside `public/` until 2026-09-02 and was therefore never built, which is how it
+came to carry a stale certificate fingerprint nobody noticed.
+
 ## Conventions
 
 - **The MCP page leads with the self-service route, not the API key.** Copantry is

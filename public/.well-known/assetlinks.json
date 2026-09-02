@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.copantry.app",
+      "sha256_cert_fingerprints": [
+        "59:93:90:FE:4B:D5:14:A5:66:1E:9E:A8:BD:AB:A8:C8:D6:4A:22:88:00:43:3E:F3:48:B8:C5:68:74:DB:EB:BB"
+      ]
+    }
+  }
+]
